@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.env*
+!.env.example
+.impeccable/review/
+.impeccable/config.local.json
+.scratch/runtime/
