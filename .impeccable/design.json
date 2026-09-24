@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T17:59:35.2537082Z",
+  "title": "Design System: Alan Sahlan portfolio",
+  "extensions": {
+    "typographyMeta": {
+      "title": {
+        "purpose": "Project list title.",
+        "displayName": "Project name"
+      },
+      "display": {
+        "purpose": "Configured stack only. Halyard is required but has no web delivery; the current preview renders a development fallback.",
+        "displayName": "Name"
+      },
+      "body": {
+        "purpose": "Inherited configured family. The fallback is not approved typography.",
+        "displayName": "Interface text"
+      },
+      "headline": {
+        "purpose": "Static three-line practice display.",
+        "displayName": "Practice lines"
+      },
+      "label": {
+        "purpose": "Small section headings.",
+        "displayName": "Section label"
+      }
+    },
+    "colorMeta": {
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted text"
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm off-white"
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Thin divider"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal"
+      },
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Cobalt"
+      }
+    },
+    "breakpoints": [
+      {
+        "value": "1000px",
+        "name": "intermediate-max"
+      },
+      {
+        "value": "650px",
+        "name": "narrow-max"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary navigation",
+      "kind": "nav",
+      "refersTo": "primary-nav",
+      "description": "Native homepage anchors with unavailable Resume text.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#work\">Work</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a><span aria-disabled=\"true\">Resume</span></nav>",
+      "css": ".ds-nav{font-family:var(--font-body);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(1.4rem,2.8vw,2.8rem);font-size:.9375rem;font-weight:500;color:var(--ink)}.ds-nav a,.ds-nav span{display:inline-flex;align-items:center;min-height:44px}.ds-nav a{color:inherit;text-decoration:none;text-decoration-thickness:1px;text-underline-offset:.3em}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:2px solid currentColor;outline-offset:6px}.ds-nav span{color:var(--muted);cursor:default}@media(max-width:650px){.ds-nav{justify-content:space-between;gap:.75rem;font-size:.875rem}}"
+    },
+    {
+      "name": "Location badge",
+      "kind": "custom",
+      "refersTo": "location-badge",
+      "description": "Static location indicator, not a button.",
+      "html": "<p class=\"ds-location\"><span class=\"ds-id\" aria-hidden=\"true\">ID</span><span>Based in Indonesia</span></p>",
+      "css": ".ds-location{font-family:var(--font-body);display:flex;align-items:center;gap:.85rem;font-size:.9375rem;color:var(--ink)}.ds-id{display:grid;place-items:center;width:36px;height:36px;color:var(--canvas);background:var(--cobalt);font-size:.75rem;font-weight:500}@media(max-width:650px){.ds-location{flex-wrap:wrap;font-size:.875rem}}@media(forced-colors:active){.ds-id{border:1px solid currentColor}}"
+    },
+    {
+      "name": "Project row",
+      "kind": "custom",
+      "refersTo": "project-row",
+      "description": "Static project listing without preview or navigation states.",
+      "html": "<ol class=\"ds-list\"><li class=\"ds-row\"><span class=\"ds-number\" aria-hidden=\"true\">01</span><h3>Aurelia</h3><span class=\"ds-category\">Hospitality</span></li></ol>",
+      "css": ".ds-list{font-family:var(--font-body);list-style:none;margin:0;padding:0;border-top:1px solid var(--divider);color:var(--ink)}.ds-row{display:grid;grid-template-columns:3.5rem 1fr auto;gap:1rem;align-items:center;min-height:140px;border-bottom:1px solid var(--divider);padding-block:1.5rem}.ds-number{color:var(--muted);font-size:.875rem;font-variant-numeric:tabular-nums}.ds-row h3{margin:0;font-size:clamp(2.1rem,4.3vw,4.25rem);font-weight:400;letter-spacing:-.035em;line-height:1.1}.ds-category{font-size:.875rem;color:var(--muted)}@media(max-width:650px){.ds-row{grid-template-columns:1.6rem minmax(0,1fr);column-gap:.65rem;row-gap:.4rem;min-height:110px;padding-block:1.3rem}.ds-category{grid-column:2;font-size:.8125rem}.ds-row h3{font-size:clamp(1.5rem,8vw,3rem);overflow-wrap:anywhere}.ds-number{align-self:center;font-size:.75rem}}"
+    },
+    {
+      "name": "About statement",
+      "kind": "custom",
+      "refersTo": "about-copy",
+      "description": "Large statement with a decorative cobalt corner.",
+      "html": "<div class=\"ds-about\"><span class=\"ds-corner\" aria-hidden=\"true\"></span><p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p></div>",
+      "css": ".ds-about{font-family:var(--font-body);position:relative;max-width:780px;padding-top:2rem;color:var(--ink)}.ds-about p{margin:0;font-size:clamp(1.65rem,2.6vw,2.65rem);line-height:1.3;letter-spacing:-.025em}.ds-corner{position:absolute;left:0;top:0;width:16px;height:16px;border-top:4px solid var(--cobalt);border-left:4px solid var(--cobalt)}@media(forced-colors:active){.ds-corner{border-color:CanvasText}}"
+    },
+    {
+      "name": "Contact field",
+      "kind": "custom",
+      "refersTo": "contact",
+      "description": "Current heading and development note; no contact action exists.",
+      "html": "<section class=\"ds-contact\"><div class=\"ds-width\"><h2>Let’s work<br>together.</h2><p>Contact details will be added soon.</p></div></section>",
+      "css": ".ds-contact{font-family:var(--font-body);background:var(--cobalt);color:var(--canvas);padding-block:5.5rem 1.5rem}.ds-width{width:min(100% - var(--gutter)*2,1440px);margin-inline:auto}.ds-contact h2{margin:0;font-size:clamp(3.4rem,7.5vw,7.6rem);font-weight:400;letter-spacing:-.04em;line-height:1.02}.ds-contact p{font-size:.9375rem;margin:1.75rem 0 0}@media(max-width:650px){.ds-contact{padding-block:3.5rem 1.5rem}.ds-contact h2{font-size:clamp(2rem,14vw,4rem);overflow-wrap:anywhere}}"
+    }
+  ],
+  "narrative": {
+    "overview": "The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.\n\nThis record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers ticket 01, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.",
+    "keyCharacteristics": [
+      "Warm off-white and charcoal with one cobalt accent.",
+      "Large, tightly spaced typography and generous section spacing.",
+      "Rectangular photography, thin dividers, and small cobalt corners.",
+      "Native anchor navigation in the current development preview."
+    ],
+    "rules": [
+      {
+        "name": "The Accent Rule",
+        "body": "Use cobalt for the established identity details and contact field; preserve the original AS mark's supplied blue shading.",
+        "section": "colors"
+      },
+      {
+        "name": "The Font Delivery Rule",
+        "body": "Preserve Halyard as the required family and recheck wrapping, spacing, and hierarchy when its authorized web delivery is available.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Preserve the current flat treatment when extending this homepage.",
+        "section": "elevation"
+      }
+    ],
+    "northStar": "Minimal editorial portfolio",
+    "dos": [
+      "Do preserve the exact Design • Engineer identity phrase.",
+      "Do retain the supplied AS mark and real portrait with their documented provenance.",
+      "Do keep visible keyboard focus and native anchor access.",
+      "Do recheck the design after Halyard is delivered."
+    ],
+    "donts": [
+      "Don't promote the current neutral fallback to approved typography.",
+      "Don't describe static project rows or pending contact details as completed interactions.",
+      "Don't claim a pixel match to the missing composition image or a complete release."
+    ]
+  }
+}

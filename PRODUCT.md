@@ -8,9 +8,9 @@ web
 
 ## Stack
 
-React, TypeScript, and Next.js, as recorded in the approved PRD and implementation spec for this empty application workspace. Portfolio content is static; browser interactions use client components and Motion for React. GSAP/ScrollTrigger is optional for project media when it materially simplifies implementation. Native scrolling is the baseline; Lenis requires demonstrated benefit without input or navigation regressions.
+React, TypeScript, and Next.js, as recorded in the approved PRD and implementation spec for this application. Portfolio content is static; browser interactions use client components and Motion for React. GSAP/ScrollTrigger is optional for project media when it materially simplifies implementation. Native scrolling is the baseline; Lenis requires demonstrated benefit without input or navigation regressions.
 
-The application is not yet scaffolded. No deployment provider or production domain has been selected in this session.
+The responsive homepage foundation is implemented and verified for ticket 01. Halyard font delivery remains missing; later-ticket interactions and destinations remain unfinished. No deployment provider or production domain has been selected in this session.
 
 ## Users
 
@@ -65,12 +65,12 @@ Apply the better-writing skill to all website copy. Use clear, brief prose, cons
 - [PRD v2.1](portfolio-prd-halyard.md) records the approved requirements and external portfolio/reference sources.
 - [Confirmed alignment session](.scratch/portfolio-halyard/alignment-session.md) records Alan's positioning and content decisions.
 - [Spec revision 2](.scratch/portfolio-halyard/spec.md) records implementation and testing requirements. Twelve approved implementation tickets exist in the local Markdown tracker.
-- [Personal Photo.jpeg](<Personal Photo.jpeg>) is present locally. Its contents, suitability, and release crop have not been inspected during this initialization.
+- The supplied portrait and AS mark in `assets/` have been inspected and prepared for the homepage. See [asset provenance](docs/assets.md) for originals, transformations, and remaining inputs.
 - The PRD links to a portfolio Drive folder, Paylecta and Munchpal Behance studies, and Aurelia and PawFriend sites. Those links identify material to investigate, not already-verified evidence.
 
-The approved composition image, original AS asset, Halyard delivery, current resume, verified contact/profile destinations, project media, and rights-cleared landscape imagery have not been established as available release assets. Verify them before use; clearly labelled development substitutes do not satisfy release acceptance.
+The approved composition image, Halyard delivery, current resume, verified contact/profile destinations, project media, and rights-cleared landscape imagery have not been established as available release assets. Verify them before use; clearly labelled development substitutes do not satisfy release acceptance.
 
-Recheck Paylecta outcome metrics and testimonial/persona provenance, Munchpal task-time/completion figures, and resume accuracy. Remove any AI-directed instruction or keyword block from the release resume if present. Omit unsupported results. No application tests, accessibility results, browser recordings, or performance scores exist from this documentation work.
+Recheck Paylecta outcome metrics and testimonial/persona provenance, Munchpal task-time/completion figures, and resume accuracy. Remove any AI-directed instruction or keyword block from the release resume if present. Omit unsupported results. Ticket 01 has passing browser tests, lint, type checks, and a production build. See [verification results](.scratch/portfolio-halyard/ticket-01-verification.md) for actual coverage and limits. No performance score or accessibility certification is claimed.
 
 ## Product Principles
 
