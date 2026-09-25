@@ -6,10 +6,20 @@ import { usePathname } from "next/navigation";
 export function RouteFocus() {
   const pathname = usePathname();
   const previousPath = useRef(pathname);
+  const historyNavigation = useRef(false);
+
+  useEffect(() => {
+    const onPopState = () => { historyNavigation.current = true; };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
 
   useEffect(() => {
     if (previousPath.current === pathname) return;
+    const fromPath = previousPath.current;
     previousPath.current = pathname;
+    const fromHistory = historyNavigation.current;
+    historyNavigation.current = false;
     if (pathname === "/" && sessionStorage.getItem("selected-work-return-pending") === "1") {
       sessionStorage.removeItem("selected-work-return-pending");
       const saved = sessionStorage.getItem("selected-work-return");
@@ -30,6 +40,12 @@ export function RouteFocus() {
         work?.focus({ preventScroll: true });
       }, 100);
       return () => window.clearTimeout(timeout);
+    }
+    if (pathname === "/" && fromPath === "/work/aurelia" && fromHistory) {
+      const frame = requestAnimationFrame(() => {
+        document.querySelector<HTMLElement>(".project-link[href=\"/work/aurelia\"]")?.focus({ preventScroll: true });
+      });
+      return () => cancelAnimationFrame(frame);
     }
     const hashTarget = window.location.hash
       ? document.getElementById(window.location.hash.slice(1))

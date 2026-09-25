@@ -116,7 +116,7 @@ The portrait's top-right cobalt corner has 35px arms with 8px borders. The About
 
 ## Components
 
-The primary navigation consists of plain text anchors with 44px minimum height and underline on hover. Links show a 2px current-color focus outline offset by 6px. Resume is currently a muted, unavailable span. The skip link becomes visible on focus. The original AS image accompanies the name in the home links.
+The primary navigation consists of plain text anchors with 44px minimum height and underline on hover. Links show a 2px current-color focus outline offset by 6px. The full-row Aurelia link uses a -4px inset offset so its focus rectangle stays inside the ruled row. Resume is currently a muted, unavailable span. The skip link becomes visible on focus. The original AS image accompanies the name in the home links.
 
 The location badge is a small cobalt square labelled ID beside the Indonesia text. It is not a clickable control.
 

@@ -178,6 +178,7 @@ test("a focused compact trigger remains available when scrolling back to the top
   await page.goto("/");
   await page.evaluate(() => window.scrollTo(0, 250));
   const trigger = page.locator(".compact-menu-trigger");
+  await expect(trigger).toBeVisible();
   await trigger.focus();
   await page.evaluate(() => window.scrollTo(0, 0));
   await expect(trigger).toBeFocused();

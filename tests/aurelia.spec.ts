@@ -45,13 +45,17 @@ test("Aurelia preview retargets on pointer movement and keyboard focus takes pre
   await row.getByRole("heading", { name: "Aurelia" }).hover();
   await row.getByText("Hospitality").hover();
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
-  await link.hover({ position: { x: 800, y: 8 } });
+  const rightEdge = (await link.boundingBox())!.width - 8;
+  await link.hover({ position: { x: rightEdge, y: 8 } });
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
 
   await page.mouse.move(0, 0);
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
   await link.hover({ position: { x: 8, y: 8 } });
+  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width), { intervals: [10, 10, 20] }).toBeGreaterThan(20);
+  expect(await preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(310);
   await page.mouse.move(0, 0);
+  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
   await link.hover({ position: { x: 8, y: 8 } });
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
   await link.focus();
@@ -84,9 +88,11 @@ test("history and return link lead back to selected work", async ({ page }) => {
   await page.goBack();
   await expect(page).toHaveURL(/\/$/);
   await expect(link).toBeInViewport();
+  await expect(link).toBeFocused();
   await expect.poll(async () => Math.abs((await page.evaluate(() => window.scrollY)) - startingY)).toBeLessThan(80);
   await page.goForward();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Aurelia" })).toBeFocused();
   await page.getByRole("link", { name: /Back to selected work/ }).first().click();
   await expect(page).toHaveURL(/\/#work$/);
   await expect.poll(async () => Math.abs((await page.evaluate(() => window.scrollY)) - startingY)).toBeLessThan(80);
