@@ -173,3 +173,38 @@ test("the menu fits at 320 pixels and has one focusable link per destination", a
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
 });
 
+
+test("a focused compact trigger remains available when scrolling back to the top", async ({ page }) => {
+  await page.goto("/");
+  await page.evaluate(() => window.scrollTo(0, 250));
+  const trigger = page.locator(".compact-menu-trigger");
+  await trigger.focus();
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await expect(trigger).toBeFocused();
+  await expect(trigger).toBeVisible();
+  await trigger.blur();
+  await expect(page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Work" })).toBeVisible();
+});
+
+test("repeating strips stop as soon as the menu starts closing", async ({ page }) => {
+  await page.goto("/");
+  await page.locator(".full-menu-trigger").click();
+  const work = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "Work", exact: true });
+  await work.hover();
+  await expect(work.locator(".stairs-marquee")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(work.locator(".stairs-marquee")).toBeHidden();
+});
+
+
+test("changing motion preference while a menu link is focused keeps that focus", async ({ page }) => {
+  await page.goto("/");
+  await page.locator(".full-menu-trigger").click();
+  const about = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "About", exact: true });
+  await about.focus();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(about).toBeFocused();
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog", { name: "Navigation menu" })).toHaveCount(0);
+});
+

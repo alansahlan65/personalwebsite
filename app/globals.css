@@ -149,18 +149,18 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .menu-trigger-icon i { display: block; height: 1px; background: currentColor; }
 .compact-menu-trigger {
   position: fixed; z-index: 40; top: 1.25rem; right: var(--gutter);
-  background: var(--canvas); box-shadow: 0 8px 26px rgb(32 34 31 / 12%);
+  background: var(--canvas);
   visibility: hidden; opacity: 0; pointer-events: none;
 }
 .compact-menu-trigger.is-visible { visibility: visible; opacity: 1; pointer-events: auto; }
 .stairs-menu {
   position: fixed; z-index: 50; inset: 0; overflow-y: auto; overscroll-behavior: contain;
-  background: var(--ink); color: var(--canvas);
+  background: var(--cobalt); color: var(--canvas);
 }
-.stairs-panels { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(5, 1fr); overflow: hidden; pointer-events: none; }
-.stairs-panel { height: 100%; background: var(--cobalt); border-right: 1px solid rgb(246 245 241 / 18%); }
-.stairs-content { position: relative; z-index: 1; display: flex; flex-direction: column; min-height: 100%; padding-block: 1.7rem 2rem; }
-.stairs-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 1rem; font-weight: 500; }
+.stairs-panels { position: absolute; z-index: 2; inset: 0; display: grid; grid-template-columns: repeat(5, 1fr); overflow: hidden; pointer-events: none; }
+.stairs-panel { height: 100%; background: var(--ink); border-right: 1px solid rgb(246 245 241 / 18%); }
+.stairs-content { position: relative; display: flex; flex-direction: column; min-height: 100%; padding-block: 1.7rem 2rem; }
+.stairs-topline { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 1rem; font-weight: 500; }
 .stairs-close { border-color: var(--canvas); color: var(--canvas); min-width: 96px; }
 .stairs-close:hover { background: var(--canvas); color: var(--ink); }
 .stairs-close > span { font-size: 1.5rem; line-height: .6; }
@@ -183,8 +183,8 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .stairs-marquee-item img { width: clamp(2rem, 4vw, 4rem); height: clamp(2rem, 4vw, 4rem); object-fit: contain; background: var(--canvas); }
 @keyframes stairs-marquee-travel { to { transform: translateX(-50%); } }
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .stairs-link:hover .stairs-static-label { visibility: hidden; }
-  .stairs-link:hover .stairs-marquee { display: flex; animation: stairs-marquee-travel 9s linear infinite; }
+  .stairs-menu:not(.stairs-menu--closing) .stairs-link:hover .stairs-static-label { visibility: hidden; }
+  .stairs-menu:not(.stairs-menu--closing) .stairs-link:hover .stairs-marquee { display: flex; animation: stairs-marquee-travel 9s linear infinite; }
 }
 @media (max-width: 650px) {
   .site-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .2rem .5rem; min-height: 102px; }
@@ -202,7 +202,8 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
   .stairs-static-label { visibility: visible !important; }
 }
 @media (forced-colors: active) {
-  .compact-menu-trigger { box-shadow: none; }
   .stairs-panel { border-right: 1px solid CanvasText; }
   .stairs-menu { border: 1px solid CanvasText; }
 }
+.stairs-menu--closing .stairs-marquee { display: none !important; }
+.stairs-menu--closing .stairs-static-label { visibility: visible; }

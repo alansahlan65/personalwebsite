@@ -33,6 +33,7 @@ export function SiteHeader({ page }: { page: "home" | "about" }) {
   const [phase, setPhase] = useState<MenuPhase>("closed");
   const [reducedMotion, setReducedMotion] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
+  const compactTriggerRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -42,7 +43,7 @@ export function SiteHeader({ page }: { page: "home" | "about" }) {
   const openedOnce = useRef(false);
 
   const updateMode = useCallback(() => {
-    if (phase !== "closed" || headerRef.current?.contains(document.activeElement)) return;
+    if (phase !== "closed" || headerRef.current?.contains(document.activeElement) || document.activeElement === compactTriggerRef.current) return;
     const y = window.scrollY;
     setMode((current) => {
       if (current === "full" && y > HEADER_COMPACT_AT) return "compact";
@@ -185,18 +186,18 @@ export function SiteHeader({ page }: { page: "home" | "about" }) {
           <span>Menu</span><span className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
         </button>
       </header>
-      <button className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1}>
+      <button ref={compactTriggerRef} onBlur={() => requestAnimationFrame(updateMode)} className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1}>
         <span>Menu</span><span className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
       </button>
       {menuActive && (
-        <div className="stairs-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>
+        <div className={["stairs-menu", phase === "closing" ? "stairs-menu--closing" : ""].join(" ")} role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>
           <div className="stairs-panels" aria-hidden="true">
             {Array.from({ length: 5 }, (_, index) => (
               <motion.div
                 className="stairs-panel"
                 key={index}
-                initial={reducedMotion ? false : { y: "-100%" }}
-                animate={{ y: phase === "closing" ? "-100%" : "0%" }}
+                initial={reducedMotion ? false : { y: "0%" }}
+                animate={{ y: phase === "closing" ? "0%" : "100%" }}
                 transition={{ duration: reducedMotion ? 0 : 0.38, delay: reducedMotion ? 0 : (phase === "closing" ? 4 - index : index) * 0.055, ease: [0.22, 1, 0.36, 1] }}
               />
             ))}
