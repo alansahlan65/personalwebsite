@@ -2,13 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
-
-const projects = [
-  { name: "Aurelia", category: "Hospitality" },
-  { name: "Paylecta", category: "Finance" },
-  { name: "PawFriend", category: "Pet adoption" },
-  { name: "Munchpal", category: "Food sharing" },
-];
+import { ProjectGallery } from "./components/project-gallery";
 
 export default function Home() {
   return (
@@ -36,16 +30,9 @@ export default function Home() {
         <section className="work page-width" id="work" tabIndex={-1} aria-labelledby="work-title">
           <div className="section-intro">
             <h2 className="section-label" id="work-title">Selected work</h2>
-            <p className="development-note">Case studies in preparation</p>
+            <p className="development-note">More case studies in preparation</p>
           </div>
-          <ol className="project-list">
-            {projects.map((project, index) => (
-              <li className="project-row" key={project.name}>
-                <span className="project-number" aria-hidden="true">0{index + 1}</span>
-                <h3>{project.name}</h3><span className="project-category">{project.category}</span>
-              </li>
-            ))}
-          </ol>
+          <ProjectGallery />
         </section>
         <section className="about page-width" id="about" aria-labelledby="about-title">
           <h2 className="section-label" id="about-title">About</h2>

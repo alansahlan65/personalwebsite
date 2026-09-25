@@ -22,3 +22,7 @@ Behance and GitHub returned HTTP 200 during direct checks. LinkedIn returned HTT
 
 - A current resume PDF or verified job details from which to prepare an updated version.
 - A short factual account of how Alan approaches a product problem and collaborates with developers. The About page currently describes background methods and learning aims, without inventing an example or established implementation experience.
+
+## Aurelia source check (ticket 04)
+
+The [live Aurelia concept](https://aurelia.alansahlanwork.workers.dev/) returned HTTP 200 on 2026-09-25 and was inspected in the browser. Its interface presents Bali stays through trip intentions, area narrowing, practical checks, and a request flow that says availability and final pricing need confirmation. The user confirmed, “I designed and built it alone,” and explicitly approved a live-site screenshot for the gallery and case-study hero. The case study therefore states independent design and build contribution, no collaborators, and concept status. It does not claim bookings, measured outcomes, real inventory, or original photography rights. No public source-code destination was found, so only the verified live link is shown.

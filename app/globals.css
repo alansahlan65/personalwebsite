@@ -207,3 +207,69 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 }
 .stairs-menu--closing .stairs-marquee { display: none !important; }
 .stairs-menu--closing .stairs-static-label { visibility: visible; }
+
+/* Selected work preview and Aurelia case study */
+.project-row--linked { display: block; min-height: 0; padding: 0; }
+.project-link {
+  display: flex; align-items: center; gap: clamp(.75rem, 1.6vw, 1.5rem);
+  width: 100%; min-height: clamp(11rem, 20vw, 15rem); padding-block: 1rem;
+  text-decoration: none;
+}
+.project-link:focus-visible { outline-offset: -4px; }
+.project-link .project-number { flex: 0 0 3.5rem; }
+.project-link h3 { flex: 0 0 auto; white-space: nowrap; }
+.project-preview { display: block; flex: 0 0 auto; overflow: hidden; }
+.project-preview-media { position: relative; display: block; width: clamp(11rem, 22vw, 20rem); aspect-ratio: 16 / 10; overflow: hidden; }
+.project-preview-media img { width: 100%; height: 100%; object-fit: cover; }
+.project-link .project-category { flex: 0 0 auto; white-space: nowrap; }
+.project-arrow { flex: 0 0 auto; margin-left: auto; font-size: clamp(1.5rem, 2.5vw, 2.25rem); line-height: 1; }
+.project-link:hover h3 { color: var(--cobalt); }
+.case-study { padding-top: clamp(3rem, 6vw, 6rem); }
+.case-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; }
+.case-topline a, .case-return { display: inline-flex; align-items: center; gap: .65rem; min-height: 44px; }
+.case-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: end; gap: 2rem 5rem; margin-top: clamp(3rem, 8vw, 8rem); }
+.case-intro h1 { font-size: clamp(4rem, 11vw, 10rem); }
+.case-lead { max-width: 36ch; padding-bottom: .5rem; font-size: clamp(1.5rem, 2.5vw, 2.6rem); line-height: 1.25; letter-spacing: -.025em; }
+.case-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem 2rem; margin: clamp(3rem, 6vw, 6rem) 0 1.5rem; padding-block: 1.5rem; border-block: 1px solid var(--divider); }
+.case-facts dt { margin-bottom: .75rem; color: var(--muted); font-size: .875rem; }
+.case-facts dd { margin: 0; line-height: 1.5; }
+.case-live-link { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; font-weight: 500; }
+.case-hero { margin-block: clamp(3rem, 6vw, 6rem); }
+.case-hero img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.case-hero figcaption { margin-top: .75rem; color: var(--muted); font-size: .8125rem; }
+.case-decisions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 4rem; padding-block: 2rem clamp(5rem, 8vw, 9rem); }
+.case-decisions h2 { grid-column: 1 / -1; font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 500; letter-spacing: -.035em; }
+.case-decision { padding-top: 1.5rem; border-top: 1px solid var(--divider); }
+.case-decision h3 { font-size: clamp(1.5rem, 2.4vw, 2.25rem); font-weight: 500; letter-spacing: -.02em; }
+.case-decision p { max-width: 53ch; margin-top: 1rem; line-height: 1.65; }
+.case-return { grid-column: 1 / -1; justify-self: start; margin-top: 1rem; }
+@media (max-width: 750px), (hover: none) {
+  .project-link {
+    display: grid; grid-template-columns: 1.6rem minmax(0, 1fr) auto;
+    gap: .5rem .65rem; min-height: 0; padding-block: 1.4rem;
+  }
+  .project-link .project-number { grid-column: 1; grid-row: 1; }
+  .project-link h3 { grid-column: 2; grid-row: 1; }
+  .project-arrow { grid-column: 3; grid-row: 1; }
+  .project-preview { grid-column: 2 / -1; grid-row: 2; width: min(100%, 30rem) !important; }
+  .project-preview-media { width: min(100%, 30rem); }
+  .project-link .project-category { grid-column: 2 / -1; grid-row: 3; }
+}
+@media (max-width: 800px) {
+  .case-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-intro { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 650px) {
+  .case-topline { align-items: flex-start; flex-direction: column; }
+  .case-intro { margin-top: 2.5rem; }
+  .case-intro h1 { font-size: clamp(3.5rem, 15vw, 6rem); }
+  .case-lead { font-size: clamp(1.4rem, 6vw, 2rem); }
+  .case-facts { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .case-decisions { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-preview { width: auto !important; }
+}
+@media (forced-colors: active) {
+  .project-link:hover h3 { color: LinkText; }
+}

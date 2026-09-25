@@ -28,7 +28,7 @@ function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
   return event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
 }
 
-export function SiteHeader({ page }: { page: "home" | "about" }) {
+export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
   const [mode, setMode] = useState<HeaderMode>("full");
   const [phase, setPhase] = useState<MenuPhase>("closed");
   const [reducedMotion, setReducedMotion] = useState(false);
