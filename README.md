@@ -17,7 +17,7 @@ Browser tests start the development server automatically when one is not already
 
 ## Current scope
 
-Ticket 01 provides the responsive homepage foundation. Later tickets implement the project routes, full About/contact destinations, and specified interaction systems.
+Ticket 01 provides the responsive homepage foundation. Ticket 02 adds the About route, email contact action, and confirmed professional links. A current resume and factual About detail on product-problem approach and developer collaboration remain pending. Later tickets implement project routes and interaction systems. See [content sources](docs/portfolio-content.md).
 
 Halyard web-font delivery is still missing. The current neutral fallback is temporary; do not treat the font requirement as complete. The approved composition image also needs to be supplied for direct visual comparison. See [asset record](docs/assets.md).
 

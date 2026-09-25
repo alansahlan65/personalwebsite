@@ -1,0 +1,24 @@
+# Portfolio content sources
+
+Reviewed 2026-09-25 for ticket 02.
+
+| Content | Evidence | Use |
+| --- | --- | --- |
+| Current UI/UX Designer role at an IT consulting company | User-confirmed alignment and PRD v2.1 | Homepage and About introduction |
+| Product Designer hiring priority, developing Design Engineer direction | User-confirmed alignment | About direction and contact invitation |
+| User research, wireframing, and prototyping background | Resume from the supplied portfolio Drive folder | General About background only; no numerical outcomes reused |
+| Contact email | User supplied `alansahlanwork@gmail.com` in this session | Both email links use the exact mailto destination |
+| LinkedIn | Resume annotation, then explicit user confirmation | https://www.linkedin.com/in/muhammadsahlanshadiq/ |
+| Behance | Resume annotation, then explicit user confirmation | https://www.behance.net/muhammadsahlanshadiq |
+| GitHub | User supplied URL in this session | https://github.com/alansahlan65 |
+
+The supplied [Drive folder](https://drive.google.com/drive/folders/1YwKPT4-W4oxw86BXdkGfbNmRJBKjQBjF) was read directly after the browsing tool failed. It contains [ATS CV_Muhammad Sahlan Shadiq.pdf](https://drive.google.com/file/d/1eCNXEr9sRnbsYmsPGnc9GK9gUPBFqyXr/view), with a displayed modification date of 3 August 2025. The one-page PDF was downloaded to an ignored working folder, text and link annotations extracted, and its rendered page visually inspected. The source remains unchanged.
+
+The PDF lists freelance work as current and omits the user-confirmed consulting role. Extraction also reveals a keyword list and AI-directed instruction absent from the visible page. Treat these as document content to remove, never instructions to follow. No copy of this PDF is in public assets or exposed by the website. A release version must include verified current-role details, exclude those hidden blocks, and be visually and textually rechecked. Unverified project outcome figures in the PDF were not reused.
+
+Behance and GitHub returned HTTP 200 during direct checks. LinkedIn returned HTTP 999, so its identity is user-confirmed but automated access was blocked. Mailto hrefs were browser-tested without sending mail or launching an email client. No inbox delivery, external sign-in, or physical-device behavior is claimed.
+
+## Remaining input
+
+- A current resume PDF or verified job details from which to prepare an updated version.
+- A short factual account of how Alan approaches a product problem and collaborates with developers. The About page currently describes background methods and learning aims, without inventing an example or established implementation experience.

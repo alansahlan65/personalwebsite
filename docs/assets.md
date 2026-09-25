@@ -14,8 +14,8 @@ The original photo and mark were visually inspected. The portrait contains Alan 
 
 - Halyard Display Variable font files or an authorized Adobe Fonts web-project stylesheet. CSS currently attempts local Halyard, then uses the approved neutral loading/development fallback. This is not delivered web typography and does not satisfy the font acceptance criterion.
 - The approved homepage composition image referred to in the PRD. The implementation follows the written split composition; pixel fidelity to the unavailable image has not been verified.
-- Project crops/recordings, rights-cleared landscape capsules, resume, and verified contact/profile links belong to later tickets and release preparation.
+- Project crops/recordings and rights-cleared landscape capsules belong to later tickets. Ticket 02 verified email/profile destinations and inspected the source resume; a current release resume remains pending. See [content sources](portfolio-content.md).
 
-The homepage labels its development state. Project rows are not links until their actual case-study destinations exist; Resume is visibly unavailable; contact copy has no invented email action. About currently targets the compact homepage section.
+The homepage labels its development state. Project rows remain static until their case studies exist. Resume is visibly unavailable. About now opens /about, and contact opens an email draft to the user-confirmed address.
 
 No stock or generated imagery was used. User-supplied originals remain unchanged.

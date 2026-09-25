@@ -61,14 +61,14 @@ components:
 
 The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.
 
-This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers ticket 01, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
+This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation and ticket 02 About/contact additions, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
 
 **Key Characteristics:**
 
 - Warm off-white and charcoal with one cobalt accent.
 - Large, tightly spaced typography and generous section spacing.
 - Rectangular photography, thin dividers, and small cobalt corners.
-- Native anchor navigation in the current development preview.
+- Native links connect the homepage, About page, email action, and confirmed professional profiles.
 
 ## Colors
 
@@ -122,7 +122,7 @@ The location badge is a small cobalt square labelled ID beside the Indonesia tex
 
 Project rows are a ruled ordered list of four projects. Number and category use muted text. Rows are currently static and have no hover preview or case-study navigation.
 
-About pairs a small label with a large statement and decorative corner. The contact section uses a full cobalt field, a large heading, and a home link. Its current contact note is development copy, not a contact action.
+About pairs a small label with a large statement, decorative corner, and More about me link. The separate About page uses a 900px reading width and ruled label/body rows that stack below 650px. The contact section uses a full cobalt field with the heading and unboxed arrow as one mailto action, followed by the email address and professional links. Resume remains unavailable until a current PDF is verified.
 
 Scroll-linked role tracks, expanding previews, magnetic controls, the image-inverting cursor, compact header, Sliding Stairs Menu, shared-image route transitions, and horizontal project media are not implemented in this foundation. No motion durations or easing tokens exist. Reduced-motion CSS retains automatic scrolling.
 
@@ -138,5 +138,5 @@ Scroll-linked role tracks, expanding previews, magnetic controls, the image-inve
 ### Don't:
 
 - Don't promote the current neutral fallback to approved typography.
-- Don't describe static project rows or pending contact details as completed interactions.
+- Don't describe static project rows or the pending resume as completed interactions.
 - Don't claim a pixel match to the missing composition image or a complete release.

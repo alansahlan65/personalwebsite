@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-24T17:59:35.2537082Z",
+  "generatedAt": "2026-09-25T01:50:47.694Z",
   "title": "Design System: Alan Sahlan portfolio",
   "extensions": {
     "typographyMeta": {
@@ -63,8 +63,8 @@
       "name": "Primary navigation",
       "kind": "nav",
       "refersTo": "primary-nav",
-      "description": "Native homepage anchors with unavailable Resume text.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#work\">Work</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a><span aria-disabled=\"true\">Resume</span></nav>",
+      "description": "Shared navigation to homepage anchors and the About route, with unavailable Resume text.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"/#work\">Work</a><a href=\"/about\">About</a><a href=\"/#contact\">Contact</a><span aria-disabled=\"true\">Resume</span></nav>",
       "css": ".ds-nav{font-family:var(--font-body);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(1.4rem,2.8vw,2.8rem);font-size:.9375rem;font-weight:500;color:var(--ink)}.ds-nav a,.ds-nav span{display:inline-flex;align-items:center;min-height:44px}.ds-nav a{color:inherit;text-decoration:none;text-decoration-thickness:1px;text-underline-offset:.3em}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:2px solid currentColor;outline-offset:6px}.ds-nav span{color:var(--muted);cursor:default}@media(max-width:650px){.ds-nav{justify-content:space-between;gap:.75rem;font-size:.875rem}}"
     },
     {
@@ -88,25 +88,25 @@
       "kind": "custom",
       "refersTo": "about-copy",
       "description": "Large statement with a decorative cobalt corner.",
-      "html": "<div class=\"ds-about\"><span class=\"ds-corner\" aria-hidden=\"true\"></span><p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p></div>",
+      "html": "<div class=\"ds-about\"><span class=\"ds-corner\" aria-hidden=\"true\"></span><p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p><a href=\"/about\">More about me <span aria-hidden=\"true\">↗</span></a></div>",
       "css": ".ds-about{font-family:var(--font-body);position:relative;max-width:780px;padding-top:2rem;color:var(--ink)}.ds-about p{margin:0;font-size:clamp(1.65rem,2.6vw,2.65rem);line-height:1.3;letter-spacing:-.025em}.ds-corner{position:absolute;left:0;top:0;width:16px;height:16px;border-top:4px solid var(--cobalt);border-left:4px solid var(--cobalt)}@media(forced-colors:active){.ds-corner{border-color:CanvasText}}"
     },
     {
       "name": "Contact field",
       "kind": "custom",
       "refersTo": "contact",
-      "description": "Current heading and development note; no contact action exists.",
-      "html": "<section class=\"ds-contact\"><div class=\"ds-width\"><h2>Let’s work<br>together.</h2><p>Contact details will be added soon.</p></div></section>",
-      "css": ".ds-contact{font-family:var(--font-body);background:var(--cobalt);color:var(--canvas);padding-block:5.5rem 1.5rem}.ds-width{width:min(100% - var(--gutter)*2,1440px);margin-inline:auto}.ds-contact h2{margin:0;font-size:clamp(3.4rem,7.5vw,7.6rem);font-weight:400;letter-spacing:-.04em;line-height:1.02}.ds-contact p{font-size:.9375rem;margin:1.75rem 0 0}@media(max-width:650px){.ds-contact{padding-block:3.5rem 1.5rem}.ds-contact h2{font-size:clamp(2rem,14vw,4rem);overflow-wrap:anywhere}}"
+      "description": "Email action with unboxed arrow on cobalt; professional links follow it in the shared footer.",
+      "html": "<section class=\"ds-contact\"><div class=\"ds-width\"><h2><a class=\"ds-contact-action\" href=\"mailto:alansahlanwork@gmail.com\"><span>Let’s work<br>together.</span><span aria-hidden=\"true\">↗</span></a></h2><p>For Product Designer opportunities and collaboration.</p></div></section>",
+      "css": ".ds-contact{font-family:var(--font-body);background:var(--cobalt);color:var(--canvas);padding-block:5.5rem 1.5rem}.ds-width{width:min(100% - var(--gutter)*2,1440px);margin-inline:auto}.ds-contact h2{margin:0;font-size:clamp(3.4rem,7.5vw,7.6rem);font-weight:400;letter-spacing:-.04em;line-height:1.02}.ds-contact p{font-size:.9375rem;margin:1.75rem 0 0}@media(max-width:650px){.ds-contact{padding-block:3.5rem 1.5rem}.ds-contact h2{font-size:clamp(2rem,14vw,4rem);overflow-wrap:anywhere}}.ds-contact-action{display:inline-flex;align-items:baseline;gap:clamp(1rem,4vw,4rem);color:inherit;text-decoration:none;max-width:100%}.ds-contact-action>span:last-child{font-size:.7em;flex-shrink:0}.ds-contact-action:focus-visible{outline:2px solid currentColor;outline-offset:6px}@media(max-width:650px){.ds-contact-action{gap:.5rem}.ds-contact-action>span:first-child{min-width:0}}"
     }
   ],
   "narrative": {
-    "overview": "The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.\n\nThis record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers ticket 01, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.",
+    "overview": "The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.\n\nThis record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation and ticket 02 About/contact additions, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.",
     "keyCharacteristics": [
       "Warm off-white and charcoal with one cobalt accent.",
       "Large, tightly spaced typography and generous section spacing.",
       "Rectangular photography, thin dividers, and small cobalt corners.",
-      "Native anchor navigation in the current development preview."
+      "Native links connect the homepage, About page, email action, and confirmed professional profiles."
     ],
     "rules": [
       {
@@ -134,7 +134,7 @@
     ],
     "donts": [
       "Don't promote the current neutral fallback to approved typography.",
-      "Don't describe static project rows or pending contact details as completed interactions.",
+      "Don't describe static project rows or the pending resume as completed interactions.",
       "Don't claim a pixel match to the missing composition image or a complete release."
     ]
   }
