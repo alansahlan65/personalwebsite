@@ -41,7 +41,7 @@ for (const width of [320, 390, 650, 768, 1000, 1440]) {
     await expect(navigation.getByRole("link")).toHaveCount(3);
     await expect(navigation.getByText("Resume", { exact: true })).toHaveAttribute("aria-disabled", "true");
     await navigation.getByRole("link", { name: "About", exact: true }).click();
-    await expect(page.getByRole("heading", { name: "About", exact: true })).toBeInViewport();
+    await expect(page.getByRole("heading", { name: "About me", exact: true })).toBeInViewport();
     await navigation.getByRole("link", { name: "Contact", exact: true }).click();
     await expect(page.getByRole("heading", { name: "Let’s work together.", exact: true })).toBeInViewport();
   });
@@ -63,4 +63,3 @@ test("reduced motion and enlarged text preserve content and real destinations", 
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await expect(page.getByRole("heading", { name: "Selected work", exact: true })).toBeVisible();
 });
-

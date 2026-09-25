@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { RouteFocus } from "./components/route-focus";
 
 export const metadata: Metadata = {
   title: "Alan Sahlan — Product Designer",
@@ -9,6 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body><RouteFocus />{children}</body></html>;
 }
-

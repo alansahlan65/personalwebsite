@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SiteHeader } from "./components/site-header";
+import { SiteFooter } from "./components/site-footer";
 
 const projects = [
   { name: "Aurelia", category: "Hospitality" },
@@ -11,23 +13,11 @@ const projects = [
 export default function Home() {
   return (
     <>
-      <a className="skip-link" href="#main">Skip to content</a>
-      <header className="site-header page-width">
-        <Link className="brand" href="/" aria-label="Alan Sahlan, home">
-          <Image src="/images/alan-logo.png" width={52} height={52} alt="" />
-          <span>Alan Sahlan</span>
-        </Link>
-        <nav className="primary-nav" aria-label="Primary">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <span className="unavailable" aria-disabled="true" title="Resume will be added after verification">Resume</span>
-        </nav>
-      </header>
+      <SiteHeader page="home" />
       <main id="main" tabIndex={-1}>
         <section className="hero page-width" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <h1 id="hero-title">Alan<br />Sahlan<span className="name-period">.</span></h1>
+            <h1 id="hero-title" tabIndex={-1}>Alan<br />Sahlan<span className="name-period">.</span></h1>
             <p className="hero-role">Design <span className="role-dot">•</span> Engineer</p>
           </div>
           <div className="portrait-frame">
@@ -43,7 +33,7 @@ export default function Home() {
             <p>Product Designer</p><p>Design Engineer</p><p>Interaction Designer</p>
           </div>
         </section>
-        <section className="work page-width" id="work" aria-labelledby="work-title">
+        <section className="work page-width" id="work" tabIndex={-1} aria-labelledby="work-title">
           <div className="section-intro">
             <h2 className="section-label" id="work-title">Selected work</h2>
             <p className="development-note">Case studies in preparation</p>
@@ -62,25 +52,11 @@ export default function Home() {
           <div className="about-copy">
             <span className="about-corner" aria-hidden="true" />
             <p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p>
+            <Link className="about-link" href="/about">More about me <span aria-hidden="true">↗</span></Link>
           </div>
         </section>
-        <footer className="contact" id="contact" aria-labelledby="contact-title">
-          <div className="page-width">
-            <h2 id="contact-title">Let’s work<br />together.</h2>
-            <p className="contact-note">Contact details will be added soon.</p>
-            <div className="footer-bottom">
-              <Link className="footer-home" href="/" aria-label="Alan Sahlan, home">
-                <Image src="/images/alan-logo.png" alt="" width={64} height={64} /><span>Alan Sahlan</span>
-              </Link>
-              <p>© {new Date().getFullYear()} Alan Sahlan</p>
-            </div>
-            <p className="preview-note">Development preview. Typography and remaining interactions are in progress.</p>
-          </div>
-        </footer>
       </main>
+      <SiteFooter />
     </>
   );
 }
-
-
-
