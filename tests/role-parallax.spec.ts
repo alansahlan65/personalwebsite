@@ -76,7 +76,7 @@ test("resize and changed font metrics recalculate coverage at the current scroll
   await expect.poll(() => positions(page)).not.toEqual(before);
   await expectCovered(page, 320);
   await page.evaluate(async () => {
-    const font = new FontFace("Role metric check", "local('Courier New')");
+    const font = new FontFace("Role metric check", "local('Courier New'), local('Menlo'), local('DejaVu Sans Mono'), local('Liberation Mono')");
     await font.load();
     document.fonts.add(font);
     document.querySelectorAll<HTMLElement>(".role-unit").forEach((element) => element.style.fontFamily = "'Role metric check'");
