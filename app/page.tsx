@@ -1,3 +1,4 @@
+import { ArrowIcon } from "./components/ui-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "./components/site-header";
@@ -35,7 +36,7 @@ export default function Home() {
           <div className="about-copy">
             <span className="about-corner" aria-hidden="true" />
             <p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p>
-            <Link className="about-link" href="/about" data-magnet="text"><span data-magnet-part>More about me</span> <span data-magnet-part aria-hidden="true">↗</span></Link>
+            <Link className="about-link" href="/about" data-magnet="text"><span data-magnet-part>More about me</span> <span data-magnet-part aria-hidden="true"><ArrowIcon direction="right" /></span></Link>
           </div>
         </section>
       </main>

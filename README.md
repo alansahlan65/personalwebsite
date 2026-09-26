@@ -24,3 +24,7 @@ Halyard web-font delivery is still missing. The current neutral fallback is temp
 The development preview is marked noindex until release acceptance. The default framework not-found screen is temporary; ticket 12 provides the portfolio-specific recovery experience.
 
 Requirements are in [the PRD](portfolio-prd-halyard.md), [the spec](.scratch/portfolio-halyard/spec.md), and [the implementation tickets](.scratch/portfolio-halyard/issues).
+
+## UI polish
+
+The all-page better-ui pass adds shared vector icons, contextual menu state feedback, stable press visuals, consistent image outlines, and refined floating controls. See [the UI review and verification](docs/ui-polish.md).

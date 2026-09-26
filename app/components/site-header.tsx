@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
+import { ArrowIcon, MenuIcon } from "./ui-icons";
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent, type MouseEvent } from "react";
 
 type MenuPhase = "closed" | "opening" | "open" | "closing";
@@ -28,8 +29,26 @@ function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
   return event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
 }
 
-function MenuTriggerContent() {
-  return <><span data-magnet-part>Menu</span><span data-magnet-part className="menu-trigger-icon" aria-hidden="true"><i /><i /></span></>;
+function MenuControlContent({ label = "Menu", icon = "menu", reducedMotion = false, static: isStatic = false }: {
+  label?: string;
+  icon?: "menu" | "close";
+  reducedMotion?: boolean;
+  static?: boolean;
+}) {
+  return <span className="menu-control-visual" data-press-static={isStatic ? "true" : undefined}>
+    <span className="menu-control-label" data-magnet-part>{label}</span>
+    <span data-magnet-part className="menu-trigger-icon" aria-hidden="true">
+      {reducedMotion ? <MenuIcon kind={icon} /> : <AnimatePresence initial={false}>
+        <motion.span className="menu-icon-layer" key={icon}
+          initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+          exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+          transition={{ type: "spring", duration: 0.3, bounce: 0 }}>
+          <MenuIcon kind={icon} />
+        </motion.span>
+      </AnimatePresence>}
+    </span>
+  </span>;
 }
 
 export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
@@ -189,11 +208,11 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
           <span className="unavailable" aria-disabled="true" title="Resume will be added after verification">Resume</span>
         </nav>
         <button className="full-menu-trigger" type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" data-magnet="control">
-          <MenuTriggerContent />
+          <MenuControlContent />
         </button>
       </header>
       <button ref={compactTriggerRef} onBlur={() => requestAnimationFrame(updateMode)} className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1} data-magnet="control">
-        <MenuTriggerContent />
+        <MenuControlContent />
       </button>
       {menuActive && (
         <div className={["stairs-menu", phase === "closing" ? "stairs-menu--closing" : ""].join(" ")} role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>
@@ -209,20 +228,20 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
             ))}
           </div>
           <div className="stairs-content page-width">
-            <div className="stairs-topline"><span>Alan Sahlan</span><button ref={closeRef} className="stairs-close" type="button" onClick={() => phase === "closing" ? openMenu() : closeMenu()} aria-label={phase === "closing" ? "Reopen menu" : "Close menu"} data-magnet="control"><span data-magnet-part>{phase === "closing" ? "Open" : "Close"}</span><span data-magnet-part aria-hidden="true">×</span></button></div>
+            <div className="stairs-topline"><span>Alan Sahlan</span><button ref={closeRef} className="stairs-close" type="button" onClick={() => phase === "closing" ? openMenu() : closeMenu()} aria-label={phase === "closing" ? "Reopen menu" : "Close menu"} data-magnet="control"><MenuControlContent label={phase === "closing" ? "Open" : "Close"} icon={phase === "closing" ? "menu" : "close"} reducedMotion={reducedMotion} /></button></div>
             <nav className="stairs-nav" aria-label="Menu">
               {primaryLinks.map((link, index) => (
                 <Link className="stairs-link" key={link.label} href={link.href} aria-label={link.label} onClick={onMenuLinkClick} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text">
                   <span className="stairs-index" aria-hidden="true">0{index + 1}</span>
                   <span className="stairs-static-label" data-magnet-part>{link.label}</span>
                   <span className="stairs-marquee" aria-hidden="true"><span className="stairs-marquee-magnet" data-magnet-part>{Array.from({ length: 4 }, (_, repeat) => <span className="stairs-marquee-item" key={repeat}>{link.label}<Image src="/images/alan-logo.png" width={48} height={48} alt="" /></span>)}</span></span>
-                  <span className="stairs-arrow" aria-hidden="true" data-magnet-part>↗</span>
+                  <span className="stairs-arrow" aria-hidden="true" data-magnet-part><ArrowIcon /></span>
                 </Link>
               ))}
               <div className="stairs-link stairs-resume" aria-disabled="true"><span className="stairs-index" aria-hidden="true">04</span><span>Resume</span><span className="stairs-pending">Coming soon</span></div>
             </nav>
             <nav className="stairs-profiles" aria-label="Professional profiles in menu">
-              {professionalLinks.map((link) => <a key={link.label} href={link.href} onClick={onMenuLinkClick} data-magnet="text"><span data-magnet-part>{link.label}</span> <span data-magnet-part aria-hidden="true">↗</span></a>)}
+              {professionalLinks.map((link) => <a key={link.label} href={link.href} onClick={onMenuLinkClick} data-magnet="text"><span data-magnet-part>{link.label}</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a>)}
             </nav>
           </div>
         </div>

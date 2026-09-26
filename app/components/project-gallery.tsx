@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "./ui-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -81,7 +82,7 @@ export function ProjectGallery() {
                 </ProjectImageTransition>
               </motion.span>
               <span className="project-category">{project.category}</span>
-              <span className="project-arrow" aria-hidden="true" data-magnet-part>↗</span>
+              <span className="project-arrow" aria-hidden="true" data-magnet-part><ArrowIcon /></span>
             </Link>
           ) : (
             <>

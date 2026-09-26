@@ -1,3 +1,4 @@
+import { ArrowIcon } from "./ui-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ export function SiteFooter() {
         <h2 id="contact-title">
           <a className="contact-action" href="mailto:alansahlanwork@gmail.com" data-magnet="control">
             <span data-magnet-part>Let’s work<br />together.</span>
-            <span className="contact-arrow" aria-hidden="true" data-magnet-part>↗</span>
+            <span className="contact-arrow" aria-hidden="true" data-magnet-part><ArrowIcon /></span>
           </a>
         </h2>
         <p className="contact-note">For Product Designer opportunities and collaboration.</p>

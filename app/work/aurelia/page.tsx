@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../components/ui-icons";
 import type { Metadata } from "next";
 import { CaseMediaSequence, type CaseMediaPanel } from "../../components/case-media-sequence";
 import Image from "next/image";
@@ -54,7 +55,7 @@ export default function AureliaPage() {
             <div><dt>Collaborators</dt><dd>None.</dd></div>
             <div><dt>Status</dt><dd>Concept. A request on the live site is not a confirmed booking.</dd></div>
           </dl>
-          <a className="case-live-link" href="https://aurelia.alansahlanwork.workers.dev/" data-magnet="text"><span data-magnet-part>View the live Aurelia concept</span> <span data-magnet-part aria-hidden="true">↗</span></a>
+          <a className="case-live-link" href="https://aurelia.alansahlanwork.workers.dev/" data-magnet="text"><span data-magnet-part>View the live Aurelia concept</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a>
         </div>
         <section className="case-decisions page-width" aria-labelledby="case-decisions-title">
           <h2 id="case-decisions-title">Design decisions</h2>

@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "./ui-icons";
 import Image from "next/image";
 import { scrollInfo } from "motion";
 import { motion, useMotionValue } from "motion/react";
@@ -120,7 +121,7 @@ export function CaseMediaSequence({ id, title, panels, skipTo, skipLabel }: {
           <h2 id={`${id}-title`}>{title}</h2>
           <div className="case-media-controls">
             <div className="case-media-progress"><span aria-hidden="true">0{current} / 0{panels.length}</span><progress aria-label="Media sequence progress" max={panels.length} value={current} /></div>
-            <a href={`#${skipTo}`} data-magnet="text"><span data-magnet-part>{skipLabel}</span> <span data-magnet-part aria-hidden="true">↓</span></a>
+            <a href={`#${skipTo}`} data-magnet="text"><span data-magnet-part>{skipLabel}</span> <span data-magnet-part aria-hidden="true"><ArrowIcon direction="down" /></span></a>
           </div>
         </div>
         <div className="case-media-viewport page-width" ref={viewport}>
@@ -129,7 +130,7 @@ export function CaseMediaSequence({ id, title, panels, skipTo, skipLabel }: {
               <article className="case-media-panel" key={panel.id} aria-labelledby={`${id}-${panel.id}`}>
                 <div className="case-media-copy"><p className="section-label">0{index + 1}</p><h3 id={`${id}-${panel.id}`}>{panel.title}</h3><p>{panel.description}</p></div>
                 <figure><Image src={panel.image} alt={panel.alt} width={1440} height={900} sizes="(min-width: 1000px) 55vw, 90vw" />
-                  <figcaption><span>Live concept, 26 September 2026.</span><a href={panel.image} target="_blank" rel="noreferrer" data-magnet="text"><span data-magnet-part>Open {panel.id} screenshot</span> <span data-magnet-part aria-hidden="true">↗</span></a></figcaption>
+                  <figcaption><span>Live concept, 26 September 2026.</span><a href={panel.image} target="_blank" rel="noreferrer" data-magnet="text"><span data-magnet-part>Open {panel.id} screenshot</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a></figcaption>
                 </figure>
               </article>
             ))}

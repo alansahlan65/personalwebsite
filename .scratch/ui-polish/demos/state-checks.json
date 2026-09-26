@@ -1,0 +1,140 @@
+{
+  "press": {
+    "bounds": {
+      "x": 1274.078125,
+      "y": 30.390625,
+      "width": 93.921875,
+      "height": 44
+    },
+    "initial": {
+      "x": 1274.078125,
+      "y": 30.390625,
+      "width": 93.921875,
+      "height": 44
+    },
+    "scale": "0.96"
+  },
+  "reducedPressScale": "1",
+  "reducedIcon": "M6 6l12 12 M18 6 6 18",
+  "currentPageCue": {
+    "background": "rgba(246, 245, 241, 0.08)",
+    "underline": "underline"
+  },
+  "errors": [],
+  "slowReview": {
+    "method": "Native icon opacity/filter timelines paused and scrubbed by 15 ms every 150 ms wall time. Menu phase cleanup extended only in the review browser. Reversal checked halfway through. JavaScript scale and stairs motion inspected at normal speed.",
+    "closeFrames": [
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "opacity": "1"
+          },
+          {
+            "offset": null,
+            "opacity": "0"
+          }
+        ]
+      },
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "filter": "blur(0px)"
+          },
+          {
+            "offset": null,
+            "filter": "blur(4px)"
+          }
+        ]
+      },
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "opacity": "0"
+          },
+          {
+            "offset": null,
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "filter": "blur(4px)"
+          },
+          {
+            "offset": null,
+            "filter": "blur(0px)"
+          }
+        ]
+      }
+    ],
+    "reopenFrames": [
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "opacity": "0"
+          },
+          {
+            "offset": null,
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "filter": "blur(4px)"
+          },
+          {
+            "offset": null,
+            "filter": "blur(0px)"
+          }
+        ]
+      },
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "opacity": "1"
+          },
+          {
+            "offset": null,
+            "opacity": "0"
+          }
+        ]
+      },
+      {
+        "duration": 300,
+        "frames": [
+          {
+            "offset": null,
+            "filter": "blur(0px)"
+          },
+          {
+            "offset": null,
+            "filter": "blur(4px)"
+          }
+        ]
+      }
+    ]
+  },
+  "notVerified": [
+    "JavaScript-driven scale and stairs replay at ten-percent speed",
+    "Delivered Halyard rendering",
+    "Other browser engines and physical touch devices"
+  ]
+}
