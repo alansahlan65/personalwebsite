@@ -33,3 +33,9 @@ Typecheck, lint, and production build pass. All 15 new media tests and all 19 ex
 ### Review corrections — 2026-09-26
 
 Standards review reported no documented breaches and one optional duplicate scroll mapping; that mapping is now shared. Spec review found that a focused toolbar Skip control could move offscreen on desktop-to-stack transitions. A new failing browser test reproduced it. Focused controls now take precedence over the reading-panel anchor, and the test passes resize and runtime motion changes. The delayed-image fixture waits for enhancement before comparing image dimensions; the source stays blocked during that wait, and the corrected check passed three repetitions. Terminology uses the existing “catalog” spelling, and the shared pointer inventory includes all new actions.
+
+### Final verification — 2026-09-26
+
+The full browser suite ran once at the end against the corrected production preview: **94/94 Chromium tests passed** (56.8 seconds), including all 16 media tests. Typecheck, lint, and production build pass. The focused toolbar check requires the entire Skip link to be visible after resize and both motion changes. The integrated recording/screenshots and local measurements were refreshed from the corrected build.
+
+Independent follow-up confirmed the Standards mapping correction and Spec toolbar-focus correction, with no remaining findings or new scope creep. Standards: 1 optional finding resolved, 0 documented breaches. Spec: 1 finding resolved. All implementation criteria are checked; release dependencies remain documented above.
