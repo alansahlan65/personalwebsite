@@ -15,8 +15,20 @@ The original photo and mark were visually inspected. The portrait contains Alan 
 
 - Halyard Display Variable font files or an authorized Adobe Fonts web-project stylesheet. CSS currently attempts local Halyard, then uses the approved neutral loading/development fallback. This is not delivered web typography and does not satisfy the font acceptance criterion.
 - The approved homepage composition image referred to in the PRD. The implementation follows the written split composition; pixel fidelity to the unavailable image has not been verified.
-- Remaining project media and rights-cleared landscape capsules belong to later tickets. Ticket 02 verified email/profile destinations and inspected the source resume; a current release resume remains pending. See [content sources](portfolio-content.md).
+- Remaining project media belongs to later tickets. Ticket 07 supplies the decorative landscape capsules below. Ticket 02 verified email/profile destinations and inspected the source resume; a current release resume remains pending. See [content sources](portfolio-content.md).
 
 The homepage labels its development state. Aurelia is an interactive gallery link; the other project rows remain static until their case studies exist. Resume is visibly unavailable. About now opens /about, and contact opens an email draft to the user-confirmed address.
 
-No stock or generated imagery was used. User-supplied originals remain unchanged. The Aurelia derivative is a screenshot of the live concept, not a separately verified source photograph.
+No generated imagery was used. Ticket 07 uses the CC0 photographs recorded below. User-supplied originals remain unchanged. The Aurelia derivative is a screenshot of the live concept, not a separately verified source photograph.
+
+## Decorative role photographs
+
+Verified and prepared 2026-09-26. Each creator published their own photograph under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). The source pages record that permission. These images make no claim about Alan's location or project involvement.
+
+| Shipping file | Photograph and creator | Preparation |
+| --- | --- | --- |
+| `role-ocean.webp` | [Still and clear sea](https://commons.wikimedia.org/wiki/File:Still_and_clear_sea.jpg), Jdszekeres, 5 April 2024 | 800 × 360, WebP quality 82, 54,882 bytes |
+| `role-mountain.webp` | [Goell Kellau](https://commons.wikimedia.org/wiki/File:Goell_Kellau.JPG), Enschiner, 10 May 2008 | 800 × 360, WebP quality 82, 52,970 bytes |
+| `role-coast.webp` | [Beach Scene](https://commons.wikimedia.org/wiki/File:Beach_Scene.jpg), Tammcd7, 16 June 2013 | 800 × 360, WebP quality 82, 65,128 bytes |
+
+All three crops were visually inspected. They retain the source colors and use a centered landscape crop. Their adjacent `.webp.json` records preserve original URLs, creators, license URLs, verification date, and preparation. Empty alt text hides the images from assistive technology; decorative repeated units also have `aria-hidden`. Halyard web-font delivery remains pending.

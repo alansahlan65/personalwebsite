@@ -48,10 +48,18 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .location-id { display: grid; place-items: center; width: 36px; height: 36px; color: var(--canvas); background: var(--cobalt); font-size: .75rem; font-weight: 500; }
 .section-label { font-size: .9375rem; font-weight: 500; line-height: 1.5; }
 .roles { padding-block: 5.75rem 6.75rem; border-top: 1px solid var(--divider); }
-.role-lines { margin-top: 3rem; }
-.role-lines p { font-size: clamp(1.65rem, 6.6vw, 6.7rem); font-weight: 500; line-height: 1.22; letter-spacing: -.035em; }
-.role-lines p:nth-child(2) { text-align: right; color: var(--cobalt); }
-.role-lines p:nth-child(3) { text-align: center; }
+.role-lines { margin-top: 3rem; display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
+.role-viewport { overflow: clip; width: 100%; min-width: 0; }
+.role-track { display: flex; width: max-content; }
+.role-unit { display: flex; flex: none; align-items: center; gap: .4em; padding-right: .4em; font-size: clamp(1.65rem, 6.6vw, 6.7rem); font-weight: 500; line-height: 1.22; letter-spacing: -.035em; white-space: nowrap; }
+.role-unit img { width: clamp(110px, 18vw, 260px); height: clamp(48px, 7.8vw, 112px); object-fit: cover; border-radius: 999px; flex: none; }
+.role-viewport:nth-child(2) { color: var(--cobalt); }
+@media (prefers-reduced-motion: reduce) {
+  .role-track { transform: none !important; width: auto; }
+  .role-unit { flex: 1; flex-wrap: wrap; white-space: normal; padding-inline: var(--gutter); gap: .4em; }
+  .role-unit p { overflow-wrap: anywhere; }
+  .role-unit[aria-hidden="true"] { display: none; }
+}
 .work { padding-block: 3rem 5rem; }
 .section-intro { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .6rem 2rem; margin-bottom: 2rem; }
 .development-note { color: var(--muted); font-size: .8125rem; }
@@ -90,7 +98,7 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
   .location { position: static; flex-wrap: wrap; font-size: .875rem; }
   .roles { padding-block: 3rem 3.5rem; }
   .role-lines { margin-top: 1.75rem; }
-  .role-lines p { line-height: 1.6; }
+  .role-lines { gap: 1.25rem; }
   .work { padding-block: 2rem 2.5rem; }
   .section-intro { margin-bottom: 1.4rem; }
   .project-row { grid-template-columns: 1.6rem minmax(0, 1fr); column-gap: .65rem; row-gap: .4rem; min-height: 110px; padding-block: 1.3rem; }

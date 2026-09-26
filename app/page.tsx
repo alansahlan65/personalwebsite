@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
 import { ProjectGallery } from "./components/project-gallery";
+import { RoleParallax } from "./components/role-parallax";
 
 export default function Home() {
   return (
@@ -21,12 +22,7 @@ export default function Home() {
           </div>
           <p className="location"><span className="location-id" aria-hidden="true">ID</span><span>Based in Indonesia</span></p>
         </section>
-        <section className="roles" aria-labelledby="roles-title">
-          <div className="page-width"><h2 className="section-label" id="roles-title">Design / Build / Refine</h2></div>
-          <div className="role-lines page-width">
-            <p>Product Designer</p><p>Design Engineer</p><p>Interaction Designer</p>
-          </div>
-        </section>
+        <RoleParallax />
         <section className="work page-width" id="work" tabIndex={-1} aria-labelledby="work-title">
           <div className="section-intro">
             <h2 className="section-label" id="work-title">Selected work</h2>
