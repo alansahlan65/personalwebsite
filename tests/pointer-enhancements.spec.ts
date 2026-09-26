@@ -187,3 +187,37 @@ test("the project opens at the actual pointer position while its preview and tit
   await page.mouse.up();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
 });
+
+
+test("native cursor hiding waits for the first replacement frame", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
+  const readyDuringInput = await page.locator(".portrait-frame img").evaluate((element) => {
+    window.dispatchEvent(new Event("blur"));
+    const rect = element.getBoundingClientRect();
+    element.dispatchEvent(new PointerEvent("pointermove", { bubbles: true, pointerType: "mouse", clientX: rect.left + rect.width / 2, clientY: 250 }));
+    return document.documentElement.hasAttribute("data-cursor-ready");
+  });
+  expect(readyDuringInput).toBe(false);
+  await expect(page.locator("html")).toHaveAttribute("data-cursor-ready", "true");
+  const replacement = await page.locator(".site-cursor").boundingBox();
+  expect(replacement!.y).toBeGreaterThan(200);
+});
+
+test("closing and reopening the menu reset pointer feedback immediately", async ({ page }) => {
+  await page.goto("/");
+  await page.locator(".full-menu-trigger").click();
+  const menu = page.getByRole("dialog", { name: "Navigation menu" });
+  const cursor = page.locator(".site-cursor");
+  await menu.getByRole("link", { name: "Work", exact: true }).hover();
+  await expect(cursor).toHaveAttribute("data-mode", "dot");
+  await page.keyboard.press("Escape");
+  await expect(menu).toHaveClass(/stairs-menu--closing/);
+  expect(await cursor.getAttribute("data-mode")).toBe("hidden");
+  const reopen = menu.getByRole("button", { name: "Reopen menu" });
+  await reopen.hover();
+  await expect(cursor).toHaveAttribute("data-mode", "dot");
+  await page.keyboard.press("Enter");
+  await expect(menu).not.toHaveClass(/stairs-menu--closing/);
+  expect(await cursor.getAttribute("data-mode")).toBe("hidden");
+});

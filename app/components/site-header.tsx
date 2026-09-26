@@ -28,6 +28,10 @@ function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
   return event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
 }
 
+function MenuTriggerContent() {
+  return <><span data-magnet-part>Menu</span><span data-magnet-part className="menu-trigger-icon" aria-hidden="true"><i /><i /></span></>;
+}
+
 export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
   const [mode, setMode] = useState<HeaderMode>("full");
   const [phase, setPhase] = useState<MenuPhase>("closed");
@@ -83,7 +87,8 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
   }, [phase, reducedMotion]);
 
   const menuActive = phase !== "closed";
-  useEffect(() => { window.dispatchEvent(new Event("portfolio:menu-change")); }, [menuActive]);
+  const menuClosing = phase === "closing";
+  useEffect(() => { window.dispatchEvent(new Event("portfolio:menu-change")); }, [menuActive, menuClosing]);
   useEffect(() => {
     if (!menuActive) return;
     const y = scrollBeforeOpen.current;
@@ -184,11 +189,11 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
           <span className="unavailable" aria-disabled="true" title="Resume will be added after verification">Resume</span>
         </nav>
         <button className="full-menu-trigger" type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" data-magnet="control">
-          <span data-magnet-part>Menu</span><span data-magnet-part className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
+          <MenuTriggerContent />
         </button>
       </header>
       <button ref={compactTriggerRef} onBlur={() => requestAnimationFrame(updateMode)} className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1} data-magnet="control">
-        <span data-magnet-part>Menu</span><span data-magnet-part className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
+        <MenuTriggerContent />
       </button>
       {menuActive && (
         <div className={["stairs-menu", phase === "closing" ? "stairs-menu--closing" : ""].join(" ")} role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>

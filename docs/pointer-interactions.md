@@ -28,7 +28,7 @@ No semantic action contains another magnetic target. The menu owns feedback whil
 
 The cursor is `aria-hidden` and `pointer-events: none`. Its white disc uses `mix-blend-mode: difference`; an independent outlined arrow remains readable on actionable images. Portrait and case-study hero imagery have no arrow. Brand logos and the Aurelia preview are images inside links and receive the arrow.
 
-Enhancement requires a fine hovering pointer, normal motion preference, normal colors, ResizeObserver, and supported difference blending. Native cursor hiding is enabled only after a real pointer event establishes a replacement. Text contexts and selection restore the native cursor. Menu/route changes, blur, window exit, touch input, preference changes, and hidden tabs clear springs and pending cursor frames. Layout changes, font completion, scroll, and resize recheck the stationary target at the same real pointer position. Effect cleanup destroys Motion values and removes listeners/observers.
+Enhancement requires a fine hovering pointer, normal motion preference, normal colors, ResizeObserver, and supported difference blending. Native cursor hiding is enabled only after the first frame positions and reveals the replacement. Closing and reopening the menu clear feedback immediately while the overlay continues to own pointer input. Text contexts and selection restore the native cursor. Menu/route changes, blur, window exit, touch input, preference changes, and hidden tabs clear springs and pending cursor frames. Layout changes, font completion, scroll, and resize recheck the stationary target at the same real pointer position. Effect cleanup destroys Motion values and removes listeners/observers.
 
 ## Verification evidence
 

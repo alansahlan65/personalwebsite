@@ -22,4 +22,6 @@ Source: Alan Sahlan portfolio spec, revision 2, and PRD v2.1. Follow the confirm
 
 Completed 2026-09-26. Current actions use Motion springs on visible children with stationary native targets. Cursor inversion is verified on light and dark portrait pixels; the actionable-image arrow is separate from the difference-blend disc. The inventory, lifecycle behavior, verification conditions, and combined recording are documented in `docs/pointer-interactions.md`.
 
-Verification: 11 focused pointer checks and 57 full-suite Chromium checks passed; typecheck, lint, and production build passed. Keyboard focus, touch, reduced motion, forced colors, selection, exit/reentry, menu/route changes, and unsupported compositing retain usable native actions.
+Verification: 57 full-suite Chromium checks passed, followed by 29 affected pointer/menu checks (including 13 pointer checks) after review fixes; typecheck, lint, and production build passed. Keyboard focus, touch, reduced motion, forced colors, selection, exit/reentry, menu/route changes, and unsupported compositing retain usable native actions.
+
+Review fixes: native cursor hiding now follows the first positioned replacement frame; menu closing/reopening reset feedback immediately. The repeated Menu label/icon is shared. Both lifecycle regressions failed before the fixes and pass afterward.

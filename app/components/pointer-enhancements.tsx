@@ -4,6 +4,8 @@ import { motionValue, springValue, type MotionValue } from "motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 
+type CursorMode = "hidden" | "dot" | "image" | "action-image";
+
 type MagnetStrength = "text" | "control" | "project";
 type MagnetState = {
   target: HTMLElement;
@@ -48,6 +50,7 @@ export function PointerEnhancements() {
     let cursorGoalX = 0;
     let cursorGoalY = 0;
     let cursorVisible = false;
+    let cursorMode: CursorMode = "hidden";
     let cursorScale = 0.11;
     let cursorScaleGoal = 0.11;
     let enabled = finePointer.matches && !reducedMotion.matches && !forcedColors.matches;
@@ -66,6 +69,9 @@ export function PointerEnhancements() {
         cursorScale += (cursorScaleGoal - cursorScale) * CURSOR_SMOOTHING;
         disc!.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%) scale(${cursorScale})`;
         arrow!.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
+        disc!.dataset.mode = cursorMode;
+        arrow!.dataset.visible = cursorMode === "action-image" ? "true" : "false";
+        document.documentElement.dataset.cursorReady = "true";
         if (Math.abs(cursorGoalX - cursorX) > 0.2 || Math.abs(cursorGoalY - cursorY) > 0.2 || Math.abs(cursorScaleGoal - cursorScale) > 0.005) moving = true;
       }
 
@@ -133,7 +139,8 @@ export function PointerEnhancements() {
       }
     }
 
-    function setCursorMode(mode: "hidden" | "dot" | "image" | "action-image") {
+    function setCursorMode(mode: CursorMode) {
+      cursorMode = mode;
       if (mode === "hidden") {
         cursorVisible = false;
         cursorScale = 0.11;
@@ -149,9 +156,6 @@ export function PointerEnhancements() {
       }
       cursorVisible = true;
       cursorScaleGoal = mode === "dot" ? 0.11 : 1;
-      disc!.dataset.mode = mode;
-      arrow!.dataset.visible = mode === "action-image" ? "true" : "false";
-      document.documentElement.dataset.cursorReady = "true";
       schedule();
     }
 
