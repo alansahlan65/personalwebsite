@@ -14,29 +14,41 @@ const roles = [
 function RoleTrack({ role, progress }: { role: typeof roles[number]; progress: MotionValue<number> }) {
   const viewport = useRef<HTMLDivElement>(null);
   const unit = useRef<HTMLDivElement>(null);
+  const label = useRef<HTMLSpanElement>(null);
   const transform = useMotionValue("translate3d(0px, 0px, 0px)");
   const [copies, setCopies] = useState(4);
+  const [stationary, setStationary] = useState(false);
 
   useEffect(() => {
     const frame = viewport.current!;
     const phrase = unit.current!;
+    const sizingLabel = label.current!;
     let disposed = false;
     let unitWidth = 0;
     let travel = 0;
+    let start = 0;
     const update = () => {
-      const start = -unitWidth * role.offset - (role.direction === 1 ? travel : 0);
       transform.set(`translate3d(${start + role.direction * progress.get() * travel}px, 0px, 0px)`);
     };
     const measure = () => {
-      if (disposed) return;
+      if (disposed || !frame.isConnected) return;
       unitWidth = phrase.getBoundingClientRect().width;
-      travel = Math.min(frame.clientWidth * 0.32, 460);
-      if (unitWidth) setCopies(Math.ceil((frame.clientWidth + travel) / unitWidth) + 2);
+      const width = frame.clientWidth;
+      const labelWidth = sizingLabel.getBoundingClientRect().width;
+      const available = width - labelWidth - 48;
+      const cannotFit = available < 0;
+      setStationary(cannotFit);
+      travel = cannotFit ? 0 : Math.min(width * 0.32, 460, available);
+      // Keep the second copy's complete label inside the viewport throughout travel.
+      const stagger = Math.max(0, available - travel) * role.offset;
+      start = cannotFit ? 0 : -unitWidth + 24 + stagger + (role.direction === -1 ? travel : 0);
+      if (unitWidth) setCopies(Math.ceil((width + travel) / unitWidth) + 2);
       update();
     };
     const observer = new ResizeObserver(measure);
     observer.observe(frame);
     observer.observe(phrase);
+    observer.observe(sizingLabel);
     const unsubscribe = progress.on("change", update);
     measure();
     document.fonts.ready.then(measure);
@@ -51,7 +63,8 @@ function RoleTrack({ role, progress }: { role: typeof roles[number]; progress: M
 
   return (
     <div className="role-viewport" ref={viewport}>
-      <motion.div className="role-track" style={{ transform }}>
+      <span className="role-measure" ref={label} aria-hidden="true">{role.label}</span>
+      <motion.div className="role-track" data-stationary={stationary ? "true" : undefined} style={{ transform }}>
         {Array.from({ length: copies }, (_, index) => (
           <div className="role-unit" key={index} ref={index === 0 ? unit : undefined} aria-hidden={index === 0 ? undefined : true}>
             {index === 0 ? <p>{role.label}</p> : <span>{role.label}</span>}

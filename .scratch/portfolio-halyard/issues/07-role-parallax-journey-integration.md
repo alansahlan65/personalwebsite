@@ -26,3 +26,9 @@ The first checkbox remains open solely for Halyard web-font delivery. The existi
 The combined journey verifies menu pointer precedence, keyboard ownership of the gallery, shared Aurelia image entry, and return to the saved page position. No gallery pattern was duplicated. The recording covers scroll travel, stop/reversal, menu, keyboard project entry/return, mobile resize, and reduced motion: [demo](../demos/07-roles-integrated-journey.webm). Behavior and measured conditions are in [role parallax](../../../docs/role-parallax.md).
 
 Verification: typecheck, lint, and production build pass. The full Chromium browser suite passed 78/78 against the production preview, including 12 new role/integration tests. Required widths 320/390/650/768/1000/1440 px, loaded decorative images, semantic duplication, font metric changes, native touch gestures, enlarged text, and dynamic motion preferences are covered. Local frame timing and stopped-position measurements are recorded without claiming a cross-device performance score.
+
+## Review correction
+
+The Spec review found that at 320 px every moving copy of Product Designer and Interaction Designer could remain partly clipped. A new full-label browser assertion reproduced the issue. Travel is now bounded by measured label width, with staggered starts that retain one complete visible label throughout travel. Enlarged labels that cannot fit use a stationary wrapping row. The measurement label is hidden from assistive technology. The integrated journey also asserts that no browser errors occur during project entry/return.
+
+After this correction, the 40 affected homepage, pointer, shared-entry, and role tests passed in development; all 12 role/integration tests passed again against the corrected production build. Typecheck, lint, and build passed. The recording, screenshots, and measurements were refreshed, including a 320 px screenshot. The earlier full-suite run was 78/78.

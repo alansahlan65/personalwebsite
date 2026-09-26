@@ -4,17 +4,17 @@ Ticket 07 adds I-01 immediately after the hero. The section keeps the Design / B
 
 ## Scroll mapping
 
-Motion's `scrollInfo` maps section progress from `start end` to `end start`. Each row uses the same progress with alternating direction. Travel is 32% of viewport width, capped at 460 px. Initial offsets are 12%, 42%, and 26% of each measured phrase-and-image unit. Transforms are direct linear mappings, with no spring, time-based animation, or snapping.
+Motion's `scrollInfo` maps section progress from `start end` to `end start`. Each row uses the same progress with alternating direction. Travel is 32% of viewport width, capped at 460 px and by the space available around a complete role label. Each row reserves 24 px on either side of that label. Staggered offsets use 12%, 42%, and 26% of the remaining space. The second repeated label stays fully inside the viewport throughout the scroll range. Text that cannot fit uses a stationary wrapping row. Transforms are direct linear mappings, with no spring, time-based animation, or snapping.
 
 A ResizeObserver measures the visible frame and first repeated unit. The number of copies covers the viewport, travel, and two extra units. A constrained grid column and local `overflow: clip` keep the repeated content from increasing document width. Section size changes and font readiness reconnect the scroll measurement at the current position. Observers and subscriptions are removed on unmount.
 
-Each role has one semantic paragraph. Repeated phrases have `aria-hidden`; photographs have empty alt text. No new focus stops, pointer handlers, wheel handlers, or touch handlers are attached to this section.
+Each role has one semantic paragraph. Hidden sizing labels and repeated phrases have `aria-hidden`; photographs have empty alt text. No new focus stops, pointer handlers, wheel handlers, or touch handlers are attached to this section.
 
 Reduced motion uses CSS from the initial render: no transform, one wrapping unit per row, and stationary images. Changes to the preference stop or reconnect the Motion subscription. Enlarged text can wrap without hiding the complete semantic label.
 
 ## Verification
 
-Browser tests cover slow and large scroll steps, reversal, stopped positions, viewport resize, a loaded font with different metrics, actual browser touch events, reduced motion at load and after preference changes, and 200% text. Widths are 320, 390, 650, 768, 1000, and 1440 px. Every track covers both ends of its travel; the document stays within the viewport. Accessible snapshots expose each role once.
+Browser tests cover slow and large scroll steps, reversal, stopped positions, viewport resize, a loaded font with different metrics, actual browser touch events, reduced motion at load and after preference changes, and 200% text. Widths are 320, 390, 650, 768, 1000, and 1440 px. Every track covers both ends of its travel, and at least one complete role label fits at each sampled position. The document stays within the viewport. Accessible snapshots expose each role once.
 
 The combined journey checks decorative-photo cursor inversion, compact header menu precedence, Work destination focus, keyboard gallery ownership while the pointer visits another row, Aurelia entry, and return to the saved page position. The existing gallery, cursor, header, and native shared-image entry remain covered by their browser tests.
 

@@ -49,9 +49,15 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .section-label { font-size: .9375rem; font-weight: 500; line-height: 1.5; }
 .roles { padding-block: 5.75rem 6.75rem; border-top: 1px solid var(--divider); }
 .role-lines { margin-top: 3rem; display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
-.role-viewport { overflow: clip; width: 100%; min-width: 0; }
+.role-viewport { position: relative; overflow: clip; width: 100%; min-width: 0; }
 .role-track { display: flex; width: max-content; }
-.role-unit { display: flex; flex: none; align-items: center; gap: .4em; padding-right: .4em; font-size: clamp(1.65rem, 6.6vw, 6.7rem); font-weight: 500; line-height: 1.22; letter-spacing: -.035em; white-space: nowrap; }
+.role-unit, .role-measure { font-size: clamp(1.65rem, 6.6vw, 6.7rem); font-weight: 500; line-height: 1.22; letter-spacing: -.035em; white-space: nowrap; }
+.role-unit { display: flex; flex: none; align-items: center; gap: .4em; padding-right: .4em; }
+.role-measure { position: absolute; visibility: hidden; pointer-events: none; }
+.role-track[data-stationary="true"] { transform: none !important; width: auto; }
+.role-track[data-stationary="true"] .role-unit { flex: 1; flex-wrap: wrap; white-space: normal; padding-inline: var(--gutter); gap: .4em; }
+.role-track[data-stationary="true"] p { overflow-wrap: anywhere; }
+.role-track[data-stationary="true"] .role-unit[aria-hidden="true"] { display: none; }
 .role-unit img { width: clamp(110px, 18vw, 260px); height: clamp(48px, 7.8vw, 112px); object-fit: cover; border-radius: 999px; flex: none; }
 .role-viewport:nth-child(2) { color: var(--cobalt); }
 @media (prefers-reduced-motion: reduce) {

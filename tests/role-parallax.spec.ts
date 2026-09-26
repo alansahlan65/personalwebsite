@@ -41,6 +41,12 @@ async function expectCovered(page: Page, width: number) {
     expect(boundsOfTrack.right).toBeGreaterThanOrEqual(width);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  const readable = await page.locator(".role-track").evaluateAll((tracks) => tracks.map((track) =>
+    Array.from(track.querySelectorAll("p, .role-unit > span")).some((label) => {
+      const rect = label.getBoundingClientRect();
+      return rect.width > 0 && rect.left >= 0 && rect.right <= window.innerWidth;
+    })));
+  expect(readable).toEqual([true, true, true]);
 }
 
 for (const width of [320, 390, 650, 768, 1000, 1440]) {
@@ -53,7 +59,7 @@ for (const width of [320, 390, 650, 768, 1000, 1440]) {
     await expect(roles.locator(".role-unit[aria-hidden='true']").first()).toHaveAttribute("aria-hidden", "true");
     const start = await roles.evaluate((section) => section.getBoundingClientRect().top + window.scrollY - window.innerHeight);
     const height = await roles.evaluate((section) => section.getBoundingClientRect().height);
-    for (const y of [Math.max(0, start), start + 450, start + 900 + height]) {
+    for (const y of [Math.max(0, start), start + 450, start + 900, start + 900 + height]) {
       await scrollTo(page, y);
       await expectCovered(page, width);
     }
@@ -79,7 +85,7 @@ test("resize and changed font metrics recalculate coverage at the current scroll
     const font = new FontFace("Role metric check", "local('Courier New'), local('Menlo'), local('DejaVu Sans Mono'), local('Liberation Mono')");
     await font.load();
     document.fonts.add(font);
-    document.querySelectorAll<HTMLElement>(".role-unit").forEach((element) => element.style.fontFamily = "'Role metric check'");
+    document.querySelectorAll<HTMLElement>(".role-unit, .role-measure").forEach((element) => element.style.fontFamily = "'Role metric check'");
     await document.fonts.ready;
   });
   await expectCovered(page, 320);
@@ -114,6 +120,8 @@ for (const reducedAtLoad of [true, false]) {
     expect(await positions(page)).toEqual(first);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
     await page.emulateMedia({ reducedMotion: "no-preference" });
+    await expectCovered(page, 390);
+    await page.addStyleTag({ content: "html { font-size: 100%; }" });
     await expect.poll(() => positions(page)).not.toEqual(first);
     await expectCovered(page, 390);
   });
@@ -144,6 +152,8 @@ test("touch gestures scroll through the roles and reach the project journey", as
 });
 
 test("roles, menu precedence, keyboard gallery ownership and project return share one journey", async ({ page }) => {
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   await scrollTo(page, 720);
@@ -171,4 +181,5 @@ test("roles, menu precedence, keyboard gallery ownership and project return shar
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeCloseTo(y, 0);
   await scrollTo(page, 720);
   await expectCovered(page, 1440);
+  expect(errors).toEqual([]);
 });
