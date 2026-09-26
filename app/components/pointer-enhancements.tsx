@@ -258,6 +258,7 @@ export function PointerEnhancements() {
     window.addEventListener("scroll", recheckPointer, { passive: true });
     window.addEventListener("resize", recheckPointer);
     window.addEventListener("portfolio:menu-change", reset);
+    window.addEventListener("portfolio:project-entry", reset);
     document.fonts.addEventListener("loadingdone", recheckPointer);
     finePointer.addEventListener("change", onMediaChange);
     reducedMotion.addEventListener("change", onMediaChange);
@@ -277,6 +278,7 @@ export function PointerEnhancements() {
       window.removeEventListener("scroll", recheckPointer);
       window.removeEventListener("resize", recheckPointer);
       window.removeEventListener("portfolio:menu-change", reset);
+      window.removeEventListener("portfolio:project-entry", reset);
       document.fonts.removeEventListener("loadingdone", recheckPointer);
       finePointer.removeEventListener("change", onMediaChange);
       reducedMotion.removeEventListener("change", onMediaChange);

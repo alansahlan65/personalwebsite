@@ -234,7 +234,7 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .case-facts dt { margin-bottom: .75rem; color: var(--muted); font-size: .875rem; }
 .case-facts dd { margin: 0; line-height: 1.5; }
 .case-live-link { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; font-weight: 500; }
-.case-hero { margin-block: clamp(3rem, 6vw, 6rem); }
+.case-hero { margin-inline: 0; margin-block: clamp(3rem, 6vw, 6rem); }
 .case-hero img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
 .case-hero figcaption { margin-top: .75rem; color: var(--muted); font-size: .8125rem; }
 .case-decisions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 4rem; padding-block: 2rem clamp(5rem, 8vw, 9rem); }
@@ -304,4 +304,35 @@ span[data-magnet-part] { display: inline-block; }
 }
 @media (hover: none), (prefers-reduced-motion: reduce), (forced-colors: active) {
   .site-cursor, .site-cursor-arrow { display: none; }
+}
+
+/* Shared project imagery belongs to browser snapshots, outside live magnetic transforms. */
+:root {
+  --project-entry-duration: 520ms;
+  --project-entry-ease: cubic-bezier(.77, 0, .175, 1);
+  --project-title-duration: 220ms;
+  --project-title-ease: cubic-bezier(.23, 1, .32, 1);
+}
+::view-transition { pointer-events: none; }
+::view-transition-group(root), ::view-transition-new(root) { animation: none; }
+::view-transition-old(root) { display: none; }
+::view-transition-group(.project-image) {
+  animation-duration: var(--project-entry-duration);
+  animation-timing-function: var(--project-entry-ease);
+}
+::view-transition-old(.project-image), ::view-transition-new(.project-image) {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.case-title {
+  animation: project-title-settle var(--project-title-duration) var(--project-title-ease) both;
+}
+@keyframes project-title-settle {
+  from { opacity: .4; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce), (hover: none), (forced-colors: active) {
+  .case-title { animation: none; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) {
+    animation-duration: 0s !important; animation-delay: 0s !important;
+  }
 }

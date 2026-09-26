@@ -61,7 +61,7 @@ components:
 
 The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.
 
-This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation, ticket 02 About/contact additions, ticket 03 navigation, ticket 04 Aurelia entry, and ticket 05 pointer feedback, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
+This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation, ticket 02 About/contact additions, ticket 03 navigation, ticket 04 Aurelia entry, ticket 05 pointer feedback, and ticket 06 project entry, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
 
 **Key Characteristics:**
 
@@ -130,7 +130,9 @@ Current actions use stationary semantic targets with separate moving children. M
 
 The decorative cursor follows actual pointer coordinates as a small dot, expands to a 72px white difference-blend disc over imagery, and adds a separate outlined arrow over actionable images. It yields to text selection and resets on route/menu changes, window exit, touch, preference changes, and hidden tabs. Native cursor hiding starts only after the enhancement is ready. See docs/pointer-interactions.md for the action inventory and compositing evidence.
 
-Scroll-linked role tracks, previews for the remaining projects, shared-image route transitions, and horizontal project media are not implemented in this foundation.
+Aurelia's preview and hero share a React ViewTransition identity. Gallery links carry the project-entry transition type; menu navigation and return links keep their existing behavior. The browser morph lasts 520ms with cubic-bezier(.77, 0, .175, 1). The title settles over 220ms with cubic-bezier(.23, 1, .32, 1). Both image slots preserve 16:10 cropping. The hero follows the introduction so its destination is visible during entry, before the project facts and live link. The snapshot overlay passes pointer events through, and reduced motion, touch, and forced colors remove spatial entry. See docs/project-entry.md for fallback behavior and the recording.
+
+Scroll-linked role tracks, previews for the remaining projects, and horizontal project media are not implemented in this foundation.
 
 ## Do's and Don'ts
 

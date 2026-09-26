@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { ProjectImageTransition } from "./project-transition";
 import { useEffect, useState, type MouseEvent, type PointerEvent } from "react";
 
 const projects = [
@@ -47,6 +48,8 @@ export function ProjectGallery() {
             <Link
               className="project-link"
               data-magnet="project"
+              transitionTypes={["project-entry"]}
+              onNavigate={() => window.dispatchEvent(new Event("portfolio:project-entry"))}
               href={"/work/" + project.slug}
               aria-label={project.name + ", " + project.category + " case study"}
               onPointerEnter={(event) => onPreviewEnter(event, project.slug)}
@@ -64,16 +67,18 @@ export function ProjectGallery() {
                 transition={{ duration: reducedMotion ? 0 : 0.4, ease: [0.22, 1, 0.36, 1] }}
                 aria-hidden="true"
               >
-                <span className="project-preview-media">
-                  <Image
-                    src="/images/aurelia-interface.webp"
-                    width={1440}
-                    height={900}
-                    alt=""
-                    loading="eager"
-                    sizes="(max-width: 700px) calc(100vw - 80px), (max-width: 1200px) 22vw, 320px"
-                  />
-                </span>
+                <ProjectImageTransition slug={project.slug}>
+                  <span className="project-preview-media">
+                    <Image
+                      src="/images/aurelia-interface.webp"
+                      width={1440}
+                      height={900}
+                      alt=""
+                      loading="eager"
+                      sizes="(max-width: 700px) calc(100vw - 80px), (max-width: 1200px) 22vw, 320px"
+                    />
+                  </span>
+                </ProjectImageTransition>
               </motion.span>
               <span className="project-category">{project.category}</span>
               <span className="project-arrow" aria-hidden="true" data-magnet-part>↗</span>

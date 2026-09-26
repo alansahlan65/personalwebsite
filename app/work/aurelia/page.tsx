@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ProjectImageTransition } from "../../components/project-transition";
 import { ReturnToWorkLink } from "../../components/return-to-work-link";
 import { SiteHeader } from "../../components/site-header";
 import { SiteFooter } from "../../components/site-footer";
@@ -24,9 +25,22 @@ export default function AureliaPage() {
             <ReturnToWorkLink />
           </div>
           <header className="case-intro">
-            <h1 tabIndex={-1}>Aurelia</h1>
+            <h1 className="case-title" tabIndex={-1}>Aurelia</h1>
             <p className="case-lead">A Bali stay can look right in photographs and still be wrong for the trip. Aurelia helps visitors compare stays by the days they want to have, then check practical details before making a request.</p>
           </header>
+          <figure className="case-hero">
+            <ProjectImageTransition slug="aurelia">
+              <Image
+                src="/images/aurelia-interface.webp"
+                width={1440}
+                height={900}
+                alt="Aurelia concept homepage with a Bali villa photograph, stay search, and trip planning controls"
+                preload
+                sizes="(max-width: 768px) 92vw, (max-width: 1440px) 86vw, 1280px"
+              />
+            </ProjectImageTransition>
+            <figcaption>Live concept homepage, captured 25 September 2026.</figcaption>
+          </figure>
           <dl className="case-facts">
             <div><dt>Audience</dt><dd>People planning a Bali stay who need to weigh location, pace, and practical fit.</dd></div>
             <div><dt>My role</dt><dd>I designed and built this self-initiated concept independently.</dd></div>
@@ -35,17 +49,6 @@ export default function AureliaPage() {
           </dl>
           <a className="case-live-link" href="https://aurelia.alansahlanwork.workers.dev/" data-magnet="text"><span data-magnet-part>View the live Aurelia concept</span> <span data-magnet-part aria-hidden="true">↗</span></a>
         </div>
-        <figure className="case-hero page-width">
-          <Image
-            src="/images/aurelia-interface.webp"
-            width={1440}
-            height={900}
-            alt="Aurelia concept homepage with a Bali villa photograph, stay search, and trip planning controls"
-            preload
-            sizes="(max-width: 768px) 92vw, (max-width: 1440px) 86vw, 1280px"
-          />
-          <figcaption>Live concept homepage, captured 25 September 2026.</figcaption>
-        </figure>
         <section className="case-decisions page-width" aria-labelledby="case-decisions-title">
           <h2 id="case-decisions-title">Design decisions</h2>
           <div className="case-decision">
