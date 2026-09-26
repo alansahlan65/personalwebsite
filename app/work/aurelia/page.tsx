@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CaseMediaSequence, type CaseMediaPanel } from "../../components/case-media-sequence";
 import Image from "next/image";
 import { ProjectImageTransition } from "../../components/project-transition";
 import { ReturnToWorkLink } from "../../components/return-to-work-link";
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
     description: "A self-initiated hospitality concept designed and built by Alan Sahlan.",
   },
 };
+
+const panels: readonly CaseMediaPanel[] = [
+  { id: "filters", title: "Filters need a way back", description: "Starting from the catalogue, combine a trip intention with an area. When that combination has no matches, the interface explains the empty result and offers Show all ten stays. Clearing the filters restores the catalogue.", image: "/images/aurelia-filters.webp", alt: "Aurelia catalogue with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action" },
+  { id: "details", title: "Check the fit without losing the shortlist", description: "View stay opens a detail overlay with photographs and Overview, Amenities, Area, and Wi-Fi tabs. Switching tabs changes the supporting information. Closing the overlay returns to the catalogue so another stay can be compared.", image: "/images/aurelia-details.webp", alt: "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph" },
+  { id: "request", title: "Keep commitment explicit", description: "Plan your stay opens a request with Dates, Stay, and Contact steps. The summary stays beside the form. Dates can be changed before review, and the interface states that planning does not hold them. Availability and final pricing need confirmation.", image: "/images/aurelia-request.webp", alt: "Aurelia stay request at the Dates step with its request summary and confirmation notice" },
+];
 
 export default function AureliaPage() {
   return (
@@ -58,6 +65,23 @@ export default function AureliaPage() {
           <div className="case-decision">
             <h3>Make the checks clear</h3>
             <p>Access, noise, Wi-Fi, privacy, and the limits of photographs sit alongside the visual appeal. The request flow states that availability and final pricing need confirmation before commitment.</p>
+          </div>
+        </section>
+        <CaseMediaSequence id="aurelia-media" title="Inside the concept" panels={panels} skipTo="aurelia-implementation" skipLabel="Skip to implementation notes" />
+        <section className="case-reading page-width" aria-labelledby="aurelia-implementation">
+          <h2 id="aurelia-implementation" tabIndex={-1}>Implementation notes</h2>
+          <div><p>The live concept keeps browsing, stay details, and the request as distinct steps. Filters provide a route out of an empty result. The stay overlay keeps comparison close to the catalogue, while the request makes its unconfirmed status explicit.</p>
+            <p>I designed and built Aurelia independently. The screens here document the live concept; they do not establish confirmed inventory or booking outcomes.</p>
+          </div>
+        </section>
+        <section className="case-reading page-width" aria-labelledby="aurelia-recording">
+          <h2 id="aurelia-recording">Observed live flow</h2>
+          <div><p>The recording follows an empty filter result back to the catalogue, opens the Wi-Fi details, closes the stay, and moves from Dates to Stay before returning to edit the dates.</p>
+            <video className="case-recording" controls preload="none" poster="/images/aurelia-details.webp" width={1440} height={900} aria-label="Recorded Aurelia filter, stay details, and request workflow">
+              <source src="/media/aurelia-observed-flow.webm" type="video/webm" />
+              <a href="/media/aurelia-observed-flow.webm" data-magnet="text"><span data-magnet-part>Open the Aurelia workflow recording</span></a>
+            </video>
+            <p className="case-recording-caption">Recorded from the live concept on 26 September 2026 with sample dates. No request was sent.</p>
           </div>
           <ReturnToWorkLink className="case-return" />
         </section>

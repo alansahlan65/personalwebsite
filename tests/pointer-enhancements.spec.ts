@@ -53,7 +53,7 @@ test("every current action is inventoried once, including menu and case-study co
   await page.getByRole("dialog", { name: "Navigation menu" }).getByRole("button", { name: "Close menu" }).click();
   await page.goto("/work/aurelia");
   expect(await unmarked()).toEqual([]);
-  await expect(page.locator(".case-study [data-magnet]")).toHaveCount(3);
+  await expect(page.locator(".case-study [data-magnet]")).toHaveCount(8);
 });
 
 test("rapid target changes return the prior visual and keyboard focus stays still", async ({ page }) => {

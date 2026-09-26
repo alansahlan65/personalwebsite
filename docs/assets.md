@@ -32,3 +32,18 @@ Verified and prepared 2026-09-26. Each creator published their own photograph un
 | `role-coast.webp` | [Beach Scene](https://commons.wikimedia.org/wiki/File:Beach_Scene.jpg), Tammcd7, 16 June 2013 | 800 × 360, WebP quality 82, 65,128 bytes |
 
 All three crops were visually inspected. They retain the source colors and use a centered landscape crop. Their adjacent `.webp.json` records preserve original URLs, creators, license URLs, verification date, and preparation. Empty alt text hides the images from assistive technology; decorative repeated units also have `aria-hidden`. Halyard web-font delivery remains pending.
+
+## Aurelia workflow evidence (ticket 08)
+
+Captured from the live concept on 26 September 2026 at 1440 × 900. Images were inspected after the source photographs loaded; screenshots were encoded to WebP quality 82 without synthetic edits.
+
+| Shipping file | Observed state | Size |
+| --- | --- | --- |
+| `aurelia-filters.webp` | Work and stay longer / Uluwatu empty result and recovery action | 41,502 bytes |
+| `aurelia-details.webp` | Awan Cliff House, Wi-Fi tab and loaded stay photograph | 83,830 bytes |
+| `aurelia-request.webp` | Initial Dates step with summary and unconfirmed-request notice | 37,254 bytes |
+| `aurelia-observed-flow.webm` | Silent recording: empty filters/reset, details/tab/close, Dates/Stay/Back/close | 2,344,899 bytes |
+
+Adjacent JSON sidecars record source, date, viewport, preparation, and evidence limits. Images use intrinsic dimensions and responsive Next.js delivery; the native video uses `preload="none"`, a poster, and user-controlled playback. Sample dates in the recording do not represent availability. No request was submitted.
+
+The user confirmed independent design/build authorship and approved live-site screenshots. Underlying stay-photography rights remain unverified and need confirmation before release. Original research notes, iteration history, and source-code details were unavailable; the case study uses observed interface evidence and does not claim those activities or results.

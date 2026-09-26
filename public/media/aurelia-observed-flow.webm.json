@@ -1,0 +1,21 @@
+{
+  "sourceUrl": "https://aurelia.alansahlanwork.workers.dev/",
+  "capturedAt": "2026-09-26",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "preparation": "Silent Playwright browser recording of the live interface. No synthetic interface or later exploration.",
+  "observedFlow": [
+    "Empty Work and stay longer / Uluwatu filter result",
+    "Show all ten stays restores the catalogue",
+    "Open Awan Cliff House and switch to Wi-Fi",
+    "Escape closes the detail overlay",
+    "Plan your stay opens Dates",
+    "Sample dates 2027-03-09 to 2027-03-12, Continue opens Stay",
+    "Back returns to Dates with values retained",
+    "Escape closes the request without submission"
+  ],
+  "bytes": 2344899,
+  "rightsLimit": "Underlying site photography provenance was not independently verified. No request was sent."
+}

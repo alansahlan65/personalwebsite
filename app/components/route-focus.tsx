@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 export function RouteFocus() {
   const pathname = usePathname();
   const previousPath = useRef(pathname);
-  const historyNavigation = useRef(false);
+  const historyDestination = useRef<string | null>(null);
 
   useEffect(() => {
-    const onPopState = () => { historyNavigation.current = true; };
+    const onPopState = () => { historyDestination.current = window.location.pathname; };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
@@ -18,8 +18,10 @@ export function RouteFocus() {
     if (previousPath.current === pathname) return;
     const fromPath = previousPath.current;
     previousPath.current = pathname;
-    const fromHistory = historyNavigation.current;
-    historyNavigation.current = false;
+    // An entry can commit after Back has already changed the URL.
+    if (window.location.pathname !== pathname) return;
+    const fromHistory = historyDestination.current === pathname;
+    if (fromHistory) historyDestination.current = null;
     if (pathname === "/" && sessionStorage.getItem("selected-work-return-pending") === "1") {
       sessionStorage.removeItem("selected-work-return-pending");
       const saved = sessionStorage.getItem("selected-work-return");
