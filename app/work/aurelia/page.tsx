@@ -33,7 +33,7 @@ export default function AureliaPage() {
             <div><dt>Collaborators</dt><dd>None.</dd></div>
             <div><dt>Status</dt><dd>Concept. A request on the live site is not a confirmed booking.</dd></div>
           </dl>
-          <a className="case-live-link" href="https://aurelia.alansahlanwork.workers.dev/">View the live Aurelia concept <span aria-hidden="true">↗</span></a>
+          <a className="case-live-link" href="https://aurelia.alansahlanwork.workers.dev/" data-magnet="text"><span data-magnet-part>View the live Aurelia concept</span> <span data-magnet-part aria-hidden="true">↗</span></a>
         </div>
         <figure className="case-hero page-width">
           <Image

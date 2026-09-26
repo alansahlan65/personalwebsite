@@ -39,7 +39,7 @@ export default function Home() {
           <div className="about-copy">
             <span className="about-corner" aria-hidden="true" />
             <p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p>
-            <Link className="about-link" href="/about">More about me <span aria-hidden="true">↗</span></Link>
+            <Link className="about-link" href="/about" data-magnet="text"><span data-magnet-part>More about me</span> <span data-magnet-part aria-hidden="true">↗</span></Link>
           </div>
         </section>
       </main>

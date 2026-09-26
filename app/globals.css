@@ -163,7 +163,7 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .stairs-topline { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 1rem; font-weight: 500; }
 .stairs-close { border-color: var(--canvas); color: var(--canvas); min-width: 96px; }
 .stairs-close:hover { background: var(--canvas); color: var(--ink); }
-.stairs-close > span { font-size: 1.5rem; line-height: .6; }
+.stairs-close > span:last-child { font-size: 1.5rem; line-height: .6; }
 .stairs-nav { display: grid; margin-top: clamp(3rem, 7vh, 6rem); border-top: 1px solid rgb(246 245 241 / 35%); }
 .stairs-link {
   position: relative; display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto;
@@ -272,4 +272,36 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 }
 @media (forced-colors: active) {
   .project-link:hover h3 { color: LinkText; }
+}
+
+/* Pointer feedback: the semantic targets never move. */
+span[data-magnet-part] { display: inline-block; }
+.menu-trigger-icon[data-magnet-part] { display: grid; }
+.stairs-marquee-magnet[data-magnet-part] { display: flex; }
+[data-magnet-active] [data-magnet-part] { will-change: transform; }
+[data-magnet]:active [data-magnet-part] { opacity: .76; }
+.site-cursor, .site-cursor-arrow {
+  position: fixed; top: 0; left: 0; pointer-events: none; visibility: hidden;
+  z-index: 100; will-change: transform;
+}
+.site-cursor {
+  width: 72px; height: 72px; border-radius: 50%; background: #fff;
+  mix-blend-mode: difference; transform-origin: center;
+  transform: translate3d(-100px, -100px, 0) translate(-50%, -50%) scale(.11);
+}
+.site-cursor[data-mode="dot"], .site-cursor[data-mode="image"], .site-cursor[data-mode="action-image"] { visibility: visible; }
+.site-cursor-arrow {
+  z-index: 101; width: 32px; height: 32px; display: grid; place-items: center;
+  transform: translate3d(-100px, -100px, 0) translate(-50%, -50%);
+}
+.site-cursor-arrow[data-visible="true"] { visibility: visible; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+  html[data-cursor-ready="true"] body { cursor: none; }
+  html[data-cursor-ready="true"] :is(p, h1, h2, h3, dd, dt, figcaption, input, textarea, select, [contenteditable]) { cursor: text; }
+  html[data-cursor-ready="true"] a, html[data-cursor-ready="true"] a *,
+  html[data-cursor-ready="true"] button, html[data-cursor-ready="true"] button * { cursor: none; }
+  html[data-cursor-ready="true"] [aria-disabled="true"] { cursor: default; }
+}
+@media (hover: none), (prefers-reduced-motion: reduce), (forced-colors: active) {
+  .site-cursor, .site-cursor-arrow { display: none; }
 }

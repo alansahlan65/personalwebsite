@@ -61,7 +61,7 @@ components:
 
 The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.
 
-This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation, ticket 02 About/contact additions, ticket 03 navigation, and ticket 04 Aurelia entry, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
+This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation, ticket 02 About/contact additions, ticket 03 navigation, ticket 04 Aurelia entry, and ticket 05 pointer feedback, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
 
 **Key Characteristics:**
 
@@ -126,7 +126,11 @@ About pairs a small label with a large statement, decorative corner, and More ab
 
 The header keeps its full navigation at the top and shows a fixed compact Menu trigger after scrolling past 96px. It returns to full below 48px, deferring changes while a header control has focus. The five-panel Sliding Stairs Menu reveals Work, About, and Contact links, with confirmed professional destinations below. Resume remains a visible unavailable label until a current PDF is verified. The dialog contains focus, makes the page inert, restores scroll and trigger focus on dismissal, and follows reduced-motion changes during the session. The stairs transition lasts up to 620ms; hover strips stop on exit and close.
 
-Scroll-linked role tracks, previews for the remaining projects, magnetic controls, the image-inverting cursor, shared-image route transitions, and horizontal project media are not implemented in this foundation.
+Current actions use stationary semantic targets with separate moving children. Motion springs use stiffness 100, damping 10, and mass 1, capped at 5px for text, 6px for project title/arrow, and 12px for large controls. Gallery width and menu marquee transforms belong to separate wrappers. Focus and press feedback remain available on keyboard, touch, reduced motion, and forced colors.
+
+The decorative cursor follows actual pointer coordinates as a small dot, expands to a 72px white difference-blend disc over imagery, and adds a separate outlined arrow over actionable images. It yields to text selection and resets on route/menu changes, window exit, touch, preference changes, and hidden tabs. Native cursor hiding starts only after the enhancement is ready. See docs/pointer-interactions.md for the action inventory and compositing evidence.
+
+Scroll-linked role tracks, previews for the remaining projects, shared-image route transitions, and horizontal project media are not implemented in this foundation.
 
 ## Do's and Don'ts
 

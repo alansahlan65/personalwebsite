@@ -46,6 +46,7 @@ export function ProjectGallery() {
           {"slug" in project ? (
             <Link
               className="project-link"
+              data-magnet="project"
               href={"/work/" + project.slug}
               aria-label={project.name + ", " + project.category + " case study"}
               onPointerEnter={(event) => onPreviewEnter(event, project.slug)}
@@ -55,7 +56,7 @@ export function ProjectGallery() {
               onClick={(event) => onProjectClick(event, project.slug)}
             >
               <span className="project-number" aria-hidden="true">0{index + 1}</span>
-              <h3>{project.name}</h3>
+              <h3 data-magnet-part>{project.name}</h3>
               <motion.span
                 className="project-preview"
                 initial={false}
@@ -75,7 +76,7 @@ export function ProjectGallery() {
                 </span>
               </motion.span>
               <span className="project-category">{project.category}</span>
-              <span className="project-arrow" aria-hidden="true">↗</span>
+              <span className="project-arrow" aria-hidden="true" data-magnet-part>↗</span>
             </Link>
           ) : (
             <>

@@ -83,6 +83,7 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
   }, [phase, reducedMotion]);
 
   const menuActive = phase !== "closed";
+  useEffect(() => { window.dispatchEvent(new Event("portfolio:menu-change")); }, [menuActive]);
   useEffect(() => {
     if (!menuActive) return;
     const y = scrollBeforeOpen.current;
@@ -166,28 +167,28 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
 
   return (
     <>
-      <a className="skip-link" href="#main">Skip to content</a>
+      <a className="skip-link" href="#main" data-magnet="text"><span data-magnet-part>Skip to content</span></a>
       <header
         ref={headerRef}
         className={["site-header page-width", mode === "compact" ? "site-header--compact" : ""].join(" ")}
         onBlurCapture={() => requestAnimationFrame(updateMode)}
       >
-        <Link className="brand" href="/" aria-label="Alan Sahlan, home">
-          <Image src="/images/alan-logo.png" width={52} height={52} alt="" />
-          <span>Alan Sahlan</span>
+        <Link className="brand" href="/" aria-label="Alan Sahlan, home" data-magnet="text">
+          <Image src="/images/alan-logo.png" width={52} height={52} alt="" data-magnet-part />
+          <span data-magnet-part>Alan Sahlan</span>
         </Link>
         <nav className="primary-nav" aria-label="Primary">
           {primaryLinks.map((link) => (
-            <Link key={link.label} href={link.href} aria-current={link.label === "About" && page === "about" ? "page" : undefined}>{link.label}</Link>
+            <Link key={link.label} href={link.href} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text"><span data-magnet-part>{link.label}</span></Link>
           ))}
           <span className="unavailable" aria-disabled="true" title="Resume will be added after verification">Resume</span>
         </nav>
-        <button className="full-menu-trigger" type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog">
-          <span>Menu</span><span className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
+        <button className="full-menu-trigger" type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" data-magnet="control">
+          <span data-magnet-part>Menu</span><span data-magnet-part className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
         </button>
       </header>
-      <button ref={compactTriggerRef} onBlur={() => requestAnimationFrame(updateMode)} className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1}>
-        <span>Menu</span><span className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
+      <button ref={compactTriggerRef} onBlur={() => requestAnimationFrame(updateMode)} className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1} data-magnet="control">
+        <span data-magnet-part>Menu</span><span data-magnet-part className="menu-trigger-icon" aria-hidden="true"><i /><i /></span>
       </button>
       {menuActive && (
         <div className={["stairs-menu", phase === "closing" ? "stairs-menu--closing" : ""].join(" ")} role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>
@@ -203,20 +204,20 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
             ))}
           </div>
           <div className="stairs-content page-width">
-            <div className="stairs-topline"><span>Alan Sahlan</span><button ref={closeRef} className="stairs-close" type="button" onClick={() => phase === "closing" ? openMenu() : closeMenu()} aria-label={phase === "closing" ? "Reopen menu" : "Close menu"}>{phase === "closing" ? "Open" : "Close"}<span aria-hidden="true">×</span></button></div>
+            <div className="stairs-topline"><span>Alan Sahlan</span><button ref={closeRef} className="stairs-close" type="button" onClick={() => phase === "closing" ? openMenu() : closeMenu()} aria-label={phase === "closing" ? "Reopen menu" : "Close menu"} data-magnet="control"><span data-magnet-part>{phase === "closing" ? "Open" : "Close"}</span><span data-magnet-part aria-hidden="true">×</span></button></div>
             <nav className="stairs-nav" aria-label="Menu">
               {primaryLinks.map((link, index) => (
-                <Link className="stairs-link" key={link.label} href={link.href} aria-label={link.label} onClick={onMenuLinkClick} aria-current={link.label === "About" && page === "about" ? "page" : undefined}>
+                <Link className="stairs-link" key={link.label} href={link.href} aria-label={link.label} onClick={onMenuLinkClick} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text">
                   <span className="stairs-index" aria-hidden="true">0{index + 1}</span>
-                  <span className="stairs-static-label">{link.label}</span>
-                  <span className="stairs-marquee" aria-hidden="true">{Array.from({ length: 4 }, (_, repeat) => <span className="stairs-marquee-item" key={repeat}>{link.label}<Image src="/images/alan-logo.png" width={48} height={48} alt="" /></span>)}</span>
-                  <span className="stairs-arrow" aria-hidden="true">↗</span>
+                  <span className="stairs-static-label" data-magnet-part>{link.label}</span>
+                  <span className="stairs-marquee" aria-hidden="true"><span className="stairs-marquee-magnet" data-magnet-part>{Array.from({ length: 4 }, (_, repeat) => <span className="stairs-marquee-item" key={repeat}>{link.label}<Image src="/images/alan-logo.png" width={48} height={48} alt="" /></span>)}</span></span>
+                  <span className="stairs-arrow" aria-hidden="true" data-magnet-part>↗</span>
                 </Link>
               ))}
               <div className="stairs-link stairs-resume" aria-disabled="true"><span className="stairs-index" aria-hidden="true">04</span><span>Resume</span><span className="stairs-pending">Coming soon</span></div>
             </nav>
             <nav className="stairs-profiles" aria-label="Professional profiles in menu">
-              {professionalLinks.map((link) => <a key={link.label} href={link.href} onClick={onMenuLinkClick}>{link.label} <span aria-hidden="true">↗</span></a>)}
+              {professionalLinks.map((link) => <a key={link.label} href={link.href} onClick={onMenuLinkClick} data-magnet="text"><span data-magnet-part>{link.label}</span> <span data-magnet-part aria-hidden="true">↗</span></a>)}
             </nav>
           </div>
         </div>

@@ -10,8 +10,8 @@ function rememberReturn(event: MouseEvent<HTMLAnchorElement>) {
 
 export function ReturnToWorkLink({ className }: { className?: string }) {
   return (
-    <Link className={className} href="/#work" scroll={false} onClick={rememberReturn}>
-      Back to selected work <span aria-hidden="true">↗</span>
+    <Link className={className} href="/#work" scroll={false} onClick={rememberReturn} data-magnet="text">
+      <span data-magnet-part>Back to selected work</span> <span data-magnet-part aria-hidden="true">↗</span>
     </Link>
   );
 }
