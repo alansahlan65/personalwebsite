@@ -19,6 +19,10 @@ Ticket 05 implements I-03 (magnetic feedback) and I-04 (image-inverting cursor).
 | Contact email | Shared footer | 5px | Address |
 | Back to selected work (top and bottom) | Aurelia case study | 5px | Label and arrow |
 | View the live Aurelia concept | Aurelia case study | 5px | Label and arrow |
+| Skip to implementation notes | Aurelia media toolbar | 5px | Label and arrow |
+| Open filters/details/request screenshot | Aurelia media captions | 5px | Label and arrow |
+| Open workflow recording fallback | Aurelia recording | 5px | Label |
+| Video playback controls | Aurelia recording | None | Native browser controls |
 | Resume | Header, menu, footer | None | Unavailable label, `aria-disabled`; no link until a current PDF exists |
 | Paylecta, PawFriend, MunchPal | Homepage gallery | None | Static project rows until their routes exist |
 

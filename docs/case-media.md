@@ -29,3 +29,11 @@ Typecheck, lint, and production build pass. All 15 new media tests passed; all 1
 [Integrated reading-flow recording](../.scratch/portfolio-halyard/demos/08-aurelia-horizontal-media.webm) covers shared entry, scroll/progress/reversal, keyboard panel focus, skip focus, reduced motion, mobile stacking, and return to Selected work. Desktop, middle-panel, mobile, and reduced-motion screenshots are adjacent.
 
 Captured 26 September 2026 in headless Chromium on Windows against the production Next.js preview at 1440 × 900, with loaded media, neutral fallback font, and no CPU/network throttling. The measured section has 2,688 px of travel. A 30-frame scroll through its first half moved the track -1,345.00 px; after a 350 ms pause the drift was 0 px. The 29 sampled intervals had a 16.7 ms median and 33.4 ms maximum. The observer recorded no long tasks, the document width remained 1440 px, and the journey reported no page errors. This is one local sample, not a cross-device performance claim. Exact values are in [the measurement record](../.scratch/portfolio-halyard/demos/08-scroll-measurements.json).
+
+Writing verification: all case-study copy and action labels were inspected against the surrounding voice and observed destinations. New route copy uses the existing “catalog” spelling. No actionable writing findings remain; Approve.
+
+## Review corrections
+
+Standards: no documented-standard breaches; one optional duplicated panel-to-scroll mapping. The shared helper now serves keyboard focus and resize preservation.
+
+Spec: one confirmed bug moved the focused toolbar skip offscreen when switching to a stack. A browser test reproduced it before the fix. Measurement now preserves any focused sequence control, including the toolbar, before choosing a reading-panel anchor. The test covers resize and both runtime motion changes; it passes. The delayed-image fixture now waits for enhancement while the source remains blocked, avoiding a comparison between different layouts, and passed three repetitions. No further spec gap or scope creep was reported.

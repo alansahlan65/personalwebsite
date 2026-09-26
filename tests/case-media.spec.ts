@@ -80,6 +80,33 @@ test("preference and viewport changes keep the focused panel reachable in equiva
   await expect(sequence.getByRole("progressbar")).toHaveAttribute("value", "2");
 });
 
+test("focused toolbar skip stays reachable through layout and motion changes", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/work/aurelia");
+  const sequence = page.getByRole("region", { name: "Inside the concept" });
+  const skip = sequence.getByRole("link", { name: "Skip to implementation notes" });
+  const middle = async () => {
+    const y = await sequence.evaluate((element) => element.getBoundingClientRect().top + window.scrollY + (element.getBoundingClientRect().height - window.innerHeight) / 2);
+    await scrollTo(page, y);
+    await skip.focus();
+    await expect(sequence.getByRole("progressbar")).toHaveAttribute("value", "2");
+  };
+  await middle();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(skip).toBeFocused();
+  await expect(skip).toBeInViewport();
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await expect(skip).toBeInViewport();
+  await middle();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(skip).toBeFocused();
+  await expect(skip).toBeInViewport();
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await expect(skip).toBeInViewport();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("heading", { name: "Implementation notes", exact: true })).toBeFocused();
+});
+
 for (const width of [320, 390, 768, 999, 1000, 1440]) {
   test(`the case study fits ${width}px with equivalent media and usable destinations`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
@@ -145,6 +172,7 @@ test("late media and resize preserve the focused panel and a working skip", asyn
   const sequence = page.getByRole("region", { name: "Inside the concept" });
   const article = sequence.getByRole("article").nth(1);
   const link = article.getByRole("link");
+  await expect(sequence.getByRole("progressbar")).toBeVisible();
   await link.focus();
   await expect(link).toBeInViewport();
   const before = await article.getByRole("img").boundingBox();

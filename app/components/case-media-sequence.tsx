@@ -13,6 +13,11 @@ export type CaseMediaPanel = {
   alt: string;
 };
 
+function scrollToMediaPanel(section: HTMLElement, panel: HTMLElement, travel: number) {
+  const start = section.getBoundingClientRect().top + window.scrollY;
+  window.scrollTo({ top: start + Math.min(panel.offsetLeft, travel), behavior: "instant" });
+}
+
 export function CaseMediaSequence({ id, title, panels, skipTo, skipLabel }: {
   id: string;
   title: string;
@@ -57,8 +62,10 @@ export function CaseMediaSequence({ id, title, panels, skipTo, skipLabel }: {
       const horizontal = query.matches && fits && travel > 0;
       root.dataset.horizontal = horizontal ? "true" : "false";
       root.style.setProperty("--media-travel", `${horizontal ? travel : 0}px`);
-      if (anchor && (focusedPanel || wasHorizontal !== horizontal)) {
-        if (horizontal) window.scrollTo({ top: start + Math.min(anchor.offsetLeft, travel), behavior: "instant" });
+      if (focused && !focusedPanel) {
+        focused.scrollIntoView({ block: "nearest", behavior: "instant" });
+      } else if (anchor && (focusedPanel || wasHorizontal !== horizontal)) {
+        if (horizontal) scrollToMediaPanel(root, anchor, travel);
         else (focusedPanel ? focused! : anchor).scrollIntoView({ block: focusedPanel ? "nearest" : "start", behavior: "instant" });
       }
       previousTravel = horizontal ? travel : 0;
@@ -103,8 +110,7 @@ export function CaseMediaSequence({ id, title, panels, skipTo, skipLabel }: {
     const panel = (event.target as HTMLElement).closest<HTMLElement>(".case-media-panel");
     if (!root || !panel || root.dataset.horizontal !== "true") return;
     const travel = track.current!.scrollWidth - viewport.current!.clientWidth;
-    const start = root.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({ top: start + Math.min(panel.offsetLeft, travel), behavior: "instant" });
+    scrollToMediaPanel(root, panel, travel);
   }
 
   return (

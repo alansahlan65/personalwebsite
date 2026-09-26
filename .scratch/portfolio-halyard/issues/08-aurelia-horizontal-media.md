@@ -29,3 +29,7 @@ The recording uses sample dates and never submits a request. Screenshot/video si
 Typecheck, lint, and production build pass. All 15 new media tests and all 19 existing Aurelia/project-entry tests passed in focused runs; immediate Back/Forward also passed three repetitions after fixing a destination-event race. Final review and the single full-suite run follow this implementation commit.
 
 [Integrated demo](../demos/08-aurelia-horizontal-media.webm), responsive screenshots, and local measurements document the result. See [reading behavior](../../../docs/case-media.md).
+
+### Review corrections — 2026-09-26
+
+Standards review reported no documented breaches and one optional duplicate scroll mapping; that mapping is now shared. Spec review found that a focused toolbar Skip control could move offscreen on desktop-to-stack transitions. A new failing browser test reproduced it. Focused controls now take precedence over the reading-panel anchor, and the test passes resize and runtime motion changes. The delayed-image fixture waits for enhancement before comparing image dimensions; the source stays blocked during that wait, and the corrected check passed three repetitions. Terminology uses the existing “catalog” spelling, and the shared pointer inventory includes all new actions.
