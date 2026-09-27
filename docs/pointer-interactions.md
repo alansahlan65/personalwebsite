@@ -13,27 +13,30 @@ Ticket 05 implements I-03 (magnetic feedback) and I-04 (image-inverting cursor).
 | Close / Reopen menu | Menu | 12px | Label and icon |
 | Work, About, Contact | Menu | 5px | Static label, inner marquee wrapper, arrow |
 | Professional profiles | Menu and footer | 5px | Label and menu arrow |
-| Aurelia and Paylecta project rows | Homepage gallery | 6px | Title and arrow; preview width has its own wrapper |
+| Aurelia, Paylecta, and PawFriend project rows | Homepage gallery | 6px | Title and arrow; preview width has its own wrapper |
 | More about me | Homepage | 5px | Label and arrow |
 | Contact heading | Shared footer | 12px | Heading and arrow |
 | Contact email | Shared footer | 5px | Address |
-| Back to selected work (top and bottom) | Aurelia and Paylecta case studies | 5px | Label and arrow |
+| Back to selected work (top and bottom) | Aurelia, Paylecta, and PawFriend case studies | 5px | Label and arrow |
 | View the live Aurelia concept | Aurelia case study | 5px | Label and arrow |
 | Skip to implementation notes | Aurelia media toolbar | 5px | Label and arrow |
 | Open filters/details/request screenshot | Aurelia media captions | 5px | Label and arrow |
 | Open workflow recording fallback | Aurelia recording | 5px | Label |
 | Read the original Paylecta case study PDF | Paylecta case study | 5px | Label and arrow |
-| Skip to implementation considerations | Paylecta media toolbar | 5px | Label and arrow |
+| Skip to implementation considerations | Paylecta and PawFriend media toolbars | 5px | Label and arrow |
 | Open overview/customers/invoices screenshot | Paylecta media captions | 5px | Label and arrow |
-| Video playback controls | Aurelia recording | None | Native browser controls |
+| View the live PawFriend concept / source code | PawFriend case study | 5px | Label and arrow |
+| Open catalog/shortlist/prepare screenshot | PawFriend media captions | 5px | Label and arrow |
+| Open live concept recording | PawFriend recording | 5px | Label and arrow; native player controls stay native |
+| Video playback controls | Aurelia and PawFriend recordings | None | Native browser controls |
 | Resume | Header, menu, footer | None | Unavailable label, `aria-disabled`; no link until a current PDF exists |
-| PawFriend, MunchPal | Homepage gallery | None | Original ticket 05 inventory; later gallery updates provide external destinations |
+| MunchPal | Homepage gallery | None | Original ticket 05 inventory; later gallery updates provide external destinations |
 
 No semantic action contains another magnetic target. The menu owns feedback while its overlay is present. Its marquee travel and magnetic movement use separate nested wrappers. Decorative and unavailable content is excluded from the action system.
 
 ## Cursor and lifecycle
 
-The cursor is `aria-hidden` and `pointer-events: none`. Its white disc uses `mix-blend-mode: difference`; an independent outlined arrow remains readable on actionable images. Portrait and case-study hero imagery have no arrow. Brand logos and the Aurelia preview are images inside links and receive the arrow.
+The cursor is `aria-hidden` and `pointer-events: none`. Its white disc uses `mix-blend-mode: difference`; an independent outlined arrow remains readable on actionable images. Portrait and case-study hero imagery have no arrow. Brand logos and local gallery previews are images inside links and receive the arrow.
 
 Enhancement requires a fine hovering pointer, normal motion preference, normal colors, ResizeObserver, and supported difference blending. Native cursor hiding is enabled only after the first frame positions and reveals the replacement. Closing and reopening the menu clear feedback immediately while the overlay continues to own pointer input. Text contexts and selection restore the native cursor. Menu/route changes, blur, window exit, touch input, preference changes, and hidden tabs clear springs and pending cursor frames. Layout changes, font completion, scroll, and resize recheck the stationary target at the same real pointer position. Effect cleanup destroys Motion values and removes listeners/observers.
 

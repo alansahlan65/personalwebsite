@@ -1,0 +1,22 @@
+{
+  "source": "https://pawfriend-topaz.vercel.app/",
+  "captured_on": "2026-09-27",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "browser": "153.0.8010.12",
+  "evidence": "Observed live self-initiated concept with sample pet profiles. No real shelter availability, adoption outcome, historical testing or original image rights established.",
+  "preparation": "Silent Chromium recording of actual live concept interactions. No reconstructed interface or submitted request.",
+  "states": [
+    "Empty shortlist",
+    "Expanded nine-resident catalog",
+    "Save Milo and Luna",
+    "Open and close shortlist",
+    "Plan a meeting opens preparation",
+    "Reload retains saved pets",
+    "Remove Milo, retain Luna"
+  ],
+  "original_imagery": "The original project repository documents generated hero and resident portraits. Pet profiles are local sample content, not verified shelter animals.",
+  "source_repository": "https://github.com/alansahlan65/pawfriend"
+}

@@ -1,0 +1,17 @@
+{
+  "source": "https://pawfriend-topaz.vercel.app/",
+  "captured_on": "2026-09-27",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "browser": "153.0.8010.12",
+  "evidence": "Observed live self-initiated concept with sample pet profiles. No real shelter availability, adoption outcome, historical testing or original image rights established.",
+  "source_capture_sha256": "e947a34f317eb8910cd7664479ac75f7ab040d1d3227e54d49f1565e74b07dc7",
+  "state": "catalog",
+  "width": 1440,
+  "height": 900,
+  "preparation": "Full 1440 x 900 browser viewport screenshot, encoded as WebP quality 85. No crop or synthetic edits.",
+  "original_imagery": "The original project repository documents generated hero and resident portraits. Pet profiles are local sample content, not verified shelter animals.",
+  "source_repository": "https://github.com/alansahlan65/pawfriend"
+}

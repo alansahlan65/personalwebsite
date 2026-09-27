@@ -407,3 +407,5 @@ span[data-magnet-part] { display: inline-block; }
 
 /* Allow enlarged project titles and decision headings to wrap. */
 .case-title, .case-decisions h2 { overflow-wrap: anywhere; }
+.case-study--pawfriend { overflow-wrap: anywhere; }
+.case-study--pawfriend .case-intro h1 { font-size: clamp(3rem, 8.5vw, 7.75rem); }

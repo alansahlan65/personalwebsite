@@ -10,7 +10,7 @@ import { useEffect, useState, type MouseEvent, type PointerEvent } from "react";
 const projects = [
   { name: "Aurelia", category: "Hospitality", slug: "aurelia" },
   { name: "Paylecta", category: "Finance", slug: "paylecta" },
-  { name: "PawFriend", category: "Pet adoption" },
+  { name: "PawFriend", category: "Pet adoption", slug: "pawfriend" },
   { name: "Munchpal", category: "Food sharing" },
 ] as const;
 
@@ -71,7 +71,7 @@ export function ProjectGallery() {
                 <ProjectImageTransition slug={project.slug}>
                   <span className="project-preview-media">
                     <Image
-                      src={project.slug === "paylecta" ? "/images/paylecta-cover.webp" : "/images/aurelia-interface.webp"}
+                      src={project.slug === "paylecta" ? "/images/paylecta-cover.webp" : project.slug === "pawfriend" ? "/images/pawfriend-interface.webp" : "/images/aurelia-interface.webp"}
                       width={project.slug === "paylecta" ? 1402 : 1440}
                       height={project.slug === "paylecta" ? 1081 : 900}
                       alt=""

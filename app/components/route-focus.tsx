@@ -30,7 +30,7 @@ export function RouteFocus() {
       if (saved) {
         try {
           const position = JSON.parse(saved) as { slug: string; y: number };
-          if ((position.slug === "aurelia" || position.slug === "paylecta") && Number.isFinite(position.y)) y = position.y;
+          if ((position.slug === "aurelia" || position.slug === "paylecta" || position.slug === "pawfriend") && Number.isFinite(position.y)) y = position.y;
         } catch {
           // A direct visit returns to the selected-work section start.
         }
