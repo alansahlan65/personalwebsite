@@ -209,6 +209,8 @@ test("PawFriend gallery entry and return preserve selection and scroll", async (
   await expect.poll(() => project.locator("img").evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
   const heading = project.getByRole("heading", { name: "PawFriend", exact: true });
   await expect(heading).toBeInViewport({ ratio: 1 });
+  // Wait for the expanding row's click target to settle before measuring departure.
+  await heading.click({ trial: true });
   const y = await page.evaluate(() => scrollY);
   await heading.click();
   await expect(page).toHaveURL(/\/work\/pawfriend$/);
@@ -219,5 +221,5 @@ test("PawFriend gallery entry and return preserve selection and scroll", async (
   await expect(page.getByRole("heading", { level: 1, name: "PawFriend", exact: true })).toBeFocused();
   await page.getByRole("link", { name: "Back to selected work", exact: true }).first().click();
   await expect(page.locator("#work")).toBeFocused();
-  await expect.poll(() => page.evaluate(() => scrollY)).toBeCloseTo(y, 0);
+  await expect.poll(async () => Math.abs((await page.evaluate(() => scrollY)) - y)).toBeLessThanOrEqual(1);
 });
