@@ -143,6 +143,10 @@ test("touch gestures scroll through the roles and reach the project journey", as
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(700);
   await expect.poll(() => positions(page)).not.toEqual(start);
   const project = page.getByRole("link", { name: "Aurelia, Hospitality case study" });
+  // Finish the simulated fling and bring the intended target into view before tapping.
+  await project.scrollIntoViewIfNeeded();
+  const targetY = await page.evaluate(() => window.scrollY);
+  await scrollTo(page, targetY);
   await project.tap();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
   await page.getByRole("link", { name: /Back to selected work/ }).first().tap();
@@ -167,6 +171,11 @@ test("roles, menu precedence, keyboard gallery ownership and project return shar
   await dialog.getByRole("link", { name: "Work", exact: true }).click();
   await expect(page.locator("#work")).toBeFocused();
   await page.keyboard.press("Tab");
+  const allWork = page.getByRole("link", { name: "View all work on Behance (opens in a new tab)", exact: true });
+  if (await allWork.count()) {
+    await expect(allWork).toBeFocused();
+    await page.keyboard.press("Tab");
+  }
   const project = page.getByRole("link", { name: "Aurelia, Hospitality case study" });
   await expect(project).toBeFocused();
   await page.getByRole("heading", { name: "Paylecta" }).hover();

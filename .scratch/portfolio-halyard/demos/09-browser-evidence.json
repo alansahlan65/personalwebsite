@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-27",
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "range": {
+    "start": 2819.328125,
+    "travel": 2688
+  },
+  "states": [
+    {
+      "panel": 1,
+      "scroll": 2819
+    },
+    {
+      "panel": 2,
+      "scroll": 4163
+    },
+    {
+      "panel": 3,
+      "scroll": 5507
+    },
+    {
+      "panel": 2,
+      "scroll": 4163
+    }
+  ],
+  "stoppedWithoutDrift": true,
+  "widths": {
+    "mobile": 390
+  },
+  "errors": [],
+  "socialImageStatus": 200,
+  "scope": "Portfolio reading journey with original static PDF mockups, not an original live Paylecta recording.",
+  "recording": {
+    "width": 1440,
+    "height": 900,
+    "duration": 7.4,
+    "error": null,
+    "playbackVerified": true
+  }
+}
