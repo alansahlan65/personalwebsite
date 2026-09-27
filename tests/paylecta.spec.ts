@@ -13,6 +13,7 @@ test("direct Paylecta entry explains the client design contribution using origin
   await expect.poll(() => page.locator(".case-hero img").evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
   await expect(page).toHaveTitle("Paylecta | Alan Sahlan");
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/work\/paylecta\/opengraph-image\.jpg/);
+  await expect(page.locator('meta[property="og:image:alt"]')).toHaveCount(1);
   await expect(page.locator('meta[property="og:image:alt"]')).toHaveAttribute("content", /Paylecta original client finance dashboard design/);
   const copy = await page.locator("main").innerText();
   expect(copy).not.toMatch(/35%|50%|45%|score of 90|Sarah Wijaya/);
