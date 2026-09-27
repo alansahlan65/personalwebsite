@@ -26,13 +26,15 @@ Pages 2, 5, and 9 reuse the same photograph and Sarah/Sarah Wijaya identity for 
 
 Screen amounts, counts, and percentages are example interface content. Captions identify static original mockups, which establish no actual transactions or outcomes. Explanations of visible hierarchy and layout are present-day readings of the designs. Implementation considerations describe behavior a build would need; they do not claim historical development, testing, or deployment.
 
-No new interaction demonstration was built. Previously approved generated gallery banners remain later concept artwork, explicitly distinguished from original PDF media.
+No new interaction demonstration was built. The scoped commit uses the original PDF cover as its Paylecta preview on the prior gallery. The integrated working gallery preserves the user's previously approved generated banner pair. Those banners are later concept artwork, separate from original PDF evidence.
 
 ## Media delivery and reading
 
 The hero is full PDF page 1. Panels use full pages 4, 6, and 7. Each was rendered at 72 dpi to 1402 × 1081 and WebP-encoded at quality 88, without cropping or synthetic edits. Sizes are 47,002, 39,164, 40,916, and 60,938 bytes. Adjacent JSON sidecars preserve source URL/hash, PDF page, date, dimensions, preparation, and evidence limits.
 
 The shared media component now requires each panel's width, height, and evidence caption. Aurelia retains its original dimensions and live-source captions. Paylecta's hero preserves its source aspect ratio and uses responsive preloading. Panels use responsive lazy delivery and direct full-image links.
+
+The file-based social preview uses the same full original PDF cover as a JPEG, with descriptive alternative text and its own provenance sidecar. Next.js supplies the image metadata. The final production domain remains a site-wide release setting.
 
 Desktop vertical scrolling advances three panels with progress and a native skip link. Keyboard focus exposes each image action. Narrow, short, enlarged-text, reduced-motion, and no-JavaScript views retain equivalent stacked content. Longer implementation and evidence notes stay in vertical flow. The shared pointer inventory includes the new actions.
 

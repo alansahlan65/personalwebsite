@@ -104,7 +104,7 @@ export default function PaylectaPage() {
           <h2 id="paylecta-evidence">What the evidence shows</h2>
           <div>
             <p>The original case study documents interface designs and a visual system. The images here come directly from that PDF. They show intended screens and states, rather than recorded live interactions or measured business results.</p>
-            <p>No live product or working prototype was available for this review. The gallery banners are later concept artwork; the case-study images are original project material.</p>
+            <p>No live product or working prototype was available for this review. This case study uses original project material. Later concept artwork does not document original interface screens.</p>
           </div>
           <ReturnToWorkLink className="case-return" />
         </section>
