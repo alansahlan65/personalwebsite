@@ -9,7 +9,7 @@ import { useEffect, useState, type MouseEvent, type PointerEvent } from "react";
 
 const projects = [
   { name: "Aurelia", category: "Hospitality", slug: "aurelia" },
-  { name: "Paylecta", category: "Finance" },
+  { name: "Paylecta", category: "Finance", slug: "paylecta" },
   { name: "PawFriend", category: "Pet adoption" },
   { name: "Munchpal", category: "Food sharing" },
 ] as const;
@@ -44,7 +44,7 @@ export function ProjectGallery() {
   return (
     <ol className="project-list" onPointerLeave={() => setHovered(null)}>
       {projects.map((project, index) => (
-        <li className={["project-row", "slug" in project ? "project-row--linked" : ""].join(" ")} key={project.name}>
+        <li className={["project-row", "slug" in project ? "project-row--linked" : ""].join(" ")} key={project.name} data-project={project.name.toLowerCase()} data-expanded={"slug" in project && active === project.slug}>
           {"slug" in project ? (
             <Link
               className="project-link"
@@ -71,9 +71,9 @@ export function ProjectGallery() {
                 <ProjectImageTransition slug={project.slug}>
                   <span className="project-preview-media">
                     <Image
-                      src="/images/aurelia-interface.webp"
-                      width={1440}
-                      height={900}
+                      src={project.slug === "paylecta" ? "/images/paylecta-cover.webp" : "/images/aurelia-interface.webp"}
+                      width={project.slug === "paylecta" ? 1402 : 1440}
+                      height={project.slug === "paylecta" ? 1081 : 900}
                       alt=""
                       loading="eager"
                       sizes="(max-width: 700px) calc(100vw - 80px), (max-width: 1200px) 22vw, 320px"

@@ -13,18 +13,21 @@ Ticket 05 implements I-03 (magnetic feedback) and I-04 (image-inverting cursor).
 | Close / Reopen menu | Menu | 12px | Label and icon |
 | Work, About, Contact | Menu | 5px | Static label, inner marquee wrapper, arrow |
 | Professional profiles | Menu and footer | 5px | Label and menu arrow |
-| Aurelia project row | Homepage gallery | 6px | Title and arrow; preview width has its own wrapper |
+| Aurelia and Paylecta project rows | Homepage gallery | 6px | Title and arrow; preview width has its own wrapper |
 | More about me | Homepage | 5px | Label and arrow |
 | Contact heading | Shared footer | 12px | Heading and arrow |
 | Contact email | Shared footer | 5px | Address |
-| Back to selected work (top and bottom) | Aurelia case study | 5px | Label and arrow |
+| Back to selected work (top and bottom) | Aurelia and Paylecta case studies | 5px | Label and arrow |
 | View the live Aurelia concept | Aurelia case study | 5px | Label and arrow |
 | Skip to implementation notes | Aurelia media toolbar | 5px | Label and arrow |
 | Open filters/details/request screenshot | Aurelia media captions | 5px | Label and arrow |
 | Open workflow recording fallback | Aurelia recording | 5px | Label |
+| Read the original Paylecta case study PDF | Paylecta case study | 5px | Label and arrow |
+| Skip to implementation considerations | Paylecta media toolbar | 5px | Label and arrow |
+| Open overview/customers/invoices screenshot | Paylecta media captions | 5px | Label and arrow |
 | Video playback controls | Aurelia recording | None | Native browser controls |
 | Resume | Header, menu, footer | None | Unavailable label, `aria-disabled`; no link until a current PDF exists |
-| Paylecta, PawFriend, MunchPal | Homepage gallery | None | Static project rows until their routes exist |
+| PawFriend, MunchPal | Homepage gallery | None | Original ticket 05 inventory; later gallery updates provide external destinations |
 
 No semantic action contains another magnetic target. The menu owns feedback while its overlay is present. Its marquee travel and magnetic movement use separate nested wrappers. Decorative and unavailable content is excluded from the action system.
 

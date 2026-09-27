@@ -47,3 +47,7 @@ Captured from the live concept on 26 September 2026 at 1440 × 900. Images were 
 Adjacent JSON sidecars record source, date, viewport, preparation, and evidence limits. Images use intrinsic dimensions and responsive Next.js delivery; the native video uses `preload="none"`, a poster, and user-controlled playback. Sample dates in the recording do not represent availability. No request was submitted.
 
 The user confirmed independent design/build authorship and approved live-site screenshots. Underlying stay-photography rights remain unverified and need confirmation before release. Original research notes, iteration history, and source-code details were unavailable; the case study uses observed interface evidence and does not claim those activities or results.
+
+## Paylecta original design media, ticket 09
+
+The hero and three media panels are full original pages 1, 4, 6, and 7 of the supplied Paylecta case-study PDF, rechecked on 27 September 2026. Shipping files are `paylecta-cover.webp`, `paylecta-overview.webp`, `paylecta-customers.webp`, and `paylecta-invoices.webp`, each 1402 × 1081. JSON sidecars record the source URL/hash, PDF page, original date, preparation, and evidence limits. These static original mockups are separate from the generated gallery artwork. See [the Paylecta media record](paylecta-case-study.md#media-delivery-and-reading).

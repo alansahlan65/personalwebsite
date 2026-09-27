@@ -12,6 +12,9 @@ export type CaseMediaPanel = {
   description: string;
   image: string;
   alt: string;
+  width: number;
+  height: number;
+  caption: string;
 };
 
 function scrollToMediaPanel(section: HTMLElement, panel: HTMLElement, travel: number) {
@@ -129,8 +132,8 @@ export function CaseMediaSequence({ id, title, panels, skipTo, skipLabel }: {
             {panels.map((panel, index) => (
               <article className="case-media-panel" key={panel.id} aria-labelledby={`${id}-${panel.id}`}>
                 <div className="case-media-copy"><p className="section-label">0{index + 1}</p><h3 id={`${id}-${panel.id}`}>{panel.title}</h3><p>{panel.description}</p></div>
-                <figure><Image src={panel.image} alt={panel.alt} width={1440} height={900} sizes="(min-width: 1000px) 55vw, 90vw" />
-                  <figcaption><span>Live concept, 26 September 2026.</span><a href={panel.image} target="_blank" rel="noreferrer" data-magnet="text"><span data-magnet-part>Open {panel.id} screenshot</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a></figcaption>
+                <figure><Image src={panel.image} alt={panel.alt} width={panel.width} height={panel.height} sizes="(min-width: 1000px) 55vw, 90vw" />
+                  <figcaption><span>{panel.caption}</span><a href={panel.image} target="_blank" rel="noreferrer" data-magnet="text"><span data-magnet-part>Open {panel.id} screenshot</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a></figcaption>
                 </figure>
               </article>
             ))}

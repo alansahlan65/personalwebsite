@@ -30,7 +30,7 @@ export function RouteFocus() {
       if (saved) {
         try {
           const position = JSON.parse(saved) as { slug: string; y: number };
-          if (position.slug === "aurelia" && Number.isFinite(position.y)) y = position.y;
+          if ((position.slug === "aurelia" || position.slug === "paylecta") && Number.isFinite(position.y)) y = position.y;
         } catch {
           // A direct visit returns to the selected-work section start.
         }
@@ -43,9 +43,10 @@ export function RouteFocus() {
       }, 100);
       return () => window.clearTimeout(timeout);
     }
-    if (pathname === "/" && fromPath === "/work/aurelia" && fromHistory) {
+    if (pathname === "/" && fromPath.startsWith("/work/") && fromHistory) {
       const frame = requestAnimationFrame(() => {
-        document.querySelector<HTMLElement>(".project-link[href=\"/work/aurelia\"]")?.focus({ preventScroll: true });
+        Array.from(document.querySelectorAll<HTMLAnchorElement>(".project-link"))
+          .find((link) => link.getAttribute("href") === fromPath)?.focus({ preventScroll: true });
       });
       return () => cancelAnimationFrame(frame);
     }

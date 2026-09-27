@@ -404,3 +404,6 @@ span[data-magnet-part] { display: inline-block; }
 .case-topline a, .case-return, .case-live-link, .case-media-controls, .case-media-controls a, .case-media-panel figcaption a { max-width: 100%; }
 .case-media-controls { min-width: 0; }
 .case-reading h2 { overflow-wrap: anywhere; }
+
+/* Keep long case-study headings readable with enlarged text. */
+.case-reading h2 { overflow-wrap: anywhere; }
