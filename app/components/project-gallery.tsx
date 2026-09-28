@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ProjectImageTransition } from "./project-transition";
-import { useEffect, useState, type MouseEvent, type PointerEvent } from "react";
+import { useEffect, useRef, useState, type MouseEvent, type PointerEvent } from "react";
 
 const projects = [
   { name: "Aurelia", category: "Hospitality", slug: "aurelia" },
   { name: "Paylecta", category: "Finance", slug: "paylecta" },
   { name: "PawFriend", category: "Pet adoption", slug: "pawfriend" },
-  { name: "Munchpal", category: "Food sharing" },
+  { name: "Munchpal", category: "Food sharing", slug: "munchpal" },
 ] as const;
 
 function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
@@ -19,6 +19,7 @@ function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
 }
 
 export function ProjectGallery() {
+  const listRef = useRef<HTMLOListElement>(null);
   const [hovered, setHovered] = useState<string | null>(null);
   const [focused, setFocused] = useState<string | null>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -32,7 +33,16 @@ export function ProjectGallery() {
     return () => query.removeEventListener("change", onChange);
   }, []);
 
-  function onPreviewEnter(event: PointerEvent<HTMLAnchorElement>, slug: string) {
+  useEffect(() => {
+    function clearWhenPointerMovesAway(event: globalThis.PointerEvent) {
+      if (event.pointerType !== "mouse" && event.pointerType !== "pen") return;
+      if (!listRef.current?.contains(event.target as Node)) setHovered(null);
+    }
+    window.addEventListener("pointermove", clearWhenPointerMovesAway);
+    return () => window.removeEventListener("pointermove", clearWhenPointerMovesAway);
+  }, []);
+
+  function onPreviewMove(event: PointerEvent<HTMLAnchorElement>, slug: string) {
     if (event.pointerType === "mouse" || event.pointerType === "pen") setHovered(slug);
   }
 
@@ -42,10 +52,10 @@ export function ProjectGallery() {
   }
 
   return (
-    <ol className="project-list" onPointerLeave={() => setHovered(null)}>
+    <ol className="project-list" ref={listRef}>
       {projects.map((project, index) => (
-        <li className={["project-row", "slug" in project ? "project-row--linked" : ""].join(" ")} key={project.name} data-project={project.name.toLowerCase()} data-expanded={"slug" in project && active === project.slug}>
-          {"slug" in project ? (
+        <li className="project-row project-row--linked" key={project.name} data-project={project.name.toLowerCase()} data-expanded={active === project.slug}>
+          {(
             <Link
               className="project-link"
               data-magnet="project"
@@ -53,8 +63,7 @@ export function ProjectGallery() {
               onNavigate={() => window.dispatchEvent(new Event("portfolio:project-entry"))}
               href={"/work/" + project.slug}
               aria-label={project.name + ", " + project.category + " case study"}
-              onPointerEnter={(event) => onPreviewEnter(event, project.slug)}
-              onPointerLeave={() => setHovered(null)}
+              onPointerMove={(event) => onPreviewMove(event, project.slug)}
               onFocus={() => setFocused(project.slug)}
               onBlur={() => setFocused(null)}
               onClick={(event) => onProjectClick(event, project.slug)}
@@ -71,9 +80,9 @@ export function ProjectGallery() {
                 <ProjectImageTransition slug={project.slug}>
                   <span className="project-preview-media">
                     <Image
-                      src={project.slug === "paylecta" ? "/images/paylecta-cover.webp" : project.slug === "pawfriend" ? "/images/pawfriend-interface.webp" : "/images/aurelia-interface.webp"}
+                      src={project.slug === "paylecta" ? "/images/paylecta-cover.webp" : project.slug === "pawfriend" ? "/images/pawfriend-interface.webp" : project.slug === "munchpal" ? "/images/munchpal-cover.webp" : "/images/aurelia-interface.webp"}
                       width={project.slug === "paylecta" ? 1402 : 1440}
-                      height={project.slug === "paylecta" ? 1081 : 900}
+                      height={project.slug === "paylecta" ? 1081 : project.slug === "munchpal" ? 810 : 900}
                       alt=""
                       loading="eager"
                       sizes="(max-width: 700px) calc(100vw - 80px), (max-width: 1200px) 22vw, 320px"
@@ -84,12 +93,6 @@ export function ProjectGallery() {
               <span className="project-category">{project.category}</span>
               <span className="project-arrow" aria-hidden="true" data-magnet-part><ArrowIcon /></span>
             </Link>
-          ) : (
-            <>
-              <span className="project-number" aria-hidden="true">0{index + 1}</span>
-              <h3>{project.name}</h3>
-              <span className="project-category">{project.category}</span>
-            </>
           )}
         </li>
       ))}

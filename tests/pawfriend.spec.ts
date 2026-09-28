@@ -209,10 +209,13 @@ test("PawFriend gallery entry and return preserve selection and scroll", async (
   await expect.poll(() => project.locator("img").evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
   const heading = project.getByRole("heading", { name: "PawFriend", exact: true });
   await expect(heading).toBeInViewport({ ratio: 1 });
-  // Wait for the expanding row's click target to settle before measuring departure.
+  // Record the actual click position after the expanding row has settled.
   await heading.click({ trial: true });
-  const y = await page.evaluate(() => scrollY);
+  await project.evaluate(link => link.addEventListener("click", () => {
+    sessionStorage.setItem("pawfriend-test-departure-y", String(scrollY));
+  }, { capture: true, once: true }));
   await heading.click();
+  const y = Number(await page.evaluate(() => sessionStorage.getItem("pawfriend-test-departure-y")));
   await expect(page).toHaveURL(/\/work\/pawfriend$/);
   await expect(page.getByRole("heading", { level: 1, name: "PawFriend", exact: true })).toBeFocused();
   await page.goBack();

@@ -139,16 +139,12 @@ test("touch gestures scroll through the roles and reach the project journey", as
     await session.send("Input.dispatchTouchEvent", { type: "touchMove", touchPoints: [{ x: 180, y }] });
     await page.waitForTimeout(20);
   }
-  await session.send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
+  // End the injected gesture without leaving Chromium's momentum tap guard active.
+  await session.send("Input.dispatchTouchEvent", { type: "touchCancel", touchPoints: [] });
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(700);
   await expect.poll(() => positions(page)).not.toEqual(start);
-  await expect.poll(async () => {
-    const before = await page.evaluate(() => window.scrollY);
-    await page.waitForTimeout(150);
-    return (await page.evaluate(() => window.scrollY)) === before;
-  }).toBe(true);
   const project = page.getByRole("link", { name: "Aurelia, Hospitality case study" });
-  // Finish the simulated fling and bring the intended target into view before tapping.
+  // Bring the intended target into view before tapping.
   await project.scrollIntoViewIfNeeded();
   const targetY = await page.evaluate(() => window.scrollY);
   await scrollTo(page, targetY);
