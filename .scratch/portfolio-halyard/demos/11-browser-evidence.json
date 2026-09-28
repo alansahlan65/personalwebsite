@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-28",
+  "browser": "153.0.8010.12",
+  "baseURL": "http://127.0.0.1:3004",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "range": {
+    "start": 2574.453125,
+    "travel": 4032
+  },
+  "states": [
+    {
+      "panel": 1,
+      "scroll": 2574
+    },
+    {
+      "panel": 2,
+      "scroll": 3918
+    },
+    {
+      "panel": 3,
+      "scroll": 5262
+    },
+    {
+      "panel": 4,
+      "scroll": 6606
+    },
+    {
+      "panel": 3,
+      "scroll": 5262
+    }
+  ],
+  "mobileWidth": 390,
+  "socialImageStatus": 200,
+  "errors": [],
+  "scope": "Portfolio reading journey using original PDF pages and the linked Figma prototype as references; no live Munchpal service was verified."
+}
