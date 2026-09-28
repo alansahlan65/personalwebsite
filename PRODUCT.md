@@ -10,7 +10,7 @@ web
 
 React, TypeScript, and Next.js, as recorded in the approved PRD and implementation spec for this application. Portfolio content is static; browser interactions use client components and Motion for React. GSAP/ScrollTrigger is optional for project media when it materially simplifies implementation. Native scrolling is the baseline; Lenis requires demonstrated benefit without input or navigation regressions.
 
-The responsive homepage foundation is implemented and verified for ticket 01. Ticket 02 adds the About route and confirmed email/profile destinations. On 27 September 2026, Alan supplied his CADIT role, October 2025 start date, component-library responsibility and developer-facing UI work. The updated resume and About page use these facts. The user replaced Halyard with Plus Jakarta Sans, bundled locally. Remaining case studies are unfinished. No deployment provider or production domain has been selected in this session.
+The responsive homepage, About route, and all four local case studies are implemented. On 27 September 2026, Alan supplied his CADIT role, October 2025 start date, component-library responsibility and developer-facing UI work. The updated resume and About page use these facts. Plus Jakarta Sans is bundled locally. Ticket 12 has a reviewed local release candidate; no deployment provider or public domain has been selected.
 
 ## Users
 
@@ -47,7 +47,7 @@ Case studies establish the user problem, Alan's actual contribution, and consequ
 - Include the homepage, a separate About page, and complete case studies for Aurelia, Paylecta, PawFriend, and Munchpal. Their categories are hospitality, finance, pet adoption, and food sharing respectively.
 - Preserve the approved interaction requirements: scroll-linked role tracks, inline expanding project previews, magnetic clickable controls, an image-inverting cursor, a full-to-compact header, a Sliding Stairs Menu, shared-image project entry/return, and desktop horizontal project media. Detailed behavior and acceptance conditions live in the PRD and spec rather than this product record.
 - All actions remain immediately usable while animation runs. Interruption, rapid input changes, route changes, and enhancement failure must preserve navigation and content access.
-- Aurelia and PawFriend are self-initiated concept projects. Verify Paylecta and Munchpal status and all project contributions, collaborators, and outcome claims before publishing.
+- Aurelia and PawFriend are self-initiated concepts; Paylecta and Munchpal are client design projects. Alan confirmed his contribution and collaborator boundaries for all four. Keep unsupported outcomes out of the public copy.
 - Selective new demonstrations are permitted as later explorations. Label them clearly and distinguish them from original contributions, production use, and historical testing.
 - Keep all four projects. Missing evidence does not authorize fabricated claims or silent scope reduction; identify missing inputs and continue independent work.
 - Respect the confirmed PRD and alignment decisions over conflicting older examples or generic design-skill recommendations. This initialization does not reopen the approved direction.
@@ -67,11 +67,11 @@ Apply the better-writing skill to all website copy. Use clear, brief prose, cons
 - [Spec revision 2](.scratch/portfolio-halyard/spec.md) records implementation and testing requirements. Twelve approved implementation tickets exist in the local Markdown tracker.
 - The supplied portrait and AS mark in `assets/` have been inspected and prepared for the homepage. See [asset provenance](docs/assets.md) for originals, transformations, and remaining inputs.
 - [Ticket 02 content sources](docs/portfolio-content.md) records resume inspection, confirmed email/profile destinations, and remaining factual inputs.
-- The PRD links to a portfolio Drive folder, Paylecta and Munchpal Behance studies, and Aurelia and PawFriend sites. Those links identify material to investigate, not already-verified evidence.
+- The PRD links to a portfolio Drive folder, Paylecta and Munchpal studies, and Aurelia and PawFriend sites. Their original PDFs and live sites were inspected for the case studies; source checks and claim limits are recorded in `docs/portfolio-content.md` and the project-specific source records.
 
-Plus Jakarta Sans and the updated resume are delivered locally. The approved composition image and remaining project media still require verification before release. Verify them before use; clearly labelled development substitutes do not satisfy release acceptance.
+Plus Jakarta Sans, the updated resume, four original-source case studies, and related media are delivered locally. Generated gallery banners remain separate from project evidence. The public domain and absolute social URLs need checking at publication.
 
-Recheck Paylecta outcome metrics and testimonial/persona provenance, Munchpal task-time/completion figures, and resume accuracy. Remove any AI-directed instruction or keyword block from the release resume if present. Omit unsupported results. Ticket 01 has passing browser tests, lint, type checks, and a production build. See [verification results](.scratch/portfolio-halyard/ticket-01-verification.md) for actual coverage and limits. No performance score or accessibility certification is claimed.
+Paylecta and Munchpal source figures were assessed and unsupported outcomes omitted. The release resume excludes the AI-directed instruction/keyword block found in the supplied PDF. Ticket 12 has passing browser tests, lint, type checks, a production build, and recorded lab performance conditions. See [its verification record](.scratch/portfolio-halyard/ticket-12-verification.md) for coverage and limits. No field performance score or accessibility certification is claimed.
 
 ## Product Principles
 

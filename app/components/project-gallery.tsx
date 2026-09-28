@@ -8,16 +8,16 @@ import { ProjectImageTransition } from "./project-transition";
 import { useEffect, useRef, useState, type MouseEvent, type PointerEvent } from "react";
 
 const projects = [
-  { name: "Aurelia", category: "Hospitality", slug: "aurelia", href: "/work/aurelia", local: true, kind: "case study" },
-  { name: "Paylecta", category: "Finance", slug: "paylecta", href: "/work/paylecta", local: true, kind: "case study" },
-  { name: "PawFriend", category: "Pet adoption", slug: "pawfriend", href: "/work/pawfriend", local: true, kind: "case study" },
-  { name: "Munchpal", category: "Food sharing", slug: "munchpal", href: "/work/munchpal", local: true, kind: "case study" },
+  { name: "Aurelia", category: "Hospitality", slug: "aurelia", href: "/work/aurelia" },
+  { name: "Paylecta", category: "Finance", slug: "paylecta", href: "/work/paylecta" },
+  { name: "PawFriend", category: "Pet adoption", slug: "pawfriend", href: "/work/pawfriend" },
+  { name: "Munchpal", category: "Food sharing", slug: "munchpal", href: "/work/munchpal" },
 ] as const;
 
 const MotionLink = motion.create(Link);
 const layoutEase = [0.23, 1, 0.32, 1] as const;
 
-function ProjectBanner({ slug, local, expanded, reducedMotion }: { slug: string; local: boolean; expanded: boolean; reducedMotion: boolean }) {
+function ProjectBanner({ slug, expanded, reducedMotion }: { slug: string; expanded: boolean; reducedMotion: boolean }) {
   const banner = <motion.span
     className="project-preview"
     layout
@@ -34,7 +34,7 @@ function ProjectBanner({ slug, local, expanded, reducedMotion }: { slug: string;
     </span>
   </motion.span>;
 
-  return local ? <ProjectImageTransition slug={slug}>{banner}</ProjectImageTransition> : banner;
+  return <ProjectImageTransition slug={slug}>{banner}</ProjectImageTransition>;
 }
 
 function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
@@ -75,22 +75,20 @@ export function ProjectGallery() {
               className="project-link"
               data-magnet="project"
               href={project.href}
-              target={project.local ? undefined : "_blank"}
-              rel={project.local ? undefined : "noopener noreferrer"}
-              transitionTypes={project.local ? ["project-entry"] : undefined}
-              onNavigate={project.local ? () => window.dispatchEvent(new Event("portfolio:project-entry")) : undefined}
-              aria-label={`${project.name}, ${project.category} ${project.kind}${project.local ? "" : " (opens in a new tab)"}`}
+              transitionTypes={["project-entry"]}
+              onNavigate={() => window.dispatchEvent(new Event("portfolio:project-entry"))}
+              aria-label={`${project.name}, ${project.category} case study`}
               onPointerMove={(event) => onPreviewMove(event, project.slug)}
               onFocus={(event) => { if (event.currentTarget.matches(":focus-visible")) setFocused(project.slug); }}
               onBlur={() => setFocused(null)}
-              onClick={(event) => { if (project.local) onProjectClick(event, project.slug); }}
+              onClick={(event) => onProjectClick(event, project.slug)}
             >
               <motion.span className="project-number" layout="position" aria-hidden="true" transition={{ layout: { duration: reducedMotion ? 0 : 0.5, ease: layoutEase } }}>0{index + 1}</motion.span>
               <motion.span className="project-copy" layout="position" transition={{ layout: { duration: reducedMotion ? 0 : 0.5, ease: layoutEase } }}>
                 <h3 data-magnet-part>{project.name}</h3>
                 <span className="project-category">{project.category}</span>
               </motion.span>
-              <ProjectBanner slug={project.slug} local={project.local} expanded={active === project.slug} reducedMotion={reducedMotion} />
+              <ProjectBanner slug={project.slug} expanded={active === project.slug} reducedMotion={reducedMotion} />
               <motion.span className="project-arrow" layout="position" aria-hidden="true" transition={{ layout: { duration: reducedMotion ? 0 : 0.5, ease: layoutEase } }}>
                 <span data-magnet-part><ArrowIcon direction="right" /></span>
               </motion.span>

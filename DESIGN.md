@@ -61,7 +61,7 @@ components:
 
 The user-approved typography update of 27 September 2026 uses Plus Jakarta Sans, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.
 
-This record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation, ticket 02 About/contact additions, ticket 03 navigation, ticket 04 Aurelia entry, ticket 05 pointer feedback, and ticket 06 project entry, not a complete release. Plus Jakarta Sans is now self-hosted through next/font/local, replacing the prior Halyard requirement at the user’s request. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.
+This record began with the five-section homepage foundation and now includes the About, navigation, pointer, project-entry, and case-study work. Plus Jakarta Sans is self-hosted through next/font/local, replacing the prior Halyard requirement at the user’s request. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns the homepage composition, and docs/assets.md records asset provenance and limits.
 
 **Key Characteristics:**
 
@@ -118,11 +118,11 @@ The portrait's top-right cobalt corner has 35px arms with 8px borders. The About
 
 ## Components
 
-The primary navigation consists of plain text anchors with 44px minimum height and underline on hover. Links show a 2px current-color focus outline offset by 6px. The full-row Aurelia link uses a -4px inset offset so its focus rectangle stays inside the ruled row. Resume is a native download link to the verified, locally served one-page PDF. The skip link becomes visible on focus. The original AS image accompanies the name in the home links.
+The primary navigation consists of plain text anchors with 44px minimum height and underline on hover. Links show a 2px current-color focus outline offset by 6px. Full-row project links use a -4px inset offset so their focus rectangles stay inside the ruled rows. Resume is a native download link to the verified, locally served one-page PDF. The skip link becomes visible on focus. The original AS image accompanies the name in the home links.
 
 The location badge is a small cobalt square labelled ID beside the Indonesia text. It is not a clickable control.
 
-Project rows are a ruled ordered list of four projects. Number and category use muted text. Aurelia is a single full-row link: its screenshot expands inline on mouse or keyboard focus, stays visible on touch and with reduced motion, and opens the direct case-study route. The other rows remain static until their case studies exist.
+Project rows are a ruled ordered list of four projects. Number and category use muted text. Each full row is a link to its local case study. Distinct compact and expanded artwork responds to mouse or keyboard focus, stays visible on touch and with reduced motion, and opens the direct case-study route.
 
 About pairs a small label with a large statement, decorative corner, and More about me link. The separate About page leads with Product Designer positioning and a real portrait, followed by ruled sections for CADIT, an Aurelia example, approach, and resume. The hero stacks below 850px and the ruled sections below 650px. The contact section uses a full cobalt field with the heading and unboxed arrow as one mailto action, followed by the email address and professional links. Resume download is available in the header, menu, About body and footer.
 
@@ -132,11 +132,11 @@ Current actions use stationary semantic targets with separate moving children. M
 
 The decorative cursor follows actual pointer coordinates as a small dot, expands to a 72px white difference-blend disc over imagery, and adds a separate outlined arrow over actionable images. It yields to text selection and resets on route/menu changes, window exit, touch, preference changes, and hidden tabs. Native cursor hiding starts only after the enhancement is ready. See docs/pointer-interactions.md for the action inventory and compositing evidence.
 
-Aurelia's preview and hero share a React ViewTransition identity. Gallery links carry the project-entry transition type; menu navigation and return links keep their existing behavior. The browser morph lasts 520ms with cubic-bezier(.77, 0, .175, 1). The title settles over 220ms with cubic-bezier(.23, 1, .32, 1). Both image slots preserve 16:10 cropping. The hero follows the introduction so its destination is visible during entry, before the project facts and live link. The snapshot overlay passes pointer events through, and reduced motion, touch, and forced colors remove spatial entry. See docs/project-entry.md for fallback behavior and the recording.
+Project previews and case-study heroes share a React ViewTransition identity. Gallery links carry the project-entry transition type; menu navigation and return links keep their existing behavior. The browser morph lasts 520ms with cubic-bezier(.77, 0, .175, 1). The title settles over 220ms with cubic-bezier(.23, 1, .32, 1). The hero follows the introduction so its destination is visible during entry, before the project facts and source link. The snapshot overlay passes pointer events through, and reduced motion, touch, and forced colors remove spatial entry. See docs/project-entry.md for fallback behavior and the recording.
 
-Ordinary navigation between Home, About, and Aurelia uses a 220ms page crossfade with cubic-bezier(.23, 1, .32, 1). Each page owns an enter/exit boundary; same-page anchors and ordinary state updates do not replay it. Gallery entries retain their shared-image transition without a simultaneous page fade. Cached browser Back/Forward navigation receives an incoming opacity fade without intercepting history. Touch receives the page crossfade; reduced motion shortens snapshot opacity changes to 80ms and forced colors uses immediate pages. Live-page history restores remain opaque under either accessibility preference. Selected-work scroll restoration runs before the destination snapshot. Snapshot overlays pass pointer input through, and navigation and focus do not wait for animation. See docs/page-transitions.md.
+Ordinary navigation between Home, About, and the case studies uses a 220ms page crossfade with cubic-bezier(.23, 1, .32, 1). Each page owns an enter/exit boundary; same-page anchors and ordinary state updates do not replay it. Gallery entries retain their shared-image transition without a simultaneous page fade. Cached browser Back/Forward navigation receives an incoming opacity fade without intercepting history. Touch receives the page crossfade; reduced motion shortens snapshot opacity changes to 80ms and forced colors uses immediate pages. Live-page history restores remain opaque under either accessibility preference. Selected-work scroll restoration runs before the destination snapshot. Snapshot overlays pass pointer input through, and navigation and focus do not wait for animation. See docs/page-transitions.md.
 
-Scroll-linked role tracks, previews for the remaining projects, and horizontal project media are not implemented in this foundation.
+Scroll-linked role tracks, all four project previews, and horizontal case-study media are implemented. Their reduced-motion and narrow-screen layouts keep the content readable without the spatial effect.
 
 ## Do's and Don'ts
 
@@ -150,7 +150,7 @@ Scroll-linked role tracks, previews for the remaining projects, and horizontal p
 ### Don't:
 
 - Don't treat the fallback as evidence that the intended font loaded.
-- Don't describe remaining static project rows as completed case studies.
+- Don't treat generated gallery artwork as original case-study evidence.
 - Don't claim a pixel match to the missing composition image or a complete release.
 
 
@@ -158,4 +158,4 @@ Scroll-linked role tracks, previews for the remaining projects, and horizontal p
 
 The hero headline is “Product Designer. Closer to the build.” CADIT, October 2025–present, and its component-library/UI-mockup work are user-confirmed. Aurelia is linked as a solo design-and-build example; no historical metrics are added. The portrait reuses the supplied homepage crop. A slanted cobalt underline, image zoom and arrow response add restrained detail. Hover motion is limited to fine pointers and disabled with reduced motion.
 
-The shared header wraps by intrinsic content width, with full navigation on a second row below 900px. Work/About targets are at least 44px wide. Menu buttons are enhanced only after hydration; native links and resume access remain available without JavaScript. The footer notice now concerns remaining case studies, and its reading width is capped. The font change also affects Home and Aurelia; their interactions require regression verification.
+The shared header wraps by intrinsic content width, with full navigation on a second row below 900px. Work/About targets are at least 44px wide. Menu buttons are enhanced only after hydration; native links and resume access remain available without JavaScript. The development notice was removed when all four case studies were completed. The font change also affects Home and Aurelia; their interactions were checked in the integrated browser suite.

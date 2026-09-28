@@ -17,11 +17,11 @@ Desktop project titles use `clamp(1.65rem, 4.2vw, 2.75rem)`, weight 650, trackin
 | Row | Destination | Artwork pair |
 | --- | --- | --- |
 | Aurelia | `/work/aurelia` | `aurelia-compact.webp`, `aurelia-expanded.webp` |
-| Paylecta | [Supplied case-study PDF](https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view) | `paylecta-compact.webp`, `paylecta-expanded.webp` |
-| PawFriend | [Live project](https://pawfriend-topaz.vercel.app/) | `pawfriend-compact.webp`, `pawfriend-expanded.webp` |
-| Munchpal | [Supplied case-study PDF](https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view) | `munchpal-compact.webp`, `munchpal-expanded.webp` |
+| Paylecta | `/work/paylecta` | `paylecta-compact.webp`, `paylecta-expanded.webp` |
+| PawFriend | `/work/pawfriend` | `pawfriend-compact.webp`, `pawfriend-expanded.webp` |
+| Munchpal | `/work/munchpal` | `munchpal-compact.webp`, `munchpal-expanded.webp` |
 
-The three external rows and [View all work on Behance](https://www.behance.net/muhammadsahlanshadiq) open new tabs with `noopener noreferrer` and accessible new-tab labels. Aurelia retains its shared-image transition and return-history behavior. Modified clicks preserve native link behavior.
+All four rows now open local case studies with shared-image entry and return-history behavior. Their source PDF, live site, prototype, and repository links remain available inside the relevant case study. [View all work on Behance](https://www.behance.net/muhammadsahlanshadiq) opens a new tab. Modified clicks preserve native link behavior.
 
 Exactly eight Image Gen images form four related compact/expanded pairs. The expanded images change composition, rather than enlarging the compact crops. [The asset record](assets.md#selected-work-banners-27-september-2026) separates this concept artwork from original project evidence. [The unchanged generation manifest](selected-work-banners.json) retains every exact prompt, source URL, original generator path and shipping WebP path. Each shipping file also has its exact prompt in an adjacent `.webp.json` sidecar. Generated screens, scene photography and sample values establish no original project contribution, production use or outcome claim.
 
@@ -33,4 +33,4 @@ The [review folder](../.impeccable/review/selected-work/) contains the supplied 
 
 ## Context comparison
 
-PRODUCT.md still governs factual claims, native navigation, immediate actions, keyboard/touch access and reduced motion. The shipped section meets those constraints within this scope. DESIGN.md's palette and bundled Plus Jakarta Sans match the implementation; its older project-row layout, title size and static-row wording describe earlier work. The sidecar still refers to Halyard, unavailable resume and static project rows. Those existing advisories, along with the detector's old portrait/About border findings, remain outside this redesign. PRODUCT.md, DESIGN.md and `.impeccable/design.json` are unchanged. No global drift or out-of-scope visual defect is canonized or repaired here.
+PRODUCT.md still governs factual claims, native navigation, immediate actions, keyboard/touch access and reduced motion. The shipped section meets those constraints within this scope. The route and status descriptions in PRODUCT.md and DESIGN.md were updated during ticket 12 when the remaining case studies, resume, and local font were delivered. This record preserves the original selected-work implementation checks; the [ticket 12 verification](../.scratch/portfolio-halyard/ticket-12-verification.md) covers the integrated release candidate.
