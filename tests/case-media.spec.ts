@@ -196,7 +196,7 @@ test("leaving and returning to Aurelia clears pinning and preserves normal navig
   await sequence.getByRole("article").nth(2).getByRole("link").focus();
   await page.locator(".compact-menu-trigger").click();
   await page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "About", exact: true }).click();
-  await expect(page.getByRole("heading", { name: "About me" })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
   await expect(sequence).toHaveCount(0);
   expect(await page.evaluate(() => document.body.style.position)).toBe("");
   await page.setViewportSize({ width: 390, height: 844 });

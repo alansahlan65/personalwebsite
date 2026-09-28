@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("Aurelia expands inline without moving the row or delaying navigation", async ({ page }) => {
+test("Aurelia opens a compact banner into a wide banner without delaying navigation", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   const row = page.locator(".project-row").first();
@@ -11,21 +11,24 @@ test("Aurelia expands inline without moving the row or delaying navigation", asy
   await expect(row.getByRole("link")).toHaveCount(1);
   await expect(row.getByRole("heading", { name: "Aurelia" })).toBeVisible();
   await expect(row.getByText("Hospitality")).toBeVisible();
-  await expect.poll(() => row.locator("img").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
+  await expect.poll(() => row.locator(".project-banner-compact").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
   const rowBefore = await row.evaluate((element) => { const rect = element.getBoundingClientRect(); return { y: rect.y + window.scrollY, height: rect.height }; });
   const categoryBefore = await category.boundingBox();
-  expect(await preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
+  const compactWidth = await preview.evaluate((element) => element.getBoundingClientRect().width);
+  expect(compactWidth).toBeGreaterThan(150);
 
   await link.hover({ position: { x: 8, y: 8 } });
-  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
+  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(compactWidth * 1.7);
   const rowAfter = await row.evaluate((element) => { const rect = element.getBoundingClientRect(); return { y: rect.y + window.scrollY, height: rect.height }; });
   const categoryAfter = await category.boundingBox();
   expect(Math.abs(rowAfter!.y - rowBefore!.y)).toBeLessThan(2);
-  expect(Math.abs(rowAfter!.height - rowBefore!.height)).toBeLessThan(2);
-  expect(categoryAfter!.x - categoryBefore!.x).toBeGreaterThan(100);
+  expect(rowAfter!.height - rowBefore!.height).toBeGreaterThan(150);
+  expect(Math.abs(categoryAfter!.x - categoryBefore!.x)).toBeLessThan(2);
+  await expect(row.locator(".project-banner-expanded")).toHaveCSS("opacity", "1");
+  await expect(row.locator(".project-banner-compact")).toHaveCSS("opacity", "0");
 
   await page.mouse.move(0, 0);
-  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
+  await expect.poll(async () => Math.abs((await preview.evaluate((element) => element.getBoundingClientRect().width)) - compactWidth)).toBeLessThan(2);
   await link.click();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
   await expect(page.getByRole("heading", { level: 1, name: "Aurelia" })).toBeFocused();
@@ -50,25 +53,27 @@ test("Aurelia preview retargets on pointer movement and keyboard focus takes pre
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
 
   await page.mouse.move(0, 0);
-  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
+  await expect(row).toHaveAttribute("data-expanded", "false");
   await link.hover({ position: { x: 8, y: 8 } });
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width), { intervals: [10, 10, 20] }).toBeGreaterThan(20);
-  expect(await preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(310);
+  await expect(row).toHaveAttribute("data-expanded", "true");
   await page.mouse.move(0, 0);
-  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
+  await expect(row).toHaveAttribute("data-expanded", "false");
   await link.hover({ position: { x: 8, y: 8 } });
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
+  await page.keyboard.press("Tab");
   await link.focus();
   await page.mouse.move(0, 0);
+  await expect(row).toHaveAttribute("data-expanded", "true");
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
   await page.keyboard.press("Tab");
-  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
+  await expect(row).toHaveAttribute("data-expanded", "false");
 });
 
 test("direct Aurelia visit has verified concept details and a working live destination", async ({ page }) => {
   await page.goto("/work/aurelia");
   await expect(page.getByRole("heading", { level: 1, name: "Aurelia" })).toBeVisible();
-  await expect(page.getByText(/designed and built this self-initiated concept independently/)).toBeVisible();
+  await expect(page.getByText("Independent product design and frontend build.", { exact: true })).toBeVisible();
   await expect(page.getByText("None.", { exact: true })).toBeVisible();
   await expect(page.getByText(/not a confirmed booking/)).toBeVisible();
   await expect(page.getByRole("heading", { name: "Design decisions" })).toBeVisible();
@@ -115,7 +120,7 @@ test("reduced motion shows a static preview and responds to preference changes",
   const preview = page.locator(".project-row").first().locator(".project-preview");
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
   await page.emulateMedia({ reducedMotion: "no-preference" });
-  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeLessThan(2);
+  await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect.poll(() => preview.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
 });

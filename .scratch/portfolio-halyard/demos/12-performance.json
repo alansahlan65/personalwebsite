@@ -1,0 +1,88 @@
+{
+  "browser": "153.0.8010.12",
+  "server": "next start, production build, localhost:3000",
+  "viewport": "1440x900",
+  "network": "CDP 150ms latency, 1.6 Mbps down, 0.72 Mbps up",
+  "cpu": "4x throttling",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "fcpMs": 1176,
+      "lcpMs": 1948,
+      "cls": 0.0012,
+      "loadMs": 4615,
+      "transferredKiB": 815,
+      "resources": 28,
+      "images": 25,
+      "brokenImages": [],
+      "videos": [],
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "route": "/work/aurelia",
+      "status": 200,
+      "fcpMs": 1196,
+      "lcpMs": 2124,
+      "cls": 0.0001,
+      "loadMs": 2567,
+      "transferredKiB": 435,
+      "resources": 21,
+      "images": 6,
+      "brokenImages": [],
+      "videos": [
+        "none"
+      ],
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "route": "/work/paylecta",
+      "status": 200,
+      "fcpMs": 1108,
+      "lcpMs": 1220,
+      "cls": 0.0001,
+      "loadMs": 2205,
+      "transferredKiB": 319,
+      "resources": 20,
+      "images": 6,
+      "brokenImages": [],
+      "videos": [],
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "route": "/work/pawfriend",
+      "status": 200,
+      "fcpMs": 1084,
+      "lcpMs": 1748,
+      "cls": 0.0001,
+      "loadMs": 2608,
+      "transferredKiB": 426,
+      "resources": 21,
+      "images": 6,
+      "brokenImages": [],
+      "videos": [
+        "none"
+      ],
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "route": "/work/munchpal",
+      "status": 200,
+      "fcpMs": 1080,
+      "lcpMs": 1340,
+      "cls": 0.0001,
+      "loadMs": 2202,
+      "transferredKiB": 326,
+      "resources": 20,
+      "images": 7,
+      "brokenImages": [],
+      "videos": [],
+      "width": 1440,
+      "errors": []
+    }
+  ]
+}

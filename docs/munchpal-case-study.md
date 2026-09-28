@@ -8,20 +8,20 @@ The [supplied Munchpal PDF](https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6
 
 The PDF's page 13 links to an [interactive MunchPal Figma prototype](https://www.figma.com/proto/Xsj8X9CcL5SW6CoILaZFH3/MunchPal?node-id=327-4477&t=I0tPWQMFFzQHCDff-1&scaling=scale-down&content-scaling=fixed&page-id=326%3A3405&starting-point-node-id=327%3A4467&show-proto-sidebar=1). Chromium 153.0.8010.12 loaded it with HTTP 200 and exposed named onboarding, request, posting, bulk-donation, and community flows. Selecting their starting points displayed the original screens without page errors. Clicking the visible request control did not establish a completed request or transaction, so the portfolio describes designed states rather than a working service. The PRD's [Behance listing](https://www.behance.net/gallery/227166295/Food-Sharing-Mobile-App-Munchpal-UIUX-Case-Study) returned HTTP 403 in Chromium and could not be used as a separate source.
 
-Alan confirmed this was a client project. His exact personal responsibilities, other contributors, and whether Garda Pangan was formally involved remain pending a firsthand answer. The PDF uses first person for interviews, maps, wireframes, and design; that writing alone does not establish sole authorship, a client identity, or a partnership. The page uses neutral design-focus language until credits are confirmed.
+Alan confirmed this was a client project. On 28 September 2026 he also confirmed that he designed the full flow, conducted research and interviews with Garda Pangan, made the information architecture, user flows, wireframes, and UI, and ran usability testing. He confirmed no other design collaborators; other people participated in interviews and usability testing. The page credits those specific contributions. Interviews do not establish a formal Garda Pangan partnership or a deployed integration.
 
 ## Claim limits
 
 | PDF material | Supported use | Boundary |
 | --- | --- | --- |
 | Pages 1–3 | Food-sharing design problem, intended audience, project composition | A prototype/design record, not proof of a shipped service |
-| Page 4 | Presentation of access and trust concerns | The PDF reports interviews with 15 people; interview notes or responses were not supplied |
+| Page 4 | Presentation of access and trust concerns | Alan confirms research and Garda Pangan interviews; the PDF's count of 15 people and underlying responses were not independently checked |
 | Pages 5–10 | Persona, empathy, journey, flow, and information-architecture artifacts | Illustrative design documents, not independently verified research findings |
 | Page 11 | Wireframes and visual-system choices | Original design process shown in the PDF |
 | Page 12 | Homepage, request, notification, posting, bulk-donation, and community mockups | Designed screens and confirmation states, not live inventory, pickups, or organizational integration |
 | Page 13 | A reported evaluation and prototype link | No task-level Maze export, participant results, timings, UEQ responses, calculation, or consent/source record was supplied |
 
-Page 13 reports 20 participants, 99.16% completion, 0.084 tasks/second, 96.01% relative efficiency, roughly 12 seconds per task, an "Excellent" UEQ characterization, and unattributed feedback quotes. These values are presentation claims. There is no supporting dataset or method detail sufficient to reproduce them, so the portfolio does not present them as measured outcomes or assert that testing was independently verified. The PDF's Garda Pangan-branded route is a design reference; formal involvement is unconfirmed. No claimed food availability or public deployment is verified.
+Page 13 reports 20 participants, 99.16% completion, 0.084 tasks/second, 96.01% relative efficiency, roughly 12 seconds per task, an "Excellent" UEQ characterization, and unattributed feedback quotes. Alan confirms conducting usability testing, but no supporting dataset or method detail was supplied to reproduce these figures. The portfolio does not present them as measured outcomes. The PDF's Garda Pangan-branded route is a design reference, and the confirmed interviews do not establish a formal partnership. No claimed food availability or public deployment is verified.
 
 ## Original media
 

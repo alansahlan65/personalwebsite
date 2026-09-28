@@ -6,9 +6,9 @@ test("Aurelia connects its preview to the hero and remains usable during entry",
   const project = page.locator(".project-row").first().getByRole("link", { name: /Aurelia/ });
   await project.hover();
   await expect.poll(() => project.locator(".project-preview").evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(300);
-  await project.locator("img").hover();
+  await project.locator(".project-banner-expanded").hover();
   await expect(page.locator(".site-cursor")).toHaveAttribute("data-mode", "action-image");
-  await project.locator("img").click();
+  await project.locator(".project-banner-expanded").click();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
   await expect.poll(() => page.evaluate(() => document.getAnimations().some((animation) => {
     const effect = animation.effect as KeyframeEffect | null;

@@ -38,10 +38,10 @@ for (const width of [320, 390, 650, 768, 1000, 1440]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
 
     const navigation = page.getByRole("navigation", { name: "Primary" });
-    await expect(navigation.getByRole("link")).toHaveCount(3);
-    await expect(navigation.getByText("Resume", { exact: true })).toHaveAttribute("aria-disabled", "true");
+    await expect(navigation.getByRole("link")).toHaveCount(4);
+    await expect(navigation.getByRole("link", { name: "Resume", exact: true })).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
     await navigation.getByRole("link", { name: "About", exact: true }).click();
-    await expect(page.getByRole("heading", { name: "About me", exact: true })).toBeInViewport();
+    await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeInViewport();
     await navigation.getByRole("link", { name: "Contact", exact: true }).click();
     await expect(page.getByRole("heading", { name: "Let’s work together.", exact: true })).toBeInViewport();
   });

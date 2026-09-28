@@ -22,7 +22,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "research",
     title: "Name the access and trust barriers",
-    description: "The case study groups concerns about food going unused, the discomfort of asking for help, and finding a nearby offer in time. It connects those concerns to search, availability alerts, and communication cues. The source reports interviews, but the underlying responses were not available for this review.",
+    description: "I interviewed Garda Pangan and worked through three concerns: food going unused, the discomfort of asking, and finding a nearby offer in time. The research summary shaped search, availability, and communication cues. The underlying responses are not published here.",
     image: "/images/munchpal-research.webp",
     alt: "Original Munchpal research summary naming surplus food, financial pressure, nearby availability, and trust cues",
     width: 1440, height: 810,
@@ -31,7 +31,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "flow",
     title: "Map both sides of the exchange",
-    description: "The flow diagram branches from onboarding into finding food, adding a surplus listing, messages, a donation route, community, and profile. Decision points connect a request or post to notifications. This is a plan for the prototype, not evidence that a live transaction completed.",
+    description: "I mapped finding food, posting surplus, messages, donations, and community as separate paths. Request and post states connect to notifications, so the prototype can explain what happens after an action.",
     image: "/images/munchpal-flow.webp",
     alt: "Original Munchpal user-flow diagram branching into meal requests, food posts, messages, donations, and community",
     width: 1440, height: 810,
@@ -40,7 +40,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "home",
     title: "Put nearby meals in context",
-    description: "The homepage mockup pairs a city selector and keyword search with prepared-food and ingredient categories. Recent listings carry a request action, while the center shortcut starts a food post. The PDF presents a route for finding and offering food within the same navigation.",
+    description: "City, search, and food categories narrow the nearby list. Each listing has a request action, while the central shortcut starts a post. The two sides of the exchange share navigation without sharing the same entry point.",
     image: "/images/munchpal-home.webp",
     alt: "Original Munchpal homepage mockup with Surabaya location, search, food categories, recent listing, and a central posting shortcut",
     width: 1440, height: 811,
@@ -49,7 +49,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "feedback",
     title: "Show what happens after a request",
-    description: "Notification mockups distinguish a new request, acceptance, message, donation report, and rating. A confirmation dialog is paired with an accepted-request state. These written states give the handoff a path through the design; the source does not establish production notifications or pickups.",
+    description: "Notifications distinguish a new request, acceptance, message, and donation report. Confirmation and accepted-request screens make the proposed handoff legible. They are design states, not records of completed pickups.",
     image: "/images/munchpal-feedback.webp",
     alt: "Original Munchpal notification mockups with request status, messages, rating form, confirmation dialog, and accepted-request state",
     width: 1440, height: 810,
@@ -69,7 +69,7 @@ export default function MunchpalPage() {
           </div>
           <header className="case-intro">
             <h1 className="case-title" tabIndex={-1}>Munchpal</h1>
-            <p className="case-lead">Surplus meals can go to waste while people nearby struggle to find food. Munchpal is a client mobile-app design that brings local meal listings, requests, and donation routes into one prototype. The challenge was to make offering or requesting food understandable without a complicated handoff.</p>
+            <p className="case-lead">Food can be nearby and still hard to find or share. I researched and designed Munchpal&apos;s client prototype around local listings, requests, and donations.</p>
           </header>
           <figure className="case-hero">
             <ProjectImageTransition slug="munchpal">
@@ -80,8 +80,8 @@ export default function MunchpalPage() {
             <figcaption>Original client design presentation, PDF page 1. The screens show proposed app states.</figcaption>
           </figure>
           <dl className="case-facts">
-            <div><dt>Audience</dt><dd>People seeking shared food, people with surplus meals, and potential bulk donors.</dd></div>
-            <div><dt>Design focus</dt><dd>Finding a nearby offer, posting food, and making the handoff understandable.</dd></div>
+            <div><dt>Audience</dt><dd>People seeking food, people with surplus meals, and potential bulk donors.</dd></div>
+            <div><dt>My role and collaborators</dt><dd>Research, interviews, information architecture, user flows, wireframes, UI, and usability testing. No other design collaborators.</dd></div>
             <div><dt>Status</dt><dd>Client design project. The sources document a prototype, not a verified public release.</dd></div>
             <div><dt>Evidence</dt><dd>Original presentation and linked Figma prototype. The source&apos;s reported evaluation figures lack underlying records.</dd></div>
           </dl>
@@ -92,30 +92,30 @@ export default function MunchpalPage() {
           <h2 id="munchpal-decisions">Design decisions</h2>
           <div className="case-decision">
             <h3>Start with place and availability</h3>
-            <p>The homepage places a city selector, search, and food categories ahead of the listings. Request controls stay with each item, where someone can see what is offered and whether it is available.</p>
+            <p>I put city, search, and food categories before the listings. A request stays attached to its food item, where someone can judge what is offered and whether it is still available.</p>
           </div>
           <div className="case-decision">
             <h3>Separate asking from offering</h3>
-            <p>A listing has a request action. The central plus button starts an individual food post, and the navigation gives bulk donation its own route. Those entry points keep the two sides of an exchange distinct.</p>
+            <p>Requesting starts from a listing. Offering starts from the central post action. Bulk donation has its own route. I kept these entry points distinct because each asks for different information.</p>
           </div>
           <div className="case-decision">
             <h3>Write the handoff states</h3>
-            <p>The flow map and notification designs name new requests, acceptance, messages, and confirmation. The screens also propose ratings and donation reports. They specify feedback a working service would need, without demonstrating that service.</p>
+            <p>The flow map names what follows a request or post. Notifications then distinguish new, accepted, and messaged states. This gave the prototype a clear handoff to design, without assuming the service was live.</p>
           </div>
         </section>
         <CaseMediaSequence id="munchpal-media" title="From research to handoff" panels={panels} skipTo="munchpal-implementation" skipLabel="Skip to implementation considerations" />
         <section className="case-reading page-width" aria-labelledby="munchpal-implementation">
           <h2 id="munchpal-implementation" tabIndex={-1}>Implementation considerations</h2>
           <div>
-            <p>A working food-sharing service would need current inventory, clear pickup arrangements, and a way to withdraw an unavailable listing or request. The design also leaves decisions about food information, moderation, privacy, and notification delivery for implementation. The source material does not verify a live service behind the screens.</p>
-            <p>The PDF includes a bulk-donation route labelled with Garda Pangan. That design reference does not establish a formal relationship with the organization. A public integration or partnership claim would need separate confirmation.</p>
+            <p>A working service would need live inventory, clear pickup arrangements, withdrawal when food is unavailable, and rules for food information, privacy, moderation, and notification delivery. The prototype specifies the path, not that infrastructure.</p>
+            <p>Garda Pangan took part in my interviews and appears in the bulk-donation design. Neither fact establishes a formal partnership or public integration.</p>
           </div>
         </section>
         <section className="case-reading page-width" aria-labelledby="munchpal-evidence">
           <h2 id="munchpal-evidence">What the evidence shows</h2>
           <div>
-            <p>The original PDF contains the problem framing, research summary, flow map, wireframes, visual system, and interface mockups. Its Figma link opens an interactive prototype with named request, posting, donation, and community flows. These sources show the design and intended states, not a released food-sharing service or completed donations.</p>
-            <p>The PDF reports usability figures and quotes, but no task-level results, calculation, or questionnaire records were available to check them. This case study therefore leaves those figures out.</p>
+            <p>The original PDF and Figma prototype show the research summary, flow, wireframes, interface, and proposed request and donation states. I ran usability testing, but the reported figures lack task-level records to verify them, so I have left the numbers out.</p>
+            <p>The design takeaway: finding food and offering it need separate starts, then shared status and communication. The sources do not show a released service or completed donation.</p>
           </div>
           <ReturnToWorkLink className="case-return" />
         </section>

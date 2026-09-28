@@ -1,0 +1,36 @@
+# Selected-work implementation record
+
+Recorded 27 September 2026 from `app/components/project-gallery.tsx`, the selected-work rules in `app/globals.css`, and the section header in `app/page.tsx`. Scope is the homepage Selected work section. The supplied reference controls its layout; the surrounding warm canvas, charcoal, cobalt and locally bundled Plus Jakarta Sans remain the established identity.
+
+## Layout and interaction
+
+Four ruled rows retain Aurelia / Hospitality, Paylecta / Finance, PawFriend / Pet adoption and Munchpal / Food sharing. Each full row is a native link. On desktop the cobalt index aligns with the first heading line, category sits below the name, a 4.2:1 compact banner sits at right, and a 44px outlined arrow centers beside the copy. Banner corners are 12px.
+
+Fine-pointer hover or visible keyboard focus activates one row. Keyboard focus wins over pointer hover. The active row puts a different, related artwork beneath its title across the title-to-arrow columns, at 3:1. Layout transitions take 500ms with cubic-bezier(.23, 1, .32, 1); artwork opacity takes 180ms. Reduced motion makes layout immediate and uses an 80ms image fade. Links remain usable during animation.
+
+At 701px through 900px, header and row spacing tighten and expanded artwork uses 2.75:1. At 700px and below, compact banners remain visible below the copy at 3:1, with 10px corners and .875rem category text. Touch follows the destination with one tap. All eight local images use responsive, eager Next.js delivery, `fill`, cover cropping and empty alternatives because the generated scenes are decorative.
+
+Desktop project titles use `clamp(1.65rem, 4.2vw, 2.75rem)`, weight 650, tracking -.03em and line-height 1.15, tightened to 1.1 at 701px through 900px. At 650px and below, titles use `clamp(1.5rem, 6vw, 2rem)` with -.02em tracking and indices use .875rem. The section label is 1rem at weight 600. View all work is .6875rem at weight 600 with .04em tracking. These reference-specific choices and banner geometry are local section rules, not additions to the global type or shape system.
+
+## Destinations and assets
+
+| Row | Destination | Artwork pair |
+| --- | --- | --- |
+| Aurelia | `/work/aurelia` | `aurelia-compact.webp`, `aurelia-expanded.webp` |
+| Paylecta | [Supplied case-study PDF](https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view) | `paylecta-compact.webp`, `paylecta-expanded.webp` |
+| PawFriend | [Live project](https://pawfriend-topaz.vercel.app/) | `pawfriend-compact.webp`, `pawfriend-expanded.webp` |
+| Munchpal | [Supplied case-study PDF](https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view) | `munchpal-compact.webp`, `munchpal-expanded.webp` |
+
+The three external rows and [View all work on Behance](https://www.behance.net/muhammadsahlanshadiq) open new tabs with `noopener noreferrer` and accessible new-tab labels. Aurelia retains its shared-image transition and return-history behavior. Modified clicks preserve native link behavior.
+
+Exactly eight Image Gen images form four related compact/expanded pairs. The expanded images change composition, rather than enlarging the compact crops. [The asset record](assets.md#selected-work-banners-27-september-2026) separates this concept artwork from original project evidence. [The unchanged generation manifest](selected-work-banners.json) retains every exact prompt, source URL, original generator path and shipping WebP path. Each shipping file also has its exact prompt in an adjacent `.webp.json` sidecar. Generated screens, scene photography and sample values establish no original project contribution, production use or outcome claim.
+
+## Verification and review
+
+The implementation session reported 43 unique passing Playwright checks across selected-work, Aurelia, project entry, pointer enhancements and home. After the spacing correction, all 23 affected selected-work/Aurelia/home checks passed again. Lint, type checking and the production build passed; the final build also passed after that correction. Asset checks found eight distinct hashes, all eight images loaded, and the metadata scan reported eight rasters with no missing provenance. This documentation pass inspected code, context, the desktop/default, 719px expanded and mobile recaptures, and review records; it did not rerun those checks.
+
+The [review folder](../.impeccable/review/selected-work/) contains the supplied reference, default desktop, all four expanded desktop states, default/expanded 719px views, mobile and homepage context. The [independent finish review](../.impeccable/review/selected-work/finish-review.md) requested two fixes: compact-row index/arrow grouping and reference-width density. The [final verdict](../.impeccable/review/selected-work/finish-verdict.md) marks both resolved and returns ship for those two fixes. The 719px expanded capture is 655px tall against the reference's 651px, with the first banner at y106 in both. That limited verdict does not claim an exact whole-page match or a complete portfolio release.
+
+## Context comparison
+
+PRODUCT.md still governs factual claims, native navigation, immediate actions, keyboard/touch access and reduced motion. The shipped section meets those constraints within this scope. DESIGN.md's palette and bundled Plus Jakarta Sans match the implementation; its older project-row layout, title size and static-row wording describe earlier work. The sidecar still refers to Halyard, unavailable resume and static project rows. Those existing advisories, along with the detector's old portrait/About border findings, remain outside this redesign. PRODUCT.md, DESIGN.md and `.impeccable/design.json` are unchanged. No global drift or out-of-scope visual defect is canonized or repaired here.

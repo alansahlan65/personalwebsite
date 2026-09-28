@@ -54,12 +54,13 @@ test("shared PawFriend entry and native new-tab visits keep their destinations",
   await expect.poll(() => project.locator(".project-preview").evaluate(e => e.getBoundingClientRect().width)).toBeGreaterThan(300);
   await project.locator("img").last().hover();
   await expect(page.locator(".site-cursor")).toHaveAttribute("data-mode", "action-image");
-  await project.locator("img").last().click();
-  await expect(page).toHaveURL(/\/work\/pawfriend$/);
+  const entry = project.locator("img").last().click();
   await expect.poll(() => page.evaluate(() => document.getAnimations().some(a => {
     const effect = a.effect as KeyframeEffect | null;
     return effect?.pseudoElement?.includes("view-transition-group(pawfriend-image)") && a.playState === "running";
   })), { intervals: [10, 10, 20] }).toBe(true);
+  await entry;
+  await expect(page).toHaveURL(/\/work\/pawfriend$/);
   await expect(page.getByRole("heading", { level: 1, name: "PawFriend", exact: true })).toBeFocused();
   await page.goto("/#work");
   const [tab] = await Promise.all([context.waitForEvent("page"), project.click({ modifiers: ["Control"] })]);

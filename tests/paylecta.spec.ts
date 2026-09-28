@@ -3,8 +3,8 @@ import { expect, test } from "@playwright/test";
 test("direct Paylecta entry explains the client design contribution using original evidence", async ({ page }) => {
   await page.goto("/work/paylecta");
   await expect(page.getByRole("heading", { level: 1, name: "Paylecta" })).toBeVisible();
-  await expect(page.getByText(/sole UI\/UX designer for this client project/)).toBeVisible();
-  await expect(page.getByText("None. I worked independently.", { exact: true })).toBeVisible();
+  await expect(page.getByText(/Sole UI\/UX designer for the dashboard/)).toBeVisible();
+  await expect(page.getByText("No other designers.", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Design decisions", exact: true })).toBeVisible();
   const sequence = page.getByRole("region", { name: "Inside the design" });
   await expect(sequence.getByRole("article")).toHaveCount(3);

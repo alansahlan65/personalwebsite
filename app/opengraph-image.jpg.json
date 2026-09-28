@@ -1,0 +1,7 @@
+{
+  "source": ["public/images/alan-portrait.webp", "public/images/alan-logo.png"],
+  "preparation": "1200 x 630 site share card rendered from Alan's supplied portrait and original AS mark, with portfolio identity text, using .scratch/portfolio-halyard/generate-ticket-12-social.py",
+  "date": "2026-09-28",
+  "bytes": 91011,
+  "sha256": "ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d"
+}

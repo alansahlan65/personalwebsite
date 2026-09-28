@@ -21,7 +21,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "overview",
     title: "Keep the overview useful on a phone",
-    description: "The mobile dashboard keeps the balance first, followed by transaction counts and a revenue chart. The desktop account screen separates profile, account, and funding details. These mockups show how the same information can be organized for different tasks and screen sizes.",
+    description: "On mobile, balance comes first, then transaction counts and revenue. The desktop account view gives profile, account, and funding details more room. I changed the hierarchy for the task, not just the screen width.",
     image: "/images/paylecta-overview.webp",
     alt: "Paylecta mobile dashboard with balance, transaction cards and revenue chart, beside a desktop account settings design",
     width: 1402, height: 1081,
@@ -30,7 +30,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "customers",
     title: "Connect the summary to the records",
-    description: "Customer totals and growth sit above a searchable customer list, with status and actions attached to each row. A separate mockup shows the customer form over that list. This pairing gives summary information and individual records a shared place in the navigation.",
+    description: "Totals lead into a searchable customer table. Status and actions stay with each record; the customer form opens over the list so the user keeps that context.",
     image: "/images/paylecta-customers.webp",
     alt: "Paylecta customer summary, searchable customer table with status labels, and a customer form overlay in original device mockups",
     width: 1402, height: 1081,
@@ -39,7 +39,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "invoices",
     title: "Make the payment state visible",
-    description: "Desktop invoice details sit beside a preview. The mobile invoice shows an overdue label, a reminder action, and an activity timeline. Payout cards retain amounts, channels, and named states such as Processing and Success. These are designed states; the PDF does not demonstrate sending an invoice or moving money.",
+    description: "An invoice preview sits beside the desktop editor. On mobile, overdue status, reminder, and activity stay together. Payout cards name each state beside its amount, so a color alone never has to explain what happened.",
     image: "/images/paylecta-invoices.webp",
     alt: "Paylecta desktop invoice editor and preview, mobile overdue invoice with timeline, and mobile payout cards with named payment states",
     width: 1402, height: 1081,
@@ -59,7 +59,7 @@ export default function PaylectaPage() {
           </div>
           <header className="case-intro">
             <h1 className="case-title" tabIndex={-1}>Paylecta</h1>
-            <p className="case-lead">Merchants need to understand their balance, follow invoices, and check payouts while running the business. I designed Paylecta for a client to bring those tasks and customer records into one dashboard, with desktop and mobile layouts for reviewing the details.</p>
+            <p className="case-lead">When money moves, merchants need to know what changed and what needs attention. I designed Paylecta&apos;s desktop and mobile dashboards around those decisions.</p>
           </header>
           <figure className="case-hero">
             <ProjectImageTransition slug="paylecta">
@@ -70,9 +70,9 @@ export default function PaylectaPage() {
             <figcaption>Original design presentation, June 2025. PDF page 1. Screen values are example content.</figcaption>
           </figure>
           <dl className="case-facts">
-            <div><dt>Audience</dt><dd>Merchants and small businesses managing transactions, invoices, payouts, and customers.</dd></div>
-            <div><dt>My role</dt><dd>I was the sole UI/UX designer for this client project, designing the dashboard, responsive screens, and visual system.</dd></div>
-            <div><dt>Collaborators</dt><dd>None. I worked independently.</dd></div>
+            <div><dt>Audience</dt><dd>Merchants and small businesses managing money and customer records.</dd></div>
+            <div><dt>My role</dt><dd>Sole UI/UX designer for the dashboard, responsive screens, and visual system.</dd></div>
+            <div><dt>Collaborators</dt><dd>No other designers.</dd></div>
             <div><dt>Status</dt><dd>Client design project, June 2025. The screens below are original design mockups.</dd></div>
           </dl>
           <a className="case-live-link" href={source} data-magnet="text"><span data-magnet-part>Read the original Paylecta case study PDF</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a>
@@ -81,30 +81,30 @@ export default function PaylectaPage() {
           <h2 id="paylecta-decisions">Design decisions</h2>
           <div className="case-decision">
             <h3>Give the balance a clear place</h3>
-            <p>The orange balance card anchors the dashboard. Transaction summaries and the revenue chart follow it, while the navigation separates customers, invoices, payouts, and settings. A pending-transaction notice gives outstanding work a visible entry point.</p>
+            <p>I put the balance first, then transactions and revenue. A pending-transaction notice points to work that needs action; the navigation keeps customers, invoices, and payouts distinct.</p>
           </div>
           <div className="case-decision">
             <h3>Keep detail and status together</h3>
-            <p>Invoice and payout screens pair amounts with payment details and written status labels. The mobile designs turn dense records into cards while keeping the amount and state visible.</p>
+            <p>Amounts, dates, and written states travel together. The mobile cards retain the essentials from the desktop records without squeezing a table into a phone.</p>
           </div>
           <div className="case-decision">
             <h3>Use a shared visual system</h3>
-            <p>The source documents Plus Jakarta Sans, orange emphasis, neutral surfaces, and semantic accent colors. Repeated cards, search controls, and status labels give the screens a consistent structure.</p>
+            <p>I used Plus Jakarta Sans, orange for the primary balance, neutral surfaces, and consistent card and status patterns. Repetition helps the screens read as one product.</p>
           </div>
         </section>
         <CaseMediaSequence id="paylecta-media" title="Inside the design" panels={panels} skipTo="paylecta-implementation" skipLabel="Skip to implementation considerations" />
         <section className="case-reading page-width" aria-labelledby="paylecta-implementation">
           <h2 id="paylecta-implementation" tabIndex={-1}>Implementation considerations</h2>
           <div>
-            <p>These are considerations drawn from the static designs. A working invoice flow needs validation, a matching preview, a saved draft, and clear feedback after sending. Closing a form or retrying a failed action should preserve entered details. The source does not demonstrate those behaviors.</p>
-            <p>A build also needs explicit loading, empty, and error states, accessible status labels, and a consistent definition of each financial amount. Mobile cards should preserve the same record and actions as their desktop table rows. These are implementation requirements to resolve, rather than claims about a shipped system.</p>
+            <p>The mockups define the hierarchy, not transaction logic. A build would need validated inputs, a preview that matches the invoice sent, draft recovery, and clear success or failure feedback. Closing or retrying should not erase the work.</p>
+            <p>I would map desktop rows and mobile cards to the same record and actions, with written status labels, loading and empty states, and one definition for every financial amount.</p>
           </div>
         </section>
         <section className="case-reading page-width" aria-labelledby="paylecta-evidence">
           <h2 id="paylecta-evidence">What the evidence shows</h2>
           <div>
-            <p>The original case study documents interface designs and a visual system. The images here come directly from that PDF. They show intended screens and states, rather than recorded live interactions or measured business results.</p>
-            <p>No live product or working prototype was available for this review. This case study uses original project material. Later concept artwork does not document original interface screens.</p>
+            <p>These are original screens from my client presentation. They show the design and its intended states; I do not have a live product, working prototype, or measured business result to present.</p>
+            <p>The takeaway is simple: a useful dashboard connects the overview to the record someone can act on. The later gallery artwork is an illustration, separate from these source screens.</p>
           </div>
           <ReturnToWorkLink className="case-return" />
         </section>

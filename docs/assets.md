@@ -19,9 +19,11 @@ The original photo and mark were visually inspected. The portrait contains Alan 
 
 The homepage labels its development state. Aurelia is an interactive gallery link; the other project rows remain static until their case studies exist. Resume is visibly unavailable. About now opens /about, and contact opens an email draft to the user-confirmed address.
 
-No generated imagery was used. Ticket 07 uses the CC0 photographs recorded below. User-supplied originals remain unchanged. The Aurelia derivative is a screenshot of the live concept, not a separately verified source photograph.
+Before the selected-work banner update of 27 September 2026, no generated imagery was used. That update adds the eight concept artworks recorded at the end of this document. Ticket 07 uses the CC0 photographs recorded below. User-supplied originals remain unchanged. The Aurelia derivative is a screenshot of the live concept, not a separately verified source photograph.
 
 ## Decorative role photographs
+
+Replaced on 27 September 2026 by the user-supplied SVG role icons recorded below. This section retains their original provenance.
 
 Verified and prepared 2026-09-26. Each creator published their own photograph under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). The source pages record that permission. These images make no claim about Alan's location or project involvement.
 
@@ -46,7 +48,43 @@ Captured from the live concept on 26 September 2026 at 1440 × 900. Images were 
 
 Adjacent JSON sidecars record source, date, viewport, preparation, and evidence limits. Images use intrinsic dimensions and responsive Next.js delivery; the native video uses `preload="none"`, a poster, and user-controlled playback. Sample dates in the recording do not represent availability. No request was submitted.
 
-The user confirmed independent design/build authorship and approved live-site screenshots. Underlying stay-photography rights remain unverified and need confirmation before release. Original research notes, iteration history, and source-code details were unavailable; the case study uses observed interface evidence and does not claim those activities or results.
+The user confirmed independent design/build authorship and approved live-site screenshots. On 28 September 2026 he confirmed permission to show the underlying stay imagery and described it as AI-generated. Original research notes, iteration history, and source-code details were unavailable; the case study uses observed interface evidence and does not claim those activities or results.
+
+
+## Typography update, 27 September 2026
+
+The user replaced Halyard with Plus Jakarta Sans. The variable TTF was obtained from https://github.com/google/fonts/tree/main/ofl/plusjakartasans and losslessly packaged as WOFF2 through FontTools. app/fonts/OFL.txt retains the SIL Open Font License. next/font/local delivers it from the site with no browser font-CDN dependency. Regular and semibold static instances are embedded in the local resume. This supersedes the missing-Halyard input above; historical records retain the original requirement.
+
+## Role icons, 27 September 2026
+
+The user supplied the complete Streamline Plump Gradient SVGs and explicitly assigned Feather Pen to Product Designer, Code Monitor 2 to Design Engineer, and Multiple Stars to Interaction Designer. The correction supersedes the earlier duplicated monitor assignment and the proposed free duotone trio.
+
+| Shipping file | Role | Supplied gradient |
+| --- | --- | --- |
+| `role-feather.svg` | Product Designer | #00d078 to #007df0 |
+| `role-monitor.svg` | Design Engineer | #ff51e3 to #1b4dff |
+| `role-stars.svg` | Interaction Designer | #00d078 to #007df0 |
+
+The supplied paths, 48x48 viewBoxes, descriptions, and gradients are preserved. Whitespace and empty-tag formatting are normalized. Icons are locally served SVG images, displayed square with contain sizing and decorative empty alternatives beside the role labels. Separate SVG documents isolate their gradient identifiers across repeated track copies. No icon library, external image requests, or new animation dependency is added.
+
+The shared footer credits Streamline with a direct link. Its attribution guidance is documented at https://help.streamlinehq.com/en/articles/5354376-streamline-free-license. The source of these exact files is the user's message. On 28 September 2026 he confirmed permission to show the supplied icons, describing the assets as AI-generated; the precise Streamline license tier or purchase was not independently verified.
+
+Verification: production build and ESLint passed; the source detector returned no findings. All 20 existing homepage and role-track tests passed, with one reduced-motion resize check passing on targeted rerun after an initial timing failure. Desktop/mobile screenshots showed crisp transparent icons at 112px/48px, no page overflow, and no page errors. Existing tests covered intermediate widths, text resizing, scroll reversal, touch navigation, and menu/project interaction.
+
+## Selected-work banners, 27 September 2026
+
+Eight distinct artworks were generated with OpenAI's built-in Image Gen for the homepage gallery, one compact and one expanded composition per project. Each pair keeps the inspected project identity while changing its scene or layout. The user supplied the project sources and delegated the banner compositions. These images are decorative concept artwork. Generated interface details, scene photography and sample values are separate from original project evidence and establish no project outcomes.
+
+| Project | Inspected source | Shipping files under `public/images/work/` |
+| --- | --- | --- |
+| Aurelia | [Live hospitality concept](https://aurelia.alansahlanwork.workers.dev/) | `aurelia-compact.webp`, `aurelia-expanded.webp` |
+| Paylecta | [Supplied finance case-study PDF](https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view) | `paylecta-compact.webp`, `paylecta-expanded.webp` |
+| PawFriend | [Live pet-adoption project](https://pawfriend-topaz.vercel.app/) | `pawfriend-compact.webp`, `pawfriend-expanded.webp` |
+| Munchpal | [Supplied food-sharing case-study PDF](https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view) | `munchpal-compact.webp`, `munchpal-expanded.webp` |
+
+[The generation manifest](selected-work-banners.json) preserves exact prompts, source URLs, original generator output paths and shipping paths. Each WebP has an adjacent `.webp.json` containing its exact generation prompt and timestamp. The prepared sources use WebP quality 88; responsive Next.js delivery supplies the displayed derivatives. Compact desktop frames crop to 4.2:1, expanded desktop frames to 3:1, intermediate expanded frames to 2.75:1 and mobile frames to 3:1. This display cropping does not change the preserved prompts or original generator outputs.
+
+Implementation checks confirmed all eight artworks have unique hashes and load, and the metadata scan reported eight raster files with zero missing provenance. The [scoped implementation record](selected-work.md) records navigation, motion, reference adaptations and verification limits. Historical screenshot and photograph records above remain intact.
 
 ## Paylecta original design media, ticket 09
 
@@ -59,3 +97,7 @@ The supplied live PawFriend site was inspected on 27 September 2026. Four authen
 ## Munchpal original case-study media, ticket 11
 
 The supplied 13-page Munchpal PDF was visually inspected on 28 September 2026. Original pages and page-12 interface sections supply `munchpal-cover.webp`, `munchpal-research.webp`, `munchpal-flow.webp`, `munchpal-home.webp`, and `munchpal-feedback.webp`, encoded at WebP quality 88. A source-based JPEG supplies the social preview. Each media sidecar records PDF hash, page, crop, dimensions, preparation, and limits. The PDF's embedded Figma prototype link was opened in Chromium. These original design assets are separate from generated gallery concept artwork. Reported testing percentages and timings are omitted without underlying result records. See [the Munchpal source assessment](munchpal-case-study.md).
+
+## Site share cards, ticket 12
+
+The site card at `app/opengraph-image.jpg` combines Alan's supplied portrait and original AS mark with his confirmed Product Designer identity. The Aurelia card at `app/work/aurelia/opengraph-image.jpg` is a top-aligned crop of the inspected live-concept homepage, keeping its own brand and heading visible. Both are 1200 × 630 static JPEGs, with descriptive alt files and adjacent JSON records of sources, preparation, date, bytes, and SHA-256. The reproducible rendering script is `.scratch/portfolio-halyard/generate-ticket-12-social.py`. Paylecta, PawFriend, and Munchpal retain their existing source-based social images. The public portfolio domain is undecided, so absolute social URLs remain a deployment setting; preview metadata currently resolves against localhost.

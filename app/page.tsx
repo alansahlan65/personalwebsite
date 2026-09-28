@@ -1,14 +1,15 @@
 import { ArrowIcon } from "./components/ui-icons";
 import Image from "next/image";
-import Link from "next/link";
+import { TransitionLink as Link } from "./components/navigation-transition";
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
 import { ProjectGallery } from "./components/project-gallery";
 import { RoleParallax } from "./components/role-parallax";
+import { PageTransition } from "./components/page-transition";
 
 export default function Home() {
   return (
-    <>
+    <PageTransition name="home-page">
       <SiteHeader page="home" />
       <main id="main" tabIndex={-1}>
         <section className="hero page-width" aria-labelledby="hero-title">
@@ -27,7 +28,9 @@ export default function Home() {
         <section className="work page-width" id="work" tabIndex={-1} aria-labelledby="work-title">
           <div className="section-intro">
             <h2 className="section-label" id="work-title">Selected work</h2>
-            <p className="development-note">More case studies in preparation</p>
+            <a className="work-all" href="https://www.behance.net/muhammadsahlanshadiq" target="_blank" rel="noopener noreferrer" aria-label="View all work on Behance (opens in a new tab)" data-magnet="text">
+              <span data-magnet-part>View all work</span><ArrowIcon direction="right" />
+            </a>
           </div>
           <ProjectGallery />
         </section>
@@ -41,6 +44,6 @@ export default function Home() {
         </section>
       </main>
       <SiteFooter />
-    </>
+    </PageTransition>
   );
 }

@@ -21,7 +21,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "catalog",
     title: "Browse beyond the portrait",
-    description: "The featured carousel introduces five pets. View all nine residents opens a grid with consistent age, breed, personality, and meeting actions. The expanded view makes the same details available across the sample catalog without requiring visitors to move through one card at a time.",
+    description: "The homepage features five pets. View all nine residents opens a grid with the same age, breed, personality, and meeting details for each sample profile. Comparison no longer depends on stepping through a carousel.",
     image: "/images/pawfriend-catalog.webp",
     alt: "PawFriend expanded resident grid with Milo, Luna, and Pepper, showing age, breed, personality descriptions, favorites, and meeting links",
     width: 1440, height: 900,
@@ -30,7 +30,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "shortlist",
     title: "Keep a shortlist while considering the fit",
-    description: "Saving Milo and Luna updates the header count and confirms the latest addition. The saved-pets drawer brings both profiles together with individual removal controls. In the observed flow, the shortlist survived a reload in the same browser; removing Milo left Luna saved.",
+    description: "Saving a pet updates the count and confirms the choice. The drawer holds the shortlist with a remove action on each profile. In the recorded browser, Milo and Luna survived a reload; removing Milo left Luna saved.",
     image: "/images/pawfriend-shortlist.webp",
     alt: "PawFriend saved-pets drawer containing Milo and Luna, removal controls, a saved count of two, and confirmation that Luna was added",
     width: 1440, height: 900,
@@ -39,7 +39,7 @@ const panels: readonly CaseMediaPanel[] = [
   {
     id: "prepare",
     title: "Turn interest into preparation",
-    description: "Plan a meeting leads to guidance about saving favorites, comparing daily life, and bringing questions. The nearby FAQ covers visits and practical decisions. This action opens preparation content; it does not book a meeting or submit an adoption request.",
+    description: "Plan a meeting opens preparation guidance and an FAQ. It asks people to think about routines and questions for a first visit. It does not submit an adoption request or book a time.",
     image: "/images/pawfriend-prepare.webp",
     alt: "PawFriend first-visit preparation section with saving favorites, comparing daily life, bringing questions, and adoption FAQ",
     width: 1440, height: 900,
@@ -59,7 +59,7 @@ export default function PawFriendPage() {
           </div>
           <header className="case-intro">
             <h1 className="case-title" tabIndex={-1}>PawFriend</h1>
-            <p className="case-lead">Choosing a pet involves more than liking a photograph. PawFriend is a self-initiated pet-adoption concept that connects short profiles, saved favorites, and first-visit preparation. The aim is to help prospective adopters consider their home and daily routine before planning a meeting.</p>
+            <p className="case-lead">A pet is more than a photograph. I directed PawFriend&apos;s design and built an AI-assisted concept for comparing residents, saving a shortlist, and preparing for a visit.</p>
           </header>
           <figure className="case-hero">
             <ProjectImageTransition slug="pawfriend">
@@ -70,8 +70,8 @@ export default function PawFriendPage() {
             <figcaption>Live concept captured 27 September 2026. Sample profiles with generated pet imagery.</figcaption>
           </figure>
           <dl className="case-facts">
-            <div><dt>Audience</dt><dd>Prospective adopters considering a pet&apos;s personality, care needs, and fit with their household.</dd></div>
-            <div><dt>Design focus</dt><dd>Resident browsing, a saved shortlist, and preparation for a first visit.</dd></div>
+            <div><dt>Audience</dt><dd>Prospective adopters weighing personality, care, and household fit.</dd></div>
+            <div><dt>My role and collaborators</dt><dd>Design direction and ChatGPT-assisted implementation. No other design or build collaborators.</dd></div>
             <div><dt>Status</dt><dd>Self-initiated concept</dd></div>
             <div><dt>Evidence</dt><dd>Observed live interface and recorded interactions. No actual shelter inventory or adoption outcomes are established.</dd></div>
           </dl>
@@ -82,28 +82,28 @@ export default function PawFriendPage() {
           <h2 id="pawfriend-decisions">Design decisions</h2>
           <div className="case-decision">
             <h3>Put personality beside practical details</h3>
-            <p>A photograph draws attention, while age, breed, and a short personality description give each profile context. The separate personality section brings energy, independence, and other daily-life traits into the decision. These are concept descriptions, rather than verified animal assessments.</p>
+            <p>I kept age, breed, personality, and daily-life traits beside the photo. The details help someone compare a sample pet with their routine; they are not verified animal assessments.</p>
           </div>
           <div className="case-decision">
             <h3>Make saving visible and reversible</h3>
-            <p>Each resident has a heart action. The header count, saved confirmation, and drawer reflect the same shortlist. Individual removal lets visitors reconsider a choice, and the interface states that saved pets stay on the device.</p>
+            <p>The heart, header count, confirmation, and drawer all reflect one shortlist. Removal is just as easy as saving, and the interface says the list stays on this device.</p>
           </div>
           <div className="case-decision">
             <h3>Explain the next step before commitment</h3>
-            <p>Meeting links lead to preparation instead of an immediate adoption form. The checklist and FAQ prompt questions about routines, care, and introductions. The interface also asks visitors to confirm pet details before a visit.</p>
+            <p>I routed meeting interest to a checklist and FAQ, not an instant booking form. A real visit needs confirmed pet details and a conversation first.</p>
           </div>
         </section>
         <CaseMediaSequence id="pawfriend-media" title="From browsing to a first visit" panels={panels} skipTo="pawfriend-implementation" skipLabel="Skip to implementation considerations" />
         <section className="case-reading page-width" aria-labelledby="pawfriend-implementation">
           <h2 id="pawfriend-implementation" tabIndex={-1}>Implementation considerations</h2>
           <div>
-            <p>The source keeps favorites in local storage, checks saved IDs against the current catalog, and retains the session&apos;s selection when storage writes fail. The recording confirms same-browser reload persistence. Profiles are local sample content; cross-device syncing and a verified shelter feed are separate requirements.</p>
-            <p>Saving, removing, and dismissing a drawer need clear feedback and reachable controls. A real meeting flow would also need confirmed availability, an explicit submission step, and a way to change or cancel a request. The current meeting action leads to preparation content.</p>
+            <p>The source stores favorites locally, filters stale IDs against the current catalog, and keeps the current selection if a storage write fails. The recording confirms persistence after a reload in one browser.</p>
+            <p>A real service would need a verified shelter feed, current availability, cross-device accounts if needed, and an explicit way to request, change, or cancel a meeting. This concept stops at preparation.</p>
           </div>
         </section>
         <section className="case-reading page-width" aria-labelledby="pawfriend-recording">
           <h2 id="pawfriend-recording">Observed live flow</h2>
-          <div><p id="pawfriend-recording-description">This silent recording starts with an empty shortlist, opens the full catalog, saves Milo and Luna, and opens and closes the saved-pets drawer. Plan a meeting opens preparation guidance. A reload retains the saved profiles, then removing Milo leaves Luna. These are live concept interactions with sample content.</p>
+          <div><p id="pawfriend-recording-description">The silent recording follows an empty shortlist through browsing, saving Milo and Luna, opening the drawer, and reading visit guidance. Both saves survive a reload; removing Milo leaves Luna.</p>
           <video className="case-recording" width={1440} height={900} controls playsInline preload="none" poster="/images/pawfriend-catalog.webp" aria-label="PawFriend live concept browsing and shortlist recording" aria-describedby="pawfriend-recording-description">
             <source src="/media/pawfriend-observed-flow.webm" type="video/webm" />
             <a href="/media/pawfriend-observed-flow.webm" data-magnet="text">Open the PawFriend live concept recording</a>
@@ -113,8 +113,8 @@ export default function PawFriendPage() {
         <section className="case-reading page-width" aria-labelledby="pawfriend-evidence">
           <h2 id="pawfriend-evidence">What the evidence shows</h2>
           <div>
-            <p>The screenshots and recording come directly from the live concept. The public project brief and source explain its goals and implementation. These establish current interface behavior, not user-research findings, real pet availability, completed adoptions, or measured outcomes.</p>
-            <p>The source records generated pet imagery and local sample profiles. They represent the concept, rather than verified shelter residents. Gallery concept artwork is separate from these captured live screens. No later reconstructed interaction demo was needed for this case study.</p>
+            <p>The screenshots and recording show the live concept. The repository explains its implementation. Profiles and pet images are generated sample content, not shelter records; no adoption or measured outcome is claimed.</p>
+            <p>The lesson here is about pacing. Browsing leads to a reversible shortlist, then to preparation. It does not pretend that a saved heart means a meeting is booked.</p>
           </div>
           <ReturnToWorkLink className="case-return" />
         </section>

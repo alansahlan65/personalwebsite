@@ -6,6 +6,7 @@ test("header changes at the scroll thresholds without shifting the page", async 
   const compact = page.locator(".compact-menu-trigger");
   await expect(full.getByRole("link", { name: "Work" })).toBeVisible();
   await expect(compact).toBeHidden();
+  await expect(page.getByRole("button", { name: "Open menu" })).toBeHidden();
   const heroTop = await page.locator(".hero").evaluate((node) => (node as HTMLElement).offsetTop);
 
   await page.evaluate(() => window.scrollTo(0, 110));
@@ -52,7 +53,7 @@ test("menu navigation works during opening and focuses the destination", async (
   await page.locator(".compact-menu-trigger").click();
   await page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "About", exact: true }).click();
   await expect(page).toHaveURL(/\/about$/);
-  await expect(page.getByRole("heading", { name: "About me" })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
   await expect(page.getByRole("dialog", { name: "Navigation menu" })).toHaveCount(0);
   expect(await page.evaluate(() => document.body.style.position)).toBe("");
 });
@@ -80,7 +81,8 @@ test("the dialog contains focus and keeps the page inert during resize", async (
 
 test("rapid close and reopen follows the latest intent", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const dialog = page.getByRole("dialog", { name: "Navigation menu" });
   await dialog.getByRole("button", { name: "Close menu" }).click();
   await dialog.getByRole("button", { name: "Reopen menu" }).click();
@@ -102,18 +104,20 @@ test("same-page menu navigation focuses the chosen section", async ({ page }) =>
 
 test("reduced motion changes during opening leave a complete, immediate menu", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   await page.emulateMedia({ reducedMotion: "reduce" });
   const dialog = page.getByRole("dialog", { name: "Navigation menu" });
   await expect(dialog.getByRole("link", { name: "Contact", exact: true })).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(dialog).toHaveCount(0);
-  await expect(page.locator(".full-menu-trigger")).toBeFocused();
+  await expect(page.locator(".compact-menu-trigger")).toBeFocused();
 });
 
 test("hover strips stop and static labels return on exit", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const work = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "Work", exact: true });
   await work.hover();
   await expect(work.locator(".stairs-marquee")).toBeVisible();
@@ -137,7 +141,8 @@ test("restored scroll and direct About loads choose the right header mode", asyn
 
 test("modified menu clicks preserve a new tab and leave the current menu usable", async ({ page, context }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const dialog = page.getByRole("dialog", { name: "Navigation menu" });
   const opened = context.waitForEvent("page");
   await dialog.getByRole("link", { name: "About", exact: true }).click({ modifiers: ["Control"] });
@@ -151,7 +156,8 @@ test("modified menu clicks preserve a new tab and leave the current menu usable"
 
 test("menu navigation and Back leave no lock or overlay", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   await page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "About", exact: true }).click();
   await expect(page).toHaveURL(/\/about$/);
   await page.goBack();
@@ -164,12 +170,13 @@ test("menu navigation and Back leave no lock or overlay", async ({ page }) => {
 test("the menu fits at 320 pixels and has one focusable link per destination", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 700 });
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const dialog = page.getByRole("dialog", { name: "Navigation menu" });
   await expect(dialog.getByRole("link", { name: "Work", exact: true })).toHaveCount(1);
   await expect(dialog.getByRole("link", { name: "About", exact: true })).toHaveCount(1);
   await expect(dialog.getByRole("link", { name: "Contact", exact: true })).toHaveCount(1);
-  await expect(dialog.getByRole("link", { name: "Resume" })).toHaveCount(0);
+  await expect(dialog.getByRole("link", { name: "Download resume" })).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
 });
 
@@ -189,7 +196,8 @@ test("a focused compact trigger remains available when scrolling back to the top
 
 test("repeating strips stop as soon as the menu starts closing", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const work = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "Work", exact: true });
   await work.hover();
   await expect(work.locator(".stairs-marquee")).toBeVisible();
@@ -200,12 +208,49 @@ test("repeating strips stop as soon as the menu starts closing", async ({ page }
 
 test("changing motion preference while a menu link is focused keeps that focus", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const about = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "About", exact: true });
   await about.focus();
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(about).toBeFocused();
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog", { name: "Navigation menu" })).toHaveCount(0);
+});
+
+test("scrolling away through Work also replaces the top links with Menu", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Work", exact: true }).click();
+  await expect(page).toHaveURL(/#work$/);
+  await expect(page.locator(".compact-menu-trigger")).toBeVisible();
+  await expect(page.locator(".site-header")).toHaveAttribute("inert", "");
+});
+
+test("menu dismissal follows the actual panel completion when playback slows", async ({ page }) => {
+  await page.goto("/");
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
+  const dialog = page.getByRole("dialog", { name: "Navigation menu" });
+  await expect.poll(() => dialog.locator(".stairs-panel").evaluateAll((panels) =>
+    panels.every((panel) => Math.abs(panel.getBoundingClientRect().top) <= 1)
+  )).toBe(true);
+  await dialog.getByRole("button", { name: "Close menu" }).click();
+  await expect.poll(() => dialog.locator(".stairs-panel").evaluateAll((panels) =>
+    panels.reduce((count, panel) => count + panel.getAnimations().length, 0)
+  )).toBe(5);
+  await dialog.locator(".stairs-panel").evaluateAll((panels) => {
+    panels.forEach((panel) => panel.getAnimations().forEach((animation) => animation.updatePlaybackRate(0.1)));
+  });
+  await page.waitForTimeout(700);
+  await expect(dialog).toBeVisible();
+  const panels = dialog.locator(".stairs-panel");
+  await panels.evaluateAll((elements) => {
+    elements.slice(1).forEach((panel) => panel.getAnimations().forEach((animation) => animation.finish()));
+  });
+  await expect(dialog).toBeVisible();
+  await panels.first().evaluate((panel) => panel.getAnimations().forEach((animation) => animation.finish()));
+  await expect(dialog).toHaveCount(0);
+  await expect(page.locator(".compact-menu-trigger")).toBeFocused();
+  expect(await page.evaluate(() => document.body.style.position)).toBe("");
 });
 

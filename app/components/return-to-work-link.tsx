@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowIcon } from "./ui-icons";
-import Link from "next/link";
+import { TransitionLink as Link } from "./navigation-transition";
 import type { MouseEvent } from "react";
 
 function rememberReturn(event: MouseEvent<HTMLAnchorElement>) {

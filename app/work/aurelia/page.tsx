@@ -6,6 +6,7 @@ import { ProjectImageTransition } from "../../components/project-transition";
 import { ReturnToWorkLink } from "../../components/return-to-work-link";
 import { SiteHeader } from "../../components/site-header";
 import { SiteFooter } from "../../components/site-footer";
+import { PageTransition } from "../../components/page-transition";
 
 export const metadata: Metadata = {
   title: "Aurelia — Alan Sahlan",
@@ -17,14 +18,14 @@ export const metadata: Metadata = {
 };
 
 const panels: readonly CaseMediaPanel[] = [
-  { id: "filters", title: "Filters need a way back", description: "Starting from the catalog, combine a trip intention with an area. When that combination has no matches, the interface explains the empty result and offers Show all ten stays. Clearing the filters restores the catalog.", width: 1440, height: 900, caption: "Live concept, 26 September 2026.", image: "/images/aurelia-filters.webp", alt: "Aurelia catalog with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action" },
-  { id: "details", title: "Check the fit without losing the shortlist", description: "View stay opens a detail overlay with photographs and Overview, Amenities, Area, and Wi-Fi tabs. Switching tabs changes the supporting information. Closing the overlay returns to the catalog so another stay can be compared.", width: 1440, height: 900, caption: "Live concept, 26 September 2026.", image: "/images/aurelia-details.webp", alt: "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph" },
-  { id: "request", title: "Keep commitment explicit", description: "Plan your stay opens a request with Dates, Stay, and Contact steps. The summary stays beside the form. Dates can be changed before review, and the interface states that planning does not hold them. Availability and final pricing need confirmation.", width: 1440, height: 900, caption: "Live concept, 26 September 2026.", image: "/images/aurelia-request.webp", alt: "Aurelia stay request at the Dates step with its request summary and confirmation notice" },
+  { id: "filters", title: "Give empty results an exit", description: "Visitors can combine trip intention and area. If nothing matches, the page explains the result and Show all ten stays clears both filters. The search never ends at a dead end.", width: 1440, height: 900, caption: "Live concept, 26 September 2026.", image: "/images/aurelia-filters.webp", alt: "Aurelia catalog with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action" },
+  { id: "details", title: "Check a stay without losing the catalog", description: "A detail overlay holds photographs, amenities, area, and Wi-Fi information. Closing it returns to the catalog, so visitors can compare another stay without starting over.", width: 1440, height: 900, caption: "Live concept, 26 September 2026.", image: "/images/aurelia-details.webp", alt: "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph" },
+  { id: "request", title: "Make the request honest", description: "Dates, Stay, and Contact form one request flow with a persistent summary. Back keeps the dates editable. The interface says plainly that a request does not hold a stay or confirm its final price.", width: 1440, height: 900, caption: "Live concept, 26 September 2026.", image: "/images/aurelia-request.webp", alt: "Aurelia stay request at the Dates step with its request summary and confirmation notice" },
 ];
 
 export default function AureliaPage() {
   return (
-    <>
+    <PageTransition name="aurelia-page">
       <SiteHeader page="work" />
       <main id="main" className="case-study" tabIndex={-1}>
         <div className="page-width">
@@ -34,7 +35,7 @@ export default function AureliaPage() {
           </div>
           <header className="case-intro">
             <h1 className="case-title" tabIndex={-1}>Aurelia</h1>
-            <p className="case-lead">A Bali stay can look right in photographs and still be wrong for the trip. Aurelia helps visitors compare stays by the days they want to have, then check practical details before making a request.</p>
+            <p className="case-lead">A beautiful villa can still be wrong for the trip. I designed and built Aurelia to help visitors find a Bali stay that fits their plans.</p>
           </header>
           <figure className="case-hero">
             <ProjectImageTransition slug="aurelia">
@@ -50,8 +51,8 @@ export default function AureliaPage() {
             <figcaption>Live concept homepage, captured 25 September 2026.</figcaption>
           </figure>
           <dl className="case-facts">
-            <div><dt>Audience</dt><dd>People planning a Bali stay who need to weigh location, pace, and practical fit.</dd></div>
-            <div><dt>My role</dt><dd>I designed and built this self-initiated concept independently.</dd></div>
+            <div><dt>Audience</dt><dd>People comparing Bali stays by location, pace, and practical fit.</dd></div>
+            <div><dt>My role</dt><dd>Independent product design and frontend build.</dd></div>
             <div><dt>Collaborators</dt><dd>None.</dd></div>
             <div><dt>Status</dt><dd>Concept. A request on the live site is not a confirmed booking.</dd></div>
           </dl>
@@ -61,23 +62,23 @@ export default function AureliaPage() {
           <h2 id="case-decisions-title">Design decisions</h2>
           <div className="case-decision">
             <h3>Start with the kind of day</h3>
-            <p>The concept groups stays by three trip intentions: resting in, exploring from the house, or working for longer. Visitors can then narrow the catalog by area.</p>
+            <p>Most stay sites start with a destination. I put the trip first: rest, explore, or work for longer. Area then narrows the list without replacing that intent.</p>
           </div>
           <div className="case-decision">
             <h3>Make the checks clear</h3>
-            <p>Access, noise, Wi-Fi, privacy, and the limits of photographs sit alongside the visual appeal. The request flow states that availability and final pricing need confirmation before commitment.</p>
+            <p>Photos earn attention; access, noise, Wi-Fi, and privacy help decide. I kept those checks close to the stay and made the unconfirmed price and availability clear in the request.</p>
           </div>
         </section>
         <CaseMediaSequence id="aurelia-media" title="Inside the concept" panels={panels} skipTo="aurelia-implementation" skipLabel="Skip to implementation notes" />
         <section className="case-reading page-width" aria-labelledby="aurelia-implementation">
           <h2 id="aurelia-implementation" tabIndex={-1}>Implementation notes</h2>
-          <div><p>The live concept keeps browsing, stay details, and the request as distinct steps. Filters provide a route out of an empty result. The stay overlay keeps comparison close to the catalog, while the request makes its unconfirmed status explicit.</p>
-            <p>I designed and built Aurelia independently. The screens here document the live concept; they do not establish confirmed inventory or booking outcomes.</p>
+          <div><p>I separated browsing, stay details, and the request so each step has one job. Filters recover from zero results, the detail overlay preserves comparison context, and Back keeps entered dates available for editing.</p>
+            <p>The live concept demonstrates those interactions. It does not confirm real inventory or completed bookings.</p>
           </div>
         </section>
         <section className="case-reading page-width" aria-labelledby="aurelia-recording">
           <h2 id="aurelia-recording">Observed live flow</h2>
-          <div><p>The recording follows an empty filter result back to the catalog, opens the Wi-Fi details, closes the stay, and moves from Dates to Stay before returning to edit the dates.</p>
+          <div><p>The recording shows the full loop: clear an empty result, inspect Wi-Fi, close the stay, advance the request, then return to edit the dates.</p>
             <video className="case-recording" controls preload="none" poster="/images/aurelia-details.webp" width={1440} height={900} aria-label="Recorded Aurelia filter, stay details, and request workflow">
               <source src="/media/aurelia-observed-flow.webm" type="video/webm" />
               <a href="/media/aurelia-observed-flow.webm" data-magnet="text"><span data-magnet-part>Open the Aurelia workflow recording</span></a>
@@ -88,6 +89,6 @@ export default function AureliaPage() {
         </section>
       </main>
       <SiteFooter />
-    </>
+    </PageTransition>
   );
 }

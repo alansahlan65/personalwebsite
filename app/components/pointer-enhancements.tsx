@@ -18,7 +18,7 @@ type MagnetState = {
 };
 
 const MAGNET_LIMIT: Record<MagnetStrength, number> = { text: 5, control: 12, project: 6 };
-const MAGNET_SPRING = { stiffness: 100, damping: 10, mass: 1, restDelta: 0.05, restSpeed: 0.5 };
+const MAGNET_SPRING = { stiffness: 100, damping: 20, mass: 1, restDelta: 0.05, restSpeed: 0.5 };
 const CURSOR_SMOOTHING = 0.22;
 
 function isTextContext(element: Element) {

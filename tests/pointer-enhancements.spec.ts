@@ -28,7 +28,7 @@ test("cursor inverts images, shows an arrow only on actionable imagery, and rese
   const project = page.locator(".project-row").first();
   await project.getByRole("link", { name: /Aurelia/ }).hover();
   await expect.poll(() => project.locator(".project-preview").evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
-  await project.locator(".project-preview img").hover();
+  await project.locator(".project-banner-expanded").hover();
   await expect(cursor).toHaveAttribute("data-mode", "action-image");
   await expect(page.locator(".site-cursor-arrow")).toBeVisible();
   await page.emulateMedia({ reducedMotion: "reduce" });
@@ -42,10 +42,11 @@ test("every current action is inventoried once, including menu and case-study co
     .map((element) => element.outerHTML.slice(0, 120)));
   expect(await unmarked()).toEqual([]);
   await expect(page.locator("[data-magnet] [data-magnet]")).toHaveCount(0);
-  await expect(page.getByText("Resume", { exact: true }).first()).toHaveAttribute("aria-disabled", "true");
-  await page.locator(".full-menu-trigger").click();
+  await expect(page.getByRole("link", { name: "Resume", exact: true }).first()).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   expect(await unmarked()).toEqual([]);
-  await expect(page.getByRole("dialog", { name: "Navigation menu" }).locator("[data-magnet]")).toHaveCount(7);
+  await expect(page.getByRole("dialog", { name: "Navigation menu" }).locator("[data-magnet]")).toHaveCount(8);
   const menuWork = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "Work", exact: true });
   await menuWork.hover({ position: { x: 8, y: 8 } });
   await expect.poll(() => menuWork.locator(".stairs-marquee-magnet").evaluate((element) => getComputedStyle(element).transform)).not.toBe("none");
@@ -107,7 +108,7 @@ test("menu and route changes clear the large cursor without blocking navigation"
   const project = page.locator(".project-row").first().getByRole("link", { name: /Aurelia/ });
   await project.hover();
   await expect.poll(() => page.locator(".project-preview").first().evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
-  await page.locator(".project-preview img").hover();
+  await page.locator(".project-banner-expanded").first().hover();
   await expect(cursor).toHaveAttribute("data-mode", "action-image");
   await page.locator(".compact-menu-trigger").click();
   await expect(cursor).toBeHidden();
@@ -206,7 +207,8 @@ test("native cursor hiding waits for the first replacement frame", async ({ page
 
 test("closing and reopening the menu reset pointer feedback immediately", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".full-menu-trigger").click();
+  await page.evaluate(() => window.scrollTo(0, 160));
+  await page.locator(".compact-menu-trigger").click();
   const menu = page.getByRole("dialog", { name: "Navigation menu" });
   const cursor = page.locator(".site-cursor");
   await menu.getByRole("link", { name: "Work", exact: true }).hover();

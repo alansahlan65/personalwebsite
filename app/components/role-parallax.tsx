@@ -6,9 +6,9 @@ import { motion, useMotionValue, type MotionValue } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 const roles = [
-  { label: "Product Designer", image: "role-ocean", offset: 0.12, direction: -1 },
-  { label: "Design Engineer", image: "role-mountain", offset: 0.42, direction: 1 },
-  { label: "Interaction Designer", image: "role-coast", offset: 0.26, direction: -1 },
+  { label: "Product Designer", image: "role-feather", offset: 0.12, direction: -1 },
+  { label: "Design Engineer", image: "role-monitor", offset: 0.42, direction: 1 },
+  { label: "Interaction Designer", image: "role-stars", offset: 0.26, direction: -1 },
 ] as const;
 
 function RoleTrack({ role, progress }: { role: typeof roles[number]; progress: MotionValue<number> }) {
@@ -68,8 +68,7 @@ function RoleTrack({ role, progress }: { role: typeof roles[number]; progress: M
         {Array.from({ length: copies }, (_, index) => (
           <div className="role-unit" key={index} ref={index === 0 ? unit : undefined} aria-hidden={index === 0 ? undefined : true}>
             {index === 0 ? <p>{role.label}</p> : <span>{role.label}</span>}
-            <Image src={`/images/${role.image}.webp`} alt="" width={800} height={360}
-              sizes="(max-width: 650px) 120px, 260px" />
+            <Image className="role-icon" src={`/images/${role.image}.svg`} alt="" width={48} height={48} unoptimized />
           </div>
         ))}
       </motion.div>

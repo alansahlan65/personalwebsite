@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { TransitionLink as Link } from "./navigation-transition";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowIcon, MenuIcon } from "./ui-icons";
+import { RESUME_HREF } from "../lib/portfolio-links";
+import { STAIRS_MOTION } from "../lib/stairs-motion";
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent, type MouseEvent } from "react";
 
 type MenuPhase = "closed" | "opening" | "open" | "closing";
@@ -11,12 +13,11 @@ type HeaderMode = "full" | "compact";
 
 const HEADER_COMPACT_AT = 96;
 const HEADER_FULL_AT = 48;
-const STAIRS_DURATION_MS = 620;
 
 const primaryLinks = [
   { label: "Work", href: "/#work" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "#contact" },
 ] as const;
 
 const professionalLinks = [
@@ -40,10 +41,10 @@ function MenuControlContent({ label = "Menu", icon = "menu", reducedMotion = fal
     <span data-magnet-part className="menu-trigger-icon" aria-hidden="true">
       {reducedMotion ? <MenuIcon kind={icon} /> : <AnimatePresence initial={false}>
         <motion.span className="menu-icon-layer" key={icon}
-          initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
-          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-          exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
-          transition={{ type: "spring", duration: 0.3, bounce: 0 }}>
+          initial={{ opacity: 0, transform: "scale(.95)" }}
+          animate={{ opacity: 1, transform: "scale(1)" }}
+          exit={{ opacity: 0, transform: "scale(.95)" }}
+          transition={{ duration: 0.16, ease: [0.23, 1, 0.32, 1] }}>
           <MenuIcon kind={icon} />
         </motion.span>
       </AnimatePresence>}
@@ -64,9 +65,10 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
   const restoreScroll = useRef(true);
   const restoreFocus = useRef(true);
   const openedOnce = useRef(false);
+  const completedPanels = useRef(new Set<number>());
 
   const updateMode = useCallback(() => {
-    if (phase !== "closed" || headerRef.current?.contains(document.activeElement) || document.activeElement === compactTriggerRef.current) return;
+    if (phase !== "closed" || headerRef.current?.querySelector(":focus-visible") || compactTriggerRef.current?.matches(":focus-visible")) return;
     const y = window.scrollY;
     setMode((current) => {
       if (current === "full" && y > HEADER_COMPACT_AT) return "compact";
@@ -79,6 +81,7 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
     const query = window.matchMedia("(prefers-reduced-motion: reduce)");
     const onChange = () => setReducedMotion(query.matches);
     onChange();
+    if (compactTriggerRef.current) compactTriggerRef.current.dataset.menuReady = "true";
     query.addEventListener("change", onChange);
     return () => query.removeEventListener("change", onChange);
   }, []);
@@ -96,13 +99,13 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
   }, [updateMode]);
 
   useEffect(() => {
-    if (phase !== "opening" && phase !== "closing") return;
-    if (reducedMotion) {
-      const frame = requestAnimationFrame(() => setPhase(phase === "opening" ? "open" : "closed"));
-      return () => cancelAnimationFrame(frame);
-    }
-    const timeout = window.setTimeout(() => setPhase(phase === "opening" ? "open" : "closed"), STAIRS_DURATION_MS);
-    return () => window.clearTimeout(timeout);
+    completedPanels.current.clear();
+  }, [phase]);
+
+  useEffect(() => {
+    if (!reducedMotion || (phase !== "opening" && phase !== "closing")) return;
+    const frame = requestAnimationFrame(() => setPhase((current) => current === phase ? phase === "opening" ? "open" : "closed" : current));
+    return () => cancelAnimationFrame(frame);
   }, [phase, reducedMotion]);
 
   const menuActive = phase !== "closed";
@@ -159,13 +162,26 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
     setPhase(navigating || reducedMotion ? "closed" : "closing");
   }
 
-  function onMenuLinkClick(event: MouseEvent<HTMLAnchorElement>) {
+  useEffect(() => {
+    const beforeNavigation = () => {
+      restoreScroll.current = false;
+      restoreFocus.current = false;
+      setPhase("closed");
+    };
+    window.addEventListener("portfolio:before-navigation", beforeNavigation);
+    return () => window.removeEventListener("portfolio:before-navigation", beforeNavigation);
+  }, []);
+
+  function onNavigationClick(event: MouseEvent<HTMLAnchorElement>) {
     if (!isPlainClick(event) || event.currentTarget.target === "_blank") return;
     const destination = new URL(event.currentTarget.href);
-    const samePathHash = destination.pathname === window.location.pathname && destination.hash;
-    closeMenu(true);
-    if (samePathHash) {
-      window.setTimeout(() => document.getElementById(decodeURIComponent(destination.hash.slice(1)))?.focus({ preventScroll: true }), 0);
+    const staysOnPage = destination.pathname === window.location.pathname && destination.origin === window.location.origin;
+    const leavesDocument = !event.currentTarget.hasAttribute("download") && destination.protocol !== "mailto:";
+    if (!staysOnPage && destination.origin === window.location.origin && leavesDocument) return;
+    closeMenu(leavesDocument);
+    if (staysOnPage && leavesDocument) {
+      const target = destination.hash ? document.getElementById(decodeURIComponent(destination.hash.slice(1))) : document.querySelector<HTMLElement>("main h1");
+      window.setTimeout(() => target?.focus({ preventScroll: true }), 0);
     }
   }
 
@@ -195,6 +211,7 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
       <header
         ref={headerRef}
         className={["site-header page-width", mode === "compact" ? "site-header--compact" : ""].join(" ")}
+        inert={mode === "compact"}
         onBlurCapture={() => requestAnimationFrame(updateMode)}
       >
         <Link className="brand" href="/" aria-label="Alan Sahlan, home" data-magnet="text">
@@ -203,27 +220,36 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
         </Link>
         <nav className="primary-nav" aria-label="Primary">
           {primaryLinks.map((link) => (
-            <Link key={link.label} href={link.href} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text"><span data-magnet-part>{link.label}</span></Link>
+            <Link key={link.label} href={link.href} onClick={onNavigationClick} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text"><span data-magnet-part>{link.label}</span></Link>
           ))}
-          <span className="unavailable" aria-disabled="true" title="Resume will be added after verification">Resume</span>
+          <a href={RESUME_HREF} download="Alan-Sahlan-Resume.pdf" data-magnet="text"><span data-magnet-part>Resume</span></a>
         </nav>
-        <button className="full-menu-trigger" type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" data-magnet="control">
-          <MenuControlContent />
-        </button>
       </header>
       <button ref={compactTriggerRef} onBlur={() => requestAnimationFrame(updateMode)} className={["compact-menu-trigger", mode === "compact" && phase === "closed" ? "is-visible" : ""].join(" ")} type="button" onClick={(event) => openMenu(event.currentTarget)} aria-label="Open menu" aria-haspopup="dialog" tabIndex={mode === "compact" && phase === "closed" ? 0 : -1} data-magnet="control">
         <MenuControlContent />
       </button>
       {menuActive && (
-        <div className={["stairs-menu", phase === "closing" ? "stairs-menu--closing" : ""].join(" ")} role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>
+        <div className={["stairs-menu", phase === "closing" ? "stairs-menu--closing" : ""].join(" ")} data-phase={phase} role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialogRef} onKeyDown={onDialogKeyDown}>
           <div className="stairs-panels" aria-hidden="true">
-            {Array.from({ length: 5 }, (_, index) => (
+            <motion.div className="stairs-scrim" initial={reducedMotion ? false : { opacity: 0 }}
+              animate={{ opacity: phase === "closing" ? 0 : STAIRS_MOTION.backdropOpacity }}
+              transition={{ duration: reducedMotion ? 0 : STAIRS_MOTION.backdrop / 1000, ease: STAIRS_MOTION.ease }} />
+            {Array.from({ length: STAIRS_MOTION.count }, (_, index) => (
               <motion.div
                 className="stairs-panel"
                 key={index}
-                initial={reducedMotion ? false : { y: "0%" }}
-                animate={{ y: phase === "closing" ? "0%" : "100%" }}
-                transition={{ duration: reducedMotion ? 0 : 0.38, delay: reducedMotion ? 0 : (phase === "closing" ? 4 - index : index) * 0.055, ease: [0.22, 1, 0.36, 1] }}
+                initial={reducedMotion ? false : { transform: STAIRS_MOTION.hidden }}
+                animate={{ transform: phase === "closing" ? STAIRS_MOTION.hidden : STAIRS_MOTION.visible }}
+                transition={{ duration: reducedMotion ? 0 : (phase === "closing" ? STAIRS_MOTION.exit : STAIRS_MOTION.enter) / 1000, delay: reducedMotion ? 0 : (phase === "closing" ? STAIRS_MOTION.count - 1 - index : index) * STAIRS_MOTION.stagger / 1000, ease: STAIRS_MOTION.ease }}
+                onAnimationComplete={(definition) => {
+                  if (phase !== "opening" && phase !== "closing") return;
+                  const target = phase === "closing" ? STAIRS_MOTION.hidden : STAIRS_MOTION.visible;
+                  if (typeof definition !== "object" || !("transform" in definition) || definition.transform !== target) return;
+                  completedPanels.current.add(index);
+                  if (completedPanels.current.size === STAIRS_MOTION.count) {
+                    setPhase((current) => current === phase ? phase === "opening" ? "open" : "closed" : current);
+                  }
+                }}
               />
             ))}
           </div>
@@ -231,17 +257,17 @@ export function SiteHeader({ page }: { page: "home" | "about" | "work" }) {
             <div className="stairs-topline"><span>Alan Sahlan</span><button ref={closeRef} className="stairs-close" type="button" onClick={() => phase === "closing" ? openMenu() : closeMenu()} aria-label={phase === "closing" ? "Reopen menu" : "Close menu"} data-magnet="control"><MenuControlContent label={phase === "closing" ? "Open" : "Close"} icon={phase === "closing" ? "menu" : "close"} reducedMotion={reducedMotion} /></button></div>
             <nav className="stairs-nav" aria-label="Menu">
               {primaryLinks.map((link, index) => (
-                <Link className="stairs-link" key={link.label} href={link.href} aria-label={link.label} onClick={onMenuLinkClick} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text">
+                <Link className="stairs-link" key={link.label} href={link.href} aria-label={link.label} onClick={onNavigationClick} aria-current={link.label === "About" && page === "about" ? "page" : undefined} data-magnet="text">
                   <span className="stairs-index" aria-hidden="true">0{index + 1}</span>
                   <span className="stairs-static-label" data-magnet-part>{link.label}</span>
                   <span className="stairs-marquee" aria-hidden="true"><span className="stairs-marquee-magnet" data-magnet-part>{Array.from({ length: 4 }, (_, repeat) => <span className="stairs-marquee-item" key={repeat}>{link.label}<Image src="/images/alan-logo.png" width={48} height={48} alt="" /></span>)}</span></span>
                   <span className="stairs-arrow" aria-hidden="true" data-magnet-part><ArrowIcon /></span>
                 </Link>
               ))}
-              <div className="stairs-link stairs-resume" aria-disabled="true"><span className="stairs-index" aria-hidden="true">04</span><span>Resume</span><span className="stairs-pending">Coming soon</span></div>
+              <a className="stairs-link" href={RESUME_HREF} download="Alan-Sahlan-Resume.pdf" aria-label="Download resume" onClick={onNavigationClick} data-magnet="text"><span className="stairs-index" aria-hidden="true">04</span><span className="stairs-static-label" data-magnet-part>Resume</span><span className="stairs-arrow" aria-hidden="true" data-magnet-part><ArrowIcon direction="down" /></span></a>
             </nav>
             <nav className="stairs-profiles" aria-label="Professional profiles in menu">
-              {professionalLinks.map((link) => <a key={link.label} href={link.href} onClick={onMenuLinkClick} data-magnet="text"><span data-magnet-part>{link.label}</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a>)}
+              {professionalLinks.map((link) => <a key={link.label} href={link.href} onClick={onNavigationClick} data-magnet="text"><span data-magnet-part>{link.label}</span> <span data-magnet-part aria-hidden="true"><ArrowIcon /></span></a>)}
             </nav>
           </div>
         </div>

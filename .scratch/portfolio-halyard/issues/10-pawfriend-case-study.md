@@ -1,6 +1,6 @@
 # 10: PawFriend case study and gallery entry
 
-Status: needs-info
+Status: ready-for-agent
 
 **What to build:** Visitors can preview PawFriend and assess a complete pet-adoption concept case study with honest contribution and interaction evidence.
 
@@ -8,9 +8,9 @@ Status: needs-info
 
 Source: Alan Sahlan portfolio spec, revision 2, and PRD v2.1. Follow the confirmed glossary and alignment decisions.
 
-- [ ] Read current PawFriend source material and verify contribution, collaborators where relevant, authentic media, and available links. Identify the project as a self-initiated concept.
+- [x] Read current PawFriend source material and verify contribution, collaborators where relevant, authentic media, and available links. Identify the project as a self-initiated concept.
 - [x] Add row 03, PawFriend, Pet adoption, and its direct case-study destination while preserving approved project order and the established gallery/route behavior.
-- [ ] Lead with problem, audience, actual contribution, and consequential design decisions before interaction evidence and implementation considerations. Apply better-writing; claims must remain traceable to evidence.
+- [x] Lead with problem, audience, actual contribution, and consequential design decisions before interaction evidence and implementation considerations. Apply better-writing; claims must remain traceable to evidence.
 - [x] Deliver three or four workflow/decision media panels with progress/skip, normal vertical explanation, and complete stacked mobile/reduced-motion content. Match depth to available evidence.
 - [x] Where useful, include a selective later exploration clearly separated from original work. Do not imply historical implementation, production use, or testing from a new demonstration.
 - [x] Extend the action inventory and existing magnetic/cursor treatment without nested duplication. Keep one row link/keyboard stop, focus precedence, stable targets, interruption handling, and one-tap touch entry.
@@ -18,6 +18,10 @@ Source: Alan Sahlan portfolio spec, revision 2, and PRD v2.1. Follow the confirm
 - [x] Verify authentic media readiness and optimized loading, check available destinations and metadata consistency, and run applicable type checks, lint, and build.
 
 ## Comments
+
+### 28 September 2026 — contribution update
+
+Alan confirmed that he directed the design and used ChatGPT-assisted coding for PawFriend. He later confirmed no other design or build collaborators. The case study now credits that contribution in its introduction and facts without asserting a conventional solo implementation. All ticket-specific criteria are checked; site-wide visual acceptance remains in ticket 12.
 
 ### 27 September 2026 — implementation and verification
 

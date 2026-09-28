@@ -10,7 +10,7 @@ web
 
 React, TypeScript, and Next.js, as recorded in the approved PRD and implementation spec for this application. Portfolio content is static; browser interactions use client components and Motion for React. GSAP/ScrollTrigger is optional for project media when it materially simplifies implementation. Native scrolling is the baseline; Lenis requires demonstrated benefit without input or navigation regressions.
 
-The responsive homepage foundation is implemented and verified for ticket 01. Ticket 02 adds the About route and confirmed email/profile destinations. A current resume and factual About detail on approach and developer collaboration remain pending. Halyard and later-ticket interactions remain unfinished. No deployment provider or production domain has been selected in this session.
+The responsive homepage foundation is implemented and verified for ticket 01. Ticket 02 adds the About route and confirmed email/profile destinations. On 27 September 2026, Alan supplied his CADIT role, October 2025 start date, component-library responsibility and developer-facing UI work. The updated resume and About page use these facts. The user replaced Halyard with Plus Jakarta Sans, bundled locally. Remaining case studies are unfinished. No deployment provider or production domain has been selected in this session.
 
 ## Users
 
@@ -56,7 +56,7 @@ Case studies establish the user problem, Alan's actual contribution, and consequ
 
 The identity is Alan Sahlan, using the original AS mark, a real portrait, the exact "Design • Engineer" phrase, and an accurate Indonesia location reference. Do not invent a city, coordinates, local-time display, or availability status.
 
-The approved brief binds future work to Halyard Display Variable throughout interface text, warm off-white/charcoal/cobalt identity, and the approved minimal editorial composition. These are existing user commitments, not a new visual direction. Consult the PRD for exact composition, tokens, and interaction references. The referenced mockup does not establish actual project behavior or override the written requirements.
+The user updated the typography commitment on 27 September 2026: Plus Jakarta Sans replaces Halyard Display Variable throughout interface text. Retain the warm off-white/charcoal/cobalt identity, and the approved minimal editorial composition. These are existing user commitments, not a new visual direction. Consult the PRD for exact composition, tokens, and interaction references. The referenced mockup does not establish actual project behavior or override the written requirements.
 
 Apply the better-writing skill to all website copy. Use clear, brief prose, consistent terminology, meaningful action labels, and sentence case by default. Preserve deliberate approved identity copy. "Let's work together." and the PRD's About wording are starting copy that may be refined within the confirmed positioning.
 
@@ -69,7 +69,7 @@ Apply the better-writing skill to all website copy. Use clear, brief prose, cons
 - [Ticket 02 content sources](docs/portfolio-content.md) records resume inspection, confirmed email/profile destinations, and remaining factual inputs.
 - The PRD links to a portfolio Drive folder, Paylecta and Munchpal Behance studies, and Aurelia and PawFriend sites. Those links identify material to investigate, not already-verified evidence.
 
-The approved composition image, Halyard delivery, current resume, project media, and rights-cleared landscape imagery have not been established as available release assets. Verify them before use; clearly labelled development substitutes do not satisfy release acceptance.
+Plus Jakarta Sans and the updated resume are delivered locally. The approved composition image and remaining project media still require verification before release. Verify them before use; clearly labelled development substitutes do not satisfy release acceptance.
 
 Recheck Paylecta outcome metrics and testimonial/persona provenance, Munchpal task-time/completion figures, and resume accuracy. Remove any AI-directed instruction or keyword block from the release resume if present. Omit unsupported results. Ticket 01 has passing browser tests, lint, type checks, and a production build. See [verification results](.scratch/portfolio-halyard/ticket-01-verification.md) for actual coverage and limits. No performance score or accessibility certification is claimed.
 

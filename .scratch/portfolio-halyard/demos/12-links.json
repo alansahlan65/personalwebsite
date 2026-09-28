@@ -1,0 +1,41 @@
+{
+  "cadit": {
+    "error": "fetch failed",
+    "checkedWith": "HEAD"
+  },
+  "linkedin": {
+    "status": 405,
+    "finalUrl": "https://www.linkedin.com/in/muhammadsahlanshadiq/",
+    "checkedWith": "HEAD"
+  },
+  "github": {
+    "status": 200,
+    "finalUrl": "https://github.com/alansahlan65",
+    "checkedWith": "HEAD"
+  },
+  "behance": {
+    "status": 200,
+    "finalUrl": "https://www.behance.net/muhammadsahlanshadiq",
+    "checkedWith": "HEAD"
+  },
+  "aurelia": {
+    "status": 200,
+    "finalUrl": "https://aurelia.alansahlanwork.workers.dev/",
+    "checkedWith": "HEAD"
+  },
+  "pawfriend": {
+    "status": 200,
+    "finalUrl": "https://pawfriend-topaz.vercel.app/",
+    "checkedWith": "HEAD"
+  },
+  "paylectaPdf": {
+    "status": 200,
+    "finalUrl": "https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view",
+    "checkedWith": "HEAD"
+  },
+  "munchpalPdf": {
+    "status": 200,
+    "finalUrl": "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view",
+    "checkedWith": "HEAD"
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 export function RouteFocus() {
@@ -9,19 +9,23 @@ export function RouteFocus() {
   const historyDestination = useRef<string | null>(null);
 
   useEffect(() => {
-    const onPopState = () => { historyDestination.current = window.location.pathname; };
+    const onPopState = () => {
+      historyDestination.current = previousPath.current !== window.location.pathname
+        ? window.location.pathname
+        : null;
+    };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (previousPath.current === pathname) return;
     const fromPath = previousPath.current;
     previousPath.current = pathname;
     // An entry can commit after Back has already changed the URL.
     if (window.location.pathname !== pathname) return;
     const fromHistory = historyDestination.current === pathname;
-    if (fromHistory) historyDestination.current = null;
+    historyDestination.current = null;
     if (pathname === "/" && sessionStorage.getItem("selected-work-return-pending") === "1") {
       sessionStorage.removeItem("selected-work-return-pending");
       const saved = sessionStorage.getItem("selected-work-return");
@@ -35,13 +39,12 @@ export function RouteFocus() {
           // A direct visit returns to the selected-work section start.
         }
       }
-      const timeout = window.setTimeout(() => {
-        const work = document.getElementById("work");
-        if (y === null) work?.scrollIntoView();
-        else window.scrollTo(0, y);
-        work?.focus({ preventScroll: true });
-      }, 100);
-      return () => window.clearTimeout(timeout);
+      // Restore while the navigation curtain covers the destination.
+      const work = document.getElementById("work");
+      if (y === null) work?.scrollIntoView();
+      else window.scrollTo(0, y);
+      work?.focus({ preventScroll: true });
+      return;
     }
     if (pathname === "/" && fromPath.startsWith("/work/") && fromHistory) {
       const frame = requestAnimationFrame(() => {
