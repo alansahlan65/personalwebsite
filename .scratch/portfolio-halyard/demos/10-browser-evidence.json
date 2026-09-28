@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-27",
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "range": {
+    "start": 2695.0625,
+    "travel": 2688
+  },
+  "states": [
+    {
+      "panel": 1,
+      "scroll": 2695
+    },
+    {
+      "panel": 2,
+      "scroll": 4039
+    },
+    {
+      "panel": 3,
+      "scroll": 5383
+    },
+    {
+      "panel": 2,
+      "scroll": 4039
+    }
+  ],
+  "stoppedWithoutDrift": true,
+  "widths": {
+    "mobile": 390
+  },
+  "errors": [],
+  "socialImageStatus": 200,
+  "scope": "New portfolio reading journey using authentic live-concept captures. The original live-site recording is separately delivered at /media/pawfriend-observed-flow.webm; sample pet imagery is generated."
+}
