@@ -65,7 +65,7 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
   .role-unit p { overflow-wrap: anywhere; }
   .role-unit[aria-hidden="true"] { display: none; }
 }
-.work { padding-block: 1rem 1.5rem; }
+.work { padding-block: 1rem 1.5rem; scroll-margin-top: 5rem; }
 .section-intro { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .6rem 2rem; margin-bottom: 2rem; }
 .development-note { color: var(--muted); font-size: .8125rem; }
 .project-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--divider); }
@@ -208,11 +208,11 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 .site-header {
   position: sticky; top: 0; z-index: 40; min-height: 96px; background: var(--canvas);
   opacity: 1; visibility: visible;
-  transition: opacity 280ms var(--project-title-ease), visibility 0s linear;
+  transition: opacity 180ms var(--project-title-ease), visibility 0s linear;
 }
 .site-header--compact {
   opacity: 0; visibility: hidden; pointer-events: none;
-  transition: opacity 280ms var(--project-title-ease), visibility 0s linear 280ms;
+  transition: opacity 90ms var(--project-title-ease), visibility 0s linear 90ms;
 }
 .site-header .primary-nav { margin-left: auto; }
 .site-header .primary-nav {
@@ -242,7 +242,7 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
   background: var(--canvas); border-color: rgb(32 34 31 / .18);
   box-shadow: 0 2px 4px rgb(32 34 31 / .04), 0 8px 20px rgb(32 34 31 / .08);
   visibility: hidden; opacity: 0; pointer-events: none; transform: translateY(-8px) scale(.96);
-  transition: opacity 280ms var(--project-title-ease), transform 280ms var(--project-title-ease), visibility 0s linear 280ms, color 150ms ease, background-color 150ms ease;
+  transition: opacity 180ms var(--project-title-ease), transform 180ms var(--project-title-ease), visibility 0s linear 180ms, color 150ms ease, background-color 150ms ease;
 }
 @supports ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
   .compact-menu-trigger { background: rgb(246 245 241 / .92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
@@ -250,7 +250,7 @@ h1 { font-size: clamp(5rem, 10.3vw, 10.4rem); font-weight: 500; line-height: .94
 @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
   .compact-menu-trigger { background: var(--canvas); border-color: var(--ink); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: none; }
 }
-.compact-menu-trigger.is-visible { visibility: visible; opacity: 1; pointer-events: auto; transform: none; transition-delay: 60ms, 60ms, 0s, 0s, 0s; }
+.compact-menu-trigger.is-visible { visibility: visible; opacity: 1; pointer-events: auto; transform: none; transition-delay: 30ms, 30ms, 0s, 0s, 0s; }
 .stairs-menu {
   position: fixed; z-index: 50; inset: 0; overflow-y: auto; overscroll-behavior: contain;
   color: var(--canvas);
@@ -451,6 +451,21 @@ span[data-magnet-part] { display: inline-block; }
   --project-title-ease: cubic-bezier(.23, 1, .32, 1);
 }
 [data-page-transition] { background: var(--canvas); }
+@keyframes opening-copy {
+  from { opacity: .68; transform: translate3d(0, 16px, 0); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes opening-portrait {
+  from { clip-path: inset(0 0 14% 0); transform: translate3d(0, 18px, 0) scale(1.02); }
+  to { clip-path: inset(0); transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+  .hero h1, .about-page h1 { animation: opening-copy 560ms cubic-bezier(.16, 1, .3, 1) both; }
+  .hero-role, .about-lead { animation: opening-copy 400ms cubic-bezier(.16, 1, .3, 1) 110ms both; }
+  .location, .about-direction { animation: opening-copy 380ms cubic-bezier(.16, 1, .3, 1) 180ms both; }
+  .hero .portrait-frame, .about-portrait .portrait-frame { animation: opening-portrait 680ms cubic-bezier(.16, 1, .3, 1) 60ms both; }
+  .case-lead { animation: opening-copy 420ms cubic-bezier(.16, 1, .3, 1) 80ms both; }
+}
 .route-curtain { position: fixed; z-index: 80; inset: 0; display: grid; grid-template-rows: repeat(5, minmax(0, 1fr)); overflow: hidden; pointer-events: none; }
 .route-curtain[data-phase="idle"] { visibility: hidden; opacity: 0; }
 .route-curtain-panel { position: relative; z-index: 1; width: calc(100% + 32px); margin-left: -16px; margin-bottom: -1px; border-radius: 0; background: var(--cobalt); transform: translateX(-100%); }
