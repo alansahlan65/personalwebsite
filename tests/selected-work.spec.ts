@@ -2,19 +2,25 @@ import { expect, test } from "@playwright/test";
 
 test("four compact banners load, and each row opens its own distinct wide artwork", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/#work");
+  const expandedRequests: string[] = [];
+  page.on("request", request => {
+    if (request.url().includes("-expanded.webp")) expandedRequests.push(request.url());
+  });
+  await page.goto("/");
   await page.mouse.move(0, 0);
   const rows = page.locator(".project-row");
   await expect(rows).toHaveCount(4);
-  await expect(page.locator(".project-preview img")).toHaveCount(8);
-  await expect.poll(() => page.locator(".project-preview img").evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
-  const sources = await page.locator(".project-preview img").evaluateAll(images => images.map(image => (image as HTMLImageElement).src));
-  expect(new Set(sources).size).toBe(8);
+  await expect(page.locator(".project-banner-compact")).toHaveCount(4);
+  await expect(page.locator(".project-banner-expanded")).toHaveCount(0);
+  expect(expandedRequests).toEqual([]);
+  await page.goto("/#work");
+  await expect.poll(() => page.locator(".project-banner-compact").evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
   for (const row of await rows.all()) {
     await expect(row).toHaveAttribute("data-expanded", "false");
     await expect(row.locator(".project-banner-compact")).toHaveCSS("opacity", "1");
-    await expect(row.locator(".project-banner-expanded")).toHaveCSS("opacity", "0");
+    await expect(row.locator(".project-banner-expanded")).toHaveCount(0);
   }
+  const expandedSources: string[] = [];
   for (const row of await rows.all()) {
     const frame = row.locator(".project-preview");
     const compactWidth = (await frame.boundingBox())!.width;
@@ -22,11 +28,15 @@ test("four compact banners load, and each row opens its own distinct wide artwor
     await expect(row).toHaveAttribute("data-expanded", "true");
     await expect(page.locator('.project-row[data-expanded="true"]')).toHaveCount(1);
     await expect.poll(() => frame.evaluate(element => element.getBoundingClientRect().width)).toBeGreaterThan(compactWidth * 1.7);
+    await expect.poll(() => row.locator(".project-banner-expanded").evaluate(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0)).toBe(true);
     await expect(row.locator(".project-banner-expanded")).toHaveCSS("opacity", "1");
+    expandedSources.push(await row.locator(".project-banner-expanded").getAttribute("src") ?? "");
     await page.mouse.move(0, 0);
     await expect(page.locator('.project-row[data-expanded="true"]')).toHaveCount(0);
     await expect.poll(async () => Math.abs((await frame.evaluate(element => element.getBoundingClientRect().width)) - compactWidth)).toBeLessThan(2);
   }
+  expect(new Set(expandedSources).size).toBe(4);
+  expect(expandedRequests).toHaveLength(4);
 });
 
 test("keyboard focus expands one project at a time and all arrows have real destinations", async ({ page }) => {

@@ -18,6 +18,8 @@ const MotionLink = motion.create(Link);
 const layoutEase = [0.23, 1, 0.32, 1] as const;
 
 function ProjectBanner({ slug, expanded, reducedMotion }: { slug: string; expanded: boolean; reducedMotion: boolean }) {
+  const [expandedLoaded, setExpandedLoaded] = useState(false);
+  const revealExpanded = expanded && expandedLoaded;
   const banner = <motion.span
     className="project-preview"
     layout
@@ -25,12 +27,12 @@ function ProjectBanner({ slug, expanded, reducedMotion }: { slug: string; expand
     aria-hidden="true"
   >
     <span className="project-preview-media">
-      <Image className="project-banner-compact" src={`/images/work/${slug}-compact.webp`} fill alt="" loading="eager"
+      <Image className="project-banner-compact" src={`/images/work/${slug}-compact.webp`} fill alt=""
         sizes="(max-width: 700px) calc(100vw - 84px), (max-width: 1440px) 48vw, 670px"
-        style={{ opacity: expanded ? 0 : 1 }} />
-      <Image className="project-banner-expanded" src={`/images/work/${slug}-expanded.webp`} fill alt="" loading="eager"
+        style={{ opacity: revealExpanded ? 0 : 1 }} />
+      {(expanded || expandedLoaded) && <Image className="project-banner-expanded" src={`/images/work/${slug}-expanded.webp`} fill alt="" loading="eager"
         sizes="(max-width: 700px) calc(100vw - 84px), (max-width: 1600px) 85vw, 1350px"
-        style={{ opacity: expanded ? 1 : 0 }} />
+        onLoad={() => setExpandedLoaded(true)} style={{ opacity: revealExpanded ? 1 : 0 }} />}
     </span>
   </motion.span>;
 
