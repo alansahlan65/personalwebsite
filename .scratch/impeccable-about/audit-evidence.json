@@ -1,0 +1,229 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1908,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "About me"
+        },
+        {
+          "tag": "H2",
+          "text": "Where I’m heading"
+        },
+        {
+          "tag": "H2",
+          "text": "From a problem to a prototype"
+        },
+        {
+          "tag": "H2",
+          "text": "Bringing design and development closer"
+        },
+        {
+          "tag": "H2",
+          "text": "Resume"
+        },
+        {
+          "tag": "H2",
+          "text": "Let’s worktogether."
+        }
+      ],
+      "smallTargets": [
+        {
+          "text": "Work",
+          "width": 34.734375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 39.203125,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1640,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "About me"
+        },
+        {
+          "tag": "H2",
+          "text": "Where I’m heading"
+        },
+        {
+          "tag": "H2",
+          "text": "From a problem to a prototype"
+        },
+        {
+          "tag": "H2",
+          "text": "Bringing design and development closer"
+        },
+        {
+          "tag": "H2",
+          "text": "Resume"
+        },
+        {
+          "tag": "H2",
+          "text": "Let’s worktogether."
+        }
+      ],
+      "smallTargets": [
+        {
+          "text": "Work",
+          "width": 34.734375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 39.203125,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1921,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "About me"
+        },
+        {
+          "tag": "H2",
+          "text": "Where I’m heading"
+        },
+        {
+          "tag": "H2",
+          "text": "From a problem to a prototype"
+        },
+        {
+          "tag": "H2",
+          "text": "Bringing design and development closer"
+        },
+        {
+          "tag": "H2",
+          "text": "Resume"
+        },
+        {
+          "tag": "H2",
+          "text": "Let’s worktogether."
+        }
+      ],
+      "smallTargets": [
+        {
+          "text": "Work",
+          "width": 32.421875,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 36.59375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2026,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "About me"
+        },
+        {
+          "tag": "H2",
+          "text": "Where I’m heading"
+        },
+        {
+          "tag": "H2",
+          "text": "From a problem to a prototype"
+        },
+        {
+          "tag": "H2",
+          "text": "Bringing design and development closer"
+        },
+        {
+          "tag": "H2",
+          "text": "Resume"
+        },
+        {
+          "tag": "H2",
+          "text": "Let’s worktogether."
+        }
+      ],
+      "smallTargets": [
+        {
+          "text": "Work",
+          "width": 32.421875,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 36.59375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "textSize": "200%",
+      "scrollWidth": 1440,
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "textSize": "200%",
+      "scrollWidth": 390,
+      "overflow": []
+    }
+  ],
+  "errors": [],
+  "keyboard": {
+    "first": "Skip to content",
+    "skip": "main",
+    "open": {
+      "focus": "Close menu",
+      "inert": true
+    },
+    "wrapBack": "Behance ",
+    "wrapForward": "Close menu",
+    "close": {
+      "focus": "Open menu",
+      "dialog": false,
+      "inert": false
+    }
+  },
+  "reduced": {
+    "menu": true,
+    "panels": [
+      "matrix(1, 0, 0, 1, 0, 900)",
+      "matrix(1, 0, 0, 1, 0, 900)",
+      "matrix(1, 0, 0, 1, 0, 900)",
+      "matrix(1, 0, 0, 1, 0, 900)",
+      "matrix(1, 0, 0, 1, 0, 900)"
+    ],
+    "marquee": "none"
+  },
+  "forced": {
+    "media": true,
+    "corner": "rgb(0, 0, 0)"
+  },
+  "fonts": {
+    "fonts": [
+      {
+        "familyName": "Arial",
+        "postScriptName": "ArialMT",
+        "isCustomFont": false,
+        "glyphCount": 74
+      }
+    ]
+  }
+}

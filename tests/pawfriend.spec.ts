@@ -1,15 +1,16 @@
 import { expect, test } from "@playwright/test";
+import { tabTo } from "./helpers/media-keyboard";
 
 test("direct PawFriend entry explains the concept using observed live workflows", async ({ page }) => {
   await page.goto("/work/pawfriend");
   await expect(page.getByRole("heading", { level: 1, name: "PawFriend", exact: true })).toBeVisible();
-  await expect(page.getByText("Self-initiated concept", { exact: true })).toBeVisible();
+  await expect(page.getByText("Self-initiated adoption concept", { exact: true })).toBeVisible();
   await expect(page.getByRole("link", { name: "View the live PawFriend concept", exact: true })).toHaveAttribute("href", "https://pawfriend-topaz.vercel.app/");
-  await expect(page.getByRole("link", { name: "View PawFriend source code", exact: true })).toHaveAttribute("href", "https://github.com/alansahlan65/pawfriend");
-  await expect(page.getByRole("heading", { name: "Design decisions", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "View PawFriend source code", exact: true, includeHidden: true })).toHaveAttribute("href", "https://github.com/alansahlan65/pawfriend");
+  await expect(page.locator(".case-decisions")).toHaveCount(0);
   const sequence = page.getByRole("region", { name: "From browsing to a first visit", exact: true });
   await expect(sequence.getByRole("article")).toHaveCount(3);
-  await expect(sequence.getByText(/Live concept, captured 27 September 2026/)).toHaveCount(3);
+  await expect(sequence.locator("summary")).toHaveCount(3);
   await expect.poll(() => page.locator(".case-hero img").evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
   await expect(page).toHaveTitle("PawFriend | Alan Sahlan");
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/work\/pawfriend\/opengraph-image\.jpg/);
@@ -22,18 +23,18 @@ test("keyboard traversal keeps one project active and focus overrides sibling ho
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/#work");
   const rows = page.locator(".project-row");
-  const link = rows.nth(2).getByRole("link");
+  const link = rows.nth(2).getByRole("link", { includeHidden: true });
   await page.keyboard.press("Tab");
-  await rows.first().getByRole("link").focus();
+  await rows.first().getByRole("link", { includeHidden: true }).focus();
   for (const slug of ["aurelia", "paylecta", "pawfriend"]) {
     const row = page.locator(`.project-row[data-project="${slug}"]`);
-    await expect(row.getByRole("link")).toBeFocused();
-    await expect(row.getByRole("link")).toHaveAttribute("href", `/work/${slug}`);
+    await expect(row.getByRole("link", { includeHidden: true })).toBeFocused();
+    await expect(row.getByRole("link", { includeHidden: true })).toHaveAttribute("href", `/work/${slug}`);
     await expect(row).toHaveAttribute("data-expanded", "true");
     await expect(page.locator('.project-row[data-expanded="true"]')).toHaveCount(1);
     if (slug !== "pawfriend") await page.keyboard.press("Tab");
   }
-  await expect(rows.nth(2).getByRole("link")).toHaveCount(1);
+  await expect(rows.nth(2).getByRole("link", { includeHidden: true })).toHaveCount(1);
   await rows.first().getByRole("heading").hover();
   await expect(link).toBeFocused();
   await expect(rows.nth(2)).toHaveAttribute("data-expanded", "true");
@@ -86,20 +87,21 @@ test("media progresses, reverses, and keeps screenshot actions and Skip reachabl
     await expect(progress).toHaveAttribute("value", String(step + 1));
     await expect(panels.nth(step)).toBeInViewport({ ratio: 0.95 });
   }
-  const skip = sequence.getByRole("link", { name: "Skip to implementation considerations" });
+  const skip = sequence.getByRole("link", { name: "Skip to build notes" });
   await skip.focus();
   for (const panel of await panels.all()) {
-    await page.keyboard.press("Tab");
-    await expect(panel.getByRole("link")).toBeFocused();
-    await expect(panel.getByRole("link")).toBeInViewport({ ratio: 1 });
-    await expect.poll(() => panel.getByRole("img").evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth > 0)).toBe(true);
+    await tabTo(page, panel.getByRole("link", { includeHidden: true }));
+    await expect(panel.getByRole("link", { includeHidden: true })).toBeFocused();
+    await expect(panel.getByRole("link", { includeHidden: true })).toBeInViewport({ ratio: 1 });
+    await expect.poll(() => panel.locator(".case-media-crop img").evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth > 0)).toBe(true);
   }
-  const [imageTab] = await Promise.all([context.waitForEvent("page"), panels.last().getByRole("link").click()]);
+  const [imageTab] = await Promise.all([context.waitForEvent("page"), panels.last().getByRole("link", { includeHidden: true }).click()]);
   await imageTab.waitForLoadState();
   await expect(imageTab).toHaveURL(/\/images\/pawfriend-prepare.webp$/);
   await imageTab.close();
-  await skip.click();
-  await expect(page.getByRole("heading", { name: "Implementation considerations", exact: true })).toBeFocused();
+  await skip.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#pawfriend-implementation")).toBeFocused();
 });
 
 test("runtime motion and size changes preserve the focused media action and toolbar", async ({ page }) => {
@@ -108,7 +110,7 @@ test("runtime motion and size changes preserve the focused media action and tool
   await page.evaluate(() => document.fonts.ready);
   const sequence = page.getByRole("region", { name: "From browsing to a first visit" });
   await expect(sequence.getByRole("progressbar")).toBeVisible();
-  const action = sequence.getByRole("article").nth(1).getByRole("link");
+  const action = sequence.getByRole("article").nth(1).locator("summary");
   await action.focus();
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(sequence.getByRole("progressbar")).toBeHidden();
@@ -121,13 +123,13 @@ test("runtime motion and size changes preserve the focused media action and tool
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.emulateMedia({ reducedMotion: "no-preference", forcedColors: "none" });
   await expect(action).toBeInViewport({ ratio: 1 });
-  const skip = sequence.getByRole("link", { name: "Skip to implementation considerations" });
+  const skip = sequence.getByRole("link", { name: "Skip to build notes" });
   await skip.focus();
   await page.setViewportSize({ width: 390, height: 844 });
   await expect(skip).toBeFocused();
   await expect(skip).toBeInViewport({ ratio: 1 });
   await page.keyboard.press("Enter");
-  await expect(page.getByRole("heading", { name: "Implementation considerations", exact: true })).toBeFocused();
+  await expect(page.locator("#pawfriend-implementation")).toBeFocused();
 });
 
 for (const width of [320, 390, 768, 1440]) {
@@ -137,15 +139,16 @@ for (const width of [320, 390, 768, 1440]) {
     await page.evaluate(() => document.fonts.ready);
     const sequence = page.getByRole("region", { name: "From browsing to a first visit" });
     for (const panel of await sequence.getByRole("article").all()) {
-      await panel.getByRole("link").focus();
-      await expect.poll(() => panel.getByRole("img").evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth > 0)).toBe(true);
+      await panel.locator("summary").focus();
+      await expect.poll(() => panel.locator(".case-media-crop img").evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth > 0)).toBe(true);
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     await page.addStyleTag({ content: "html { font-size: 200%; }" });
     await expect(sequence.getByRole("progressbar")).toBeHidden();
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-    await sequence.getByRole("link", { name: "Skip to implementation considerations" }).click();
-    await expect(page.getByRole("heading", { name: "Implementation considerations", exact: true })).toBeFocused();
+    await sequence.getByRole("link", { name: "Skip to build notes" }).focus();
+    await page.keyboard.press("Enter");
+    await expect(page.locator("#pawfriend-implementation")).toBeFocused();
   });
 }
 
@@ -157,7 +160,7 @@ test.describe("touch entry", () => {
     await expect(page).toHaveURL(/\/work\/pawfriend$/);
     const sequence = page.getByRole("region", { name: "From browsing to a first visit" });
     await expect(sequence.getByRole("progressbar")).toBeHidden();
-    await sequence.getByRole("article").last().getByRole("img").scrollIntoViewIfNeeded();
+    await sequence.getByRole("article").last().locator(".case-media-crop img").scrollIntoViewIfNeeded();
     await expect(sequence.getByRole("article").last()).toBeInViewport();
     await expect(page.locator(".site-cursor")).toBeHidden();
   });
@@ -187,7 +190,8 @@ test("native source recording plays on request and all new actions have pointer 
   page.on("request", request => { if (request.url().endsWith("pawfriend-observed-flow.webm")) eagerVideoRequests.push(request.url()); });
   await page.goto("/work/pawfriend");
   await expect(page.locator("[data-magnet] [data-magnet]")).toHaveCount(0);
-  expect(await page.locator(".case-study a[href], .case-study button").evaluateAll(elements => elements.filter(e => !e.hasAttribute("data-magnet")).map(e => e.textContent))).toEqual([]);
+  expect(await page.locator(".case-study a[href], .case-study button").evaluateAll(elements => elements.filter(e => !e.hasAttribute("data-magnet") && e.getAttribute("data-pointer-feedback") !== "local").map(e => e.textContent))).toEqual([]);
+  await page.locator("#pawfriend-implementation").click();
   const video = page.getByLabel("PawFriend live concept browsing and shortlist recording");
   await expect(video).toHaveAttribute("controls", "");
   await expect(video).toHaveAttribute("preload", "none");

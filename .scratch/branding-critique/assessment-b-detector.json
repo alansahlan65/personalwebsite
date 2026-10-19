@@ -1,0 +1,2203 @@
+[
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\about\\about.module.css",
+    "line": 4,
+    "snippet": "font-size: clamp(2.8rem, 6.8vw, 6.5rem) has fluid endpoints 2.8rem and 6.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.8rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\about\\about.module.css",
+    "line": 6,
+    "snippet": "font-size: clamp(1rem, 1.45vw, 1.25rem) has fluid endpoint 1.25rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.25rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\about\\about.module.css",
+    "line": 16,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\about\\about.module.css",
+    "line": 22,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\about\\about.module.css",
+    "line": 31,
+    "snippet": "font-size: clamp(2.7rem, 10vw, 4.5rem) has fluid endpoints 2.7rem and 4.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.7rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-notebook.module.css",
+    "line": 11,
+    "snippet": "font-size: clamp(1.25rem, 1.8vw, 1.5rem) has fluid endpoints 1.25rem and 1.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.25rem",
+    "importedBy": [
+      "about-notebook.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-notebook.module.css",
+    "line": 16,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem",
+    "importedBy": [
+      "about-notebook.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-notebook.module.css",
+    "line": 21,
+    "snippet": "font-size: .75rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".75rem",
+    "importedBy": [
+      "about-notebook.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-notebook.module.css",
+    "line": 26,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem",
+    "importedBy": [
+      "about-notebook.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+    "line": 5,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "about-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+    "line": 16,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "about-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+    "line": 18,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem",
+    "importedBy": [
+      "about-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+    "line": 33,
+    "snippet": "font-size: clamp(1.25rem, 1.8vw, 1.5rem) has fluid endpoints 1.25rem and 1.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.25rem",
+    "importedBy": [
+      "about-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+    "line": 35,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "about-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+    "line": 38,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "about-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+    "line": 16,
+    "snippet": "border-radius: 12px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "alan-character.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+    "line": 41,
+    "snippet": "Undocumented color #c5c1b5 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#c5c1b5",
+    "importedBy": [
+      "alan-character.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+    "line": 49,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem",
+    "importedBy": [
+      "alan-character.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.module.css",
+    "line": 99,
+    "snippet": "border-radius: 9px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "9px",
+    "importedBy": [
+      "hero-role-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.module.css",
+    "line": 142,
+    "snippet": "font-size: clamp(1rem, 1.8vw, 1.4rem) has fluid endpoint 1.4rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.4rem",
+    "importedBy": [
+      "hero-role-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.module.css",
+    "line": 162,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "hero-role-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.tsx",
+    "line": 26,
+    "snippet": "Undocumented color #f5a623 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f5a623",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.tsx",
+    "line": 36,
+    "snippet": "Undocumented color #00a994 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#00a994",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\project-artifact.module.css",
+    "line": 6,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "project-artifact.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\project-artifact.module.css",
+    "line": 9,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem",
+    "importedBy": [
+      "project-artifact.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\components\\speech-bubble.module.css",
+    "line": 5,
+    "snippet": "border-radius: 24px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "24px",
+    "importedBy": [
+      "alan-character.tsx",
+      "hero-role-play.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 10,
+    "snippet": "font-size: clamp(3.2rem, 6.6vw, 6.7rem) has fluid endpoints 3.2rem and 6.7rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3.2rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 17,
+    "snippet": "font-size: clamp(1.125rem, 1.5vw, 1.375rem) has fluid endpoints 1.125rem and 1.375rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.125rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 19,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 26,
+    "snippet": "font-size: 2rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 27,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 30,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 50,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 74,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 80,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+    "line": 90,
+    "snippet": "font-size: clamp(3rem, 10vw, 5rem) has fluid endpoint 3rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem",
+    "importedBy": [
+      "contact-form.tsx",
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "side-tab",
+    "name": "Side-tab accent border",
+    "description": "Thick colored border on one side of a card — the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 124,
+    "snippet": "border-right: 8px solid var(--cobalt)"
+  },
+  {
+    "antipattern": "side-tab",
+    "name": "Side-tab accent border",
+    "description": "Thick colored border on one side of a card — the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 143,
+    "snippet": "border-left: 4px solid var(--cobalt)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 77,
+    "snippet": "border-radius: 12px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "12px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 82,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 122,
+    "snippet": "Undocumented color #c2b8a6 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#c2b8a6"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 127,
+    "snippet": "font-size: .75rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 133,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 138,
+    "snippet": "font-size: clamp(1rem, 1.5vw, 1.125rem) has fluid endpoint 1.125rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 139,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 144,
+    "snippet": "font-size: clamp(1.65rem, 2.6vw, 2.65rem) has fluid endpoint 2.65rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.65rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 151,
+    "snippet": "font-size: .75rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 161,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 164,
+    "snippet": "font-size: clamp(2.4rem, 17vw, 6.9rem) has fluid endpoints 2.4rem and 6.9rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.4rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 168,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 172,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 175,
+    "snippet": "font-size: clamp(1.5rem, 6vw, 2rem) has fluid endpoints 1.5rem and 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 176,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 179,
+    "snippet": "font-size: clamp(2rem, 14vw, 4rem) has fluid endpoints 2rem and 4rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 215,
+    "snippet": "font-size: clamp(2.25rem, 5.6vw, 5.5rem) has fluid endpoints 2.25rem and 5.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.25rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 223,
+    "snippet": "font-size: 1.0625rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.0625rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 226,
+    "snippet": "font-size: clamp(1.5rem, 2.2vw, 2rem) has fluid endpoints 1.5rem and 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 230,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 234,
+    "snippet": "font-size: 1.5rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 239,
+    "snippet": "font-size: clamp(1.75rem, 2.5vw, 2.5rem) has fluid endpoints 1.75rem and 2.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 242,
+    "snippet": "font-size: .75rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 257,
+    "snippet": "font-size: clamp(2rem, 6.6vw, 3.5rem) has fluid endpoints 2rem and 3.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 322,
+    "snippet": "font-size: .6875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".6875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 356,
+    "snippet": "font-size: clamp(2.5rem, 6vw, 6rem) has fluid endpoints 2.5rem and 6rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 359,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 397,
+    "snippet": "font-size: clamp(2rem, 11vw, 4rem) has fluid endpoints 2rem and 4rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 435,
+    "snippet": "font-size: clamp(1rem, 1.3vw, 1.125rem) has fluid endpoint 1.125rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 437,
+    "snippet": "font-size: 1.25rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.25rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 463,
+    "snippet": "font-size: clamp(4rem, 11vw, 10rem) has fluid endpoints 4rem and 10rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "4rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 464,
+    "snippet": "font-size: clamp(1.5rem, 2.5vw, 2.6rem) has fluid endpoints 1.5rem and 2.6rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 466,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 472,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 484,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 495,
+    "snippet": "font-size: clamp(3.5rem, 15vw, 6rem) has fluid endpoints 3.5rem and 6rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 496,
+    "snippet": "font-size: clamp(1.4rem, 6vw, 2rem) has fluid endpoints 1.4rem and 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.4rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 618,
+    "snippet": "font-size: clamp(2rem, 3.7vw, 3.75rem) has fluid endpoints 2rem and 3.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 622,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 630,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 634,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 641,
+    "snippet": "font-size: clamp(1.8rem, 3vw, 3rem) has fluid endpoints 1.8rem and 3rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.8rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 645,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 652,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 654,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 675,
+    "snippet": "font-size: clamp(2rem, 3.5vw, 3.5rem) has fluid endpoints 2rem and 3.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 701,
+    "snippet": "font-size: clamp(3.5rem, 9vw, 8rem) has fluid endpoints 3.5rem and 8rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 704,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 710,
+    "snippet": "font-size: clamp(3rem, 8.5vw, 7.75rem) has fluid endpoints 3rem and 7.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 713,
+    "snippet": "font-size: clamp(3rem, 8.5vw, 7.75rem) has fluid endpoints 3rem and 7.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\globals.css",
+    "line": 735,
+    "snippet": "font-size: 2rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 26,
+    "snippet": "font-size: clamp(2rem, 3.7vw, 3.75rem) has fluid endpoints 2rem and 3.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 47,
+    "snippet": "Undocumented color #91ac68 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#91ac68",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 50,
+    "snippet": "Undocumented color #91ac68 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#91ac68",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 54,
+    "snippet": "font-size: clamp(3rem, 6vw, 5.5rem) has fluid endpoints 3rem and 5.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 65,
+    "snippet": "font-size: clamp(1.4rem, 2vw, 2rem) has fluid endpoints 1.4rem and 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.4rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 95,
+    "snippet": "font-size: clamp(1.75rem, 2.6vw, 2.65rem) has fluid endpoints 1.75rem and 2.65rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 145,
+    "snippet": "font-size: clamp(1.75rem, 3.1vw, 3rem) has fluid endpoints 1.75rem and 3rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 150,
+    "snippet": "font-size: .8125rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".8125rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 167,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 192,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 3,
+    "snippet": "font-size: clamp(3rem, 7.5vw, 6.75rem) has fluid endpoints 3rem and 6.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 12,
+    "snippet": "Undocumented color #ffa13b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#ffa13b",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 13,
+    "snippet": "Undocumented color #91ac68 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#91ac68",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 19,
+    "snippet": "font-size: clamp(2rem, 3.5vw, 3.4rem) has fluid endpoint 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 27,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 30,
+    "snippet": "Undocumented color #ffa13b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#ffa13b",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 37,
+    "snippet": "Undocumented color #ffa13b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#ffa13b",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 42,
+    "snippet": "Undocumented color #444b50 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#444b50",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 42,
+    "snippet": "Undocumented color #333a3e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#333a3e",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 42,
+    "snippet": "Undocumented color #686f73 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#686f73",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 42,
+    "snippet": "Undocumented color #b4babe is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#b4babe",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 42,
+    "snippet": "Undocumented color #32383c is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#32383c",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 44,
+    "snippet": "Undocumented color #ffa13b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#ffa13b",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+    "line": 50,
+    "snippet": "font-size: clamp(2rem, 3.5vw, 3.4rem) has fluid endpoint 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem",
+    "importedBy": [
+      "page.tsx",
+      "page.tsx",
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 9,
+    "snippet": "Undocumented color #f8f8f8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f8f8f8",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 16,
+    "snippet": "Undocumented color #8e9499 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8e9499",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 16,
+    "snippet": "Undocumented color #8a9095 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8a9095",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 17,
+    "snippet": "Undocumented color #858b91 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#858b91",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 17,
+    "snippet": "Undocumented color #90969b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#90969b",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 17,
+    "snippet": "Undocumented color #57594f66 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#57594f66",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 24,
+    "snippet": "border-radius: 2px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "2px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 36,
+    "snippet": "border-radius: 18px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "18px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 36,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "5px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 37,
+    "snippet": "Undocumented color #d5d9dc is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#d5d9dc",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 37,
+    "snippet": "Undocumented color #92999e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#92999e",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 40,
+    "snippet": "border-radius: 14px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "14px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 40,
+    "snippet": "border-radius: 2px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "2px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 49,
+    "snippet": "Undocumented color #101719 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#101719",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 52,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "3px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 57,
+    "snippet": "border-radius: 1px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "1px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 58,
+    "snippet": "Undocumented color #e5e7e9 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e5e7e9",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 58,
+    "snippet": "Undocumented color #b6bcc1 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#b6bcc1",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 58,
+    "snippet": "Undocumented color #8e959a is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8e959a",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 58,
+    "snippet": "Undocumented color #adb3b7 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#adb3b7",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 66,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 67,
+    "snippet": "Undocumented color #969ea4 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#969ea4",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 68,
+    "snippet": "Undocumented color #e5e8ea is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e5e8ea",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 74,
+    "snippet": "border-radius: 15px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "15px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 75,
+    "snippet": "Undocumented color #515b5e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#515b5e",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 75,
+    "snippet": "Undocumented color #b0b6b8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#b0b6b8",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 78,
+    "snippet": "Undocumented color #101718 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#101718",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 78,
+    "snippet": "border-radius: 8px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "8px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 84,
+    "snippet": "Undocumented color #b8bfc3 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#b8bfc3",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 84,
+    "snippet": "Undocumented color #e1e5e7 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e1e5e7",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 84,
+    "snippet": "Undocumented color #aeb6bb is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#aeb6bb",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 84,
+    "snippet": "Undocumented color #8e979d is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8e979d",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 89,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 90,
+    "snippet": "Undocumented color #dde1e4 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#dde1e4",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 90,
+    "snippet": "Undocumented color #aab2b8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#aab2b8",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 96,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "10px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 96,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "3px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 97,
+    "snippet": "border-radius: 7px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "7px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 97,
+    "snippet": "border-radius: 2px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "2px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 98,
+    "snippet": "border-radius: 9px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "9px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+    "line": 99,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "5px",
+    "importedBy": [
+      "project-screen.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\project-opener.module.css",
+    "line": 4,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "project-opener.tsx"
+    ]
+  }
+]

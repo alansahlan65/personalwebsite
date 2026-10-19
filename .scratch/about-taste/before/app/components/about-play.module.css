@@ -1,0 +1,105 @@
+.sketchAnchor { position: relative; display: inline-block; }
+.inlineWord {
+  padding: 0; border: 0; background: none; color: inherit; cursor: pointer;
+  font: inherit; text-decoration: underline dotted var(--cobalt); text-underline-offset: .2em;
+  text-decoration-thickness: 1px;
+}
+.inlineWord[aria-expanded="true"] { color: var(--cobalt); text-decoration-style: solid; }
+.inlineWord:focus-visible, .helloButton:focus-visible, .codeToggle:focus-visible, .demoButton:focus-visible {
+  outline: 2px solid var(--cobalt); outline-offset: 5px;
+}
+.sketchPreview {
+  position: absolute; z-index: 25; inset-block-start: calc(100% + 10px);
+  width: min(240px, calc(100vw - 48px)); padding: 12px 16px 16px;
+  border: 1px solid var(--divider); background: var(--canvas); color: var(--ink);
+  box-shadow: 0 8px 24px rgb(32 34 31 / 8%); text-align: start;
+  font-size: .8125rem; line-height: 1.5; font-weight: 400; letter-spacing: normal;
+}
+.sketchPreview::before { content: ""; position: absolute; inset-inline: 0; inset-block-end: 100%; height: 12px; }
+.sketchPreview[data-above] { inset-block-start: auto; inset-block-end: calc(100% + 10px); }
+.sketchPreview[data-above]::before { inset-block-end: auto; inset-block-start: 100%; }
+.sketch { display: block; width: 100%; height: auto; margin-block-end: 8px; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.sketchAccent { stroke: var(--cobalt); }
+.sketchTitle, .sketchNote { display: block; }
+.sketchTitle { font-weight: 500; }
+.sketchNote { margin-block-start: 5px; color: var(--muted); }
+.portrait { isolation: isolate; }
+.hello { position: absolute; z-index: 1; inset-inline-start: 16px; inset-block-end: 16px; max-width: calc(100% - 32px); }
+.helloButton {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; max-width: 100%; padding: 10px 14px;
+  border: 1px solid var(--canvas); border-radius: 2px; background: var(--canvas); color: var(--ink);
+  font-size: .875rem; font-weight: 500; line-height: 1.5; cursor: pointer;
+  transform: rotate(-4deg); transition: transform 180ms cubic-bezier(.23, 1, .32, 1);
+}
+.hand { display: block; width: 22px; height: 22px; color: var(--cobalt); transform-origin: 60% 85%; }
+.hand svg { display: block; width: 100%; height: 100%; }
+.greeting {
+  display: block; width: fit-content; max-width: 100%; margin-block-end: 12px; padding: 12px 16px;
+  background: var(--canvas); color: var(--ink); border: 1px solid var(--divider);
+  font-size: .875rem; line-height: 1.6; position: relative;
+}
+.greeting::after {
+  content: ""; position: absolute; inset-block-start: 100%; inset-inline-start: 24px;
+  border-block-start: 8px solid var(--canvas); border-inline: 7px solid transparent;
+}
+.portrait[data-greeting] .helloButton { transform: rotate(0); }
+.experiment { margin-block-start: 1.75rem; border-block: 1px solid var(--divider); }
+.experimentHeader { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 1rem; padding-block: .25rem; font-size: .8125rem; color: var(--muted); }
+.codeToggle {
+  display: inline-flex; align-items: center; gap: .45rem; min-height: 44px; padding: .4rem 0;
+  border: 0; background: none; color: var(--ink); font-size: .8125rem; cursor: pointer;
+}
+.codeToggle span { color: var(--cobalt); }
+.experimentBody { display: grid; padding-block: .5rem 1.25rem; }
+.demo, .code { grid-area: 1 / 1; }
+.demo { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: .9rem; min-height: 110px; }
+.demoButtonWrap { position: relative; display: inline-block; max-width: 100%; }
+.demoButton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: .65rem;
+  min-height: 44px; max-width: 100%; padding: .75rem 1rem; border: 1px solid var(--cobalt); border-radius: 4px;
+  background: transparent; color: var(--cobalt); font-size: .9375rem; font-weight: 500; line-height: 1.5;
+  cursor: pointer; transition: transform 150ms cubic-bezier(.23, 1, .32, 1), background-color 150ms ease, color 150ms ease;
+}
+.demoButton[aria-pressed="true"] { background: var(--cobalt); color: var(--canvas); }
+.demoSymbol { display: inline-grid; place-items: center; width: 1em; font-size: 1.125rem; }
+.demoNote { color: var(--muted); font-size: .8125rem; line-height: 1.5; }
+.code { margin: 0; min-height: 110px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .75rem; line-height: 1.7; color: var(--muted); }
+.code code { font-family: ui-monospace, Consolas, monospace; }
+.sparks { position: absolute; inset: 0; pointer-events: none; }
+.sparks i { position: absolute; width: 5px; height: 5px; border: 1px solid var(--cobalt); opacity: 0; }
+.sparks i:nth-child(1) { inset: 0 auto auto 8%; --spark-x: -9px; --spark-y: -18px; }
+.sparks i:nth-child(2) { inset: 0 6% auto auto; --spark-x: 14px; --spark-y: -13px; border-radius: 50%; }
+.sparks i:nth-child(3) { inset: auto 0 6% auto; --spark-x: 19px; --spark-y: 12px; }
+.sparks i:nth-child(4) { inset: auto auto 0 12%; --spark-x: -14px; --spark-y: 16px; border-radius: 50%; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.sketchPreview[hidden], .greeting[hidden], .demo[hidden], .code[hidden] { display: none; }
+
+@media (hover: hover) and (pointer: fine) {
+  .inlineWord:hover, .codeToggle:hover { color: var(--cobalt); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .portrait[data-greeting] .hand { animation: wave 600ms ease-in-out; }
+  .sparks[data-active] i { animation: spark 480ms cubic-bezier(.23, 1, .32, 1) both; }
+  .helloButton:active:not(:focus-visible), .demoButton:active:not(:focus-visible) { transform: scale(.97); }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .helloButton:hover:not(:focus-visible) { transform: rotate(0); }
+  .demoButton:hover:not(:focus-visible) { transform: translateY(-2px); }
+  .demoButton:hover:active:not(:focus-visible) { transform: scale(.97); }
+}
+.portrait .helloButton:focus-visible, .demoButton:focus-visible, .experiment[data-keyboard] .demoButton { transform: none; transition: none; }
+.hello:has(:focus-visible) .hand, .experiment[data-keyboard] .sparks i { animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  .helloButton, .demoButton { transform: none; transition: none; }
+}
+@media (forced-colors: active) {
+  .helloButton, .greeting, .sketchPreview, .experiment, .demoButton { border-color: CanvasText; box-shadow: none; }
+  .demoButton[aria-pressed="true"] { background: Highlight; color: HighlightText; }
+  .inlineWord { text-decoration-color: LinkText; }
+}
+@media print {
+  .hello, .experiment, .sketchPreview { display: none; }
+  .inlineWord { text-decoration: none; color: inherit; }
+}
+@keyframes wave { 0%, 100% { transform: rotate(0); } 25%, 65% { transform: rotate(18deg); } 45%, 85% { transform: rotate(-10deg); } }
+@keyframes spark { 0% { opacity: 0; transform: translate(0, 0); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--spark-x), var(--spark-y)) rotate(40deg); } }

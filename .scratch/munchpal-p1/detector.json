@@ -1,0 +1,167 @@
+[
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 16,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 37,
+    "snippet": "font-size: clamp(2rem, 3.7vw, 3.75rem) has fluid endpoints 2rem and 3.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 58,
+    "snippet": "Undocumented color #91ac68 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#91ac68",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 61,
+    "snippet": "Undocumented color #91ac68 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#91ac68",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 65,
+    "snippet": "font-size: clamp(3rem, 6vw, 5.5rem) has fluid endpoints 3rem and 5.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 76,
+    "snippet": "font-size: clamp(1.4rem, 2vw, 2rem) has fluid endpoints 1.4rem and 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.4rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 109,
+    "snippet": "font-size: clamp(1.75rem, 2.6vw, 2.65rem) has fluid endpoints 1.75rem and 2.65rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 159,
+    "snippet": "font-size: clamp(1.75rem, 3.1vw, 3rem) has fluid endpoints 1.75rem and 3rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 167,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 184,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 209,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem",
+    "importedBy": [
+      "page.tsx"
+    ]
+  }
+]

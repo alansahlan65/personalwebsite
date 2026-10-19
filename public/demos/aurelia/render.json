@@ -1,0 +1,27 @@
+{
+  "durationSeconds": 40,
+  "frameRate": 60,
+  "frames": 2400,
+  "width": 1920,
+  "height": 1080,
+  "codec": "H.264",
+  "pixelFormat": "yuv420p",
+  "audio": "silent",
+  "sizeBytes": 23652203,
+  "posterTimeSeconds": 2.6,
+  "render": "Deterministic GSAP seeks at i/60, with paint-layer reset and two animation frames of settling. Lossless PNGs piped to three non-overlapping H.264 segments, joined without re-encoding.",
+  "sections": [
+    "hero",
+    "journey",
+    "collection",
+    "ways",
+    "featured",
+    "areas",
+    "care",
+    "FAQ",
+    "CTA",
+    "footer"
+  ],
+  "plannerSeconds": 3.33,
+  "errors": []
+}

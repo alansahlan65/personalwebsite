@@ -1,0 +1,44 @@
+import { expect, test } from "@playwright/test";
+
+const routes = ["/", "/about", "/contact", "/work/aurelia", "/work/paylecta", "/work/pawfriend", "/work/munchpal"];
+
+test("an invalid route offers a working path back to selected work", async ({ page }) => {
+  const response = await page.goto("/work/unknown-project");
+  expect(response?.status()).toBe(404);
+  await expect(page.getByRole("heading", { level: 1, name: "There’s nothing here." })).toBeVisible();
+  const recovery = page.getByRole("main").getByRole("link", { name: "View selected work" });
+  await expect(recovery).toHaveAttribute("data-magnet", "text");
+  await recovery.click();
+  await expect(page).toHaveURL(/\/#work$/);
+  await expect(page.getByRole("heading", { name: "Selected work" })).toBeInViewport();
+});
+
+test("each direct route has a title, a social image, and a usable action inventory", async ({ page }) => {
+  for (const route of routes) {
+    const response = await page.goto(route);
+    expect(response?.status(), route).toBe(200);
+    await expect(page.locator("main h1")).toHaveCount(1);
+    const title = await page.title();
+    expect(title, route).toMatch(/Alan Sahlan/);
+    const image = await page.locator('meta[property="og:image"]').getAttribute("content");
+    expect(image, route).toMatch(/opengraph-image\.jpg/);
+    const imageResponse = await page.request.get(image!);
+    expect(imageResponse.ok(), `${route} social image`).toBe(true);
+    expect(imageResponse.headers()["content-type"]).toMatch(/image\/jpeg/);
+    const missing = await page.locator("[data-page-transition] a[href], [data-page-transition] button").evaluateAll((actions) => actions
+      .filter((action) => !action.matches('[data-magnet], [data-pointer-feedback="local"]'))
+      .map((action) => action.outerHTML.slice(0, 160)));
+    expect(missing, route).toEqual([]);
+  }
+});
+
+test("release downloads and mail action resolve without sending anything", async ({ page }) => {
+  await page.goto("/");
+  const resume = page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Resume" });
+  const href = await resume.getAttribute("href");
+  expect(href).toBe("/resume/alan-sahlan-resume.pdf");
+  const response = await page.request.get(href!);
+  expect(response.ok()).toBe(true);
+  expect(response.headers()["content-type"]).toMatch(/application\/pdf/);
+  await expect(page.getByRole("link", { name: "alansahlanwork@gmail.com" })).toHaveAttribute("href", "mailto:alansahlanwork@gmail.com");
+});

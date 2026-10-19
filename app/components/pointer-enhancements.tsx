@@ -1,8 +1,10 @@
 "use client";
 
-import { motionValue, springValue, type MotionValue } from "motion";
+import { motionValue, springValue, scroll, type MotionValue } from "motion";
+import { ArrowUpRight } from "@phosphor-icons/react";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { MAGNET_SPRING } from "../lib/interaction-motion";
 
 type CursorMode = "hidden" | "dot" | "image" | "action-image";
 
@@ -17,19 +19,15 @@ type MagnetState = {
   unsubscribe: (() => void)[];
 };
 
-const MAGNET_LIMIT: Record<MagnetStrength, number> = { text: 5, control: 12, project: 6 };
-const MAGNET_SPRING = { stiffness: 100, damping: 20, mass: 1, restDelta: 0.05, restSpeed: 0.5 };
-const CURSOR_SMOOTHING = 0.22;
-
-function isTextContext(element: Element) {
-  if (element.closest("a[href], button")) return false;
-  return Boolean(element.closest("p, h1, h2, h3, dd, dt, figcaption, input, textarea, select, [contenteditable]"));
-}
+const MAGNET_LIMIT: Record<MagnetStrength, number> = { text: 5, control: 8, project: 6 };
+const CURSOR_DOT_SCALE = 7 / 72;
+const CURSOR_SCALE_TIME = 45;
 
 export function PointerEnhancements() {
   const pathname = usePathname();
   const discRef = useRef<HTMLSpanElement>(null);
   const arrowRef = useRef<HTMLSpanElement>(null);
+  const refreshRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     const disc = discRef.current;
@@ -45,37 +43,59 @@ export function PointerEnhancements() {
     let frame = 0;
     let pointerX: number | null = null;
     let pointerY: number | null = null;
-    let cursorX = 0;
-    let cursorY = 0;
     let cursorGoalX = 0;
     let cursorGoalY = 0;
     let cursorVisible = false;
     let cursorMode: CursorMode = "hidden";
-    let cursorScale = 0.11;
-    let cursorScaleGoal = 0.11;
+    let cursorScale = CURSOR_DOT_SCALE;
+    let cursorScaleGoal = CURSOR_DOT_SCALE;
+    let lastFrameTime: number | null = null;
     let enabled = finePointer.matches && !reducedMotion.matches && !forcedColors.matches;
+    let pendingPoint: { x: number; y: number; element: Element | null } | null = null;
+    let needsHitTest = false;
+    let activeBounds: DOMRect | null = null;
 
     function schedule() {
-      if (!frame && document.visibilityState === "visible") frame = requestAnimationFrame(tick);
+      if (!frame && document.visibilityState === "visible") {
+        lastFrameTime ??= performance.now();
+        frame = requestAnimationFrame(tick);
+      }
     }
 
-    function tick() {
+    function tick(time: number) {
       frame = 0;
+      const elapsed = Math.min(time - (lastFrameTime ?? time), 64);
+      lastFrameTime = time;
+      const point = pendingPoint;
+      pendingPoint = null;
+      if (point || needsHitTest) {
+        needsHitTest = false;
+        const x = point?.x ?? pointerX;
+        const y = point?.y ?? pointerY;
+        if (x !== null && x !== undefined && y !== null && y !== undefined) {
+          const element = point?.element?.isConnected ? point.element : document.elementFromPoint(x, y);
+          if (element) updateAt(x, y, element);
+          else reset();
+        }
+      }
       let moving = false;
 
       if (cursorVisible) {
-        cursorX += (cursorGoalX - cursorX) * CURSOR_SMOOTHING;
-        cursorY += (cursorGoalY - cursorY) * CURSOR_SMOOTHING;
-        cursorScale += (cursorScaleGoal - cursorScale) * CURSOR_SMOOTHING;
-        disc!.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%) scale(${cursorScale})`;
-        arrow!.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
-        disc!.dataset.mode = cursorMode;
-        arrow!.dataset.visible = cursorMode === "action-image" ? "true" : "false";
-        document.documentElement.dataset.cursorReady = "true";
-        if (Math.abs(cursorGoalX - cursorX) > 0.2 || Math.abs(cursorGoalY - cursorY) > 0.2 || Math.abs(cursorScaleGoal - cursorScale) > 0.005) moving = true;
+        // Position is immediate. Only the image disc's size eases, at the same
+        // speed on 60Hz and higher-refresh displays.
+        cursorScale += (cursorScaleGoal - cursorScale) * (1 - Math.exp(-elapsed / CURSOR_SCALE_TIME));
+        moving = Math.abs(cursorScaleGoal - cursorScale) > 0.005;
+        if (!moving) cursorScale = cursorScaleGoal;
+        disc!.style.transform = `translate3d(${cursorGoalX}px, ${cursorGoalY}px, 0) translate(-50%, -50%) scale(${cursorScale})`;
+        if (cursorMode === "action-image") arrow!.style.transform = `translate3d(${cursorGoalX}px, ${cursorGoalY}px, 0) translate(-50%, -50%)`;
+        if (disc!.dataset.mode !== cursorMode) disc!.dataset.mode = cursorMode;
+        const showArrow = cursorMode === "action-image" ? "true" : "false";
+        if (arrow!.dataset.visible !== showArrow) arrow!.dataset.visible = showArrow;
+        if (!document.documentElement.hasAttribute("data-cursor-ready")) document.documentElement.dataset.cursorReady = "true";
       }
 
       if (moving) schedule();
+      else lastFrameTime = null;
     }
 
     function disposeMagnet(state: MagnetState) {
@@ -130,6 +150,7 @@ export function PointerEnhancements() {
       if (!active) return;
       const target = active;
       active = null;
+      activeBounds = null;
       resizeObserver.unobserve(target);
       const state = magnets.get(target);
       if (state) {
@@ -143,51 +164,56 @@ export function PointerEnhancements() {
       cursorMode = mode;
       if (mode === "hidden") {
         cursorVisible = false;
-        cursorScale = 0.11;
-        cursorScaleGoal = 0.11;
+        cursorScale = CURSOR_DOT_SCALE;
+        cursorScaleGoal = CURSOR_DOT_SCALE;
         disc!.dataset.mode = "hidden";
         arrow!.dataset.visible = "false";
         document.documentElement.removeAttribute("data-cursor-ready");
         return;
       }
-      if (!cursorVisible) {
-        cursorX = cursorGoalX;
-        cursorY = cursorGoalY;
-      }
       cursorVisible = true;
-      cursorScaleGoal = mode === "dot" ? 0.11 : 1;
+      cursorScaleGoal = mode === "dot" ? CURSOR_DOT_SCALE : 1;
+      if (mode === "dot") cursorScale = CURSOR_DOT_SCALE;
       schedule();
+    }
+
+    function clearMagnets() {
+      activeBounds = null;
+      if (active) resizeObserver.unobserve(active);
+      active = null;
+      magnets.forEach(disposeMagnet);
     }
 
     function reset() {
       if (frame) cancelAnimationFrame(frame);
       frame = 0;
-      if (active) resizeObserver.unobserve(active);
-      active = null;
-      magnets.forEach(disposeMagnet);
+      lastFrameTime = null;
+      pendingPoint = null;
+      needsHitTest = false;
+      clearMagnets();
       pointerX = null;
       pointerY = null;
       setCursorMode("hidden");
     }
 
     function updateAt(x: number, y: number, element: Element) {
-      if (!enabled || document.visibilityState === "hidden" || !window.getSelection()?.isCollapsed) {
+      if (!enabled || document.visibilityState === "hidden") {
         reset();
         return;
       }
       const menu = document.querySelector(".stairs-menu");
-      if ((menu && !menu.contains(element)) || element.closest("[aria-disabled='true']")) {
-        reset();
-        return;
-      }
       pointerX = x;
       pointerY = y;
       cursorGoalX = x;
       cursorGoalY = y;
 
-      if (isTextContext(element)) {
-        setCursorMode("hidden");
-        releaseActive();
+      const selection = window.getSelection();
+      const stationary = (selection && !selection.isCollapsed)
+        || (menu && !menu.contains(element))
+        || element.closest('input, textarea, select, [contenteditable], video, audio, iframe, [aria-disabled="true"], button:disabled');
+      if (stationary) {
+        setCursorMode("dot");
+        clearMagnets();
         return;
       }
       const image = element.closest("img");
@@ -205,7 +231,7 @@ export function PointerEnhancements() {
         return;
       }
       const state = magnets.get(target) ?? createMagnet(target);
-      const rect = target.getBoundingClientRect();
+      const rect = activeBounds ?? (activeBounds = target.getBoundingClientRect());
       const strength = MAGNET_LIMIT[target.dataset.magnet as MagnetStrength] ?? MAGNET_LIMIT.text;
       state.sourceX.set(Math.max(-strength, Math.min(strength, ((x - rect.left - rect.width / 2) / (rect.width / 2)) * strength)));
       state.sourceY.set(Math.max(-strength, Math.min(strength, ((y - rect.top - rect.height / 2) / (rect.height / 2)) * strength)));
@@ -213,18 +239,22 @@ export function PointerEnhancements() {
 
     function recheckPointer() {
       if (pointerX === null || pointerY === null) return;
-      const element = document.elementFromPoint(pointerX, pointerY);
-      if (element) updateAt(pointerX, pointerY, element);
-      else reset();
+      activeBounds = null;
+      // Scroll/resize and high-rate input share one hit test per rendered frame.
+      pendingPoint = null;
+      needsHitTest = true;
+      schedule();
     }
 
     function onPointerMove(event: PointerEvent) {
-      if (event.pointerType !== "mouse" && event.pointerType !== "pen") {
+      if (!enabled || (event.pointerType !== "mouse" && event.pointerType !== "pen")) {
         reset();
         return;
       }
-      const element = event.target instanceof Element ? event.target : document.elementFromPoint(event.clientX, event.clientY);
-      if (element) updateAt(event.clientX, event.clientY, element);
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      pendingPoint = { x: event.clientX, y: event.clientY, element: event.target instanceof Element ? event.target : null };
+      schedule();
     }
 
     function onPointerOut(event: PointerEvent) {
@@ -237,11 +267,22 @@ export function PointerEnhancements() {
     }
 
     function onFocusIn(event: FocusEvent) {
-      if (event.target instanceof Element && event.target.matches(":focus-visible")) reset();
+      if (event.target instanceof Element && event.target.matches(":focus-visible")) clearMagnets();
     }
 
     function onSelectionChange() {
-      if (!window.getSelection()?.isCollapsed) reset();
+      const selection = window.getSelection();
+      if (selection && !selection.isCollapsed) clearMagnets();
+      recheckPointer();
+    }
+
+    function onSurfaceChange() {
+      clearMagnets();
+      if (pointerX === null || pointerY === null) return;
+      // Keep one cursor owner while the menu or route replaces its content.
+      // The next frame hit-tests the new DOM at the last real coordinates.
+      setCursorMode("dot");
+      recheckPointer();
     }
 
     function onVisibilityChange() {
@@ -255,16 +296,18 @@ export function PointerEnhancements() {
     document.addEventListener("focusin", onFocusIn);
     document.addEventListener("visibilitychange", onVisibilityChange);
     window.addEventListener("blur", reset);
-    window.addEventListener("scroll", recheckPointer, { passive: true });
+    const stopScroll = scroll(recheckPointer);
     window.addEventListener("resize", recheckPointer);
-    window.addEventListener("portfolio:menu-change", reset);
-    window.addEventListener("portfolio:project-entry", reset);
+    window.addEventListener("portfolio:menu-change", onSurfaceChange);
+    window.addEventListener("portfolio:project-entry", onSurfaceChange);
     document.fonts.addEventListener("loadingdone", recheckPointer);
     finePointer.addEventListener("change", onMediaChange);
     reducedMotion.addEventListener("change", onMediaChange);
     forcedColors.addEventListener("change", onMediaChange);
     document.documentElement.dataset.pointerEnhancementsMounted = "true";
+    refreshRef.current = onSurfaceChange;
     return () => {
+      refreshRef.current = null;
       document.documentElement.removeAttribute("data-pointer-enhancements-mounted");
       reset();
       resizeObserver.disconnect();
@@ -275,25 +318,26 @@ export function PointerEnhancements() {
       document.removeEventListener("focusin", onFocusIn);
       document.removeEventListener("visibilitychange", onVisibilityChange);
       window.removeEventListener("blur", reset);
-      window.removeEventListener("scroll", recheckPointer);
+      stopScroll();
       window.removeEventListener("resize", recheckPointer);
-      window.removeEventListener("portfolio:menu-change", reset);
-      window.removeEventListener("portfolio:project-entry", reset);
+      window.removeEventListener("portfolio:menu-change", onSurfaceChange);
+      window.removeEventListener("portfolio:project-entry", onSurfaceChange);
       document.fonts.removeEventListener("loadingdone", recheckPointer);
       finePointer.removeEventListener("change", onMediaChange);
       reducedMotion.removeEventListener("change", onMediaChange);
       forcedColors.removeEventListener("change", onMediaChange);
     };
+  }, []);
+
+  useEffect(() => {
+    refreshRef.current?.();
   }, [pathname]);
 
   return (
     <>
       <span ref={discRef} className="site-cursor" data-mode="hidden" aria-hidden="true" />
       <span ref={arrowRef} className="site-cursor-arrow" data-visible="false" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" aria-hidden="true">
-          <path d="M5 19 19 5 M8 5h11v11" stroke="#fff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M5 19 19 5 M8 5h11v11" stroke="#20221f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <ArrowUpRight size={25} weight="bold" aria-hidden="true" style={{ color: "#fff", filter: "drop-shadow(0 1px 1px #20221f)" }} />
       </span>
     </>
   );

@@ -1,0 +1,32 @@
+.notebook { position: relative; z-index: 1; container-type: inline-size; width: 100%; max-inline-size: 460px; min-width: 0; justify-self: start; padding: 1rem 8px 0; overflow: visible; }
+.deck { position: relative; isolation: isolate; }
+.note { position: relative; display: flex; flex-direction: column; gap: .75rem; padding: round(nearest, clamp(1.25rem, 3vw, 1.75rem), 4px); border: 0; border-radius: var(--radius-card); background: var(--surface-raised); box-shadow: var(--shadow-card); min-width: 0; overflow-wrap: anywhere; transform-origin: 50% 75%; touch-action: pan-y pinch-zoom; }
+.note:not([data-front]) { position: absolute; inset: 0; overflow: clip; pointer-events: none; box-shadow: none; background: var(--surface-accent); }
+.note[data-depth="2"] { background: var(--surface-accent-strong); }
+.note:not([data-front]) > * { visibility: hidden; }
+.note[data-draggable] { cursor: grab; user-select: none; touch-action: none; }
+.note[data-draggable]:active { cursor: grabbing; }
+.question { display: flex; align-items: flex-start; gap: .75rem; min-width: 0; }
+.questionIcon { display: block; flex: none; margin-block-start: 4px; color: var(--action-ink); }
+.note h3 { max-width: 26ch; font-size: clamp(1.25rem, 1.8vw, 1.5rem); font-weight: 500; line-height: 1.4; letter-spacing: -.03em; text-wrap: balance; }
+.answer { position: relative; overflow: clip; }
+.answer > div[aria-hidden="true"] { position: absolute; inset: 0; }
+.answer p { max-width: 36ch; font-size: 1rem; line-height: 1.65; color: var(--ink); text-wrap: pretty; }
+.answer > div:first-child p { color: var(--muted); }
+.textButton, .nextButton { display: inline-flex; align-items: center; justify-content: flex-start; min-height: 44px; padding: .5rem 0; border: 0; background: none; color: var(--action-ink); font-size: .9375rem; line-height: 1.5; cursor: pointer; }
+.textButton { align-self: start; }
+.textButton :global(.control-visual), .nextButton :global(.control-visual) { text-decoration: underline; text-underline-offset: .25em; }
+.deckFooter { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem; margin-block-start: .75rem; }
+.hint { font-size: .75rem; line-height: 1.5; font-variant-numeric: tabular-nums; color: var(--muted); }
+.progress { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.discoveries { display: inline-flex; gap: 4px; }
+.discoveries > span { display: grid; place-items: center; width: 15px; height: 15px; border-radius: 50%; background: var(--surface-accent-strong); color: var(--on-accent); }
+.discoveries > span[data-discovered] { background: var(--cobalt); }
+.nextButton { font-size: .8125rem; }
+.notebook button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 4px; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.staticStories p { margin-block-start: 1rem; font-size: 1rem; line-height: 1.65; }
+@container (max-width: 18rem) { .note[data-depth="1"] { transform: translate(3px, -7px) rotate(1deg) !important; } .note[data-depth="2"] { transform: translate(6px, -14px) rotate(-1.5deg) !important; } }
+@media (prefers-reduced-motion: reduce), (forced-colors: active) { .note { transform: none !important; cursor: default; user-select: auto; touch-action: pan-y; } .note:not([data-front]) { visibility: hidden; } }
+@media (forced-colors: active) { .note { border: 1px solid CanvasText; background: Canvas; box-shadow: none; } .notebook button { color: LinkText; } .discoveries > span { border: 1px solid CanvasText; background: Canvas; color: CanvasText; } .discoveries > span[data-discovered] { background: Highlight; color: HighlightText; } }
+@media print { .deck { display: block; } .deckFooter, .note button, .answer > div:first-child { display: none; } .notebook .note { position: static; transform: none !important; margin-block: 1rem; box-shadow: none; visibility: visible !important; } .note:not([data-front]) > * { visibility: visible; } .answer { height: auto !important; } .answer > div:last-child { position: static; transform: none !important; opacity: 1 !important; } }

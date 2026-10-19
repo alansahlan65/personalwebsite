@@ -1,0 +1,326 @@
+.play {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
+.description {
+  margin-block-start: 1.5rem;
+  max-width: 40ch;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.blobRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 60px;
+}
+
+.blobAnchor {
+  display: inline-flex;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  margin-left: -5px;
+}
+
+.blobButton {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 140ms var(--project-title-ease);
+}
+
+.blobButton:active:not(:focus-visible) { transform: scale(0.97); }
+
+.blob {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.blobShape {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.eyeTracking {
+  position: absolute;
+  color: var(--canvas);
+  transition: color 180ms ease;
+}
+
+.eyes {
+  display: flex;
+  gap: 9px;
+}
+
+.eyes > span {
+  position: relative;
+  width: 5px;
+  height: 9px;
+}
+
+.eyes > span::before,
+.eyes > span::after {
+  content: "";
+  position: absolute;
+  transition: opacity 160ms var(--project-title-ease), transform 160ms var(--project-title-ease);
+}
+
+.eyes > span::before {
+  inset: 0;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+}
+
+.eyes[data-blinking] > span::before {
+  animation: blob-blink 240ms var(--project-title-ease);
+}
+
+.eyes > span::after {
+  top: 2px;
+  left: -2px;
+  width: 9px;
+  height: 6px;
+  border: 2px solid currentColor;
+  border-bottom: 0;
+  border-radius: 9px 9px 0 0;
+  opacity: 0;
+  transform: translateY(1px);
+}
+
+/* Close in 90ms, hold for 30ms, then reopen over 120ms. */
+@keyframes blob-blink {
+  0% { transform: scaleY(1); }
+  37.5%, 50% { transform: scaleY(.12); }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes blob-blink-reduced {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(.2); }
+}
+
+.blobButton:focus-visible .eyes > span::before,
+.blobButton[aria-expanded="true"] .eyes > span::before { opacity: 0; animation: none; }
+.blobButton:focus-visible .eyes > span::after,
+.blobButton[aria-expanded="true"] .eyes > span::after { opacity: 1; transform: none; }
+
+.hint {
+  position: relative;
+  z-index: 2;
+  max-width: 29ch;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-5px, 0, 0) scale(0.97);
+  transform-origin: left center;
+  pointer-events: none;
+  transition: opacity 180ms var(--project-title-ease), transform 180ms var(--project-title-ease), visibility 0s 180ms;
+}
+
+.hint[data-open]:not([data-dismissed]),
+.blobRow:has(.blobButton:focus-visible) .hint:not([data-dismissed]),
+.play:has(.roleButton:focus-visible) .hint:not([data-dismissed]) {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 4px;
+  row-gap: 2.25rem;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+.roleWrap {
+  position: relative;
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.roleButton {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  display: grid;
+  align-items: center;
+  padding: 4px 0;
+  min-height: 44px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--action-ink);
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.roleLabel {
+  grid-area: 1 / 1;
+  justify-self: start;
+  max-width: 100%;
+  background: var(--canvas);
+  opacity: 0;
+  transform: translate3d(0, 45%, 0);
+  pointer-events: none;
+  transition: opacity 180ms var(--project-title-ease), transform 240ms var(--project-title-ease);
+}
+
+.roleLabel[data-active="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.roleButton:active { opacity: 0.8; }
+
+.roleButton:focus-visible,
+.blobButton:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 4px;
+}
+
+.confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.iconGroup {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 125ms var(--project-title-ease);
+}
+
+.particle {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) scale(0.95);
+  transition: opacity 125ms var(--project-title-ease), transform 500ms var(--project-title-ease);
+}
+
+.particle:nth-child(2) { transition-delay: 35ms; }
+.particle:nth-child(3) { transition-delay: 65ms; }
+
+.floatingIcon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  animation: confetti-drift 11s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.floatingIcon img {
+  animation: confetti-rotate 48s linear infinite;
+  animation-play-state: paused;
+}
+
+.particle:nth-child(2) img { width: 19px; height: 19px; }
+.particle:nth-child(3) img { width: 22px; height: 22px; }
+
+@keyframes confetti-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  35% { transform: translate3d(2px, -2px, 0); }
+  70% { transform: translate3d(-2px, 2px, 0); }
+}
+
+@keyframes confetti-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.roleWrap:has(.roleButton:focus-visible) .iconGroup[data-active="true"] { opacity: 1; }
+.roleWrap:has(.roleButton:focus-visible) .iconGroup[data-active="true"] .particle { opacity: 1; transform: translate3d(var(--particle-x), var(--particle-y), 0); }
+
+@media (hover: hover) and (pointer: fine) {
+  .blobButton:hover .eyes > span::before { opacity: 0; animation: none; }
+  .blobButton:hover .eyes > span::after { opacity: 1; transform: none; }
+  .blobRow:has(.blobButton:hover) .hint:not([data-dismissed]) { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .roleWrap:has(.roleButton:hover) .iconGroup[data-active="true"] { opacity: 1; }
+  .roleWrap:has(.roleButton:hover) .iconGroup[data-active="true"] .particle { opacity: 1; transform: translate3d(var(--particle-x), var(--particle-y), 0); }
+  .roleWrap:has(.roleButton:hover) .iconGroup[data-active="true"] :is(.floatingIcon, img) { animation-play-state: running; }
+}
+
+.play[data-motion-paused] :is(.floatingIcon, .floatingIcon img),
+.play[data-motion-paused] .eyes > span::before { animation-play-state: paused; }
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.play[data-keyboard-change] .roleLabel,
+.play:has(:focus-visible) :is(.hint, .particle, .iconGroup) { transition-duration: 0s; transition-delay: 0s; }
+.blobButton:focus-visible .eyes > span::before,
+.blobButton:focus-visible .eyes > span::after { transition: none; }
+.blobButton:focus-visible { transition: none; }
+
+@media (max-width: 650px) {
+  .play { margin-top: 1rem; gap: .25rem; padding-bottom: 0; }
+  .blobRow { min-height: 48px; }
+  .blobAnchor { width: 48px; height: 48px; }
+  /* The rotating icon and its drift extend about 31px below the role control. */
+  .description { margin-block-start: 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint { transform: none; }
+  .roleLabel { transform: none; }
+  .hint, .roleLabel, .particle, .iconGroup { transition: opacity 100ms ease; }
+  .eyeTracking { transition: none; }
+  .eyes[data-blinking] > span::before { animation-name: blob-blink-reduced; animation-timing-function: linear; }
+  .eyes > span::before, .eyes > span::after { transition: none; }
+  .blobButton { transition: none; }
+  .blobButton:active { transform: none; }
+  .floatingIcon, .floatingIcon img { animation: none; }
+}
+
+@media (forced-colors: active) {
+  .hint, .roleLabel, .particle, .iconGroup, .eyeTracking, .blobButton { transition: none; }
+  .eyes[data-blinking] > span::before { animation: none; }
+  .eyes > span::before, .eyes > span::after { transition: none; forced-color-adjust: none; }
+  .hint, .roleLabel { transform: none; }
+  .floatingIcon, .floatingIcon img { animation: none; }
+  .blobShape path { fill: ButtonText; }
+  .eyes { color: Canvas !important; }
+  .roleButton { color: LinkText; }
+  .roleButton:focus-visible, .blobButton:focus-visible { outline-color: Highlight; }
+}

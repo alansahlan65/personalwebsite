@@ -13,5 +13,14 @@
   "height": 900,
   "preparation": "Full 1440 x 900 browser viewport screenshot, encoded as WebP quality 85. No crop or synthetic edits.",
   "original_imagery": "The original project repository documents generated hero and resident portraits. Pet profiles are local sample content, not verified shelter animals.",
-  "source_repository": "https://github.com/alansahlan65/pawfriend"
+  "source_repository": "https://github.com/alansahlan65/pawfriend",
+  "prompt": "Source origin. {\"source\":\"https://pawfriend-topaz.vercel.app/\",\"captured_on\":\"2026-09-27\",\"viewport\":{\"width\":1440,\"height\":900},\"browser\":\"153.0.8010.12\",\"evidence\":\"Observed live self-initiated concept with sample pet profiles. No real shelter availability, adoption outcome, historical testing or original image rights established.\",\"source_capture_sha256\":\"e947a34f317eb8910cd7664479ac75f7ab040d1d3227e54d49f1565e74b07dc7\",\"state\":\"catalog\",\"width\":1440,\"height\":900,\"preparation\":\"Full 1440 x 900 browser viewport screenshot, encoded as WebP quality 85. No crop or synthetic edits.\",\"original_imagery\":\"The original project repository documents generated hero and resident portraits. Pet profiles are local sample content, not verified shelter animals.\",\"source_repository\":\"https://github.com/alansahlan65/pawfriend\"}",
+  "createdAt": "2026-10-03T09:53:18.332Z",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "fd701e12826d7d41b19d6dc4471a6bc01815d26e5a4c18e7ce0fd33d4738a009",
+    "current_file_sha256": "fd701e12826d7d41b19d6dc4471a6bc01815d26e5a4c18e7ce0fd33d4738a009",
+    "decoded_pixel_sha256": "ef1d49d18d0383e402a5a377fc383d05cef0a94c0ac4e69db1325d43348cd7ff",
+    "pixels_unchanged": true
+  }
 }

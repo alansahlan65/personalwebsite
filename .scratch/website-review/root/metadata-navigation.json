@@ -1,0 +1,67 @@
+{
+  "metadata": [
+    {
+      "path": "/",
+      "title": "Alan Sahlan — Product Designer",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "Alan Sahlan — Product Designer",
+      "ogImage": "http://localhost:3000/opengraph-image.jpg?opengraph-image.1nujjjyr_g9dq.jpg",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/about",
+      "title": "About Alan Sahlan — Product Designer",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "Alan Sahlan — Product Designer",
+      "ogImage": "http://localhost:3000/opengraph-image.jpg?opengraph-image.1nujjjyr_g9dq.jpg",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact Alan Sahlan — Product Designer",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "Alan Sahlan — Product Designer",
+      "ogImage": "http://localhost:3000/opengraph-image.jpg?opengraph-image.1nujjjyr_g9dq.jpg",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/work/aurelia",
+      "title": "Aurelia — Alan Sahlan",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "Aurelia — Alan Sahlan",
+      "ogImage": "http://localhost:3000/work/aurelia/opengraph-image.jpg?opengraph-image.1fen5nikf7yaj.jpg",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/work/paylecta",
+      "title": "Paylecta | Alan Sahlan",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "Paylecta | Alan Sahlan",
+      "ogImage": "http://localhost:3000/work/paylecta/opengraph-image.jpg?opengraph-image.3yyrsgejrnh6v.jpg",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/work/pawfriend",
+      "title": "PawFriend | Alan Sahlan",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "PawFriend | Alan Sahlan",
+      "ogImage": "http://localhost:3000/work/pawfriend/opengraph-image.jpg?opengraph-image.3u2ph5s63xg71.jpg",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/work/munchpal",
+      "title": "Munchpal | Alan Sahlan",
+      "twitterTitle": "Alan Sahlan — Product Designer",
+      "ogTitle": "Munchpal | Alan Sahlan",
+      "ogImage": "http://localhost:3000/work/munchpal/opengraph-image.jpg?opengraph-image.0cbejh-h_6s61.jpg",
+      "robots": "noindex, nofollow"
+    }
+  ],
+  "warmCommit": 1982,
+  "delayed": {
+    "phase": "covered",
+    "pathname": "/about",
+    "visibleLoadingText": false,
+    "curtainOpacity": "1"
+  }
+}

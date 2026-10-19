@@ -1,0 +1,108 @@
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
+  align-items: start;
+  gap: round(nearest, clamp(3rem, 7vw, 7rem), 8px);
+  padding-block: var(--section-space) var(--space-48);
+}
+.intro { min-width: 0; }
+.intro h1 {
+  font-size: clamp(3.2rem, 6.6vw, 6.7rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -.03em;
+  overflow-wrap: anywhere;
+}
+.accent { color: var(--cobalt); }
+.lead { max-width: 31ch; margin-block-start: 1.75rem; font-size: clamp(1.125rem, 1.5vw, 1.375rem); line-height: 1.6; text-wrap: pretty; }
+.directContact { margin-block-start: 3rem; }
+.directContact p { color: var(--muted); font-size: .875rem; line-height: 1.5; }
+.directContact a { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; max-width: 100%; font-size: 1rem; line-height: 1.6; text-decoration: underline; text-underline-offset: .25em; }
+.directContact a > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.directContact a svg { flex-shrink: 0; }
+.location { margin-block-start: 2rem; }
+.form { display: grid; gap: 1.5rem; padding-block-start: 1.5rem; border-block-start: 1px solid var(--divider); min-width: 0; }
+.formHeading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .75rem 1.5rem; margin-block-end: .5rem; }
+.formHeading h2 { font-size: 2rem; font-weight: 500; line-height: 1.2; letter-spacing: -.03em; }
+.formHeading p { font-size: .875rem; color: var(--muted); line-height: 1.5; }
+.fieldRow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.field { display: grid; align-content: start; gap: .5rem; min-width: 0; }
+.field label { font-size: .875rem; font-weight: 500; line-height: 1.5; }
+.optional { color: var(--muted); font-weight: 400; }
+.field :is(input, select, textarea) {
+  width: 100%;
+  min-width: 0;
+  min-height: 54px;
+  padding: 16px 1rem;
+  border: 1px solid var(--muted);
+  border-radius: var(--radius-control);
+  background: var(--field-surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 120ms ease;
+}
+.field select { padding-inline-end: 2rem; }
+.field textarea { min-height: 190px; resize: vertical; }
+.field [aria-invalid="true"] { border-color: var(--error); }
+.page :is(a, button, input, select, textarea):focus-visible { outline: 2px solid var(--cobalt); outline-offset: 4px; }
+.hint, .error { font-size: .875rem; line-height: 1.6; }
+.hint { color: var(--muted); }
+.error { color: var(--error); }
+.submitGroup { display: grid; justify-items: start; gap: .75rem; }
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-height: 54px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--on-accent);
+  font: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.submitMagnet { width: 100%; border-radius: inherit; }
+.submitVisual { gap: 2rem; width: 100%; min-height: 54px; padding: 16px 1.5rem; background: var(--accent-solid); box-shadow: var(--shadow-control); transition: background-color 160ms var(--project-title-ease); }
+.submit svg { width: 20px; height: 20px; flex-shrink: 0; }
+.recovery { margin-block-start: .5rem; max-width: 100%; }
+.recovery p { color: var(--muted); font-size: .875rem; line-height: 1.6; }
+.copyActions { display: flex; flex-wrap: wrap; gap: .5rem; margin-block-start: .75rem; }
+.copyActions button { border: 1px solid transparent; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); min-height: 48px; padding: 12px 1rem; font: inherit; font-size: .875rem; line-height: 1.5; cursor: pointer; }
+.copyActions button:disabled { color: var(--muted); cursor: wait; }
+.manualCopy { width: 100%; margin-block-start: .5rem; }
+.manualCopy textarea { min-height: 88px; }
+.feedback { min-height: 1.6em; font-size: .875rem; line-height: 1.6; overflow-wrap: anywhere; }
+.feedback a { display: inline-flex; align-items: center; min-height: 44px; margin-block-start: .5rem; text-decoration: underline; text-underline-offset: .2em; }
+@media (hover: hover) and (pointer: fine) {
+  .field :is(input, select, textarea):hover { border-color: var(--ink); }
+  .field [aria-invalid="true"]:hover { border-color: var(--error); }
+  .submit:hover .submitVisual { background: var(--accent-hover); }
+  .copyActions button:hover:enabled { border-color: var(--cobalt); }
+}
+@media (max-width: 950px) {
+  .page { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; max-width: 720px; }
+  .intro h1 { font-size: clamp(3rem, 10vw, 5rem); }
+  .directContact { margin-block-start: 1.5rem; }
+  .location { margin-block-start: 1rem; }
+}
+@media (max-width: 600px) {
+  .fieldRow { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .submit { width: 100%; }
+  .submitVisual { justify-content: space-between; }
+  .form { gap: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .field :is(input, select, textarea), .submit { transition: none; }
+  .submitVisual { transition: none; }
+}
+@media (forced-colors: active) {
+  .page :is(a, button, input, select, textarea):focus-visible { outline-color: Highlight; }
+  .field [aria-invalid="true"] { border-style: dashed; }
+  .submitVisual, .copyActions button { border: 1px solid ButtonText; box-shadow: none; }
+}

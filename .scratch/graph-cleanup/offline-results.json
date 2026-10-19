@@ -1,0 +1,26 @@
+[
+  {
+    "file": "graphify-out/graph.html",
+    "canvases": 1,
+    "errors": [],
+    "failed": []
+  },
+  {
+    "file": "public/demos/munchpal/index.html",
+    "duration": 20,
+    "reverseSeekingMatches": true,
+    "distinctFrames": true,
+    "brokenImages": [],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "file": "public/demos/paylecta/index.html",
+    "duration": 26,
+    "reverseSeekingMatches": true,
+    "distinctFrames": true,
+    "brokenImages": [],
+    "errors": [],
+    "failed": []
+  }
+]

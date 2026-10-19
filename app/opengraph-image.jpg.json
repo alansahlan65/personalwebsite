@@ -1,7 +1,18 @@
 {
-  "source": ["public/images/alan-portrait.webp", "public/images/alan-logo.png"],
+  "source": [
+    "public/images/alan-portrait.webp",
+    "public/images/alan-logo.png"
+  ],
   "preparation": "1200 x 630 site share card rendered from Alan's supplied portrait and original AS mark, with portfolio identity text, using .scratch/portfolio-halyard/generate-ticket-12-social.py",
   "date": "2026-09-28",
   "bytes": 91011,
-  "sha256": "ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d"
+  "sha256": "ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d",
+  "prompt": "Source origin. {\"source\":[\"public/images/alan-portrait.webp\",\"public/images/alan-logo.png\"],\"preparation\":\"1200 x 630 site share card rendered from Alan's supplied portrait and original AS mark, with portfolio identity text, using .scratch/portfolio-halyard/generate-ticket-12-social.py\",\"date\":\"2026-09-28\",\"bytes\":91011,\"sha256\":\"ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d\"}",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d",
+    "current_file_sha256": "6304fa66dc66fe162b67fa721debf90b6c1d94f6825111b86407860c4a2836fb",
+    "decoded_pixel_sha256": "8c311f91c7955f2bfff94abd5783ef432490b68fdc384036a54d5b41e436e167",
+    "pixels_unchanged": true
+  }
 }

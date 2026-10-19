@@ -1,0 +1,205 @@
+{
+  "duration": 26,
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "deterministic": true,
+  "errors": [],
+  "records": [
+    {
+      "t": 0,
+      "checkIn": "",
+      "checkOut": "",
+      "area": "",
+      "property": "",
+      "claim": [],
+      "resultVisible": false
+    },
+    {
+      "t": 2,
+      "checkIn": "",
+      "checkOut": "",
+      "area": "",
+      "property": "",
+      "claim": [],
+      "resultVisible": false
+    },
+    {
+      "t": 3.65,
+      "checkIn": "",
+      "checkOut": "",
+      "area": "",
+      "property": "",
+      "claim": [],
+      "resultVisible": false
+    },
+    {
+      "t": 4.5,
+      "checkIn": "",
+      "checkOut": "",
+      "area": "",
+      "property": "",
+      "claim": [
+        "Start with your dates"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 5.9,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "",
+      "property": "",
+      "claim": [
+        "Start with your dates"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 7.3,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "",
+      "property": "",
+      "claim": [
+        "Start with your dates"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 8.6,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "",
+      "property": "",
+      "claim": [
+        "Choose your holiday rhythm"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 9.45,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "",
+      "property": "",
+      "claim": [
+        "Choose your holiday rhythm"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 10.55,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "Ubud",
+      "property": "",
+      "claim": [
+        "Choose your holiday rhythm"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 11.3,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [
+        "Choose your holiday rhythm"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 12.8,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-12",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [
+        "Your dates stay editable"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 13.6,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [
+        "Your dates stay editable"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 16.4,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [
+        "Review your stay plan"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 18.3,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [
+        "Review your stay plan"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 20.7,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [
+        "Review your stay plan"
+      ],
+      "resultVisible": false
+    },
+    {
+      "t": 21.8,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [],
+      "resultVisible": true
+    },
+    {
+      "t": 23.2,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [],
+      "resultVisible": true
+    },
+    {
+      "t": 24.85,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [],
+      "resultVisible": true
+    },
+    {
+      "t": 25.99,
+      "checkIn": "2027-03-09",
+      "checkOut": "2027-03-14",
+      "area": "Ubud",
+      "property": "tirta-forest-villa",
+      "claim": [],
+      "resultVisible": true
+    }
+  ]
+}

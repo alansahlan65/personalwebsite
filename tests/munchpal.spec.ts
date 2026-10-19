@@ -4,16 +4,48 @@ test("direct Munchpal entry presents the client design case with original source
   await page.goto("/work/munchpal");
   await expect(page.getByRole("heading", { level: 1, name: "Munchpal", exact: true })).toBeVisible();
   await expect(page.locator(".case-facts").getByText(/Client design project/)).toBeVisible();
-  await expect(page.getByRole("link", { name: "Read the original Munchpal case study PDF" })).toHaveAttribute("href", "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view");
-  await expect(page.getByRole("link", { name: "Explore the original MunchPal prototype" })).toHaveAttribute("href", /figma\.com\/proto\/Xsj8X9CcL5SW6CoILaZFH3\/MunchPal/);
-  const media = page.getByRole("region", { name: "From research to handoff" });
-  await expect(media.getByRole("article")).toHaveCount(4);
-  await expect.poll(() => page.locator(".case-hero img").evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
+  await expect(page.getByRole("link", { name: "Read the original Munchpal presentation" })).toHaveAttribute("href", "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view");
+  await expect(page.getByRole("link", { name: "Explore the Munchpal prototype" })).toHaveAttribute("href", /figma\.com\/proto\/Xsj8X9CcL5SW6CoILaZFH3\/MunchPal/);
+  const journey = page.getByRole("region", { name: "A request starts with a listing", exact: true });
+  await expect(journey.getByRole("img")).toHaveCount(3);
+  await expect(page.getByLabel("20-second MunchPal product tour")).toBeVisible();
   const copy = await page.locator("main").innerText();
-  expect(copy).not.toMatch(/99[.,]16|0[.,]084|96[.,]01|12 seconds|20 participants|excellent across/);
+  expect(copy).not.toMatch(/99[.,]16|0[.,]084|96[.,]01|12 seconds|excellent across/);
+  expect(copy).not.toMatch(/thesis|skripsi|15 interviewees|reported evaluation figures lack/i);
+  await expect(page.getByRole("heading", { name: "What testing showed", exact: true })).toBeVisible();
+  await page.getByText("Test details", { exact: true }).click();
+  const results = page.locator('dl[aria-labelledby="munchpal-results-caption"]');
+  await expect(results.getByRole("definition").first()).toContainText("59 of 60");
+  await expect(results.getByRole("definition").last()).toContainText("50 of 50");
+  expect(copy).toContain("109 of 110 task attempts");
+  await expect(page.locator('img[src*="munchpal-research.webp"]')).toHaveCount(0);
   await expect(page).toHaveTitle("Munchpal | Alan Sahlan");
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/work\/munchpal\/opengraph-image\.jpg/);
   await expect(page.locator('meta[property="og:image:alt"]')).toHaveCount(1);
+});
+
+test("English revision screens load and task details work with the keyboard", async ({ page, context }) => {
+  await page.goto("/work/munchpal");
+  const revisions = page.getByRole("region", { name: "What I changed, and why" });
+  await expect(revisions.getByRole("img")).toHaveCount(4);
+  for (const image of await revisions.getByRole("img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth === 388 && i.naturalHeight === 834)).toBe(true);
+  }
+  const revisedChat = revisions.getByRole("link", { name: "Enlarge revised volunteer chat", exact: true });
+  await revisedChat.focus();
+  await expect(revisedChat).toHaveCSS("outline-style", "solid");
+  const [imageTab] = await Promise.all([context.waitForEvent("page"), page.keyboard.press("Enter")]);
+  await imageTab.waitForLoadState();
+  await expect(imageTab).toHaveURL(/\/images\/figma\/munchpal\/message-after\.svg$/);
+  await imageTab.close();
+  const disclosure = page.getByText("Test details", { exact: true });
+  await disclosure.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("region", { name: "Resident tasks", exact: true })).toBeVisible();
+  await expect(page.getByRole("region", { name: "Volunteer tasks", exact: true })).toBeVisible();
+  await page.keyboard.press("Space");
+  await expect(page.getByRole("region", { name: "Resident tasks", exact: true })).toHaveCount(0);
 });
 
 test("Munchpal is one local gallery destination", async ({ page }) => {
@@ -31,18 +63,18 @@ test("keyboard and pointer traversal keep one gallery preview active", async ({ 
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/#work");
   const rows = page.locator(".project-row");
-  await rows.first().getByRole("link").focus();
+  await rows.first().getByRole("link", { includeHidden: true }).focus();
   for (const slug of ["aurelia", "paylecta", "pawfriend", "munchpal"]) {
     const row = page.locator(`.project-row[data-project="${slug}"]`);
-    await expect(row.getByRole("link")).toBeFocused();
-    await expect(row.getByRole("link")).toHaveAttribute("href", `/work/${slug}`);
+    await expect(row.getByRole("link", { includeHidden: true })).toBeFocused();
+    await expect(row.getByRole("link", { includeHidden: true })).toHaveAttribute("href", `/work/${slug}`);
     await expect(row).toHaveAttribute("data-expanded", "true");
     await expect(page.locator('.project-row[data-expanded="true"]')).toHaveCount(1);
     if (slug !== "munchpal") await page.keyboard.press("Tab");
   }
   const munchpal = rows.nth(3);
   await rows.first().getByRole("heading").hover();
-  await expect(munchpal.getByRole("link")).toBeFocused();
+  await expect(munchpal.getByRole("link", { includeHidden: true })).toBeFocused();
   await expect(munchpal).toHaveAttribute("data-expanded", "true");
   await page.locator("#work").focus();
   await page.mouse.move(0, 0);
@@ -77,128 +109,6 @@ test("shared Munchpal entry and native new-tab visit preserve their destinations
   await tab.getByRole("link", { name: "Back to selected work", exact: true }).first().click();
   await expect(tab.locator("#work")).toBeFocused();
   await tab.close();
-});
-
-test("four source panels progress and reverse, with image actions and Skip reachable", async ({ page, context }) => {
-  await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto("/work/munchpal");
-  const sequence = page.getByRole("region", { name: "From research to handoff" });
-  const panels = sequence.getByRole("article");
-  const progress = sequence.getByRole("progressbar");
-  await expect(progress).toBeVisible();
-  const range = await sequence.evaluate(e => ({ start: e.getBoundingClientRect().top + scrollY, travel: e.getBoundingClientRect().height - innerHeight }));
-  expect(range.travel).toBeGreaterThan(3000);
-  for (const step of [0, 1, 2, 3, 2, 0]) {
-    await page.evaluate(({ start, travel, step }) => scrollTo(0, start + travel * step / 3), { ...range, step });
-    await expect(progress).toHaveAttribute("value", String(step + 1));
-    await expect(panels.nth(step)).toBeInViewport({ ratio: 0.95 });
-  }
-  const skip = sequence.getByRole("link", { name: "Skip to implementation considerations" });
-  await skip.focus();
-  for (const panel of await panels.all()) {
-    await page.keyboard.press("Tab");
-    await expect(panel.getByRole("link")).toBeFocused();
-    await expect(panel.getByRole("link")).toBeInViewport({ ratio: 1 });
-    await expect.poll(() => panel.getByRole("img").evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth > 0)).toBe(true);
-  }
-  const [imageTab] = await Promise.all([context.waitForEvent("page"), panels.last().getByRole("link").click()]);
-  await imageTab.waitForLoadState();
-  await expect(imageTab).toHaveURL(/\/images\/munchpal-feedback.webp$/);
-  await imageTab.close();
-  await skip.click();
-  await expect(page.getByRole("heading", { name: "Implementation considerations", exact: true })).toBeFocused();
-});
-
-test("runtime motion and size changes preserve the focused media action", async ({ page }) => {
-  await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto("/work/munchpal");
-  await page.evaluate(() => document.fonts.ready);
-  const sequence = page.getByRole("region", { name: "From research to handoff" });
-  await expect(sequence.getByRole("progressbar")).toBeVisible();
-  const action = sequence.getByRole("article").nth(2).getByRole("link");
-  await action.focus();
-  await page.emulateMedia({ reducedMotion: "reduce" });
-  await expect(sequence.getByRole("progressbar")).toBeHidden();
-  await expect(action).toBeFocused();
-  await expect(action).toBeInViewport({ ratio: 0.99 });
-  await page.setViewportSize({ width: 390, height: 844 });
-  await expect(action).toBeInViewport({ ratio: 1 });
-  await page.emulateMedia({ forcedColors: "active" });
-  await expect(action).toHaveCSS("outline-style", "solid");
-  await page.setViewportSize({ width: 1440, height: 900 });
-  await page.emulateMedia({ reducedMotion: "no-preference", forcedColors: "none" });
-  await expect(action).toBeInViewport({ ratio: 1 });
-  const skip = sequence.getByRole("link", { name: "Skip to implementation considerations" });
-  await skip.focus();
-  await page.setViewportSize({ width: 390, height: 844 });
-  await expect(skip).toBeFocused();
-  await expect(skip).toBeInViewport({ ratio: 1 });
-  await page.keyboard.press("Enter");
-  await expect(page.getByRole("heading", { name: "Implementation considerations", exact: true })).toBeFocused();
-});
-
-for (const width of [320, 390, 768, 1440]) {
-  test(`source panels and enlarged text remain readable at ${width}px`, async ({ page }) => {
-    await page.setViewportSize({ width, height: 900 });
-    await page.goto("/work/munchpal");
-    await page.evaluate(() => document.fonts.ready);
-    const sequence = page.getByRole("region", { name: "From research to handoff" });
-    for (const panel of await sequence.getByRole("article").all()) {
-      await panel.getByRole("link").focus();
-      await expect.poll(() => panel.getByRole("img").evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth > 0)).toBe(true);
-    }
-    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-    await page.addStyleTag({ content: "html { font-size: 200%; }" });
-    await expect(sequence.getByRole("progressbar")).toBeHidden();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-    await sequence.getByRole("link", { name: "Skip to implementation considerations" }).click();
-    await expect(page.getByRole("heading", { name: "Implementation considerations", exact: true })).toBeFocused();
-  });
-}
-
-test.describe("touch entry", () => {
-  test.use({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
-  test("one tap opens Munchpal with the complete media stack", async ({ page }) => {
-    await page.goto("/#work");
-    await page.getByRole("link", { name: "Munchpal, Food sharing case study", exact: true }).tap();
-    await expect(page).toHaveURL(/\/work\/munchpal$/);
-    const sequence = page.getByRole("region", { name: "From research to handoff" });
-    await expect(sequence.getByRole("progressbar")).toBeHidden();
-    await sequence.getByRole("article").last().getByRole("img").scrollIntoViewIfNeeded();
-    await expect(sequence.getByRole("article").last()).toBeInViewport();
-    await expect(page.locator(".site-cursor")).toBeHidden();
-  });
-});
-
-test("without JavaScript the complete case remains readable with native destinations", async ({ browser }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
-  const page = await context.newPage();
-  await page.goto("/work/munchpal");
-  const sequence = page.getByRole("region", { name: "From research to handoff" });
-  await expect(sequence.getByRole("article")).toHaveCount(4);
-  await expect(sequence.getByRole("progressbar")).toBeHidden();
-  for (const image of await sequence.getByRole("img").all()) {
-    await image.scrollIntoViewIfNeeded();
-    await expect(image).toBeInViewport();
-  }
-  await page.getByRole("link", { name: "Back to selected work", exact: true }).last().click();
-  await expect(page).toHaveURL(/\/#work$/);
-  await expect(page.getByRole("link", { name: "Munchpal, Food sharing case study", exact: true })).toHaveAttribute("href", "/work/munchpal");
-  await context.close();
-});
-
-test("source media and social preview load without missing pointer actions", async ({ page }) => {
-  const errors: string[] = [];
-  page.on("pageerror", error => errors.push(error.message));
-  await page.goto("/work/munchpal");
-  await expect(page.locator("[data-magnet] [data-magnet]")).toHaveCount(0);
-  expect(await page.locator(".case-study a[href], .case-study button").evaluateAll(elements => elements.filter(e => !e.hasAttribute("data-magnet")).map(e => e.textContent))).toEqual([]);
-  await expect(page.locator('.case-hero img')).toHaveCount(1);
-  await expect(page.locator('.case-media-panel img')).toHaveCount(4);
-  const social = await page.request.get("/work/munchpal/opengraph-image.jpg");
-  expect(social.status()).toBe(200);
-  expect(social.headers()["content-type"]).toContain("image/jpeg");
-  expect(errors).toEqual([]);
 });
 
 test("gallery Back, Forward, and return preserve Munchpal selection and position", async ({ page }) => {

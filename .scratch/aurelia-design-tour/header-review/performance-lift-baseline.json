@@ -1,0 +1,28 @@
+{
+  "variant": "lift-baseline",
+  "standalone": false,
+  "viewport": {
+    "x": 72,
+    "y": 576.890625,
+    "width": 1296,
+    "height": 729
+  },
+  "shots": [
+    {
+      "label": "image-lift",
+      "sampledFrames": 119,
+      "lostFrames": 0,
+      "droppedPercent": 0,
+      "p95FrameMs": 16.8,
+      "renderer": {
+        "LayoutCount": 101,
+        "LayoutDuration": 0.0084,
+        "RecalcStyleCount": 123,
+        "RecalcStyleDuration": 0.0354,
+        "ScriptDuration": 0.0375,
+        "TaskDuration": 0.1885
+      }
+    }
+  ],
+  "errors": []
+}

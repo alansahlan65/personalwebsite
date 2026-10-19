@@ -1,0 +1,478 @@
+[
+  {
+    "width": 320,
+    "route": "/",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3464,
+    "smallTargets": [],
+    "imageBytes": 81716,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/about",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3483,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/contact",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 1985,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/work/aurelia",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 4215,
+    "smallTargets": [],
+    "imageBytes": 80634,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/work/paylecta",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 8878,
+    "smallTargets": [],
+    "imageBytes": 7809655,
+    "largeImages": [
+      {
+        "url": "dashboard.svg",
+        "bytes": 695373
+      },
+      {
+        "url": "customers.svg",
+        "bytes": 951520
+      },
+      {
+        "url": "customers-add.svg",
+        "bytes": 1014901
+      },
+      {
+        "url": "invoice-editor.svg",
+        "bytes": 1517555
+      },
+      {
+        "url": "design-system.svg",
+        "bytes": 2925465
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/work/pawfriend",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 4321,
+    "smallTargets": [],
+    "imageBytes": 119202,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/work/munchpal",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 9106,
+    "smallTargets": [],
+    "imageBytes": 21264546,
+    "largeImages": [
+      {
+        "url": "flow.svg",
+        "bytes": 645790
+      },
+      {
+        "url": "food-list.svg",
+        "bytes": 2563818
+      },
+      {
+        "url": "home.svg",
+        "bytes": 11828442
+      },
+      {
+        "url": "availability-before.svg",
+        "bytes": 2586425
+      },
+      {
+        "url": "availability-after.svg",
+        "bytes": 2586844
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3270,
+    "smallTargets": [],
+    "imageBytes": 81716,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/about",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3324,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/contact",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 1937,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/work/aurelia",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 4015,
+    "smallTargets": [],
+    "imageBytes": 80634,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/work/paylecta",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 9126,
+    "smallTargets": [],
+    "imageBytes": 7809655,
+    "largeImages": [
+      {
+        "url": "dashboard.svg",
+        "bytes": 695373
+      },
+      {
+        "url": "customers.svg",
+        "bytes": 951520
+      },
+      {
+        "url": "customers-add.svg",
+        "bytes": 1014901
+      },
+      {
+        "url": "invoice-editor.svg",
+        "bytes": 1517555
+      },
+      {
+        "url": "design-system.svg",
+        "bytes": 2925465
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/work/pawfriend",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 4105,
+    "smallTargets": [],
+    "imageBytes": 119202,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/work/munchpal",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 9633,
+    "smallTargets": [],
+    "imageBytes": 21264546,
+    "largeImages": [
+      {
+        "url": "flow.svg",
+        "bytes": 645790
+      },
+      {
+        "url": "home.svg",
+        "bytes": 11828442
+      },
+      {
+        "url": "food-list.svg",
+        "bytes": 2563818
+      },
+      {
+        "url": "availability-before.svg",
+        "bytes": 2586425
+      },
+      {
+        "url": "availability-after.svg",
+        "bytes": 2586844
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3385,
+    "smallTargets": [],
+    "imageBytes": 103340,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/about",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 2441,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/contact",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 1775,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/work/aurelia",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3960,
+    "smallTargets": [],
+    "imageBytes": 80634,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/work/paylecta",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 9753,
+    "smallTargets": [],
+    "imageBytes": 7809655,
+    "largeImages": [
+      {
+        "url": "dashboard.svg",
+        "bytes": 695373
+      },
+      {
+        "url": "customers.svg",
+        "bytes": 951520
+      },
+      {
+        "url": "customers-add.svg",
+        "bytes": 1014901
+      },
+      {
+        "url": "invoice-editor.svg",
+        "bytes": 1517555
+      },
+      {
+        "url": "design-system.svg",
+        "bytes": 2925465
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/work/pawfriend",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 4197,
+    "smallTargets": [],
+    "imageBytes": 119202,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/work/munchpal",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 9425,
+    "smallTargets": [],
+    "imageBytes": 21264546,
+    "largeImages": [
+      {
+        "url": "flow.svg",
+        "bytes": 645790
+      },
+      {
+        "url": "home.svg",
+        "bytes": 11828442
+      },
+      {
+        "url": "food-list.svg",
+        "bytes": 2563818
+      },
+      {
+        "url": "availability-before.svg",
+        "bytes": 2586425
+      },
+      {
+        "url": "availability-after.svg",
+        "bytes": 2586844
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 3245,
+    "smallTargets": [],
+    "imageBytes": 386790,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/about",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 2816,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/contact",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 1388,
+    "smallTargets": [],
+    "imageBytes": 1878,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/work/aurelia",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 4928,
+    "smallTargets": [],
+    "imageBytes": 80634,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/work/paylecta",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 9344,
+    "smallTargets": [],
+    "imageBytes": 7809655,
+    "largeImages": [
+      {
+        "url": "dashboard.svg",
+        "bytes": 695373
+      },
+      {
+        "url": "customers.svg",
+        "bytes": 951520
+      },
+      {
+        "url": "customers-add.svg",
+        "bytes": 1014901
+      },
+      {
+        "url": "invoice-editor.svg",
+        "bytes": 1517555
+      },
+      {
+        "url": "design-system.svg",
+        "bytes": 2925465
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/work/pawfriend",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 5030,
+    "smallTargets": [],
+    "imageBytes": 119202,
+    "largeImages": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/work/munchpal",
+    "overflow": 0,
+    "failedImages": [],
+    "height": 8435,
+    "smallTargets": [],
+    "imageBytes": 21264546,
+    "largeImages": [
+      {
+        "url": "flow.svg",
+        "bytes": 645790
+      },
+      {
+        "url": "food-list.svg",
+        "bytes": 2563818
+      },
+      {
+        "url": "home.svg",
+        "bytes": 11828442
+      },
+      {
+        "url": "availability-before.svg",
+        "bytes": 2586425
+      },
+      {
+        "url": "availability-after.svg",
+        "bytes": 2586844
+      }
+    ],
+    "errors": []
+  }
+]

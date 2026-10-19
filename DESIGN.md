@@ -1,12 +1,31 @@
 ---
 name: Alan Sahlan portfolio
-description: Current homepage foundation in the approved minimal editorial direction.
+description: The implemented cobalt-led editorial portfolio and its shared tactile controls.
 colors:
   canvas: "#f6f5f1"
   ink: "#20221f"
   muted: "#62625e"
   cobalt: "#245bff"
+  action-ink: "#245bff"
   divider: "#ddddd5"
+  field-surface: "#fff"
+  surface: "#f0efe9"
+  accent-solid: "#245bff"
+  on-accent: "#fff"
+  error: "#ad321d"
+  cobalt-hover: "#1749db"
+  surface-raised: "#fffefa"
+  surface-accent: "color-mix(in srgb, var(--cobalt) 6%, var(--surface-raised) 94%)"
+  surface-accent-strong: "color-mix(in srgb, var(--cobalt) 14%, var(--surface-raised) 86%)"
+  canvas-dark: "#171917"
+  ink-dark: "#f6f5f1"
+  muted-dark: "#b6b8b1"
+  action-ink-dark: "#f6f5f1"
+  divider-dark: "#444840"
+  surface-dark: "#22251f"
+  field-surface-dark: "#22251f"
+  surface-raised-dark: "#252924"
+  error-dark: "#ffab98"
 typography:
   display:
     fontFamily: '"Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif'
@@ -15,14 +34,14 @@ typography:
     lineHeight: 0.94
     letterSpacing: "-.03em"
   headline:
-    fontSize: "clamp(1.65rem, 6.6vw, 6.7rem)"
-    fontWeight: 500
-    lineHeight: 1.22
-    letterSpacing: "-.035em"
-  title:
-    fontSize: "clamp(2.1rem, 4.3vw, 4.25rem)"
+    fontSize: "clamp(3.4rem, 7.5vw, 7.6rem)"
     fontWeight: 400
-    lineHeight: 1.1
+    lineHeight: 1.02
+    letterSpacing: "-.03em"
+  title:
+    fontSize: "clamp(1.65rem, 4.2vw, 2.75rem)"
+    fontWeight: 650
+    lineHeight: 1.15
     letterSpacing: "-.03em"
   body:
     fontFamily: '"Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif'
@@ -31,131 +50,186 @@ typography:
     fontSize: ".9375rem"
     fontWeight: 500
     lineHeight: 1.5
+rounded:
+  control: "16px"
+  field: "16px"
+  preview: "16px"
+  card: "28px"
+  pill: "999px"
 spacing:
-  gutter: "clamp(1.5rem, 5vw, 5rem)"
+  unit: "4px"
+  scale: "4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 112, 128px"
+  gutter: "round(nearest, clamp(24px, 5vw, 80px), 8px)"
+  content-gap: "24px"
+  content-group-gap: "32px"
+  section-space: "round(nearest, clamp(48px, 5vw, 80px), 8px)"
+  section-heading-gap: "round(nearest, clamp(24px, 2vw, 32px), 8px)"
 components:
   primary-nav:
     textColor: "{colors.ink}"
   location-badge:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.canvas}"
+    backgroundColor: "{colors.accent-solid}"
+    textColor: "{colors.on-accent}"
     width: "36px"
     height: "36px"
   project-row:
     textColor: "{colors.ink}"
-    padding: "1.5rem 0"
+    padding: "round(nearest, clamp(.75rem, 2vw, 1.5rem), 4px) 0"
   about-copy:
     textColor: "{colors.ink}"
     padding: "2rem 0 0"
   contact:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.canvas}"
-    padding: "5.5rem 0 1.5rem"
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    padding: "64px 0 24px; 48px top on phones"
+  contact-submit:
+    backgroundColor: "{colors.accent-solid}"
+    textColor: "{colors.on-accent}"
+    rounded: "{rounded.pill}"
+    padding: "16px 24px"
+    height: "54px"
+  contact-submit-hover:
+    backgroundColor: "{colors.cobalt-hover}"
+  contact-field:
+    backgroundColor: "{colors.field-surface}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.field}"
+    padding: "16px 16px"
+  copy-action:
+    backgroundColor: "{colors.surface-accent}"
+    textColor: "{colors.action-ink}"
+    rounded: "{rounded.pill}"
+    padding: "12px 16px"
+    height: "48px"
+  menu-control:
+    backgroundColor: "{colors.surface-raised}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    padding: "8px 8px 8px 12px"
+    height: "48px"
+  theme-switch:
+    backgroundColor: "{colors.surface-accent}"
+    rounded: "{rounded.pill}"
+    width: "88px"
+    height: "48px"
+  notebook-card:
+    backgroundColor: "{colors.surface-raised}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.card}"
+    padding: "round(nearest, clamp(20px, 3vw, 28px), 4px)"
+  motion-demo-card:
+    backgroundColor: "{colors.surface-raised}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.card}"
+    padding: "round(nearest, clamp(20px, 2vw, 28px), 4px)"
 ---
 
 # Design System: Alan Sahlan portfolio
 
+Reviewed 19 October 2026 against the implemented site. [PRODUCT.md](PRODUCT.md) owns scope and professional positioning. This file owns shared visual rules; [the documentation index](docs/README.md) points to current surface and behavior records.
+
 ## Overview
 
-**Creative North Star: "Minimal editorial portfolio"**
+Use a minimal editorial composition: warm off-white, charcoal, exact cobalt, Plus Jakarta Sans, generous gutters, thin dividers, the original AS mark, and large identity text. Home uses Alan's voxel character; About retains his real portrait. Original project screens provide evidence; generated gallery artwork is decorative.
 
-The user-approved typography update of 27 September 2026 uses Plus Jakarta Sans, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.
+Reading sections stay flat. Interactive cards and painted controls use neutral raised surfaces, soft blue supporting layers, rounded geometry, and restrained depth. Page composition follows the current implementation; the unavailable original composition image establishes no pixel-match claim.
 
-This record began with the five-section homepage foundation and now includes the About, navigation, pointer, project-entry, and case-study work. Plus Jakarta Sans is self-hosted through next/font/local, replacing the prior Halyard requirement at the user’s request. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns the homepage composition, and docs/assets.md records asset provenance and limits.
+## Colors and themes
 
-**Key Characteristics:**
+The frontmatter records shared color values. Cobalt stays `#245bff` in both themes, including large identity details and filled actions. Filled cobalt actions use white text. Small action text/icons use `--action-ink`: cobalt in light mode and ink in dark mode. Supporting surfaces mix 6% or 14% cobalt into the current raised neutral.
 
-- Warm off-white and charcoal with one cobalt accent.
-- Large, tightly spaced typography and generous section spacing.
-- Rectangular photography, thin dividers, and small cobalt corners.
-- Native links connect the homepage, About page, email action, and confirmed professional profiles.
+Light is the default regardless of device preference. The theme switch remembers explicit choices under `portfolio-theme-v1` when storage is available. An early script selects the stored theme; tabs synchronize changes. Footer and menu use the selected canvas. No-JavaScript pages stay light; print uses light surfaces. Role blobs and supplied gradient icons retain their local colors. The logo keeps its supplied blue shading and warm backing.
 
-## Colors
-
-### Primary
-
-Cobalt marks the name period, the identity phrase separator, one role line, location badge, decorative corners, selection, and the full contact background.
-
-**The Accent Rule.** Use cobalt for the established identity details and contact field; preserve the original AS mark's supplied blue shading.
-
-### Neutral
-
-Canvas is the page background and text on cobalt. Ink is the main text. Muted is secondary information and unavailable navigation. Divider separates the role section and project rows.
-
-The portrait's backing color is a component-specific image placeholder. The contact divider uses translucent canvas. Neither establishes an additional palette or tonal ramp.
+Use shared field, error, focus, divider, and raised-surface tokens. Keep readable system outlines in forced colors and remove shadows when the preference requires it. See [theme behavior](docs/site-themes.md).
 
 ## Typography
 
-Plus Jakarta Sans is the required interface family, replacing Halyard at the user’s request on 27 September 2026. Its variable font is bundled as WOFF2 and loaded by next/font/local with weights 200–800, swap display, preloading and an adjusted fallback. The source and SIL Open Font License are in app/fonts/. No font CDN is requested by visitors.
+Bundle `app/fonts/PlusJakartaSans-Variable.woff2` through `next/font/local`, weights 200–800, with swap display and adjusted fallback. The SIL Open Font License remains beside it. No browser font-CDN request is required. [Asset provenance](docs/assets.md) records the upstream source.
 
-The display role is the two-line name. The headline role is the three practice lines. The title role is the project name, body is the base interface text, and label is the small section heading. Descendants inherit the configured body family. Regular and medium weights provide the visible hierarchy; project numbers use tabular numerals.
+The frontmatter records the shared display, headline, project-title, body, and label roles. Keep component-specific responsive declarations in their owning CSS. Main text starts at 1rem; helper text, captions, and tour descriptions use at least .875rem where specified. Local metadata and compact secondary labels retain their existing hierarchy. Project numbers and progress use tabular numerals.
 
-The three practice lines use the user-selected Streamline Plump Gradient icons: feather pen, monitor, and stars. Their supplied green/blue and pink/blue gradients are approved local accents. Icons have transparent square frames sized from 48px to 112px, preserving the role tracks' existing scroll behavior and static reduced-motion layout. They replace the earlier pill-shaped photographs. The footer includes Streamline attribution.
+Verify actual loading, wrapping, enlarged-text reflow, and intermediate widths after typography changes. Original project artwork retains its source typography.
 
-At the 650px breakpoint, the name changes to clamp(2.4rem, 17vw, 6.9rem) and project names change to clamp(1.5rem, 8vw, 3rem). Display headings and project names use letter-spacing -.03em on desktop and -.02em on narrow screens. Practice lines retain line-height 1.22 and tracking -.035em. The About statement uses clamp(1.65rem, 2.6vw, 2.65rem), line-height 1.3, and letter-spacing -.025em. The contact heading uses clamp(3.4rem, 7.5vw, 7.6rem), weight 400, and line-height 1.02; its narrow-screen size is clamp(2rem, 14vw, 4rem).
+## Spacing and layout
 
-**The Font Delivery Rule.** Preserve the bundled Plus Jakarta Sans family and verify actual font loading and wrapping after typography changes.
+All page and component padding follows the 4/8px scale. Use shared tokens for repeated spacing. The current fixed space tokens are 4, 8, 12, 16, 20, 24, 32, 48, and 64px; larger fluid gaps use the formulas below. Other scale values may be local lengths without adding unused root tokens.
 
-## Layout
+| Role | Rule |
+| --- | --- |
+| Page width | `min(100% - var(--gutter) * 2, 1440px)`, centered |
+| Gutter | `round(nearest, clamp(24px, 5vw, 80px), 8px)` |
+| Related text | 12–16px |
+| Content gap | `--content-gap`, 24px |
+| Group gap | `--content-group-gap`, 32px |
+| Section gap | `--section-space`, `round(nearest, clamp(48px, 5vw, 80px), 8px)` |
+| Section heading | `--section-heading-gap`, `round(nearest, clamp(24px, 2vw, 32px), 8px)` |
+| Source group | One 48px gap after the conclusion/disclosure |
+| Ruled reading group | 32px padding |
+| Expanded case notes | 24px top and 32px bottom |
+| Page ending | 48px before the footer |
 
-The common container is centered, capped at 1440px, with twice the gutter token subtracted from available width. Section padding provides the rhythm; there is no general spacing scale beyond the shared gutter.
+A continuous case-study section owns one leading gap. Clear its last child's trailing margin and avoid stacking equal trailing/leading padding. Keep captions beside their figures. Mixed content explicitly owns sibling gaps, including 32px after a results list's final divider. Fluid gutters and section spacing round to 8px at intermediate widths.
 
-The homepage has a header followed by hero, practice lines, selected work, About, and contact footer. The hero uses a 1.15fr / 1fr grid and a 690px minimum height. Its portrait is at most 480px wide. About uses a 1fr / 2fr grid with a 780px maximum copy width. Project rows use number, title, and category columns, with a 140px minimum height.
+Home's desktop hero uses a 1.15fr/1fr split; the phone hero becomes a compact single column. The 4:5 phone character frame is capped at 152px. About pairs introduction/portrait, capabilities/experience, and learning/comparison before a compact trivia section. Those pairs stack at 760px and also respond to their text-relative container width. Contact stacks below 950px; name/email stack below 600px.
 
-At 1000px and below, the hero minimum height becomes 570px and About changes to 1fr / 2.6fr. At 650px and below, navigation wraps beneath the brand, hero and About become single columns, location returns to normal document flow, and project categories move beneath titles. Project rows then have a 110px minimum height. The footer stacks its lower content vertically. These are observed homepage arrangements, not mandatory compositions for later pages.
+Selected work has four ruled rows. The same 3:1 cover moves from a right-hand thumbnail to a full preview below its title, with the short story underneath. At 700px and below or on non-hover devices, covers and stories remain visible. [Selected work](docs/selected-work.md) owns its local geometry.
 
-## Elevation & Depth
+Aurelia, Paylecta, and Munchpal read continuously through original screens. Broad screen/phone compositions stack below 48rem. PawFriend's horizontal enhancement requires at least 1000px width, 750px height, normal motion, no forced colors, and enough measured room for all panels. Otherwise it retains a complete stack. See [case media](docs/case-media.md).
 
-Large color fields, spacing, image cropping, and thin rules separate content. The approved Apple-design pass gives the compact Menu trigger a 92% warm-canvas surface, static 12px backdrop blur, soft border, and restrained shadow. Reduced transparency, increased contrast, forced colors, and browsers without backdrop filtering receive a solid surface.
+## Shapes and depth
 
-**The Flat Surface Rule.** Keep content sections flat. The floating compact Menu trigger is the approved exception for functional navigation depth.
+Shared radii are 16px for controls/fields/previews, 28px for interactive cards, and 999px for pills. Route-specific project device frames retain their local 16px panels, 12px asset treatment, and 8px set geometry. Source artwork retains its original corners.
 
-## Shapes
+The About portrait and location badge remain square. Home's character uses transparent layered artwork. Menu/theme/copy/resume-return controls use the established pills; the footer arrow uses a circle. Decorative cobalt corners and logo backing retain their local geometry.
 
-Portrait and location badge frames are square-cornered. No radius tokens are defined. The desktop portrait uses a 4:5 aspect ratio; narrow screens use 1:1.08. Its image is cropped with object-fit cover, object-position 50% 85%, a 150% height, and a -50% top offset.
+Use `--shadow-control` for painted controls and `--shadow-card` for interactive cards. These have theme-specific soft layers. Keep the compact navigation strip solid, without blur. Reading text and original evidence do not become raised cards.
 
-The portrait's top-right cobalt corner has 35px arms with 8px borders. The About corner has 16px arms with 4px borders. These are decorative marks. Forced-colors mode switches their border color to CanvasText and adds a border to the location badge.
+## Components and interaction
 
-## Components
+### Header and navigation
 
-The primary navigation consists of plain text anchors with 44px minimum height and underline on hover. Links show a 2px current-color focus outline offset by 6px. Full-row project links use a -4px inset offset so their focus rectangles stay inside the ruled rows. Resume is a native download link to the verified, locally served one-page PDF. The skip link becomes visible on focus. The original AS image accompanies the name in the home links.
+Keep Home, About, Contact, and Download resume in full navigation at the top. Resume actions use a PDF cue and the verified local file. Primary links have 44px minimum targets, current-page indication, and visible focus.
 
-The location badge is a small cobalt square labelled ID beside the Indonesia text. It is not a clickable control.
+Compact navigation enters above 96px scroll and returns below 48px, deferring changes during header focus or an open menu. Its fixed strip reserves safe-area space. The theme switch sits immediately left of Menu and dialog Close with a .75rem gap. The menu scrolls vertically and contains focus, supports Escape, makes the background inert, and restores focus/scroll correctly.
 
-Project rows are a ruled ordered list of four projects. Number and category use muted text. Each full row is a link to its local case study. Distinct compact and expanded artwork responds to mouse or keyboard focus, stays visible on touch and with reduced motion, and opens the direct case-study route.
+The menu's five panels move vertically. Page navigation uses five sharp horizontal bands, a 610ms combined budget, 30ms stagger, and `cubic-bezier(.65,0,.35,1)`. Keyboard activation bypasses the curtain; reduced motion uses an 80ms fade; forced colors navigates immediately. Gallery entry requests the shared-image effect independently. [Navigation](docs/page-transitions.md) owns the complete lifecycle.
 
-About pairs a small label with a large statement, decorative corner, and More about me link. The separate About page leads with Product Designer positioning and a real portrait, followed by ruled sections for CADIT, an Aurelia example, approach, and resume. The hero stacks below 850px and the ruled sections below 650px. The contact section uses a full cobalt field with the heading and unboxed arrow as one mailto action, followed by the email address and professional links. Resume download is available in the header, menu, About body and footer.
+### Stationary targets and motion
 
-The header keeps its full navigation at the top and shows a fixed compact Menu trigger after scrolling past 96px. It returns to full below 48px, deferring changes while a header control has focus. Wheel/touch scroll changes fade the compact trigger over 120ms, or 80ms with reduced motion; keyboard and restored-page changes remain immediate. The five-panel Sliding Stairs Menu reveals Work, About, and Contact links, with confirmed professional destinations below. Resume is a native PDF download. Contact targets the current page’s footer. The dialog contains focus, makes the page inert, restores scroll and trigger focus on dismissal, and follows reduced-motion changes during the session. Each panel moves over 380ms with a 55ms stagger. Menu phases settle after all five panels report completion, rather than a fixed timer. Interrupted transitions retarget their live transforms; hover strips stop on exit and close.
+Magnetic feedback moves separate visual children, capped at 5px for text, 6px for gallery title/arrow, and 8px for controls. Its spring is stiffness 100, damping 12, mass .8. `ControlVisual` presses painted button children to .97 with the shared 320/30 spring. Semantic targets, focus outlines, and click coordinates stay still. Reset movement on cancellation, focus, hidden documents, disabled state, and relevant preference changes.
 
-Current actions use stationary semantic targets with separate moving children. Magnetic springs use stiffness 100, damping 20, and mass 1 for a critically damped settle, capped at 5px for text, 6px for project title/arrow, and 12px for large controls. Gallery width and menu marquee transforms belong to separate wrappers. The contact arrow scales to .97 over 120ms on pointer-down and returns over 160ms; reduced motion substitutes an 80ms opacity change to .85. Cancellation clears its pressed state, and keyboard focus remains stationary. Focus and press feedback remain available on keyboard, touch, reduced motion, and forced colors.
+The decorative cursor is a 7px dot at the actual fine-pointer position. Over imagery it expands to a 72px difference-blend disc; actionable imagery gets a separate arrow. Text selection, fields, disclosures, media controls, and local-feedback actions keep appropriate native behavior. Touch, reduced motion, and forced colors use the native cursor. See [pointer behavior](docs/pointer-interactions.md).
 
-The decorative cursor follows actual pointer coordinates as a small dot, expands to a 72px white difference-blend disc over imagery, and adds a separate outlined arrow over actionable images. It yields to text selection and resets on route/menu changes, window exit, touch, preference changes, and hidden tabs. Native cursor hiding starts only after the enhancement is ready. See docs/pointer-interactions.md for the action inventory and compositing evidence.
+Home reveals later content once with a 24px rise and 500ms fade. Initially visible content, restored positions, keyboard access, direct sections, no JavaScript, and motion/color preferences remain immediately readable. The remaining soft About-detail entrance is opacity-only. Pages without matching entrance targets skip observer/listener setup.
 
-Project previews and case-study heroes share a React ViewTransition identity. Gallery links carry the project-entry transition type; menu navigation and return links keep their existing behavior. The browser morph lasts 520ms with cubic-bezier(.77, 0, .175, 1). The title settles over 220ms with cubic-bezier(.23, 1, .32, 1). The hero follows the introduction so its destination is visible during entry, before the project facts and source link. The snapshot overlay passes pointer events through, and reduced motion, touch, and forced colors remove spatial entry. See docs/project-entry.md for fallback behavior and the recording.
+### Home and project entry
 
-Ordinary navigation between Home, About, and the case studies uses a 220ms page crossfade with cubic-bezier(.23, 1, .32, 1). Each page owns an enter/exit boundary; same-page anchors and ordinary state updates do not replay it. Gallery entries retain their shared-image transition without a simultaneous page fade. Cached browser Back/Forward navigation receives an incoming opacity fade without intercepting history. Touch receives the page crossfade; reduced motion shortens snapshot opacity changes to 80ms and forced colors uses immediate pages. Live-page history restores remain opaque under either accessibility preference. Selected-work scroll restoration runs before the destination snapshot. Snapshot overlays pass pointer input through, and navigation and focus do not wait for animation. See docs/page-transitions.md.
+Product Designer is the default role. Design Engineer describes learning; Interaction Designer describes exploration. Role instructions and local supplied icons support hover/focus/tap. The blob smiles only for its own hover/focus/instruction state; ordinary role activation retains idle blinking. Blinks pause offscreen and in hidden tabs, and settle for motion/color preferences.
 
-Scroll-linked role tracks, all four project previews, and horizontal case-study media are implemented. Their reduced-motion and narrow-screen layouts keep the content readable without the spatial effect.
+The character selects rendered head directions and greets within its own frame. Separate, normalized additive blends prevent interrupted head/body/arm transitions from fading out. [The character record](docs/alan-character.md) owns artwork and timing.
 
-## Do's and Don'ts
+Gallery layout projection uses 280ms and `cubic-bezier(.23,1,.32,1)`, immediate for keyboard and reduced motion. Focus wins over hover. Project entry uses the existing 520ms shared-image curve and 220ms title settle when supported. [Project entry](docs/project-entry.md) owns fallback and return behavior.
 
-### Do:
+### About
 
-- Do preserve the exact Design • Engineer identity phrase.
-- Do retain the supplied AS mark and real portrait with their documented provenance.
-- Do keep visible keyboard focus and native anchor access.
-- Do preserve the user’s Plus Jakarta Sans typography choice and local font delivery.
+Professional content precedes personal trivia. Inline sketches reveal on hover, focus, or tap; pinned previews fit below the compact header and retain an inner keyboard scroller. The portrait greeting supports Escape without requiring focus movement.
 
-### Don't:
+The local Static / Motion save comparison keeps state while switching modes. Preferences override movement. Trivia uses a neutral 28px front card and blue supporting layers, whole-card drag, sideways selection, answer buttons, and Next question. Cancelled gestures and viewport changes restore the card. Answer transitions and height changes settle immediately for keyboard and preferences. No-JavaScript and print views retain the facts. See [About](docs/about.md).
 
-- Don't treat the fallback as evidence that the intended font loaded.
-- Don't treat generated gallery artwork as original case-study evidence.
-- Don't claim a pixel match to the missing composition image or a complete release.
+### Contact and footer
 
+Fields use visible labels, 16px corners, a 54px minimum height, theme-aware surfaces, inline errors, and cobalt focus. The submit is a 54px cobalt pill; copy actions are 48px supporting-blue pills. Pending clipboard actions disable until settled; input changes invalidate stale responses. Failure reveals selected manual-copy text while preserving the draft. [Contact](docs/contact-page.md) owns delivery and recovery.
 
-## About refinement, 27 September 2026
+The footer uses the selected canvas, thin divider, cobalt invitation, and filled circular arrow to Contact. Its compact Contact-page version avoids repeating the invitation. Respect the bottom safe-area inset.
 
-The hero headline is “Product Designer. Closer to the build.” CADIT, October 2025–present, and its component-library/UI-mockup work are user-confirmed. Aurelia is linked as a solo design-and-build example; no historical metrics are added. The portrait reuses the supplied homepage crop. A slanted cobalt underline, image zoom and arrow response add restrained detail. Hover motion is limited to fine pointers and disabled with reduced motion.
+### Case evidence
 
-The shared header wraps by intrinsic content width, with full navigation on a second row below 900px. Work/About targets are at least 44px wide. Menu buttons are enhanced only after hydration; native links and resume access remain available without JavaScript. The development notice was removed when all four case studies were completed. The font change also affects Home and Aurelia; their interactions were checked in the integrated browser suite.
+Lead with a short project introduction and three facts. Explain decisions once beside original screens. Put research methods, factual build notes, recordings, and extra screens in native ruled disclosures with 44px summary targets. Preserve source links and intrinsic image dimensions.
+
+`ProjectScreen` displays originals or compressed SVG previews and links to the original. PawFriend's media sequence uses named native links, progress, keyboard access, and a focus-only Skip. Wide cropped details retain native panning on phones and complete-original disclosures. Original rasters and SVG photograph fills retain source-resolution limits.
+
+Munchpal's Residents / Volunteers selector uses native radios, the 250ms selection duration, and `cubic-bezier(.77,0,.175,1)` over its longer travel. A clipped active-label layer keeps text aligned; keyboard and preferences settle immediately. Both flows remain available without JavaScript and print includes both.
+
+## Guardrails
+
+Preserve authentic evidence, current professional positioning, source provenance, and complete reading fallbacks. Keep generated artwork separate from original project work. Use shared tokens before adding local variants. Preserve drafts, stationary targets, focus, and native navigation when enhancements stop. Record measured coverage and limits in [quality checks](docs/quality.md).

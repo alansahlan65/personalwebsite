@@ -1,0 +1,282 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/contact",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/contact",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/contact",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/contact",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "sameGeometry": true,
+    "differentPixels": 0
+  }
+]

@@ -1,0 +1,130 @@
+{
+  "round": "final",
+  "captures": [
+    ".impeccable/review/selected-work-cover/final/default-1440.png",
+    ".impeccable/review/selected-work-cover/final/aurelia-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/final/paylecta-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/final/pawfriend-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/final/munchpal-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/final/default-719.png",
+    ".impeccable/review/selected-work-cover/final/aurelia-expanded-719.png",
+    ".impeccable/review/selected-work-cover/final/default-390.png",
+    ".impeccable/review/selected-work-cover/final/keyboard.png",
+    ".impeccable/review/selected-work-cover/final/reduced.png",
+    ".impeccable/review/selected-work-cover/final/touch-wide.png",
+    ".impeccable/review/selected-work-cover/final/no-js.png"
+  ],
+  "metrics": [
+    {
+      "slug": "aurelia",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "description": "Finding a place to stay in Bali means weighing the location, price and details. I designed and built Aurelia to bring those choices into one place, from browsing stays to sending a request.",
+      "descriptionSize": "18px",
+      "lineHeight": "28.8px",
+      "documentWidth": 1440
+    },
+    {
+      "slug": "paylecta",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "description": "Paylecta is a finance dashboard for small businesses. I designed its desktop and mobile views so merchants can follow their daily activity and see where payments stand.",
+      "descriptionSize": "18px",
+      "lineHeight": "28.8px",
+      "documentWidth": 1440
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "description": "PawFriend is an adoption concept for people looking for a pet. I designed and built a way to get to know each animal, save a shortlist and prepare for a first visit.",
+      "descriptionSize": "18px",
+      "lineHeight": "28.8px",
+      "documentWidth": 1440
+    },
+    {
+      "slug": "munchpal",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "description": "Munchpal is a food-sharing prototype for residents and volunteers in Surabaya. I researched how both groups give and receive food, then designed and tested separate flows for them.",
+      "descriptionSize": "18px",
+      "lineHeight": "28.8px",
+      "documentWidth": 1440
+    },
+    {
+      "slug": "aurelia",
+      "width": 719,
+      "imageWidth": 594.625,
+      "imageHeight": 198.203125,
+      "description": "Finding a place to stay in Bali means weighing the location, price and details. I designed and built Aurelia to bring those choices into one place, from browsing stays to sending a request.",
+      "descriptionSize": "16px",
+      "lineHeight": "25.6px",
+      "documentWidth": 719
+    },
+    {
+      "width": 320,
+      "text": 100,
+      "documentWidth": 320
+    },
+    {
+      "width": 320,
+      "text": 200,
+      "documentWidth": 320
+    },
+    {
+      "width": 390,
+      "text": 100,
+      "documentWidth": 390
+    },
+    {
+      "width": 390,
+      "text": 200,
+      "documentWidth": 390
+    },
+    {
+      "width": 719,
+      "text": 100,
+      "documentWidth": 719
+    },
+    {
+      "width": 719,
+      "text": 200,
+      "documentWidth": 719
+    },
+    {
+      "width": 900,
+      "text": 100,
+      "documentWidth": 900
+    },
+    {
+      "width": 900,
+      "text": 200,
+      "documentWidth": 900
+    },
+    {
+      "width": 1024,
+      "text": 100,
+      "documentWidth": 1024
+    },
+    {
+      "width": 1024,
+      "text": 200,
+      "documentWidth": 1024
+    },
+    {
+      "width": 1440,
+      "text": 100,
+      "documentWidth": 1440
+    },
+    {
+      "width": 1440,
+      "text": 200,
+      "documentWidth": 1440
+    }
+  ],
+  "errors": []
+}

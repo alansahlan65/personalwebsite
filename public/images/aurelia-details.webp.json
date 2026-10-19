@@ -9,5 +9,14 @@
   "preparation": "Authentic browser screenshot, WebP quality 82, no synthetic edits.",
   "bytes": 83830,
   "authorization": "User confirmed sole design/build authorship and approved live-site screenshot use.",
-  "rightsLimit": "Underlying site photography provenance was not independently verified."
+  "rightsLimit": "Underlying site photography provenance was not independently verified.",
+  "prompt": "Source origin. {\"sourceUrl\":\"https://aurelia.alansahlanwork.workers.dev/\",\"capturedAt\":\"2026-09-26\",\"viewport\":{\"width\":1440,\"height\":900},\"state\":\"Awan Cliff House overlay, Wi-Fi tab, with its photograph loaded.\",\"preparation\":\"Authentic browser screenshot, WebP quality 82, no synthetic edits.\",\"bytes\":83830,\"authorization\":\"User confirmed sole design/build authorship and approved live-site screenshot use.\",\"rightsLimit\":\"Underlying site photography provenance was not independently verified.\"}",
+  "createdAt": "2026-10-03T09:53:18.332Z",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "893e36a2e791d65ebd133ccc063795694d9a6c09c1dc7c17d6e290c9dfb3d020",
+    "current_file_sha256": "893e36a2e791d65ebd133ccc063795694d9a6c09c1dc7c17d6e290c9dfb3d020",
+    "decoded_pixel_sha256": "8eb5f731efd68afd5e1c61b861bcfbdb540cb3b606bb87a3208235c9d6839358",
+    "pixels_unchanged": true
+  }
 }

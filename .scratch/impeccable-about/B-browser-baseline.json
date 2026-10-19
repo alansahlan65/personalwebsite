@@ -1,0 +1,387 @@
+{
+  "preflight": {
+    "titleMutation": true,
+    "scriptAppend": true,
+    "scriptExecuted": true
+  },
+  "desktop": {
+    "title": "About Alan Sahlan — Product Designer",
+    "width": 1440,
+    "height": 1000,
+    "documentWidth": 1440,
+    "documentHeight": 1908,
+    "headings": [
+      {
+        "level": "H1",
+        "text": "About me",
+        "rect": {
+          "x": 72,
+          "y": 205.578125,
+          "width": 1296,
+          "height": 120.953125,
+          "top": 205.578125,
+          "right": 1368,
+          "bottom": 326.53125,
+          "left": 72
+        }
+      },
+      {
+        "level": "H2",
+        "text": "Where I’m heading",
+        "rect": {
+          "x": 72,
+          "y": 649.90625,
+          "width": 289.328125,
+          "height": 52.78125,
+          "top": 649.90625,
+          "right": 361.328125,
+          "bottom": 702.6875,
+          "left": 72
+        }
+      },
+      {
+        "level": "H2",
+        "text": "From a problem to a prototype",
+        "rect": {
+          "x": 72,
+          "y": 767.6875,
+          "width": 289.328125,
+          "height": 79.171875,
+          "top": 767.6875,
+          "right": 361.328125,
+          "bottom": 846.859375,
+          "left": 72
+        }
+      },
+      {
+        "level": "H2",
+        "text": "Bringing design and development closer",
+        "rect": {
+          "x": 72,
+          "y": 911.859375,
+          "width": 289.328125,
+          "height": 52.78125,
+          "top": 911.859375,
+          "right": 361.328125,
+          "bottom": 964.640625,
+          "left": 72
+        }
+      },
+      {
+        "level": "H2",
+        "text": "Resume",
+        "rect": {
+          "x": 72,
+          "y": 1029.640625,
+          "width": 289.328125,
+          "height": 22.5,
+          "top": 1029.640625,
+          "right": 361.328125,
+          "bottom": 1052.140625,
+          "left": 72
+        }
+      },
+      {
+        "level": "H2",
+        "text": "Let’s worktogether.",
+        "rect": {
+          "x": 72,
+          "y": 1287.328125,
+          "width": 1296,
+          "height": 220.3125,
+          "top": 1287.328125,
+          "right": 1368,
+          "bottom": 1507.640625,
+          "left": 72
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main",
+        "rect": {
+          "x": 16,
+          "y": -74.375,
+          "width": 144.21875,
+          "height": 45.1875,
+          "top": -74.375,
+          "right": 160.21875,
+          "bottom": -29.1875,
+          "left": 16
+        }
+      },
+      {
+        "text": "Alan Sahlan",
+        "href": "/",
+        "rect": {
+          "x": 72,
+          "y": 26.390625,
+          "width": 136.703125,
+          "height": 52,
+          "top": 26.390625,
+          "right": 208.703125,
+          "bottom": 78.390625,
+          "left": 72
+        }
+      },
+      {
+        "text": "Work",
+        "href": "/#work",
+        "rect": {
+          "x": 939.640625,
+          "y": 30.390625,
+          "width": 34.734375,
+          "height": 44,
+          "top": 30.390625,
+          "right": 974.375,
+          "bottom": 74.390625,
+          "left": 939.640625
+        }
+      },
+      {
+        "text": "About",
+        "href": "/about",
+        "rect": {
+          "x": 1014.6875,
+          "y": 30.390625,
+          "width": 39.203125,
+          "height": 44,
+          "top": 30.390625,
+          "right": 1053.890625,
+          "bottom": 74.390625,
+          "left": 1014.6875
+        }
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact",
+        "rect": {
+          "x": 1094.203125,
+          "y": 30.390625,
+          "width": 51.703125,
+          "height": 44,
+          "top": 30.390625,
+          "right": 1145.90625,
+          "bottom": 74.390625,
+          "left": 1094.203125
+        }
+      },
+      {
+        "text": "Let’s worktogether.",
+        "href": "mailto:alansahlanwork@gmail.com",
+        "rect": {
+          "x": 72,
+          "y": 1287.328125,
+          "width": 574.203125,
+          "height": 220.3125,
+          "top": 1287.328125,
+          "right": 646.203125,
+          "bottom": 1507.640625,
+          "left": 72
+        }
+      },
+      {
+        "text": "alansahlanwork@gmail.com",
+        "href": "mailto:alansahlanwork@gmail.com",
+        "rect": {
+          "x": 72,
+          "y": 1560.640625,
+          "width": 200.328125,
+          "height": 44,
+          "top": 1560.640625,
+          "right": 272.328125,
+          "bottom": 1604.640625,
+          "left": 72
+        }
+      },
+      {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/",
+        "rect": {
+          "x": 72,
+          "y": 1628.640625,
+          "width": 56.71875,
+          "height": 44,
+          "top": 1628.640625,
+          "right": 128.71875,
+          "bottom": 1672.640625,
+          "left": 72
+        }
+      },
+      {
+        "text": "GitHub",
+        "href": "https://github.com/alansahlan65",
+        "rect": {
+          "x": 160.71875,
+          "y": 1628.640625,
+          "width": 46.6875,
+          "height": 44,
+          "top": 1628.640625,
+          "right": 207.40625,
+          "bottom": 1672.640625,
+          "left": 160.71875
+        }
+      },
+      {
+        "text": "Behance",
+        "href": "https://www.behance.net/muhammadsahlanshadiq",
+        "rect": {
+          "x": 239.40625,
+          "y": 1628.640625,
+          "width": 59.21875,
+          "height": 44,
+          "top": 1628.640625,
+          "right": 298.625,
+          "bottom": 1672.640625,
+          "left": 239.40625
+        }
+      },
+      {
+        "text": "Alan Sahlan",
+        "href": "/",
+        "rect": {
+          "x": 72,
+          "y": 1776.640625,
+          "width": 142.296875,
+          "height": 44,
+          "top": 1776.640625,
+          "right": 214.296875,
+          "bottom": 1820.640625,
+          "left": 72
+        }
+      }
+    ],
+    "mainText": "About me\n\nI’m Alan, a UI/UX Designer at an IT consulting company, based in Indonesia.\n\nWhere I’m heading\n\nMy primary focus is Product Designer opportunities. I’m also learning toward Design Engineer roles and open to opportunities in that direction.\n\nFrom a problem to a prototype\n\nMy background includes user research, wireframing, and prototyping for web and mobile interfaces. I’m interested in how those design decisions carry through to a working product.\n\nBringing design and development closer\n\nI’m learning to connect design decisions with what can be built: understand technical constraints, explain design intent, and build and refine interfaces.\n\nResume\n\nAn updated resume will be available here once verified."
+  },
+  "mobile": {
+    "width": 390,
+    "documentWidth": 390,
+    "documentHeight": 1921,
+    "smallTargets": [
+      {
+        "text": "Work",
+        "label": null,
+        "rect": {
+          "x": 24,
+          "y": 71.1875,
+          "width": 32.421875,
+          "height": 44,
+          "top": 71.1875,
+          "right": 56.421875,
+          "bottom": 115.1875,
+          "left": 24
+        }
+      },
+      {
+        "text": "About",
+        "label": null,
+        "rect": {
+          "x": 113.953125,
+          "y": 71.1875,
+          "width": 36.59375,
+          "height": 44,
+          "top": 71.1875,
+          "right": 150.546875,
+          "bottom": 115.1875,
+          "left": 113.953125
+        }
+      }
+    ],
+    "headings": [
+      {
+        "text": "About me",
+        "rect": {
+          "x": 24,
+          "y": 171.1875,
+          "width": 342,
+          "height": 53.234375,
+          "top": 171.1875,
+          "right": 366,
+          "bottom": 224.421875,
+          "left": 24
+        }
+      },
+      {
+        "text": "Where I’m heading",
+        "rect": {
+          "x": 24,
+          "y": 484.421875,
+          "width": 342,
+          "height": 22.5,
+          "top": 484.421875,
+          "right": 366,
+          "bottom": 506.921875,
+          "left": 24
+        }
+      },
+      {
+        "text": "From a problem to a prototype",
+        "rect": {
+          "x": 24,
+          "y": 691.078125,
+          "width": 342,
+          "height": 22.5,
+          "top": 691.078125,
+          "right": 366,
+          "bottom": 713.578125,
+          "left": 24
+        }
+      },
+      {
+        "text": "Bringing design and development closer",
+        "rect": {
+          "x": 24,
+          "y": 897.734375,
+          "width": 342,
+          "height": 22.5,
+          "top": 897.734375,
+          "right": 366,
+          "bottom": 920.234375,
+          "left": 24
+        }
+      },
+      {
+        "text": "Resume",
+        "rect": {
+          "x": 24,
+          "y": 1104.390625,
+          "width": 342,
+          "height": 22.5,
+          "top": 1104.390625,
+          "right": 366,
+          "bottom": 1126.890625,
+          "left": 24
+        }
+      },
+      {
+        "text": "Let’s worktogether.",
+        "rect": {
+          "x": 24,
+          "y": 1313.921875,
+          "width": 342,
+          "height": 111.34375,
+          "top": 1313.921875,
+          "right": 366,
+          "bottom": 1425.265625,
+          "left": 24
+        }
+      }
+    ]
+  },
+  "menu": {
+    "activeElement": {
+      "tag": "BUTTON",
+      "label": "Close menu"
+    },
+    "dialogText": "Alan Sahlan\nClose\n01\nWork\n02\nAbout\n03\nContact\n04\nResume\nComing soon\nLinkedIn\nGitHub\nBehance",
+    "inertMain": true,
+    "scrollHeight": 844,
+    "clientHeight": 844
+  },
+  "escape": {
+    "dialogClosed": true,
+    "focusRestored": true,
+    "mainInert": false
+  }
+}

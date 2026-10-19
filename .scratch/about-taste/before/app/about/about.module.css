@@ -1,0 +1,22 @@
+.heroActions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 3rem; margin-block-start: 2rem; }
+.heroAside { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; max-width: 50ch; margin-block-start: 1.5rem; color: var(--muted); font-size: .9375rem; line-height: 1.6; text-wrap: pretty; }
+.heroAside > span:first-child { flex: 0 1 auto; min-width: 0; }
+.heroAside > span:last-child { color: var(--cobalt); font-size: 1.375rem; flex: none; }
+.meetLink { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; font-size: .8125rem; line-height: 1.5; text-decoration: none; color: var(--muted); font-style: italic; }
+.meetLink svg { width: 52px; height: 36px; stroke: var(--cobalt); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.meetLink:focus-visible { outline-color: var(--cobalt); }
+.portraitFigure { position: relative; }
+.portraitAnnotation { display: flex; align-items: center; gap: .5rem; position: absolute; inset-block-end: calc(100% + .5rem); inset-inline-start: .25rem; font-size: .875rem; line-height: 1.5; font-style: italic; color: var(--cobalt); transform: rotate(-4deg); }
+.portraitAnnotation svg { width: 52px; height: 35px; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.portraitStamp { position: absolute; z-index: 1; inset-block-start: 18px; inset-inline-start: 18px; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 88px; height: 88px; padding: 12px; border: 1px dashed var(--cobalt); border-radius: 50%; background: var(--canvas); color: var(--cobalt); text-align: center; transform: rotate(-10deg); font-size: 8px; line-height: 1.35; letter-spacing: .04em; pointer-events: none; }
+.portraitStamp span { display: block; font-size: 23px; line-height: 1; margin-block: 3px; }
+.nowHeading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
+.nowHeading > h2 { flex: 1; }
+.currentTag { display: inline-flex; align-items: center; gap: .5rem; color: var(--muted); font-size: .6875rem; line-height: 1.5; font-style: italic; }
+.currentTag i { width: 6px; height: 6px; flex: none; border: 1px solid var(--cobalt); border-radius: 50%; }
+.workNote { position: relative; margin-block: 1.75rem 0; padding-inline-start: 1.25rem; border-inline-start: 2px solid var(--cobalt); }
+.workNote p { font-size: .9375rem; line-height: 1.6; text-wrap: pretty; }
+.workNote span { display: block; margin-block-start: .5rem; font-size: .6875rem; line-height: 1.5; color: var(--muted); font-style: italic; }
+@media (hover: hover) and (pointer: fine) { .meetLink:hover { color: var(--cobalt); } }
+@media (min-width: 47.5rem) and (min-height: 50rem) { .portraitFigure { position: sticky; align-self: start; inset-block-start: calc(var(--compact-nav-height) + 2rem); } }
+@media print { .portraitAnnotation, .portraitStamp, .meetLink { display: none; } }

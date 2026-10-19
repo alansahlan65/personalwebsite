@@ -1,0 +1,303 @@
+"use client";
+
+import Image from "next/image";
+import { useEffect, useId, useRef, useState, useSyncExternalStore, type CSSProperties } from "react";
+import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from "motion/react";
+import dialogueStyles from "./speech-bubble.module.css";
+import styles from "./hero-role-play.module.css";
+
+const ROLES = [
+  {
+    label: "Product Designer",
+    article: "a",
+    icon: "role-feather",
+    color: "var(--cobalt)",
+    eyes: "var(--canvas)",
+    shape: "M32 5 C41 4 48 8 53 15 C58 20 60 26 59 33 C61 41 55 47 49 52 C44 57 38 59 31 58 C24 59 17 56 12 50 C6 45 4 39 5 32 C3 25 7 18 12 13 C18 7 24 4 32 5 Z",
+  },
+  {
+    label: "Design Engineer",
+    article: "a",
+    icon: "role-monitor",
+    color: "#f5a623",
+    eyes: "var(--ink)",
+    shape: "M32 3 C36 3 43 9 49 12 C55 15 59 17 59 23 C59 28 58 34 58 40 C57 46 50 48 45 52 C40 55 35 60 30 59 C24 58 19 54 14 51 C8 47 5 46 5 39 C5 32 3 13 32 3 Z",
+  },
+  {
+    label: "Interaction Designer",
+    article: "an",
+    icon: "role-stars",
+    color: "#00a994",
+    eyes: "var(--canvas)",
+    shape: "M32 4 C39 4 40 14 46 14 C55 14 63 21 58 30 C54 35 55 35 55 41 C55 51 46 54 39 53 C34 61 23 61 19 52 C10 54 2 45 6 37 C0 28 6 18 15 17 C19 9 25 3 32 4 Z",
+  },
+] as const;
+
+const SPRING = { stiffness: 100, damping: 12, mass: 0.8 };
+const HINT = "Click the roles to find out what I do.";
+
+type ParticlePlacement = {
+  originX: number | null;
+  x: number;
+  y: number;
+  driftDuration: number;
+  rotationDuration: number;
+  phase: number;
+};
+
+const INITIAL_PLACEMENTS: ParticlePlacement[] = [
+  { originX: null, x: -48, y: -36, driftDuration: 10, rotationDuration: 44, phase: 0.2 },
+  { originX: null, x: 0, y: 36, driftDuration: 12, rotationDuration: 52, phase: 0.5 },
+  { originX: null, x: 48, y: -36, driftDuration: 11, rotationDuration: 48, phase: 0.8 },
+];
+
+function randomPlacements(roleIndex: number, width: number, height: number): ParticlePlacement[] {
+  const doubleAbove = roleIndex === 1 ? Math.random() > 0.65 : Math.random() > 0.35;
+  return [0, 1, 2].map((slot) => {
+    const x = slot === 0 ? 16 + Math.random() * 12 : slot === 1 ? 38 + Math.random() * 24 : 72 + Math.random() * 12;
+    const above = slot === 1 ? !doubleAbove : doubleAbove;
+    // A rotating 24px icon has a 17px radius, plus 2px of drift and 2–4px of text clearance.
+    const distance = height / 2 + 17 + 2 + 2 + Math.random() * 2;
+    return {
+      originX: width / 2,
+      x: (x / 100 - 0.5) * width,
+      y: above ? -distance : distance,
+      driftDuration: 9 + Math.random() * 5,
+      rotationDuration: 38 + Math.random() * 18,
+      phase: Math.random(),
+    };
+  });
+}
+
+function subscribeToReducedMotion(onChange: () => void) {
+  const query = window.matchMedia("(prefers-reduced-motion: reduce), (forced-colors: active)");
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+
+function getReducedMotionSnapshot() {
+  return window.matchMedia("(prefers-reduced-motion: reduce), (forced-colors: active)").matches;
+}
+
+function getReducedMotionServerSnapshot() {
+  return false;
+}
+
+export function HeroRolePlay() {
+  const [index, setIndex] = useState(0);
+  const [hintPinned, setHintPinned] = useState(false);
+  const [hintDismissed, setHintDismissed] = useState(false);
+  const [keyboardChange, setKeyboardChange] = useState(false);
+  const [placements, setPlacements] = useState(() => ROLES.map(() => INITIAL_PLACEMENTS));
+  const play = useRef<HTMLDivElement>(null);
+  const anchor = useRef<HTMLSpanElement>(null);
+  const roleButton = useRef<HTMLButtonElement>(null);
+  const hintId = useId();
+  const instructionId = useId();
+  const reducedMotion = useSyncExternalStore(
+    subscribeToReducedMotion,
+    getReducedMotionSnapshot,
+    getReducedMotionServerSnapshot,
+  );
+  const pointerX = useMotionValue(0);
+  const pointerY = useMotionValue(0);
+  const x = useSpring(pointerX, SPRING);
+  const y = useSpring(pointerY, SPRING);
+  const lean = useTransform(x, [-1, 1], [-7, 7]);
+  const bodyX = useTransform(x, [-1, 1], [-4, 4]);
+  const bodyY = useTransform(y, [-1, 1], [-3, 3]);
+  const eyeX = useTransform(x, [-1, 1], [-5, 5]);
+  const eyeY = useTransform(y, [-1, 1], [-4, 4]);
+  const bodyTransform = useMotionTemplate`translate3d(${bodyX}px, ${bodyY}px, 0) rotate(${lean}deg)`;
+  const eyeTransform = useMotionTemplate`translate3d(${eyeX}px, ${eyeY}px, 0)`;
+  const role = ROLES[index];
+
+  const randomize = (roleIndex: number) => {
+    const label = roleButton.current?.children[roleIndex] as HTMLElement | undefined;
+    if (!label) return;
+    const next = randomPlacements(roleIndex, label.offsetWidth, label.offsetHeight);
+    setPlacements((current) => current.map((layout, itemIndex) => itemIndex === roleIndex ? next : layout));
+  };
+
+  useEffect(() => {
+    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const root = play.current;
+    let inView = true;
+    let frame = 0;
+    let bounds: DOMRect | null = null;
+    let pointer: { x: number; y: number } | null = null;
+    const reset = () => {
+      cancelAnimationFrame(frame);
+      frame = 0;
+      pointer = null;
+      pointerX.set(0);
+      pointerY.set(0);
+    };
+    const measure = () => { bounds = null; };
+    const update = () => {
+      frame = 0;
+      if (!pointer || !anchor.current) return;
+      const rect = bounds ?? (bounds = anchor.current.getBoundingClientRect());
+      const dx = pointer.x - rect.left - rect.width / 2;
+      const dy = pointer.y - rect.top - rect.height / 2;
+      const distance = Math.max(150, Math.hypot(dx, dy));
+      pointerX.set(dx / distance);
+      pointerY.set(dy / distance);
+      pointer = null;
+    };
+    const track = (event: PointerEvent) => {
+      if (!inView || document.hidden || !finePointer.matches || reducedMotion || event.pointerType === "touch") return;
+      pointer = { x: event.clientX, y: event.clientY };
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    const onPointerOut = (event: PointerEvent) => {
+      if (!event.relatedTarget) reset();
+    };
+    const updateVisibility = () => {
+      root?.toggleAttribute("data-motion-paused", !inView || document.hidden);
+      if (!inView || document.hidden) reset();
+    };
+    const observer = typeof IntersectionObserver === "function" ? new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      updateVisibility();
+    }) : null;
+    if (root) observer?.observe(root);
+    const resize = typeof ResizeObserver === "function" ? new ResizeObserver(measure) : null;
+    if (root) resize?.observe(root);
+    root?.addEventListener("animationend", measure, true);
+    updateVisibility();
+    window.addEventListener("pointermove", track, { passive: true });
+    window.addEventListener("pointerout", onPointerOut, { passive: true });
+    window.addEventListener("blur", reset);
+    window.addEventListener("scroll", measure, { passive: true });
+    window.addEventListener("resize", measure);
+    document.fonts.addEventListener("loadingdone", measure);
+    finePointer.addEventListener("change", reset);
+    document.addEventListener("visibilitychange", updateVisibility);
+    return () => {
+      observer?.disconnect();
+      resize?.disconnect();
+      root?.removeEventListener("animationend", measure, true);
+      window.removeEventListener("pointermove", track);
+      window.removeEventListener("pointerout", onPointerOut);
+      window.removeEventListener("blur", reset);
+      window.removeEventListener("scroll", measure);
+      window.removeEventListener("resize", measure);
+      document.fonts.removeEventListener("loadingdone", measure);
+      finePointer.removeEventListener("change", reset);
+      document.removeEventListener("visibilitychange", updateVisibility);
+      reset();
+    };
+  }, [pointerX, pointerY, reducedMotion]);
+
+  return (
+    <div
+      className={styles.play} ref={play} data-keyboard-change={keyboardChange || undefined}
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          setHintPinned(false);
+          setHintDismissed(true);
+        }
+      }}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setHintDismissed(false);
+      }}
+    >
+      <div className={styles.blobRow}>
+        <span className={styles.blobAnchor} ref={anchor}>
+          <button
+            type="button"
+            className={styles.blobButton}
+            data-pointer-feedback="local"
+            aria-label="Show role instructions"
+            aria-describedby={instructionId}
+            aria-expanded={hintPinned}
+            aria-controls={hintId}
+            onPointerEnter={(event) => {
+              if (event.pointerType !== "touch") setHintDismissed(false);
+            }}
+            onClick={() => {
+              setHintPinned(!hintPinned);
+              setHintDismissed(hintPinned);
+            }}
+          >
+            <motion.span className={styles.blob} style={{ transform: reducedMotion ? "none" : bodyTransform }} aria-hidden="true">
+              <svg viewBox="0 0 64 64" className={styles.blobShape}>
+                <motion.path
+                  initial={false}
+                  animate={{ d: role.shape, fill: role.color }}
+                  transition={reducedMotion || keyboardChange ? { duration: 0 } : { type: "spring", duration: 0.5, bounce: 0.2 }}
+                />
+              </svg>
+              <motion.span className={styles.eyes} style={{ color: role.eyes, transform: reducedMotion ? "none" : eyeTransform }}>
+                <span /><span />
+              </motion.span>
+            </motion.span>
+          </button>
+        </span>
+        <span className={`${dialogueStyles.dialogue} ${dialogueStyles.leading} ${styles.hint}`} id={hintId} data-open={hintPinned || undefined} data-dismissed={hintDismissed || undefined} aria-hidden="true">
+          {HINT}
+        </span>
+      </div>
+
+      <p className={styles.line}>
+        <span>I am {role.article}</span>
+        <span className={styles.roleWrap}>
+          <button
+            type="button"
+            className={styles.roleButton}
+            data-pointer-feedback="local"
+            ref={roleButton}
+            onPointerEnter={(event) => {
+              if (event.pointerType !== "touch") randomize(index);
+            }}
+            onFocus={(event) => {
+              if (event.currentTarget.matches(":focus-visible")) randomize(index);
+            }}
+            onClick={(event) => {
+              const next = (index + 1) % ROLES.length;
+              setKeyboardChange(event.detail === 0);
+              randomize(next);
+              setIndex(next);
+              setHintPinned(false);
+            }}
+            aria-label={`${role.label}. Click to show ${ROLES[(index + 1) % ROLES.length].label}`}
+            aria-describedby={instructionId}
+          >
+            {ROLES.map((item, itemIndex) => (
+              <span className={styles.roleLabel} key={item.label} data-active={itemIndex === index} aria-hidden="true">
+                {item.label}
+              </span>
+            ))}
+          </button>
+          <span className={styles.confetti} aria-hidden="true">
+            {ROLES.map((item, itemIndex) => (
+              <span className={styles.iconGroup} key={item.icon} data-active={itemIndex === index}>
+                {placements[itemIndex].map((particle, particleIndex) => (
+                  <span
+                    className={styles.particle}
+                    key={particleIndex}
+                    style={{
+                      left: particle.originX === null ? "50%" : `${particle.originX}px`,
+                      "--particle-x": `${particle.x}px`,
+                      "--particle-y": `${particle.y}px`,
+                    } as CSSProperties}
+                  >
+                    <span className={styles.floatingIcon} style={{ animationDuration: `${particle.driftDuration}s`, animationDelay: `${-particle.phase * particle.driftDuration}s` }}>
+                      <Image
+                        src={`/images/${item.icon}.svg`} alt="" width={24} height={24} unoptimized loading="eager"
+                        style={{ animationDuration: `${particle.rotationDuration}s`, animationDelay: `${-particle.phase * particle.rotationDuration}s` }}
+                      />
+                    </span>
+                  </span>
+                ))}
+              </span>
+            ))}
+          </span>
+        </span>
+      </p>
+      <span className={styles.srOnly} id={instructionId}>{HINT}</span>
+      <span className={styles.srOnly} role="status" aria-live="polite" aria-atomic="true">I am {role.article} {role.label}.</span>
+    </div>
+  );
+}

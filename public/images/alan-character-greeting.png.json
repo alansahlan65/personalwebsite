@@ -1,0 +1,22 @@
+{
+  "source": "OpenAI built-in Image Gen",
+  "intent": "edit",
+  "createdDate": "2026-10-01",
+  "prompt": "Edit target: image 1, the existing registered full-body waving Alan voxel character. Image 2 is ONLY a reference for the cheerful facial expression and the other hand in a trouser pocket. Rework the hover greeting pose: give Alan the warm happy open-mouth smile from image 2, with a curved dark red mouth interior and a softly visible muted coral tongue, no teeth, smiling cheeks, slightly welcoming eyebrows, and friendly black blocky eyes with small white highlights. Put his LEFT hand, on the viewer's RIGHT, naturally into his trouser pocket with a bent elbow, just like image 2. His RIGHT hand on the viewer's LEFT remains raised in its existing open-palm wave. Change only that facial expression and the non-waving arm/hand pose. Preserve his existing recognizable face proportions, warm Indonesian skin tone, exact curtain-parted dark voxel hair silhouette, black collared shirt, gray linen pants, ivory Adidas Samba sneakers with charcoal stripes and muted gum soles. Preserve the waving arm exactly, and keep the entire body's torso, hip, leg, shoe and neck/collar pixel registration, scale, orientation, framing, soft lighting and low-contrast muted materials identical to image 1. Head and body fully front-facing, no body turn. Keep the same 1122x1402 transparent-alpha portrait canvas. Full body and complete shoes. No backdrop, white rectangle, speech bubble, text, decorative blue marks, label or watermark. This is a matched hover pose asset for the existing character, not a new design.",
+  "references": [
+    {
+      "role": "registered edit target",
+      "path": "public/images/alan-character-wave.png"
+    },
+    {
+      "role": "open-smile and pocket-hand reference",
+      "path": "C:/Users/DESKTO~1/AppData/Local/Temp/codex-clipboard-c3d742f2-3c88-4ae1-ac68-6f5685a00383.png"
+    }
+  ],
+  "original": "C:\\Users\\DESKTOP-IOT0021\\.codex\\generated_images\\01a0f526-4b45-7362-a5c0-a545d2a9003d\\exec-b85114b3-5c1f-430c-bd7f-1bbf3347f4de.png",
+  "shipping": "public/images/alan-character-greeting.png",
+  "width": 1122,
+  "height": 1402,
+  "hasAlpha": true,
+  "preparation": "Copied without raster edits; alpha preserved."
+}

@@ -1,0 +1,314 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "32px",
+      "lineHeight": "44.8px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "32px",
+      "lineHeight": "44.8px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 650,
+      "scrollWidth": 650,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "42.9px",
+      "lineHeight": "60.06px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 760,
+      "scrollWidth": 760,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "50.16px",
+      "lineHeight": "70.224px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "43.008px",
+      "lineHeight": "60.2112px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 850,
+      "scrollWidth": 850,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "47.6px",
+      "lineHeight": "66.64px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 1000,
+      "scrollWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "56px",
+      "lineHeight": "78.4px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "80.64px",
+      "lineHeight": "112.896px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "88px",
+      "lineHeight": "123.2px",
+      "sections": [
+        "A little about me",
+        "Where I am now",
+        "Where I'm heading"
+      ],
+      "badText": []
+    }
+  ],
+  "preferences": [
+    {
+      "mode": "text-200",
+      "width": 390,
+      "scrollWidth": 390,
+      "mainWidth": 342,
+      "headlineAnimation": "opening-copy"
+    },
+    {
+      "mode": "text-spacing",
+      "width": 390,
+      "scrollWidth": 390,
+      "mainWidth": 342,
+      "headlineAnimation": "opening-copy"
+    },
+    {
+      "mode": "rtl",
+      "width": 390,
+      "scrollWidth": 390,
+      "mainWidth": 342,
+      "headlineAnimation": "opening-copy"
+    },
+    {
+      "mode": "forced-colors",
+      "width": 390,
+      "scrollWidth": 390,
+      "mainWidth": 342,
+      "headlineAnimation": "none"
+    },
+    {
+      "mode": "reduced-motion",
+      "width": 390,
+      "scrollWidth": 390,
+      "mainWidth": 342,
+      "headlineAnimation": "none"
+    },
+    {
+      "mode": "css-zoom-200",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "mainWidth": 1152,
+      "headlineAnimation": "opening-copy"
+    }
+  ],
+  "keyboard": [
+    {
+      "name": "Let's talk",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 628.9375,
+      "bottom": 672.9375
+    },
+    {
+      "name": "View selected work",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 474.1875,
+      "bottom": 518.1875
+    },
+    {
+      "name": "CADIT ",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 818.9375,
+      "bottom": 862.9375
+    },
+    {
+      "name": "Download resumePDF",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 473.53125,
+      "bottom": 517.53125
+    },
+    {
+      "name": "Let’s worktogether.",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 220.3125,
+      "top": 679.71875,
+      "bottom": 900.03125
+    },
+    {
+      "name": "alansahlanwork@gmail.com",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 534.78125,
+      "bottom": 578.78125
+    },
+    {
+      "name": "LinkedIn",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 602.78125,
+      "bottom": 646.78125
+    },
+    {
+      "name": "GitHub",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 602.78125,
+      "bottom": 646.78125
+    },
+    {
+      "name": "Behance",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 602.78125,
+      "bottom": 646.78125
+    },
+    {
+      "name": "Download resume PDF",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 602.78125,
+      "bottom": 646.78125
+    },
+    {
+      "name": "Alan Sahlan",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 750.78125,
+      "bottom": 794.78125
+    },
+    {
+      "name": "Icons by Streamline",
+      "tag": "A",
+      "outline": "solid",
+      "outlineWidth": "2px",
+      "visible": true,
+      "height": 44,
+      "top": 831.78125,
+      "bottom": 875.78125
+    }
+  ],
+  "audits": [
+    {
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a[href$=\"/#work\"] > span[data-magnet-part=\"true\"]:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "errors": [],
+  "accessibilityTree": "- main:\n  - paragraph: About me\n  - paragraph: Product Designer Indonesia\n  - heading \"I design digital products, from the first question to the smallest interaction.\" [level=1]\n  - link \"Let's talk\":\n    - /url: /contact\n  - region \"A little about me\":\n    - heading \"A little about me\" [level=2]\n    - paragraph: I'm Alan, a Product Designer based in Indonesia.\n    - paragraph: My background is in user research, wireframing, and prototyping for web and mobile. I like making sense of a problem, then working through how an interface should look and behave.\n    - paragraph: That curiosity extends to how things are made. I want to understand what happens beyond the mockup, and stay involved as an idea becomes something people can use.\n    - link \"View selected work\":\n      - /url: /#work\n  - figure \"Alan Sahlan Based in Indonesia\":\n    - img \"Alan Sahlan\"\n    - text: Alan Sahlan Based in Indonesia\n  - region \"Where I am now\":\n    - heading \"Where I am now\" [level=2]\n    - paragraph:\n      - link \"CADIT\":\n        - /url: https://www.cadit.com/\n    - paragraph: UI/UX Designer\n    - paragraph:\n      - text: Since\n      - time: October 2025\n    - paragraph: I'm building a component library from the existing design system and creating UI mockups for developers working with international clients.\n    - paragraph: Through CADIT, that work includes Daikin Singapore, Thai Honda, and SP Group Singapore.\n    - link \"Download resume, PDF\":\n      - /url: /resume/alan-sahlan-resume.pdf\n      - text: Download resume PDF\n  - region \"Where I'm heading\":\n    - heading \"Where I'm heading\" [level=2]\n    - paragraph: Design is my starting point. There's more I want to learn.\n    - paragraph: Lately, I've been learning to build interfaces in code. It helps me understand technical constraints, explain design decisions, and refine the details as they take shape.\n    - paragraph: Product design is still at the heart of what I do. Design engineering is a direction I'm growing into, with room to keep exploring.",
+  "noJavaScript": "content and native destinations present"
+}

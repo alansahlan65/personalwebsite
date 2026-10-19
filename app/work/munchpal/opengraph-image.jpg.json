@@ -11,5 +11,8 @@
   "verified_on": "2026-09-28",
   "width": 1440,
   "height": 810,
-  "preparation": "Original supplied PDF page 1 rendered at 75% scale, then JPEG-encoded at quality 88. No synthetic edits."
+  "preparation": "Original supplied PDF page 1 rendered at 75% scale, then JPEG-encoded at quality 88. No synthetic edits.",
+  "sha256": "9b1c32c07ec76fcf57bcef816bfaf5db25067ed81a9e9ba97cce5b2c6b5c9f9f",
+  "decoded_pixel_sha256": "e3ee8ed6e798942e8ac490e30785b2afec94def04198b8b17912ece007ccee56",
+  "origin_metadata_added": "2026-10-02, original image pixels unchanged"
 }

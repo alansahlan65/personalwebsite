@@ -1,0 +1,38 @@
+[
+  {
+    "route": "/",
+    "device": "desktop",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "route": "/about",
+    "device": "desktop",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "route": "/work/aurelia",
+    "device": "desktop",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "route": "/",
+    "device": "mobile",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "route": "/about",
+    "device": "mobile",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "route": "/work/aurelia",
+    "device": "mobile",
+    "errors": [],
+    "overflow": false
+  }
+]

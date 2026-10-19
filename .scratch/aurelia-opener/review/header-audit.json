@@ -1,0 +1,66 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "layout": {
+      "documentWidth": 390,
+      "viewport": 390,
+      "videoWidth": 342,
+      "videoHeight": 192.375,
+      "ratio": 1.7777777777777777,
+      "paused": true,
+      "poster": "http://127.0.0.1:3001/demos/aurelia/poster.webp",
+      "theme": "light"
+    },
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "layout": {
+      "documentWidth": 390,
+      "viewport": 390,
+      "videoWidth": 342,
+      "videoHeight": 192.375,
+      "ratio": 1.7777777777777777,
+      "paused": true,
+      "poster": "http://127.0.0.1:3001/demos/aurelia/poster.webp",
+      "theme": "dark"
+    },
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "layout": {
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "videoWidth": 1296,
+      "videoHeight": 729,
+      "ratio": 1.7777777777777777,
+      "paused": true,
+      "poster": "http://127.0.0.1:3001/demos/aurelia/poster.webp",
+      "theme": "light"
+    },
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "layout": {
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "videoWidth": 1296,
+      "videoHeight": 729,
+      "ratio": 1.7777777777777777,
+      "paused": true,
+      "poster": "http://127.0.0.1:3001/demos/aurelia/poster.webp",
+      "theme": "dark"
+    },
+    "violations": [],
+    "errors": []
+  }
+]

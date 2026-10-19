@@ -1,0 +1,88 @@
+.notebook { margin-block: 2.25rem 1.25rem; max-width: calc(100% + 24px); margin-inline: -12px; padding-inline: 12px; overflow-x: clip; }
+.notebookHeader { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; margin-block-end: 1.75rem; font-size: .8125rem; line-height: 1.5; }
+.noteLabel { color: var(--cobalt); font-style: italic; }
+.noteHint { color: var(--muted); font-size: .75rem; }
+.deck { position: relative; display: grid; isolation: isolate; margin-inline: 10px; }
+.note {
+  grid-area: 1 / 1; min-width: 0; padding: 1.25rem 1.5rem 1rem;
+  border: 1px solid var(--divider); background: var(--canvas); box-shadow: 0 4px 12px rgb(32 34 31 / 4%);
+  touch-action: pan-y; transform-origin: 50% 65%; overflow-wrap: anywhere;
+}
+.dragHandle { cursor: grab; touch-action: pan-y; }
+.dragHandle:active { cursor: grabbing; }
+.note:not([data-front]) { pointer-events: none; }
+.note:not([data-front]) > * { visibility: hidden; }
+.noteTop { display: flex; justify-content: space-between; gap: 1rem; font-size: .6875rem; line-height: 1.5; color: var(--muted); }
+.noteTop span:last-child { color: var(--cobalt); font-variant-numeric: tabular-nums; }
+.note h3 { margin-block-start: .75rem; font-size: clamp(1.25rem, 1.6vw, 1.6rem); font-weight: 500; line-height: 1.3; letter-spacing: -.03em; text-wrap: balance; }
+.note p { font-size: .875rem; line-height: 1.6; text-wrap: pretty; }
+.noteFooter { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-block-start: 1rem; border-block-start: 1px solid var(--divider); padding-block-start: .6rem; color: var(--muted); font-size: .6875rem; line-height: 1.5; font-style: italic; }
+.noteFooter span { color: var(--cobalt); font-size: 1.125rem; font-style: normal; }
+.tape { position: absolute; z-index: 5; inset-block-start: -14px; inset-inline-start: calc(50% - 32px); width: 64px; height: 25px; background: var(--canvas); opacity: .85; border: 1px solid var(--divider); transform: rotate(-5deg); pointer-events: none; }
+.movieScene, .gameScene, .historyScene { min-height: 150px; margin-block: 1.25rem; }
+.filmStrip { display: grid; grid-template-columns: 12px minmax(0, 1fr) 12px; gap: 8px; max-width: 280px; border-block: 1px solid var(--cobalt); padding-block: 6px; transform: rotate(-2deg); }
+.filmStrip > svg { display: block; width: 100%; height: 75px; stroke: var(--cobalt); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.filmPerforations { display: flex; flex-direction: column; justify-content: space-between; border-inline: 1px dashed var(--cobalt); }
+.sceneControls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem; margin-block-start: .25rem; font-size: .6875rem; line-height: 1.5; color: var(--muted); }
+.sceneControls button, .resetGame, .turnPage { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; padding: .5rem 0; border: 0; background: none; color: var(--cobalt); font-size: .6875rem; line-height: 1.5; cursor: pointer; }
+.sceneControls button:focus-visible, .resetGame:focus-visible, .turnPage:focus-visible, .gamePixels button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
+.gameScore { display: block; font-size: .6875rem; line-height: 1.5; color: var(--muted); }
+.gamePixels { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-block-start: .75rem; }
+.gamePixels button { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border: 1px dashed var(--divider); color: var(--cobalt); background: none; cursor: pointer; }
+.gamePixels button svg { width: 26px; height: 26px; stroke: currentColor; stroke-width: 1.5; }
+.gamePixels button[aria-pressed="true"] { background: var(--cobalt); color: var(--canvas); border-color: var(--cobalt); }
+.controller { width: 86px; height: 56px; flex: none; margin-inline-start: auto; stroke: var(--muted); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; transform: rotate(8deg); }
+.book { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1fr); width: min(100%, 270px); min-height: 104px; transform: rotate(-3deg); }
+.bookLeft, .bookRight { position: relative; padding: 14px; border: 1px solid var(--divider); background: var(--canvas); }
+.bookLeft { display: flex; flex-direction: column; gap: 7px; border-start-start-radius: 10px; border-inline-end: none; }
+.bookLeft i { display: block; height: 1px; width: 100%; background: var(--divider); }
+.bookLeft i:nth-child(3) { width: 70%; }
+.bookLeft b { margin-block-start: auto; font-size: .5625rem; line-height: 1.5; font-weight: 400; color: var(--muted); }
+.bookRight { display: grid; place-items: center; color: var(--cobalt); font-size: .875rem; line-height: 1.4; letter-spacing: -.02em; border-start-end-radius: 10px; }
+.pageCorner { position: absolute; inset-block-end: -1px; inset-inline-end: -1px; width: 14px; height: 14px; border-block-start: 1px solid var(--divider); border-inline-start: 1px solid var(--divider); background: var(--canvas); }
+.turnPage { margin-inline-start: .5rem; }
+.noteControls { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-block-start: 1.15rem; }
+.noteChoices { display: flex; flex-wrap: wrap; gap: .25rem; }
+.noteChoices button, .nextNote { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-height: 44px; padding: .5rem .75rem; border: 0; background: none; color: var(--muted); font-size: .8125rem; line-height: 1.5; cursor: pointer; }
+.noteChoices button span { font-size: .625rem; font-variant-numeric: tabular-nums; }
+.noteChoices [aria-pressed="true"] { color: var(--cobalt); text-decoration: underline; text-underline-offset: .3em; }
+.nextNote { flex: none; min-width: 44px; border: 1px solid var(--divider); border-radius: 50%; font-size: 1.125rem; color: var(--cobalt); }
+.noteControls button:focus-visible, .curiosityTrack button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
+.curiosity { margin-block: 1.75rem; padding: 1.25rem 0; border-block: 1px solid var(--divider); }
+.curiosityLabel { display: block; font-size: .8125rem; line-height: 1.5; font-style: italic; color: var(--muted); }
+.curiosityTrack { position: relative; display: flex; align-items: center; justify-content: flex-start; gap: clamp(.5rem, 4vw, 1.5rem); margin-block: .75rem; }
+.curiosityLine { position: absolute; inset-inline: 0; inset-block-start: 50%; border-block-start: 1px dashed var(--divider); z-index: -1; }
+.curiosityTrack button { display: flex; flex-direction: column; align-items: center; gap: .5rem; min-height: 44px; padding: .5rem; border: 0; background: var(--canvas); color: var(--muted); font-size: .8125rem; line-height: 1.5; cursor: pointer; }
+.curiosityTrack [aria-pressed="true"] { color: var(--cobalt); }
+.pencil, .brackets { display: grid; place-items: center; width: 64px; height: 58px; border: 1px solid var(--divider); font-size: 2rem; transform: rotate(-5deg); border-radius: 40% 48% 42% 50%; }
+.brackets { transform: rotate(5deg); font: 1.25rem ui-monospace, Consolas, monospace; border-radius: 45% 38% 50% 43%; }
+.curiosityTrack [aria-pressed="true"] :is(.pencil, .brackets) { border-color: var(--cobalt); }
+.curiosityArrow { font-size: 1.5rem; color: var(--cobalt); }
+.curiosity > p { min-height: 3em; font-size: .875rem; line-height: 1.5; color: var(--muted); max-width: 38ch; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.staticNotes { font-size: .875rem; line-height: 1.6; }
+.staticNotes p { margin-block-start: 1rem; }
+@media (max-width: 25rem) {
+  .note { padding-inline: 1rem; }
+  .noteChoices button { padding-inline: .5rem; }
+  .controller { width: 60px; margin-inline-start: 0; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .noteControls button:hover, .curiosityTrack button:hover { color: var(--cobalt); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .note { transform: none !important; }
+  .note:not([data-front]) { visibility: hidden; }
+  .dragHandle { cursor: default; }
+}
+@media (forced-colors: active) {
+  .note, .tape, .nextNote, .filmStrip, .filmPerforations, .bookLeft, .bookRight, .gamePixels button, .pencil, .brackets { border-color: CanvasText; box-shadow: none; }
+  .note { background: Canvas; }
+  .noteChoices [aria-pressed="true"], .curiosityTrack [aria-pressed="true"] { color: Highlight; }
+}
+@media print {
+  .noteControls, .noteHint, .tape, .curiosity { display: none; }
+  .deck { display: block; margin: 0; }
+  .note { transform: none !important; margin-block-start: 1rem; box-shadow: none; }
+  .note:not([data-front]) { display: none; }
+}

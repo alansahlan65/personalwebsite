@@ -1,0 +1,19 @@
+{
+  "source": "OpenAI built-in Image Gen",
+  "intent": "edit",
+  "createdDate": "2026-10-01",
+  "direction": "bottom-right",
+  "prompt": "Edit target: the supplied full-body front-facing Alan voxel caricature. Produce ONE matching directional head pose for a pointer-following character. Turn only the head about 30 degrees toward the viewer's RIGHT and tilt the face downward about 22 degrees, looking at the LOWER RIGHT of the screen. Combine a clear right three-quarter face with a lowered chin and visible upper surfaces of the blocky hair. The nose aims lower-right, the screen-left ear is more visible. No sideways head roll. This must be a genuine 3D change in the direction the head faces, with different visible face/hair/ear surfaces, NOT a tilt or warp of the flat image, NOT moving only the pupils. Preserve Alan's exact recognizable face, curtain-parted dark blocky hair, eyebrows, warm skin tone, small closed-mouth smile, matte voxel materials, soft muted lighting and colors. Preserve the original body exactly: torso, collar, black shirt, relaxed arms/hands, gray linen trousers and ivory black-striped Samba sneakers remain frontal, identical and in exactly the same pixel positions and scale. Rotate the head around its attachment at the neck, keeping the base of the neck/collar fixed. Keep the identical 1122x1402 portrait canvas, subject registration, full body, framing and transparent alpha background. Keep the head fully above the collar with no shoulder changes. No new pose, no gaze text, labels, arrows, speech bubbles, backdrop, watermark, cast shadow or extra objects.",
+  "references": [
+    {
+      "role": "edit target and strict identity/registration reference",
+      "path": "public/images/alan-character-default.png"
+    }
+  ],
+  "original": "C:\\Users\\DESKTOP-IOT0021\\.codex\\generated_images\\01a0f526-4b45-7362-a5c0-a545d2a9003d\\exec-046665f1-6314-4e18-a60f-16ac926093a5.png",
+  "shipping": "public/images/alan-head-bottom-right.png",
+  "width": 1122,
+  "height": 1402,
+  "hasAlpha": true,
+  "preparation": "Copied without raster edits. Only the head/neck region is displayed through a CSS mask."
+}

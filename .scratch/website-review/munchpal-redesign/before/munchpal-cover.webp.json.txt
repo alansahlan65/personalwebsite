@@ -1,0 +1,16 @@
+{
+  "source": "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view",
+  "source_sha256": "1da12eb7deda7feefb5434f5aaa32ec7e68272ed6f02d518f19f34204a02d8e1",
+  "pdf_page": 1,
+  "pdf_clip_points": [
+    0,
+    0,
+    1920,
+    1080
+  ],
+  "verified_on": "2026-09-28",
+  "width": 1440,
+  "height": 810,
+  "preparation": "Original supplied PDF rendered at 75% scale and encoded as WebP quality 88. The clip is a source-page crop; no synthetic interface or new content was added.",
+  "evidence": "Original design presentation. Screens are designed states, not verified production software or measured outcomes."
+}

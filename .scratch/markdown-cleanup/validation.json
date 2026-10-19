@@ -1,0 +1,344 @@
+{
+  "reviewed": "2026-10-19",
+  "scope": "All workspace Markdown including hidden/ignored project snapshots; excludes dependencies, Git internals and Next build output",
+  "before": {
+    "count": 300,
+    "bytes": 3184450
+  },
+  "after": {
+    "count": 54,
+    "bytes": 285877
+  },
+  "deleted": 251,
+  "updated": 49,
+  "created": 5,
+  "retained": 0,
+  "localLinks": 294,
+  "errors": [],
+  "files": [
+    {
+      "file": "plans/README.md",
+      "bytes": 557,
+      "hash": "028808b6bbb0cb44243f3a15119decaabf30882e2ba23c737e40a56f6d1345b0",
+      "action": "updated"
+    },
+    {
+      "file": "CONTEXT.md",
+      "bytes": 1198,
+      "hash": "6b6ec12d28fb798886029f4eab0dd20d82158f9cfed34c3163d6f00ebdae1e6e",
+      "action": "updated"
+    },
+    {
+      "file": "DESIGN.md",
+      "bytes": 15632,
+      "hash": "1c4bec2938f0c78dc052ebc7fda7b10ff142b01eb82ccc67fdfb75a5443147f5",
+      "action": "updated"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2422,
+      "hash": "5a5206db472625c96a1c8749cdf3fdc801b502fc052cf007c616e8aa3702863e",
+      "action": "updated"
+    },
+    {
+      "file": "docs/site-themes.md",
+      "bytes": 1476,
+      "hash": "fa57f4f4ad73c85a419d4ddac99efe41bdce750e1fbde0f3696c9a94bdd4fca3",
+      "action": "updated"
+    },
+    {
+      "file": "docs/selected-work.md",
+      "bytes": 1880,
+      "hash": "13eac5b8896f0fa996de7068cdce0c2ad76d3d5fb7de06817655a0658697dfdf",
+      "action": "updated"
+    },
+    {
+      "file": "docs/README.md",
+      "bytes": 2448,
+      "hash": "c69d0f619398c561ae47248e9032abff31252d5c551f6ee7932d0481b97ecc7b",
+      "action": "created"
+    },
+    {
+      "file": "docs/quality.md",
+      "bytes": 5430,
+      "hash": "f9146493eb5191570b9ba2bb5d5a46bed531cdb67e88e71fa98dec49569b61f5",
+      "action": "created"
+    },
+    {
+      "file": "docs/project-entry.md",
+      "bytes": 1452,
+      "hash": "75a89fab56d1dde9525e6c9c800244f14cb15b8dacb1cfe1c27b40a3f509f9d1",
+      "action": "updated"
+    },
+    {
+      "file": "docs/portfolio-content.md",
+      "bytes": 2961,
+      "hash": "0581d135063cdc309b9dac0c6041c015686500ecc40c62bc92e8d3528c3de17a",
+      "action": "updated"
+    },
+    {
+      "file": "docs/pointer-interactions.md",
+      "bytes": 2149,
+      "hash": "32a2859a2d4c438ba860809dea7a4a5db7239f2be693811404c897bf7aec61af",
+      "action": "updated"
+    },
+    {
+      "file": "docs/paylecta-opener.md",
+      "bytes": 2168,
+      "hash": "4a898befd0137b47040707089425ebe2068ec1b3c05801255f95b16e36339d15",
+      "action": "updated"
+    },
+    {
+      "file": "docs/paylecta-opener-creative-brief.md",
+      "bytes": 2203,
+      "hash": "042811c699cf29eb77ae7ef1a1cc555277ef9f06e5ecbd9b0a84d08fd7293c19",
+      "action": "updated"
+    },
+    {
+      "file": "docs/paylecta-case-study.md",
+      "bytes": 2043,
+      "hash": "3e19e14704474f0fe58b09ddfa57f140ee2bafd8562bc77dd46fbbb2157dc224",
+      "action": "updated"
+    },
+    {
+      "file": "docs/pawfriend-case-study.md",
+      "bytes": 1936,
+      "hash": "5f41f5fb8cc88c29d30cb8021db2b50353e8c668bc828721d589929971ffcd4a",
+      "action": "updated"
+    },
+    {
+      "file": "docs/page-transitions.md",
+      "bytes": 2217,
+      "hash": "0b7efcf3d99f7a5f132a064f1a46258b5cf3edd550eefc70070af68251006e5b",
+      "action": "updated"
+    },
+    {
+      "file": "docs/munchpal-opener.md",
+      "bytes": 2166,
+      "hash": "9e1b406056f11b5dcc67bfeb1da0f03ca59e561cfe8772c34b03a19ae2e4bf69",
+      "action": "updated"
+    },
+    {
+      "file": "docs/munchpal-opener-creative-brief.md",
+      "bytes": 2210,
+      "hash": "7db47a78662b76831133f6a93ab4057a702ec1f662d2955cdc5624b074e6a291",
+      "action": "updated"
+    },
+    {
+      "file": "docs/munchpal-english-refresh.md",
+      "bytes": 1493,
+      "hash": "db711447f9c0bcb4df905e6489af1d3116fec20707dbdee2cbba46fd097849ac",
+      "action": "updated"
+    },
+    {
+      "file": "docs/munchpal-case-study.md",
+      "bytes": 2829,
+      "hash": "d744b7951a0ff6cbf2b3f0d7b828226346ea6c01756a078849f3363c33fe88f9",
+      "action": "updated"
+    },
+    {
+      "file": "docs/graph.md",
+      "bytes": 1634,
+      "hash": "6d7d882b2e943ade62c3ea226c54aca0563a32cca11729fcbc2fe59620a6d6c2",
+      "action": "created"
+    },
+    {
+      "file": "docs/figma-project-details.md",
+      "bytes": 2032,
+      "hash": "b295c1934458ef746d7ecf4046a67819cbd44ec14ec7f40b0c8070d5d0f4aa89",
+      "action": "updated"
+    },
+    {
+      "file": "docs/contact-page.md",
+      "bytes": 1646,
+      "hash": "22ee2cc3cae866d35d71331f9a1bc3dee2437b3ff3f556f23a377760951b673d",
+      "action": "updated"
+    },
+    {
+      "file": "docs/component-system.md",
+      "bytes": 2158,
+      "hash": "c0a76cfcef4d08b59eb56f519b7d790d6513b859d2e90cfd34c99f1ce37fae0f",
+      "action": "updated"
+    },
+    {
+      "file": "docs/case-media.md",
+      "bytes": 1916,
+      "hash": "e3209c3530dd3fed6a50aaee785af48bafece128051f18623b7791fe244226ac",
+      "action": "updated"
+    },
+    {
+      "file": "docs/aurelia-opener.md",
+      "bytes": 2371,
+      "hash": "69758fcb0b9871e52ed6910e5cd6684928248d35c19b43219cf5fac6a9ace7aa",
+      "action": "updated"
+    },
+    {
+      "file": "docs/aurelia-case-study.md",
+      "bytes": 2125,
+      "hash": "5ed1c7c10a0b5f10482e03546853235018fe632a1f273fecc0fe0dec194708f1",
+      "action": "updated"
+    },
+    {
+      "file": "docs/assets.md",
+      "bytes": 4627,
+      "hash": "126af3a311f42b9a82ed8aff2a77dac02ba8634fb6ad457244a7ffa823efcbb6",
+      "action": "updated"
+    },
+    {
+      "file": "docs/alan-character.md",
+      "bytes": 4952,
+      "hash": "51bd453b547f13ad4a05267e3edbf13de580178cfaf05b738c672e9e8f771a84",
+      "action": "updated"
+    },
+    {
+      "file": "graphify-out/reflections/LESSONS.md",
+      "bytes": 338,
+      "hash": "979fd0cb646bb0f77cf9be0d08725dc4b2a38250bf0f57e07e1c7df140716b74",
+      "action": "updated"
+    },
+    {
+      "file": "AGENTS.md",
+      "bytes": 2705,
+      "hash": "22df2f4ddee0cbfed23e39a75d1bcd9cd9800a4140d8fb2e0a489a635d882920",
+      "action": "updated"
+    },
+    {
+      "file": "portfolio-prd-halyard.md",
+      "bytes": 2924,
+      "hash": "6d0393fed2f31356395b3b5cf52c21b13d87d253ccb3369e4bd0b01f0e57d20e",
+      "action": "updated"
+    },
+    {
+      "file": "PRODUCT.md",
+      "bytes": 7471,
+      "hash": "26f9751b6d356ac4db327e7e640c50f76ed389c735e3d238647600860624e04b",
+      "action": "updated"
+    },
+    {
+      "file": "docs/about.md",
+      "bytes": 2221,
+      "hash": "95785c2ba1a6290d75bd642021f116c5d1e8db673a94cea3ebf50d77beef4493",
+      "action": "created"
+    },
+    {
+      "file": "docs/agents/triage-labels.md",
+      "bytes": 665,
+      "hash": "7b4a4546c364dfbe9e1267effa6be817d2e135577991addc3b33ca0b175fd7d7",
+      "action": "updated"
+    },
+    {
+      "file": "docs/agents/issue-tracker.md",
+      "bytes": 1675,
+      "hash": "f4058299859035c29509cddd2b70bcef274f974ecb948a441f0d1c868699fcd8",
+      "action": "updated"
+    },
+    {
+      "file": "docs/agents/domain.md",
+      "bytes": 753,
+      "hash": "566bcce7f4cd6e1b78442281c85cb32551388be59aa5c3e14cb47a7c2167422b",
+      "action": "updated"
+    },
+    {
+      "file": "public/demos/paylecta/README.md",
+      "bytes": 1542,
+      "hash": "7e12e296c3587fb2d2cfc92c7d94098746672eb211f755afc077de1f02949afe",
+      "action": "updated"
+    },
+    {
+      "file": "graphify-out/GRAPH_REPORT.md",
+      "bytes": 164623,
+      "hash": "9fe596794ca98511f5c8b8ea0e2c8b6f7eef9f8f9d36652d0d2f0caa5eec369f",
+      "action": "updated"
+    },
+    {
+      "file": "graphify-out/memory/query_20261019_034015_cd7870b2_scan_all_markdown__remove_outdated_files__and_upda.md",
+      "bytes": 1157,
+      "hash": "0682bae05ffc0dda94f7a25742f09af9b888a0a4b6d52d6e5d3770101fd2532b",
+      "action": "created"
+    },
+    {
+      "file": "public/demos/munchpal/README.md",
+      "bytes": 1432,
+      "hash": "a2e8096eed9a224711686586d7130c48ecc57749fe2138d9e6c0b9509f3ab4e0",
+      "action": "updated"
+    },
+    {
+      "file": ".scratch/aurelia-opener/style-brief.md",
+      "bytes": 900,
+      "hash": "6098cd46927fa4fbf8d0c44c6d92e6a1509f63068d12825d3a6a0f9be6766ec3",
+      "action": "updated"
+    },
+    {
+      "file": ".scratch/aurelia-opener/source-audit.md",
+      "bytes": 946,
+      "hash": "528af3fdccd77d96389d3a0674e28cdfb2c5cf3c94bae0ba9c950c19eedea46d",
+      "action": "updated"
+    },
+    {
+      "file": "public/demos/aurelia/SOURCE.md",
+      "bytes": 2432,
+      "hash": "aa532458651feb0f2cc8eba311d278f6d9b84f863bb4745043367c01774e47ab",
+      "action": "updated"
+    },
+    {
+      "file": "public/demos/aurelia/README.md",
+      "bytes": 1863,
+      "hash": "7a8050e3b684306a5a3e67c45d75bf22af01268004b6ec4b6fe0bed6c74dc525",
+      "action": "updated"
+    },
+    {
+      "file": "public/demos/aurelia/DESIGN.md",
+      "bytes": 3936,
+      "hash": "852c683dded32ede3fec7fb5326200a9976feb3256bc6a6da399416456b773fd",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/selected-work.md",
+      "bytes": 905,
+      "hash": "e3b69a77858ea2db34c94b8482af271b5a83260f821437298401f889c2ba3828",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-work-paylecta-page-tsx.md",
+      "bytes": 980,
+      "hash": "5cdf8b380a13a8b270d87846b86c3713eb62e396984177285f08137c5c18c58b",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-work-pawfriend-page-tsx.md",
+      "bytes": 916,
+      "hash": "6fc14329a580e3dfee84ba8261c28474347b39ba166e9d3cf20337272e0754f6",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-work-munchpal-page-tsx.md",
+      "bytes": 1007,
+      "hash": "2c34f5a3432216a902ca3bf6be486921c9e37684417dba4fead18642b2e3e96e",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-work-aurelia-page-tsx.md",
+      "bytes": 982,
+      "hash": "1a5ce4f1e9ab19854a475cf7c645468791aef54db34872ba701d28e82a87de2d",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-page-tsx.md",
+      "bytes": 1024,
+      "hash": "6a38df3b314a18257fc3c204d2a7bf695ed0be3f5e61b423d1ba021ac6777832",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-components-case-media-sequence-tsx.md",
+      "bytes": 1025,
+      "hash": "318b381933642109b8e066e37830a774c1026dbabdac3faec65069388f10bbde",
+      "action": "updated"
+    },
+    {
+      "file": ".impeccable/surfaces/app-about-page-tsx.md",
+      "bytes": 1124,
+      "hash": "4eff017c6233d8dcd3851038178968cbca4854be04a010ad5b2eef6ea96da4f3",
+      "action": "updated"
+    }
+  ]
+}

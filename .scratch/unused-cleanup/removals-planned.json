@@ -1,0 +1,97 @@
+[
+  {
+    "file": "public/images/figma/munchpal/cover.webp",
+    "bytes": 229122,
+    "sha256": "39e8a8665767682df3f69afe04ed3de56f2768a265e11cedfea107a1aa31d865"
+  },
+  {
+    "file": "public/images/figma/paylecta/cover.webp",
+    "bytes": 104620,
+    "sha256": "667e13b515935564845a1118a1878865683c737f4a9c2191fd77ad0c64e2aafb"
+  },
+  {
+    "file": "public/images/figma/munchpal/messages.webp",
+    "bytes": 338708,
+    "sha256": "679545ae8defbcf0c7fe246d70e026a95f0ab0b65bd61c825d6ea8db0ee2c63d"
+  },
+  {
+    "file": "public/images/figma/munchpal/notifications.webp",
+    "bytes": 268658,
+    "sha256": "817c546f3a72889bd9c92ced5a95082f22511762e141603ad1304f28878f3b5c"
+  },
+  {
+    "file": "public/images/figma/munchpal/request-accepted.webp",
+    "bytes": 4210,
+    "sha256": "f774a625b7b6f8dad7b0904794f6e32571199491c84194867c4542e98a8a5f80"
+  },
+  {
+    "file": "public/images/figma/munchpal/request-confirmation.webp",
+    "bytes": 17736,
+    "sha256": "7f435997176f0b58be466055fc835012d4937c96cf1b1f2ec05b7893661dc426"
+  },
+  {
+    "file": "public/images/figma/paylecta/dashboard-mockup.webp",
+    "bytes": 713986,
+    "sha256": "8dcdcdb00db5bf0bf6ad1c21a7d563b9be0d54d9281776d2b38bca808f29305e"
+  },
+  {
+    "file": "public/demos/aurelia/assets/hero.webp",
+    "bytes": 289260,
+    "sha256": "895bfec322ac2fd7be1db165e4cdd601ba74417e7fb73cf6f0b4c18c2e0f0b2d"
+  },
+  {
+    "file": "app/fonts/PlusJakartaSans-Variable.ttf",
+    "bytes": 176288,
+    "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8"
+  },
+  {
+    "file": "public/images/figma/munchpal/accept.svg",
+    "bytes": 49847,
+    "sha256": "40701802c0c9a4f83ddbb51288e5bf50581bce151961b1eaf3c45df94a5be333"
+  },
+  {
+    "file": "public/images/figma/munchpal/cover.svg",
+    "bytes": 1675470,
+    "sha256": "dabf907812723ea3bf8690fc5098d35ee0d097907cee88173acbc081cb857f52"
+  },
+  {
+    "file": "public/images/figma/paylecta/cover.svg",
+    "bytes": 2260280,
+    "sha256": "ece8b41c6096cddb094702bb284d409629bd340030dd8ddc3821f048d37f4788"
+  },
+  {
+    "file": "scripts/about-adapt-review.cjs",
+    "bytes": 6831,
+    "sha256": "5d145c6d133cba65589737353f88cc67a8d72f1adbfb411a30a49913802370a7"
+  },
+  {
+    "file": "scripts/about-delight-review.cjs",
+    "bytes": 4468,
+    "sha256": "a31b8b8373d0860210e9dcb3cf444a04d8c6a5c182e108c47b9058982878e276"
+  },
+  {
+    "file": "scripts/component-reference.cjs",
+    "bytes": 880,
+    "sha256": "b0615a08b11cef3db07fee747b6e51f269494d9cb66a2d95c18d002b55013e71"
+  },
+  {
+    "file": "scripts/build-aurelia-design-tour.mjs",
+    "bytes": 3946,
+    "sha256": "5a1c5fae1f16860e3cd7c888f61ab46632ca06170d6f0f61b34d83e75e0316ea"
+  },
+  {
+    "file": "scripts/render-aurelia-design-tour.mjs",
+    "bytes": 6882,
+    "sha256": "ee53e644e397a92b88bb285d3789604df2e0a18a58fe6351a1a53a79232eaf14"
+  },
+  {
+    "file": "scripts/render-aurelia-opener.mjs",
+    "bytes": 140,
+    "sha256": "df84adada1b4b99678cf3c9ff9bbacf3c3bf20a934fc23ae9e1313aab39155ea"
+  },
+  {
+    "file": "scripts/build-aurelia-opener.mjs",
+    "bytes": 134,
+    "sha256": "3ab23eb21fe7a0cc310f1878365cc811043b9217fab6e4edbd1f452c3d949153"
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "variant": "final",
+  "standalone": false,
+  "viewport": {
+    "x": 72,
+    "y": 576.890625,
+    "width": 1296,
+    "height": 729
+  },
+  "shots": [
+    {
+      "label": "opening",
+      "sampledFrames": 299,
+      "lostFrames": 0,
+      "droppedPercent": 0,
+      "p95FrameMs": 16.7,
+      "renderer": {
+        "LayoutCount": 2,
+        "LayoutDuration": 0.0003,
+        "RecalcStyleCount": 303,
+        "RecalcStyleDuration": 0.0754,
+        "ScriptDuration": 0.0849,
+        "TaskDuration": 0.395
+      }
+    },
+    {
+      "label": "hero-to-gallery",
+      "sampledFrames": 516,
+      "lostFrames": 23,
+      "droppedPercent": 4.27,
+      "p95FrameMs": 16.8,
+      "renderer": {
+        "LayoutCount": 190,
+        "LayoutDuration": 0.0201,
+        "RecalcStyleCount": 520,
+        "RecalcStyleDuration": 0.1413,
+        "ScriptDuration": 0.1542,
+        "TaskDuration": 1.1277
+      }
+    },
+    {
+      "label": "date-camera",
+      "sampledFrames": 239,
+      "lostFrames": 0,
+      "droppedPercent": 0,
+      "p95FrameMs": 16.7,
+      "renderer": {
+        "LayoutCount": 120,
+        "LayoutDuration": 0.0142,
+        "RecalcStyleCount": 243,
+        "RecalcStyleDuration": 0.0616,
+        "ScriptDuration": 0.0782,
+        "TaskDuration": 0.3997
+      }
+    },
+    {
+      "label": "revision",
+      "sampledFrames": 299,
+      "lostFrames": 0,
+      "droppedPercent": 0,
+      "p95FrameMs": 16.7,
+      "renderer": {
+        "LayoutCount": 114,
+        "LayoutDuration": 0.012,
+        "RecalcStyleCount": 303,
+        "RecalcStyleDuration": 0.0742,
+        "ScriptDuration": 0.0902,
+        "TaskDuration": 0.4569
+      }
+    },
+    {
+      "label": "closing-and-loop",
+      "sampledFrames": 418,
+      "lostFrames": 1,
+      "droppedPercent": 0.24,
+      "p95FrameMs": 16.8,
+      "renderer": {
+        "LayoutCount": 58,
+        "LayoutDuration": 0.0064,
+        "RecalcStyleCount": 422,
+        "RecalcStyleDuration": 0.1418,
+        "ScriptDuration": 0.135,
+        "TaskDuration": 0.7292
+      }
+    }
+  ],
+  "errors": []
+}

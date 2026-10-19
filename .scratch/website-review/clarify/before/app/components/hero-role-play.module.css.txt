@@ -1,0 +1,255 @@
+.play {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
+.blobRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 60px;
+}
+
+.blobAnchor {
+  display: inline-flex;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  margin-left: -5px;
+}
+
+.blobButton {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 140ms var(--project-title-ease);
+}
+
+.blobButton:active:not(:focus-visible) { transform: scale(0.97); }
+
+.blob {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.blobShape {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.eyes {
+  position: absolute;
+  display: flex;
+  gap: 9px;
+  color: var(--canvas);
+  transition: color 180ms ease;
+}
+
+.eyes > span {
+  width: 5px;
+  height: 9px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.hint {
+  position: relative;
+  z-index: 2;
+  max-width: 29ch;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-5px, 0, 0) scale(0.97);
+  transform-origin: left center;
+  pointer-events: none;
+  transition: opacity 180ms var(--project-title-ease), transform 180ms var(--project-title-ease), visibility 0s 180ms;
+}
+
+.hint[data-open]:not([data-dismissed]),
+.blobRow:has(.blobButton:focus-visible) .hint:not([data-dismissed]),
+.play:has(.roleButton:focus-visible) .hint:not([data-dismissed]) {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+.roleWrap {
+  position: relative;
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.roleButton {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  display: grid;
+  align-items: center;
+  padding: 0.2em 0;
+  min-height: 44px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--cobalt);
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.roleLabel {
+  grid-area: 1 / 1;
+  justify-self: start;
+  max-width: 100%;
+  background: var(--canvas);
+  opacity: 0;
+  transform: translate3d(0, 45%, 0);
+  pointer-events: none;
+  transition: opacity 180ms var(--project-title-ease), transform 240ms var(--project-title-ease);
+}
+
+.roleLabel[data-active="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.roleButton:active { opacity: 0.8; }
+
+.roleButton:focus-visible,
+.blobButton:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 4px;
+}
+
+.confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.iconGroup {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 125ms var(--project-title-ease);
+}
+
+.particle {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) scale(0.95);
+  transition: opacity 125ms var(--project-title-ease), transform 500ms var(--project-title-ease);
+}
+
+.particle:nth-child(2) { transition-delay: 35ms; }
+.particle:nth-child(3) { transition-delay: 65ms; }
+
+.floatingIcon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  animation: confetti-drift 11s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.floatingIcon img {
+  animation: confetti-rotate 48s linear infinite;
+  animation-play-state: paused;
+}
+
+.particle:nth-child(2) img { width: 19px; height: 19px; }
+.particle:nth-child(3) img { width: 22px; height: 22px; }
+
+@keyframes confetti-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  35% { transform: translate3d(2px, -2px, 0); }
+  70% { transform: translate3d(-2px, 2px, 0); }
+}
+
+@keyframes confetti-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.roleWrap:has(.roleButton:focus-visible) .iconGroup[data-active="true"] { opacity: 1; }
+.roleWrap:has(.roleButton:focus-visible) .iconGroup[data-active="true"] .particle { opacity: 1; transform: translate3d(var(--particle-x), var(--particle-y), 0); }
+
+@media (hover: hover) and (pointer: fine) {
+  .blobRow:has(.blobButton:hover) .hint:not([data-dismissed]) { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .roleWrap:has(.roleButton:hover) .iconGroup[data-active="true"] { opacity: 1; }
+  .roleWrap:has(.roleButton:hover) .iconGroup[data-active="true"] .particle { opacity: 1; transform: translate3d(var(--particle-x), var(--particle-y), 0); }
+  .roleWrap:has(.roleButton:hover) .iconGroup[data-active="true"] :is(.floatingIcon, img) { animation-play-state: running; }
+}
+
+.play[data-motion-paused] :is(.floatingIcon, .floatingIcon img) { animation-play-state: paused; }
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.play[data-keyboard-change] .roleLabel,
+.play:has(:focus-visible) :is(.hint, .particle, .iconGroup) { transition-duration: 0s; transition-delay: 0s; }
+.blobButton:focus-visible { transition: none; }
+
+@media (max-width: 650px) {
+  .play { margin-top: 1.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint { transform: none; }
+  .roleLabel { transform: none; }
+  .hint, .roleLabel, .particle, .iconGroup { transition: opacity 100ms ease; }
+  .eyes { transition: none; }
+  .blobButton { transition: none; }
+  .blobButton:active { transform: none; }
+  .floatingIcon, .floatingIcon img { animation: none; }
+}
+
+@media (forced-colors: active) {
+  .hint, .roleLabel, .particle, .iconGroup, .eyes, .blobButton { transition: none; }
+  .hint, .roleLabel { transform: none; }
+  .floatingIcon, .floatingIcon img { animation: none; }
+  .blobShape path { fill: ButtonText; }
+  .eyes { color: Canvas !important; }
+  .roleButton { color: LinkText; }
+  .roleButton:focus-visible, .blobButton:focus-visible { outline-color: Highlight; }
+}

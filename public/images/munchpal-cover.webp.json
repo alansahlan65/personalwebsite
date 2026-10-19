@@ -12,5 +12,10 @@
   "width": 1440,
   "height": 810,
   "preparation": "Original supplied PDF rendered at 75% scale and encoded as WebP quality 88. The clip is a source-page crop; no synthetic interface or new content was added.",
-  "evidence": "Original design presentation. Screens are designed states, not verified production software or measured outcomes."
+  "evidence": "Original design presentation. Screens are designed states, not verified production software or measured outcomes.",
+  "prompt": "Origin: original Munchpal design presentation supplied by Alan Sahlan. Source PDF SHA256 1da12eb7deda7feefb5434f5aaa32ec7e68272ed6f02d518f19f34204a02d8e1. PDF page 1. Public file munchpal-cover.webp. Source URL https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view. Original page rendering and source-page crop, no synthetic interface content.",
+  "createdAt": "2026-10-02T08:59:46.234Z",
+  "sha256": "2497a7b849846c67ce9cf4f5df5a4c8b8a247af5651033dbb7502725a70ff915",
+  "decoded_pixel_sha256": "4a4433845f8321db4f45dd6ea0956fd9bdc0a1e1af9ba2123e528a9e72f3e3e3",
+  "origin_metadata_added": "2026-10-02, original image pixels unchanged"
 }

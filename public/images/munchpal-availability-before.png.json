@@ -1,0 +1,14 @@
+{
+  "figure": "6.45",
+  "method": "Original embedded PNG with origin metadata added. Decoded image pixels unchanged; no image generation or reconstruction.",
+  "evidence_limit": "Documents a design revision; does not measure its individual effect on task time or completion",
+  "height": 834,
+  "source_sha256": "0c667c2310143b02b58fc4f2d092fe063377da3d5710aef62ab40e5c70a57751",
+  "source_part": "word/media/image120.png",
+  "width": 388,
+  "origin": "Original Munchpal design record supplied by Alan Sahlan on 2 October 2026",
+  "state": "Earlier food list",
+  "sha256": "44624bf351f20160c2fb4729fa0bd03729e1affaf040901ae6dda3b5b99eea8b",
+  "original_embedded_png_sha256": "1548f99473bc4ea0ec97941099738a853513cf68250f8066ea9f5823561d8168",
+  "decoded_pixel_sha256": "d2e96254f9515f2d931a6cba4164e4a0deec6e33202014a38df62ddf8123cb11"
+}

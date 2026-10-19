@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "paylecta",
+    "source": "customers-add.svg",
+    "preview": "customers-add.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 1957579,
+    "previewBytes": 1446616
+  },
+  {
+    "slug": "paylecta",
+    "source": "customers.svg",
+    "preview": "customers.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 1767542,
+    "previewBytes": 1256579
+  },
+  {
+    "slug": "paylecta",
+    "source": "dashboard.svg",
+    "preview": "dashboard.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 1413385,
+    "previewBytes": 989162
+  },
+  {
+    "slug": "paylecta",
+    "source": "design-system.svg",
+    "preview": "design-system.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 4585810,
+    "previewBytes": 1453057
+  },
+  {
+    "slug": "paylecta",
+    "source": "invoice-editor.svg",
+    "preview": "invoice-editor.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 2657197,
+    "previewBytes": 1146888
+  },
+  {
+    "slug": "paylecta",
+    "source": "invoice-overdue.svg",
+    "preview": "invoice-overdue.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 734098,
+    "previewBytes": 593038
+  },
+  {
+    "slug": "munchpal",
+    "source": "availability-after.svg",
+    "preview": "availability-after.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 3716723,
+    "previewBytes": 1939141
+  },
+  {
+    "slug": "munchpal",
+    "source": "availability-before.svg",
+    "preview": "availability-before.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 3715756,
+    "previewBytes": 1938174
+  },
+  {
+    "slug": "munchpal",
+    "source": "conversation.svg",
+    "preview": "conversation.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 510929,
+    "previewBytes": 429477
+  },
+  {
+    "slug": "munchpal",
+    "source": "flow.svg",
+    "preview": "flow.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 1619484,
+    "previewBytes": 573202
+  },
+  {
+    "slug": "munchpal",
+    "source": "food-list.svg",
+    "preview": "food-list.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 3702510,
+    "previewBytes": 1928320
+  },
+  {
+    "slug": "munchpal",
+    "source": "home.svg",
+    "preview": "home.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 15941041,
+    "previewBytes": 3878083
+  },
+  {
+    "slug": "munchpal",
+    "source": "pickup-status.svg",
+    "preview": "pickup-status.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 975369,
+    "previewBytes": 935809
+  },
+  {
+    "slug": "munchpal",
+    "source": "request-status.svg",
+    "preview": "request-status.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 730971,
+    "previewBytes": 638216
+  },
+  {
+    "slug": "aurelia",
+    "source": "areas.svg",
+    "preview": "areas.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 4766200,
+    "previewBytes": 905369
+  },
+  {
+    "slug": "aurelia",
+    "source": "collection.svg",
+    "preview": "collection.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 12440770,
+    "previewBytes": 2097873
+  },
+  {
+    "slug": "aurelia",
+    "source": "hero-dark.svg",
+    "preview": "hero-dark.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 6496643,
+    "previewBytes": 910565
+  },
+  {
+    "slug": "aurelia",
+    "source": "hero.svg",
+    "preview": "hero.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 3493567,
+    "previewBytes": 632284
+  },
+  {
+    "slug": "aurelia",
+    "source": "holiday-rhythm.svg",
+    "preview": "holiday-rhythm.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 4946621,
+    "previewBytes": 891986
+  },
+  {
+    "slug": "aurelia",
+    "source": "residence.svg",
+    "preview": "residence.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 8759248,
+    "previewBytes": 1503050
+  },
+  {
+    "slug": "aurelia",
+    "source": "standards.svg",
+    "preview": "standards.preview.svg",
+    "bitmapEncoding": "WebP quality 90, original dimensions",
+    "sourceBytes": 3550690,
+    "previewBytes": 1048663
+  }
+]

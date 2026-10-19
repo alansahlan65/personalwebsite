@@ -1,0 +1,26 @@
+[
+  {
+    "time": 0,
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "duration": 1000,
+    "easing": "cubic-bezier(0.23, 1, 0.32, 1)"
+  },
+  {
+    "time": 240,
+    "transform": "matrix(1, 0, 0, 1, 91.8932, 0)",
+    "duration": 1000,
+    "easing": "cubic-bezier(0.23, 1, 0.32, 1)"
+  },
+  {
+    "time": 480,
+    "transform": "matrix(1, 0, 0, 1, 116.229, 0)",
+    "duration": 1000,
+    "easing": "cubic-bezier(0.23, 1, 0.32, 1)"
+  },
+  {
+    "time": 1000,
+    "transform": "matrix(1, 0, 0, 1, 121.078, 0)",
+    "duration": 1000,
+    "easing": "cubic-bezier(0.23, 1, 0.32, 1)"
+  }
+]

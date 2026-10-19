@@ -5,8 +5,9 @@ import { usePathname, useRouter } from "next/navigation";
 import { flushSync } from "react-dom";
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useRef, type ComponentProps, type ReactNode } from "react";
 import { STAIRS_MOTION } from "../lib/stairs-motion";
+import { removeSessionValue } from "../lib/session-storage";
 
-type NavigationOptions = { scroll?: boolean; replace?: boolean };
+type NavigationOptions = { scroll?: boolean; replace?: boolean; instant?: boolean };
 type Destination = { href: string; pathname: string; options: NavigationOptions; historyEvent?: PopStateEvent };
 type Phase = "idle" | "covering" | "covered" | "revealing";
 type Direction = "forward" | "back";
@@ -19,12 +20,14 @@ const PAGE_TRAVEL_SCALE = (PAGE_MOTION_DURATION_MS - 2 * (STAIRS_MOTION.count - 
 const NavigationContext = createContext<((href: string, options: NavigationOptions) => boolean) | null>(null);
 
 function linkDirection(from: string, to: string): Direction {
+  // Returning from Contact to About follows the same sweep as returning Home.
+  if (from === "/contact" && to === "/about") return "back";
   const depth = (path: string) => path === "/" ? 0 : path.startsWith("/work/") ? 2 : 1;
   return depth(to) < depth(from) ? "back" : "forward";
 }
 
 function prepareNavigation() {
-  // Unlock an open menu while the curtain completely covers it.
+  // Unlock an open menu before committing the destination.
   flushSync(() => window.dispatchEvent(new Event("portfolio:before-navigation")));
 }
 
@@ -147,8 +150,32 @@ export function NavigationTransition({ children }: { children: ReactNode }) {
 
   const navigate = useCallback((href: string, options: NavigationOptions) => {
     const destination = new URL(href, window.location.href);
-    if (destination.origin !== window.location.origin || window.matchMedia("(forced-colors: active)").matches) return false;
-    if (destination.pathname === window.location.pathname && phaseRef.current === "idle") return false;
+    if (destination.origin !== window.location.origin) return false;
+    if (options.instant) {
+      // Keyboard and assistive activation cancel any pointer curtain and let
+      // Next navigate immediately, retaining its native link/history behavior.
+      stopMotion();
+      pendingRef.current = null;
+      setPhase("idle");
+    }
+    if (destination.pathname === "/" && !destination.hash) removeSessionValue("selected-work-return-pending");
+    if (destination.pathname === window.location.pathname && phaseRef.current === "idle") {
+      if (destination.pathname === "/" && !destination.hash) {
+        // Home also returns to the top when the homepage is already open.
+        prepareNavigation();
+        if (destination.href !== window.location.href) {
+          if (options.replace) router.replace(destination.pathname + destination.search, { scroll: false });
+          else router.push(destination.pathname + destination.search, { scroll: false });
+        }
+        window.scrollTo(0, 0);
+        document.querySelector<HTMLElement>("main h1")?.focus({ preventScroll: true });
+        return true;
+      }
+      // An identical link should keep the current page and its history entry intact.
+      // New hashes and search parameters still use Next's native navigation.
+      return !destination.hash && destination.search === window.location.search && destination.hash === window.location.hash;
+    }
+    if (options.instant || !Element.prototype.animate || window.matchMedia("(forced-colors: active)").matches) return false;
     if (destination.pathname !== committedPathRef.current) router.prefetch(destination.pathname + destination.search);
     if (phaseRef.current !== "covering" && phaseRef.current !== "covered") {
       directionRef.current = linkDirection(committedPathRef.current, destination.pathname);
@@ -159,7 +186,7 @@ export function NavigationTransition({ children }: { children: ReactNode }) {
       void animateCurtain(true).then((complete) => { if (complete) navigateCovered(); });
     }
     return true;
-  }, [animateCurtain, navigateCovered, router]);
+  }, [animateCurtain, navigateCovered, router, setPhase, stopMotion]);
 
   useLayoutEffect(() => {
     const historyPosition: unknown = window.history.state?.[HISTORY_POSITION];
@@ -180,7 +207,7 @@ export function NavigationTransition({ children }: { children: ReactNode }) {
     function onPopState(event: PopStateEvent) {
       if (replayingHistoryRef.current) return;
       if (window.location.pathname === committedPathRef.current && !pendingRef.current?.historyEvent) return;
-      if (!event.state || window.matchMedia("(forced-colors: active)").matches) return;
+      if (!event.state || !Element.prototype.animate || window.matchMedia("(forced-colors: active)").matches) return;
       event.stopImmediatePropagation();
       const position: unknown = event.state[HISTORY_POSITION];
       directionRef.current = typeof position === "number" && position !== historyPositionRef.current
@@ -220,13 +247,17 @@ export function NavigationTransition({ children }: { children: ReactNode }) {
   </NavigationContext.Provider>;
 }
 
-export function TransitionLink({ href, onNavigate, scroll, replace, ...props }: Omit<ComponentProps<typeof NextLink>, "href"> & { href: string }) {
+export function TransitionLink({ href, onClick, onNavigate, scroll, replace, ...props }: Omit<ComponentProps<typeof NextLink>, "href"> & { href: string }) {
   const navigate = useContext(NavigationContext);
-  return <NextLink {...props} href={href} scroll={scroll} replace={replace} onNavigate={(event) => {
+  const instantNavigation = useRef(false);
+  return <NextLink {...props} href={href} scroll={scroll} replace={replace} onClick={(event) => {
+    instantNavigation.current = event.detail === 0;
+    onClick?.(event);
+  }} onNavigate={(event) => {
     let prevented = false;
     onNavigate?.({ preventDefault() { prevented = true; event.preventDefault(); } });
     if (prevented) return;
-    if (navigate?.(href, { scroll, replace })) event.preventDefault();
+    if (navigate?.(href, { scroll, replace, instant: instantNavigation.current })) event.preventDefault();
     else if (new URL(href, window.location.href).pathname !== window.location.pathname) prepareNavigation();
   }} />;
 }

@@ -1,0 +1,122 @@
+[
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 12,
+    "snippet": "font-size: clamp(3rem, 8.5vw, 7.75rem) has fluid endpoints 3rem and 7.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 69,
+    "snippet": "font-size: clamp(2rem, 3.7vw, 3.75rem) has fluid endpoints 2rem and 3.75rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 94,
+    "snippet": "font-size: clamp(1.4rem, 2vw, 2rem) has fluid endpoints 1.4rem and 2rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.4rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 124,
+    "snippet": "font-size: clamp(1.75rem, 2.6vw, 2.65rem) has fluid endpoints 1.75rem and 2.65rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 161,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 179,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 202,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 227,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 239,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+    "line": 332,
+    "snippet": "font-size: .875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": ".875rem"
+  }
+]

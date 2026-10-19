@@ -1,0 +1,28 @@
+{
+  "variant": "no-blur",
+  "standalone": true,
+  "viewport": {
+    "x": 0,
+    "y": 95,
+    "width": 1440,
+    "height": 810
+  },
+  "shots": [
+    {
+      "label": "date-camera",
+      "sampledFrames": 239,
+      "lostFrames": 0,
+      "droppedPercent": 0,
+      "p95FrameMs": 16.8,
+      "renderer": {
+        "LayoutCount": 119,
+        "LayoutDuration": 0.0123,
+        "RecalcStyleCount": 242,
+        "RecalcStyleDuration": 0.0624,
+        "ScriptDuration": 0.1013,
+        "TaskDuration": 0.3193
+      }
+    }
+  ],
+  "errors": []
+}

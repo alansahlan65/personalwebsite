@@ -1,0 +1,131 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "audience": "Residents",
+      "theme": "light",
+      "width": 390,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        4544,
+        2410
+      ],
+      "rendered": [
+        310,
+        164.40625
+      ]
+    },
+    {
+      "audience": "Volunteers",
+      "theme": "light",
+      "width": 390,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        3248,
+        1894
+      ],
+      "rendered": [
+        310,
+        180.765625
+      ]
+    },
+    {
+      "audience": "Residents",
+      "theme": "dark",
+      "width": 390,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        4544,
+        2410
+      ],
+      "rendered": [
+        310,
+        164.40625
+      ]
+    },
+    {
+      "audience": "Volunteers",
+      "theme": "dark",
+      "width": 390,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        3248,
+        1894
+      ],
+      "rendered": [
+        310,
+        180.765625
+      ]
+    },
+    {
+      "audience": "Residents",
+      "theme": "light",
+      "width": 1440,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        4544,
+        2410
+      ],
+      "rendered": [
+        1208,
+        640.671875
+      ]
+    },
+    {
+      "audience": "Volunteers",
+      "theme": "light",
+      "width": 1440,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        3248,
+        1894
+      ],
+      "rendered": [
+        1208,
+        704.40625
+      ]
+    },
+    {
+      "audience": "Residents",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        4544,
+        2410
+      ],
+      "rendered": [
+        1208,
+        640.671875
+      ]
+    },
+    {
+      "audience": "Volunteers",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "overflow": 0,
+      "natural": [
+        3248,
+        1894
+      ],
+      "rendered": [
+        1208,
+        704.40625
+      ]
+    }
+  ],
+  "motion": {
+    "flowDuration": "0.25s",
+    "flowEase": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "themeDuration": "0.25s",
+    "themeEase": "cubic-bezier(0.23, 1, 0.32, 1)"
+  }
+}

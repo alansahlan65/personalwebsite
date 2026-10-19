@@ -1,0 +1,51 @@
+{
+  "round": "before",
+  "captures": [
+    ".scratch/selected-work-cover/before/default-1440.png",
+    ".scratch/selected-work-cover/before/aurelia-expanded-1440.png",
+    ".scratch/selected-work-cover/before/paylecta-expanded-1440.png",
+    ".scratch/selected-work-cover/before/pawfriend-expanded-1440.png",
+    ".scratch/selected-work-cover/before/munchpal-expanded-1440.png",
+    ".scratch/selected-work-cover/before/default-719.png",
+    ".scratch/selected-work-cover/before/aurelia-expanded-719.png",
+    ".scratch/selected-work-cover/before/default-390.png"
+  ],
+  "metrics": [
+    {
+      "slug": "aurelia",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "paylecta",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "munchpal",
+      "width": 1440,
+      "imageWidth": 1216,
+      "imageHeight": 405.328125,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "aurelia",
+      "width": 719,
+      "imageWidth": 594.625,
+      "imageHeight": 216.21875,
+      "documentWidth": 719
+    }
+  ],
+  "errors": []
+}

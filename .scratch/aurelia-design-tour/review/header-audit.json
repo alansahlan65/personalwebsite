@@ -1,0 +1,42 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "paused": true,
+    "currentTime": 0,
+    "poster": "http://127.0.0.1:3000/demos/aurelia/poster.webp",
+    "overflow": false,
+    "bounds": "{\"x\":24,\"y\":457.484375,\"width\":342,\"height\":192.375,\"top\":457.484375,\"right\":366,\"bottom\":649.859375,\"left\":24}"
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "paused": true,
+    "currentTime": 0,
+    "poster": "http://127.0.0.1:3000/demos/aurelia/poster.webp",
+    "overflow": false,
+    "bounds": "{\"x\":24,\"y\":457.484375,\"width\":342,\"height\":192.375,\"top\":457.484375,\"right\":366,\"bottom\":649.859375,\"left\":24}"
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "errors": [],
+    "paused": true,
+    "currentTime": 0,
+    "poster": "http://127.0.0.1:3000/demos/aurelia/poster.webp",
+    "overflow": false,
+    "bounds": "{\"x\":72,\"y\":270.890625,\"width\":1296,\"height\":729,\"top\":270.890625,\"right\":1368,\"bottom\":999.890625,\"left\":72}"
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "errors": [],
+    "paused": true,
+    "currentTime": 0,
+    "poster": "http://127.0.0.1:3000/demos/aurelia/poster.webp",
+    "overflow": false,
+    "bounds": "{\"x\":72,\"y\":270.890625,\"width\":1296,\"height\":729,\"top\":270.890625,\"right\":1368,\"bottom\":999.890625,\"left\":72}"
+  }
+]

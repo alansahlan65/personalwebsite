@@ -1,0 +1,150 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "documentWidth": 1440,
+    "errors": [],
+    "geometry": [
+      {
+        "source": "/images/figma/aurelia/hero.preview.svg",
+        "width": 1912,
+        "height": 948,
+        "displayed": 1296
+      },
+      {
+        "source": "/images/figma/aurelia/holiday-rhythm.preview.svg",
+        "width": 1912,
+        "height": 1247,
+        "displayed": 632
+      },
+      {
+        "source": "/images/figma/aurelia/areas.preview.svg",
+        "width": 1912,
+        "height": 1332,
+        "displayed": 632
+      },
+      {
+        "source": "/images/figma/aurelia/collection.preview.svg",
+        "width": 1912,
+        "height": 1575,
+        "displayed": 1296
+      },
+      {
+        "source": "/images/figma/aurelia/residence.preview.svg",
+        "width": 1912,
+        "height": 1349,
+        "displayed": 1296
+      },
+      {
+        "source": "/images/figma/aurelia/standards.preview.svg",
+        "width": 1912,
+        "height": 1830,
+        "displayed": 739.203125
+      },
+      {
+        "source": "/images/figma/aurelia/request-dates.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 632
+      },
+      {
+        "source": "/images/figma/aurelia/request-preferences.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 632
+      },
+      {
+        "source": "/images/figma/aurelia/request-contact.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 632
+      },
+      {
+        "source": "/images/figma/aurelia/request-review.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 632
+      },
+      {
+        "source": "/images/figma/aurelia/hero-dark.preview.svg",
+        "width": 1912,
+        "height": 948,
+        "displayed": 677.609375
+      }
+    ]
+  },
+  {
+    "name": "phone",
+    "width": 390,
+    "documentWidth": 390,
+    "errors": [],
+    "geometry": [
+      {
+        "source": "/images/figma/aurelia/hero.preview.svg",
+        "width": 1912,
+        "height": 948,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/holiday-rhythm.preview.svg",
+        "width": 1912,
+        "height": 1247,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/areas.preview.svg",
+        "width": 1912,
+        "height": 1332,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/collection.preview.svg",
+        "width": 1912,
+        "height": 1575,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/residence.preview.svg",
+        "width": 1912,
+        "height": 1349,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/standards.preview.svg",
+        "width": 1912,
+        "height": 1830,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/request-dates.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/request-preferences.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/request-contact.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/request-review.svg",
+        "width": 700,
+        "height": 946,
+        "displayed": 342
+      },
+      {
+        "source": "/images/figma/aurelia/hero-dark.preview.svg",
+        "width": 1912,
+        "height": 948,
+        "displayed": 342
+      }
+    ]
+  }
+]

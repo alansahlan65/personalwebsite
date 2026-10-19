@@ -1,0 +1,968 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "sections": [
+      {
+        "name": "AlanSahlan.",
+        "padding": [
+          "24px",
+          "24px"
+        ],
+        "rect": {
+          "top": 152,
+          "bottom": 683.4375
+        }
+      },
+      {
+        "name": "Selected work",
+        "padding": [
+          "32px",
+          "40px"
+        ],
+        "rect": {
+          "top": 739.4375,
+          "bottom": 2152.5625
+        }
+      },
+      {
+        "name": "About",
+        "padding": [
+          "48px",
+          "72px"
+        ],
+        "rect": {
+          "top": 2240.5625,
+          "bottom": 2528.375
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "AlanSahlan.",
+        "to": "Selected work",
+        "gap": 56
+      },
+      {
+        "from": "Selected work",
+        "to": "About",
+        "gap": 88
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 129
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "sections": [
+      {
+        "name": "Hi, I'm Alan.",
+        "padding": [
+          "0px",
+          "48px"
+        ],
+        "rect": {
+          "top": 149.453125,
+          "bottom": 793.078125
+        }
+      },
+      {
+        "name": "What I do",
+        "padding": [
+          "40px",
+          "40px"
+        ],
+        "rect": {
+          "top": 883.578125,
+          "bottom": 1493.296875
+        }
+      },
+      {
+        "name": "Learning by building",
+        "padding": [
+          "40px",
+          "40px"
+        ],
+        "rect": {
+          "top": 1574.296875,
+          "bottom": 2105.65625
+        }
+      },
+      {
+        "name": "Little trivia",
+        "padding": [
+          "40px",
+          "0px"
+        ],
+        "rect": {
+          "top": 2206.65625,
+          "bottom": 2581.796875
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Hi, I'm Alan.",
+        "to": "What I do",
+        "gap": 90.5
+      },
+      {
+        "from": "What I do",
+        "to": "Learning by building",
+        "gap": 81
+      },
+      {
+        "from": "Learning by building",
+        "to": "Little trivia",
+        "gap": 101
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 121
+  },
+  {
+    "route": "/contact",
+    "width": 390,
+    "sections": [
+      {
+        "name": "Let’s worktogether.",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 176,
+          "bottom": 500.5
+        }
+      },
+      {
+        "name": "Prepare an email",
+        "padding": [
+          "24px",
+          "0px"
+        ],
+        "rect": {
+          "top": 565.5,
+          "bottom": 1379.0625
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Let’s worktogether.",
+        "to": "Prepare an email",
+        "gap": 65
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 123.390625
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 390,
+    "sections": [
+      {
+        "name": "Aurelia",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 176,
+          "bottom": 1239.1875
+        }
+      },
+      {
+        "name": "Inside the concept",
+        "padding": [
+          "32px",
+          "32px"
+        ],
+        "rect": {
+          "top": 92,
+          "bottom": 3506.46875
+        }
+      },
+      {
+        "name": "Project scope and supporting detail",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 3603.46875,
+          "bottom": 3876.640625
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Aurelia",
+        "to": "Inside the concept",
+        "gap": -1147.1875
+      },
+      {
+        "from": "Inside the concept",
+        "to": "Project scope and supporting detail",
+        "gap": 97
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 121
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 390,
+    "sections": [
+      {
+        "name": "PawFriend",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 176,
+          "bottom": 1253.3125
+        }
+      },
+      {
+        "name": "From browsing to a first visit",
+        "padding": [
+          "32px",
+          "32px"
+        ],
+        "rect": {
+          "top": 92,
+          "bottom": 3881.390625
+        }
+      },
+      {
+        "name": "Project scope and supporting detail",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 3483.671875,
+          "bottom": 3783.234375
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "PawFriend",
+        "to": "From browsing to a first visit",
+        "gap": -1161.3125
+      },
+      {
+        "from": "From browsing to a first visit",
+        "to": "Project scope and supporting detail",
+        "gap": -397.71875
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 22.84375
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 390,
+    "sections": [
+      {
+        "name": "Munchpal",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 168,
+          "bottom": 1178.046875
+        }
+      },
+      {
+        "name": "Two groups, two different jobs",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 1242.046875,
+          "bottom": 1594.984375
+        }
+      },
+      {
+        "name": "Keep bulk donations on their own path",
+        "padding": [
+          "0px",
+          "32px"
+        ],
+        "rect": {
+          "top": 1683.984375,
+          "bottom": 2222.203125
+        }
+      },
+      {
+        "name": "A request starts with a listing",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 2334.203125,
+          "bottom": 4740.578125
+        }
+      },
+      {
+        "name": "Give each request a next step",
+        "padding": [
+          "48px",
+          "80px"
+        ],
+        "rect": {
+          "top": 4852.578125,
+          "bottom": 6875.53125
+        }
+      },
+      {
+        "name": "What I changed, and why",
+        "padding": [
+          "0px",
+          "64px"
+        ],
+        "rect": {
+          "top": 6971.53125,
+          "bottom": 9165.265625
+        }
+      },
+      {
+        "name": "What testing showed",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 9293.265625,
+          "bottom": 9649.421875
+        }
+      },
+      {
+        "name": "Original prototype and presentation",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 9822.421875,
+          "bottom": 10079.203125
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Munchpal",
+        "to": "Two groups, two different jobs",
+        "gap": 64
+      },
+      {
+        "from": "Two groups, two different jobs",
+        "to": "Keep bulk donations on their own path",
+        "gap": 89
+      },
+      {
+        "from": "Keep bulk donations on their own path",
+        "to": "A request starts with a listing",
+        "gap": 112
+      },
+      {
+        "from": "A request starts with a listing",
+        "to": "Give each request a next step",
+        "gap": 112
+      },
+      {
+        "from": "Give each request a next step",
+        "to": "What I changed, and why",
+        "gap": 96
+      },
+      {
+        "from": "What I changed, and why",
+        "to": "What testing showed",
+        "gap": 128
+      },
+      {
+        "from": "What testing showed",
+        "to": "Original prototype and presentation",
+        "gap": 173
+      }
+    ],
+    "overflow": 0,
+    "markedGap": 172,
+    "footerGap": 121
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 390,
+    "sections": [
+      {
+        "name": "Paylecta",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 160,
+          "bottom": 1094.953125
+        }
+      },
+      {
+        "name": "One place to see the business",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 1158.953125,
+          "bottom": 2829.9375
+        }
+      },
+      {
+        "name": "Keep actions with the record",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 2981.9375,
+          "bottom": 8052.609375
+        }
+      },
+      {
+        "name": "The design delivered",
+        "padding": [
+          "64px",
+          "64px"
+        ],
+        "rect": {
+          "top": 8181.609375,
+          "bottom": 8678.734375
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Paylecta",
+        "to": "One place to see the business",
+        "gap": 64
+      },
+      {
+        "from": "One place to see the business",
+        "to": "Keep actions with the record",
+        "gap": 152
+      },
+      {
+        "from": "Keep actions with the record",
+        "to": "The design delivered",
+        "gap": 129
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 121
+  },
+  {
+    "route": "/missing-page",
+    "width": 390,
+    "sections": [],
+    "gaps": [],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 361.375
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "AlanSahlan.",
+        "padding": [
+          "72px",
+          "80px"
+        ],
+        "rect": {
+          "top": 132,
+          "bottom": 780
+        }
+      },
+      {
+        "name": "Selected work",
+        "padding": [
+          "16px",
+          "24px"
+        ],
+        "rect": {
+          "top": 876,
+          "bottom": 2027.5
+        }
+      },
+      {
+        "name": "About",
+        "padding": [
+          "104px",
+          "112px"
+        ],
+        "rect": {
+          "top": 2155.5,
+          "bottom": 2401.46875
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "AlanSahlan.",
+        "to": "Selected work",
+        "gap": 96
+      },
+      {
+        "from": "Selected work",
+        "to": "About",
+        "gap": 128
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 201
+  },
+  {
+    "route": "/about",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "Hi, I'm Alan.",
+        "padding": [
+          "0px",
+          "88px"
+        ],
+        "rect": {
+          "top": -67.5,
+          "bottom": 741.5
+        }
+      },
+      {
+        "name": "What I do",
+        "padding": [
+          "72px",
+          "72px"
+        ],
+        "rect": {
+          "top": 904,
+          "bottom": 1226.171875
+        }
+      },
+      {
+        "name": "Learning by building",
+        "padding": [
+          "72px",
+          "72px"
+        ],
+        "rect": {
+          "top": 1379.828125,
+          "bottom": 1574.5
+        }
+      },
+      {
+        "name": "Little trivia",
+        "padding": [
+          "72px",
+          "0px"
+        ],
+        "rect": {
+          "top": 1728.171875,
+          "bottom": 1984.15625
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Hi, I'm Alan.",
+        "to": "What I do",
+        "gap": 162.5
+      },
+      {
+        "from": "What I do",
+        "to": "Learning by building",
+        "gap": 153.65625
+      },
+      {
+        "from": "Learning by building",
+        "to": "Little trivia",
+        "gap": 153.671875
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 193
+  },
+  {
+    "route": "/contact",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "Let’s worktogether.",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 196,
+          "bottom": 667.96875
+        }
+      },
+      {
+        "name": "Prepare an email",
+        "padding": [
+          "24px",
+          "0px"
+        ],
+        "rect": {
+          "top": 221,
+          "bottom": 888.171875
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Let’s worktogether.",
+        "to": "Prepare an email",
+        "gap": -446.96875
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 171.390625
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "Aurelia",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 196,
+          "bottom": 1759.671875
+        }
+      },
+      {
+        "name": "Inside the concept",
+        "padding": [
+          "32px",
+          "32px"
+        ],
+        "rect": {
+          "top": 92,
+          "bottom": 4404.75
+        }
+      },
+      {
+        "name": "Project scope and supporting detail",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 4532.59375,
+          "bottom": 4779.375
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Aurelia",
+        "to": "Inside the concept",
+        "gap": -1667.671875
+      },
+      {
+        "from": "Inside the concept",
+        "to": "Project scope and supporting detail",
+        "gap": 127.84375
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 193
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "PawFriend",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 196,
+          "bottom": 1725.828125
+        }
+      },
+      {
+        "name": "From browsing to a first visit",
+        "padding": [
+          "32px",
+          "32px"
+        ],
+        "rect": {
+          "top": 92,
+          "bottom": 4572.046875
+        }
+      },
+      {
+        "name": "Project scope and supporting detail",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 4214.328125,
+          "bottom": 4461.109375
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "PawFriend",
+        "to": "From browsing to a first visit",
+        "gap": -1633.828125
+      },
+      {
+        "from": "From browsing to a first visit",
+        "to": "Project scope and supporting detail",
+        "gap": -357.71875
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 82.0625
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "Munchpal",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 164,
+          "bottom": 1504.484375
+        }
+      },
+      {
+        "name": "Two groups, two different jobs",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 1608.484375,
+          "bottom": 1947.1875
+        }
+      },
+      {
+        "name": "Keep bulk donations on their own path",
+        "padding": [
+          "0px",
+          "56px"
+        ],
+        "rect": {
+          "top": 2076.1875,
+          "bottom": 3097.453125
+        }
+      },
+      {
+        "name": "A request starts with a listing",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 3301.453125,
+          "bottom": 4381.375
+        }
+      },
+      {
+        "name": "Give each request a next step",
+        "padding": [
+          "88px",
+          "112px"
+        ],
+        "rect": {
+          "top": 4601.375,
+          "bottom": 5406.296875
+        }
+      },
+      {
+        "name": "What I changed, and why",
+        "padding": [
+          "0px",
+          "104px"
+        ],
+        "rect": {
+          "top": 5546.296875,
+          "bottom": 6878.609375
+        }
+      },
+      {
+        "name": "What testing showed",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 7086.609375,
+          "bottom": 7406.4375
+        }
+      },
+      {
+        "name": "Original prototype and presentation",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 7659.4375,
+          "bottom": 7893.828125
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Munchpal",
+        "to": "Two groups, two different jobs",
+        "gap": 104
+      },
+      {
+        "from": "Two groups, two different jobs",
+        "to": "Keep bulk donations on their own path",
+        "gap": 129
+      },
+      {
+        "from": "Keep bulk donations on their own path",
+        "to": "A request starts with a listing",
+        "gap": 204
+      },
+      {
+        "from": "A request starts with a listing",
+        "to": "Give each request a next step",
+        "gap": 220
+      },
+      {
+        "from": "Give each request a next step",
+        "to": "What I changed, and why",
+        "gap": 140
+      },
+      {
+        "from": "What I changed, and why",
+        "to": "What testing showed",
+        "gap": 208
+      },
+      {
+        "from": "What testing showed",
+        "to": "Original prototype and presentation",
+        "gap": 253
+      }
+    ],
+    "overflow": 0,
+    "markedGap": 252,
+    "footerGap": 193
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1440,
+    "sections": [
+      {
+        "name": "Paylecta",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 148,
+          "bottom": 1460.484375
+        }
+      },
+      {
+        "name": "One place to see the business",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 1564.484375,
+          "bottom": 2773.8125
+        }
+      },
+      {
+        "name": "Keep actions with the record",
+        "padding": [
+          "0px",
+          "0px"
+        ],
+        "rect": {
+          "top": 3037.8125,
+          "bottom": 7959.5625
+        }
+      },
+      {
+        "name": "The design delivered",
+        "padding": [
+          "104px",
+          "104px"
+        ],
+        "rect": {
+          "top": 8168.5625,
+          "bottom": 8608.609375
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "from": "Paylecta",
+        "to": "One place to see the business",
+        "gap": 104
+      },
+      {
+        "from": "One place to see the business",
+        "to": "Keep actions with the record",
+        "gap": 264
+      },
+      {
+        "from": "Keep actions with the record",
+        "to": "The design delivered",
+        "gap": 209
+      }
+    ],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 193
+  },
+  {
+    "route": "/missing-page",
+    "width": 1440,
+    "sections": [],
+    "gaps": [],
+    "overflow": 0,
+    "markedGap": null,
+    "footerGap": 249
+  }
+]

@@ -9,5 +9,14 @@
   "preparation": "Authentic browser screenshot, WebP quality 82, no synthetic edits.",
   "bytes": 41502,
   "authorization": "User confirmed sole design/build authorship and approved live-site screenshot use.",
-  "rightsLimit": "Underlying site photography provenance was not independently verified."
+  "rightsLimit": "Underlying site photography provenance was not independently verified.",
+  "prompt": "Source origin. {\"sourceUrl\":\"https://aurelia.alansahlanwork.workers.dev/\",\"capturedAt\":\"2026-09-26\",\"viewport\":{\"width\":1440,\"height\":900},\"state\":\"Work and stay longer plus Uluwatu: empty result and Show all ten stays action.\",\"preparation\":\"Authentic browser screenshot, WebP quality 82, no synthetic edits.\",\"bytes\":41502,\"authorization\":\"User confirmed sole design/build authorship and approved live-site screenshot use.\",\"rightsLimit\":\"Underlying site photography provenance was not independently verified.\"}",
+  "createdAt": "2026-10-03T09:53:18.332Z",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "fded1b84033cf9c43337d84fdf7253c7dbe796c2be80de098673cf469fcc7d04",
+    "current_file_sha256": "fded1b84033cf9c43337d84fdf7253c7dbe796c2be80de098673cf469fcc7d04",
+    "decoded_pixel_sha256": "2def3a1d83ea942a9c9d31f9cf8eb9af7ef57a6ad19cd1a0d7a265a1f6471463",
+    "pixels_unchanged": true
+  }
 }

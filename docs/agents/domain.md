@@ -1,27 +1,7 @@
 # Domain docs
 
-This project uses a single-context layout:
+Reviewed 19 October 2026. This project uses root [CONTEXT.md](../../CONTEXT.md) for domain vocabulary and `docs/adr/` for architectural decisions when needed.
 
-- `CONTEXT.md` at the repository root for domain vocabulary.
-- `docs/adr/` for architectural decision records.
+Before exploring the codebase, read the glossary and relevant ADRs. If the ADR directory is absent, proceed without creating an empty placeholder. [The documentation index](../README.md) maps product, visual, behavior, and evidence records.
 
-## Before exploring the codebase
-
-Read `CONTEXT.md` and any ADRs relevant to the task.
-
-If these files or directories are absent, proceed silently.
-The domain-modeling skill creates them when terms or decisions
-are resolved.
-
-## Use established vocabulary
-
-Use the terms defined in `CONTEXT.md` when naming concepts in
-tickets, proposals, code, and tests.
-
-If a needed concept is missing, check whether an existing term
-already covers it. Note genuine gaps for domain-modeling.
-
-## Surface decision conflicts
-
-If a proposal contradicts an existing ADR, identify the ADR
-and explain why the decision should be reconsidered.
+Use established terms in tickets, proposals, code, and tests. Keep the glossary to project-specific definitions; implementation and history belong in their owning documents. Note a real vocabulary gap when no existing term covers it. If a proposal conflicts with an ADR, identify the decision and explain why it should be reconsidered.

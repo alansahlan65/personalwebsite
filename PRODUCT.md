@@ -2,91 +2,71 @@
 
 <!-- impeccable:product-schema 1 -->
 
+Reviewed 19 October 2026. This file owns the current product commitments. [DESIGN.md](DESIGN.md) owns visual rules; [the documentation index](docs/README.md) points to implementation and evidence records.
+
 ## Platform
 
 web
 
 ## Stack
 
-React, TypeScript, and Next.js, as recorded in the approved PRD and implementation spec for this application. Portfolio content is static; browser interactions use client components and Motion for React. GSAP/ScrollTrigger is optional for project media when it materially simplifies implementation. Native scrolling is the baseline; Lenis requires demonstrated benefit without input or navigation regressions.
-
-The responsive homepage, About route, and all four local case studies are implemented. On 27 September 2026, Alan supplied his CADIT role, October 2025 start date, component-library responsibility and developer-facing UI work. The updated resume and About page use these facts. Plus Jakarta Sans is bundled locally. Ticket 12 has a reviewed local release candidate; no deployment provider or public domain has been selected.
+Next.js App Router, React, TypeScript, Motion for React, and Phosphor icons. Portfolio content is static, with client components for browser interactions. Scrolling remains native. The standalone motion compositions bundle their own local GSAP runtime. Dependency versions live in [package.json](package.json).
 
 ## Users
 
-- Hiring managers and design leads evaluating Alan for Product Designer opportunities are the primary audience. They need to assess product judgment, actual contribution, interaction craft, and relevant experience.
-- Engineering leads evaluating his developing Design Engineer capabilities need evidence of technical feasibility thinking, implementation choices, and collaboration across design and development.
-- Recruiters need accurate background, professional profiles, a current resume, and a reliable contact destination. Prospective collaborators can also use the contact action.
+Hiring managers and design leads evaluating Product Designer candidates are the primary audience. Engineering leads can assess Alan's developing implementation skills. Recruiters and collaborators need accurate experience, a current resume, verified profiles, and a reliable contact path.
 
-Visitors may scan the homepage, read individual case studies, or arrive directly at a shared project URL. They must be able to use the site with a pointer, keyboard, or touch on desktop and mobile web.
+Support scanning, direct case-study visits, keyboard, touch, modified clicks, new tabs, and browser history on desktop and mobile web.
 
 ## Product Purpose
 
-Help Alan secure Product Designer opportunities while remaining open to Design Engineer roles as he learns. Make his contribution and reasoning assessable through credible case studies and reliable behavior in the portfolio itself.
+Help visitors assess Alan's product judgment, contribution, and interaction craft, then access his resume or contact him. Product Designer is his primary hiring focus. Design Engineer is a learning direction. Use [the glossary](CONTEXT.md) for these terms.
 
-Success means visitors can understand his current role and direction, evaluate the work, access his resume, and contact him without animation or navigation obstructing their task. No conversion, hiring, or performance results have been measured yet.
-
-## Positioning
-
-Alan is currently a UI/UX Designer at an IT consulting company. Product Designer is his primary professional positioning and hiring focus. He is developing design engineering capabilities, not claiming established Design Engineer employment history.
-
-His intended practice connects product design with implementation: understand feasibility and constraints, translate design intent into actionable guidance, and implement and refine interactive interfaces. Specific capability claims require evidence from his actual work.
-
-The approved identity phrase is exactly "Design • Engineer". It expresses the relationship between design and engineering; it is not an employment title. Use the definitions in [CONTEXT.md](CONTEXT.md), including design-to-development bridge and later exploration.
+Alan is a UI/UX Designer at CADIT, starting October 2025. His confirmed responsibilities include component-library work and developer-facing UI mockups for international clients. Client names supplied by Alan include Daikin Singapore, Thai Honda, and SP Group Singapore. Do not infer employment, location, availability, or outcomes beyond confirmed facts.
 
 ## Operating Context
 
-The portfolio supports browsing selected work, opening and returning from case studies, reading concise background, viewing or downloading a resume, and contacting Alan. Direct project visits, modified clicks, new tabs, browser history, and restored scroll positions are part of normal use.
+The site has Home, About, Contact, and four complete case studies. It requires no database, authentication, CMS, blog, payment system, or connected booking service.
 
-The primary contact action opens an email draft to a verified address; LinkedIn is a secondary option. Resume and professional-profile destinations must be verified. The website does not need a booking service, authentication, a database, a CMS, or a blog.
-
-Case studies establish the user problem, Alan's actual contribution, and consequential design decisions before presenting interaction evidence and implementation considerations. Their depth follows available evidence rather than equal page lengths. About remains concise and covers current work, approach, developer collaboration, learning, and resume access.
+Contact prepares an encoded email draft to `alansahlanwork@gmail.com`; the visitor sends it from an email app. Name, email, and message are required to open a draft. Copy email and Copy message retain manual-copy recovery. Resume actions say Download resume, include a PDF cue, and use the local verified file.
 
 ## Capabilities and Constraints
 
-- Include the homepage, a separate About page, and complete case studies for Aurelia, Paylecta, PawFriend, and Munchpal. Their categories are hospitality, finance, pet adoption, and food sharing respectively.
-- Preserve the approved interaction requirements: scroll-linked role tracks, inline expanding project previews, magnetic clickable controls, an image-inverting cursor, a full-to-compact header, a Sliding Stairs Menu, shared-image project entry/return, and desktop horizontal project media. Detailed behavior and acceptance conditions live in the PRD and spec rather than this product record.
-- All actions remain immediately usable while animation runs. Interruption, rapid input changes, route changes, and enhancement failure must preserve navigation and content access.
-- Aurelia and PawFriend are self-initiated concepts; Paylecta and Munchpal are client design projects. Alan confirmed his contribution and collaborator boundaries for all four. Keep unsupported outcomes out of the public copy.
-- Selective new demonstrations are permitted as later explorations. Label them clearly and distinguish them from original contributions, production use, and historical testing.
-- Keep all four projects. Missing evidence does not authorize fabricated claims or silent scope reduction; identify missing inputs and continue independent work.
-- Respect the confirmed PRD and alignment decisions over conflicting older examples or generic design-skill recommendations. This initialization does not reopen the approved direction.
+- Home presents the two-line name, Product Designer role switcher, voxel character, Indonesia reference, selected work, brief About statement, and contact footer. The other role choices are Design Engineer and Interaction Designer. Phones have a compact hero and Selected work anchor.
+- Selected work contains four full-row native links in this order: Aurelia, Paylecta, PawFriend, Munchpal. Each uses one generated cover in thumbnail and expanded states. Focus takes priority over hover; touch opens a case in one tap. Project status and contribution belong in the case studies.
+- About presents the real portrait, What I do, Experience, Learning by building with the Static / Motion save experiment, then Little trivia. The trivia deck supports dragging, swiping, answer buttons, and Next question. Professional facts precede personal details.
+- Shared navigation includes full links at the top, a compact theme/Menu rail after scrolling, the vertical Sliding Stairs Menu, horizontal page stairs, and project image continuity where supported. Native targets remain usable during motion. Focus, scroll restoration, interruption, and failure recovery are required.
+- Aurelia follows discovery, collection, house details, and Dates / Stay / Contact with local review. Original SVG evidence and native flow links explain the complete concept. Its browser composition and observed-flow recording remain available.
+- Paylecta and Munchpal use continuous narratives with original SVG screens, desktop/mobile compositions, and native full-source links. Each decision is explained once. Supporting methods, build details, and recordings use native disclosures.
+- PawFriend retains a desktop horizontal media sequence when the complete panels fit. Narrow, short, enlarged-text, reduced-motion, forced-color, and no-JavaScript views receive the complete stack. Native view links, progress, focus access, and Skip remain available.
+- Aurelia and PawFriend are self-initiated, AI-assisted concepts directed by Alan. Paylecta and Munchpal are client design projects. [Content sources](docs/portfolio-content.md) and the individual case records define contribution and evidence boundaries.
+- Munchpal may report 109 successful Figma-prototype task attempts out of 110 by 20 participants: 59/60 resident attempts and 50/50 volunteer attempts. This establishes prototype navigation results. Revision effects, food-waste reduction, and live pickups remain unmeasured. Garda Pangan interviews do not establish a partnership.
+- Later demonstrations are labelled Portfolio motion study and remain distinct from original contributions, historical testing, and production results. Keep all four projects and omit unsupported metrics, quotes, or outcomes.
 
 ## Brand Commitments
 
-The identity is Alan Sahlan, using the original AS mark, a real portrait, the exact "Design • Engineer" phrase, and an accurate Indonesia location reference. Do not invent a city, coordinates, local-time display, or availability status.
+Use the original AS mark, Plus Jakarta Sans, warm off-white/charcoal surfaces, and exact cobalt `#245bff`. Home uses the generated voxel character; About retains Alan's real portrait. Generated gallery artwork is decorative and stays separate from authentic project evidence.
 
-The user updated the typography commitment on 27 September 2026: Plus Jakarta Sans replaces Halyard Display Variable throughout interface text. Retain the warm off-white/charcoal/cobalt identity, and the approved minimal editorial composition. These are existing user commitments, not a new visual direction. Consult the PRD for exact composition, tokens, and interaction references. The referenced mockup does not establish actual project behavior or override the written requirements.
+Light is the default regardless of device preference. A shared switch remembers explicit dark mode when storage is available. Small action text uses the theme-aware action-ink token. Reading content stays flat; interactive cards and painted controls use the shared neutral and blue layers, radii, and shadows.
 
-Apply the better-writing skill to all website copy. Use clear, brief prose, consistent terminology, meaningful action labels, and sentence case by default. Preserve deliberate approved identity copy. "Let's work together." and the PRD's About wording are starting copy that may be refined within the confirmed positioning.
+Write brief, specific sentences with meaningful action labels and sentence case. Retain necessary delivery, recovery, contribution, and prototype-scope information beside the relevant action or evidence. Avoid repeated captions, speculative next steps, and redundant instructions.
 
 ## Evidence on Hand
 
-- [PRD v2.1](portfolio-prd-halyard.md) records the approved requirements and external portfolio/reference sources.
-- [Confirmed alignment session](.scratch/portfolio-halyard/alignment-session.md) records Alan's positioning and content decisions.
-- [Spec revision 2](.scratch/portfolio-halyard/spec.md) records implementation and testing requirements. Twelve approved implementation tickets exist in the local Markdown tracker.
-- The supplied portrait and AS mark in `assets/` have been inspected and prepared for the homepage. See [asset provenance](docs/assets.md) for originals, transformations, and remaining inputs.
-- [Ticket 02 content sources](docs/portfolio-content.md) records resume inspection, confirmed email/profile destinations, and remaining factual inputs.
-- The PRD links to a portfolio Drive folder, Paylecta and Munchpal studies, and Aurelia and PawFriend sites. Their original PDFs and live sites were inspected for the case studies; source checks and claim limits are recorded in `docs/portfolio-content.md` and the project-specific source records.
+[Assets](docs/assets.md) records the supplied portrait/mark, font, generated artwork, original exports, recordings, and provenance manifests. [Content sources](docs/portfolio-content.md) records professional facts and project sources. The current resume includes CADIT and excludes the hidden instruction/keyword block and unsupported metrics from the supplied older PDF.
 
-Plus Jakarta Sans, the updated resume, four original-source case studies, and related media are delivered locally. Generated gallery banners remain separate from project evidence. The public domain and absolute social URLs need checking at publication.
-
-Paylecta and Munchpal source figures were assessed and unsupported outcomes omitted. The release resume excludes the AI-directed instruction/keyword block found in the supplied PDF. Ticket 12 has passing browser tests, lint, type checks, a production build, and recorded lab performance conditions. See [its verification record](.scratch/portfolio-halyard/ticket-12-verification.md) for coverage and limits. No field performance score or accessibility certification is claimed.
+[Quality and release checks](docs/quality.md) records the latest browser, rendering, and performance evidence, plus remaining publication work. No hiring, conversion, field-performance, or production-project outcome has been measured by this portfolio.
 
 ## Product Principles
 
-1. Lead with product design judgment and represent developing engineering capability accurately.
-2. Make design-to-development claims assessable through specific decisions and authentic evidence.
-3. Treat reliable, interruptible interactions as part of the work visitors evaluate.
-4. Preserve complete content and predictable actions across input modes and motion preferences.
-5. Let evidence determine detail; distinguish original work, later explorations, and unverified claims.
+1. Lead with product design judgment and accurate contribution.
+2. Pair consequential decisions with authentic, readable evidence.
+3. Keep interactions interruptible and actions predictable.
+4. Preserve complete content across input modes and preferences.
+5. Distinguish original work, later exploration, and unverified claims.
 
 ## Accessibility & Inclusion
 
-Require semantic links/buttons, visible focus, sensible tab order, useful image alternatives, sufficient contrast, and comfortable targets. Decorative repetition and the custom cursor must not be necessary to understand or operate the site.
+Use semantic links/buttons, visible focus, useful alternatives, sufficient contrast, comfortable targets, and sensible reading/tab order. Decorative cursor and motion effects carry no required information. Menus contain focus, support Escape, make background content inert, and restore focus/scroll correctly.
 
-Support keyboard and touch throughout. Keep magnetic targets stationary and provide stable equivalents for keyboard, touch, reduced motion, and forced colors. Touch project entry takes one tap. Menus require focus containment, Escape dismissal, background inertness, and correct focus/scroll restoration.
-
-Respect reduced motion from initial render and when changed during the session. Preserve full content and immediate actions while disabling the specified spatial effects. Horizontal project media becomes stacked content on narrow screens and reduced motion; focused content remains reachable.
-
-Validate at 390px, 768px, and 1440px, plus a 320px overflow check and intermediate layout widths. Use the confirmed real-browser testing boundary with Playwright, manual interaction review, and short recordings. Report tested coverage and gaps; never imply physical-device coverage from emulation alone. No particular accessibility certification or measured conformance level has been claimed.
+Support runtime changes to motion and color preferences. Test 390px, 768px, and 1440px, a 320px overflow check, intermediate layouts, enlarged text, touch, keyboard, history, and no JavaScript. Report actual browser coverage; emulation does not establish physical-device or assistive-technology results.

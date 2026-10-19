@@ -1,0 +1,1153 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "button.hero-role-play-module__bHRKlW__roleButton",
+        "values": [
+          3.2,
+          0,
+          3.2,
+          0
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "button.about-play-module__wS9o1W__helloButton",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "span.resume-format",
+        "values": [
+          3.2,
+          7.2,
+          3.2,
+          7.2
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "input.",
+        "values": [
+          14,
+          16,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "input.",
+        "values": [
+          14,
+          16,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "select.",
+        "values": [
+          14,
+          32,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "textarea.",
+        "values": [
+          14,
+          16,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "span.control-visual contact-module__xwJ-uq__submitVisual",
+        "values": [
+          14,
+          24,
+          14,
+          24
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 0
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 28
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 0
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 0
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 28
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 0
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__phone",
+        "values": [
+          11.75,
+          14.6875,
+          29.3906,
+          14.6875
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          6.07812,
+          6.07812,
+          6.07812,
+          6.07812
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          3.78125,
+          3.78125,
+          3.78125,
+          3.78125
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__phone",
+        "values": [
+          12.3906,
+          15.5,
+          31,
+          15.5
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          6.40625,
+          6.40625,
+          6.40625,
+          6.40625
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 0
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 0
+      }
+    ],
+    "markedGap": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__laptop",
+        "values": [
+          7.34375,
+          8.8125,
+          14.6875,
+          8.8125
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          1.65625,
+          1.65625,
+          1.65625,
+          1.65625
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          6.8125,
+          2.17188,
+          2.17188,
+          2.17188
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__monitor",
+        "values": [
+          6.82812,
+          5.125,
+          0,
+          5.125
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          1.60938,
+          1.60938,
+          1.60938,
+          1.60938
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__phone",
+        "values": [
+          10.2344,
+          12.7969,
+          25.5938,
+          12.7969
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          5.29688,
+          5.29688,
+          5.29688,
+          5.29688
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          3.29688,
+          3.29688,
+          3.29688,
+          3.29688
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 390,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "div.hero-copy",
+        "values": [
+          28.8,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "element": "button.hero-role-play-module__bHRKlW__roleButton",
+        "values": [
+          4.48,
+          0,
+          4.48,
+          0
+        ]
+      },
+      {
+        "element": "section.about page-width",
+        "values": [
+          100.8,
+          0,
+          115.2,
+          0
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "header.about-module__-i9KWa__hero",
+        "values": [
+          0,
+          0,
+          86.4,
+          0
+        ]
+      },
+      {
+        "element": "button.about-play-module__wS9o1W__helloButton",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "span.resume-format",
+        "values": [
+          3.2,
+          7.2,
+          3.2,
+          7.2
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "input.",
+        "values": [
+          14,
+          16,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "input.",
+        "values": [
+          14,
+          16,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "select.",
+        "values": [
+          14,
+          32,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "textarea.",
+        "values": [
+          14,
+          16,
+          14,
+          16
+        ]
+      },
+      {
+        "element": "span.control-visual contact-module__xwJ-uq__submitVisual",
+        "values": [
+          14,
+          24,
+          14,
+          24
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 0
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 28
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 0
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "summary.",
+        "values": [
+          10.4,
+          0,
+          10.4,
+          0
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 0
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 28
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 0
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "section.page-width munchpal-module__zxsOSG__research",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "section.page-width munchpal-module__zxsOSG__flowSection",
+        "values": [
+          0,
+          0,
+          57.6,
+          0
+        ]
+      },
+      {
+        "element": "div.munchpal-module__zxsOSG__flowArtwork",
+        "values": [
+          43.2,
+          43.2,
+          43.2,
+          43.2
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__section",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__phone",
+        "values": [
+          12.125,
+          15.1562,
+          30.3281,
+          15.1562
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          6.28125,
+          6.28125,
+          6.28125,
+          6.28125
+        ]
+      },
+      {
+        "element": "figure.project-detail-module__dxsiJq__screen ",
+        "values": [
+          28.8,
+          28.8,
+          28.8,
+          28.8
+        ]
+      },
+      {
+        "element": "section.page-width munchpal-module__zxsOSG__states",
+        "values": [
+          86.4,
+          0,
+          115.2,
+          0
+        ]
+      },
+      {
+        "element": "div.munchpal-module__zxsOSG__statusComposition",
+        "values": [
+          28.8,
+          28.8,
+          28.8,
+          28.8
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__phone",
+        "values": [
+          12.5,
+          15.625,
+          31.25,
+          15.625
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          6.46875,
+          6.46875,
+          6.46875,
+          6.46875
+        ]
+      },
+      {
+        "element": "section.page-width munchpal-module__zxsOSG__revisions",
+        "values": [
+          0,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "div.munchpal-module__zxsOSG__comparison",
+        "values": [
+          43.2,
+          43.2,
+          43.2,
+          43.2
+        ]
+      },
+      {
+        "element": "div.munchpal-module__zxsOSG__comparison",
+        "values": [
+          43.2,
+          43.2,
+          43.2,
+          43.2
+        ]
+      },
+      {
+        "element": "section.page-width munchpal-module__zxsOSG__evaluation",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 0
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 0
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 0
+      }
+    ],
+    "markedGap": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [
+      {
+        "element": "a.",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__section",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "div.project-detail-module__dxsiJq__overviewComposition",
+        "values": [
+          57.6,
+          57.6,
+          57.6,
+          57.6
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__laptop",
+        "values": [
+          22.3281,
+          26.7812,
+          44.6562,
+          26.7812
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          5.03125,
+          5.03125,
+          5.03125,
+          5.03125
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          20.7344,
+          6.625,
+          6.625,
+          6.625
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__section project-detail-module__dxsiJq__customerStory",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__monitor",
+        "values": [
+          14.1406,
+          10.6094,
+          0,
+          10.6094
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          8.23438,
+          8.23438,
+          8.23438,
+          8.23438
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          3.34375,
+          3.34375,
+          3.34375,
+          3.34375
+        ]
+      },
+      {
+        "element": "span.project-detail-module__dxsiJq__screenArtwork",
+        "values": [
+          28.8,
+          28.8,
+          28.8,
+          28.8
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__section",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__artwork project-devices-module__vvYp6G__phone",
+        "values": [
+          10.8438,
+          13.5625,
+          27.125,
+          13.5625
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__body",
+        "values": [
+          5.60938,
+          5.60938,
+          5.60938,
+          5.60938
+        ]
+      },
+      {
+        "element": "span.project-devices-module__vvYp6G__bezel",
+        "values": [
+          3.48438,
+          3.48438,
+          3.48438,
+          3.48438
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__section project-detail-module__dxsiJq__payoutStory",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "div.project-detail-module__dxsiJq__payoutArtwork",
+        "values": [
+          57.6,
+          57.6,
+          57.6,
+          57.6
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__section project-detail-module__dxsiJq__systemStory",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "section.page-width project-detail-module__dxsiJq__closing",
+        "values": [
+          100.8,
+          0,
+          100.8,
+          0
+        ]
+      },
+      {
+        "element": "a.case-return",
+        "values": [
+          10.4,
+          16,
+          10.4,
+          16
+        ]
+      }
+    ],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 1440,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  }
+]

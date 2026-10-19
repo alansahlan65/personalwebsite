@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MunchPal · Food sharing, made clear</title>
+<meta name="description" content="A 20-second tour of MunchPal's original English food-sharing prototype. Find food, request a meal, arrange pickup, and view a separate bulk donation report.">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:Jakarta;src:url('assets/PlusJakartaSans-Variable.woff2') format('woff2');font-weight:200 800;font-display:block}
+:root{--accent:#ff9e08;--accent-lit:#ffbd12;--ink:#1c1c1e;--base:#fffdfa;--green:#008a57}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--base);color:var(--ink);font-family:Jakarta,sans-serif}
+#filters{position:fixed;width:0;height:0;opacity:0;pointer-events:none}
+#stage{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%);overflow:hidden;background:var(--base)}
+#world{position:absolute;inset:0;transform-origin:0 0;will-change:transform;perspective:1600px}
+.field{position:absolute;inset:-1000px;pointer-events:none;background:linear-gradient(150deg,#fffdfa 25%,#fff9ef 100%)}
+.wash{position:absolute;width:1250px;height:1250px;left:860px;top:-50px;border-radius:50%;background:radial-gradient(ellipse,#ff9e081d 5%,#ffbd1212 34%,#ff9e0800 68%);pointer-events:none}
+.wash.green{left:900px;top:170px;background:radial-gradient(ellipse,#008a571b,#008a5708 48%,#008a5700 68%);opacity:0}
+.halo{position:absolute;left:1040px;top:45px;width:850px;height:960px;border-radius:50%;border:2px solid #ff9e0812;pointer-events:none}
+.phone{position:absolute;left:1200px;top:114px;width:388px;height:834px;transform-origin:0 0;transform:scale(1.02);border-radius:24px;box-shadow:0 24px 64px #30200b1a,0 0 0 7px #fffdfa,0 0 0 8px #30200b0c;overflow:hidden;background:var(--base)}
+.screen{position:absolute;inset:0;width:388px;height:834px;opacity:0}
+.screen:first-child{opacity:1}
+.cover-row{position:absolute;left:25px;top:150px;width:340px;height:88px;background:var(--base);opacity:0}
+.focus{position:absolute;left:0;top:0;transform-origin:0 0;opacity:0;visibility:hidden}
+.card{padding:20px;background:var(--base);border-radius:16px;box-shadow:0 24px 64px #30200b1a}
+.card>img{display:block;max-width:none}
+#food{width:368px;height:112px}
+#food>img:first-child{width:328px;height:72px}
+#ask{position:absolute;left:271px;top:20px;width:77px;height:20px}
+#dialog{width:339px;height:214px;box-shadow:0 24px 64px #30200b16;border-radius:12px}
+#dialog>img:first-child{width:339px;height:214px}
+#yes{position:absolute;left:182px;top:152px;width:122px;height:40px;transform-origin:center}
+#success{width:249px;height:135px}
+#success img{display:block;width:249px;height:135px}
+#accepted-card,#bulk-card{width:386px;height:153px}
+#accepted-card>img:first-child,#bulk-card>img:first-child{width:346px;height:113px}
+#message-action{position:absolute;left:87.582px;top:81.348px;width:96px;height:30px}
+#report-action{position:absolute;left:87.582px;top:81.348px;width:128px;height:30px}
+#handoff{width:96px;height:30px;overflow:hidden;border-radius:8px;background:#ff9e08;transform-origin:0 0}
+#handoff img{display:block;width:96px;height:30px}
+#chat-window{width:970px;height:775px;overflow:hidden;border-radius:28px;background:var(--base);box-shadow:0 24px 64px #30200b1a}
+#chat-content{position:absolute;left:26px;top:18px;width:388px;height:690px;transform:scale(2.36);transform-origin:0 0}
+.message{position:absolute;opacity:0;transform-origin:50% 50%}
+#m1{left:10px;top:18px;width:337px;height:73px}
+#m2{left:14px;top:114px;width:341px;height:289px}
+#m3{left:10px;top:412px;width:337px;height:73px}
+#m4{left:14px;top:503px;width:341px;height:85px}
+#report-window{width:680px;height:875px;overflow:hidden;border-radius:30px;background:var(--base);box-shadow:0 24px 64px #30200b1a}
+#report-sheet{width:388px;height:834px;transform:scale(1.753);transform-origin:0 0}
+#status{width:369px;height:86px}
+#status img{width:329px;height:46px}
+.tap{position:absolute;width:18px;height:18px;border-radius:50%;background:#1c1c1e;box-shadow:0 0 0 6px #fffdfacc;opacity:0;z-index:20;transform:translate(-50%,-50%)}
+.tap-ring{position:absolute;inset:-17px;border:2px solid #1c1c1e80;border-radius:50%;opacity:0}
+#titles{position:absolute;inset:0;pointer-events:none}
+#brand{position:absolute;left:138px;top:270px;width:410px;height:auto}
+.claim{position:absolute;left:138px;top:422px;width:940px;font-weight:500;font-size:108px;line-height:1.08;letter-spacing:-.035em;opacity:0;visibility:hidden}
+#c0{opacity:1;visibility:visible}
+#c1{top:255px;width:620px;font-size:100px}
+#c2{top:262px;width:640px;font-size:104px}
+#c3{top:278px;width:670px;font-size:96px}
+#c4{top:340px;width:740px;font-size:96px}
+.claim .word{display:inline-block;white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#ui{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);display:none;align-items:center;gap:14px;background:#fffdfa;padding:12px 16px;border:1px solid #1c1c1e33;border-radius:12px;font-size:14px;z-index:99}
+#ui.on{display:flex}#ui button{font:inherit;background:#1c1c1e;color:#fffdfa;border:0;padding:10px 16px;border-radius:6px;cursor:pointer}#scrub{width:320px;accent-color:#a45b00}#clock{font-variant-numeric:tabular-nums;min-width:6ch}
+</style>
+</head>
+<body>
+<p class="sr-only">Silent MunchPal prototype tour. Find food nearby, request a meal, arrange pickup in chat after acceptance, and view a separate bulk donation report. Space pauses or plays. R replays. Reduced motion starts paused.</p>
+<svg id="filters" aria-hidden="true"><defs></defs></svg>
+<div id="stage" role="img" aria-label="MunchPal product tour, original English prototype UI">
+ <div id="world" aria-hidden="true">
+  <div class="field"></div><div class="wash" id="warm-wash"></div><div class="wash green" id="green-wash"></div><div class="halo" id="halo"></div>
+  <div class="phone" id="phone">
+   <img class="screen" id="home" src="assets/home.svg" alt=""><img class="screen" id="list" src="assets/list.svg" alt=""><img class="screen" id="accepted" src="assets/accepted.svg" alt=""><img class="screen" id="bulk" src="assets/bulk.svg" alt=""><img class="screen" id="report" src="assets/report.svg" alt="">
+   <div class="cover-row" id="cover-row"></div>
+  </div>
+  <div class="focus card" id="food"><img src="assets/food-row.svg" alt=""><img id="ask" src="assets/ask-button.svg" alt=""></div>
+  <div class="focus" id="dialog"><img src="assets/confirm.svg" alt=""><img id="yes" src="assets/yes-button.svg" alt=""></div>
+  <div class="focus" id="success"><img src="assets/success.svg" alt=""></div>
+  <div class="focus card" id="accepted-card"><img src="assets/accepted-card.svg" alt=""><img id="message-action" src="assets/message-button.svg" alt=""></div>
+  <div class="focus" id="handoff"><img src="assets/message-button.svg" alt=""></div>
+  <div class="focus" id="chat-window"><div id="chat-content"><img class="message" id="m1" src="assets/message-1.svg" alt=""><img class="message" id="m2" src="assets/message-2.svg" alt=""><img class="message" id="m3" src="assets/message-3.svg" alt=""><img class="message" id="m4" src="assets/message-4.svg" alt=""></div></div>
+  <div class="focus card" id="bulk-card"><img src="assets/bulk-card.svg" alt=""><img id="report-action" src="assets/report-button.svg" alt=""></div>
+  <div class="focus" id="report-window"><img id="report-sheet" src="assets/report.svg" alt=""></div>
+  <div class="focus card" id="status"><img src="assets/report-status.svg" alt=""></div>
+  <div class="tap" id="tap"><i class="tap-ring"></i></div>
+ </div>
+ <div id="titles" aria-hidden="true">
+  <img id="brand" src="assets/brand.svg" alt="">
+  <div class="claim" id="c0">Food sharing,<br>made clear</div>
+  <div class="claim" id="c1">Find food<br>nearby</div>
+  <div class="claim" id="c2">Request<br>a meal</div>
+  <div class="claim" id="c3">Arrange pickup<br>in chat</div>
+  <div class="claim" id="c4">Bulk donations,<br>documented</div>
+ </div>
+</div>
+<div id="ui"><button id="btn-play">Play</button><button id="btn-restart">Replay</button><input aria-label="Seek time" id="scrub" type="range" min="0" max="1000" value="0"><span id="clock">0.00s</span></div>
+<script>
+const $=(s,r=document)=>r.querySelector(s);
+const defs=$('#filters defs'); let fc=0;
+function makeBlur(){ // feGaussianBlur dgn stdDeviation x/y terpisah = blur SEARAH gerak
+  const id='mb'+(fc++), NS='http://www.w3.org/2000/svg';
+  const f=document.createElementNS(NS,'filter'); f.id=id;
+  f.setAttribute('x','-70%');f.setAttribute('y','-70%');           // kotak default
+  f.setAttribute('width','240%');f.setAttribute('height','240%');  // memotong ekor
+  const g=document.createElementNS(NS,'feGaussianBlur');
+  g.setAttribute('stdDeviation','0 0'); f.appendChild(g); defs.appendChild(f);
+  return {url:`url(#${id})`,node:g};
+}
+function blurTween(tl,targets,at,from,to,dur,{ease='power3.out',ax=1,ay=.08}={}){
+  const b=makeBlur(),o={v:from};
+  tl.set(targets,{filter:b.url},at);
+  tl.to(o,{v:to,duration:dur,ease,onUpdate(){
+    b.node.setAttribute('stdDeviation',`${(o.v*ax).toFixed(2)} ${(o.v*ay).toFixed(2)}`);}},at);
+  tl.set(targets,{filter:'none'},at+dur); // lepas: filter permanen = raster ulang tiap frame
+}
+const VERT={ax:.1,ay:1};
+
+
+const Q = new URLSearchParams(location.search);
+const DURATION = 20;
+const tl = gsap.timeline({paused:true});
+const rig = $('#world');
+const S = {green:0};
+const camera = (at,scale,x,y,duration=.72) => tl.to(rig,{scale,x,y,duration,ease:'power3.inOut'},at);
+const cutScreen = (name,at) => {tl.set('.screen',{opacity:0},at);tl.set(name,{opacity:1},at);};
+const reveal = (el,at,from,to,dur=.5) => tl.fromTo(el,{autoAlpha:0,...from},{autoAlpha:1,...to,duration:dur,ease:'power3.out',immediateRender:false},at);
+const leave = (el,at,vars={},dur=.25) => tl.to(el,{autoAlpha:0,...vars,duration:dur,ease:'power2.in'},at);
+function claim(id,at,out,direction='up') {
+ const el=$(id),axis=direction==='left'?'x':'y';
+ const from=direction==='left'?-18:18;
+ const words=[];
+ for(const node of [...el.childNodes]) if(node.nodeType===3){const frag=document.createDocumentFragment();node.textContent.split(' ').forEach((word,i)=>{if(i)frag.appendChild(document.createTextNode(' '));const w=document.createElement('span');w.className='word';w.textContent=word;frag.appendChild(w);words.push(w);});node.replaceWith(frag);}
+ tl.set(el,{autoAlpha:1},at);
+ tl.fromTo(words,{opacity:0,[axis]:from},{opacity:1,[axis]:0,duration:.34,stagger:.045,ease:'power3.out',immediateRender:false},at);
+ blurTween(tl,el,at,7,0,.35,direction==='left'?{}:VERT);
+ if(out!==null){tl.to(el,{autoAlpha:0,[axis]:-12,duration:.22,ease:'power2.in'},out);blurTween(tl,el,out,0,5,.22,direction==='left'?{}:VERT);}
+}
+function tap(at,x,y,target){
+ tl.set('#tap',{x,y,opacity:0,scale:1},at-.2);
+ tl.to('#tap',{opacity:1,duration:.16,ease:'power2.out'},at-.2);
+ tl.fromTo('#tap .tap-ring',{opacity:.8,scale:.45},{opacity:0,scale:1.3,duration:.28,ease:'power2.out',immediateRender:false},at);
+ tl.to('#tap',{scale:.75,duration:.1},at);
+ tl.to('#tap',{opacity:0,scale:1,duration:.18},at+.1);
+ if(target){tl.to(target,{scale:.96,duration:.1,ease:'power2.in'},at);tl.to(target,{scale:1,duration:.16,ease:'power2.out'},at+.1);}
+}
+// Initial state is also the poster and the final loop frame.
+tl.set(rig,{scale:1,x:0,y:0},0);
+tl.set('#phone',{scale:1.02,x:0,y:0,opacity:1,filter:'none'},0);
+// Give tap targets the same transform before and after their first press.
+tl.set('#ask, #yes, #message-action, #report-action',{scale:1},0);
+tl.to('#phone',{y:-12,duration:1.85,ease:'sine.inOut'},.15);
+// Find food. Follow the source View all control into the source list.
+leave('#c0',1.85,{y:-12},.22);leave('#brand',1.85,{y:-12},.22);
+claim('#c1',2.15,4.85,'left');
+camera(2.0,1.32,-410,-100,.65);
+tap(2.65,1524,737);
+cutScreen('#list',2.83);
+camera(2.86,1.05,-75,-12,.8);
+tl.set('#cover-row',{opacity:1},3.15);
+reveal('#food',3.1,{x:1210,y:260,scale:.91,rotationY:-2},{x:780,y:420,scale:2.85,rotationY:0},.62);
+tl.to('#phone',{x:84,opacity:.26,filter:'blur(3px)',duration:.55},3.1);
+// Request. The camera approaches Ask before the real confirmation opens.
+claim('#c2',5.08,8.28);
+camera(4.66,1.5,-1030,-150,.55);
+tap(5.25,1662,505,'#ask');
+leave('#food',5.43,{y:360},.3);
+camera(5.48,1.03,-40,-10,.65);
+reveal('#dialog',5.5,{x:1010,y:465,scale:1.95},{x:925,y:390,scale:2.35},.35);
+tap(6.58,1494,790,'#yes');
+leave('#dialog',6.73,{scale:2.27},.18);
+reveal('#success',6.86,{x:1020,y:420,scale:2.05},{x:1030,y:380,scale:2.3},.4);
+tl.to('#success',{y:366,duration:1.05,ease:'sine.inOut'},7.25);
+// Later accepted state. This cut does not simulate an immediate acceptance.
+tl.set('#success',{autoAlpha:0},8.5);cutScreen('#accepted',8.5);
+tl.set('#cover-row',{opacity:0},8.5);
+tl.set('#phone',{x:0,y:0,opacity:.32,filter:'none'},8.5);
+camera(8.5,1,0,0,.2);
+claim('#c3',8.72,12.24,'left');
+reveal('#accepted-card',8.58,{x:1215,y:260,scale:.95,rotationY:2},{x:820,y:340,scale:2.55,rotationY:0},.52);
+tap(9.3,1154,590,'#message-action');
+// Signature handoff. The authentic action travels into the outgoing bubble.
+reveal('#handoff',9.45,{x:1043.334,y:547.437,scaleX:2.55,scaleY:2.55},{x:883.6,y:377.314,scaleX:6.72,scaleY:2.4},.58);
+tl.to('#handoff img',{opacity:0,duration:.18},9.62);
+leave('#accepted-card',9.45,{y:288},.32);
+reveal('#chat-window',9.88,{x:834,y:238,scale:.98},{x:834,y:218,scale:1},.25);
+reveal('#m1',9.96,{y:10},{y:0},.2);
+leave('#handoff',10.02,{},.16);
+reveal('#m2',10.18,{y:14},{y:0},.24);
+reveal('#m3',11.05,{y:12},{y:0},.2);
+reveal('#m4',11.32,{y:12},{y:0},.2);
+tl.to('#chat-content',{y:-745,duration:1.14,ease:'power3.inOut'},10.74);
+camera(10.75,1.04,-48,-12,.7);
+// Separate bulk donation example, introduced by a chapter cut and green field.
+tl.set('#chat-window',{autoAlpha:0},12.5);cutScreen('#bulk',12.5);
+tl.set('#phone',{x:0,y:0,opacity:.3,filter:'none'},12.5);
+camera(12.5,1,0,0,.18);
+tl.to(S,{green:1,duration:.35},12.5);
+claim('#c4',12.67,16.42);
+reveal('#bulk-card',12.55,{x:1215,y:260,scale:.95,rotationY:-2},{x:820,y:290,scale:2.55,rotationY:0},.52);
+tap(13.55,1195,540,'#report-action');
+leave('#bulk-card',13.68,{x:940,y:190,scale:1.5},.35);
+reveal('#report-window',13.7,{x:1070,y:132,scale:.88},{x:1080,y:100,scale:1},.48);
+tl.to('#phone',{opacity:0,duration:.25},13.7);
+tl.to('#report-sheet',{y:-525,duration:.72,ease:'power3.inOut'},14.55);
+reveal('#status',15.22,{x:1155,y:615,scale:1.5},{x:810,y:725,scale:2.5,rotationY:0},.5);
+tl.to('#status',{y:714,duration:.55,ease:'sine.inOut'},15.72);
+// Close by returning the same UI object to the opening composition.
+leave('#status',16.47,{x:1170,y:610,scale:1.25},.42);
+tl.to('#report-window',{x:1200,y:114,scale:.582,autoAlpha:0,duration:.65,ease:'power3.inOut'},16.48);
+cutScreen('#home',16.98);
+tl.to('#phone',{x:0,y:0,scale:1.02,opacity:1,filter:'none',duration:.65,ease:'power3.out'},16.98);
+tl.to(S,{green:0,duration:.65},16.5);camera(16.5,1,0,0,.85);
+reveal('#brand',17.15,{y:18},{y:0},.38);blurTween(tl,'#brand',17.15,5,0,.38,VERT);
+tl.set('#c0',{y:0},17.35);reveal('#c0',17.35,{y:16},{y:0},.38);blurTween(tl,'#c0',17.35,7,0,.38,VERT);
+tl.to('#phone',{y:-8,duration:.7,ease:'sine.inOut'},17.7);
+tl.to('#phone',{y:0,duration:.85,ease:'sine.inOut'},18.55);
+tl.to({},{duration:.01},19.99);
+// Background motion derives only from tl.time(), completing exactly one loop.
+function render(t){
+ const phase=t/DURATION*Math.PI*2;
+ $('#warm-wash').style.transform='translate('+Math.sin(phase)*42+'px,'+((1-Math.cos(phase))*-22)+'px)';
+ $('#green-wash').style.transform='translate('+Math.sin(phase)*-34+'px,'+((1-Math.cos(phase))*18)+'px)';
+ $('#green-wash').style.opacity=String(S.green);
+ $('#warm-wash').style.opacity=String(1-S.green*.65);
+ $('#halo').style.transform='translate('+Math.sin(phase)*18+'px,'+Math.sin(phase)*-12+'px) scale('+(1+Math.sin(phase)*.018)+')';
+}
+const stage=$('#stage');
+const fit=()=>{const s=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform='translate(-50%,-50%) scale('+s+')';};
+addEventListener('resize',fit);fit();
+const clock=$('#clock'),scrub=$('#scrub'),btn=$('#btn-play');let scrubbing=false;
+const seek=t=>{tl.pause();tl.time(Math.min(Math.max(t,0),DURATION),false);gsap.ticker.tick();render(tl.time());};
+window.OPENER={tl,DURATION,seek,seekFrame:async t=>seek(t),ready:false};
+const toggle=()=>{if(tl.paused()){if(tl.progress()>=1)tl.time(0);tl.play();}else tl.pause();};
+const replay=()=>{tl.play(0);};
+btn.onclick=toggle;$('#btn-restart').onclick=replay;
+scrub.addEventListener('pointerdown',()=>{scrubbing=true;tl.pause();});addEventListener('pointerup',()=>scrubbing=false);
+scrub.addEventListener('input',()=>seek(scrub.value/1000*DURATION));
+addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();toggle();}if(/^[rR]$/.test(e.key))replay();if(/^[hH]$/.test(e.key))$('#ui').classList.toggle('on');});
+if(Q.has('debug'))$('#ui').classList.add('on');
+tl.eventCallback('onComplete',()=>{if(!Q.has('clean')&&!tl.paused())tl.play(0);});
+gsap.ticker.add(()=>{const t=tl.time();render(t);clock.textContent=t.toFixed(2)+'s';btn.textContent=tl.paused()?'Play':'Pause';if(!scrubbing)scrub.value=String(t/DURATION*1000);});
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+reduced.addEventListener('change',()=>{if(reduced.matches)seek(0);});
+Promise.all([document.fonts.ready,...[...document.images].map(i=>i.decode())]).then(()=>{seek(0);window.OPENER.ready=true;if(!Q.has('clean')&&!Q.has('debug')&&!reduced.matches)tl.play(0);}).catch(e=>{window.OPENER.error=String(e);console.error(e);});
+</script>
+</body>
+</html>

@@ -1,0 +1,684 @@
+{
+  "samples": [
+    {
+      "width": 1440,
+      "state": "normal",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "true",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1440,
+      "state": "text-200",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 343.203125
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 343.203125
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 343.203125
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 343.203125
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1440,
+      "state": "rtl",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1280,
+      "state": "normal",
+      "viewport": 1280,
+      "documentWidth": 1280,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "true",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1280,
+      "state": "text-200",
+      "viewport": 1280,
+      "documentWidth": 1280,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 302.40625
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 302.40625
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 302.40625
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 302.40625
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1280,
+      "state": "rtl",
+      "viewport": 1280,
+      "documentWidth": 1280,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1024,
+      "state": "normal",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        }
+      ],
+      "horizontal": "true",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1024,
+      "state": "text-200",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 233.28125
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 233.28125
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 233.28125
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 233.28125
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 1024,
+      "state": "rtl",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 245.765625
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 768,
+      "state": "normal",
+      "viewport": 768,
+      "documentWidth": 768,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 768,
+      "state": "text-200",
+      "viewport": 768,
+      "documentWidth": 768,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 312
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 312
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 312
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 312
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 768,
+      "state": "rtl",
+      "viewport": 768,
+      "documentWidth": 768,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 390,
+      "state": "normal",
+      "viewport": 390,
+      "documentWidth": 390,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 390,
+      "state": "text-200",
+      "viewport": 390,
+      "documentWidth": 390,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 294
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 294
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 294
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 294
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 390,
+      "state": "rtl",
+      "viewport": 390,
+      "documentWidth": 390,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 390,
+      "state": "forced-colors",
+      "viewport": 390,
+      "documentWidth": 390,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 288
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 320,
+      "state": "normal",
+      "viewport": 320,
+      "documentWidth": 320,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 320,
+      "state": "text-200",
+      "viewport": 320,
+      "documentWidth": 320,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 224
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 224
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 224
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 224
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "width": 320,
+      "state": "rtl",
+      "viewport": 320,
+      "documentWidth": 320,
+      "outside": [],
+      "images": [
+        {
+          "source": "/images/munchpal-availability-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        },
+        {
+          "source": "/images/munchpal-availability-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        },
+        {
+          "source": "/images/munchpal-message-before.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        },
+        {
+          "source": "/images/munchpal-message-after.png",
+          "width": 388,
+          "height": 834,
+          "renderedWidth": 272
+        }
+      ],
+      "horizontal": "false",
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    }
+  ],
+  "failures": [],
+  "captures": [
+    "D:\\Project\\Personal Web\\.impeccable\\review\\desktop-research.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\desktop-revisions.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\desktop-evaluation.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\desktop-close.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\desktop-content-stacked.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile-research.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile-evaluation.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile-close.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile-revision-1.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile-revision-2.png",
+    "D:\\Project\\Personal Web\\.impeccable\\review\\mobile-text-200.png"
+  ]
+}

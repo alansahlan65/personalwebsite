@@ -1,0 +1,191 @@
+Back to selected work
+Munchpal
+
+Food availability for residents. Pickup records for volunteers.
+
+Explore the Munchpal prototype
+
+Find food, request a meal and arrange pickup. A separate bulk donation flow ends with a pickup report.
+
+Play
+Replay
+
+Portfolio motion study
+
+Project
+Client design project, Surabaya
+September to December 2024
+My role
+Sole UI/UX designer
+Scope
+Research, UI design and Figma prototype testing
+Two groups, two different jobs
+
+Residents wanted to know what food was available before asking. Volunteers managed donations through paper records and WhatsApp. I designed separate flows for requesting food and coordinating bulk donations.
+
+Research notes
+Keep bulk donations on their own path
+
+Residents share food details and arrange pickups. Volunteers review bulk donations, confirm collection and record the pickup.
+
+User flow
+Residents
+Volunteers
+Residents
+Volunteers
+Resident user-flow map
+A request starts with a listing
+
+Each listing shows the food, location and availability. Residents can check the details, then message the donor to arrange a pickup.
+
+Find food nearby
+Check the food list
+Arrange a pickup
+Give each request a next step
+
+Notifications link each request to its next action, such as messaging the donor or leaving a rating. Bulk-donation pickup notifications open the donation report.
+
+I added the pickup date to the confirmation so volunteers could include it in their reports.
+
+See the pickup-date revision
+Request and pickup states
+Donation report access
+What I changed, and why
+Make unavailable food obvious
+
+Participants found that food marked Gone still looked available. I faded those photographs and kept the written status to make availability clearer.
+
+Before
+After
+Start with an editable message
+
+Volunteers had to write the same opening question for each donor. I added a suggested confirmation message they could edit before sending.
+
+Before
+After
+What testing showed
+109/110
+
+20 participants completed 109 of 110 task attempts in the Figma prototype.
+
+Test details
+Explore the Munchpal designs
+Read the original Munchpal presentation
+Back to selected work
+
+--- Expanded detail ---
+
+Back to selected work
+Munchpal
+
+Food availability for residents. Pickup records for volunteers.
+
+Explore the Munchpal prototype
+
+Find food, request a meal and arrange pickup. A separate bulk donation flow ends with a pickup report.
+
+Play
+Replay
+
+Portfolio motion study
+
+Project
+Client design project, Surabaya
+September to December 2024
+My role
+Sole UI/UX designer
+Scope
+Research, UI design and Figma prototype testing
+Two groups, two different jobs
+
+Residents wanted to know what food was available before asking. Volunteers managed donations through paper records and WhatsApp. I designed separate flows for requesting food and coordinating bulk donations.
+
+Research notes
+
+I interviewed five Surabaya residents and five Garda Pangan volunteers, then mapped their needs and donation process into user flows, wireframes and a high-fidelity prototype.
+
+Residents needed certainty before asking
+
+All five residents described hesitation or embarrassment when asking for food. They wanted clear availability and pickup details, so I made each request start from a listing.
+
+Volunteers needed a way to coordinate
+
+I brought donation acceptance, pickup confirmation, reports and donation history into one workflow.
+
+Keep bulk donations on their own path
+
+Residents share food details and arrange pickups. Volunteers review bulk donations, confirm collection and record the pickup.
+
+User flow
+Residents
+Volunteers
+Residents
+Volunteers
+Resident user-flow map
+A request starts with a listing
+
+Each listing shows the food, location and availability. Residents can check the details, then message the donor to arrange a pickup.
+
+Find food nearby
+Check the food list
+Arrange a pickup
+Give each request a next step
+
+Notifications link each request to its next action, such as messaging the donor or leaving a rating. Bulk-donation pickup notifications open the donation report.
+
+I added the pickup date to the confirmation so volunteers could include it in their reports.
+
+See the pickup-date revision
+Request and pickup states
+Donation report access
+What I changed, and why
+Make unavailable food obvious
+
+Participants found that food marked Gone still looked available. I faded those photographs and kept the written status to make availability clearer.
+
+Before
+After
+Start with an editable message
+
+Volunteers had to write the same opening question for each donor. I added a suggested confirmation message they could edit before sending.
+
+Before
+After
+What testing showed
+109/110
+
+20 participants completed 109 of 110 task attempts in the Figma prototype.
+
+Test details
+
+I tested the prototype remotely through moderated and unmoderated Maze sessions, with a UEQ questionnaire in Google Forms.
+
+Task completion by participant group
+
+Residents
+10 participants, 6 tasks each
+59 of 60
+task attempts completed
+Garda Pangan volunteers
+10 participants, 5 tasks each
+50 of 50
+task attempts completed
+
+One community task remained unfinished after a connection problem and accidental use of Maze's Stop Task control.
+
+Resident tasks
+Register and sign in
+Request food
+Post surplus food
+Make a bulk donation
+Check the community feed
+Sign out
+Volunteer tasks
+Sign in
+Accept a donation
+Confirm pickup and make a report
+Check and download donation history
+Sign out
+Explore the Munchpal designs
+Read the original Munchpal presentation
+Back to selected work

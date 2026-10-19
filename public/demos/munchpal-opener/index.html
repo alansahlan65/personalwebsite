@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MunchPal · The next step is clear</title>
+<meta name="description" content="A silent 40-second portfolio motion study of MunchPal's food-sharing prototype.">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:Rubik;src:url('assets/Rubik-Variable.ttf') format('truetype');font-weight:300 900;font-display:block}
+:root{--base:#fffdfa;--ink:#1c1c1e;--orange:#ff9e08;--green:#008a57;--content-gap:24px;--content-group-gap:32px;--inset:128px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--base);color:var(--ink);font-family:Rubik,sans-serif}
+#stage{width:1920px;height:1080px;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);overflow:hidden;background:var(--base);isolation:isolate}
+.scene,.layer{position:absolute;inset:0}.scene{opacity:0}#discovery{opacity:1}
+.scene-content{width:100%;height:100%;padding:var(--inset);display:flex;flex-direction:column;gap:var(--content-gap);justify-content:center;align-items:center;box-sizing:border-box}
+.native{position:relative;flex-shrink:0;transform-origin:center;will-change:transform}
+.spotlight{position:absolute;width:1800px;height:1600px;left:380px;top:-240px;border-radius:50%;background:radial-gradient(ellipse at center,#ffb83a45 0%,#ffb83a14 35%,#ffb83a00 66%);pointer-events:none}
+#green-light{background:radial-gradient(ellipse at center,#008a5729 0%,#008a570b 40%,#008a5700 68%);opacity:0}
+#green-field{position:absolute;inset:0;background:#eaf5ee;opacity:0}
+.grain{position:absolute;inset:0;opacity:.026;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch' seed='8'/%3E%3C/filter%3E%3Cpath fill='%231c1c1e' filter='url(%23g)' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}
+.plane{background:var(--base);border-radius:16px;box-shadow:0 10px 18px #51360909,0 32px 70px #51360914}
+#identity{z-index:30;pointer-events:none}#identity .scene-content{justify-content:flex-start;align-items:flex-start;padding:96px 128px}#brand{display:block;width:248px;height:auto}
+#row-layer{z-index:5;pointer-events:none}#food-row{width:365px;height:104px;padding:16px;}#food-row>img{display:block;width:333px;height:72px}
+#request-action{position:absolute;width:82px;height:20px;left:267px;top:16px;transform-origin:center}#request-action img{display:block;width:82px;height:20px}
+#list-screen{width:388px;height:834px;overflow:hidden;border-radius:24px;box-shadow:0 24px 80px #51360912}#list-screen img{display:block;width:388px;height:834px}
+#list-row-mask{position:absolute;left:24px;top:148px;width:344px;height:86px;background:var(--base);border-radius:8px}
+.copy .scene-content{align-items:flex-start}h1,h2{font-size:96px;font-weight:500;line-height:1.04;letter-spacing:-.045em;max-width:600px;text-wrap:balance}.word{display:inline-block}
+#discovery-title{max-width:520px}#confirm-layer,#sent-layer{z-index:8}
+#confirm-panel{width:339px;height:214px;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:24px;align-items:center;justify-content:center}
+#confirm-panel h3{font-size:20px;font-weight:600;line-height:1.2;text-align:center;max-width:260px}.divider{height:1px;flex-shrink:0;background:#1c1c1e;width:100%}.actions{display:flex;gap:32px;align-items:center;width:100%}
+.ui-button{height:40px;display:flex;justify-content:center;align-items:center;flex:1;border-radius:8px;background:var(--orange);color:var(--ink);font-size:13px;font-weight:600;white-space:nowrap}
+.ui-button.secondary{background:var(--base);border:1px solid #a35b00;color:#9d5700}
+#success-panel{width:285px;height:180px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;}#success-panel h3{font-weight:600;font-size:24px;letter-spacing:-.02em}
+.success-mark{width:64px;height:64px;border-radius:50%;background:#daf5e9;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 8px #c7efe0}.success-mark svg{width:40px;height:40px;display:block;background:#12b76a;border-radius:50%;padding:10px}
+#clear-field{position:absolute;left:100px;top:230px;width:1720px;height:660px;border-radius:240px 240px 240px 64px;background:var(--orange);transform-origin:80% 70%;opacity:0}
+#clear-pocket{position:absolute;left:320px;top:280px;width:1300px;height:440px;border-radius:220px;background:radial-gradient(ellipse,#fff0d6 5%,#fff0d6e6 50%,#fff0d600 72%);opacity:0}
+#clear-copy .scene-content{justify-content:center;align-items:center}#clear-title{max-width:1080px;text-align:center;font-size:108px}#accept-title{max-width:580px;font-size:76px}
+.notification{width:394px;padding:24px;display:flex;gap:14px;align-items:flex-start}.avatar.alan{background-image:url('assets/alan-avatar.jpg')}.avatar.janu{background-image:url('assets/janu-avatar.jpg')}.avatar{display:block;background-size:cover;background-position:center;width:42px;height:42px;object-fit:cover;border-radius:50%;box-shadow:0 3px 6px #1c1c1e1a;flex-shrink:0}
+.notice-content{display:flex;flex-direction:column;gap:12px;width:290px}.notice-content p{font-size:15px;line-height:1.3;max-width:290px}.notice-content .ui-button{font-size:14px;min-height:32px;flex:none;align-self:flex-start;padding:0 12px;border-radius:6px}
+.notice-time{font-size:8px;color:#686866;text-align:right;font-variant-numeric:tabular-nums}.notice-divider{height:1px;background:#e6e4e0;width:100%}
+#chat{z-index:12;perspective:1800px}#chat-title{max-width:1600px;font-size:88px}#chat .copy .scene-content{justify-content:flex-start;padding-top:96px}#chat .objects .scene-content{padding-top:240px;padding-bottom:56px}
+#chat-window{width:1248px;height:784px;overflow:hidden;border-radius:32px;background:var(--base);box-shadow:0 8px 18px #51360906,0 30px 80px #51360912;perspective:1500px}
+#chat-page{position:relative;width:388px;height:670px;transform-origin:0 0;transform-style:preserve-3d}.message{position:absolute;width:341px;transform-style:preserve-3d}
+.message-meta{display:flex;gap:12px;align-items:center;height:42px;font-size:12px;font-weight:600}.message-meta time{color:#6d6d70;font-size:11px;font-weight:500}.message-meta .avatar.alan{background-image:url('assets/alan-avatar.jpg')}.avatar.janu{background-image:url('assets/janu-avatar.jpg')}.avatar{display:block;background-size:cover;background-position:center;width:42px;height:42px}
+.outgoing .message-meta{justify-content:flex-end}.incoming .message-meta{justify-content:flex-start}.bubble{font-size:12px;line-height:1.45;padding:8px 16px;width:273px;min-height:30px}
+.outgoing .bubble{background:linear-gradient(110deg,#ffbd12,#ff8a00);border-radius:16px 0 16px 16px;margin-top:2px}.incoming .bubble{background:#ebebf1;border-radius:0 16px 16px 16px;margin:2px 0 0 54px;box-shadow:0 3px 4px #1c1c1e12}
+#message1{top:8px;left:30px}#message2{top:104px;left:30px}#meal-photo{display:block;width:244px;height:194px;object-fit:cover;border-radius:12px;position:relative;transform-origin:center}
+#photo-plane{padding:8px 16px 8px 19px;margin:12px 0 0 54px;width:279px;background:#ebebf1;border-radius:0 20px 20px 20px;transform-style:preserve-3d}#message3{top:424px;left:30px}#message4{top:520px;left:30px}
+#bulk-title{font-size:100px;max-width:560px}#bulk-card .ui-button{background:#008354;color:var(--base)}
+#report-scene{z-index:14}#report-title{font-size:96px;max-width:620px}#report-scene .objects .scene-content{align-items:flex-end;padding:96px 128px}
+#report-window{width:970px;height:888px;overflow:hidden;border-radius:32px;background:var(--base);box-shadow:0 20px 70px #174d3020;transform-origin:80% 50%}#report-page{position:relative;width:388px;min-height:1050px;transform:scale(2.5);transform-origin:0 0}
+#report-header{display:flex;align-items:center;gap:20px;height:88px;padding:24px 28px 12px;background:var(--base);position:relative;z-index:2}#report-header svg{width:16px;height:16px;flex-shrink:0}#report-header h3{font-size:18px;font-weight:500;color:var(--green)}
+#report-scroll-view{position:relative;height:267.2px;overflow:hidden}#report-body{display:flex;flex-direction:column;gap:15px;width:329px;margin:16px 30px 0;position:relative}.report-field{display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.2;flex-shrink:0}.report-field h4{font-size:16px;font-weight:500}.report-field p{font-variant-numeric:tabular-nums}
+#donation-photo{display:block;width:329px;height:198px;object-fit:cover;border-radius:6px}#status-shadow{position:absolute;inset:0;box-shadow:0 8px 18px #174d3020;opacity:0;pointer-events:none}#report-status{position:relative;padding:0;background:var(--base);transform-origin:center}#report-status p{color:#008a57}#pickup-photo{width:115px;height:112px;object-fit:cover;border-radius:6px;display:block}
+#closing{z-index:20;pointer-events:none}#closing .scene-content{justify-content:flex-end;padding-bottom:128px}#closing-title{font-size:92px;max-width:1600px;text-align:center}
+.tap{position:absolute;width:24px;height:24px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 7px #fffdfabf;z-index:40;opacity:0;transform:translate(-50%,-50%);pointer-events:none}.tap-ring{position:absolute;inset:-22px;border:2px solid var(--ink);border-radius:50%;opacity:0}
+#review-controls{position:fixed;z-index:100;bottom:16px;left:50%;transform:translateX(-50%);display:none;align-items:center;gap:16px;padding:12px 16px;background:var(--base);border:1px solid #d7d2c8;border-radius:16px;color:var(--ink);font-size:14px}#review-controls.open{display:flex}#review-controls button{font:inherit;border:0;padding:12px 16px;background:var(--ink);color:var(--base);border-radius:8px;cursor:pointer}#scrub{width:320px;accent-color:#9d5700}#clock{font-variant-numeric:tabular-nums;min-width:8ch}.sr-only{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* Identity opening and authored illustrated browsing scene. */
+#brand-intro{opacity:1;z-index:60;background:#fffdfa}
+#brand-intro .scene-content{gap:48px;position:relative;z-index:1}
+#intro-logo{background:url('assets/brand.svg') center/contain no-repeat;display:block;width:600px;height:180px;object-fit:contain;transform-origin:center}
+#intro-headline{font-size:104px;font-weight:500;max-width:1120px;text-align:center;line-height:1.06}
+#intro-wash{position:absolute;width:1500px;height:1100px;left:210px;top:-10px;background:radial-gradient(ellipse,#ff9e081e,#ff9e0800 66%);border-radius:50%;pointer-events:none}
+#people-scene{z-index:50;background:#fffdfa}
+#people-scene:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 58%,#fff0d6 0%,#fff0d600 62%);pointer-events:none}
+#people-scene .people-phone-layer .scene-content{padding-top:160px;padding-bottom:80px}
+#people-phone{background-image:url('assets/list.webp');background-size:388px 834px;background-repeat:no-repeat;position:relative;width:388px;height:834px;border-radius:24px;background-color:#fffdfa;box-shadow:0 24px 64px #51360918;overflow:hidden;clip-path:inset(0 round 24px);transform-origin:center}
+#people-phone>img{display:block;width:388px;height:834px}
+#people-art{position:absolute;inset:0;width:1920px;height:1080px;overflow:visible;pointer-events:none}
+#people-logo-layer .scene-content{justify-content:flex-start;align-items:flex-start;padding:96px 128px}
+#people-logo{background:url('assets/brand.svg') center/contain no-repeat;width:248px;height:74px;display:block}
+#people-touch{position:absolute;left:958px;top:381px;width:42px;height:42px;border:3px solid #ff9e08;border-radius:50%;transform:translate(-50%,-50%);opacity:0}
+</style>
+</head>
+<body>
+
+<div data-hf-id="hf-y8c5" id="stage" data-composition-id="munchpal-opener" data-start="0" data-duration="40" data-width="1920" data-height="1080" data-track-index="0" aria-label="MunchPal product opener">
+<div data-hf-id="hf-eq9m" id="green-field" data-layout-ignore></div><div data-hf-id="hf-yabv" id="warm-light" class="spotlight" data-layout-ignore></div><div data-hf-id="hf-r147" id="green-light" class="spotlight" data-layout-ignore></div><div data-hf-id="hf-ryn8" class="grain" data-layout-ignore></div>
+<section data-hf-id="hf-ls3i" id="discovery" class="scene" aria-label="Discover and request food">
+<div data-hf-id="hf-a8wf" class="layer"><div data-hf-id="hf-cn5c" class="scene-content"><div data-hf-id="hf-5kwr" id="list-screen" class="native" data-layout-allow-overflow><img data-hf-id="hf-pu69" src="assets/list.webp" width="388" height="834" alt="Original Food List in Surabaya"><div data-hf-id="hf-yva3" id="list-row-mask"></div></div></div></div>
+<div data-hf-id="hf-kzcx" id="discover-copy" class="layer copy"><div data-hf-id="hf-o0eg" class="scene-content"><h2 data-hf-id="hf-23pb" id="discovery-title">Find food nearby</h2></div></div>
+<div data-hf-id="hf-ui9b" id="confirm-layer" class="layer"><div data-hf-id="hf-mthd" class="scene-content"><div data-hf-id="hf-2rjy" id="confirm-panel" class="native plane"><h3 data-hf-id="hf-uvb6">Request this food?</h3><div data-hf-id="hf-jk23" class="divider"></div><div data-hf-id="hf-zgc1" class="actions"><div data-hf-id="hf-6q7f" class="ui-button secondary">Cancel</div><div data-hf-id="hf-uu78" id="send-request" class="ui-button">Send request</div></div></div></div></div>
+<div data-hf-id="hf-a9v3" id="sent-layer" class="layer"><div data-hf-id="hf-n7se" class="scene-content"><div data-hf-id="hf-f10v" id="success-panel" class="native plane"><div data-hf-id="hf-riq1" class="success-mark"><svg data-hf-id="hf-35ls" viewBox="0 0 24 24" aria-hidden="true"><path data-hf-id="hf-xtiu" d="m4 12 5 5L21 5" fill="none" stroke="#fffdfa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 data-hf-id="hf-ej8h">Request sent</h3></div></div></div>
+<div data-hf-id="hf-wb3o" id="clear-field" data-layout-ignore></div><div data-hf-id="hf-t0ym" id="clear-pocket" data-layout-ignore></div><div data-hf-id="hf-9l4u" id="clear-copy" class="layer"><div data-hf-id="hf-m0vb" class="scene-content"><h2 data-hf-id="hf-t959" id="clear-title">A clear next step</h2></div></div>
+</section>
+<div data-hf-id="hf-un0b" id="row-layer" class="layer"><div data-hf-id="hf-mf6c" class="scene-content"><div data-hf-id="hf-hcme" id="food-row" class="native plane"><img data-hf-id="hf-3rl4" src="assets/food-row.svg" width="333" height="72" alt="Padang Rice from Janu Suryajana, 2.1 kilometres away"><div data-hf-id="hf-utpz" id="request-action"><img data-hf-id="hf-c9y6" src="assets/request-button.svg" width="82" height="20" alt="Request"></div></div></div></div>
+<section data-hf-id="hf-7ygz" id="acceptance" class="scene" aria-label="A later accepted request"><div data-hf-id="hf-l0sq" class="layer copy"><div data-hf-id="hf-l899" class="scene-content"><h2 data-hf-id="hf-jco0" id="accept-title">When accepted, start a conversation</h2></div></div><div data-hf-id="hf-rnan" class="layer"><div data-hf-id="hf-lmka" class="scene-content"><div data-hf-id="hf-ud88" id="accepted-card" class="notification native plane"><span data-hf-id="hf-niv5" class="avatar janu" role="img" aria-label="Janu Suryajana"></span><div data-hf-id="hf-fd18" class="notice-content"><p data-hf-id="hf-l2l6">Janu Suryajana accepted your request</p><div data-hf-id="hf-hz5k" id="send-message" class="ui-button">Send message</div><div data-hf-id="hf-dxho" class="notice-time">Just now</div><div data-hf-id="hf-kxk0" class="notice-divider"></div></div></div></div></div></section>
+<section data-hf-id="hf-jbpi" id="chat" class="scene" aria-label="Arrange pickup in the authored conversation"><div data-hf-id="hf-a5u6" class="layer copy"><div data-hf-id="hf-qsjn" class="scene-content"><h2 data-hf-id="hf-4ay4" id="chat-title">Arrange pickup in chat</h2></div></div><div data-hf-id="hf-njdb" class="layer objects"><div data-hf-id="hf-r6uo" class="scene-content"><div data-hf-id="hf-lv2l" id="chat-window" class="native" data-layout-allow-overflow><div data-hf-id="hf-yuth" id="chat-page">
+<div data-hf-id="hf-ifop" id="message1" class="message outgoing"><div data-hf-id="hf-vjy1" class="message-meta"><time data-hf-id="hf-75bz">1:50 P.M.</time><span data-hf-id="hf-dzmq">Alan Sahlan</span><span data-hf-id="hf-98pp" class="avatar alan" aria-hidden="true"></span></div><p data-hf-id="hf-25zj" class="bubble">Hi, is the food still available?</p></div>
+<div data-hf-id="hf-w3h0" id="message2" class="message incoming"><div data-hf-id="hf-4cct" class="message-meta"><span data-hf-id="hf-tp2b" class="avatar janu" aria-hidden="true"></span><span data-hf-id="hf-lzbx">Janu Suryajana</span><time data-hf-id="hf-knau">1:51 P.M.</time></div><p data-hf-id="hf-i8ju" class="bubble">Hi Alan, yes, it is. You can pick it up.</p><div data-hf-id="hf-82ve" id="photo-plane"><img data-hf-id="hf-9cds" id="meal-photo" src="assets/meal-photo.jpg" width="244" height="194" alt="The original Padang Rice photograph"></div></div>
+<div data-hf-id="hf-sjij" id="message3" class="message outgoing"><div data-hf-id="hf-5j9w" class="message-meta"><time data-hf-id="hf-4qck">1:53 P.M.</time><span data-hf-id="hf-u6x2">Alan Sahlan</span><span data-hf-id="hf-hxtd" class="avatar alan" aria-hidden="true"></span></div><p data-hf-id="hf-drla" class="bubble">Thank you so much. I'll head over soon.</p></div>
+<div data-hf-id="hf-fmui" id="message4" class="message incoming"><div data-hf-id="hf-54yv" class="message-meta"><span data-hf-id="hf-dmoz" class="avatar janu" aria-hidden="true"></span><span data-hf-id="hf-xws1">Janu Suryajana</span><time data-hf-id="hf-39wj">1:54 P.M.</time></div><p data-hf-id="hf-r3y5" class="bubble">Sure, I'll wait.</p></div>
+</div></div></div></div></section>
+<section data-hf-id="hf-vipu" id="bulk-donation" class="scene" aria-label="A separate bulk donation example"><div data-hf-id="hf-ak57" class="layer copy"><div data-hf-id="hf-cenc" class="scene-content"><h2 data-hf-id="hf-uas7" id="bulk-title">For bulk donations</h2></div></div><div data-hf-id="hf-r8zm" class="layer"><div data-hf-id="hf-c0cb" class="scene-content"><div data-hf-id="hf-0qqp" id="bulk-card" class="notification native plane" data-layout-allow-overlap><span data-hf-id="hf-d8dy" class="avatar janu" aria-hidden="true"></span><div data-hf-id="hf-7o6s" class="notice-content"><p data-hf-id="hf-za1l">Garda Pangan has picked up your donation</p><div data-hf-id="hf-d2uy" id="view-report" class="ui-button">View pickup report</div><div data-hf-id="hf-a9d0" class="notice-time">Just now</div><div data-hf-id="hf-7uu0" class="notice-divider"></div></div></div></div></div></section>
+<section data-hf-id="hf-2ss2" id="report-scene" class="scene" aria-label="Donation report"><div data-hf-id="hf-ayg8" class="layer copy"><div data-hf-id="hf-bm1a" class="scene-content"><h2 data-hf-id="hf-n0jh" id="report-title">Pickup details, documented</h2></div></div><div data-hf-id="hf-vlkf" class="layer objects"><div data-hf-id="hf-b7q9" class="scene-content"><div data-hf-id="hf-yokx" id="report-window" class="native" data-layout-allow-overflow><div data-hf-id="hf-897p" id="report-page">
+<div data-hf-id="hf-d9sr" id="report-header"><svg data-hf-id="hf-zkfs" viewBox="0 0 20 20" aria-hidden="true"><path data-hf-id="hf-pzbx" d="m9 3-7 7 7 7M2 10h17" stroke="currentColor" stroke-width="2" fill="none"/></svg><h3 data-hf-id="hf-9gic">Donation report</h3></div>
+<div data-hf-id="hf-vp1e" id="report-scroll-view" data-layout-allow-overflow><div data-hf-id="hf-oujk" id="report-body" data-layout-allow-occlusion>
+<div data-hf-id="hf-ephp" class="report-field"><h4 data-hf-id="hf-1793">Donation pickup date</h4><p data-hf-id="hf-e74m">20 Nov 2024</p></div><div data-hf-id="hf-lrk1" class="report-field"><h4 data-hf-id="hf-85f2">Donor name</h4><p data-hf-id="hf-cb40">Alan Sahlan</p></div><div data-hf-id="hf-myh4" class="report-field"><h4 data-hf-id="hf-wyx0">Food name</h4><p data-hf-id="hf-heax">Wrapped Rice</p></div><div data-hf-id="hf-mk63" class="report-field"><h4 data-hf-id="hf-hh6e">Food quantity</h4><p data-hf-id="hf-1oii">50</p></div><div data-hf-id="hf-kkmy" class="report-field"><h4 data-hf-id="hf-3fkv">Donor's food photo</h4><img data-hf-id="hf-220y" id="donation-photo" src="assets/donation-food-photo.png" width="329" height="198" alt="Original photograph of wrapped rice donations"></div><div data-hf-id="hf-k6bx" class="report-field"><h4 data-hf-id="hf-4zje">Pickup time</h4><p data-hf-id="hf-bdqj">15:00 WIB</p></div><div data-hf-id="hf-ld90" class="report-field"><h4 data-hf-id="hf-c65d">Pickup address</h4><p data-hf-id="hf-1i13">Jl. Mayjend. Jonosewojo, Babatan, Kec. Wiyung</p></div><div data-hf-id="hf-81gc" id="report-status" class="report-field"><div id="status-shadow" data-layout-ignore></div><h4 data-hf-id="hf-yrm3">Donation status</h4><p data-hf-id="hf-bg3w">Picked up</p></div><div data-hf-id="hf-kyxz" class="report-field"><h4 data-hf-id="hf-7m3u">Donation pickup photos</h4><img data-hf-id="hf-tt7s" id="pickup-photo" src="assets/pickup-photo.png" width="115" height="112" alt="Original pickup photograph from this donation example"></div><div data-hf-id="hf-pcba" class="report-field"><h4 data-hf-id="hf-wpkw">Pickup notes</h4><p data-hf-id="hf-hy0f">Pickup went smoothly and the food was safe to eat.</p></div>
+</div></div></div></div></div></div></section>
+<section data-hf-id="hf-ya4i" id="closing" class="scene" aria-label="MunchPal identity"><div data-hf-id="hf-atf8" class="scene-content"><h1 data-hf-id="hf-wgwp" id="closing-title">Food sharing, made clear</h1></div></section>
+<div data-hf-id="hf-yjiv" id="identity" class="layer"><div data-hf-id="hf-af47" class="scene-content"><img data-hf-id="hf-npzm" id="brand" src="assets/brand.svg" width="248" height="74" alt="Munchpal original wordmark"></div></div>
+<div data-hf-id="hf-6huf" id="tap-request" class="tap" data-layout-ignore><i data-hf-id="hf-jtbu" class="tap-ring"></i></div><div data-hf-id="hf-qqhg" id="tap-confirm" class="tap" data-layout-ignore><i data-hf-id="hf-ddr2" class="tap-ring"></i></div><div data-hf-id="hf-0tb5" id="tap-message" class="tap" data-layout-ignore><i data-hf-id="hf-ds23" class="tap-ring"></i></div><div data-hf-id="hf-avgi" id="tap-report" class="tap" data-layout-ignore><i data-hf-id="hf-e6d4" class="tap-ring"></i></div>
+
+<section id="people-scene" class="scene" aria-label="Illustrated people browsing MunchPal">
+<div class="layer people-phone-layer"><div class="scene-content"><div id="people-phone" class="native" data-layout-allow-overflow></div></div></div>
+<!-- BEGIN MUNCHPAL PEOPLE -->
+<svg id="people-art" role="img" aria-label="Two illustrated people browsing MunchPal" data-layout-ignore xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <defs>
+    <clipPath id="handset-clip"><rect x="655" y="410" width="88" height="189" rx="11"/></clipPath>
+  </defs>
+  <g id="people-ground" fill="#1C1C1E" opacity=".07">
+    <ellipse cx="530" cy="955" rx="184" ry="19"/>
+    <ellipse cx="1342" cy="955" rx="180" ry="19"/>
+  </g>
+  <g id="resident-left">
+    <g id="left-legs">
+      <path d="M453 638H530L526 790 493 929H432L450 786Z" fill="#D5D5C8"/>
+      <path d="M523 638H598L602 799 628 929H565L528 793Z" fill="#E5E4D8"/>
+      <path d="M451 672 460 787 441 900M551 674 559 794 590 902" stroke="#B7BAAA" stroke-width="3" stroke-linecap="round"/>
+      <path d="M433 911H490L502 934 501 952H393Q384 940 398 931Z" fill="#1C1C1E"/>
+      <path d="M565 911H625L638 934 681 938Q688 942 686 952H565Z" fill="#1C1C1E"/>
+      <path d="M391 949H502M565 949H685" stroke="#FFFDFA" stroke-width="7" stroke-linecap="round"/>
+      <path d="m447 928 24 2m105-2 23 2" stroke="#FF9E08" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <path d="M466 409Q518 386 570 411L611 451 600 657Q531 682 449 657L430 452Z" fill="#008A57"/>
+    <path d="M473 413Q513 444 550 410L545 441Q514 464 480 443Z" fill="#EAF5EE"/>
+    <path d="M461 473 468 621M583 475 578 621M484 649Q527 661 570 649" stroke="#006D47" stroke-width="4" stroke-linecap="round"/>
+    <path d="M487 361H548V418Q518 443 486 415Z" fill="#B86B43"/>
+    <g id="left-head">
+      <path d="M473 301Q480 263 521 268 565 271 564 316L577 337 563 345 556 372Q540 396 508 385L483 362Z" fill="#C88861"/>
+      <path d="M476 342Q455 336 457 316 459 302 474 303L484 318 489 281Q517 302 553 293 573 276 550 257 528 242 509 254 493 239 474 254 450 254 449 276 430 292 449 308L461 344Z" fill="#1C1C1E"/>
+      <path d="M474 317Q459 310 460 326 461 340 478 341" fill="#C88861"/>
+      <path d="m531 319 11 1" stroke="#1C1C1E" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="539" cy="328" rx="3" ry="4" fill="#1C1C1E"/>
+      <path d="M539 360Q549 361 553 353" stroke="#673E2C" stroke-width="3" stroke-linecap="round"/>
+      <path d="m551 327 8 16-8 2" stroke="#A36546" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path d="M575 427Q595 423 609 445L654 501 634 539 574 490Q551 463 575 427Z" fill="#008A57"/>
+    <path d="m623 495 24 12 46-34Q705 469 711 481 716 493 702 504L649 553Q635 563 621 549L609 530Z" fill="#C88861"/>
+    <path d="m616 523 23 16" stroke="#006D47" stroke-width="4" stroke-linecap="round"/>
+    <g id="left-handset">
+      <rect x="650" y="403" width="98" height="204" rx="16" fill="#1C1C1E"/>
+      <rect x="654" y="408" width="90" height="194" rx="12" fill="#FFFDFA"/>
+      <g clip-path="url(#handset-clip)"><image id="handset-feed" x="655" y="410" width="88" height="189" xlink:href="assets/list.webp"/></g>
+      <path d="M686 411h26" stroke="#1C1C1E" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <path d="M451 437Q426 439 421 467L415 529Q414 551 437 562L581 603 598 563 464 519 478 472Q480 446 451 437Z" fill="#008A57"/>
+    <path d="m580 560 47-13 29-20Q669 520 678 529L689 550Q692 560 679 565L651 573 625 594Q608 606 590 599L577 588Z" fill="#C88861"/>
+    <g id="left-thumb"><path d="m650 548 26-29Q685 512 691 519 695 526 688 535L670 561Z" fill="#D9986D"/><path d="m671 537 13-13" stroke="#A36546" stroke-width="2" stroke-linecap="round"/></g>
+    <path d="m578 558 13 41" stroke="#006D47" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g id="resident-right">
+    <g id="right-legs">
+      <path d="M1264 640H1336L1327 799 1294 930H1229L1254 787Z" fill="#245344"/>
+      <path d="M1334 640H1405L1414 788 1442 930H1377L1343 803Z" fill="#183F34"/>
+      <path d="m1271 675-2 113-24 113m119-226 10 117 35 110" stroke="#326854" stroke-width="3" stroke-linecap="round"/>
+      <path d="M1230 910H1292L1302 938 1300 954H1189Q1182 941 1197 932Z" fill="#FFFDFA"/>
+      <path d="M1376 910H1440L1452 936 1485 941Q1493 944 1491 954H1377Z" fill="#FFFDFA"/>
+      <path d="M1190 952H1301M1378 952H1490" stroke="#1C1C1E" stroke-width="5" stroke-linecap="round"/>
+      <path d="m1236 930 26 2m124-3 24 2" stroke="#008A57" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <path d="M1286 405Q1333 389 1384 413L1422 465 1411 659Q1330 680 1259 655L1241 454Z" fill="#FF9E08"/>
+    <path d="m1320 422 9 235M1277 471l6 151M1392 482l-3 139" stroke="#D88408" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1297 404 1327 437 1356 405 1343 395H1310Z" fill="#FFF0D6"/>
+    <path d="M1306 359H1360V409L1327 433 1302 407Z" fill="#D99772"/>
+    <g id="right-head">
+      <path d="M1306 281Q1353 248 1386 293L1391 380Q1363 400 1308 380L1289 325Z" fill="#1C1C1E"/>
+      <path d="M1298 300Q1325 278 1357 302L1367 349 1347 378Q1325 392 1303 369L1295 341 1284 334 1293 320Z" fill="#E3A780"/>
+      <path d="M1295 303Q1328 322 1345 289L1360 339 1371 349 1384 325 1366 282 1335 267 1304 279Z" fill="#1C1C1E"/>
+      <ellipse cx="1309" cy="327" rx="3" ry="4" fill="#1C1C1E"/>
+      <path d="m1301 317 12 1m-10 26-7 2 3 7m9 8q9 5 16-2" stroke="#88533D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1354 331Q1369 323 1371 337 1371 350 1358 352" fill="#E3A780"/>
+      <circle cx="1360" cy="353" r="6" fill="#FFBD12"/>
+    </g>
+    <path d="M1385 427Q1414 429 1426 459L1461 550Q1467 572 1450 585L1408 616 1386 588 1420 555 1382 484Z" fill="#FF9E08"/>
+    <path d="m1405 581-22 8-19 25Q1357 627 1369 632L1385 634 1417 611 1425 598Z" fill="#E3A780"/>
+    <path d="m1385 589 27 26" stroke="#D88408" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1272 423Q1247 420 1228 438L1165 468 1184 510 1261 488Q1294 469 1290 447Z" fill="#FF9E08"/>
+    <g id="right-forearm">
+      <path d="m1172 468-38-1-100-67 15-25 114 60 25 10Z" fill="#E3A780"/>
+      <path d="m1049 375-32-12-42-4Q962 360 966 370L995 377 1010 387 989 385Q979 389 990 398L1028 410 1042 405Z" fill="#E3A780"/>
+      <path d="m1000 376 26 9m-24 6 21 7" stroke="#C48664" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <path d="m1170 466 17 35" stroke="#D88408" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1330" cy="470" r="3" fill="#9C620A"/><circle cx="1330" cy="520" r="3" fill="#9C620A"/><circle cx="1330" cy="570" r="3" fill="#9C620A"/>
+  </g>
+</svg>
+
+<!-- END MUNCHPAL PEOPLE -->
+<div id="people-logo-layer" class="layer"><div class="scene-content"><div id="people-logo" aria-hidden="true"></div></div></div>
+<div id="people-touch" data-layout-ignore></div>
+</section>
+<section id="brand-intro" class="scene" aria-label="MunchPal. Food sharing, made clear">
+<div id="intro-wash" data-layout-ignore></div><div class="grain" data-layout-ignore></div>
+<div class="scene-content"><div id="intro-logo" role="img" aria-label="Munchpal original logo"></div><h1 id="intro-headline">Food sharing, made clear</h1></div>
+</section>
+</div>
+<p data-hf-id="hf-34fm" class="sr-only">MunchPal portfolio motion study. A resident finds nearby food, sends a request, then starts a conversation when accepted. A separate bulk donation example opens a pickup report. Space pauses or plays, R replays, H shows controls. Reduced motion starts paused.</p>
+<div data-hf-id="hf-blm8" id="review-controls"><button data-hf-id="hf-juep" id="play" type="button">Play</button><button data-hf-id="hf-7ghj" id="replay" type="button">Replay</button><input data-hf-id="hf-pte8" id="scrub" aria-label="Seek time" type="range" min="0" max="40" step="0.01" value="0"><output data-hf-id="hf-v4u0" id="clock">0.00s</output></div>
+<script>
+// A single synchronous paused timeline owns all visual states.
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+const DURATION=40,easeMove='power3.inOut';
+function words(selector,at,vars={}){const el=document.querySelector(selector),tokens=el.textContent.split(' ');el.replaceChildren();tokens.forEach((text,i)=>{if(i)el.append(' ');const word=document.createElement('span');word.className='word';word.textContent=text;el.append(word);});tl.from(el.children,{opacity:0,y:24,filter:'blur(5px)',duration:.55,stagger:.045,ease:'power3.out',immediateRender:true,...vars},at);}
+function press(id,target,at,x,y){tl.set(id,{x,y},at-.24);tl.fromTo(id,{opacity:0,scale:1.2,x:x+28,y:y+32},{opacity:1,scale:1,x,y,duration:.2,ease:'sine.out',immediateRender:false},at-.24);tl.to(target,{scale:.96,duration:.1,ease:'power2.in'},at);tl.to(target,{scale:1,duration:.2,ease:'power2.out'},at+.1);tl.fromTo(id+' .tap-ring',{scale:.55,opacity:.65},{scale:1.45,opacity:0,duration:.34,ease:'power3.out',immediateRender:false},at);tl.to(id,{opacity:0,scale:.8,duration:.18,ease:'power1.in'},at+.12);}
+function reveal(selector,at,vars={}){tl.from(selector,{opacity:0,y:32,duration:.55,ease:'power2.out',immediateRender:true,...vars},at);}
+// Immediate initial states: all objects exist in this one composition.
+gsap.set('#food-row',{scale:3.5});gsap.set('#chat-page',{scale:3.2});
+gsap.set('#confirm-panel',{x:180,scale:2.7});
+gsap.set('#success-panel',{x:180,scale:2.5});
+gsap.set('#list-screen',{x:480,y:-8});
+gsap.set('#accepted-card,#bulk-card',{x:290,scale:2.6});
+// Original tour staging remains below the new identity and people opening.
+gsap.set('#list-screen,#discover-copy,#confirm-layer,#sent-layer,#clear-copy',{opacity:0});
+tl.to('#food-row',{y:-24,rotation:-.65,duration:.65,ease:'back.out(1.1)'},.2);
+tl.to('#food-row',{y:0,rotation:0,duration:.7,ease:'sine.inOut'},.85);
+tl.to('#warm-light',{x:-160,y:80,duration:6,ease:'sine.inOut'},.2);tl.to('#warm-light',{x:-60,y:140,duration:7.8,ease:'sine.inOut'},6.2);
+tl.to('#food-row',{x:210,y:40,scale:2.8,duration:1.25,ease:easeMove},1.7);
+tl.fromTo('#list-screen',{opacity:0,x:540,y:20,scale:.92},{opacity:1,x:480,y:-8,scale:1,duration:.85,ease:'expo.out',immediateRender:false},2.05);
+tl.set('#discover-copy',{opacity:1},3);words('#discovery-title',3.08,{x:-24,y:0,ease:'expo.out'});
+tl.to('#food-row',{x:0,y:80,scale:4,duration:.85,ease:easeMove},5.2);tl.to('#discovery-title',{y:-256,duration:.85,ease:'sine.inOut'},5.2);
+tl.to('#list-screen',{opacity:.32,filter:'blur(2px)',duration:.65,ease:'power1.inOut'},5.2);
+press('#tap-request','#request-action',6.42,1462,516);
+tl.set('#confirm-layer',{opacity:1},6.65);reveal('#confirm-panel',6.65,{scale:1.9,y:112,duration:.65,ease:'expo.out'});
+tl.to('#food-row',{x:-540,y:272,scale:1.5,rotation:-3,duration:.72,ease:easeMove},6.65);tl.to('#discover-copy',{opacity:0,duration:.25,ease:'power2.in'},6.65);tl.to('#list-screen',{opacity:.12,duration:.35,ease:'sine.inOut'},6.65);
+tl.to('#confirm-panel',{x:140,y:-20,scale:2.95,duration:.7,ease:easeMove},8.35);press('#tap-confirm','#send-request',9.28,1328,628);
+tl.set('#sent-layer',{opacity:1},9.54);reveal('#success-panel',9.54,{scale:2.15,y:32,duration:.5,ease:'power3.out'});tl.to('#confirm-panel',{scale:2.7,opacity:0,duration:.28,ease:'power2.inOut'},9.54);tl.from('.success-mark',{scale:.82,rotation:-8,duration:.45,ease:'circ.out',immediateRender:false},9.66);
+// Request sent holds 1.45 seconds before the claim arrives.
+tl.to('#success-panel',{x:-560,y:260,scale:.95,duration:.7,ease:easeMove},11.5);tl.to('#food-row',{x:-80,y:310,scale:1.25,rotation:0,duration:.7,ease:easeMove},11.5);
+tl.to('#clear-field',{opacity:1,duration:.8,ease:'power3.out'},11.5);tl.from('#clear-field',{scale:.15,duration:.8,ease:'power3.out',immediateRender:false},11.5);tl.to('#clear-pocket',{opacity:1,duration:.55,ease:'sine.out'},11.7);tl.set('#clear-copy',{opacity:1},11.75);words('#clear-title',11.85,{duration:.6,stagger:.11});
+// Editorial cut: this is a later accepted state.
+tl.set('#discovery,#row-layer',{opacity:0},14);tl.set('#acceptance',{opacity:1},14);tl.set('#identity',{opacity:0},14);
+words('#accept-title',14.12,{x:-30,y:0,duration:.55,stagger:.025,ease:'expo.out'});reveal('#accepted-card',14.16,{x:335,y:30,rotationY:-4,duration:.65,ease:'power3.out'});tl.from('#accepted-card .avatar',{scale:.8,duration:.5,ease:'circ.out',immediateRender:false},14.25);
+tl.to('#warm-light',{x:20,y:-100,duration:4,ease:'sine.inOut'},14);tl.to('#warm-light',{x:-80,y:-40,duration:5.5,ease:'sine.inOut'},18);tl.to('#accepted-card',{x:140,y:48,scale:3.2,rotationY:0,duration:.8,ease:easeMove},16.28);tl.to('#accept-title',{opacity:0,duration:.25,ease:'power2.in'},16.28);press('#tap-message','#send-message',17.32,923,584);
+// Conversation expands from the action; authored speaker order is preserved.
+tl.set('#chat',{opacity:1},17.62);reveal('#chat-window',17.62,{scale:.78,x:160,y:64,duration:.65,ease:'expo.out'});tl.to('#acceptance',{opacity:0,duration:.25,ease:'power1.inOut'},17.95);words('#chat-title',18.02,{y:22,duration:.5,ease:'power2.out'});
+reveal('#message1',18.08,{x:16,y:0,duration:.45,ease:'power3.out'});reveal('#message2',18.8,{x:-16,y:12,duration:.55,ease:'circ.out'});reveal('#photo-plane',19,{scale:.94,y:20,duration:.6,ease:'expo.out'});tl.to('#chat-page',{y:-420,duration:.65,ease:easeMove},19.35);
+// The single depth moment lasts 20.0–20.8, then reading returns face-on.
+tl.to('#chat-page',{scale:1.85,x:265,y:0,duration:.4,ease:'sine.inOut'},20);tl.to('#chat-window',{rotationY:-3,scale:.98,x:24,duration:.4,ease:'sine.inOut'},20);tl.to('#message1',{x:-18,z:40,rotationY:3,duration:.4,ease:'sine.inOut'},20);tl.to('#message2',{x:12,z:-24,rotationY:-3,duration:.4,ease:'sine.inOut'},20);tl.to('#photo-plane',{z:90,x:-8,rotationY:3,duration:.4,ease:'sine.inOut'},20);
+tl.to('#chat-page',{scale:3.2,x:0,y:-420,duration:.4,ease:'power2.inOut'},20.4);tl.to('#chat-window',{rotationY:0,scale:1,x:0,duration:.4,ease:'power2.inOut'},20.4);tl.to('#message1,#message2',{x:0,z:0,rotationY:0,duration:.4,ease:'power2.inOut'},20.4);tl.to('#photo-plane',{z:0,x:0,rotationY:0,duration:.4,ease:'power2.inOut'},20.4);
+tl.to('#chat-page',{y:-1110,duration:.7,ease:easeMove},20.95);reveal('#message3',21.45,{x:16,y:12,duration:.45,ease:'power3.out'});reveal('#message4',21.9,{x:-12,y:0,duration:.5,ease:'circ.out'});
+// Editorial cut: a separate donor-visible bulk donation example.
+tl.set('#chat',{opacity:0},23.5);tl.set('#bulk-donation',{opacity:1},23.5);tl.set('#green-field',{opacity:1},23.5);tl.to('#green-light',{opacity:1,x:-120,y:120,duration:3.5,ease:'sine.inOut'},23.5);tl.to('#warm-light',{opacity:.15,duration:.35,ease:'power1.inOut'},23.5);
+words('#bulk-title',23.62,{x:-24,y:0,duration:.6,ease:'expo.out'});reveal('#bulk-card',23.65,{x:340,y:24,rotationY:3,duration:.65,ease:'power3.out'});tl.from('#bulk-card .avatar',{scale:.85,duration:.5,ease:'circ.out',immediateRender:false},23.8);
+tl.to('#bulk-card',{x:120,y:20,scale:3.1,rotationY:0,duration:.75,ease:easeMove},25.35);tl.to('#bulk-title',{opacity:0,duration:.25,ease:'power2.in'},25.35);press('#tap-report','#view-report',26.42,954,586);
+tl.set('#report-scene',{opacity:1},26.72);reveal('#report-window',26.72,{x:130,y:50,scale:.82,rotationY:-3,duration:.75,ease:'expo.out'});tl.to('#bulk-donation',{opacity:0,duration:.25,ease:'power1.inOut'},27.05);words('#report-title',27.15,{x:-24,y:0,duration:.6,ease:'power3.out'});tl.from('#report-header',{x:12,opacity:0,duration:.5,ease:'circ.out',immediateRender:true},27.2);
+tl.to('#report-body',{y:-190,duration:1.1,ease:easeMove},27.7);tl.to('#green-light',{x:-140,y:100,duration:.7,ease:'sine.inOut'},27);tl.to('#green-light',{x:-360,y:-100,duration:3.8,ease:'sine.inOut'},27.7);tl.to('#green-light',{x:-380,y:-80,duration:1,ease:'sine.inOut'},31.5);tl.to('#report-body',{y:-460,duration:1.1,ease:easeMove},29.5);
+tl.fromTo('#report-status',{x:0,y:0,scale:1},{x:-8,y:-8,scale:1.015,duration:.55,ease:'power2.inOut',immediateRender:false},30.7);
+tl.fromTo('#report-status',{x:-8,y:-8,scale:1.015},{x:0,y:0,scale:1,duration:.5,ease:'power2.inOut',immediateRender:false},31.4);
+tl.to('#status-shadow',{opacity:1,duration:.55,ease:'power2.inOut'},30.7);tl.to('#status-shadow',{opacity:0,duration:.5,ease:'power2.inOut'},31.4);
+// Restore the opening row, wordmark and light for a matched loop.
+tl.set('#row-layer',{opacity:1},32.5);tl.set('#closing',{opacity:1},33.3);tl.to('#identity',{opacity:1,duration:.5,ease:'sine.out'},32.7);tl.set('#food-row',{x:160,y:50,scale:2.6,rotation:0},32.5);tl.from('#food-row',{opacity:0,duration:.55,ease:'power2.out',immediateRender:false},32.5);
+tl.to('#report-window',{x:520,y:100,scale:.55,opacity:0,duration:.75,ease:easeMove},32.5);tl.to('#report-title',{opacity:0,y:-24,duration:.3,ease:'power2.in'},32.5);tl.to('#green-field,#green-light',{opacity:0,duration:.75,ease:'sine.inOut'},32.5);tl.to('#warm-light',{opacity:1,x:0,y:0,duration:1.25,ease:'sine.inOut'},32.5);tl.to('#warm-light',{x:20,y:12,duration:1.75,ease:'sine.inOut'},33.75);tl.to('#food-row',{x:0,y:0,scale:3.5,duration:1,ease:easeMove},32.7);words('#closing-title',33.3,{y:24,duration:.6,stagger:.055,ease:'expo.out'});
+tl.to('#closing-title',{y:18,opacity:0,duration:.5,ease:'power2.in'},35.5);tl.to('#food-row',{x:0,y:0,rotation:0,scale:3.5,duration:.5,ease:'sine.inOut'},35.5);tl.to('#warm-light',{x:0,y:0,opacity:1,duration:.5,ease:'sine.inOut'},35.5);
+// Revised opening, requested by the user: identity, people, then the tour.
+// The original discovery begins at 7s and all later reading holds are preserved.
+tl.shiftChildren(4,true,0);
+gsap.set('#people-phone',{scale:.8});
+tl.to('#intro-logo',{y:-8,scale:1.025,duration:.9,ease:'sine.inOut'},.2);
+tl.to('#intro-logo',{y:0,scale:1,duration:.65,ease:'sine.inOut'},1.25);
+tl.to('#intro-wash',{x:24,y:-12,duration:1.1,ease:'sine.inOut'},.2);
+tl.to('#intro-wash',{x:0,y:0,duration:.9,ease:'sine.inOut'},1.4);
+tl.set('#people-scene',{opacity:1},2.4);
+tl.to('#brand-intro',{opacity:0,duration:.45,ease:'power2.inOut'},2.4);
+tl.from('#people-phone',{opacity:0,y:40,scale:.72,duration:.85,ease:'expo.out',immediateRender:true},2.48);
+tl.from('#resident-left',{opacity:0,x:-72,y:16,duration:.8,ease:'power3.out',immediateRender:true},2.52);
+tl.from('#resident-right',{opacity:0,x:88,y:12,duration:.85,ease:'circ.out',immediateRender:true},2.65);
+tl.from('#people-ground',{opacity:0,scaleX:.9,transformOrigin:'50% 50%',duration:.8,ease:'sine.out',immediateRender:true},2.7);
+tl.from('#people-logo',{opacity:0,y:-12,duration:.55,ease:'power2.out',immediateRender:true},2.7);
+// A thumb scroll on one handset and a meal selection on the central screen.
+tl.to('#left-thumb',{rotation:-9,svgOrigin:'651 550',duration:.18,ease:'power2.inOut'},4.05);
+tl.to('#handset-feed',{y:-18,duration:.55,ease:'power3.inOut'},4.15);
+tl.to('#left-thumb',{rotation:0,duration:.22,ease:'power2.out'},4.3);
+tl.to('#left-head',{rotation:3,svgOrigin:'511 375',duration:.45,ease:'sine.inOut'},3.7);
+tl.to('#left-head',{rotation:0,duration:.45,ease:'sine.inOut'},4.7);
+tl.from('#right-forearm',{rotation:-12,x:24,y:12,svgOrigin:'1172 468',duration:.75,ease:'power3.out',immediateRender:true},3.65);
+tl.to('#right-head',{rotation:-3,svgOrigin:'1332 373',duration:.45,ease:'sine.inOut'},4.2);
+tl.to('#right-head',{rotation:0,duration:.45,ease:'sine.inOut'},5.15);
+tl.to('#right-forearm',{rotation:-2,x:-5,y:4,duration:.12,ease:'power2.in'},5.12);
+tl.to('#right-forearm',{rotation:0,x:0,y:0,duration:.22,ease:'power2.out'},5.24);
+tl.fromTo('#people-touch',{opacity:.65,scale:.5},{opacity:0,scale:1.5,duration:.4,ease:'power3.out',immediateRender:false},5.14);
+// Crop the real portrait screen to its food row, matching the lifted tour object.
+tl.to('#people-phone',{clipPath:'inset(139px 9px 591px 14px round 16px)',x:203,y:632,scale:2.8,duration:1,ease:'power3.inOut'},5.55);
+tl.to('#people-art',{opacity:0,y:20,scale:.98,duration:.35,ease:'power2.inOut'},5.9);
+tl.to('#people-scene',{opacity:0,duration:.35,ease:'power2.inOut'},6.65);
+// Close on the same complete logo and headline as the opening poster.
+tl.set('#intro-logo',{y:0,scale:1},39.2);
+tl.set('#intro-wash',{x:0,y:0},39.2);
+tl.to('#brand-intro',{opacity:1,duration:.8,ease:'sine.inOut'},39.2);
+
+tl.pause(0);
+window.__timelines['munchpal-opener']=tl;
+</script>
+<script src="viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "source": "D:/Project/New Real Estate Landing Page Premium",
+  "route": [
+    "Stays",
+    "View stay: Tirta Forest Villa",
+    "View image 2",
+    "Check these dates",
+    "Check-in",
+    "Check-out",
+    "Continue",
+    "Back",
+    "Check-out"
+  ],
+  "preselection": {
+    "property": "tirta-forest-villa",
+    "area": "Ubud",
+    "adults": "2"
+  },
+  "retained": "YOUR REQUEST\n\nDates\nMar 9, 2027\nto Mar 14, 2027\nParty\n2 adults\nArea\nUbud\nStay\nTirta Forest Villa",
+  "errors": [],
+  "adjustments": [
+    "Photo navigation is View image 2, not Next stay, which changes the property.",
+    "Date inputs are native browser controls. No source range calendar or nights counter exists."
+  ]
+}

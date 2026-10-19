@@ -1,0 +1,162 @@
+[
+  {
+    "route": "/",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/about",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/contact",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/missing-page",
+    "mode": "large-text",
+    "overflow": 0
+  },
+  {
+    "route": "/",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/about",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/contact",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/missing-page",
+    "mode": "rtl",
+    "overflow": 0
+  },
+  {
+    "route": "/",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/about",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/contact",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/missing-page",
+    "mode": "long-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/about",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/contact",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/aurelia",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/pawfriend",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/munchpal",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/work/paylecta",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  },
+  {
+    "route": "/missing-page",
+    "mode": "indonesian-labels",
+    "overflow": 0
+  }
+]

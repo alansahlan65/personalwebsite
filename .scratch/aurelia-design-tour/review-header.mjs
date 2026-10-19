@@ -1,0 +1,31 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { createRequire } from 'node:module';
+const require = createRequire('D:/Project/New Real Estate Landing Page Premium/package.json');
+const sharp = require('sharp');
+const out=path.resolve('.scratch/aurelia-design-tour/header-review');
+await fs.mkdir(out,{recursive:true});
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>{errors.push(e.message);console.log('Browser error:',e.message);});
+await page.goto(pathToFileURL(path.resolve('public/demos/aurelia/index.html')).href+'?clean=1');
+await page.waitForFunction(()=>window.__tour?.ready);
+const handoff=process.argv.includes('--handoff');
+const times=handoff?[5.5,5.64,5.78,5.92,6.06,6.2,6.34,6.48,6.62,6.76,6.9,7.6]:process.argv.includes('--full')?[0,.8,2,3.7,4.6,6.3,7.6,8.18,8.4,8.8,9.2,9.55,9.8,10.16,11.4,14.85,17.5,18.5,18.85,19.5,20.1,21,22.8,25.8,26.5,28.3,28.85,29.6,31.6,33.5,35.55,35.99]:[6.3,7.6,8.18,8.32,8.46,8.6,8.74,8.88,9.02,9.16,9.3,9.44,9.58,9.72,9.86,10.0,10.16,11.4,14.85,16.5];
+const tiles=[];
+for(let i=0;i<times.length;i++){
+  const time=times[i];
+  await page.evaluate(t=>window.__tour.seek(t),time);
+  await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))));
+  const png=await page.screenshot();
+  await fs.writeFile(path.join(out,`frame-${time.toFixed(2)}.png`),png);
+  const label=Buffer.from(`<svg width="480" height="30"><rect width="480" height="30" fill="#142019"/><text x="12" y="21" fill="white" font-family="sans-serif" font-size="16">${time.toFixed(2)}s</text></svg>`);
+  tiles.push({input:await sharp(png).resize(480,270).extend({bottom:30,background:'#142019'}).composite([{input:label,top:270,left:0}]).png().toBuffer(),left:(i%4)*480,top:Math.floor(i/4)*300});
+}
+await sharp({create:{width:1920,height:Math.ceil(times.length/4)*300,channels:3,background:'#f1eee6'}}).composite(tiles).png().toFile(path.join(out,handoff?'handoff-contact.png':process.argv.includes('--full')?'full-contact.png':'signature-contact.png'));
+const assets=await page.evaluate(()=>[...document.images].map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0})));
+await fs.writeFile(path.join(out,handoff?'handoff-review.json':'review.json'),JSON.stringify({times,errors,assets},null,2));
+console.log(JSON.stringify({times:times.length,errors,missing:assets.filter(a=>!a.loaded)}));
+await browser.close();

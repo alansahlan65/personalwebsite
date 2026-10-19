@@ -1,0 +1,6 @@
+4 October 2026. npm run build exited 0.
+Next.js 16.3.6 (Turbopack).
+Compiled successfully in 4.7s.
+TypeScript finished in 2.4s.
+Generated all 14 static pages in 508ms; all Home, About, Contact and four case-study routes were listed.
+Existing configuration warning: metadataBase is unset, so the local build resolves social image URLs against http://localhost:3000. No deployment origin was invented or configuration changed by this gallery task.

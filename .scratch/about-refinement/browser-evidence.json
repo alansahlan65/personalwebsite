@@ -1,0 +1,249 @@
+{
+  "views": [
+    {
+      "route": "/about",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "height": 900,
+      "textScale": "100%",
+      "scrollWidth": 320,
+      "headerCollision": false,
+      "smallNavTargets": [
+        {
+          "text": "Work",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 49.609375,
+          "height": 44
+        },
+        {
+          "text": "Contact",
+          "width": 63.53125,
+          "height": 44
+        },
+        {
+          "text": "Resume",
+          "width": 61.90625,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "height": 900,
+      "textScale": "100%",
+      "scrollWidth": 768,
+      "headerCollision": false,
+      "smallNavTargets": [
+        {
+          "text": "Work",
+          "width": 45.8125,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 52.578125,
+          "height": 44
+        },
+        {
+          "text": "Contact",
+          "width": 67.484375,
+          "height": 44
+        },
+        {
+          "text": "Resume",
+          "width": 65.75,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "width": 844,
+      "height": 390,
+      "textScale": "100%",
+      "scrollWidth": 844,
+      "headerCollision": false,
+      "smallNavTargets": [
+        {
+          "text": "Work",
+          "width": 45.8125,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 52.578125,
+          "height": 44
+        },
+        {
+          "text": "Contact",
+          "width": 67.484375,
+          "height": 44
+        },
+        {
+          "text": "Resume",
+          "width": 65.75,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "height": 900,
+      "textScale": "200%",
+      "scrollWidth": 390,
+      "headerCollision": false,
+      "smallNavTargets": [
+        {
+          "text": "Work",
+          "width": 86.578125,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 99.203125,
+          "height": 44
+        },
+        {
+          "text": "Contact",
+          "width": 127.046875,
+          "height": 44
+        },
+        {
+          "text": "Resume",
+          "width": 123.8125,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "height": 900,
+      "textScale": "200%",
+      "scrollWidth": 320,
+      "headerCollision": false,
+      "smallNavTargets": [
+        {
+          "text": "Work",
+          "width": 86.578125,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 99.203125,
+          "height": 44
+        },
+        {
+          "text": "Contact",
+          "width": 127.046875,
+          "height": 44
+        },
+        {
+          "text": "Resume",
+          "width": 123.8125,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "height": 900,
+      "textScale": "200%",
+      "scrollWidth": 768,
+      "headerCollision": false,
+      "smallNavTargets": [
+        {
+          "text": "Work",
+          "width": 91.625,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 105.140625,
+          "height": 44
+        },
+        {
+          "text": "Contact",
+          "width": 134.96875,
+          "height": 44
+        },
+        {
+          "text": "Resume",
+          "width": 131.5,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "font": {
+    "fonts": [
+      {
+        "familyName": "Plus Jakarta Sans",
+        "postScriptName": "PlusJakartaSans-Medium",
+        "isCustomFont": true,
+        "glyphCount": 31
+      }
+    ]
+  },
+  "hardening": {
+    "hover": "matrix(1.035, 0, 0, 1.035, 0, 0)",
+    "reduced": {
+      "transform": "none",
+      "transition": "0s"
+    },
+    "noJs": {
+      "menuVisible": false,
+      "resumeLinks": 3,
+      "heading": "Product Designer.\nCloser to the build."
+    },
+    "assetsUnavailable": {
+      "heading": "Product Designer.\nCloser to the build.",
+      "caseLink": true,
+      "resumeLink": true,
+      "scrollWidth": 390
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "browser": "153.0.8010.12",
+  "routes": 7,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "routeViewportChecks": 28,
+  "httpFailures": 0,
+  "horizontalOverflowChecks": 0,
+  "pageErrors": 0,
+  "failedAssetChecks": 0,
+  "brokenImageChecks": 0,
+  "fontLoadedChecks": 28,
+  "noJSChecks": 7,
+  "textResizeChecks": 14,
+  "textResizeOverflowChecks": 0,
+  "horizontalMediaFocusChecks": 4,
+  "touchSkipChecks": 4,
+  "overlayChecks": 5
+}

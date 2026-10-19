@@ -1,0 +1,91 @@
+{
+  "source": "D:/Project/New Real Estate Landing Page Premium",
+  "photography": "User-provided concept project; its original imagery is AI-generated.",
+  "records": [
+    {
+      "file": "hero.webp",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\public\\images\\bali\\hero-main.webp",
+      "role": "Original light-theme hero",
+      "bytes": 289260,
+      "sha256": "895bfec322ac2fd7be1db165e4cdd601ba74417e7fb73cf6f0b4c18c2e0f0b2d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "tirta-forest-villa-1.webp",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\public\\images\\bali\\tirta-forest-villa-1.webp",
+      "role": "Original selected stay photograph",
+      "bytes": 602942,
+      "sha256": "2143f6e1611c54f0b61bace64ced1698d08daeca70f8e533576cfe43de7489c1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "tirta-forest-villa-2.webp",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\public\\images\\bali\\tirta-forest-villa-2.webp",
+      "role": "Original selected stay photograph",
+      "bytes": 379414,
+      "sha256": "25795de46909677f0a766e2b739ed20a87a02c51a95a118f658f0eaa9949bdc7",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "tirta-forest-villa-3.webp",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\public\\images\\bali\\tirta-forest-villa-3.webp",
+      "role": "Original selected stay photograph",
+      "bytes": 369642,
+      "sha256": "d828ede479ad6f189aeced405f11bcd040e26d2527ebf1d9b09e5bb27cf5f377",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "cormorant-garamond-400.woff2",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\@fontsource\\cormorant-garamond\\files\\cormorant-garamond-latin-400-normal.woff2",
+      "role": "Original product Latin font",
+      "bytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2"
+    },
+    {
+      "file": "cormorant-garamond-500.woff2",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\@fontsource\\cormorant-garamond\\files\\cormorant-garamond-latin-500-normal.woff2",
+      "role": "Original product Latin font",
+      "bytes": 23312,
+      "sha256": "8197bf53615ddc8c423f444c7f0eec63b7fa0ba093fcfbec60dfdd28429b0fc8"
+    },
+    {
+      "file": "manrope-400.woff2",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\@fontsource\\manrope\\files\\manrope-latin-400-normal.woff2",
+      "role": "Original product Latin font",
+      "bytes": 14108,
+      "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+    },
+    {
+      "file": "manrope-500.woff2",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\@fontsource\\manrope\\files\\manrope-latin-500-normal.woff2",
+      "role": "Original product Latin font",
+      "bytes": 14044,
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+    },
+    {
+      "file": "manrope-600.woff2",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\@fontsource\\manrope\\files\\manrope-latin-600-normal.woff2",
+      "role": "Original product Latin font",
+      "bytes": 14172,
+      "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593"
+    },
+    {
+      "file": "cormorant-garamond-italic.woff2",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\@fontsource\\cormorant-garamond\\files\\cormorant-garamond-latin-400-italic.woff2",
+      "role": "Original italic product headline",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2"
+    },
+    {
+      "file": "gsap.min.js",
+      "source": "D:\\Project\\New Real Estate Landing Page Premium\\node_modules\\gsap\\dist\\gsap.min.js",
+      "role": "Original product GSAP runtime; offline playback",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    }
+  ]
+}

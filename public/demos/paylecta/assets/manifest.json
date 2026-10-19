@@ -1,0 +1,240 @@
+{
+  "fileKey": "nzrjEnmrDqfXUPLawnxmEn",
+  "pageNodeId": "307:3",
+  "exportedAt": "2026-10-08",
+  "assets": [
+    {
+      "filename": "invoices.svg",
+      "nodeId": "307:4185",
+      "format": "svg",
+      "bytes": 1318047,
+      "sha256": "7ab9f09e19ea67f653cc8dcff49d775f5670b06b731564df34e3a19bb6059bc0",
+      "root": "<svg width=\"1440\" height=\"1180\" viewBox=\"0 0 1440 1180\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "dashboard.svg",
+      "nodeId": "307:2448",
+      "format": "svg",
+      "bytes": 1413385,
+      "sha256": "2adbb3d5ba7b97b2d7aeb522a2b978d2c38aa09a254b50f1b45b71700c421b45",
+      "root": "<svg width=\"1440\" height=\"1279\" viewBox=\"0 0 1440 1279\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "invoice-empty.svg",
+      "nodeId": "307:4973",
+      "format": "svg",
+      "bytes": 909875,
+      "sha256": "9e3a88c4c3dffef0f6193ecb76c1efb1b9f0dd75cfcfa8105efd08ae044e2647",
+      "root": "<svg width=\"1440\" height=\"1279\" viewBox=\"0 0 1440 1279\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "invoice-filled.svg",
+      "nodeId": "307:5058",
+      "format": "svg",
+      "bytes": 2657197,
+      "sha256": "68f2a744b6a037bcb8f7699ec2c687f126974f6666fda3cd71a7b0c2c1300b8b",
+      "root": "<svg width=\"1440\" height=\"1279\" viewBox=\"0 0 1440 1279\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "overdue.svg",
+      "nodeId": "307:7585",
+      "format": "svg",
+      "bytes": 734098,
+      "sha256": "aeabcabd3846d74c653afdb16b1a651e4b912a78f7667c0d35854c7b275de0f3",
+      "root": "<svg width=\"393\" height=\"917\" viewBox=\"0 0 393 917\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "payouts.svg",
+      "nodeId": "307:4377",
+      "format": "svg",
+      "bytes": 1466388,
+      "sha256": "81777f2c0bbe50fe39295382da61af4e1e6078e9a204565c6cbf992f0d620100",
+      "root": "<svg width=\"1440\" height=\"1180\" viewBox=\"0 0 1440 1180\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "payout-detail.svg",
+      "nodeId": "307:4809",
+      "format": "svg",
+      "bytes": 898443,
+      "sha256": "77c68549802aa45d3c30a35f04111d65051cb9831ae7cda0f9eca001ecc65404",
+      "root": "<svg width=\"1440\" height=\"1180\" viewBox=\"0 0 1440 1180\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "balance.svg",
+      "nodeId": "307:2464",
+      "format": "svg",
+      "bytes": 52561,
+      "sha256": "8dc86ebb020650ad9b0d205d566b028ee43fa13a5cad3d7985e9fef52beabb47",
+      "root": "<svg width=\"1120\" height=\"166\" viewBox=\"0 0 1120 166\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "revenue.svg",
+      "nodeId": "307:2492",
+      "format": "svg",
+      "bytes": 144459,
+      "sha256": "c0746a893c1b8b2c91608873af775e6782963dd8d4bd0c2cfb6bb88cd18364b6",
+      "root": "<svg width=\"835\" height=\"314\" viewBox=\"0 0 835 314\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "chart-tooltip.svg",
+      "nodeId": "307:2537",
+      "format": "svg",
+      "bytes": 30470,
+      "sha256": "39e9ca0d314a5b6e6e9dfc4616805e7e956f2a51064280413c5573fe83196e53",
+      "root": "<svg width=\"550\" height=\"155\" viewBox=\"0 0 550 155\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "summary.svg",
+      "nodeId": "307:2476",
+      "format": "svg",
+      "bytes": 93232,
+      "sha256": "5f537f0cccea8c73490b75ca4a0e94abd1d15d4d869ae313d3df77db567adcf7",
+      "root": "<svg width=\"1120\" height=\"166\" viewBox=\"0 0 1120 166\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "invoice-form.svg",
+      "nodeId": "307:5081",
+      "format": "svg",
+      "bytes": 847324,
+      "sha256": "8c45feeefc1e58738d7f5cc3f22664047a4eebdf6a8fb158a2880a3c7a4e09c3",
+      "root": "<svg width=\"548\" height=\"1000\" viewBox=\"0 0 548 1000\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "invoice-preview.svg",
+      "nodeId": "307:5062",
+      "format": "svg",
+      "bytes": 1189511,
+      "sha256": "76ef0492937f3cce993276112e2b82ba6bac0420e0bf9c9ceefa09719c14ff9b",
+      "root": "<svg width=\"554\" height=\"1004\" viewBox=\"0 0 554 1004\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "payout-row.svg",
+      "nodeId": "307:4404",
+      "format": "svg",
+      "bytes": 56535,
+      "sha256": "b872b2a38b91084560d430c625097ffd9de451832b42d27c2f42144f5943d99b",
+      "root": "<svg width=\"1080\" height=\"50\" viewBox=\"0 0 1080 50\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "payout-record.svg",
+      "nodeId": "307:4814",
+      "format": "svg",
+      "bytes": 319686,
+      "sha256": "6551ede998285b4b0f86870ebcb7933c9f155695bb3365a89282c1b9f0111666",
+      "root": "<svg width=\"1120\" height=\"867\" viewBox=\"0 0 1120 867\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export, 8 October 2026. Unmodified source geometry and outlined text."
+    },
+    {
+      "filename": "invoice-document.webp",
+      "nodeId": "307:5063",
+      "width": 3069,
+      "height": 4096,
+      "format": "webp",
+      "bytes": 206092,
+      "sha256": "19743c9a9ef0ac186f98afa463c01d760152304655aa25e19fdd2809ed71d0b7",
+      "source": "Original invoice image fill converted to lossless WebP. No upscaling or source-content edits."
+    },
+    {
+      "filename": "chart-tooltip-clean.svg",
+      "nodeId": "349:5939",
+      "sourceId": "307:2537",
+      "format": "svg",
+      "bytes": 27442,
+      "sha256": "6e1af3266446aa154a8251e6e632c62d628521045838c8f0ae56ba713848d45f",
+      "root": "<svg width=\"126\" height=\"51\" viewBox=\"0 0 126 51\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Temporary clone of original tooltip with its oversized shadow removed. Original component unchanged."
+    },
+    {
+      "filename": "invoice-sidebar.svg",
+      "nodeId": "307:4376",
+      "sourceId": "307:4376",
+      "format": "svg",
+      "bytes": 528312,
+      "sha256": "3f2aaf62dc8e49289999849b9a813744d77e31bbf079d0fd7cd794daba4fe955",
+      "root": "<svg width=\"240\" height=\"1180\" viewBox=\"0 0 240 1180\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export. Original wordmark clone used only to give the instance child an exportable top-level ID."
+    },
+    {
+      "filename": "reminder-action.svg",
+      "nodeId": "307:7599",
+      "sourceId": "307:7599",
+      "format": "svg",
+      "bytes": 13024,
+      "sha256": "3b39904df3075ddc5a2d32c8b58adaf771177d958f54f8aad11526046780d20d",
+      "root": "<svg width=\"124\" height=\"33\" viewBox=\"0 0 124 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "source": "Native Pro Figma SVG export. Original wordmark clone used only to give the instance child an exportable top-level ID."
+    },
+    {
+      "filename": "payout-header.svg",
+      "nodeId": "307:4815",
+      "sourceId": "307:4815",
+      "format": "svg",
+      "bytes": 188380,
+      "sha256": "7a70ce23c66798e5a73fbd6e34af3aeb291249b948cd905ef4a00acefa43cecb",
+      "root": "<svg width=\"1084\" height=\"304\" viewBox=\"0 0 1084 304\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export. Original wordmark clone used only to give the instance child an exportable top-level ID."
+    },
+    {
+      "filename": "wordmark.svg",
+      "nodeId": "350:5939",
+      "sourceId": "I307:4376;154:2873",
+      "format": "svg",
+      "bytes": 450531,
+      "sha256": "51270e6ad3beabaef50ffdde0fa7ac85772072de2700bfc48d47da47e8471f2b",
+      "root": "<svg width=\"200\" height=\"48\" viewBox=\"0 0 200 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+      "source": "Native Pro Figma SVG export. Original wordmark clone used only to give the instance child an exportable top-level ID."
+    },
+    {
+      "filename": "wordmark-transparent.svg",
+      "derivedFrom": "wordmark.svg",
+      "bytes": 450485,
+      "sha256": "4fc5952e780a7ede10f44199b7695203504f4026fda47eae5b1c6fcd398540af",
+      "source": "Only the export-added #1E1E1E canvas rectangle removed. Native mark, text paths, geometry and image fills are unchanged."
+    },
+    {
+      "filename": "tooltip.svg",
+      "derivedFrom": "chart-tooltip-clean.svg",
+      "bytes": 27396,
+      "sha256": "d16cc3179870ac70ed8762e2607ec2d1ec3b424f3de93e39ca2d676a7f26ddbf",
+      "source": "Only the export-added #1E1E1E canvas rectangle removed. Native mark, text paths, geometry and image fills are unchanged."
+    }
+  ],
+  "adaptations": [
+    {
+      "element": "Invoice sidebar",
+      "implementation": "Original invoice-list sidebar over the editor source, correcting the source Payouts selection."
+    },
+    {
+      "element": "Invoice unit price",
+      "source": "$96.00 in desktop source; $157.54 in mobile editor 307:7778 and preview",
+      "demo": "$157.54 DOM text overlay, matching source invoice preview total $164.63."
+    },
+    {
+      "element": "Payout breakdown",
+      "source": "Subtotal $98, fees $0, tax $1, payout $97",
+      "demo": "Subtotal $98, fees $1, tax $0, payout $97. Presentation sample-data correction."
+    },
+    {
+      "element": "Search and headings",
+      "demo": "Search invoices, Search payouts, Invoice list, Payout list, Date settled."
+    },
+    {
+      "element": "Time format",
+      "demo": "Last saved: Today at 18:45."
+    }
+  ]
+}

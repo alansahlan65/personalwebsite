@@ -1,0 +1,66 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1080
+    },
+    "visible": [
+      {
+        "text": "Selected workView all work",
+        "state": "instant",
+        "opacity": "1"
+      },
+      {
+        "text": "01AureliaHospitality",
+        "state": "instant",
+        "opacity": "1"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 1000
+    },
+    "visible": [
+      {
+        "text": "Selected workView all work",
+        "state": "instant",
+        "opacity": "1"
+      },
+      {
+        "text": "01AureliaHospitality",
+        "state": "instant",
+        "opacity": "1"
+      },
+      {
+        "text": "02PaylectaFinance",
+        "state": "instant",
+        "opacity": "1"
+      },
+      {
+        "text": "03PawFriendPet adoption",
+        "state": "instant",
+        "opacity": "1"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "visible": [],
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "visible": [],
+    "errors": []
+  }
+]

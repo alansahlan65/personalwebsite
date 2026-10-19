@@ -1,0 +1,1472 @@
+[
+  {
+    "from": "plans/README.md",
+    "href": "../docs/page-transitions.md",
+    "target": "docs/page-transitions.md"
+  },
+  {
+    "from": "plans/README.md",
+    "href": "../docs/agents/issue-tracker.md",
+    "target": "docs/agents/issue-tracker.md"
+  },
+  {
+    "from": "plans/README.md",
+    "href": "../docs/README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "PRODUCT.md",
+    "target": "PRODUCT.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/site-themes.md",
+    "target": "docs/site-themes.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/assets.md",
+    "target": "docs/assets.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/selected-work.md",
+    "target": "docs/selected-work.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/case-media.md",
+    "target": "docs/case-media.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/page-transitions.md",
+    "target": "docs/page-transitions.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/pointer-interactions.md",
+    "target": "docs/pointer-interactions.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/alan-character.md",
+    "target": "docs/alan-character.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/project-entry.md",
+    "target": "docs/project-entry.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/about.md",
+    "target": "docs/about.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/contact-page.md",
+    "target": "docs/contact-page.md"
+  },
+  {
+    "from": "DESIGN.md",
+    "href": "docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "README.md",
+    "href": "package.json",
+    "target": "package.json"
+  },
+  {
+    "from": "README.md",
+    "href": "package-lock.json",
+    "target": "package-lock.json"
+  },
+  {
+    "from": "README.md",
+    "href": "playwright.about-engines.config.ts",
+    "target": "playwright.about-engines.config.ts"
+  },
+  {
+    "from": "README.md",
+    "href": "docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "README.md",
+    "href": "docs/README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "README.md",
+    "href": "PRODUCT.md",
+    "target": "PRODUCT.md"
+  },
+  {
+    "from": "README.md",
+    "href": "DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "README.md",
+    "href": "CONTEXT.md",
+    "target": "CONTEXT.md"
+  },
+  {
+    "from": "README.md",
+    "href": "AGENTS.md",
+    "target": "AGENTS.md"
+  },
+  {
+    "from": "README.md",
+    "href": "portfolio-prd-halyard.md",
+    "target": "portfolio-prd-halyard.md"
+  },
+  {
+    "from": "docs/site-themes.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/site-themes.md",
+    "href": "../app/globals.css",
+    "target": "app/globals.css"
+  },
+  {
+    "from": "docs/site-themes.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/selected-work.md",
+    "href": "project-entry.md",
+    "target": "docs/project-entry.md"
+  },
+  {
+    "from": "docs/selected-work.md",
+    "href": "selected-work-banners.json",
+    "target": "docs/selected-work-banners.json"
+  },
+  {
+    "from": "docs/selected-work.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/selected-work.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../README.md",
+    "target": "README.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../PRODUCT.md",
+    "target": "PRODUCT.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../CONTEXT.md",
+    "target": "CONTEXT.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../portfolio-prd-halyard.md",
+    "target": "portfolio-prd-halyard.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../AGENTS.md",
+    "target": "AGENTS.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "about.md",
+    "target": "docs/about.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "contact-page.md",
+    "target": "docs/contact-page.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "selected-work.md",
+    "target": "docs/selected-work.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "component-system.md",
+    "target": "docs/component-system.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "site-themes.md",
+    "target": "docs/site-themes.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "page-transitions.md",
+    "target": "docs/page-transitions.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "project-entry.md",
+    "target": "docs/project-entry.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "pointer-interactions.md",
+    "target": "docs/pointer-interactions.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "case-media.md",
+    "target": "docs/case-media.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "figma-project-details.md",
+    "target": "docs/figma-project-details.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "alan-character.md",
+    "target": "docs/alan-character.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "portfolio-content.md",
+    "target": "docs/portfolio-content.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "assets.md",
+    "target": "docs/assets.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "aurelia-case-study.md",
+    "target": "docs/aurelia-case-study.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "paylecta-case-study.md",
+    "target": "docs/paylecta-case-study.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "pawfriend-case-study.md",
+    "target": "docs/pawfriend-case-study.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "munchpal-case-study.md",
+    "target": "docs/munchpal-case-study.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "paylecta-opener.md",
+    "target": "docs/paylecta-opener.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "munchpal-opener.md",
+    "target": "docs/munchpal-opener.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "paylecta-opener-creative-brief.md",
+    "target": "docs/paylecta-opener-creative-brief.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "munchpal-opener-creative-brief.md",
+    "target": "docs/munchpal-opener-creative-brief.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "munchpal-english-refresh.md",
+    "target": "docs/munchpal-english-refresh.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "graph.md",
+    "target": "docs/graph.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "../plans/README.md",
+    "target": "plans/README.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "agents/domain.md",
+    "target": "docs/agents/domain.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "agents/issue-tracker.md",
+    "target": "docs/agents/issue-tracker.md"
+  },
+  {
+    "from": "docs/README.md",
+    "href": "agents/triage-labels.md",
+    "target": "docs/agents/triage-labels.md"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../playwright.config.ts",
+    "target": "playwright.config.ts"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../playwright.about-engines.config.ts",
+    "target": "playwright.about-engines.config.ts"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/",
+    "target": ".scratch/unused-cleanup"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/full-results.json",
+    "target": ".scratch/unused-cleanup/full-results.json"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/final-focused-results.json",
+    "target": ".scratch/unused-cleanup/final-focused-results.json"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/before.json",
+    "target": ".scratch/unused-cleanup/before.json"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/after.json",
+    "target": ".scratch/unused-cleanup/after.json"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/removals-planned.json",
+    "target": ".scratch/unused-cleanup/removals-planned.json"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/unused-cleanup/performance-summary.json",
+    "target": ".scratch/unused-cleanup/performance-summary.json"
+  },
+  {
+    "from": "docs/quality.md",
+    "href": "../.scratch/markdown-cleanup/",
+    "target": ".scratch/markdown-cleanup"
+  },
+  {
+    "from": "docs/project-entry.md",
+    "href": "page-transitions.md",
+    "target": "docs/page-transitions.md"
+  },
+  {
+    "from": "docs/project-entry.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/portfolio-content.md",
+    "href": "../public/resume/alan-sahlan-resume.pdf",
+    "target": "public/resume/alan-sahlan-resume.pdf"
+  },
+  {
+    "from": "docs/portfolio-content.md",
+    "href": "aurelia-case-study.md",
+    "target": "docs/aurelia-case-study.md"
+  },
+  {
+    "from": "docs/portfolio-content.md",
+    "href": "paylecta-case-study.md",
+    "target": "docs/paylecta-case-study.md"
+  },
+  {
+    "from": "docs/portfolio-content.md",
+    "href": "pawfriend-case-study.md",
+    "target": "docs/pawfriend-case-study.md"
+  },
+  {
+    "from": "docs/portfolio-content.md",
+    "href": "munchpal-case-study.md",
+    "target": "docs/munchpal-case-study.md"
+  },
+  {
+    "from": "docs/portfolio-content.md",
+    "href": "assets.md",
+    "target": "docs/assets.md"
+  },
+  {
+    "from": "docs/pointer-interactions.md",
+    "href": "../app/components/pointer-enhancements.tsx",
+    "target": "app/components/pointer-enhancements.tsx"
+  },
+  {
+    "from": "docs/pointer-interactions.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/pointer-interactions.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/paylecta-opener.md",
+    "href": "paylecta-opener-creative-brief.md",
+    "target": "docs/paylecta-opener-creative-brief.md"
+  },
+  {
+    "from": "docs/paylecta-opener.md",
+    "href": "../public/demos/paylecta/README.md",
+    "target": "public/demos/paylecta/README.md"
+  },
+  {
+    "from": "docs/paylecta-opener.md",
+    "href": "../public/demos/paylecta/index.html",
+    "target": "public/demos/paylecta/index.html"
+  },
+  {
+    "from": "docs/paylecta-opener.md",
+    "href": "../public/demos/paylecta/render.json",
+    "target": "public/demos/paylecta/render.json"
+  },
+  {
+    "from": "docs/paylecta-opener.md",
+    "href": "../public/demos/paylecta/assets/manifest.json",
+    "target": "public/demos/paylecta/assets/manifest.json"
+  },
+  {
+    "from": "docs/paylecta-opener.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/paylecta-opener-creative-brief.md",
+    "href": "paylecta-case-study.md",
+    "target": "docs/paylecta-case-study.md"
+  },
+  {
+    "from": "docs/paylecta-opener-creative-brief.md",
+    "href": "paylecta-opener.md",
+    "target": "docs/paylecta-opener.md"
+  },
+  {
+    "from": "docs/paylecta-opener-creative-brief.md",
+    "href": "../public/demos/paylecta/assets/manifest.json",
+    "target": "public/demos/paylecta/assets/manifest.json"
+  },
+  {
+    "from": "docs/paylecta-case-study.md",
+    "href": "figma-project-assets.json",
+    "target": "docs/figma-project-assets.json"
+  },
+  {
+    "from": "docs/paylecta-case-study.md",
+    "href": "figma-project-details.md",
+    "target": "docs/figma-project-details.md"
+  },
+  {
+    "from": "docs/paylecta-case-study.md",
+    "href": "paylecta-opener.md",
+    "target": "docs/paylecta-opener.md"
+  },
+  {
+    "from": "docs/pawfriend-case-study.md",
+    "href": "case-media.md",
+    "target": "docs/case-media.md"
+  },
+  {
+    "from": "docs/page-transitions.md",
+    "href": "../app/components/navigation-transition.tsx",
+    "target": "app/components/navigation-transition.tsx"
+  },
+  {
+    "from": "docs/page-transitions.md",
+    "href": "project-entry.md",
+    "target": "docs/project-entry.md"
+  },
+  {
+    "from": "docs/page-transitions.md",
+    "href": "quality.md#remaining-release-work",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/munchpal-opener.md",
+    "href": "munchpal-opener-creative-brief.md",
+    "target": "docs/munchpal-opener-creative-brief.md"
+  },
+  {
+    "from": "docs/munchpal-opener.md",
+    "href": "../public/demos/munchpal/index.html",
+    "target": "public/demos/munchpal/index.html"
+  },
+  {
+    "from": "docs/munchpal-opener.md",
+    "href": "../public/demos/munchpal/render.json",
+    "target": "public/demos/munchpal/render.json"
+  },
+  {
+    "from": "docs/munchpal-opener.md",
+    "href": "../public/demos/munchpal/README.md",
+    "target": "public/demos/munchpal/README.md"
+  },
+  {
+    "from": "docs/munchpal-opener.md",
+    "href": "../public/demos/munchpal/assets/manifest.json",
+    "target": "public/demos/munchpal/assets/manifest.json"
+  },
+  {
+    "from": "docs/munchpal-opener.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/munchpal-opener-creative-brief.md",
+    "href": "munchpal-opener.md",
+    "target": "docs/munchpal-opener.md"
+  },
+  {
+    "from": "docs/munchpal-opener-creative-brief.md",
+    "href": "../public/demos/munchpal/assets/manifest.json",
+    "target": "public/demos/munchpal/assets/manifest.json"
+  },
+  {
+    "from": "docs/munchpal-english-refresh.md",
+    "href": "munchpal-english-assets.json",
+    "target": "docs/munchpal-english-assets.json"
+  },
+  {
+    "from": "docs/munchpal-english-refresh.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/munchpal-english-refresh.md",
+    "href": "munchpal-case-study.md",
+    "target": "docs/munchpal-case-study.md"
+  },
+  {
+    "from": "docs/munchpal-case-study.md",
+    "href": "munchpal-english-refresh.md",
+    "target": "docs/munchpal-english-refresh.md"
+  },
+  {
+    "from": "docs/munchpal-case-study.md",
+    "href": "figma-project-assets.json",
+    "target": "docs/figma-project-assets.json"
+  },
+  {
+    "from": "docs/munchpal-case-study.md",
+    "href": "munchpal-english-assets.json",
+    "target": "docs/munchpal-english-assets.json"
+  },
+  {
+    "from": "docs/munchpal-case-study.md",
+    "href": "munchpal-opener.md",
+    "target": "docs/munchpal-opener.md"
+  },
+  {
+    "from": "docs/graph.md",
+    "href": "../graphify-out/graph.json",
+    "target": "graphify-out/graph.json"
+  },
+  {
+    "from": "docs/graph.md",
+    "href": "../graphify-out/graph.html",
+    "target": "graphify-out/graph.html"
+  },
+  {
+    "from": "docs/graph.md",
+    "href": "../graphify-out/GRAPH_REPORT.md",
+    "target": "graphify-out/GRAPH_REPORT.md"
+  },
+  {
+    "from": "docs/graph.md",
+    "href": "../AGENTS.md",
+    "target": "AGENTS.md"
+  },
+  {
+    "from": "docs/graph.md",
+    "href": "../graphify-out/vendor/vis-network.min.js",
+    "target": "graphify-out/vendor/vis-network.min.js"
+  },
+  {
+    "from": "docs/graph.md",
+    "href": "README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "../app/work/project-screen.tsx",
+    "target": "app/work/project-screen.tsx"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "../app/lib/project-preview.ts",
+    "target": "app/lib/project-preview.ts"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "project-preview-assets.json",
+    "target": "docs/project-preview-assets.json"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "figma-project-assets.json",
+    "target": "docs/figma-project-assets.json"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "munchpal-english-assets.json",
+    "target": "docs/munchpal-english-assets.json"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/figma-project-details.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/contact-page.md",
+    "href": "../app/contact/page.tsx",
+    "target": "app/contact/page.tsx"
+  },
+  {
+    "from": "docs/contact-page.md",
+    "href": "../app/contact/contact-form.tsx",
+    "target": "app/contact/contact-form.tsx"
+  },
+  {
+    "from": "docs/contact-page.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/component-system.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/component-system.md",
+    "href": "../app/globals.css",
+    "target": "app/globals.css"
+  },
+  {
+    "from": "docs/component-system.md",
+    "href": "README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "docs/component-system.md",
+    "href": "about.md",
+    "target": "docs/about.md"
+  },
+  {
+    "from": "docs/component-system.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/case-media.md",
+    "href": "figma-project-details.md",
+    "target": "docs/figma-project-details.md"
+  },
+  {
+    "from": "docs/case-media.md",
+    "href": "component-system.md",
+    "target": "docs/component-system.md"
+  },
+  {
+    "from": "docs/case-media.md",
+    "href": "assets.md",
+    "target": "docs/assets.md"
+  },
+  {
+    "from": "docs/aurelia-opener.md",
+    "href": "../public/demos/aurelia/index.html",
+    "target": "public/demos/aurelia/index.html"
+  },
+  {
+    "from": "docs/aurelia-opener.md",
+    "href": "../public/demos/aurelia/DESIGN.md",
+    "target": "public/demos/aurelia/DESIGN.md"
+  },
+  {
+    "from": "docs/aurelia-opener.md",
+    "href": "../public/demos/aurelia/SOURCE.md",
+    "target": "public/demos/aurelia/SOURCE.md"
+  },
+  {
+    "from": "docs/aurelia-opener.md",
+    "href": "../public/demos/aurelia/composition.json",
+    "target": "public/demos/aurelia/composition.json"
+  },
+  {
+    "from": "docs/aurelia-opener.md",
+    "href": "../.scratch/aurelia-design-tour/profile-header.mjs",
+    "target": ".scratch/aurelia-design-tour/profile-header.mjs"
+  },
+  {
+    "from": "docs/aurelia-opener.md",
+    "href": "../public/demos/aurelia/README.md",
+    "target": "public/demos/aurelia/README.md"
+  },
+  {
+    "from": "docs/aurelia-case-study.md",
+    "href": "figma-project-assets.json",
+    "target": "docs/figma-project-assets.json"
+  },
+  {
+    "from": "docs/aurelia-case-study.md",
+    "href": "project-preview-assets.json",
+    "target": "docs/project-preview-assets.json"
+  },
+  {
+    "from": "docs/aurelia-case-study.md",
+    "href": "aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../public/images/alan-portrait.webp",
+    "target": "public/images/alan-portrait.webp"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../public/images/alan-portrait.webp.json",
+    "target": "public/images/alan-portrait.webp.json"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "alan-character.md",
+    "target": "docs/alan-character.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../app/fonts/",
+    "target": "app/fonts"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../app/fonts/OFL.txt",
+    "target": "app/fonts/OFL.txt"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../public/resume/alan-sahlan-resume.pdf",
+    "target": "public/resume/alan-sahlan-resume.pdf"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "selected-work-banners.json",
+    "target": "docs/selected-work-banners.json"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "aurelia-case-study.md",
+    "target": "docs/aurelia-case-study.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "paylecta-case-study.md",
+    "target": "docs/paylecta-case-study.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "munchpal-english-refresh.md",
+    "target": "docs/munchpal-english-refresh.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "pawfriend-case-study.md",
+    "target": "docs/pawfriend-case-study.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "figma-project-assets.json",
+    "target": "docs/figma-project-assets.json"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "munchpal-english-assets.json",
+    "target": "docs/munchpal-english-assets.json"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "project-preview-assets.json",
+    "target": "docs/project-preview-assets.json"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../public/demos/aurelia/README.md",
+    "target": "public/demos/aurelia/README.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../public/demos/paylecta/README.md",
+    "target": "public/demos/paylecta/README.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../public/demos/munchpal/README.md",
+    "target": "public/demos/munchpal/README.md"
+  },
+  {
+    "from": "docs/assets.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../app/components/alan-character.tsx",
+    "target": "app/components/alan-character.tsx"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../app/components/alan-character.module.css",
+    "target": "app/components/alan-character.module.css"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-character-default.png",
+    "target": "public/images/alan-character-default.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-character-default.png.json",
+    "target": "public/images/alan-character-default.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-character-greeting.png",
+    "target": "public/images/alan-character-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-character-greeting.png.json",
+    "target": "public/images/alan-character-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-character-wave.png",
+    "target": "public/images/alan-character-wave.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-character-wave.png.json",
+    "target": "public/images/alan-character-wave.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-greeting.png",
+    "target": "public/images/alan-head-bottom-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-greeting.png.json",
+    "target": "public/images/alan-head-bottom-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-left-greeting.png",
+    "target": "public/images/alan-head-bottom-left-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-left-greeting.png.json",
+    "target": "public/images/alan-head-bottom-left-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-left.png",
+    "target": "public/images/alan-head-bottom-left.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-left.png.json",
+    "target": "public/images/alan-head-bottom-left.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-right-greeting.png",
+    "target": "public/images/alan-head-bottom-right-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-right-greeting.png.json",
+    "target": "public/images/alan-head-bottom-right-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-right.png",
+    "target": "public/images/alan-head-bottom-right.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom-right.png.json",
+    "target": "public/images/alan-head-bottom-right.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom.png",
+    "target": "public/images/alan-head-bottom.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-bottom.png.json",
+    "target": "public/images/alan-head-bottom.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-left-greeting.png",
+    "target": "public/images/alan-head-left-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-left-greeting.png.json",
+    "target": "public/images/alan-head-left-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-left.png",
+    "target": "public/images/alan-head-left.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-left.png.json",
+    "target": "public/images/alan-head-left.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-right-greeting.png",
+    "target": "public/images/alan-head-right-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-right-greeting.png.json",
+    "target": "public/images/alan-head-right-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-right.png",
+    "target": "public/images/alan-head-right.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-right.png.json",
+    "target": "public/images/alan-head-right.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-greeting.png",
+    "target": "public/images/alan-head-top-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-greeting.png.json",
+    "target": "public/images/alan-head-top-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-left-greeting.png",
+    "target": "public/images/alan-head-top-left-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-left-greeting.png.json",
+    "target": "public/images/alan-head-top-left-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-left.png",
+    "target": "public/images/alan-head-top-left.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-left.png.json",
+    "target": "public/images/alan-head-top-left.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-right-greeting.png",
+    "target": "public/images/alan-head-top-right-greeting.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-right-greeting.png.json",
+    "target": "public/images/alan-head-top-right-greeting.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-right.png",
+    "target": "public/images/alan-head-top-right.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top-right.png.json",
+    "target": "public/images/alan-head-top-right.png.json"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top.png",
+    "target": "public/images/alan-head-top.png"
+  },
+  {
+    "from": "docs/alan-character.md",
+    "href": "../public/images/alan-head-top.png.json",
+    "target": "public/images/alan-head-top.png.json"
+  },
+  {
+    "from": "AGENTS.md",
+    "href": "docs/README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "portfolio-prd-halyard.md",
+    "href": "PRODUCT.md",
+    "target": "PRODUCT.md"
+  },
+  {
+    "from": "portfolio-prd-halyard.md",
+    "href": "DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "portfolio-prd-halyard.md",
+    "href": "CONTEXT.md",
+    "target": "CONTEXT.md"
+  },
+  {
+    "from": "portfolio-prd-halyard.md",
+    "href": "docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "portfolio-prd-halyard.md",
+    "href": "docs/README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "docs/README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "package.json",
+    "target": "package.json"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "CONTEXT.md",
+    "target": "CONTEXT.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "docs/portfolio-content.md",
+    "target": "docs/portfolio-content.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "docs/assets.md",
+    "target": "docs/assets.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "docs/portfolio-content.md",
+    "target": "docs/portfolio-content.md"
+  },
+  {
+    "from": "PRODUCT.md",
+    "href": "docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/about.md",
+    "href": "../app/about/page.tsx",
+    "target": "app/about/page.tsx"
+  },
+  {
+    "from": "docs/about.md",
+    "href": "portfolio-content.md",
+    "target": "docs/portfolio-content.md"
+  },
+  {
+    "from": "docs/about.md",
+    "href": "../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": "docs/about.md",
+    "href": "quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": "docs/agents/triage-labels.md",
+    "href": "issue-tracker.md",
+    "target": "docs/agents/issue-tracker.md"
+  },
+  {
+    "from": "docs/agents/issue-tracker.md",
+    "href": "triage-labels.md",
+    "target": "docs/agents/triage-labels.md"
+  },
+  {
+    "from": "docs/agents/issue-tracker.md",
+    "href": "../README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "docs/agents/domain.md",
+    "href": "../../CONTEXT.md",
+    "target": "CONTEXT.md"
+  },
+  {
+    "from": "docs/agents/domain.md",
+    "href": "../README.md",
+    "target": "docs/README.md"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "index.html",
+    "target": "public/demos/paylecta/index.html"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "paylecta-opener.mp4",
+    "target": "public/demos/paylecta/paylecta-opener.mp4"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "poster.webp",
+    "target": "public/demos/paylecta/poster.webp"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "render.json",
+    "target": "public/demos/paylecta/render.json"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "assets/manifest.json",
+    "target": "public/demos/paylecta/assets/manifest.json"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "../../../docs/paylecta-opener.md",
+    "target": "docs/paylecta-opener.md"
+  },
+  {
+    "from": "public/demos/paylecta/README.md",
+    "href": "../../../docs/paylecta-opener-creative-brief.md",
+    "target": "docs/paylecta-opener-creative-brief.md"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "index.html",
+    "target": "public/demos/munchpal/index.html"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "munchpal-opener.mp4",
+    "target": "public/demos/munchpal/munchpal-opener.mp4"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "poster.webp",
+    "target": "public/demos/munchpal/poster.webp"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "assets/manifest.json",
+    "target": "public/demos/munchpal/assets/manifest.json"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "../../../docs/munchpal-opener.md",
+    "target": "docs/munchpal-opener.md"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "../../../docs/munchpal-opener-creative-brief.md",
+    "target": "docs/munchpal-opener-creative-brief.md"
+  },
+  {
+    "from": "public/demos/munchpal/README.md",
+    "href": "assets/font-license.txt",
+    "target": "public/demos/munchpal/assets/font-license.txt"
+  },
+  {
+    "from": ".scratch/aurelia-opener/style-brief.md",
+    "href": "../../public/demos/aurelia/DESIGN.md",
+    "target": "public/demos/aurelia/DESIGN.md"
+  },
+  {
+    "from": ".scratch/aurelia-opener/style-brief.md",
+    "href": "../../docs/aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": ".scratch/aurelia-opener/source-audit.md",
+    "href": "../../docs/aurelia-case-study.md",
+    "target": "docs/aurelia-case-study.md"
+  },
+  {
+    "from": ".scratch/aurelia-opener/source-audit.md",
+    "href": "../../public/demos/aurelia/SOURCE.md",
+    "target": "public/demos/aurelia/SOURCE.md"
+  },
+  {
+    "from": "public/demos/aurelia/SOURCE.md",
+    "href": "../../../docs/aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": "public/demos/aurelia/SOURCE.md",
+    "href": "../../../docs/aurelia-case-study.md",
+    "target": "docs/aurelia-case-study.md"
+  },
+  {
+    "from": "public/demos/aurelia/README.md",
+    "href": "index.html",
+    "target": "public/demos/aurelia/index.html"
+  },
+  {
+    "from": "public/demos/aurelia/README.md",
+    "href": "../../../docs/aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": "public/demos/aurelia/README.md",
+    "href": "DESIGN.md",
+    "target": "public/demos/aurelia/DESIGN.md"
+  },
+  {
+    "from": "public/demos/aurelia/README.md",
+    "href": "SOURCE.md",
+    "target": "public/demos/aurelia/SOURCE.md"
+  },
+  {
+    "from": "public/demos/aurelia/README.md",
+    "href": "composition.json",
+    "target": "public/demos/aurelia/composition.json"
+  },
+  {
+    "from": "public/demos/aurelia/DESIGN.md",
+    "href": "../../../docs/aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": ".impeccable/surfaces/selected-work.md",
+    "href": "../../docs/selected-work.md",
+    "target": "docs/selected-work.md"
+  },
+  {
+    "from": ".impeccable/surfaces/selected-work.md",
+    "href": "../../docs/project-entry.md",
+    "target": "docs/project-entry.md"
+  },
+  {
+    "from": ".impeccable/surfaces/selected-work.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/selected-work.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-paylecta-page-tsx.md",
+    "href": "../../docs/paylecta-case-study.md",
+    "target": "docs/paylecta-case-study.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-paylecta-page-tsx.md",
+    "href": "../../docs/figma-project-details.md",
+    "target": "docs/figma-project-details.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-paylecta-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-paylecta-page-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-pawfriend-page-tsx.md",
+    "href": "../../docs/pawfriend-case-study.md",
+    "target": "docs/pawfriend-case-study.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-pawfriend-page-tsx.md",
+    "href": "../../docs/case-media.md",
+    "target": "docs/case-media.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-pawfriend-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-pawfriend-page-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-munchpal-page-tsx.md",
+    "href": "../../docs/munchpal-case-study.md",
+    "target": "docs/munchpal-case-study.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-munchpal-page-tsx.md",
+    "href": "../../docs/munchpal-english-refresh.md",
+    "target": "docs/munchpal-english-refresh.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-munchpal-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-munchpal-page-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-aurelia-page-tsx.md",
+    "href": "../../docs/aurelia-case-study.md",
+    "target": "docs/aurelia-case-study.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-aurelia-page-tsx.md",
+    "href": "../../docs/aurelia-opener.md",
+    "target": "docs/aurelia-opener.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-aurelia-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-work-aurelia-page-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-page-tsx.md",
+    "href": "../../PRODUCT.md",
+    "target": "PRODUCT.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-page-tsx.md",
+    "href": "../../docs/selected-work.md",
+    "target": "docs/selected-work.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-page-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-components-case-media-sequence-tsx.md",
+    "href": "../../docs/case-media.md",
+    "target": "docs/case-media.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-components-case-media-sequence-tsx.md",
+    "href": "../../docs/figma-project-details.md",
+    "target": "docs/figma-project-details.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-components-case-media-sequence-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-components-case-media-sequence-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-about-page-tsx.md",
+    "href": "../../docs/about.md",
+    "target": "docs/about.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-about-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-about-page-tsx.md",
+    "href": "../../DESIGN.md",
+    "target": "DESIGN.md"
+  },
+  {
+    "from": ".impeccable/surfaces/app-about-page-tsx.md",
+    "href": "../../docs/quality.md",
+    "target": "docs/quality.md"
+  }
+]

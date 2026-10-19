@@ -1,0 +1,14 @@
+{
+  "figure": "6.49",
+  "method": "Original embedded PNG with origin metadata added. Decoded image pixels unchanged; no image generation or reconstruction.",
+  "evidence_limit": "Documents a design revision; does not measure its individual effect on task time or completion",
+  "height": 834,
+  "source_sha256": "0c667c2310143b02b58fc4f2d092fe063377da3d5710aef62ab40e5c70a57751",
+  "source_part": "word/media/image128.png",
+  "width": 388,
+  "origin": "Original Munchpal design record supplied by Alan Sahlan on 2 October 2026",
+  "state": "Earlier volunteer chat",
+  "sha256": "8a60c3edd08c2b2ec5020e36a80046dbf5f1f0ab56ea912619986632c6aabca8",
+  "original_embedded_png_sha256": "6bb5ce252fd160e483d1fff70e46e5ce9093db52cdc2cf150dc85a0f26f56458",
+  "decoded_pixel_sha256": "bdba27e229e47923b35c837bf88d089a703b3ba917cc71d098a042d63e883ccf"
+}

@@ -1,0 +1,420 @@
+{
+  "duration": 40,
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "deterministic": true,
+  "checks": [
+    {
+      "t": 6.35,
+      "identical": true
+    },
+    {
+      "t": 12,
+      "identical": true
+    },
+    {
+      "t": 19.7,
+      "identical": true
+    },
+    {
+      "t": 23.5,
+      "identical": true
+    },
+    {
+      "t": 28.9,
+      "identical": true
+    },
+    {
+      "t": 32.65,
+      "identical": true
+    }
+  ],
+  "errors": [],
+  "records": [
+    {
+      "t": 0,
+      "visibleSections": [
+        "top",
+        "arrival"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 2.6,
+      "visibleSections": [
+        "top",
+        "arrival"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 4.85,
+      "visibleSections": [
+        "top",
+        "arrival",
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 6.35,
+      "visibleSections": [
+        "top",
+        "arrival",
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 7.55,
+      "visibleSections": [
+        "top",
+        "arrival",
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 8.25,
+      "visibleSections": [
+        "top",
+        "arrival",
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 9.6,
+      "visibleSections": [
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 10.85,
+      "visibleSections": [
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 12,
+      "visibleSections": [
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 13.55,
+      "visibleSections": [
+        "stays"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 15.4,
+      "visibleSections": [
+        "ways-to-stay"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 17.8,
+      "visibleSections": [
+        "featured"
+      ],
+      "planner": "0",
+      "featured": "Exterior",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 19.7,
+      "visibleSections": [
+        "featured"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 21.8,
+      "visibleSections": [
+        "areas"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "01Uluwatu",
+      "faq": false
+    },
+    {
+      "t": 23.5,
+      "visibleSections": [
+        "areas"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": false
+    },
+    {
+      "t": 26.1,
+      "visibleSections": [
+        "standard"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": false
+    },
+    {
+      "t": 28.9,
+      "visibleSections": [
+        "standard",
+        "faq",
+        "final-cta"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": true
+    },
+    {
+      "t": 30.6,
+      "visibleSections": [
+        "faq",
+        "final-cta",
+        "footer"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": true
+    },
+    {
+      "t": 32.65,
+      "visibleSections": [
+        "faq",
+        "final-cta",
+        "footer"
+      ],
+      "planner": "1",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": true
+    },
+    {
+      "t": 35.45,
+      "visibleSections": [
+        "final-cta",
+        "footer"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": true
+    },
+    {
+      "t": 37.35,
+      "visibleSections": [
+        "top",
+        "arrival",
+        "stays",
+        "ways-to-stay",
+        "featured",
+        "areas",
+        "standard",
+        "faq",
+        "final-cta",
+        "footer"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": true
+    },
+    {
+      "t": 39.99,
+      "visibleSections": [
+        "top",
+        "arrival"
+      ],
+      "planner": "0",
+      "featured": "Materials",
+      "area": "02Ubud",
+      "faq": true
+    }
+  ],
+  "geometry": [
+    {
+      "selector": "#top",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "selector": "#arrival",
+      "x": 0,
+      "y": 1080,
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "selector": "#stays",
+      "x": 0,
+      "y": 2160,
+      "w": 1920,
+      "h": 1574.125
+    },
+    {
+      "selector": "#ways-to-stay",
+      "x": 0,
+      "y": 3734.125,
+      "w": 1920,
+      "h": 1246.125
+    },
+    {
+      "selector": "#featured",
+      "x": 0,
+      "y": 4980.25,
+      "w": 1920,
+      "h": 1348.046875
+    },
+    {
+      "selector": "#areas",
+      "x": 0,
+      "y": 6328.296875,
+      "w": 1920,
+      "h": 1331.125
+    },
+    {
+      "selector": "#standard",
+      "x": 0,
+      "y": 7659.421875,
+      "w": 1920,
+      "h": 1830
+    },
+    {
+      "selector": "#faq",
+      "x": 0,
+      "y": 9489.421875,
+      "w": 1920,
+      "h": 662
+    },
+    {
+      "selector": ".final-cta",
+      "x": 0,
+      "y": 10151.421875,
+      "w": 1920,
+      "h": 1172
+    },
+    {
+      "selector": ".footer",
+      "x": 0,
+      "y": 11323.421875,
+      "w": 1920,
+      "h": 591.578125
+    }
+  ],
+  "shots": {
+    "top": {
+      "s": 0.8741007194244604,
+      "fx": 960,
+      "fy": 540
+    },
+    "arrival": {
+      "s": 0.8741007194244604,
+      "fx": 960,
+      "fy": 1620
+    },
+    "stays": {
+      "s": 0.7750423602113027,
+      "fx": 960,
+      "fy": 2947.0625
+    },
+    "ways-to-stay": {
+      "s": 0.9,
+      "fx": 960,
+      "fy": 4357.1875
+    },
+    "featured": {
+      "s": 0.9,
+      "fx": 960,
+      "fy": 5654.2734375
+    },
+    "areas": {
+      "s": 0.9,
+      "fx": 960,
+      "fy": 6993.859375
+    },
+    "standard": {
+      "s": 0.6437086092715232,
+      "fx": 960,
+      "fy": 8574.421875
+    },
+    "faq": {
+      "s": 0.9,
+      "fx": 960,
+      "fy": 9867.609375
+    },
+    "final-cta": {
+      "s": 0.9,
+      "fx": 960,
+      "fy": 10831.796875
+    },
+    "footer": {
+      "s": 0.9,
+      "fx": 960,
+      "fy": 11736.5859375
+    }
+  },
+  "totalHeight": 12009,
+  "missingImages": [],
+  "sectionHeadings": [
+    "Come for Bali.Stay for the house.",
+    "Three ways into Bali.",
+    "Somewhere you’ll want to stay.",
+    "How will you spend your days?",
+    "Awan Cliff House, from four angles.",
+    "One island. A world of difference.",
+    "A good stay goes beyond the view.",
+    "Before you make plans.",
+    "Tell us what a good day in Bali looks like."
+  ]
+}

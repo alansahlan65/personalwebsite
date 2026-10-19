@@ -1,0 +1,80 @@
+{
+  "round": "before",
+  "captures": [
+    ".scratch/website-review/distill/before/aurelia-390-top.png",
+    ".scratch/website-review/distill/before/aurelia-390-story.png",
+    ".scratch/website-review/distill/before/paylecta-390-top.png",
+    ".scratch/website-review/distill/before/paylecta-390-story.png",
+    ".scratch/website-review/distill/before/pawfriend-390-top.png",
+    ".scratch/website-review/distill/before/pawfriend-390-story.png",
+    ".scratch/website-review/distill/before/munchpal-390-top.png",
+    ".scratch/website-review/distill/before/munchpal-390-story.png",
+    ".scratch/website-review/distill/before/aurelia-1440-top.png",
+    ".scratch/website-review/distill/before/aurelia-1440-story.png",
+    ".scratch/website-review/distill/before/paylecta-1440-top.png",
+    ".scratch/website-review/distill/before/paylecta-1440-story.png",
+    ".scratch/website-review/distill/before/pawfriend-1440-top.png",
+    ".scratch/website-review/distill/before/pawfriend-1440-story.png",
+    ".scratch/website-review/distill/before/munchpal-1440-top.png",
+    ".scratch/website-review/distill/before/munchpal-1440-story.png"
+  ],
+  "samples": [
+    {
+      "slug": "aurelia",
+      "width": 390,
+      "visibleWords": 445,
+      "height": 5293.734375,
+      "documentWidth": 390
+    },
+    {
+      "slug": "paylecta",
+      "width": 390,
+      "visibleWords": 512,
+      "height": 6238.984375,
+      "documentWidth": 390
+    },
+    {
+      "slug": "pawfriend",
+      "width": 390,
+      "visibleWords": 586,
+      "height": 6507.09375,
+      "documentWidth": 390
+    },
+    {
+      "slug": "munchpal",
+      "width": 390,
+      "visibleWords": 921,
+      "height": 11345.53125,
+      "documentWidth": 390
+    },
+    {
+      "slug": "aurelia",
+      "width": 1440,
+      "visibleWords": 437,
+      "height": 7007.5,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "paylecta",
+      "width": 1440,
+      "visibleWords": 511,
+      "height": 7061.25,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1440,
+      "visibleWords": 578,
+      "height": 7685.734375,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "munchpal",
+      "width": 1440,
+      "visibleWords": 920,
+      "height": 9145.28125,
+      "documentWidth": 1440
+    }
+  ],
+  "errors": []
+}

@@ -3,12 +3,13 @@ import { expect, test } from "@playwright/test";
 test("Aurelia connects its preview to the hero and remains usable during entry", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
   const project = page.locator(".project-row").first().getByRole("link", { name: /Aurelia/ });
   await project.hover();
-  await expect.poll(() => project.locator(".project-preview").evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(300);
-  await project.locator(".project-banner-expanded").hover();
+  await expect(page.locator(".project-row").first()).toHaveAttribute("data-expanded", "true");
+  await project.locator(".project-cover").hover();
   await expect(page.locator(".site-cursor")).toHaveAttribute("data-mode", "action-image");
-  await project.locator(".project-banner-expanded").click();
+  await project.locator(".project-cover").click();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
   await expect.poll(() => page.evaluate(() => document.getAnimations().some((animation) => {
     const effect = animation.effect as KeyframeEffect | null;
@@ -61,7 +62,8 @@ test("an immediate click during preview growth reaches the hero and preserves hi
   await expect(page).toHaveURL(/\/work\/aurelia$/);
   await expect(page.getByRole("heading", { level: 1, name: "Aurelia" })).toBeFocused();
   await expect(page.locator(".case-hero img")).toBeVisible();
-  await expect(page.locator(".site-cursor")).toBeHidden();
+  await expect(page.locator(".site-cursor")).toBeVisible();
+  await expect(page.locator(".site-cursor")).toHaveAttribute("data-mode", "dot");
   await page.goBack();
   await expect(project).toBeFocused();
   await expect.poll(async () => Math.abs((await page.evaluate(() => window.scrollY)) - startingY)).toBeLessThan(80);

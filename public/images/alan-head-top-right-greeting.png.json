@@ -1,0 +1,24 @@
+{
+  "source": "OpenAI built-in Image Gen",
+  "intent": "edit",
+  "createdDate": "2026-10-01",
+  "direction": "top-right",
+  "expression": "greeting",
+  "prompt": "Edit target: image 1, Alan's existing top-right directional head render on its registered full-body canvas. Image 2 is ONLY the expression reference, the updated front-facing greeting render. Change ONLY the face's expression in image 1 to the cheerful open-mouth smile in image 2: warm curved open smile with dark muted red interior and a soft coral tongue, no teeth, smiling cheeks, subtly welcoming eyebrows, friendly existing black blocky eyes with white highlights. Preserve the exact top-right direction the head is facing, its pitch/yaw, silhouette, neck attachment, hair cube geometry and recognizable face from image 1. Do not turn it forward and do not merely move pupils. Keep the head's pose and entire body/arms/hands/shirt/gray linen pants/Samba shoes in exactly the same positions, sizes, lighting and muted colors as image 1; do not adopt the arm gesture or pocket-hand body pose from image 2. The body in image 1 must remain unchanged. Use the same 1122x1402 portrait canvas and transparent alpha. This is a matched head-expression sprite, not a redesign. No background, rectangle, text, speech bubble, decoration, watermark or extra objects.",
+  "references": [
+    {
+      "role": "directional edit target",
+      "path": "public/images/alan-head-top-right.png"
+    },
+    {
+      "role": "cheerful expression reference only",
+      "path": "public/images/alan-character-greeting.png"
+    }
+  ],
+  "original": "C:\\Users\\DESKTOP-IOT0021\\.codex\\generated_images\\01a0f526-4b45-7362-a5c0-a545d2a9003d\\exec-81a8eaa1-4124-45b3-9ea7-f677743c12d9.png",
+  "shipping": "public/images/alan-head-top-right-greeting.png",
+  "width": 1122,
+  "height": 1402,
+  "hasAlpha": true,
+  "preparation": "Copied without raster edits. Only the head/neck region is displayed on greeting."
+}

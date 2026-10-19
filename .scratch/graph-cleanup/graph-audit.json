@@ -1,0 +1,13 @@
+{
+  "nodes": 5310,
+  "links": 8533,
+  "duplicateIds": 0,
+  "brokenEdges": 0,
+  "missingSources": [],
+  "externalSources": [
+    "node:fs",
+    "@playwright/test",
+    "node:fs/promises"
+  ],
+  "offlineLibraryBytes": 702648
+}

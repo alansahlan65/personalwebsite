@@ -1,0 +1,15 @@
+{
+  "unusedCss": [],
+  "unusedModules": [],
+  "unreferencedPublic": [
+    "public/demos/munchpal/README.md",
+    "public/demos/paylecta/assets/Manrope-font-source.txt",
+    "public/demos/paylecta/assets/Manrope-OFL.txt",
+    "public/demos/paylecta/README.md",
+    "public/images/figma/munchpal/messages.webp",
+    "public/images/figma/munchpal/notifications.webp",
+    "public/images/figma/munchpal/request-accepted.webp",
+    "public/images/figma/munchpal/request-confirmation.webp",
+    "public/images/figma/paylecta/dashboard-mockup.webp"
+  ]
+}

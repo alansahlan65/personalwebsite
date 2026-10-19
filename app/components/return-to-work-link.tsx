@@ -3,10 +3,11 @@
 import { ArrowIcon } from "./ui-icons";
 import { TransitionLink as Link } from "./navigation-transition";
 import type { MouseEvent } from "react";
+import { writeSessionValue } from "../lib/session-storage";
 
 function rememberReturn(event: MouseEvent<HTMLAnchorElement>) {
   if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-  sessionStorage.setItem("selected-work-return-pending", "1");
+  writeSessionValue("selected-work-return-pending", "1");
 }
 
 export function ReturnToWorkLink({ className }: { className?: string }) {

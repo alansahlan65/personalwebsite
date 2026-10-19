@@ -7,5 +7,14 @@
   "width": 1402,
   "height": 1081,
   "preparation": "Full original PDF page rendered at 72 dpi, encoded as WebP quality 88. No crop, synthetic edits or new interface details.",
-  "evidence": "Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes."
+  "evidence": "Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes.",
+  "prompt": "Source origin. {\"source\":\"https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view\",\"source_sha256\":\"6697c699c5287241786a21b60cdd119f609c12b6dfbff9a0d13dd447bdbff92c\",\"pdf_page\":7,\"project_date\":\"June 2025\",\"verified_on\":\"2026-09-27\",\"width\":1402,\"height\":1081,\"preparation\":\"Full original PDF page rendered at 72 dpi, encoded as WebP quality 88. No crop, synthetic edits or new interface details.\",\"evidence\":\"Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes.\"}",
+  "createdAt": "2026-10-03T09:53:18.332Z",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "307cd7d1c4088a4ba8e50d1d24c704f028da5933156a1cc0a3a36ff4828ec9ab",
+    "current_file_sha256": "307cd7d1c4088a4ba8e50d1d24c704f028da5933156a1cc0a3a36ff4828ec9ab",
+    "decoded_pixel_sha256": "ee3c22d6d9688a2dcc0224121d73f7ee92e4ff91a67d6b1bc9243b0fc585b6ac",
+    "pixels_unchanged": true
+  }
 }

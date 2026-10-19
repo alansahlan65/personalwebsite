@@ -1,0 +1,43 @@
+.page { position: relative; z-index: 1; container-type: inline-size; padding-block: round(nearest, clamp(2rem, 5vw, 4.5rem), 8px) var(--space-48); }
+.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block-end: var(--section-space); }
+.intro { min-width: 0; }
+.page .hero h1 { font-size: clamp(2.8rem, 6.8vw, 6.5rem); line-height: 1.08; letter-spacing: -.04em; font-weight: 500; max-width: 10ch; text-wrap: initial; }
+.hero h1 span { color: var(--about-accent, var(--cobalt)); }
+.introText { max-width: 35ch; margin-block-start: 1.5rem; font-size: clamp(1rem, 1.45vw, 1.25rem); line-height: 1.65; text-wrap: pretty; }
+.portraitFigure { width: 100%; max-width: 440px; margin: 0; justify-self: end; }
+.story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block: var(--space-32); border-block: 1px solid var(--divider); }
+.page h2 { font-size: clamp(1.65rem, 3vw, 2.75rem); line-height: 1.15; font-weight: 500; letter-spacing: -.04em; text-wrap: balance; }
+.storyIntro > p, .currentWork > p, .learning > div > p { margin-block-start: 1.25rem; font-size: 1rem; line-height: 1.75; max-width: 48ch; text-wrap: pretty; }
+.skillPhrase { display: inline-flex; align-items: baseline; }
+.role { margin-block-start: 1rem; }
+.role > a { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; font-size: 1.625rem; font-weight: 500; letter-spacing: -.03em; text-decoration: none; }
+.role > p { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin-block-start: .25rem; font-size: .9375rem; line-height: 1.6; }
+.role p span, .currentWork > .clients { color: var(--muted); }
+.currentWork > .clients { font-size: .875rem; }
+.workActions { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1.5rem; margin-block-start: 1.25rem; }
+.workActions :global(.about-action) { font-size: .875rem; gap: .5rem; }
+.personal { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); margin-block-start: var(--section-space); padding-block-start: var(--space-32); border-block-start: 1px solid var(--divider); }
+.personalIntro > p { max-width: 48ch; margin-block-start: 1.25rem; font-size: 1rem; line-height: 1.75; color: var(--muted); }
+.learning { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block: var(--section-space) 0; }
+@container (max-width: 40rem) {
+  .story, .personal, .learning { grid-template-columns: minmax(0, 1fr); }
+  .story { gap: 2.5rem; }
+  .personal { gap: 2rem; }
+}
+@media (max-width: 760px) {
+  .hero, .story, .personal, .learning { grid-template-columns: minmax(0, 1fr); }
+  .hero { gap: 2rem; }
+  .page .hero h1 { max-width: none; font-size: clamp(2.7rem, 10vw, 4.5rem); }
+  .introText { max-width: 36ch; }
+  .portraitFigure { justify-self: start; max-width: 440px; }
+  .story { gap: 2.5rem; }
+  .personal { gap: 2rem; }
+  .personalIntro > p { max-width: 36ch; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .intro { animation: hello-in 420ms cubic-bezier(.16, 1, .3, 1) both; }
+  .intro:has(:focus-visible), .intro:has(h1:focus) { animation: none; }
+}
+@keyframes hello-in { from { opacity: .4; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+.workActions :global(.resume-download) { margin-block-start: 0; }

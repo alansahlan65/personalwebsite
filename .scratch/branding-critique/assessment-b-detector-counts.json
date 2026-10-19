@@ -1,0 +1,342 @@
+[
+  {
+    "rule": "design-system-color",
+    "count": 40,
+    "files": [
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+        "count": 1,
+        "lines": [
+          41
+        ],
+        "representative": "Undocumented color #c5c1b5 is outside DESIGN.md colors"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.tsx",
+        "count": 2,
+        "lines": [
+          26,
+          36
+        ],
+        "representative": "Undocumented color #f5a623 is outside DESIGN.md colors"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\globals.css",
+        "count": 1,
+        "lines": [
+          122
+        ],
+        "representative": "Undocumented color #c2b8a6 is outside DESIGN.md colors"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+        "count": 2,
+        "lines": [
+          47,
+          50
+        ],
+        "representative": "Undocumented color #91ac68 is outside DESIGN.md colors"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+        "count": 10,
+        "lines": [
+          12,
+          13,
+          30,
+          37,
+          42,
+          42,
+          42,
+          42,
+          42,
+          44
+        ],
+        "representative": "Undocumented color #ffa13b is outside DESIGN.md colors"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+        "count": 24,
+        "lines": [
+          9,
+          16,
+          16,
+          17,
+          17,
+          17,
+          37,
+          37,
+          49,
+          58,
+          58,
+          58,
+          58,
+          67,
+          68,
+          75,
+          75,
+          78,
+          84,
+          84,
+          84,
+          84,
+          90,
+          90
+        ],
+        "representative": "Undocumented color #f8f8f8 is outside DESIGN.md colors"
+      }
+    ]
+  },
+  {
+    "rule": "design-system-font-size",
+    "count": 91,
+    "files": [
+      {
+        "file": "D:\\Project\\Personal Web\\app\\about\\about.module.css",
+        "count": 5,
+        "lines": [
+          4,
+          6,
+          16,
+          22,
+          31
+        ],
+        "representative": "font-size: clamp(2.8rem, 6.8vw, 6.5rem) has fluid endpoints 2.8rem and 6.5rem off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\about-notebook.module.css",
+        "count": 4,
+        "lines": [
+          11,
+          16,
+          21,
+          26
+        ],
+        "representative": "font-size: clamp(1.25rem, 1.8vw, 1.5rem) has fluid endpoints 1.25rem and 1.5rem off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\about-play.module.css",
+        "count": 6,
+        "lines": [
+          5,
+          16,
+          18,
+          33,
+          35,
+          38
+        ],
+        "representative": "font-size: .875rem is off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+        "count": 1,
+        "lines": [
+          49
+        ],
+        "representative": "font-size: .8125rem is off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.module.css",
+        "count": 1,
+        "lines": [
+          142
+        ],
+        "representative": "font-size: clamp(1rem, 1.8vw, 1.4rem) has fluid endpoint 1.4rem off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\project-artifact.module.css",
+        "count": 2,
+        "lines": [
+          6,
+          9
+        ],
+        "representative": "font-size: .875rem is off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+        "count": 10,
+        "lines": [
+          10,
+          17,
+          19,
+          26,
+          27,
+          30,
+          50,
+          74,
+          80,
+          90
+        ],
+        "representative": "font-size: clamp(3.2rem, 6.6vw, 6.7rem) has fluid endpoints 3.2rem and 6.7rem off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\globals.css",
+        "count": 49,
+        "lines": [
+          82,
+          127,
+          133,
+          138,
+          139,
+          144,
+          151,
+          161,
+          164,
+          168,
+          172,
+          175,
+          176,
+          179,
+          215,
+          223,
+          226,
+          230,
+          234,
+          239,
+          242,
+          257,
+          322,
+          356,
+          359,
+          397,
+          435,
+          437,
+          463,
+          464,
+          466,
+          472,
+          484,
+          495,
+          496,
+          618,
+          622,
+          630,
+          634,
+          641,
+          645,
+          652,
+          654,
+          675,
+          701,
+          704,
+          710,
+          713,
+          735
+        ],
+        "representative": "font-size: .875rem is off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\munchpal\\munchpal.module.css",
+        "count": 8,
+        "lines": [
+          26,
+          54,
+          65,
+          95,
+          145,
+          150,
+          167,
+          192
+        ],
+        "representative": "font-size: clamp(2rem, 3.7vw, 3.75rem) has fluid endpoints 2rem and 3.75rem off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\project-detail.module.css",
+        "count": 4,
+        "lines": [
+          3,
+          19,
+          27,
+          50
+        ],
+        "representative": "font-size: clamp(3rem, 7.5vw, 6.75rem) has fluid endpoints 3rem and 6.75rem off the DESIGN.md type ramp"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\project-opener.module.css",
+        "count": 1,
+        "lines": [
+          4
+        ],
+        "representative": "font-size: .875rem is off the DESIGN.md type ramp"
+      }
+    ]
+  },
+  {
+    "rule": "design-system-radius",
+    "count": 22,
+    "files": [
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+        "count": 1,
+        "lines": [
+          16
+        ],
+        "representative": "border-radius: 12px is outside the DESIGN.md rounded scale"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.module.css",
+        "count": 2,
+        "lines": [
+          99,
+          162
+        ],
+        "representative": "border-radius: 9px is outside the DESIGN.md rounded scale"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\components\\speech-bubble.module.css",
+        "count": 1,
+        "lines": [
+          5
+        ],
+        "representative": "border-radius: 24px is outside the DESIGN.md rounded scale"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\globals.css",
+        "count": 1,
+        "lines": [
+          77
+        ],
+        "representative": "border-radius: 12px is outside the DESIGN.md rounded scale"
+      },
+      {
+        "file": "D:\\Project\\Personal Web\\app\\work\\project-devices.module.css",
+        "count": 17,
+        "lines": [
+          24,
+          36,
+          36,
+          40,
+          40,
+          52,
+          57,
+          66,
+          74,
+          78,
+          89,
+          96,
+          96,
+          97,
+          97,
+          98,
+          99
+        ],
+        "representative": "border-radius: 2px is outside the DESIGN.md rounded scale"
+      }
+    ]
+  },
+  {
+    "rule": "side-tab",
+    "count": 2,
+    "files": [
+      {
+        "file": "D:\\Project\\Personal Web\\app\\globals.css",
+        "count": 2,
+        "lines": [
+          124,
+          143
+        ],
+        "representative": "border-right: 8px solid var(--cobalt)"
+      }
+    ]
+  }
+]

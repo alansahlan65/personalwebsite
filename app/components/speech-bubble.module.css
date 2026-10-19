@@ -1,0 +1,60 @@
+.dialogue {
+  --dialogue-surface: color-mix(in srgb, var(--canvas) 96%, var(--ink) 4%);
+  padding: 1rem 1.25rem;
+  border: 0;
+  border-radius: 24px;
+  background: var(--dialogue-surface);
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.dialogue::after {
+  content: "";
+  position: absolute;
+  inset-block-end: -12px;
+  inset-inline-start: 16px;
+  width: 22px;
+  height: 18px;
+  background: var(--dialogue-surface);
+  clip-path: polygon(65% 0, 0 0, 100% 100%);
+  pointer-events: none;
+}
+
+.leading::after {
+  inset-block-start: 50%;
+  inset-block-end: auto;
+  inset-inline-start: -12px;
+  width: 18px;
+  height: 22px;
+  clip-path: polygon(100% 0, 100% 100%, 0 80%);
+  transform: translateY(-50%);
+}
+
+.accent {
+  position: absolute;
+  inset-block-start: -24px;
+  inset-inline-end: -4px;
+  width: 32px;
+  height: 24px;
+  color: color-mix(in srgb, var(--cobalt) 76%, var(--canvas) 24%);
+  pointer-events: none;
+}
+
+.accent::before, .accent::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 15px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.accent::before { inset-block-start: 0; inset-inline-start: 3px; transform: rotate(12deg); }
+.accent::after { inset-block-start: 8px; inset-inline-end: 3px; transform: rotate(46deg); }
+
+@media (forced-colors: active) {
+  .dialogue { --dialogue-surface: Canvas; border: 1px solid CanvasText; color: CanvasText; }
+  .accent { color: Highlight; }
+}

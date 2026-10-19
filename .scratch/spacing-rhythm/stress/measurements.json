@@ -1,0 +1,752 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 12
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 24
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 32
+      }
+    ],
+    "markedGap": 32
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 320,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 12
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 24
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 32
+      }
+    ],
+    "markedGap": 32
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 650,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 12
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 24
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 32
+      }
+    ],
+    "markedGap": 32
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 768,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 12
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 24
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 32
+      }
+    ],
+    "markedGap": 32
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 1000,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/about",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/contact",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "P",
+        "gap": 12
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "A",
+        "gap": 24
+      },
+      {
+        "from": "A",
+        "to": "P",
+        "gap": 24
+      },
+      {
+        "from": "P",
+        "to": "VIDEO",
+        "gap": 24
+      },
+      {
+        "from": "VIDEO",
+        "to": "A",
+        "gap": 24
+      }
+    ],
+    "markedGap": null
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "P",
+        "gap": 16
+      },
+      {
+        "from": "P",
+        "to": "DL",
+        "gap": 16
+      },
+      {
+        "from": "DL",
+        "to": "P",
+        "gap": 32
+      },
+      {
+        "from": "P",
+        "to": "DIV",
+        "gap": 32
+      },
+      {
+        "from": "DIV",
+        "to": "P",
+        "gap": 32
+      }
+    ],
+    "markedGap": 32
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  },
+  {
+    "route": "/missing-page",
+    "width": 1920,
+    "roundSupported": true,
+    "overflow": 0,
+    "offGridPadding": [],
+    "blockGaps": [],
+    "markedGap": null
+  }
+]

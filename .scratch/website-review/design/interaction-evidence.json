@@ -1,0 +1,122 @@
+[
+  {
+    "width": 1440,
+    "roleStatus": [
+      "I am a Design Engineer.",
+      ""
+    ]
+  },
+  {
+    "width": 1440,
+    "menuAfterEscape": 0,
+    "activeElement": "<button class=\"compact-menu-trigger is-visible\" type=\"button\" aria-label=\"Open menu\" aria-haspopup=\"dialog\" tabindex=\"0\" data-magnet=\"control\" data-menu-ready=\"true\"><span class=\"menu-control-visual\"><span class=\"menu-control-label\" data-magnet-part=\"true\">Menu</span><span data-magnet-part=\"true\" class=\"menu-trigger-icon\" aria-hidden=\"true\"><span class=\"menu-icon-layer\" style=\"opacity:1;transform:scale(1)\"><svg class=\"ui-menu-icon\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 8h16 M4 16h16\" vector-effect=\"non-scaling-stroke\"></path></svg></span></span></span></button>"
+  },
+  {
+    "width": 1440,
+    "errors": 3,
+    "focus": "contact-name"
+  },
+  {
+    "width": 1440,
+    "draftRestored": "Local review draft. Not sent."
+  },
+  {
+    "width": 768,
+    "roleStatus": [
+      "I am a Design Engineer.",
+      ""
+    ]
+  },
+  {
+    "width": 768,
+    "menuAfterEscape": 0,
+    "activeElement": "<button class=\"compact-menu-trigger is-visible\" type=\"button\" aria-label=\"Open menu\" aria-haspopup=\"dialog\" tabindex=\"0\" data-magnet=\"control\" data-menu-ready=\"true\"><span class=\"menu-control-visual\"><span class=\"menu-control-label\" data-magnet-part=\"true\">Menu</span><span data-magnet-part=\"true\" class=\"menu-trigger-icon\" aria-hidden=\"true\"><span class=\"menu-icon-layer\" style=\"opacity:1;transform:scale(1)\"><svg class=\"ui-menu-icon\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 8h16 M4 16h16\" vector-effect=\"non-scaling-stroke\"></path></svg></span></span></span></button>"
+  },
+  {
+    "width": 768,
+    "errors": 3,
+    "focus": "contact-name"
+  },
+  {
+    "width": 768,
+    "draftRestored": "Local review draft. Not sent."
+  },
+  {
+    "width": 390,
+    "roleStatus": [
+      "I am a Design Engineer.",
+      ""
+    ]
+  },
+  {
+    "width": 390,
+    "menuAfterEscape": 0,
+    "activeElement": "<button class=\"compact-menu-trigger is-visible\" type=\"button\" aria-label=\"Open menu\" aria-haspopup=\"dialog\" tabindex=\"0\" data-magnet=\"control\" data-menu-ready=\"true\"><span class=\"menu-control-visual\"><span class=\"menu-control-label\" data-magnet-part=\"true\">Menu</span><span data-magnet-part=\"true\" class=\"menu-trigger-icon\" aria-hidden=\"true\"><span class=\"menu-icon-layer\" style=\"opacity:1;transform:scale(1)\"><svg class=\"ui-menu-icon\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 8h16 M4 16h16\" vector-effect=\"non-scaling-stroke\"></path></svg></span></span></span></button>"
+  },
+  {
+    "width": 390,
+    "errors": 3,
+    "focus": "contact-name"
+  },
+  {
+    "width": 390,
+    "draftRestored": "Local review draft. Not sent."
+  },
+  {
+    "width": 320,
+    "roleStatus": [
+      "I am a Design Engineer.",
+      ""
+    ]
+  },
+  {
+    "width": 320,
+    "menuAfterEscape": 0,
+    "activeElement": "<button class=\"compact-menu-trigger is-visible\" type=\"button\" aria-label=\"Open menu\" aria-haspopup=\"dialog\" tabindex=\"0\" data-magnet=\"control\" data-menu-ready=\"true\"><span class=\"menu-control-visual\"><span class=\"menu-control-label\" data-magnet-part=\"true\">Menu</span><span data-magnet-part=\"true\" class=\"menu-trigger-icon\" aria-hidden=\"true\"><span class=\"menu-icon-layer\" style=\"opacity:1;transform:scale(1)\"><svg class=\"ui-menu-icon\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 8h16 M4 16h16\" vector-effect=\"non-scaling-stroke\"></path></svg></span></span></span></button>"
+  },
+  {
+    "width": 320,
+    "errors": 3,
+    "focus": "contact-name"
+  },
+  {
+    "width": 320,
+    "draftRestored": "Local review draft. Not sent."
+  },
+  {
+    "route": "aurelia",
+    "media": {
+      "y": 2179.5,
+      "travel": 2688,
+      "horizontal": "true",
+      "panels": 3
+    }
+  },
+  {
+    "route": "paylecta",
+    "media": {
+      "y": 2678.9375,
+      "travel": 2688,
+      "horizontal": "true",
+      "panels": 3
+    }
+  },
+  {
+    "route": "pawfriend",
+    "media": {
+      "y": 2462.28125,
+      "travel": 2688,
+      "horizontal": "true",
+      "panels": 3
+    }
+  },
+  {
+    "route": "munchpal",
+    "media": {
+      "y": 2387.671875,
+      "travel": 4032,
+      "horizontal": "true",
+      "panels": 4
+    }
+  }
+]

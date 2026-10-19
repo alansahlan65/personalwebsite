@@ -5,6 +5,8 @@ test("magnetic visuals move while the link hit area stays fixed and clickable", 
   await page.goto("/");
   const about = page.getByRole("link", { name: "More about me" });
   await expect(about).toHaveAttribute("data-magnet", "text");
+  await about.scrollIntoViewIfNeeded();
+  await expect(page.locator(".about-copy")).toHaveCSS("opacity", "1");
   const visual = about.locator("[data-magnet-part]").first();
   const targetBefore = await about.evaluate((element) => { const rect = element.getBoundingClientRect(); return { x: rect.x, y: rect.y + window.scrollY, width: rect.width, height: rect.height }; });
   await about.hover({ position: { x: targetBefore!.width - 8, y: targetBefore!.height / 2 } });
@@ -18,17 +20,19 @@ test("magnetic visuals move while the link hit area stays fixed and clickable", 
 
 test("cursor inverts images, shows an arrow only on actionable imagery, and resets", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto("/");
+  await page.goto("/about");
   const cursor = page.locator(".site-cursor");
   await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
   await page.locator(".portrait-frame img").hover();
   await expect(cursor).toHaveAttribute("data-mode", "image");
   await expect(cursor).toHaveCSS("mix-blend-mode", "difference");
   await expect(page.locator(".site-cursor-arrow")).toBeHidden();
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
   const project = page.locator(".project-row").first();
   await project.getByRole("link", { name: /Aurelia/ }).hover();
   await expect.poll(() => project.locator(".project-preview").evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
-  await project.locator(".project-banner-expanded").hover();
+  await project.locator(".project-cover").hover();
   await expect(cursor).toHaveAttribute("data-mode", "action-image");
   await expect(page.locator(".site-cursor-arrow")).toBeVisible();
   await page.emulateMedia({ reducedMotion: "reduce" });
@@ -38,34 +42,35 @@ test("cursor inverts images, shows an arrow only on actionable imagery, and rese
 test("every current action is inventoried once, including menu and case-study controls", async ({ page }) => {
   await page.goto("/");
   const unmarked = () => page.evaluate(() => Array.from(document.querySelectorAll("a[href], button"))
-    .filter((element) => !element.hasAttribute("data-magnet"))
+    .filter((element) => !element.matches('[data-magnet], [data-pointer-feedback="local"]'))
     .map((element) => element.outerHTML.slice(0, 120)));
   expect(await unmarked()).toEqual([]);
   await expect(page.locator("[data-magnet] [data-magnet]")).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "Resume", exact: true }).first()).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
+  await expect(page.getByRole("link", { name: "Download resume, PDF", exact: true }).first()).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
   await page.evaluate(() => window.scrollTo(0, 160));
   await page.locator(".compact-menu-trigger").click();
   expect(await unmarked()).toEqual([]);
   await expect(page.getByRole("dialog", { name: "Navigation menu" }).locator("[data-magnet]")).toHaveCount(8);
-  const menuWork = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "Work", exact: true });
-  await menuWork.hover({ position: { x: 8, y: 8 } });
-  await expect.poll(() => menuWork.locator(".stairs-marquee-magnet").evaluate((element) => getComputedStyle(element).transform)).not.toBe("none");
-  await expect(menuWork.locator(".stairs-marquee")).toHaveCSS("animation-name", "stairs-marquee-travel");
+  const menuHome = page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "Home", exact: true });
+  await menuHome.hover({ position: { x: 8, y: 8 } });
+  await expect.poll(() => menuHome.locator(".stairs-marquee-magnet").evaluate((element) => getComputedStyle(element).transform)).not.toBe("none");
+  await expect(menuHome.locator(".stairs-marquee")).toHaveCSS("animation-name", "stairs-marquee-travel");
   await page.getByRole("dialog", { name: "Navigation menu" }).getByRole("button", { name: "Close menu" }).click();
   await page.goto("/work/aurelia");
   expect(await unmarked()).toEqual([]);
-  await expect(page.locator(".case-study [data-magnet]")).toHaveCount(8);
+  await expect(page.locator(".case-study [data-magnet] [data-magnet]")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Open the Aurelia Figma file", exact: true })).toHaveAttribute("data-pointer-feedback", "local");
 });
 
 test("rapid target changes return the prior visual and keyboard focus stays still", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
-  const work = page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Work" });
+  const home = page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Home" });
   const about = page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "About" });
-  await work.hover({ position: { x: 5, y: 5 } });
-  await expect.poll(() => work.locator("[data-magnet-part]").evaluate((element) => getComputedStyle(element).transform)).not.toBe("none");
+  await home.hover({ position: { x: 5, y: 5 } });
+  await expect.poll(() => home.locator("[data-magnet-part]").evaluate((element) => getComputedStyle(element).transform)).not.toBe("none");
   await about.hover({ position: { x: 5, y: 5 } });
-  await expect.poll(() => work.locator("[data-magnet-part]").evaluate((element) => getComputedStyle(element).transform)).toBe("none");
+  await expect.poll(() => home.locator("[data-magnet-part]").evaluate((element) => getComputedStyle(element).transform)).toBe("none");
   await page.mouse.move(0, 0);
   await page.keyboard.press("Tab");
   await page.keyboard.press("Tab");
@@ -76,42 +81,42 @@ test("rapid target changes return the prior visual and keyboard focus stays stil
   await expect(brand.locator("[data-magnet-part]").first()).toHaveCSS("transform", "none");
 });
 
-test("cursor restores native behavior for selection and window exit, then resumes", async ({ page }) => {
+test("cursor stays custom during selection and hides only after window exit", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
   const cursor = page.locator(".site-cursor");
-  await page.locator(".portrait-frame img").hover();
-  await expect(cursor).toHaveAttribute("data-mode", "image");
+  await page.getByRole("button", { name: "Say hello to Alan" }).hover();
+  await expect(cursor).toHaveAttribute("data-mode", "dot");
   await page.evaluate(() => {
-    const text = document.querySelector(".role-lines p")!.firstChild!;
+    const text = document.querySelector(".hero-copy h1")!.firstChild!;
     const range = document.createRange();
     range.selectNodeContents(text);
     const selection = window.getSelection()!;
     selection.removeAllRanges();
     selection.addRange(range);
   });
-  await expect(cursor).toBeHidden();
-  await expect(page.locator("html")).not.toHaveAttribute("data-cursor-ready", "true");
+  await expect(cursor).toHaveAttribute("data-mode", "dot");
+  await expect(page.locator("html")).toHaveAttribute("data-cursor-ready", "true");
   await page.evaluate(() => window.getSelection()?.removeAllRanges());
-  await page.locator(".portrait-frame img").hover();
-  await expect(cursor).toHaveAttribute("data-mode", "image");
+  await page.getByRole("button", { name: "Say hello to Alan" }).hover();
+  await expect(cursor).toHaveAttribute("data-mode", "dot");
   await page.mouse.move(-10, -10);
   await expect(cursor).toBeHidden();
   await page.mouse.move(100, 100);
   await expect(cursor).toHaveAttribute("data-mode", "dot");
 });
 
-test("menu and route changes clear the large cursor without blocking navigation", async ({ page }) => {
+test("menu and route changes keep the custom cursor without blocking navigation", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
   const cursor = page.locator(".site-cursor");
   const project = page.locator(".project-row").first().getByRole("link", { name: /Aurelia/ });
   await project.hover();
   await expect.poll(() => page.locator(".project-preview").first().evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThan(150);
-  await page.locator(".project-banner-expanded").first().hover();
+  await page.locator(".project-cover").first().hover();
   await expect(cursor).toHaveAttribute("data-mode", "action-image");
   await page.locator(".compact-menu-trigger").click();
-  await expect(cursor).toBeHidden();
+  await expect(cursor).toHaveAttribute("data-mode", "dot");
   const menu = page.getByRole("dialog", { name: "Navigation menu" });
   await menu.getByRole("link", { name: "About", exact: true }).hover();
   await expect(cursor).toHaveAttribute("data-mode", "dot");
@@ -119,7 +124,8 @@ test("menu and route changes clear the large cursor without blocking navigation"
   await expect(menu).toHaveCount(0);
   await project.click();
   await expect(page).toHaveURL(/\/work\/aurelia$/);
-  await expect(cursor).toBeHidden();
+  await expect(cursor).toBeVisible();
+  await expect(page.locator("html")).toHaveAttribute("data-cursor-ready", "true");
 });
 
 test.describe("touch pointer fallback", () => {
@@ -193,7 +199,7 @@ test("the project opens at the actual pointer position while its preview and tit
 test("native cursor hiding waits for the first replacement frame", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("data-pointer-enhancements-mounted", "true");
-  const readyDuringInput = await page.locator(".portrait-frame img").evaluate((element) => {
+  const readyDuringInput = await page.getByRole("button", { name: "Say hello to Alan" }).evaluate((element) => {
     window.dispatchEvent(new Event("blur"));
     const rect = element.getBoundingClientRect();
     element.dispatchEvent(new PointerEvent("pointermove", { bubbles: true, pointerType: "mouse", clientX: rect.left + rect.width / 2, clientY: 250 }));
@@ -211,15 +217,15 @@ test("closing and reopening the menu reset pointer feedback immediately", async 
   await page.locator(".compact-menu-trigger").click();
   const menu = page.getByRole("dialog", { name: "Navigation menu" });
   const cursor = page.locator(".site-cursor");
-  await menu.getByRole("link", { name: "Work", exact: true }).hover();
+  await menu.getByRole("link", { name: "Home", exact: true }).hover();
   await expect(cursor).toHaveAttribute("data-mode", "dot");
-  await page.keyboard.press("Escape");
+  await menu.getByRole("button", { name: "Close menu" }).click();
   await expect(menu).toHaveClass(/stairs-menu--closing/);
-  expect(await cursor.getAttribute("data-mode")).toBe("hidden");
+  expect(await cursor.getAttribute("data-mode")).toBe("dot");
   const reopen = menu.getByRole("button", { name: "Reopen menu" });
   await reopen.hover();
   await expect(cursor).toHaveAttribute("data-mode", "dot");
   await page.keyboard.press("Enter");
   await expect(menu).not.toHaveClass(/stairs-menu--closing/);
-  expect(await cursor.getAttribute("data-mode")).toBe("hidden");
+  expect(await cursor.getAttribute("data-mode")).toBe("dot");
 });

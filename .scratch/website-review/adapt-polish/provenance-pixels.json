@@ -1,0 +1,98 @@
+[
+  {
+    "path": "public/images/aurelia-details.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/aurelia-details.webp",
+    "originalFileSha256": "893e36a2e791d65ebd133ccc063795694d9a6c09c1dc7c17d6e290c9dfb3d020",
+    "decodedPixelsSha256": "8eb5f731efd68afd5e1c61b861bcfbdb540cb3b606bb87a3208235c9d6839358",
+    "currentFileSha256": "893e36a2e791d65ebd133ccc063795694d9a6c09c1dc7c17d6e290c9dfb3d020",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/aurelia-filters.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/aurelia-filters.webp",
+    "originalFileSha256": "fded1b84033cf9c43337d84fdf7253c7dbe796c2be80de098673cf469fcc7d04",
+    "decodedPixelsSha256": "2def3a1d83ea942a9c9d31f9cf8eb9af7ef57a6ad19cd1a0d7a265a1f6471463",
+    "currentFileSha256": "fded1b84033cf9c43337d84fdf7253c7dbe796c2be80de098673cf469fcc7d04",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/aurelia-request.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/aurelia-request.webp",
+    "originalFileSha256": "294607ea523970e5b1e4a5fdfa319997f88e5fdf891057877e438fee7bba7dcd",
+    "decodedPixelsSha256": "4717505dd2dda5eed4be533af5fd64027f55a8608842f80a2320f5ba2792dbe0",
+    "currentFileSha256": "294607ea523970e5b1e4a5fdfa319997f88e5fdf891057877e438fee7bba7dcd",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/munchpal-research.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/munchpal-research.webp",
+    "originalFileSha256": "c930d60b294a283048a2ac30384b660c505ccdb8f932303cca3ae411724b24ef",
+    "decodedPixelsSha256": "1c07bc0b2be3c3c083069608168dff4cecc0d6bbd00e99378f8cd97decef90e7",
+    "currentFileSha256": "c930d60b294a283048a2ac30384b660c505ccdb8f932303cca3ae411724b24ef",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/pawfriend-catalog.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/pawfriend-catalog.webp",
+    "originalFileSha256": "fd701e12826d7d41b19d6dc4471a6bc01815d26e5a4c18e7ce0fd33d4738a009",
+    "decodedPixelsSha256": "ef1d49d18d0383e402a5a377fc383d05cef0a94c0ac4e69db1325d43348cd7ff",
+    "currentFileSha256": "fd701e12826d7d41b19d6dc4471a6bc01815d26e5a4c18e7ce0fd33d4738a009",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/pawfriend-interface.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/pawfriend-interface.webp",
+    "originalFileSha256": "21ce6b4d8177785526865a4ae03ec18d1c543b8abfc5ccc7427b11f77babe34b",
+    "decodedPixelsSha256": "e7543970981b9cd7ad96200a385804489c86e6f0d91b4edd64491b38ce566735",
+    "currentFileSha256": "21ce6b4d8177785526865a4ae03ec18d1c543b8abfc5ccc7427b11f77babe34b",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/pawfriend-prepare.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/pawfriend-prepare.webp",
+    "originalFileSha256": "5136eb1f50c93483e3ceabe4457f47aa401781c6577c45127f211b609e2ade3f",
+    "decodedPixelsSha256": "8751fe0910dd79d129ded9851d753d9ba08cba1998f59739a86927c070493a1c",
+    "currentFileSha256": "5136eb1f50c93483e3ceabe4457f47aa401781c6577c45127f211b609e2ade3f",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/pawfriend-shortlist.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/pawfriend-shortlist.webp",
+    "originalFileSha256": "9ac53bc3d05fee44fddb85d6dae3c9f1ef4f33dc55e7fab5e91cb8360e066d0c",
+    "decodedPixelsSha256": "f7356bd09c19d5ab4e14444b6cc2ee68238359597525c8bef523a27caab8f3aa",
+    "currentFileSha256": "9ac53bc3d05fee44fddb85d6dae3c9f1ef4f33dc55e7fab5e91cb8360e066d0c",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/paylecta-cover.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/paylecta-cover.webp",
+    "originalFileSha256": "940833fc5fb2a7a88003afe3ab303ebcf15b39728f4ef2ba99b7d37277566100",
+    "decodedPixelsSha256": "33ec78a26dcef283ec2096bb25d16cb41f0f9ebffbc97955f8e1b9ac28d62b96",
+    "currentFileSha256": "940833fc5fb2a7a88003afe3ab303ebcf15b39728f4ef2ba99b7d37277566100",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/paylecta-customers.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/paylecta-customers.webp",
+    "originalFileSha256": "7ceddbd17c97d523d1cca842866c65d677f93122988fd892bf362eed4e5d441c",
+    "decodedPixelsSha256": "ec0604757e3a05a4e0c34f4f38f7e1190c7675effdfdc6568e32cc6d370a89bd",
+    "currentFileSha256": "7ceddbd17c97d523d1cca842866c65d677f93122988fd892bf362eed4e5d441c",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/paylecta-invoices.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/paylecta-invoices.webp",
+    "originalFileSha256": "307cd7d1c4088a4ba8e50d1d24c704f028da5933156a1cc0a3a36ff4828ec9ab",
+    "decodedPixelsSha256": "ee3c22d6d9688a2dcc0224121d73f7ee92e4ff91a67d6b1bc9243b0fc585b6ac",
+    "currentFileSha256": "307cd7d1c4088a4ba8e50d1d24c704f028da5933156a1cc0a3a36ff4828ec9ab",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "public/images/paylecta-overview.webp",
+    "backup": ".scratch/website-review/adapt-polish/origin-backups/paylecta-overview.webp",
+    "originalFileSha256": "813c8e08a4a8775ce119f4c9b8bebb01e0ec7f498008c74076ef4392de60373f",
+    "decodedPixelsSha256": "0bebe71b559219dd85cf0bd5fd83896daa87170e79f5df2f33d3ffe8a366de2e",
+    "currentFileSha256": "813c8e08a4a8775ce119f4c9b8bebb01e0ec7f498008c74076ef4392de60373f",
+    "pixelsUnchanged": true
+  }
+]

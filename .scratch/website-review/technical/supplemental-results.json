@@ -1,0 +1,475 @@
+{
+  "started": "2026-10-02T04:04:47.555Z",
+  "overlayServer": {
+    "pid": 20004,
+    "port": 8400,
+    "stopMethod": "Stop-Process -Id 20004"
+  },
+  "overlays": [
+    {
+      "route": "/",
+      "injected": true,
+      "overlayDOM": {
+        "title": "Alan Sahlan — Product Designer",
+        "scripts": [
+          "http://localhost:8400/detect.js"
+        ],
+        "markers": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          }
+        ]
+      },
+      "logs": [
+        {
+          "type": "startGroup",
+          "text": "%c[impeccable] 18 anti-patterns found color: oklch(84% 0.19 80.46); font-weight: bold"
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "injected": true,
+      "overlayDOM": {
+        "title": "[Human] Assessment B",
+        "scripts": [
+          "http://localhost:8400/detect.js"
+        ],
+        "markers": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          }
+        ]
+      },
+      "logs": [
+        {
+          "type": "startGroup",
+          "text": "%c[impeccable] 3 anti-patterns found color: oklch(84% 0.19 80.46); font-weight: bold"
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "injected": true,
+      "overlayDOM": {
+        "title": "[Human] Assessment B",
+        "scripts": [
+          "http://localhost:8400/detect.js"
+        ],
+        "markers": []
+      },
+      "logs": [
+        {
+          "type": "log",
+          "text": "%c[impeccable] No anti-patterns found. color: #22c55e; font-weight: bold"
+        }
+      ]
+    },
+    {
+      "route": "/work/aurelia",
+      "injected": true,
+      "overlayDOM": {
+        "title": "[Human] Assessment B",
+        "scripts": [
+          "http://localhost:8400/detect.js"
+        ],
+        "markers": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          }
+        ]
+      },
+      "logs": [
+        {
+          "type": "startGroup",
+          "text": "%c[impeccable] 1 anti-pattern found color: oklch(84% 0.19 80.46); font-weight: bold"
+        }
+      ]
+    },
+    {
+      "route": "/work/paylecta",
+      "injected": true,
+      "overlayDOM": {
+        "title": "Paylecta | Alan Sahlan",
+        "scripts": [
+          "http://localhost:8400/detect.js"
+        ],
+        "markers": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-overlay impeccable-visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "impeccable-label"
+          }
+        ]
+      },
+      "logs": [
+        {
+          "type": "startGroup",
+          "text": "%c[impeccable] 2 anti-patterns found color: oklch(84% 0.19 80.46); font-weight: bold"
+        }
+      ]
+    }
+  ],
+  "textResize": [
+    {
+      "route": "/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 390,
+      "documentWidth": 390,
+      "overflows": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflows": []
+    }
+  ],
+  "motion": [
+    {
+      "route": "/work/aurelia",
+      "horizontal": "true",
+      "travel": "2688px",
+      "panels": 3,
+      "focusLast": {
+        "visible": true,
+        "top": 697,
+        "bottom": 741,
+        "scrollY": 4868
+      },
+      "reducedAfter": {
+        "horizontal": "false",
+        "trackTransform": "none",
+        "focusedPanelVisible": true
+      }
+    },
+    {
+      "route": "/work/paylecta",
+      "horizontal": "true",
+      "travel": "2688px",
+      "panels": 3,
+      "focusLast": {
+        "visible": true,
+        "top": 811.34375,
+        "bottom": 855.34375,
+        "scrollY": 5367
+      },
+      "reducedAfter": {
+        "horizontal": "false",
+        "trackTransform": "none",
+        "focusedPanelVisible": true
+      }
+    },
+    {
+      "route": "/work/pawfriend",
+      "horizontal": "true",
+      "travel": "2688px",
+      "panels": 3,
+      "focusLast": {
+        "visible": true,
+        "top": 698.25,
+        "bottom": 742.25,
+        "scrollY": 5150
+      },
+      "reducedAfter": {
+        "horizontal": "false",
+        "trackTransform": "none",
+        "focusedPanelVisible": true
+      }
+    },
+    {
+      "route": "/work/munchpal",
+      "horizontal": "true",
+      "travel": "4032px",
+      "panels": 4,
+      "focusLast": {
+        "visible": true,
+        "top": 648.421875,
+        "bottom": 692.421875,
+        "scrollY": 6420
+      },
+      "reducedAfter": {
+        "horizontal": "false",
+        "trackTransform": "none",
+        "focusedPanelVisible": true
+      }
+    }
+  ],
+  "touch": [
+    {
+      "route": "/work/aurelia",
+      "hash": "#aurelia-implementation",
+      "focus": "aurelia-implementation",
+      "scrollY": 3896,
+      "targetTop": 80.015625,
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "hash": "#paylecta-implementation",
+      "focus": "paylecta-implementation",
+      "scrollY": 4556,
+      "targetTop": 80.171875,
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "hash": "#pawfriend-implementation",
+      "focus": "pawfriend-implementation",
+      "scrollY": 4558,
+      "targetTop": 79.59375,
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "hash": "#munchpal-implementation",
+      "focus": "munchpal-implementation",
+      "scrollY": 5135,
+      "targetTop": 80.0625,
+      "horizontal": "false"
+    }
+  ],
+  "finished": "2026-10-02T04:07:36.183Z"
+}

@@ -1,0 +1,161 @@
+{
+  "initial": [
+    {
+      "text": "Selected work\nView all work",
+      "state": "pending",
+      "opacity": "0",
+      "top": 896.78125,
+      "bottom": 940.78125
+    },
+    {
+      "text": "01\nAurelia\nHospitality",
+      "state": "pending",
+      "opacity": "0",
+      "top": 953.78125,
+      "bottom": 1162.234375
+    }
+  ],
+  "afterKeyboard": {
+    "phase": "covering",
+    "pathname": "/",
+    "animations": [
+      {
+        "id": "",
+        "duration": 560,
+        "delay": 0
+      },
+      {
+        "id": "",
+        "duration": 10000,
+        "delay": -2000
+      },
+      {
+        "id": "",
+        "duration": 44000,
+        "delay": -8800
+      },
+      {
+        "id": "",
+        "duration": 12000,
+        "delay": -6000
+      },
+      {
+        "id": "",
+        "duration": 52000,
+        "delay": -26000
+      },
+      {
+        "id": "",
+        "duration": 11000,
+        "delay": -8800
+      },
+      {
+        "id": "",
+        "duration": 48000,
+        "delay": -38400.00000000001
+      },
+      {
+        "id": "",
+        "duration": 10000,
+        "delay": -2000
+      },
+      {
+        "id": "",
+        "duration": 44000,
+        "delay": -8800
+      },
+      {
+        "id": "",
+        "duration": 12000,
+        "delay": -6000
+      },
+      {
+        "id": "",
+        "duration": 52000,
+        "delay": -26000
+      },
+      {
+        "id": "",
+        "duration": 11000,
+        "delay": -8800
+      },
+      {
+        "id": "",
+        "duration": 48000,
+        "delay": -38400.00000000001
+      },
+      {
+        "id": "",
+        "duration": 10000,
+        "delay": -2000
+      },
+      {
+        "id": "",
+        "duration": 44000,
+        "delay": -8800
+      },
+      {
+        "id": "",
+        "duration": 12000,
+        "delay": -6000
+      },
+      {
+        "id": "",
+        "duration": 52000,
+        "delay": -26000
+      },
+      {
+        "id": "",
+        "duration": 11000,
+        "delay": -8800
+      },
+      {
+        "id": "",
+        "duration": 48000,
+        "delay": -38400.00000000001
+      },
+      {
+        "id": "",
+        "duration": 380,
+        "delay": 180
+      },
+      {
+        "id": "route-curtain-cover-0",
+        "duration": 231.25,
+        "delay": 0
+      },
+      {
+        "id": "route-curtain-cover-1",
+        "duration": 231.25,
+        "delay": 30
+      },
+      {
+        "id": "route-curtain-cover-2",
+        "duration": 231.25,
+        "delay": 60
+      },
+      {
+        "id": "route-curtain-cover-3",
+        "duration": 231.25,
+        "delay": 90
+      },
+      {
+        "id": "route-curtain-cover-4",
+        "duration": 231.25,
+        "delay": 120
+      },
+      {
+        "id": "route-scrim-cover",
+        "duration": 351.25,
+        "delay": 0
+      }
+    ]
+  },
+  "commitDelay": 1465,
+  "mediaState": {
+    "horizontal": "true",
+    "top": 2179.5,
+    "height": 3768
+  },
+  "errors": []
+}

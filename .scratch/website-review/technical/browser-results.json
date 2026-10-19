@@ -1,0 +1,6725 @@
+{
+  "started": "2026-10-02T04:01:05.438Z",
+  "browser": "153.0.8010.12",
+  "matrix": [
+    {
+      "width": 320,
+      "route": "/",
+      "status": 200,
+      "dom": {
+        "title": "Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "AlanSahlan."
+          },
+          {
+            "tag": "H2",
+            "text": "Selected work"
+          },
+          {
+            "tag": "H3",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H3",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H3",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H3",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "About"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-wave.png&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 217,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 217,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 217,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 217,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 217,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 217,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Faurelia-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 236,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpaylecta-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 236,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpawfriend-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 236,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fmunchpal-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 236,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "View all work on Behance (opens in a new tab)",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Aurelia, Hospitality case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Paylecta, Finance case study",
+            "href": "/work/paylecta"
+          },
+          {
+            "text": "PawFriend, Pet adoption case study",
+            "href": "/work/pawfriend"
+          },
+          {
+            "text": "Munchpal, Food sharing case study",
+            "href": "/work/munchpal"
+          },
+          {
+            "text": "More about me",
+            "href": "/about"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 31,
+          "transfer": 1157520
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\home-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 320,
+      "route": "/about",
+      "status": 200,
+      "dom": {
+        "title": "About Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Product Designer.Closer to the build."
+          },
+          {
+            "tag": "H2",
+            "text": "My work at CADIT"
+          },
+          {
+            "tag": "H2",
+            "text": "Designing and building"
+          },
+          {
+            "tag": "H2",
+            "text": "How I work and learn"
+          },
+          {
+            "tag": "H2",
+            "text": "Experience and resume"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-portrait.webp&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 256,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 272,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [
+          {
+            "tag": "A",
+            "text": "CADIT",
+            "href": "https://www.cadit.com/",
+            "rect": {
+              "w": 52.984375,
+              "h": 23
+            }
+          }
+        ],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "CADIT",
+            "href": "https://www.cadit.com/"
+          },
+          {
+            "text": "View selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the Aurelia case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Download resumePDF",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 22,
+          "transfer": 185037
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\about-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 320,
+      "route": "/contact",
+      "status": 200,
+      "dom": {
+        "title": "Contact Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Let’s worktogether."
+          },
+          {
+            "tag": "H2",
+            "text": "Send a note"
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [
+          {
+            "id": "contact-name",
+            "type": "text",
+            "name": "name",
+            "labels": [
+              "Your name *"
+            ],
+            "required": true,
+            "autocomplete": "name"
+          },
+          {
+            "id": "contact-email",
+            "type": "email",
+            "name": "email",
+            "labels": [
+              "Email address *"
+            ],
+            "required": true,
+            "autocomplete": "email"
+          },
+          {
+            "id": "contact-topic",
+            "type": "select-one",
+            "name": "topic",
+            "labels": [
+              "What’s this about? (optional)"
+            ],
+            "required": false,
+            "autocomplete": ""
+          },
+          {
+            "id": "contact-message",
+            "type": "textarea",
+            "name": "message",
+            "labels": [
+              "Your message *"
+            ],
+            "required": true,
+            "autocomplete": ""
+          }
+        ],
+        "resourceStats": {
+          "count": 21,
+          "transfer": 159366
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\contact-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 320,
+      "route": "/work/aurelia",
+      "status": 200,
+      "dom": {
+        "title": "Aurelia — Alan Sahlan",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with the kind of day"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the checks clear"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the concept"
+          },
+          {
+            "tag": "H3",
+            "text": "Give empty results an exit"
+          },
+          {
+            "tag": "H3",
+            "text": "Check a stay without losing the catalog"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the request honest"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation notes"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "Aurelia concept homepage with a Bali villa photograph, stay search, and trip planning controls",
+            "complete": true,
+            "naturalWidth": 294,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-filters.webp&w=3840&q=75",
+            "alt": "Aurelia catalog with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-details.webp&w=3840&q=75",
+            "alt": "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-request.webp&w=3840&q=75",
+            "alt": "Aurelia stay request at the Dates step with its request summary and confirmation notice",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live Aurelia concept",
+            "href": "https://aurelia.alansahlanwork.workers.dev/"
+          },
+          {
+            "text": "Skip to implementation notes",
+            "href": "#aurelia-implementation"
+          },
+          {
+            "text": "Open filters screenshot",
+            "href": "/images/aurelia-filters.webp"
+          },
+          {
+            "text": "Open details screenshot",
+            "href": "/images/aurelia-details.webp"
+          },
+          {
+            "text": "Open request screenshot",
+            "href": "/images/aurelia-request.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 265735
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-aurelia-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 320,
+      "route": "/work/paylecta",
+      "status": 200,
+      "dom": {
+        "title": "Paylecta | Alan Sahlan",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Give the balance a clear place"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep detail and status together"
+          },
+          {
+            "tag": "H3",
+            "text": "Use a shared visual system"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the design"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep the overview useful on a phone"
+          },
+          {
+            "tag": "H3",
+            "text": "Connect the summary to the records"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the payment state visible"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-cover.webp&w=3840&q=75",
+            "alt": "Original Paylecta case-study cover with a desktop finance dashboard, balance card, transaction summaries, and revenue chart",
+            "complete": true,
+            "naturalWidth": 294,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-overview.webp&w=3840&q=75",
+            "alt": "Paylecta mobile dashboard with balance, transaction cards and revenue chart, beside a desktop account settings design",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-customers.webp&w=3840&q=75",
+            "alt": "Paylecta customer summary, searchable customer table with status labels, and a customer form overlay in original device mockups",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-invoices.webp&w=3840&q=75",
+            "alt": "Paylecta desktop invoice editor and preview, mobile overdue invoice with timeline, and mobile payout cards with named payment states",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Paylecta case study PDF",
+            "href": "https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#paylecta-implementation"
+          },
+          {
+            "text": "Open overview screenshot",
+            "href": "/images/paylecta-overview.webp"
+          },
+          {
+            "text": "Open customers screenshot",
+            "href": "/images/paylecta-customers.webp"
+          },
+          {
+            "text": "Open invoices screenshot",
+            "href": "/images/paylecta-invoices.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 24,
+          "transfer": 190690
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-paylecta-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 320,
+      "route": "/work/pawfriend",
+      "status": 200,
+      "dom": {
+        "title": "PawFriend | Alan Sahlan",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Put personality beside practical details"
+          },
+          {
+            "tag": "H3",
+            "text": "Make saving visible and reversible"
+          },
+          {
+            "tag": "H3",
+            "text": "Explain the next step before commitment"
+          },
+          {
+            "tag": "H2",
+            "text": "From browsing to a first visit"
+          },
+          {
+            "tag": "H3",
+            "text": "Browse beyond the portrait"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep a shortlist while considering the fit"
+          },
+          {
+            "tag": "H3",
+            "text": "Turn interest into preparation"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-interface.webp&w=3840&q=75",
+            "alt": "PawFriend live concept homepage with Milo, a tan and white dog, bold resident-browsing invitation, and saved-pets navigation",
+            "complete": true,
+            "naturalWidth": 294,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-catalog.webp&w=3840&q=75",
+            "alt": "PawFriend expanded resident grid with Milo, Luna, and Pepper, showing age, breed, personality descriptions, favorites, and meeting links",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-shortlist.webp&w=3840&q=75",
+            "alt": "PawFriend saved-pets drawer containing Milo and Luna, removal controls, a saved count of two, and confirmation that Luna was added",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-prepare.webp&w=3840&q=75",
+            "alt": "PawFriend first-visit preparation section with saving favorites, comparing daily life, bringing questions, and adoption FAQ",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live PawFriend concept",
+            "href": "https://pawfriend-topaz.vercel.app/"
+          },
+          {
+            "text": "View PawFriend source code",
+            "href": "https://github.com/alansahlan65/pawfriend"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#pawfriend-implementation"
+          },
+          {
+            "text": "Open catalog screenshot",
+            "href": "/images/pawfriend-catalog.webp"
+          },
+          {
+            "text": "Open shortlist screenshot",
+            "href": "/images/pawfriend-shortlist.webp"
+          },
+          {
+            "text": "Open prepare screenshot",
+            "href": "/images/pawfriend-prepare.webp"
+          },
+          {
+            "text": "Open the PawFriend live concept recording",
+            "href": "/media/pawfriend-observed-flow.webm"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 136192
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-pawfriend-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 320,
+      "route": "/work/munchpal",
+      "status": 200,
+      "dom": {
+        "title": "Munchpal | Alan Sahlan",
+        "lang": "en",
+        "viewport": 320,
+        "documentWidth": 320,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with place and availability"
+          },
+          {
+            "tag": "H3",
+            "text": "Separate asking from offering"
+          },
+          {
+            "tag": "H3",
+            "text": "Write the handoff states"
+          },
+          {
+            "tag": "H2",
+            "text": "From research to handoff"
+          },
+          {
+            "tag": "H3",
+            "text": "Name the access and trust barriers"
+          },
+          {
+            "tag": "H3",
+            "text": "Map both sides of the exchange"
+          },
+          {
+            "tag": "H3",
+            "text": "Put nearby meals in context"
+          },
+          {
+            "tag": "H3",
+            "text": "Show what happens after a request"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-cover.webp&w=3840&q=75",
+            "alt": "Original Munchpal case-study cover with its green and orange mark beside three mobile app mockups",
+            "complete": true,
+            "naturalWidth": 294,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-research.webp&w=3840&q=75",
+            "alt": "Original Munchpal research summary naming surplus food, financial pressure, nearby availability, and trust cues",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-flow.webp&w=3840&q=75",
+            "alt": "Original Munchpal user-flow diagram branching into meal requests, food posts, messages, donations, and community",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-home.webp&w=3840&q=75",
+            "alt": "Original Munchpal homepage mockup with Surabaya location, search, food categories, recent listing, and a central posting shortcut",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-feedback.webp&w=3840&q=75",
+            "alt": "Original Munchpal notification mockups with request status, messages, rating form, confirmation dialog, and accepted-request state",
+            "complete": true,
+            "naturalWidth": 288,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Munchpal case study PDF",
+            "href": "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view"
+          },
+          {
+            "text": "Explore the original MunchPal prototype",
+            "href": "https://www.figma.com/proto/Xsj8X9CcL5SW6CoILaZFH3/MunchPal?node-id=327-4477&t=I0tPWQMFFzQHCDff-1&scaling=scale-down&content-scaling=fixed&page-id=326%3A3405&starting-point-node-id=327%3A4467&show-proto-sidebar=1"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#munchpal-implementation"
+          },
+          {
+            "text": "Open research screenshot",
+            "href": "/images/munchpal-research.webp"
+          },
+          {
+            "text": "Open flow screenshot",
+            "href": "/images/munchpal-flow.webp"
+          },
+          {
+            "text": "Open home screenshot",
+            "href": "/images/munchpal-home.webp"
+          },
+          {
+            "text": "Open feedback screenshot",
+            "href": "/images/munchpal-feedback.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 40190
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-munchpal-320.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "dom": {
+        "title": "Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "AlanSahlan."
+          },
+          {
+            "tag": "H2",
+            "text": "Selected work"
+          },
+          {
+            "tag": "H3",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H3",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H3",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H3",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "About"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-wave.png&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 273,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 273,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 273,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 273,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 273,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 273,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Faurelia-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 306,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpaylecta-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 306,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpawfriend-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 306,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fmunchpal-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 306,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "View all work on Behance (opens in a new tab)",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Aurelia, Hospitality case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Paylecta, Finance case study",
+            "href": "/work/paylecta"
+          },
+          {
+            "text": "PawFriend, Pet adoption case study",
+            "href": "/work/pawfriend"
+          },
+          {
+            "text": "Munchpal, Food sharing case study",
+            "href": "/work/munchpal"
+          },
+          {
+            "text": "More about me",
+            "href": "/about"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 31,
+          "transfer": 1157520
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\home-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/about",
+      "status": 200,
+      "dom": {
+        "title": "About Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Product Designer.Closer to the build."
+          },
+          {
+            "tag": "H2",
+            "text": "My work at CADIT"
+          },
+          {
+            "tag": "H2",
+            "text": "Designing and building"
+          },
+          {
+            "tag": "H2",
+            "text": "How I work and learn"
+          },
+          {
+            "tag": "H2",
+            "text": "Experience and resume"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-portrait.webp&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 256,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 331,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [
+          {
+            "tag": "A",
+            "text": "CADIT",
+            "href": "https://www.cadit.com/",
+            "rect": {
+              "w": 52.984375,
+              "h": 23
+            }
+          }
+        ],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "CADIT",
+            "href": "https://www.cadit.com/"
+          },
+          {
+            "text": "View selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the Aurelia case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Download resumePDF",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 22,
+          "transfer": 185037
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\about-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/contact",
+      "status": 200,
+      "dom": {
+        "title": "Contact Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Let’s worktogether."
+          },
+          {
+            "tag": "H2",
+            "text": "Send a note"
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [
+          {
+            "id": "contact-name",
+            "type": "text",
+            "name": "name",
+            "labels": [
+              "Your name *"
+            ],
+            "required": true,
+            "autocomplete": "name"
+          },
+          {
+            "id": "contact-email",
+            "type": "email",
+            "name": "email",
+            "labels": [
+              "Email address *"
+            ],
+            "required": true,
+            "autocomplete": "email"
+          },
+          {
+            "id": "contact-topic",
+            "type": "select-one",
+            "name": "topic",
+            "labels": [
+              "What’s this about? (optional)"
+            ],
+            "required": false,
+            "autocomplete": ""
+          },
+          {
+            "id": "contact-message",
+            "type": "textarea",
+            "name": "message",
+            "labels": [
+              "Your message *"
+            ],
+            "required": true,
+            "autocomplete": ""
+          }
+        ],
+        "resourceStats": {
+          "count": 21,
+          "transfer": 159366
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\contact-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/work/aurelia",
+      "status": 200,
+      "dom": {
+        "title": "Aurelia — Alan Sahlan",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with the kind of day"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the checks clear"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the concept"
+          },
+          {
+            "tag": "H3",
+            "text": "Give empty results an exit"
+          },
+          {
+            "tag": "H3",
+            "text": "Check a stay without losing the catalog"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the request honest"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation notes"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "Aurelia concept homepage with a Bali villa photograph, stay search, and trip planning controls",
+            "complete": true,
+            "naturalWidth": 358,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-filters.webp&w=3840&q=75",
+            "alt": "Aurelia catalog with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-details.webp&w=3840&q=75",
+            "alt": "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-request.webp&w=3840&q=75",
+            "alt": "Aurelia stay request at the Dates step with its request summary and confirmation notice",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live Aurelia concept",
+            "href": "https://aurelia.alansahlanwork.workers.dev/"
+          },
+          {
+            "text": "Skip to implementation notes",
+            "href": "#aurelia-implementation"
+          },
+          {
+            "text": "Open filters screenshot",
+            "href": "/images/aurelia-filters.webp"
+          },
+          {
+            "text": "Open details screenshot",
+            "href": "/images/aurelia-details.webp"
+          },
+          {
+            "text": "Open request screenshot",
+            "href": "/images/aurelia-request.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 265735
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-aurelia-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/work/paylecta",
+      "status": 200,
+      "dom": {
+        "title": "Paylecta | Alan Sahlan",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Give the balance a clear place"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep detail and status together"
+          },
+          {
+            "tag": "H3",
+            "text": "Use a shared visual system"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the design"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep the overview useful on a phone"
+          },
+          {
+            "tag": "H3",
+            "text": "Connect the summary to the records"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the payment state visible"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-cover.webp&w=3840&q=75",
+            "alt": "Original Paylecta case-study cover with a desktop finance dashboard, balance card, transaction summaries, and revenue chart",
+            "complete": true,
+            "naturalWidth": 358,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-overview.webp&w=3840&q=75",
+            "alt": "Paylecta mobile dashboard with balance, transaction cards and revenue chart, beside a desktop account settings design",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-customers.webp&w=3840&q=75",
+            "alt": "Paylecta customer summary, searchable customer table with status labels, and a customer form overlay in original device mockups",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-invoices.webp&w=3840&q=75",
+            "alt": "Paylecta desktop invoice editor and preview, mobile overdue invoice with timeline, and mobile payout cards with named payment states",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Paylecta case study PDF",
+            "href": "https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#paylecta-implementation"
+          },
+          {
+            "text": "Open overview screenshot",
+            "href": "/images/paylecta-overview.webp"
+          },
+          {
+            "text": "Open customers screenshot",
+            "href": "/images/paylecta-customers.webp"
+          },
+          {
+            "text": "Open invoices screenshot",
+            "href": "/images/paylecta-invoices.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 24,
+          "transfer": 190690
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-paylecta-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/work/pawfriend",
+      "status": 200,
+      "dom": {
+        "title": "PawFriend | Alan Sahlan",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Put personality beside practical details"
+          },
+          {
+            "tag": "H3",
+            "text": "Make saving visible and reversible"
+          },
+          {
+            "tag": "H3",
+            "text": "Explain the next step before commitment"
+          },
+          {
+            "tag": "H2",
+            "text": "From browsing to a first visit"
+          },
+          {
+            "tag": "H3",
+            "text": "Browse beyond the portrait"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep a shortlist while considering the fit"
+          },
+          {
+            "tag": "H3",
+            "text": "Turn interest into preparation"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-interface.webp&w=3840&q=75",
+            "alt": "PawFriend live concept homepage with Milo, a tan and white dog, bold resident-browsing invitation, and saved-pets navigation",
+            "complete": true,
+            "naturalWidth": 358,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-catalog.webp&w=3840&q=75",
+            "alt": "PawFriend expanded resident grid with Milo, Luna, and Pepper, showing age, breed, personality descriptions, favorites, and meeting links",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-shortlist.webp&w=3840&q=75",
+            "alt": "PawFriend saved-pets drawer containing Milo and Luna, removal controls, a saved count of two, and confirmation that Luna was added",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-prepare.webp&w=3840&q=75",
+            "alt": "PawFriend first-visit preparation section with saving favorites, comparing daily life, bringing questions, and adoption FAQ",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live PawFriend concept",
+            "href": "https://pawfriend-topaz.vercel.app/"
+          },
+          {
+            "text": "View PawFriend source code",
+            "href": "https://github.com/alansahlan65/pawfriend"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#pawfriend-implementation"
+          },
+          {
+            "text": "Open catalog screenshot",
+            "href": "/images/pawfriend-catalog.webp"
+          },
+          {
+            "text": "Open shortlist screenshot",
+            "href": "/images/pawfriend-shortlist.webp"
+          },
+          {
+            "text": "Open prepare screenshot",
+            "href": "/images/pawfriend-prepare.webp"
+          },
+          {
+            "text": "Open the PawFriend live concept recording",
+            "href": "/media/pawfriend-observed-flow.webm"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 136192
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-pawfriend-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "route": "/work/munchpal",
+      "status": 200,
+      "dom": {
+        "title": "Munchpal | Alan Sahlan",
+        "lang": "en",
+        "viewport": 390,
+        "documentWidth": 390,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with place and availability"
+          },
+          {
+            "tag": "H3",
+            "text": "Separate asking from offering"
+          },
+          {
+            "tag": "H3",
+            "text": "Write the handoff states"
+          },
+          {
+            "tag": "H2",
+            "text": "From research to handoff"
+          },
+          {
+            "tag": "H3",
+            "text": "Name the access and trust barriers"
+          },
+          {
+            "tag": "H3",
+            "text": "Map both sides of the exchange"
+          },
+          {
+            "tag": "H3",
+            "text": "Put nearby meals in context"
+          },
+          {
+            "tag": "H3",
+            "text": "Show what happens after a request"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-cover.webp&w=3840&q=75",
+            "alt": "Original Munchpal case-study cover with its green and orange mark beside three mobile app mockups",
+            "complete": true,
+            "naturalWidth": 358,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-research.webp&w=3840&q=75",
+            "alt": "Original Munchpal research summary naming surplus food, financial pressure, nearby availability, and trust cues",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-flow.webp&w=3840&q=75",
+            "alt": "Original Munchpal user-flow diagram branching into meal requests, food posts, messages, donations, and community",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-home.webp&w=3840&q=75",
+            "alt": "Original Munchpal homepage mockup with Surabaya location, search, food categories, recent listing, and a central posting shortcut",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-feedback.webp&w=3840&q=75",
+            "alt": "Original Munchpal notification mockups with request status, messages, rating form, confirmation dialog, and accepted-request state",
+            "complete": true,
+            "naturalWidth": 350,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Munchpal case study PDF",
+            "href": "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view"
+          },
+          {
+            "text": "Explore the original MunchPal prototype",
+            "href": "https://www.figma.com/proto/Xsj8X9CcL5SW6CoILaZFH3/MunchPal?node-id=327-4477&t=I0tPWQMFFzQHCDff-1&scaling=scale-down&content-scaling=fixed&page-id=326%3A3405&starting-point-node-id=327%3A4467&show-proto-sidebar=1"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#munchpal-implementation"
+          },
+          {
+            "text": "Open research screenshot",
+            "href": "/images/munchpal-research.webp"
+          },
+          {
+            "text": "Open flow screenshot",
+            "href": "/images/munchpal-flow.webp"
+          },
+          {
+            "text": "Open home screenshot",
+            "href": "/images/munchpal-home.webp"
+          },
+          {
+            "text": "Open feedback screenshot",
+            "href": "/images/munchpal-feedback.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 40190
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-munchpal-390.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "status": 200,
+      "dom": {
+        "title": "Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "AlanSahlan."
+          },
+          {
+            "tag": "H2",
+            "text": "Selected work"
+          },
+          {
+            "tag": "H3",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H3",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H3",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H3",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "About"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-wave.png&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 322,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 322,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 322,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 322,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 322,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 322,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Faurelia-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 368,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpaylecta-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 368,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpawfriend-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 368,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fmunchpal-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 368,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "View all work on Behance (opens in a new tab)",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Aurelia, Hospitality case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Paylecta, Finance case study",
+            "href": "/work/paylecta"
+          },
+          {
+            "text": "PawFriend, Pet adoption case study",
+            "href": "/work/pawfriend"
+          },
+          {
+            "text": "Munchpal, Food sharing case study",
+            "href": "/work/munchpal"
+          },
+          {
+            "text": "More about me",
+            "href": "/about"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 31,
+          "transfer": 1157520
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\home-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/about",
+      "status": 200,
+      "dom": {
+        "title": "About Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Product Designer.Closer to the build."
+          },
+          {
+            "tag": "H2",
+            "text": "My work at CADIT"
+          },
+          {
+            "tag": "H2",
+            "text": "Designing and building"
+          },
+          {
+            "tag": "H2",
+            "text": "How I work and learn"
+          },
+          {
+            "tag": "H2",
+            "text": "Experience and resume"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-portrait.webp&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 256,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 240,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [
+          {
+            "tag": "A",
+            "text": "CADIT",
+            "href": "https://www.cadit.com/",
+            "rect": {
+              "w": 52.984375,
+              "h": 23
+            }
+          }
+        ],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "CADIT",
+            "href": "https://www.cadit.com/"
+          },
+          {
+            "text": "View selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the Aurelia case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Download resumePDF",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 22,
+          "transfer": 185037
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\about-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/contact",
+      "status": 200,
+      "dom": {
+        "title": "Contact Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Let’s worktogether."
+          },
+          {
+            "tag": "H2",
+            "text": "Send a note"
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [
+          {
+            "id": "contact-name",
+            "type": "text",
+            "name": "name",
+            "labels": [
+              "Your name *"
+            ],
+            "required": true,
+            "autocomplete": "name"
+          },
+          {
+            "id": "contact-email",
+            "type": "email",
+            "name": "email",
+            "labels": [
+              "Email address *"
+            ],
+            "required": true,
+            "autocomplete": "email"
+          },
+          {
+            "id": "contact-topic",
+            "type": "select-one",
+            "name": "topic",
+            "labels": [
+              "What’s this about? (optional)"
+            ],
+            "required": false,
+            "autocomplete": ""
+          },
+          {
+            "id": "contact-message",
+            "type": "textarea",
+            "name": "message",
+            "labels": [
+              "Your message *"
+            ],
+            "required": true,
+            "autocomplete": ""
+          }
+        ],
+        "resourceStats": {
+          "count": 21,
+          "transfer": 159366
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\contact-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/work/aurelia",
+      "status": 200,
+      "dom": {
+        "title": "Aurelia — Alan Sahlan",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with the kind of day"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the checks clear"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the concept"
+          },
+          {
+            "tag": "H3",
+            "text": "Give empty results an exit"
+          },
+          {
+            "tag": "H3",
+            "text": "Check a stay without losing the catalog"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the request honest"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation notes"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "Aurelia concept homepage with a Bali villa photograph, stay search, and trip planning controls",
+            "complete": true,
+            "naturalWidth": 706,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-filters.webp&w=3840&q=75",
+            "alt": "Aurelia catalog with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-details.webp&w=3840&q=75",
+            "alt": "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-request.webp&w=3840&q=75",
+            "alt": "Aurelia stay request at the Dates step with its request summary and confirmation notice",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live Aurelia concept",
+            "href": "https://aurelia.alansahlanwork.workers.dev/"
+          },
+          {
+            "text": "Skip to implementation notes",
+            "href": "#aurelia-implementation"
+          },
+          {
+            "text": "Open filters screenshot",
+            "href": "/images/aurelia-filters.webp"
+          },
+          {
+            "text": "Open details screenshot",
+            "href": "/images/aurelia-details.webp"
+          },
+          {
+            "text": "Open request screenshot",
+            "href": "/images/aurelia-request.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 322511
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-aurelia-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/work/paylecta",
+      "status": 200,
+      "dom": {
+        "title": "Paylecta | Alan Sahlan",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Give the balance a clear place"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep detail and status together"
+          },
+          {
+            "tag": "H3",
+            "text": "Use a shared visual system"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the design"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep the overview useful on a phone"
+          },
+          {
+            "tag": "H3",
+            "text": "Connect the summary to the records"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the payment state visible"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-cover.webp&w=3840&q=75",
+            "alt": "Original Paylecta case-study cover with a desktop finance dashboard, balance card, transaction summaries, and revenue chart",
+            "complete": true,
+            "naturalWidth": 706,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-overview.webp&w=3840&q=75",
+            "alt": "Paylecta mobile dashboard with balance, transaction cards and revenue chart, beside a desktop account settings design",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-customers.webp&w=3840&q=75",
+            "alt": "Paylecta customer summary, searchable customer table with status labels, and a customer form overlay in original device mockups",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-invoices.webp&w=3840&q=75",
+            "alt": "Paylecta desktop invoice editor and preview, mobile overdue invoice with timeline, and mobile payout cards with named payment states",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Paylecta case study PDF",
+            "href": "https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#paylecta-implementation"
+          },
+          {
+            "text": "Open overview screenshot",
+            "href": "/images/paylecta-overview.webp"
+          },
+          {
+            "text": "Open customers screenshot",
+            "href": "/images/paylecta-customers.webp"
+          },
+          {
+            "text": "Open invoices screenshot",
+            "href": "/images/paylecta-invoices.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 24,
+          "transfer": 215236
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-paylecta-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/work/pawfriend",
+      "status": 200,
+      "dom": {
+        "title": "PawFriend | Alan Sahlan",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Put personality beside practical details"
+          },
+          {
+            "tag": "H3",
+            "text": "Make saving visible and reversible"
+          },
+          {
+            "tag": "H3",
+            "text": "Explain the next step before commitment"
+          },
+          {
+            "tag": "H2",
+            "text": "From browsing to a first visit"
+          },
+          {
+            "tag": "H3",
+            "text": "Browse beyond the portrait"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep a shortlist while considering the fit"
+          },
+          {
+            "tag": "H3",
+            "text": "Turn interest into preparation"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-interface.webp&w=3840&q=75",
+            "alt": "PawFriend live concept homepage with Milo, a tan and white dog, bold resident-browsing invitation, and saved-pets navigation",
+            "complete": true,
+            "naturalWidth": 706,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-catalog.webp&w=3840&q=75",
+            "alt": "PawFriend expanded resident grid with Milo, Luna, and Pepper, showing age, breed, personality descriptions, favorites, and meeting links",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-shortlist.webp&w=3840&q=75",
+            "alt": "PawFriend saved-pets drawer containing Milo and Luna, removal controls, a saved count of two, and confirmation that Luna was added",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-prepare.webp&w=3840&q=75",
+            "alt": "PawFriend first-visit preparation section with saving favorites, comparing daily life, bringing questions, and adoption FAQ",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live PawFriend concept",
+            "href": "https://pawfriend-topaz.vercel.app/"
+          },
+          {
+            "text": "View PawFriend source code",
+            "href": "https://github.com/alansahlan65/pawfriend"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#pawfriend-implementation"
+          },
+          {
+            "text": "Open catalog screenshot",
+            "href": "/images/pawfriend-catalog.webp"
+          },
+          {
+            "text": "Open shortlist screenshot",
+            "href": "/images/pawfriend-shortlist.webp"
+          },
+          {
+            "text": "Open prepare screenshot",
+            "href": "/images/pawfriend-prepare.webp"
+          },
+          {
+            "text": "Open the PawFriend live concept recording",
+            "href": "/media/pawfriend-observed-flow.webm"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 177020
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-pawfriend-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "route": "/work/munchpal",
+      "status": 200,
+      "dom": {
+        "title": "Munchpal | Alan Sahlan",
+        "lang": "en",
+        "viewport": 768,
+        "documentWidth": 768,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with place and availability"
+          },
+          {
+            "tag": "H3",
+            "text": "Separate asking from offering"
+          },
+          {
+            "tag": "H3",
+            "text": "Write the handoff states"
+          },
+          {
+            "tag": "H2",
+            "text": "From research to handoff"
+          },
+          {
+            "tag": "H3",
+            "text": "Name the access and trust barriers"
+          },
+          {
+            "tag": "H3",
+            "text": "Map both sides of the exchange"
+          },
+          {
+            "tag": "H3",
+            "text": "Put nearby meals in context"
+          },
+          {
+            "tag": "H3",
+            "text": "Show what happens after a request"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-cover.webp&w=3840&q=75",
+            "alt": "Original Munchpal case-study cover with its green and orange mark beside three mobile app mockups",
+            "complete": true,
+            "naturalWidth": 706,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-research.webp&w=3840&q=75",
+            "alt": "Original Munchpal research summary naming surplus food, financial pressure, nearby availability, and trust cues",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-flow.webp&w=3840&q=75",
+            "alt": "Original Munchpal user-flow diagram branching into meal requests, food posts, messages, donations, and community",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-home.webp&w=3840&q=75",
+            "alt": "Original Munchpal homepage mockup with Surabaya location, search, food categories, recent listing, and a central posting shortcut",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-feedback.webp&w=3840&q=75",
+            "alt": "Original Munchpal notification mockups with request status, messages, rating form, confirmation dialog, and accepted-request state",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Munchpal case study PDF",
+            "href": "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view"
+          },
+          {
+            "text": "Explore the original MunchPal prototype",
+            "href": "https://www.figma.com/proto/Xsj8X9CcL5SW6CoILaZFH3/MunchPal?node-id=327-4477&t=I0tPWQMFFzQHCDff-1&scaling=scale-down&content-scaling=fixed&page-id=326%3A3405&starting-point-node-id=327%3A4467&show-proto-sidebar=1"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#munchpal-implementation"
+          },
+          {
+            "text": "Open research screenshot",
+            "href": "/images/munchpal-research.webp"
+          },
+          {
+            "text": "Open flow screenshot",
+            "href": "/images/munchpal-flow.webp"
+          },
+          {
+            "text": "Open home screenshot",
+            "href": "/images/munchpal-home.webp"
+          },
+          {
+            "text": "Open feedback screenshot",
+            "href": "/images/munchpal-feedback.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 75444
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-munchpal-768.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "dom": {
+        "title": "Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "AlanSahlan."
+          },
+          {
+            "tag": "H2",
+            "text": "Selected work"
+          },
+          {
+            "tag": "H3",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H3",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H3",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H3",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "About"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-feather.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-monitor.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/images/role-stars.svg",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 48,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-wave.png&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 480,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 480,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 480,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 480,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-default.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 480,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-character-greeting.png&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 480,
+            "loading": "eager"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Faurelia-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpaylecta-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fpawfriend-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fwork%2Fmunchpal-compact.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 691,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "View all work on Behance (opens in a new tab)",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Aurelia, Hospitality case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Paylecta, Finance case study",
+            "href": "/work/paylecta"
+          },
+          {
+            "text": "PawFriend, Pet adoption case study",
+            "href": "/work/pawfriend"
+          },
+          {
+            "text": "Munchpal, Food sharing case study",
+            "href": "/work/munchpal"
+          },
+          {
+            "text": "More about me",
+            "href": "/about"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 31,
+          "transfer": 1270770
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\home-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/about",
+      "status": 200,
+      "dom": {
+        "title": "About Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Product Designer.Closer to the build."
+          },
+          {
+            "tag": "H2",
+            "text": "My work at CADIT"
+          },
+          {
+            "tag": "H2",
+            "text": "Designing and building"
+          },
+          {
+            "tag": "H2",
+            "text": "How I work and learn"
+          },
+          {
+            "tag": "H2",
+            "text": "Experience and resume"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-portrait.webp&w=3840&q=75",
+            "alt": "Alan Sahlan",
+            "complete": true,
+            "naturalWidth": 359,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 240,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [
+          {
+            "tag": "A",
+            "text": "CADIT",
+            "href": "https://www.cadit.com/",
+            "rect": {
+              "w": 63.578125,
+              "h": 27
+            }
+          }
+        ],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "CADIT",
+            "href": "https://www.cadit.com/"
+          },
+          {
+            "text": "View selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the Aurelia case study",
+            "href": "/work/aurelia"
+          },
+          {
+            "text": "Download resumePDF",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 22,
+          "transfer": 196017
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\about-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "status": 200,
+      "dom": {
+        "title": "Contact Alan Sahlan — Product Designer",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Let’s worktogether."
+          },
+          {
+            "tag": "H2",
+            "text": "Send a note"
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [
+          {
+            "id": "contact-name",
+            "type": "text",
+            "name": "name",
+            "labels": [
+              "Your name *"
+            ],
+            "required": true,
+            "autocomplete": "name"
+          },
+          {
+            "id": "contact-email",
+            "type": "email",
+            "name": "email",
+            "labels": [
+              "Email address *"
+            ],
+            "required": true,
+            "autocomplete": "email"
+          },
+          {
+            "id": "contact-topic",
+            "type": "select-one",
+            "name": "topic",
+            "labels": [
+              "What’s this about? (optional)"
+            ],
+            "required": false,
+            "autocomplete": ""
+          },
+          {
+            "id": "contact-message",
+            "type": "textarea",
+            "name": "message",
+            "labels": [
+              "Your message *"
+            ],
+            "required": true,
+            "autocomplete": ""
+          }
+        ],
+        "resourceStats": {
+          "count": 21,
+          "transfer": 159366
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\contact-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/work/aurelia",
+      "status": 200,
+      "dom": {
+        "title": "Aurelia — Alan Sahlan",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Aurelia"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with the kind of day"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the checks clear"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the concept"
+          },
+          {
+            "tag": "H3",
+            "text": "Give empty results an exit"
+          },
+          {
+            "tag": "H3",
+            "text": "Check a stay without losing the catalog"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the request honest"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation notes"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-interface.webp&w=3840&q=75",
+            "alt": "Aurelia concept homepage with a Bali villa photograph, stay search, and trip planning controls",
+            "complete": true,
+            "naturalWidth": 928,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-filters.webp&w=3840&q=75",
+            "alt": "Aurelia catalog with Work and stay longer and Uluwatu selected, no matching stays, and a Show all ten stays action",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-details.webp&w=3840&q=75",
+            "alt": "Awan Cliff House detail overlay showing its Wi-Fi information beside the stay photograph",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Faurelia-request.webp&w=3840&q=75",
+            "alt": "Aurelia stay request at the Dates step with its request summary and confirmation notice",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live Aurelia concept",
+            "href": "https://aurelia.alansahlanwork.workers.dev/"
+          },
+          {
+            "text": "Skip to implementation notes",
+            "href": "#aurelia-implementation"
+          },
+          {
+            "text": "Open filters screenshot",
+            "href": "/images/aurelia-filters.webp"
+          },
+          {
+            "text": "Open details screenshot",
+            "href": "/images/aurelia-details.webp"
+          },
+          {
+            "text": "Open request screenshot",
+            "href": "/images/aurelia-request.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 369075
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-aurelia-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/work/paylecta",
+      "status": 200,
+      "dom": {
+        "title": "Paylecta | Alan Sahlan",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Paylecta"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Give the balance a clear place"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep detail and status together"
+          },
+          {
+            "tag": "H3",
+            "text": "Use a shared visual system"
+          },
+          {
+            "tag": "H2",
+            "text": "Inside the design"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep the overview useful on a phone"
+          },
+          {
+            "tag": "H3",
+            "text": "Connect the summary to the records"
+          },
+          {
+            "tag": "H3",
+            "text": "Make the payment state visible"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-cover.webp&w=3840&q=75",
+            "alt": "Original Paylecta case-study cover with a desktop finance dashboard, balance card, transaction summaries, and revenue chart",
+            "complete": true,
+            "naturalWidth": 904,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-overview.webp&w=3840&q=75",
+            "alt": "Paylecta mobile dashboard with balance, transaction cards and revenue chart, beside a desktop account settings design",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-customers.webp&w=3840&q=75",
+            "alt": "Paylecta customer summary, searchable customer table with status labels, and a customer form overlay in original device mockups",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpaylecta-invoices.webp&w=3840&q=75",
+            "alt": "Paylecta desktop invoice editor and preview, mobile overdue invoice with timeline, and mobile payout cards with named payment states",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Paylecta case study PDF",
+            "href": "https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#paylecta-implementation"
+          },
+          {
+            "text": "Open overview screenshot",
+            "href": "/images/paylecta-overview.webp"
+          },
+          {
+            "text": "Open customers screenshot",
+            "href": "/images/paylecta-customers.webp"
+          },
+          {
+            "text": "Open invoices screenshot",
+            "href": "/images/paylecta-invoices.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 24,
+          "transfer": 237164
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-paylecta-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/work/pawfriend",
+      "status": 200,
+      "dom": {
+        "title": "PawFriend | Alan Sahlan",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "PawFriend"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Put personality beside practical details"
+          },
+          {
+            "tag": "H3",
+            "text": "Make saving visible and reversible"
+          },
+          {
+            "tag": "H3",
+            "text": "Explain the next step before commitment"
+          },
+          {
+            "tag": "H2",
+            "text": "From browsing to a first visit"
+          },
+          {
+            "tag": "H3",
+            "text": "Browse beyond the portrait"
+          },
+          {
+            "tag": "H3",
+            "text": "Keep a shortlist while considering the fit"
+          },
+          {
+            "tag": "H3",
+            "text": "Turn interest into preparation"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "Observed live flow"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-interface.webp&w=3840&q=75",
+            "alt": "PawFriend live concept homepage with Milo, a tan and white dog, bold resident-browsing invitation, and saved-pets navigation",
+            "complete": true,
+            "naturalWidth": 928,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-catalog.webp&w=3840&q=75",
+            "alt": "PawFriend expanded resident grid with Milo, Luna, and Pepper, showing age, breed, personality descriptions, favorites, and meeting links",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-shortlist.webp&w=3840&q=75",
+            "alt": "PawFriend saved-pets drawer containing Milo and Luna, removal controls, a saved count of two, and confirmation that Luna was added",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fpawfriend-prepare.webp&w=3840&q=75",
+            "alt": "PawFriend first-visit preparation section with saving favorites, comparing daily life, bringing questions, and adoption FAQ",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "View the live PawFriend concept",
+            "href": "https://pawfriend-topaz.vercel.app/"
+          },
+          {
+            "text": "View PawFriend source code",
+            "href": "https://github.com/alansahlan65/pawfriend"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#pawfriend-implementation"
+          },
+          {
+            "text": "Open catalog screenshot",
+            "href": "/images/pawfriend-catalog.webp"
+          },
+          {
+            "text": "Open shortlist screenshot",
+            "href": "/images/pawfriend-shortlist.webp"
+          },
+          {
+            "text": "Open prepare screenshot",
+            "href": "/images/pawfriend-prepare.webp"
+          },
+          {
+            "text": "Open the PawFriend live concept recording",
+            "href": "/media/pawfriend-observed-flow.webm"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 217014
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-pawfriend-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1440,
+      "route": "/work/munchpal",
+      "status": 200,
+      "dom": {
+        "title": "Munchpal | Alan Sahlan",
+        "lang": "en",
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "mainCount": 1,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Munchpal"
+          },
+          {
+            "tag": "H2",
+            "text": "Design decisions"
+          },
+          {
+            "tag": "H3",
+            "text": "Start with place and availability"
+          },
+          {
+            "tag": "H3",
+            "text": "Separate asking from offering"
+          },
+          {
+            "tag": "H3",
+            "text": "Write the handoff states"
+          },
+          {
+            "tag": "H2",
+            "text": "From research to handoff"
+          },
+          {
+            "tag": "H3",
+            "text": "Name the access and trust barriers"
+          },
+          {
+            "tag": "H3",
+            "text": "Map both sides of the exchange"
+          },
+          {
+            "tag": "H3",
+            "text": "Put nearby meals in context"
+          },
+          {
+            "tag": "H3",
+            "text": "Show what happens after a request"
+          },
+          {
+            "tag": "H2",
+            "text": "Implementation considerations"
+          },
+          {
+            "tag": "H2",
+            "text": "What the evidence shows"
+          },
+          {
+            "tag": "H2",
+            "text": "Let’s worktogether."
+          }
+        ],
+        "images": [
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-cover.webp&w=3840&q=75",
+            "alt": "Original Munchpal case-study cover with its green and orange mark beside three mobile app mockups",
+            "complete": true,
+            "naturalWidth": 928,
+            "loading": "auto"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-research.webp&w=3840&q=75",
+            "alt": "Original Munchpal research summary naming surplus food, financial pressure, nearby availability, and trust cues",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-flow.webp&w=3840&q=75",
+            "alt": "Original Munchpal user-flow diagram branching into meal requests, food posts, messages, donations, and community",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-home.webp&w=3840&q=75",
+            "alt": "Original Munchpal homepage mockup with Surabaya location, search, food categories, recent listing, and a central posting shortcut",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Fmunchpal-feedback.webp&w=3840&q=75",
+            "alt": "Original Munchpal notification mockups with request status, messages, rating form, confirmation dialog, and accepted-request state",
+            "complete": true,
+            "naturalWidth": 792,
+            "loading": "lazy"
+          },
+          {
+            "src": "/_next/image?url=%2Fimages%2Falan-logo.png&w=128&q=75",
+            "alt": "",
+            "complete": true,
+            "naturalWidth": 64,
+            "loading": "lazy"
+          }
+        ],
+        "fonts": [
+          {
+            "family": "plusJakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "plusJakarta Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded"
+          }
+        ],
+        "bodyFont": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+        "smallControls": [],
+        "unlabeledControls": [],
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#main"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          },
+          {
+            "text": "Resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Read the original Munchpal case study PDF",
+            "href": "https://drive.google.com/file/d/10I2jSY0_W8WTrntBog6EQQRD2IMFV4Lk/view"
+          },
+          {
+            "text": "Explore the original MunchPal prototype",
+            "href": "https://www.figma.com/proto/Xsj8X9CcL5SW6CoILaZFH3/MunchPal?node-id=327-4477&t=I0tPWQMFFzQHCDff-1&scaling=scale-down&content-scaling=fixed&page-id=326%3A3405&starting-point-node-id=327%3A4467&show-proto-sidebar=1"
+          },
+          {
+            "text": "Skip to implementation considerations",
+            "href": "#munchpal-implementation"
+          },
+          {
+            "text": "Open research screenshot",
+            "href": "/images/munchpal-research.webp"
+          },
+          {
+            "text": "Open flow screenshot",
+            "href": "/images/munchpal-flow.webp"
+          },
+          {
+            "text": "Open home screenshot",
+            "href": "/images/munchpal-home.webp"
+          },
+          {
+            "text": "Open feedback screenshot",
+            "href": "/images/munchpal-feedback.webp"
+          },
+          {
+            "text": "Back to selected work",
+            "href": "/#work"
+          },
+          {
+            "text": "Let’s worktogether.",
+            "href": "/contact"
+          },
+          {
+            "text": "alansahlanwork@gmail.com",
+            "href": "mailto:alansahlanwork@gmail.com"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/muhammadsahlanshadiq/"
+          },
+          {
+            "text": "GitHub",
+            "href": "https://github.com/alansahlan65"
+          },
+          {
+            "text": "Behance",
+            "href": "https://www.behance.net/muhammadsahlanshadiq"
+          },
+          {
+            "text": "Download resume",
+            "href": "/resume/alan-sahlan-resume.pdf"
+          },
+          {
+            "text": "Alan Sahlan, home",
+            "href": "/"
+          },
+          {
+            "text": "Icons by Streamline",
+            "href": "https://streamlinehq.com"
+          }
+        ],
+        "overflow": [],
+        "fieldLabels": [],
+        "resourceStats": {
+          "count": 25,
+          "transfer": 101822
+        }
+      },
+      "screenshot": "D:\\Project\\Personal Web\\.scratch\\website-review\\technical\\work-munchpal-1440.png",
+      "pageErrors": [],
+      "badResponses": [],
+      "failedRequests": []
+    }
+  ],
+  "interactions": {
+    "mutationPreflight": {
+      "title": "Assessment B mutation preflight",
+      "scriptExecuted": true
+    },
+    "firstFocus": {
+      "tag": "A",
+      "text": "Skip to content",
+      "class": "skip-link",
+      "outline": "rgb(246, 245, 241) solid 2px"
+    },
+    "skipLink": {
+      "tag": "MAIN",
+      "id": "main"
+    },
+    "menuOpened": {
+      "dialog": true,
+      "focus": "Close menu",
+      "mainInert": true,
+      "bodyFixed": "fixed",
+      "phase": "open"
+    },
+    "menuTabCycle": [
+      {
+        "text": "Home",
+        "insideDialog": true
+      },
+      {
+        "text": "About",
+        "insideDialog": true
+      },
+      {
+        "text": "Contact",
+        "insideDialog": true
+      },
+      {
+        "text": "Download resume",
+        "insideDialog": true
+      },
+      {
+        "text": "LinkedIn",
+        "insideDialog": true
+      },
+      {
+        "text": "GitHub",
+        "insideDialog": true
+      },
+      {
+        "text": "Behance",
+        "insideDialog": true
+      },
+      {
+        "text": "Close menu",
+        "insideDialog": true
+      },
+      {
+        "text": "Home",
+        "insideDialog": true
+      },
+      {
+        "text": "About",
+        "insideDialog": true
+      }
+    ],
+    "menuEscape": {
+      "dialog": false,
+      "focus": "Open menu",
+      "scrollY": 1100,
+      "mainInert": false
+    },
+    "contactEmpty": {
+      "focused": "contact-name",
+      "invalid": [
+        {
+          "id": "contact-name",
+          "describedBy": "contact-name-error"
+        },
+        {
+          "id": "contact-email",
+          "describedBy": "contact-email-error"
+        },
+        {
+          "id": "contact-message",
+          "describedBy": "contact-message-hint contact-message-error"
+        }
+      ],
+      "errors": [
+        "Enter your name.",
+        "Enter your email address.",
+        "Add a little about your role, project, or idea."
+      ]
+    },
+    "contactInvalidEmail": {
+      "focused": "contact-email",
+      "error": "Enter a valid email address, like name@example.com."
+    },
+    "contactDraftReload": {
+      "name": "Browser review",
+      "email": "browser-review@example.com",
+      "topic": "A project",
+      "message": "Review draft only. No message will be sent."
+    },
+    "contactValid": {
+      "status": "Your draft is ready. Send it from your email app.",
+      "fallback": [
+        {
+          "text": "Email app didn’t open? Try opening the draft again.",
+          "href": "mailto:alansahlanwork@gmail.com?subject=A%20project%20%E2%80%94%20Browser%20review&body=Review%20draft%20only.%20No%20message%20will%20be%20sent.%0A%0AFrom%3A%20Browser%20review%0AEmail%3A%20browser-review%40example.com"
+        }
+      ]
+    },
+    "contactEdited": {
+      "status": "",
+      "fallbackCount": 0,
+      "stored": {
+        "name": "Browser review",
+        "email": "browser-review@example.com",
+        "topic": "A project",
+        "message": "Revised draft"
+      }
+    },
+    "noJS": [
+      {
+        "path": "/",
+        "title": "Alan Sahlan — Product Designer",
+        "h1": [
+          "AlanSahlan."
+        ],
+        "mainVisible": "1",
+        "links": 20,
+        "form": null
+      },
+      {
+        "path": "/about",
+        "title": "About Alan Sahlan — Product Designer",
+        "h1": [
+          "Product Designer.Closer to the build."
+        ],
+        "mainVisible": "1",
+        "links": 18,
+        "form": null
+      },
+      {
+        "path": "/contact",
+        "title": "Contact Alan Sahlan — Product Designer",
+        "h1": [
+          "Let’s worktogether."
+        ],
+        "mainVisible": "1",
+        "links": 13,
+        "form": {
+          "action": "mailto:alansahlanwork@gmail.com",
+          "noValidate": false
+        }
+      },
+      {
+        "path": "/work/aurelia",
+        "title": "Aurelia — Alan Sahlan",
+        "h1": [
+          "Aurelia"
+        ],
+        "mainVisible": "1",
+        "links": 22,
+        "form": null
+      },
+      {
+        "path": "/work/paylecta",
+        "title": "Paylecta | Alan Sahlan",
+        "h1": [
+          "Paylecta"
+        ],
+        "mainVisible": "1",
+        "links": 21,
+        "form": null
+      },
+      {
+        "path": "/work/pawfriend",
+        "title": "PawFriend | Alan Sahlan",
+        "h1": [
+          "PawFriend"
+        ],
+        "mainVisible": "1",
+        "links": 24,
+        "form": null
+      },
+      {
+        "path": "/work/munchpal",
+        "title": "Munchpal | Alan Sahlan",
+        "h1": [
+          "Munchpal"
+        ],
+        "mainVisible": "1",
+        "links": 23,
+        "form": null
+      }
+    ]
+  },
+  "failures": [],
+  "finished": "2026-10-02T04:02:54.319Z"
+}

@@ -1,0 +1,6 @@
+file 'D:/Project/Personal Web/.scratch/aurelia-design-tour/review/segment-0.mp4'
+duration 13.3333333333
+file 'D:/Project/Personal Web/.scratch/aurelia-design-tour/review/segment-1.mp4'
+duration 13.3333333333
+file 'D:/Project/Personal Web/.scratch/aurelia-design-tour/review/segment-2.mp4'
+duration 13.3333333333

@@ -1,0 +1,80 @@
+{
+  "round": "initial",
+  "captures": [
+    ".impeccable/review/selected-work-cover/initial/aurelia-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/initial/aurelia-expanded-719.png",
+    ".impeccable/review/selected-work-cover/initial/default-1440.png",
+    ".impeccable/review/selected-work-cover/initial/default-390.png",
+    ".impeccable/review/selected-work-cover/initial/default-719.png",
+    ".impeccable/review/selected-work-cover/initial/keyboard.png",
+    ".impeccable/review/selected-work-cover/initial/munchpal-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/initial/pawfriend-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/initial/paylecta-expanded-1440.png",
+    ".impeccable/review/selected-work-cover/initial/reduced.png",
+    ".impeccable/review/selected-work-cover/initial/touch-wide.png",
+    ".impeccable/review/selected-work-cover/initial/no-js.png"
+  ],
+  "metrics": [
+    {
+      "width": 320,
+      "text": 100,
+      "documentWidth": 320
+    },
+    {
+      "width": 320,
+      "text": 200,
+      "documentWidth": 320
+    },
+    {
+      "width": 390,
+      "text": 100,
+      "documentWidth": 390
+    },
+    {
+      "width": 390,
+      "text": 200,
+      "documentWidth": 390
+    },
+    {
+      "width": 719,
+      "text": 100,
+      "documentWidth": 719
+    },
+    {
+      "width": 719,
+      "text": 200,
+      "documentWidth": 719
+    },
+    {
+      "width": 900,
+      "text": 100,
+      "documentWidth": 900
+    },
+    {
+      "width": 900,
+      "text": 200,
+      "documentWidth": 900
+    },
+    {
+      "width": 1024,
+      "text": 100,
+      "documentWidth": 1024
+    },
+    {
+      "width": 1024,
+      "text": 200,
+      "documentWidth": 1024
+    },
+    {
+      "width": 1440,
+      "text": 100,
+      "documentWidth": 1440
+    },
+    {
+      "width": 1440,
+      "text": 200,
+      "documentWidth": 1440
+    }
+  ],
+  "errors": []
+}

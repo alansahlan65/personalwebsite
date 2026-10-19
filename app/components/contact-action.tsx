@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { ArrowIcon } from "./ui-icons";
+import { TransitionLink as Link } from "./navigation-transition";
 
 export function ContactAction() {
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -32,7 +33,7 @@ export function ContactAction() {
   }, []);
 
   return (
-    <a ref={linkRef} className="contact-action" href="mailto:alansahlanwork@gmail.com" data-magnet="control"
+    <Link ref={linkRef} className="contact-action" href="/contact" data-magnet="control"
       onPointerDown={(event) => {
         if (!event.isPrimary || event.button !== 0) return;
         pressedPointer.current = event.pointerId;
@@ -41,6 +42,6 @@ export function ContactAction() {
       onPointerLeave={releasePress} onBlur={releasePress}>
       <span data-magnet-part>Let’s work<br />together.</span>
       <span className="contact-arrow" aria-hidden="true" data-magnet-part><ArrowIcon /></span>
-    </a>
+    </Link>
   );
 }

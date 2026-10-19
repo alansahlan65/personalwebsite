@@ -1,0 +1,22 @@
+{
+  "source": "OpenAI built-in Image Gen",
+  "intent": "generate",
+  "createdDate": "2026-10-01",
+  "prompt": "Use case: stylized-concept. Asset type: transparent full-body character artwork for a personal portfolio homepage. Create Alan, a friendly 3D voxel/pixel-block caricature based on the man in reference image 1. Image 1 is the identity reference: preserve his warm Indonesian skin tone, black curtain-parted medium wavy hair, facial proportions, black collared button-down shirt with rolled cuffs. Image 2 is only the 3D voxel style reference: sculpted chunky small cubes with softly beveled edges, detailed matte surfaces, friendly oversized head. Fully facing straight forward, symmetric shoulders and face, looking directly at the viewer with a small warm smile. Full body including complete shoes. Both arms relaxed naturally at sides, hands out of pockets so an articulated interactive version can wave. Gray linen trousers with rolled hems; warm white Adidas Samba sneakers with three charcoal black stripes and muted light gum soles. Soft low-contrast studio illumination. Colors fit a #f6f5f1 warm off-white website: muted charcoal blacks, warm gray pants, subdued natural tan skin, ivory shoes, gentle shading with no harsh dark cast shadows, no saturated colors. Transparent background with actual alpha, no backdrop, no colored rectangle, no text or speech bubble, no watermark. Centered 4:5 portrait composition with modest space around head and feet, straight frontal camera with no three-quarter angle. The character should occupy about 86% of image height.",
+  "references": [
+    {
+      "role": "identity reference",
+      "path": "D:/Project/Personal Web/Personal Photo.jpeg"
+    },
+    {
+      "role": "voxel style reference",
+      "path": "C:/Users/DESKTO~1/AppData/Local/Temp/codex-clipboard-3d0bba39-d538-46d1-bb8f-7b37092d517a.png"
+    }
+  ],
+  "original": "C:/Users/DESKTOP-IOT0021/.codex/generated_images/01a0f526-4b45-7362-a5c0-a545d2a9003d/exec-0049c0e1-bf85-49ed-a83c-c246d7f98b4d.png",
+  "width": 1122,
+  "height": 1402,
+  "hasAlpha": true,
+  "preparation": "Copied without raster edits; alpha preserved.",
+  "shipping": "public/images/alan-character-default.png"
+}

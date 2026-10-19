@@ -1,0 +1,26 @@
+[
+  {
+    "preventScroll": false,
+    "before": {
+      "scrollY": 3025,
+      "progress": 2
+    },
+    "after": {
+      "scrollY": 3025,
+      "progress": 2,
+      "focused": "case-media-skip"
+    }
+  },
+  {
+    "preventScroll": true,
+    "before": {
+      "scrollY": 3025,
+      "progress": 2
+    },
+    "after": {
+      "scrollY": 3025,
+      "progress": 2,
+      "focused": "case-media-skip"
+    }
+  }
+]

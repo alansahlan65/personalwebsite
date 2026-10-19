@@ -1,0 +1,14 @@
+{
+  "source": "http://127.0.0.1:3002/",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "retainedDates": {
+    "checkIn": "2027-03-09",
+    "checkOut": "2027-03-12"
+  },
+  "errors": [],
+  "complete": true,
+  "result": "Local stay plan prepared. No booking or message sent."
+}

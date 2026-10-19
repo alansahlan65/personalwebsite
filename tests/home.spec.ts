@@ -4,14 +4,16 @@ test("visitors recognize Alan and navigate the homepage immediately", async ({ p
   await page.goto("/");
 
   await expect(page.getByRole("heading", { level: 1, name: "Alan Sahlan." })).toBeVisible();
-  await expect(page.getByText("Design • Engineer", { exact: true })).toBeVisible();
+  await expect(page.getByText("Design • Engineer", { exact: true })).toHaveCount(0);
+  await expect(page.getByRole("region", { name: "Design / Build / Refine" })).toHaveCount(0);
   await expect(page.getByRole("img", { name: "Alan Sahlan", exact: true })).toBeVisible();
   await expect(page.getByText("Based in Indonesia", { exact: true })).toBeVisible();
 
   const navigation = page.getByRole("navigation", { name: "Primary" });
-  await navigation.getByRole("link", { name: "Work", exact: true }).click();
-  await expect(page).toHaveURL(/#work$/);
-  await expect(page.getByRole("heading", { name: "Selected work", exact: true })).toBeInViewport();
+  await navigation.getByRole("link", { name: "Home", exact: true }).click();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(navigation.getByRole("link", { name: "Home", exact: true })).toHaveAttribute("aria-current", "page");
+  expect(await page.evaluate(() => window.scrollY)).toBe(0);
 
   await page.goto("/");
   await page.keyboard.press("Tab");
@@ -35,14 +37,28 @@ for (const width of [320, 390, 650, 768, 1000, 1440]) {
     const portrait = page.getByRole("img", { name: "Alan Sahlan", exact: true });
     await expect(portrait).toBeVisible();
     await expect.poll(() => portrait.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
+    const portraitBox = await page.locator(".hero-portrait .portrait-frame").boundingBox();
+    const locationBox = await page.getByText("Based in Indonesia", { exact: true }).locator("..").boundingBox();
+    expect(portraitBox).not.toBeNull();
+    expect(locationBox).not.toBeNull();
+    if (width <= 650) {
+      expect(locationBox!.x + locationBox!.width).toBeLessThanOrEqual(portraitBox!.x);
+      const shortcut = page.getByRole("link", { name: "Selected work", exact: true });
+      await expect(shortcut).toBeVisible();
+      await expect(shortcut).toHaveAttribute("href", "#work");
+    } else {
+      expect(Math.abs(locationBox!.x - portraitBox!.x)).toBeLessThan(1);
+      expect(locationBox!.y + locationBox!.height).toBeLessThanOrEqual(portraitBox!.y);
+    }
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
 
     const navigation = page.getByRole("navigation", { name: "Primary" });
     await expect(navigation.getByRole("link")).toHaveCount(4);
-    await expect(navigation.getByRole("link", { name: "Resume", exact: true })).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
+    await expect(navigation.getByRole("link", { name: "Download resume, PDF", exact: true })).toHaveAttribute("download", "Alan-Sahlan-Resume.pdf");
     await navigation.getByRole("link", { name: "About", exact: true }).click();
-    await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeInViewport();
+    await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeInViewport();
     await navigation.getByRole("link", { name: "Contact", exact: true }).click();
+    await expect(page).toHaveURL(/\/contact$/);
     await expect(page.getByRole("heading", { name: "Let’s work together.", exact: true })).toBeInViewport();
   });
 }

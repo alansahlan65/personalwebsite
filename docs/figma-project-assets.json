@@ -1,0 +1,317 @@
+[
+  {
+    "image": "/images/figma/munchpal/flow-residents.png",
+    "nodeId": "369:9926",
+    "width": 4544,
+    "height": 2410,
+    "origin": "Complete original Figma flow export downloaded on 12 October 2026. Native PNG dimensions; no crop, upscale or generated content.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=369-9926",
+    "bytes": 237322,
+    "sha256": "a567439bc3fe7482a517f7bb45e0095a706e2679619084af41b5a9d0ba915882"
+  },
+  {
+    "image": "/images/figma/munchpal/flow-volunteers.png",
+    "nodeId": "369:10086",
+    "width": 3248,
+    "height": 1894,
+    "origin": "Complete original Figma flow export downloaded on 12 October 2026. Native PNG dimensions; no crop, upscale or generated content.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=369-10086",
+    "bytes": 136776,
+    "sha256": "a9d944731129a1de4573400cad3e49a2d664c6924cc9ac9ae57694ee998cd947"
+  },
+  {
+    "image": "/images/figma/paylecta/hero.webp",
+    "nodeId": "307:5779",
+    "width": 4022,
+    "height": 2342,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-5779 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 713986,
+    "sha256": "8dcdcdb00db5bf0bf6ad1c21a7d563b9be0d54d9281776d2b38bca808f29305e"
+  },
+  {
+    "image": "/images/figma/munchpal/hero.webp",
+    "nodeId": "307:38497",
+    "width": 1500,
+    "height": 1125,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-38497 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 209518,
+    "sha256": "5bf58d2234096bc5bc0e94931b22e4fa5bdf1404e4dfda441b3b3f4c118e2c2c"
+  },
+  {
+    "image": "/images/figma/munchpal/home.webp",
+    "nodeId": "307:39971",
+    "width": 1207,
+    "height": 2439,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-39971 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 370266,
+    "sha256": "a99b34d9249216a6e812dd59ce55f1808adf39ed3531e41b6b891526d4a7b681"
+  },
+  {
+    "image": "/images/figma/munchpal/food-list.webp",
+    "nodeId": "307:39996",
+    "width": 1207,
+    "height": 2439,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-39996 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 633782,
+    "sha256": "a0f8fe871c40a5cd53ff12b5f773dd02021c625b659765a6d2a9c49770c6f75a"
+  },
+  {
+    "image": "/images/figma/munchpal/conversation.webp",
+    "nodeId": "307:39995",
+    "width": 1207,
+    "height": 2439,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-39995 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 489204,
+    "sha256": "d4e0ff2f82d66ef68d5c3c922884befa2c005f59752d04392c018b90fb5c4234"
+  },
+  {
+    "image": "/images/figma/munchpal/request-status.webp",
+    "nodeId": "307:39984",
+    "width": 1207,
+    "height": 2439,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-39984 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 338708,
+    "sha256": "679545ae8defbcf0c7fe246d70e026a95f0ab0b65bd61c825d6ea8db0ee2c63d"
+  },
+  {
+    "image": "/images/figma/munchpal/pickup-status.webp",
+    "nodeId": "307:39986",
+    "width": 1207,
+    "height": 2439,
+    "origin": "Original image fill downloaded from https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-39986 using the Pro account, 7 October 2026. Converted to lossless WebP at its original dimensions; no crop, upscale or generated content.",
+    "bytes": 403552,
+    "sha256": "64ed07b89cadf315eaa5c7207d2b06304ba4d3ad057e124e136c87f5576a3030"
+  },
+  {
+    "image": "/images/figma/paylecta/dashboard.svg",
+    "nodeId": "307:2448",
+    "width": 1440,
+    "height": 1279,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-2448",
+    "bytes": 1413385,
+    "sha256": "2adbb3d5ba7b97b2d7aeb522a2b978d2c38aa09a254b50f1b45b71700c421b45"
+  },
+  {
+    "image": "/images/figma/paylecta/dashboard-mobile.svg",
+    "nodeId": "307:6059",
+    "width": 393,
+    "height": 1399,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-6059",
+    "bytes": 541495,
+    "sha256": "156b8a756fc70e4463c2679cccff25bcebfc7d66b3611db60050ae3a0e7694e8"
+  },
+  {
+    "image": "/images/figma/paylecta/customers-add.svg",
+    "nodeId": "307:3950",
+    "width": 1440,
+    "height": 1180,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-3950",
+    "bytes": 1957579,
+    "sha256": "3105e56b97156f833979a2ea67e378fcaa22c66918665994ecde5ee53d7c6659"
+  },
+  {
+    "image": "/images/figma/paylecta/invoice-editor.svg",
+    "nodeId": "307:5058",
+    "width": 1440,
+    "height": 1279,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-5058",
+    "bytes": 2657197,
+    "sha256": "68f2a744b6a037bcb8f7699ec2c687f126974f6666fda3cd71a7b0c2c1300b8b"
+  },
+  {
+    "image": "/images/figma/paylecta/invoice-overdue.svg",
+    "nodeId": "307:7585",
+    "width": 393,
+    "height": 917,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-7585",
+    "bytes": 734098,
+    "sha256": "aeabcabd3846d74c653afdb16b1a651e4b912a78f7667c0d35854c7b275de0f3"
+  },
+  {
+    "image": "/images/figma/paylecta/payout-mobile.svg",
+    "nodeId": "307:7902",
+    "width": 393,
+    "height": 1086,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-7902",
+    "bytes": 381493,
+    "sha256": "bdf39d92e2a502126fa08c209ab72230d9b1a0893bb1fec7651ff4538dacbe53"
+  },
+  {
+    "image": "/images/figma/paylecta/design-system.svg",
+    "nodeId": "307:8788",
+    "width": 1400,
+    "height": 2400,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-8788",
+    "bytes": 4585810,
+    "sha256": "202f526e2053d2f1e3dc10981f5c5f3965b78e64f79448ae6f8d753b594926ca"
+  },
+  {
+    "image": "/images/figma/munchpal/flow.svg",
+    "nodeId": "307:39815",
+    "width": 1549,
+    "height": 814,
+    "origin": "Original Figma SVG export. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-39815",
+    "bytes": 1619484,
+    "sha256": "e5469e647c76fc5fcc81b01166f3b60f84db4f2985974fa4dce4148b731d9e80"
+  },
+  {
+    "image": "/images/figma/munchpal/availability-before.webp",
+    "width": 388,
+    "height": 834,
+    "origin": "Documented original embedded PNG from Alan’s 2 October 2026 Munchpal research record. Converted to lossless WebP; maximum display width 194px for two-pixel density. Figma Dump does not contain these documented revision pairs.",
+    "bytes": 111808,
+    "sha256": "4e5e6777cd512781f0832306292a3d82d9527de835b54d838060dccca9cc8d50"
+  },
+  {
+    "image": "/images/figma/munchpal/availability-after.webp",
+    "width": 388,
+    "height": 834,
+    "origin": "Documented original embedded PNG from Alan’s 2 October 2026 Munchpal research record. Converted to lossless WebP; maximum display width 194px for two-pixel density. Figma Dump does not contain these documented revision pairs.",
+    "bytes": 107916,
+    "sha256": "90aab3b05ee1ff4acffdff6e9c5d9b463ccaf7317fdc94d0cca4d97e94ab21fe"
+  },
+  {
+    "image": "/images/figma/munchpal/message-before.webp",
+    "width": 388,
+    "height": 834,
+    "origin": "Documented original embedded PNG from Alan’s 2 October 2026 Munchpal research record. Converted to lossless WebP; maximum display width 194px for two-pixel density. Figma Dump does not contain these documented revision pairs.",
+    "bytes": 5770,
+    "sha256": "8b96a9bfca4c697b804f174697ba4661a61bdb4d46e4483d5516ce8d01b138c0"
+  },
+  {
+    "image": "/images/figma/munchpal/message-after.webp",
+    "width": 388,
+    "height": 834,
+    "origin": "Documented original embedded PNG from Alan’s 2 October 2026 Munchpal research record. Converted to lossless WebP; maximum display width 194px for two-pixel density. Figma Dump does not contain these documented revision pairs.",
+    "bytes": 17342,
+    "sha256": "1d6243eaa36e0196752f5f5e7d544e2d37b655e26ab1c5590d92d79958bbe5fb"
+  },
+  {
+    "image": "/images/figma/paylecta/customers.svg",
+    "nodeId": "307:3697",
+    "width": 1440,
+    "height": 1180,
+    "origin": "Original Figma SVG export downloaded using the connected Pro account on 7 October 2026. UI shapes and type retain source vector geometry; any image fills retain source raster resolution.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=307-3697",
+    "bytes": 1767542,
+    "sha256": "ef1d9a874684653293309fe2c23e76ca9d67228ffe7c1d3b293ff02bdb0fc70e"
+  },
+  {
+    "image": "/images/figma/aurelia/hero.svg",
+    "nodeId": "274:8716",
+    "width": 1912,
+    "height": 948,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-8716",
+    "bytes": 3493567,
+    "sha256": "60cc90727d3f81b9a467ba34488b328da15136317cbbc240ae9c82692756314d"
+  },
+  {
+    "image": "/images/figma/aurelia/hero-dark.svg",
+    "nodeId": "274:7967",
+    "width": 1912,
+    "height": 948,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-7967",
+    "bytes": 6496643,
+    "sha256": "8393b82ff5cb53c560dfc2e259a27885eb7d5c582e3d87d5f41f6fc9c311d4f5"
+  },
+  {
+    "image": "/images/figma/aurelia/collection.svg",
+    "nodeId": "274:8756",
+    "width": 1912,
+    "height": 1575,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-8756",
+    "bytes": 12440770,
+    "sha256": "9cd75937d66ee2825d8b56c1c8c139005f939abba25821efdff5db9654b21ac4"
+  },
+  {
+    "image": "/images/figma/aurelia/holiday-rhythm.svg",
+    "nodeId": "274:9183",
+    "width": 1912,
+    "height": 1247,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-9183",
+    "bytes": 4946621,
+    "sha256": "eff43e69657b6c2e7fbabf5689e19f06d91e94ae46f1d2d8bc3c6a81b451ff35"
+  },
+  {
+    "image": "/images/figma/aurelia/residence.svg",
+    "nodeId": "274:9229",
+    "width": 1912,
+    "height": 1349,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-9229",
+    "bytes": 8759248,
+    "sha256": "59ee50d7800b20df2329cc4d6ebf53b3d16504e3f8374df248c1f6dd394c5e34"
+  },
+  {
+    "image": "/images/figma/aurelia/areas.svg",
+    "nodeId": "274:9279",
+    "width": 1912,
+    "height": 1332,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-9279",
+    "bytes": 4766200,
+    "sha256": "d81228b984260e3abd1c1f4dca55e606428f1430e1b8c3031c1d118321066c35"
+  },
+  {
+    "image": "/images/figma/aurelia/standards.svg",
+    "nodeId": "274:9329",
+    "width": 1912,
+    "height": 1830,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=274-9329",
+    "bytes": 3550690,
+    "sha256": "2668d3afaa2485160f844ad321cd628fd1d296f63bb921fd7d645bdc01a27623"
+  },
+  {
+    "image": "/images/figma/aurelia/request-dates.svg",
+    "nodeId": "368:1857",
+    "width": 700,
+    "height": 946,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=368-1857",
+    "bytes": 304148,
+    "sha256": "8d5eccc0588be5a956dd197798b7628607772270a90db39bb5df44bd0df15ae9"
+  },
+  {
+    "image": "/images/figma/aurelia/request-preferences.svg",
+    "nodeId": "368:1902",
+    "width": 700,
+    "height": 946,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=368-1902",
+    "bytes": 404188,
+    "sha256": "6ef42c80215bd70e0353e6334c577d8fbd6bfcb38d837a3280b0daccf8fe84b0"
+  },
+  {
+    "image": "/images/figma/aurelia/request-contact.svg",
+    "nodeId": "368:1960",
+    "width": 700,
+    "height": 946,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=368-1960",
+    "bytes": 489572,
+    "sha256": "85f9db78e6d07542c5b57e334680ddfd14b3e47aec27d2a3cf4b88b218a39e73"
+  },
+  {
+    "image": "/images/figma/aurelia/request-review.svg",
+    "nodeId": "368:2014",
+    "width": 700,
+    "height": 946,
+    "origin": "Complete original Figma SVG section or form export downloaded on 13 October 2026. Interface shapes and outlined type retain source vector geometry; photographic fills retain their source raster resolution. No screenshot wrapper, raster crop or generated interface.",
+    "source": "https://www.figma.com/design/nzrjEnmrDqfXUPLawnxmEn/Dump?node-id=368-2014",
+    "bytes": 335488,
+    "sha256": "fde89f56d2cdcd6980e8103a09c8d7a43dc662f5adbe5327b95540062c90a311"
+  }
+]

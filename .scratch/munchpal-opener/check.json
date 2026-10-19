@@ -1,0 +1,211 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 3,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 32.8,
+        "selector": "#report-body > div:nth-of-type(2) > p:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 897,
+          "top": 103.93,
+          "right": 1089.5,
+          "bottom": 146.43,
+          "width": 192.5,
+          "height": 42.5
+        },
+        "containerSelector": "#report-header",
+        "text": "Alan Sahlan",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-hf-id": "hf-cb40"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 897,
+          "y": 103.93,
+          "width": 192.5,
+          "height": 42.5
+        },
+        "firstSeen": 32.8,
+        "lastSeen": 32.8,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.8
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 32.8,
+        "selector": "#report-body > div:nth-of-type(3) > h4:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 897,
+          "top": 185.92,
+          "right": 1108.64,
+          "bottom": 233.42,
+          "width": 211.64,
+          "height": 47.5
+        },
+        "containerSelector": "#report-header",
+        "text": "Food name",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-hf-id": "hf-wyx0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 897,
+          "y": 185.92,
+          "width": 211.64,
+          "height": 47.5
+        },
+        "firstSeen": 32.8,
+        "lastSeen": 32.8,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.8
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 32.8,
+        "selector": "#report-body > div:nth-of-type(3) > p:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 897,
+          "top": 256.39,
+          "right": 1117.98,
+          "bottom": 298.89,
+          "width": 220.98,
+          "height": 42.5
+        },
+        "containerSelector": "#report-header",
+        "text": "Wrapped Rice",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-hf-id": "hf-heax"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 897,
+          "y": 256.39,
+          "width": 220.98,
+          "height": 42.5
+        },
+        "firstSeen": 32.8,
+        "lastSeen": 32.8,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.8
+        ]
+      }
+    ],
+    "duration": 40,
+    "samples": [
+      0,
+      1.8,
+      3.6,
+      5.2,
+      6.4,
+      7,
+      10,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      24.4,
+      26.5,
+      28.5,
+      30.4,
+      32.8,
+      35.5,
+      38.5,
+      40
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 3,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0,
+      7,
+      19,
+      28.5,
+      40
+    ],
+    "checked": 16,
+    "passed": 16
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "0511989a-3903-42f4-90cd-883b70a59bd5",
+    "revision": "59509f8a-150d-4bbc-af80-4b25c0d78a4a",
+    "report": "D:\\Project\\Personal Web\\public\\demos\\munchpal-opener\\.hyperframes\\artifacts\\checks\\0511989a-3903-42f4-90cd-883b70a59bd5.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.174",
+    "updateAvailable": false
+  }
+}

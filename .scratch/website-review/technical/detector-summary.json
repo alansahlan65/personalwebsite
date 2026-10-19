@@ -1,0 +1,128 @@
+{
+  "total": 69,
+  "rules": [
+    {
+      "rule": "design-system-color",
+      "count": 12
+    },
+    {
+      "rule": "design-system-font-size",
+      "count": 55
+    },
+    {
+      "rule": "side-tab",
+      "count": 2
+    }
+  ],
+  "severities": [
+    {
+      "severity": "advisory",
+      "count": 67
+    },
+    {
+      "severity": "warning",
+      "count": 2
+    }
+  ],
+  "locations": [
+    {
+      "file": "D:\\Project\\Personal Web\\app\\components\\alan-character.module.css",
+      "count": 1,
+      "lines": [
+        38
+      ]
+    },
+    {
+      "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.module.css",
+      "count": 1,
+      "lines": [
+        96
+      ]
+    },
+    {
+      "file": "D:\\Project\\Personal Web\\app\\components\\hero-role-play.tsx",
+      "count": 2,
+      "lines": [
+        20,
+        27
+      ]
+    },
+    {
+      "file": "D:\\Project\\Personal Web\\app\\contact\\contact.module.css",
+      "count": 14,
+      "lines": [
+        11,
+        18,
+        20,
+        27,
+        28,
+        31,
+        40,
+        49,
+        51,
+        53,
+        74,
+        78,
+        79,
+        83
+      ]
+    },
+    {
+      "file": "D:\\Project\\Personal Web\\app\\globals.css",
+      "count": 51,
+      "lines": [
+        41,
+        60,
+        22,
+        39,
+        44,
+        50,
+        51,
+        55,
+        56,
+        61,
+        63,
+        68,
+        78,
+        81,
+        84,
+        87,
+        88,
+        91,
+        125,
+        129,
+        135,
+        140,
+        143,
+        147,
+        148,
+        153,
+        168,
+        260,
+        263,
+        287,
+        327,
+        354,
+        355,
+        357,
+        362,
+        364,
+        366,
+        379,
+        389,
+        391,
+        416,
+        518,
+        521,
+        528,
+        532,
+        542,
+        551,
+        554,
+        560,
+        563,
+        582
+      ]
+    }
+  ]
+}

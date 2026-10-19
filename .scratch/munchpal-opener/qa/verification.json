@@ -1,0 +1,120 @@
+{
+  "duration": 40,
+  "errors": [],
+  "taps": [
+    {
+      "time": 10.42,
+      "selector": "#request-action",
+      "target": {
+        "x": 1298,
+        "y": 476,
+        "width": 328,
+        "height": 80
+      },
+      "tap": {
+        "x": 1462,
+        "y": 516
+      },
+      "hits": true
+    },
+    {
+      "time": 13.28,
+      "selector": "#send-request",
+      "target": {
+        "x": 1150.14990234375,
+        "y": 568.675048828125,
+        "width": 355.47509765625,
+        "height": 118
+      },
+      "tap": {
+        "x": 1328,
+        "y": 628
+      },
+      "hits": true
+    },
+    {
+      "time": 21.32,
+      "selector": "#send-message",
+      "target": {
+        "x": 725.5999755859375,
+        "y": 520,
+        "width": 394.0499267578125,
+        "height": 128
+      },
+      "tap": {
+        "x": 923,
+        "y": 584
+      },
+      "hits": true
+    },
+    {
+      "time": 30.42,
+      "selector": "#view-report",
+      "target": {
+        "x": 717.300048828125,
+        "y": 524.3499755859375,
+        "width": 472.895263671875,
+        "height": 124
+      },
+      "tap": {
+        "x": 954,
+        "y": 586
+      },
+      "hits": true
+    }
+  ],
+  "reverseSeek": [
+    {
+      "time": 0,
+      "identical": true,
+      "maxDelta": 0,
+      "changedChannels": 0
+    },
+    {
+      "time": 3.6,
+      "identical": true,
+      "maxDelta": 0,
+      "changedChannels": 0
+    },
+    {
+      "time": 5.2,
+      "identical": false,
+      "maxDelta": 1,
+      "changedChannels": 0
+    },
+    {
+      "time": 11.8,
+      "identical": true,
+      "maxDelta": 0,
+      "changedChannels": 0
+    },
+    {
+      "time": 17,
+      "identical": true,
+      "maxDelta": 0,
+      "changedChannels": 0
+    },
+    {
+      "time": 24.4,
+      "identical": false,
+      "maxDelta": 1,
+      "changedChannels": 0
+    },
+    {
+      "time": 35.5,
+      "identical": true,
+      "maxDelta": 0,
+      "changedChannels": 0
+    }
+  ],
+  "loop": {
+    "changedChannels": 0,
+    "maxDelta": 1
+  },
+  "fonts": true,
+  "reducedMotion": {
+    "paused": true,
+    "time": 0,
+    "controlsHidden": true
+  }
+}

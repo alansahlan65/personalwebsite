@@ -1,0 +1,426 @@
+{
+  "round": "final",
+  "captures": [
+    ".impeccable/review/distill/aurelia-390-top.png",
+    ".impeccable/review/distill/aurelia-390-story.png",
+    ".impeccable/review/distill/aurelia-notes-open-390.png",
+    ".impeccable/review/distill/paylecta-390-top.png",
+    ".impeccable/review/distill/paylecta-390-story.png",
+    ".impeccable/review/distill/paylecta-source-open-390.png",
+    ".impeccable/review/distill/pawfriend-390-top.png",
+    ".impeccable/review/distill/pawfriend-390-story.png",
+    ".impeccable/review/distill/pawfriend-notes-open-390.png",
+    ".impeccable/review/distill/munchpal-390-top.png",
+    ".impeccable/review/distill/munchpal-390-story.png",
+    ".impeccable/review/distill/munchpal-second-decision-390.png",
+    ".impeccable/review/distill/munchpal-result-390.png",
+    ".impeccable/review/distill/munchpal-research-open-390.png",
+    ".impeccable/review/distill/munchpal-test-open-390.png",
+    ".impeccable/review/distill/aurelia-1440-top.png",
+    ".impeccable/review/distill/aurelia-1440-story.png",
+    ".impeccable/review/distill/paylecta-1440-top.png",
+    ".impeccable/review/distill/paylecta-1440-story.png",
+    ".impeccable/review/distill/pawfriend-1440-top.png",
+    ".impeccable/review/distill/pawfriend-1440-story.png",
+    ".impeccable/review/distill/munchpal-1440-top.png",
+    ".impeccable/review/distill/munchpal-1440-story.png",
+    ".impeccable/review/distill/munchpal-second-decision-1440.png",
+    ".impeccable/review/distill/munchpal-result-1440.png",
+    ".impeccable/review/distill/munchpal-tour-1440.png"
+  ],
+  "samples": [
+    {
+      "slug": "aurelia",
+      "width": 390,
+      "visibleWords": 169,
+      "height": 3199.734375,
+      "documentWidth": 390
+    },
+    {
+      "slug": "paylecta",
+      "width": 390,
+      "visibleWords": 168,
+      "height": 3815.03125,
+      "documentWidth": 390
+    },
+    {
+      "slug": "pawfriend",
+      "width": 390,
+      "visibleWords": 182,
+      "height": 3289.9375,
+      "documentWidth": 390
+    },
+    {
+      "slug": "munchpal",
+      "width": 390,
+      "visibleWords": 185,
+      "height": 3723.734375,
+      "documentWidth": 390
+    },
+    {
+      "slug": "aurelia",
+      "width": 1440,
+      "visibleWords": 171,
+      "height": 5628.03125,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "paylecta",
+      "width": 1440,
+      "visibleWords": 174,
+      "height": 5817.296875,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1440,
+      "visibleWords": 184,
+      "height": 5594.1875,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "munchpal",
+      "width": 1440,
+      "visibleWords": 185,
+      "height": 4334.140625,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "aurelia",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320
+    },
+    {
+      "slug": "aurelia",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320
+    },
+    {
+      "slug": "paylecta",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320
+    },
+    {
+      "slug": "paylecta",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320
+    },
+    {
+      "slug": "pawfriend",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320
+    },
+    {
+      "slug": "pawfriend",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320
+    },
+    {
+      "slug": "munchpal",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320
+    },
+    {
+      "slug": "munchpal",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320
+    },
+    {
+      "slug": "aurelia",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390
+    },
+    {
+      "slug": "aurelia",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390
+    },
+    {
+      "slug": "paylecta",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390
+    },
+    {
+      "slug": "paylecta",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390
+    },
+    {
+      "slug": "pawfriend",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390
+    },
+    {
+      "slug": "pawfriend",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390
+    },
+    {
+      "slug": "munchpal",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390
+    },
+    {
+      "slug": "munchpal",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390
+    },
+    {
+      "slug": "aurelia",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768
+    },
+    {
+      "slug": "aurelia",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768
+    },
+    {
+      "slug": "paylecta",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768
+    },
+    {
+      "slug": "paylecta",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768
+    },
+    {
+      "slug": "pawfriend",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768
+    },
+    {
+      "slug": "pawfriend",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768
+    },
+    {
+      "slug": "munchpal",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768
+    },
+    {
+      "slug": "munchpal",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768
+    },
+    {
+      "slug": "aurelia",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "aurelia",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "paylecta",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "paylecta",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "munchpal",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "munchpal",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000
+    },
+    {
+      "slug": "aurelia",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "aurelia",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "paylecta",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "paylecta",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "pawfriend",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "munchpal",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "munchpal",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440
+    },
+    {
+      "slug": "aurelia",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844
+    },
+    {
+      "slug": "aurelia",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844
+    },
+    {
+      "slug": "paylecta",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844
+    },
+    {
+      "slug": "paylecta",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844
+    },
+    {
+      "slug": "pawfriend",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844
+    },
+    {
+      "slug": "pawfriend",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844
+    },
+    {
+      "slug": "munchpal",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844
+    },
+    {
+      "slug": "munchpal",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844
+    }
+  ],
+  "errors": []
+}

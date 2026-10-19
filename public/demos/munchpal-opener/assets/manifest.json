@@ -1,0 +1,105 @@
+{
+  "fileKey": "nzrjEnmrDqfXUPLawnxmEn",
+  "sourceExports": [
+    {
+      "file": "sources/accepted.svg",
+      "nodeId": "322:6041",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 388 834",
+      "sizeBytes": 659934,
+      "sha256": "a8e4c076b4ada106edb56123465e98dada0830d855800b582e5b063b84d1ace7"
+    },
+    {
+      "file": "sources/bulk.svg",
+      "nodeId": "322:6939",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 388 834",
+      "sizeBytes": 975369,
+      "sha256": "292ab6fdbb5381b7b0cfaa771501698c6a4d492fe2c44e1c564655e97ff69802"
+    },
+    {
+      "file": "sources/chat.svg",
+      "nodeId": "322:7676",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 388 834",
+      "sizeBytes": 510929,
+      "sha256": "6dd71e1753a307863fd5fd5d6bf134dfa91bec0be38589a068eac82e038c235f"
+    },
+    {
+      "file": "sources/confirm.svg",
+      "nodeId": "322:5837",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 339 214",
+      "sizeBytes": 224844,
+      "sha256": "da4ec9cae26de5ad785253ab7b59a21d1a0333c5391f2b605ac8c1e11b335d4f"
+    },
+    {
+      "file": "sources/list.svg",
+      "nodeId": "322:5668",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 388 834",
+      "sizeBytes": 3702510,
+      "sha256": "a71f3c776f563ebc4d00a40fb245083b69db99a6dd8e2ee424d27f9a96ce4187"
+    },
+    {
+      "file": "sources/report.svg",
+      "nodeId": "322:7014",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 388 834",
+      "sizeBytes": 2650708,
+      "sha256": "c89ea8c2ffb131358e5cdf57d3d54c5c22b3f2afa1e0daf32c26b04efef28a82"
+    },
+    {
+      "file": "sources/row.svg",
+      "nodeId": "322:5673",
+      "exportedAt": "2026-10-19",
+      "viewBox": "0 0 333 72",
+      "sizeBytes": 281122,
+      "sha256": "6212c9f90bec2fff0eb0828e1b69d696bcd55f8bd9f67b0998bd3277af78140d"
+    }
+  ],
+  "preparation": "sources/ preserves refreshed Figma SVGs byte for byte. assets/ isolates native groups and decodes embedded original photographs. Native row button is isolated for tap motion. No photo replacements.",
+  "identity": {
+    "file": "assets/brand.svg",
+    "nodeId": "307:38487",
+    "provenance": "Unchanged original wordmark from ../munchpal/assets/brand.svg"
+  },
+  "illustration": {
+    "file": "assets/people-illustration.svg",
+    "provenance": "Original vector people authored for the user's requested illustrated opening. An inline copy supplies independently animated body, head, thumb and arm groups. Phone imagery is the original source Food List. These figures are decorative motion-study artwork, separate from research evidence."
+  },
+  "font": {
+    "family": "Rubik",
+    "source": "https://github.com/google/fonts/tree/main/ofl/rubik",
+    "file": "assets/Rubik-Variable.ttf",
+    "license": "assets/Rubik-OFL.txt",
+    "sha256": "1b3a7437ba2af80e465e773ed60c5036d1ba6ace492d89046dbcf18fb31e4e88"
+  },
+  "adaptations": {
+    "confirmation": [
+      "Request this food?",
+      "Send request"
+    ],
+    "success": "Request sent",
+    "accepted": [
+      "Janu Suryajana accepted your request",
+      "Send message"
+    ],
+    "reply": "Hi Alan, yes, it is. You can pick it up.",
+    "bulk": [
+      "Garda Pangan has picked up your donation",
+      "View pickup report"
+    ],
+    "report": [
+      "Donation report",
+      "Food quantity",
+      "Picked up",
+      "20 Nov 2024",
+      "15:00 WIB"
+    ],
+    "contrast": "The report action uses #008354, a darker source-green variant for AA white-text contrast. Report headings retain #008A57.",
+    "method": "Separate HTML motion-study components use the brief-authorized copy. The native source layout, identities, imagery, quantity 50, pickup address, date and timezone are preserved. Source SVGs remain unmodified."
+  },
+  "listPreview": "assets/list.webp is a 2x lossless raster of the refreshed vector list, used only as the brief context plane. The isolated selected row and action remain vector.",
+  "optimization": "Animation SVGs convert embedded source rasters to lossless WebP only when smaller and retain original definitions. All dimensions and photographic pixels remain intact; sources/ is untouched."
+}

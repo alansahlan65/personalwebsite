@@ -1,35 +1,19 @@
-# Page transitions
+# Page navigation
 
-Home, About, and Aurelia use a persistent `NavigationTransition` in the root layout. Internal `TransitionLink` links keep Next.js prefetching and use its `onNavigate` callback to cover the screen before changing routes. The page curtain rotates the Menu's stairs onto the horizontal axis: five full-width cobalt bands enter from the left and exit through the right on forward navigation. Returning to Work or using Back enters from the right and exits through the left. The page switches while fully covered. The Menu retains its existing vertical motion.
+Reviewed 19 October 2026. The persistent [NavigationTransition](../app/components/navigation-transition.tsx) owns ordinary internal route curtains. Route focus and scroll restoration remain coordinated with it.
 
-Menu timing in `app/lib/stairs-motion.ts` follows the linked [Sliding Stairs Menu tutorial](https://blog.olivierlarose.com/tutorials/sliding-stairs-menu) and its [published animation source](https://github.com/olivierlarose/sliding-stairs-menu/blob/main/src/components/header/anim.js): 500ms entry, 300ms exit, 50ms stagger and cubic-bezier(.33, 1, .68, 1). Pages keep the tuned `PAGE_MOTION_DURATION_MS` of 610ms, with a 30ms stagger and a gentler `--page-transition-ease`, cubic-bezier(.65, 0, .35, 1). This is the published easeInOutCubic curve from [easings.net](https://github.com/ai/easings.net/blob/master/src/easings.yml). Panel durations are 231.25ms cover and 138.75ms reveal. Full waves take 351.25ms and 258.75ms; the backdrop fades to 50% opacity and back over those phase lengths without extending them. Route-loading time is separate. Menu timing stays unchanged.
+## Pointer and history navigation
 
-The Web Animations API moves page bands from translateX(-100%) to translateX(0%) to translateX(100%) forward, and the opposite sequence back. Their vertical positions stay fixed. Forward staggers top to bottom; back reverses that stagger, producing the opposite staircase. Each band has sharp corners matching Menu and retains 16px overscan on both sides, preserving its travel distance and full coverage. The existing 1px overlap hides row seams. Only transforms and opacity animate.
+Five sharp horizontal cobalt bands cover, then uncover the destination. The combined animation budget is 610ms, with a 30ms stagger and `cubic-bezier(.65,0,.35,1)`. Static 16px side overscan and a 1px row overlap preserve coverage. Only transforms/opacity animate. The menu's separate stairs remain vertical.
 
-Completion promises gate navigation, so slower playback and interrupted animations do not uncover a partially changed page. A newer click updates the destination or retargets the moving panels and backdrop from their current appearance. The internal destination is prefetched as covering starts, allowing route data to load during the wave. The fixed curtain covers exactly the viewport, independently of document height and scroll position. Optional CSS properties `--route-curtain-duration`, `--route-curtain-exit-duration` and `--route-curtain-stagger` allow slow playback during debugging; production panel defaults are derived from the total budget and shared Menu duration ratio.
+Forward routes sweep left-to-right; Home/Back use the opposite direction. Contact-to-About also returns right-to-left. Completion promises gate route switching under full cover; repeated input retargets current motion/destination. Prefetch starts with cover. Open-menu navigation releases its lock under coverage. Back/Forward restore existing history state without adding entries.
 
-When navigating from an open menu, the menu stays visible beneath the covering panels. Once the curtain is opaque, a before-navigation event closes the menu and releases its scroll lock before Next.js navigates. RouteFocus assigns destination focus and restores selected-work positions beneath the curtain. Same-page Contact and Work anchors retain native scrolling. Direct visits, reloads, and local interface updates do not play a route transition.
+Home goes to the root top and heading, clearing pending project-return intent. Identical idle destinations preserve the history entry. Same-page sections retain native scrolling. Direct visits and reloads do not play a route curtain. [Project entry](project-entry.md) owns gallery snapshots separately.
 
-The project gallery keeps its native Next.js Link and `project-entry` transition type so Aurelia's shared-image expansion retains its existing behavior. Other links to Aurelia and explicit return links use the curtain. Browser Back/Forward covers the outgoing page before forwarding the original history state to Next's restoration handler. A position stored alongside Next's history state determines the direction: Back travels right to left and Forward travels left to right. This does not push or replace history entries during traversal. Same-page history changes remain native. General page transitions do not depend on React/browser snapshot support. `PageTransition` remains a plain content wrapper; the project image boundary still uses React ViewTransition for shared imagery.
+## Input and fallback
 
-## Access and fallbacks
+Keyboard and assistive zero-detail activation bypass the curtain through native Next navigation, closing any menu and cancelling active pointer movement. Reduced motion uses an 80ms fade; forced colors navigates immediately. Touch keeps the ordinary page curtain while shared-image spatial movement is disabled.
 
-- The curtain has no pointer events or accessible content. Links and buttons remain usable during the animation.
-- Destination heading or section focus is assigned during the route commit.
-- Touch uses the same curtain; shared-image spatial motion remains disabled on touch.
-- Reduced motion uses an 80ms opacity transition per phase and disables spatial project effects. Changing the preference during motion finishes the active phase.
-- Forced colors makes route changes immediate.
-- Missing, failed, or skipped browser snapshot support does not disable the curtain.
-- Modified clicks, downloads, and external destinations retain native behavior.
+Curtain layers have no accessible content or pointer interception. Links, focus, and return controls remain usable. Modified clicks, downloads, external URLs, and same-page history remain native. Missing browser snapshot support does not disable ordinary navigation.
 
-Browser checks live in `tests/page-transitions.spec.ts` and `tests/stairs-motion.spec.ts`, alongside the existing header/menu, project-entry and pointer regression checks. The Work-to-About-to-Work regression explicitly disables browser view transitions, and a slowed-animation check verifies that the route stays unchanged until every covering panel finishes. Sampled bounds confirm fixed vertical positions, gentle acceleration and deceleration, and complete viewport coverage. Native animation timings verify that both complete waves total 610ms. Back reverses cover and reveal.
-
-## Header and menu
-
-The top header shows direct navigation links. Menu appears only after scrolling past 96px; scrolling above 48px brings the links back. These separate thresholds prevent flicker near the boundary. The header keeps its layout space and remains sticky while its links fade and draw toward the right over 280ms. Menu enters with a short fade and an 8px settle. Keyboard focus keeps its control available until focus moves away; a pointer click on Work allows the header to collapse after its anchor scroll.
-
-The menu retains five full-height vertical columns that slide down from above the viewport, then retract upward on close. Opening sequences left to right; closing reverses the stagger. Its timing and dimming backdrop remain unchanged by the horizontal page correction. Links and profiles settle with opacity and an 8px translation. Panel completion controls unmounting, including interrupted close/reopen actions. Reduced motion removes spatial movement and keeps the header's 80ms opacity transition. Scroll locking, Escape, focus trapping, and focus restoration remain active throughout the menu transition.
-
-## Verification
-
-The motion refinement passed all 53 browser checks across page/stairs, header/menu, project entry and pointer feedback. Samples at 390px and 1440px confirm horizontal movement in both phases, reversed Back direction, complete opaque coverage and no horizontal overflow. First and last 10% travel intervals cover less distance than their adjacent intervals, confirming soft starts and stops. Menu source files and shared timing constants have unchanged SHA-256 hashes. Typecheck, lint and production build passed. The subsequent corner adjustment restores sharp edges while preserving the approved motion, timing and overscan.
+The compact header enters above 96px scroll and returns below 48px, deferring changes while focused or while the menu is mounted. The menu contains focus, supports Escape, makes the background inert, and restores focus/scroll after dismissal. A delayed-route loading/recovery design remains open in [release work](quality.md#remaining-release-work).

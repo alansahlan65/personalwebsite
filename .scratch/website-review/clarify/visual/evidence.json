@@ -1,0 +1,5219 @@
+{
+  "evidence": [
+    {
+      "surface": "home",
+      "width": 1440,
+      "scale": 1,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 280.484375,
+          "fontSize": "22.4px",
+          "lineHeight": "31.36px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 72,
+          "width": 468.46875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 986.78125,
+          "indexTop": 1014.78125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1220.234375,
+          "indexTop": 1248.234375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1429.6875,
+          "indexTop": 1457.6875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1639.140625,
+          "indexTop": 1667.140625
+        }
+      ]
+    },
+    {
+      "surface": "Design Engineer",
+      "width": 1440,
+      "scale": 1,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 412.390625,
+          "fontSize": "22.4px",
+          "lineHeight": "31.36px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 72,
+          "width": 413.453125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 986.78125,
+          "indexTop": 1014.78125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1220.234375,
+          "indexTop": 1248.234375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1429.6875,
+          "indexTop": 1457.6875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1639.140625,
+          "indexTop": 1667.140625
+        }
+      ]
+    },
+    {
+      "surface": "Interaction Designer",
+      "width": 1440,
+      "scale": 1,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I am anProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 292.984375,
+          "fontSize": "22.4px",
+          "lineHeight": "31.36px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "This portfolio explores focus, feedback, and motion.",
+          "x": 72,
+          "width": 392.171875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 986.78125,
+          "indexTop": 1014.78125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1220.234375,
+          "indexTop": 1248.234375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1429.6875,
+          "indexTop": 1457.6875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1639.140625,
+          "indexTop": 1667.140625
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 1440,
+      "scale": 1,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 280.484375,
+          "fontSize": "22.4px",
+          "lineHeight": "31.36px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 72,
+          "width": 468.46875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 289.78125,
+          "indexTop": 317.78125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 499.234375,
+          "indexTop": 527.234375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 708.6875,
+          "indexTop": 736.6875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 918.140625,
+          "indexTop": 946.140625
+        }
+      ]
+    },
+    {
+      "surface": "work-expanded",
+      "width": 1440,
+      "scale": 1,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 280.484375,
+          "fontSize": "22.4px",
+          "lineHeight": "31.36px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 72,
+          "width": 468.46875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 152,
+          "width": 1148,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 1148,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 152,
+          "width": 450.09375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 289.78125,
+          "indexTop": 289.78125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 886.703125,
+          "indexTop": 914.703125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1096.15625,
+          "indexTop": 1124.15625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1305.609375,
+          "indexTop": 1333.609375
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 1440,
+      "scale": 2,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 403.875,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 72,
+          "width": 647,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 1296,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 520.421875,
+          "indexTop": 550.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 808.5625,
+          "indexTop": 838.5625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1096.703125,
+          "indexTop": 1126.703125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1426.84375,
+          "indexTop": 1456.84375
+        }
+      ]
+    },
+    {
+      "surface": "home-engineer",
+      "width": 1440,
+      "scale": 2,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 72,
+          "width": 592.328125,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 72,
+          "width": 647,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 72,
+          "width": 1296,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 177.109375,
+          "width": 362.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1447.421875,
+          "indexTop": 1477.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1735.5625,
+          "indexTop": 1765.5625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2023.703125,
+          "indexTop": 2053.703125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2353.84375,
+          "indexTop": 2383.84375
+        }
+      ]
+    },
+    {
+      "surface": "contact",
+      "width": 1440,
+      "scale": 1,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 755.0625,
+          "width": 612.9375,
+          "fontSize": "13px",
+          "lineHeight": "20.8px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "contact",
+      "width": 1440,
+      "scale": 2,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 755.0625,
+          "width": 612.9375,
+          "fontSize": "26px",
+          "lineHeight": "41.6px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "home",
+      "width": 1000,
+      "scale": 1,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 226.484375,
+          "fontSize": "18px",
+          "lineHeight": "25.2px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 50,
+          "width": 464.265625,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 863.421875,
+          "indexTop": 889.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1032.71875,
+          "indexTop": 1058.71875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1226.015625,
+          "indexTop": 1252.015625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1416.3125,
+          "indexTop": 1442.3125
+        }
+      ]
+    },
+    {
+      "surface": "Design Engineer",
+      "width": 1000,
+      "scale": 1,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 332.484375,
+          "fontSize": "18px",
+          "lineHeight": "25.2px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 50,
+          "width": 413.453125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 863.421875,
+          "indexTop": 889.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1032.71875,
+          "indexTop": 1058.71875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1226.015625,
+          "indexTop": 1252.015625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1416.3125,
+          "indexTop": 1442.3125
+        }
+      ]
+    },
+    {
+      "surface": "Interaction Designer",
+      "width": 1000,
+      "scale": 1,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I am anProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 236.53125,
+          "fontSize": "18px",
+          "lineHeight": "25.2px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "This portfolio explores focus, feedback, and motion.",
+          "x": 50,
+          "width": 392.171875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 863.421875,
+          "indexTop": 889.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1032.71875,
+          "indexTop": 1058.71875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1226.015625,
+          "indexTop": 1252.015625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1416.3125,
+          "indexTop": 1442.3125
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 1000,
+      "scale": 1,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 226.484375,
+          "fontSize": "18px",
+          "lineHeight": "25.2px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 50,
+          "width": 464.265625,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 286.421875,
+          "indexTop": 312.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 455.71875,
+          "indexTop": 481.71875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 625.015625,
+          "indexTop": 651.015625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 815.3125,
+          "indexTop": 841.3125
+        }
+      ]
+    },
+    {
+      "surface": "work-expanded",
+      "width": 1000,
+      "scale": 1,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 226.484375,
+          "fontSize": "18px",
+          "lineHeight": "25.2px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 50,
+          "width": 464.265625,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 768.59375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 123,
+          "width": 760,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 760,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 123,
+          "width": 269,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 286.421875,
+          "indexTop": 286.421875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 743.375,
+          "indexTop": 769.375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 912.671875,
+          "indexTop": 938.671875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1102.96875,
+          "indexTop": 1128.96875
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 1000,
+      "scale": 2,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 403.875,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 50,
+          "width": 447.15625,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 900,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 134,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 134,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 134,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 134,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 557.796875,
+          "indexTop": 579.796875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 911.5,
+          "indexTop": 933.5
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1223.203125,
+          "indexTop": 1245.203125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1618.90625,
+          "indexTop": 1640.90625
+        }
+      ]
+    },
+    {
+      "surface": "home-engineer",
+      "width": 1000,
+      "scale": 2,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 50,
+          "width": 447.15625,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 50,
+          "width": 447.15625,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 50,
+          "width": 900,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 134,
+          "width": 212,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 134,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 134,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 134,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 134,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1712.59375,
+          "indexTop": 1734.59375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 2066.296875,
+          "indexTop": 2088.296875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2378,
+          "indexTop": 2400
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2773.703125,
+          "indexTop": 2795.703125
+        }
+      ]
+    },
+    {
+      "surface": "contact",
+      "width": 1000,
+      "scale": 1,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 524.34375,
+          "width": 425.65625,
+          "fontSize": "13px",
+          "lineHeight": "20.8px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "contact",
+      "width": 1000,
+      "scale": 2,
+      "viewport": 1000,
+      "scrollWidth": 1000,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 537.6875,
+          "width": 412.296875,
+          "fontSize": "26px",
+          "lineHeight": "41.6px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "home",
+      "width": 768,
+      "scale": 1,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 38.40625,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 38.40625,
+          "width": 352.578125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 38.40625,
+          "width": 691.1875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 824.375,
+          "indexTop": 839.375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 948.84375,
+          "indexTop": 963.84375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1073.3125,
+          "indexTop": 1088.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1242.78125,
+          "indexTop": 1257.78125
+        }
+      ]
+    },
+    {
+      "surface": "Design Engineer",
+      "width": 768,
+      "scale": 1,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 38.40625,
+          "width": 296.171875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 38.40625,
+          "width": 352.578125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 38.40625,
+          "width": 691.1875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 824.375,
+          "indexTop": 839.375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 948.84375,
+          "indexTop": 963.84375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1073.3125,
+          "indexTop": 1088.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1242.78125,
+          "indexTop": 1257.78125
+        }
+      ]
+    },
+    {
+      "surface": "Interaction Designer",
+      "width": 768,
+      "scale": 1,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I am anProduct DesignerDesign EngineerInteraction Designer",
+          "x": 38.40625,
+          "width": 210.875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "This portfolio explores focus, feedback, and motion.",
+          "x": 38.40625,
+          "width": 352.578125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 38.40625,
+          "width": 691.1875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 824.375,
+          "indexTop": 839.375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 948.84375,
+          "indexTop": 963.84375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1073.3125,
+          "indexTop": 1088.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1242.78125,
+          "indexTop": 1257.78125
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 768,
+      "scale": 1,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 38.40625,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 38.40625,
+          "width": 352.578125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 38.40625,
+          "width": 691.1875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 256.375,
+          "indexTop": 271.375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 380.84375,
+          "indexTop": 395.84375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 505.3125,
+          "indexTop": 520.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 650.78125,
+          "indexTop": 665.78125
+        }
+      ]
+    },
+    {
+      "surface": "work-expanded",
+      "width": 768,
+      "scale": 1,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 38.40625,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 38.40625,
+          "width": 352.578125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 38.40625,
+          "width": 691.1875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 94.453125,
+          "width": 573.484375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 573.484375,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 94.453125,
+          "width": 196.421875,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 256.375,
+          "indexTop": 256.375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 625.796875,
+          "indexTop": 640.796875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 750.265625,
+          "indexTop": 765.265625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 895.734375,
+          "indexTop": 910.734375
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 768,
+      "scale": 2,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 325.203125,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 48,
+          "width": 325.203125,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 672,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 132,
+          "width": 165.109375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 132,
+          "width": 165.109375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 132,
+          "width": 210.234375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 132,
+          "width": 210.234375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 132,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 132,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 132,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 132,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 513.578125,
+          "indexTop": 534.578125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 874.640625,
+          "indexTop": 895.640625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1151.703125,
+          "indexTop": 1172.703125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1512.765625,
+          "indexTop": 1533.765625
+        }
+      ]
+    },
+    {
+      "surface": "home-engineer",
+      "width": 768,
+      "scale": 2,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 325.203125,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 48,
+          "width": 325.203125,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 672,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 132,
+          "width": 165.109375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 132,
+          "width": 165.109375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 132,
+          "width": 210.234375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 132,
+          "width": 210.234375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 132,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 132,
+          "width": 255.3125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 132,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 132,
+          "width": 238.453125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1691.390625,
+          "indexTop": 1712.390625
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 2052.453125,
+          "indexTop": 2073.453125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2329.515625,
+          "indexTop": 2350.515625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2690.578125,
+          "indexTop": 2711.578125
+        }
+      ]
+    },
+    {
+      "surface": "contact",
+      "width": 768,
+      "scale": 1,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 38.40625,
+          "width": 691.1875,
+          "fontSize": "13px",
+          "lineHeight": "20.8px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "contact",
+      "width": 768,
+      "scale": 2,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 48,
+          "width": 672,
+          "fontSize": "26px",
+          "lineHeight": "41.6px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "home",
+      "width": 650,
+      "scale": 1,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 32.5,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 32.5,
+          "width": 468.46875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 32.5,
+          "width": 585,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1548.546875,
+          "indexTop": 1548.546875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1891.9375,
+          "indexTop": 1891.9375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2235.328125,
+          "indexTop": 2235.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2578.71875,
+          "indexTop": 2578.71875
+        }
+      ]
+    },
+    {
+      "surface": "Design Engineer",
+      "width": 650,
+      "scale": 1,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 32.5,
+          "width": 296.171875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 32.5,
+          "width": 413.453125,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 32.5,
+          "width": 585,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1522.953125,
+          "indexTop": 1522.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1866.34375,
+          "indexTop": 1866.34375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2209.734375,
+          "indexTop": 2209.734375
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2553.125,
+          "indexTop": 2553.125
+        }
+      ]
+    },
+    {
+      "surface": "Interaction Designer",
+      "width": 650,
+      "scale": 1,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I am anProduct DesignerDesign EngineerInteraction Designer",
+          "x": 32.5,
+          "width": 210.875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "This portfolio explores focus, feedback, and motion.",
+          "x": 32.5,
+          "width": 392.171875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 32.5,
+          "width": 585,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1522.953125,
+          "indexTop": 1522.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1866.34375,
+          "indexTop": 1866.34375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2209.734375,
+          "indexTop": 2209.734375
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2553.125,
+          "indexTop": 2553.125
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 650,
+      "scale": 1,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 32.5,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 32.5,
+          "width": 468.46875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 32.5,
+          "width": 585,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 297.546875,
+          "indexTop": 297.546875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 640.9375,
+          "indexTop": 640.9375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1008.328125,
+          "indexTop": 1008.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1351.71875,
+          "indexTop": 1351.71875
+        }
+      ]
+    },
+    {
+      "surface": "work-expanded",
+      "width": 650,
+      "scale": 1,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 32.5,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 32.5,
+          "width": 468.46875,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 32.5,
+          "width": 585,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 68.484375,
+          "width": 494.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 297.546875,
+          "indexTop": 297.546875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 640.9375,
+          "indexTop": 640.9375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1008.328125,
+          "indexTop": 1008.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1351.71875,
+          "indexTop": 1351.71875
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 650,
+      "scale": 2,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 403.875,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 48,
+          "width": 554,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 554,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 701.765625,
+          "indexTop": 701.765625
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1163.8125,
+          "indexTop": 1163.8125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1649.859375,
+          "indexTop": 1649.859375
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2153.90625,
+          "indexTop": 2153.90625
+        }
+      ]
+    },
+    {
+      "surface": "home-engineer",
+      "width": 650,
+      "scale": 2,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 554,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 48,
+          "width": 554,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 554,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 119.984375,
+          "width": 373.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 2270.5625,
+          "indexTop": 2270.5625
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 2732.609375,
+          "indexTop": 2732.609375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 3218.65625,
+          "indexTop": 3218.65625
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 3722.703125,
+          "indexTop": 3722.703125
+        }
+      ]
+    },
+    {
+      "surface": "contact",
+      "width": 650,
+      "scale": 1,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 32.5,
+          "width": 585,
+          "fontSize": "13px",
+          "lineHeight": "20.8px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "contact",
+      "width": 650,
+      "scale": 2,
+      "viewport": 650,
+      "scrollWidth": 650,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 48,
+          "width": 554,
+          "fontSize": "26px",
+          "lineHeight": "41.6px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "home",
+      "width": 390,
+      "scale": 1,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1240.953125,
+          "indexTop": 1240.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1494.140625,
+          "indexTop": 1494.140625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1747.328125,
+          "indexTop": 1747.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2021.515625,
+          "indexTop": 2021.515625
+        }
+      ]
+    },
+    {
+      "surface": "Design Engineer",
+      "width": 390,
+      "scale": 1,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 296.171875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1240.953125,
+          "indexTop": 1240.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1494.140625,
+          "indexTop": 1494.140625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1747.328125,
+          "indexTop": 1747.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2021.515625,
+          "indexTop": 2021.515625
+        }
+      ]
+    },
+    {
+      "surface": "Interaction Designer",
+      "width": 390,
+      "scale": 1,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I am anProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 210.875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "This portfolio explores focus, feedback, and motion.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1240.953125,
+          "indexTop": 1240.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1494.140625,
+          "indexTop": 1494.140625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1747.328125,
+          "indexTop": 1747.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2021.515625,
+          "indexTop": 2021.515625
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 390,
+      "scale": 1,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 318.953125,
+          "indexTop": 318.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 572.140625,
+          "indexTop": 572.140625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 825.328125,
+          "indexTop": 825.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1123.515625,
+          "indexTop": 1123.515625
+        }
+      ]
+    },
+    {
+      "surface": "work-expanded",
+      "width": 390,
+      "scale": 1,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 251.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 318.953125,
+          "indexTop": 318.953125
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 572.140625,
+          "indexTop": 572.140625
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 825.328125,
+          "indexTop": 825.328125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1123.515625,
+          "indexTop": 1123.515625
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 390,
+      "scale": 2,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 294,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 48,
+          "width": 294,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 294,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 820.171875,
+          "indexTop": 820.171875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1376.734375,
+          "indexTop": 1376.734375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1933.296875,
+          "indexTop": 1933.296875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2821.046875,
+          "indexTop": 2821.046875
+        }
+      ]
+    },
+    {
+      "surface": "home-engineer",
+      "width": 390,
+      "scale": 2,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 294,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 48,
+          "width": 294,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 294,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 119.984375,
+          "width": 113.21875,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1978.171875,
+          "indexTop": 1978.171875
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 2534.734375,
+          "indexTop": 2534.734375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 3091.296875,
+          "indexTop": 3091.296875
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 3979.046875,
+          "indexTop": 3979.046875
+        }
+      ]
+    },
+    {
+      "surface": "contact",
+      "width": 390,
+      "scale": 1,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 24,
+          "width": 342,
+          "fontSize": "13px",
+          "lineHeight": "20.8px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "contact",
+      "width": 390,
+      "scale": 2,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 48,
+          "width": 294,
+          "fontSize": "26px",
+          "lineHeight": "41.6px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "home",
+      "width": 320,
+      "scale": 1,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1197.59375,
+          "indexTop": 1197.59375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1427.453125,
+          "indexTop": 1427.453125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1657.3125,
+          "indexTop": 1657.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1908.171875,
+          "indexTop": 1908.171875
+        }
+      ]
+    },
+    {
+      "surface": "Design Engineer",
+      "width": 320,
+      "scale": 1,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 272,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1255.984375,
+          "indexTop": 1255.984375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1485.84375,
+          "indexTop": 1485.84375
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1715.703125,
+          "indexTop": 1715.703125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1966.5625,
+          "indexTop": 1966.5625
+        }
+      ]
+    },
+    {
+      "surface": "Interaction Designer",
+      "width": 320,
+      "scale": 1,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "I am anProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 210.875,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "This portfolio explores focus, feedback, and motion.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 1197.59375,
+          "indexTop": 1197.59375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1427.453125,
+          "indexTop": 1427.453125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 1657.3125,
+          "indexTop": 1657.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1908.171875,
+          "indexTop": 1908.171875
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 320,
+      "scale": 1,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 373.59375,
+          "indexTop": 373.59375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 603.453125,
+          "indexTop": 603.453125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 833.3125,
+          "indexTop": 833.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1108.171875,
+          "indexTop": 1108.171875
+        }
+      ]
+    },
+    {
+      "surface": "work-expanded",
+      "width": 320,
+      "scale": 1,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 24,
+          "width": 201.953125,
+          "fontSize": "16px",
+          "lineHeight": "22.4px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 59.984375,
+          "width": 181.625,
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 373.59375,
+          "indexTop": 373.59375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 603.453125,
+          "indexTop": 603.453125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 833.3125,
+          "indexTop": 833.3125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 1108.171875,
+          "indexTop": 1108.171875
+        }
+      ]
+    },
+    {
+      "surface": "work-compact",
+      "width": 320,
+      "scale": 2,
+      "viewport": 334,
+      "scrollWidth": 334,
+      "text": [
+        {
+          "text": "I am aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 259.140625,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "UI/UX Designer at CADIT, building a component library and UI mockups.",
+          "x": 48,
+          "width": 259.140625,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 224,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 119.984375,
+          "width": 104.8125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 119.984375,
+          "width": 104.8125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 119.984375,
+          "width": 96.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 119.984375,
+          "width": 96.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 988.734375,
+          "indexTop": 988.734375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 1521.96875,
+          "indexTop": 1521.96875
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 2055.203125,
+          "indexTop": 2055.203125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 2919.625,
+          "indexTop": 2919.625
+        }
+      ]
+    },
+    {
+      "surface": "home-engineer",
+      "width": 320,
+      "scale": 2,
+      "viewport": 334,
+      "scrollWidth": 334,
+      "text": [
+        {
+          "text": "I'm learning to be aProduct DesignerDesign EngineerInteraction Designer",
+          "x": 48,
+          "width": 259.140625,
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Aurelia is a concept I designed and built independently.",
+          "x": 48,
+          "width": 259.140625,
+          "fontSize": "32px",
+          "lineHeight": "51.2px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "These banners are AI-generated illustrations. See original screens in each case study.",
+          "x": 48,
+          "width": 224,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated conceptDesign and build",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 143.59375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client projectUX and UI design",
+          "x": 119.984375,
+          "width": 104.8125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client project",
+          "x": 119.984375,
+          "width": 104.8125,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Self-initiated conceptDesign direction and ChatGPT-assisted build",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Self-initiated concept",
+          "x": 119.984375,
+          "width": 123.09375,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        },
+        {
+          "text": "Client prototypeResearch, design and usability testing",
+          "x": 119.984375,
+          "width": 96.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(98, 98, 94)"
+        },
+        {
+          "text": "Client prototype",
+          "x": 119.984375,
+          "width": 96.765625,
+          "fontSize": "28px",
+          "lineHeight": "42px",
+          "color": "rgb(32, 34, 31)"
+        }
+      ],
+      "rows": [
+        {
+          "slug": "aurelia",
+          "titleTop": 2202.34375,
+          "indexTop": 2202.34375
+        },
+        {
+          "slug": "paylecta",
+          "titleTop": 2735.578125,
+          "indexTop": 2735.578125
+        },
+        {
+          "slug": "pawfriend",
+          "titleTop": 3268.8125,
+          "indexTop": 3268.8125
+        },
+        {
+          "slug": "munchpal",
+          "titleTop": 4133.234375,
+          "indexTop": 4133.234375
+        }
+      ]
+    },
+    {
+      "surface": "contact",
+      "width": 320,
+      "scale": 1,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 24,
+          "width": 272,
+          "fontSize": "13px",
+          "lineHeight": "20.8px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "surface": "contact",
+      "width": 320,
+      "scale": 2,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "text": [
+        {
+          "text": "This form opens your email app with a draft. You send the email from there.",
+          "x": 48,
+          "width": 265.71875,
+          "fontSize": "26px",
+          "lineHeight": "41.6px",
+          "color": "rgb(98, 98, 94)"
+        }
+      ],
+      "rows": []
+    }
+  ],
+  "failures": []
+}

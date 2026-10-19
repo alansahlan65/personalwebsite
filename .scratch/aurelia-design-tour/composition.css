@@ -1,0 +1,41 @@
+@font-face{font-family:'Cormorant Garamond';src:url('assets/cormorant-garamond-400.woff2');font-weight:400;font-display:block}
+@font-face{font-family:'Cormorant Garamond';src:url('assets/cormorant-garamond-500.woff2');font-weight:500;font-display:block}
+@font-face{font-family:'Cormorant Garamond';src:url('assets/cormorant-garamond-italic.woff2');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:Manrope;src:url('assets/manrope-400.woff2');font-weight:400;font-display:block}
+@font-face{font-family:Manrope;src:url('assets/manrope-500.woff2');font-weight:500;font-display:block}
+@font-face{font-family:Manrope;src:url('assets/manrope-600.woff2');font-weight:600;font-display:block}
+html,body{width:100%;height:100%;overflow:hidden;scroll-behavior:auto;background:#f1eee6}
+#filters{position:fixed;inline-size:0;block-size:0;pointer-events:none}
+#stage{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%);overflow:hidden;background:#f1eee6}
+#surround{position:absolute;inset:-320px;background:linear-gradient(135deg,#f1eee6,#e8e5de 68%,#dcded5)}
+#daylight{position:absolute;width:2200px;height:1600px;left:-500px;top:-400px;background:radial-gradient(ellipse,rgba(255,255,255,.92),transparent 65%)}
+#viewfinder{position:absolute;inset:54px 96px;overflow:hidden}
+#world{position:absolute;left:-96px;top:-54px;width:1920px;height:1080px;transform-origin:0 0}
+#page{position:relative;width:1920px;background:#fff;box-shadow:0 24px 80px rgb(20 32 25 / .16);transform-origin:0 0}
+#page *,#planner-layer *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+#page .site-header{position:absolute;--nav-progress:0!important}
+#page .hero{height:1080px;min-height:1080px}
+#page .hero__image{opacity:1}
+#page img{opacity:1}
+#page .journey,#page .journey__pin{height:1080px;min-height:1080px;max-height:1080px}
+#page .journey__pin{position:relative!important;inset:auto!important;width:1920px!important;padding:0!important;margin:0!important}
+#page .journey__scene:not(:first-child){opacity:0}
+#page .journey__topline{opacity:1}
+#page .featured__panel .featured__copy>*{opacity:1;transform:none}
+#page .featured__panel{visibility:visible;opacity:0}
+#page .featured__panel:first-child{opacity:1}
+#page .areas__images img:not([data-active=true]){opacity:0}
+#page .areas__panel{position:relative}
+#page .area-change{position:absolute;inset:0;opacity:0}
+#page .stay-modes__media .theme-image:not([data-active=true]){opacity:0}
+#page .stays__slide .stay-card{transform:none}
+#planner-layer{position:absolute;inset:0;visibility:hidden;opacity:0}
+#planner-shade{position:absolute;inset:0;background:rgb(15 25 19 / .3);backdrop-filter:blur(8px)}
+#planner-plane{position:absolute;inset:0;transform-origin:50% 60%}
+#planner-plane .booking-drawer{position:absolute;inset:48px 96px;width:1728px;height:984px;max-height:none;margin:0}
+#cursor{position:absolute;left:0;top:0;width:32px;height:36px;opacity:0;pointer-events:none;z-index:250;transform-origin:8px 8px;filter:drop-shadow(0 2px 3px rgb(0 0 0 / .22))}
+#cursor svg{width:32px;height:36px;fill:#fff;stroke:#142019;stroke-width:1.6}
+#cursor i{position:absolute;left:-8px;top:-8px;width:32px;height:32px;border:2px solid #29483a;border-radius:50%;opacity:0}
+#ui{display:none;position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:500;align-items:center;gap:16px;padding:12px 16px;background:#142019;color:white;border-radius:16px;font:14px Manrope,sans-serif}
+#ui.on{display:flex}#ui button{border:0;padding:8px 12px;border-radius:8px;background:#29483a;color:white;font:inherit}
+#scrub{width:360px;accent-color:#6f8d72}#clock{font-variant-numeric:tabular-nums;min-width:6ch}

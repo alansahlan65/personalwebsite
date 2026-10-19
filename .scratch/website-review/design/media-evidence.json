@@ -1,0 +1,30 @@
+[
+  {
+    "route": "aurelia",
+    "y": 2179.5,
+    "travel": 2688,
+    "horizontal": "true",
+    "panels": 3
+  },
+  {
+    "route": "paylecta",
+    "y": 2678.9375,
+    "travel": 2688,
+    "horizontal": "true",
+    "panels": 3
+  },
+  {
+    "route": "pawfriend",
+    "y": 2462.28125,
+    "travel": 2688,
+    "horizontal": "true",
+    "panels": 3
+  },
+  {
+    "route": "munchpal",
+    "y": 2387.671875,
+    "travel": 4032,
+    "horizontal": "true",
+    "panels": 4
+  }
+]

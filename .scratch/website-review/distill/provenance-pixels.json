@@ -1,0 +1,88 @@
+[
+  {
+    "path": "app/opengraph-image.jpg",
+    "backup": ".scratch/website-review/distill/origin-backups/app-opengraph-image.jpg",
+    "promptPath": ".scratch/website-review/distill/origin-backups/app-opengraph-image.jpg.txt",
+    "origin": {
+      "source": [
+        "public/images/alan-portrait.webp",
+        "public/images/alan-logo.png"
+      ],
+      "preparation": "1200 x 630 site share card rendered from Alan's supplied portrait and original AS mark, with portfolio identity text, using .scratch/portfolio-halyard/generate-ticket-12-social.py",
+      "date": "2026-09-28",
+      "bytes": 91011,
+      "sha256": "ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d"
+    },
+    "prompt": "Source origin. {\"source\":[\"public/images/alan-portrait.webp\",\"public/images/alan-logo.png\"],\"preparation\":\"1200 x 630 site share card rendered from Alan's supplied portrait and original AS mark, with portfolio identity text, using .scratch/portfolio-halyard/generate-ticket-12-social.py\",\"date\":\"2026-09-28\",\"bytes\":91011,\"sha256\":\"ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d\"}",
+    "originalFileSha256": "ba64d43e3a1c633a424c1798af278ecd5db7a833c2c07401fb05bf82dfc22e3d",
+    "decodedPixelsSha256": "8c311f91c7955f2bfff94abd5783ef432490b68fdc384036a54d5b41e436e167",
+    "currentFileSha256": "6304fa66dc66fe162b67fa721debf90b6c1d94f6825111b86407860c4a2836fb",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "app/work/aurelia/opengraph-image.jpg",
+    "backup": ".scratch/website-review/distill/origin-backups/app-work-aurelia-opengraph-image.jpg",
+    "promptPath": ".scratch/website-review/distill/origin-backups/app-work-aurelia-opengraph-image.jpg.txt",
+    "origin": {
+      "source": "public/images/aurelia-interface.webp",
+      "preparation": "1200 x 630 top-aligned crop of the inspected live Aurelia concept screenshot, rendered with .scratch/portfolio-halyard/generate-ticket-12-social.py",
+      "date": "2026-09-28",
+      "bytes": 124628,
+      "sha256": "5f169ebbd21c881b5907de05e77474ccf68a29d1b24f8a0a93e7c7df01caaa56",
+      "limit": "The screenshot shows a concept interface; it does not establish live booking inventory or outcomes. Alan confirmed permission to display the underlying generated imagery."
+    },
+    "prompt": "Source origin. {\"source\":\"public/images/aurelia-interface.webp\",\"preparation\":\"1200 x 630 top-aligned crop of the inspected live Aurelia concept screenshot, rendered with .scratch/portfolio-halyard/generate-ticket-12-social.py\",\"date\":\"2026-09-28\",\"bytes\":124628,\"sha256\":\"5f169ebbd21c881b5907de05e77474ccf68a29d1b24f8a0a93e7c7df01caaa56\",\"limit\":\"The screenshot shows a concept interface; it does not establish live booking inventory or outcomes. Alan confirmed permission to display the underlying generated imagery.\"}",
+    "originalFileSha256": "5f169ebbd21c881b5907de05e77474ccf68a29d1b24f8a0a93e7c7df01caaa56",
+    "decodedPixelsSha256": "365961de4cc39b5f17c1e0d5c6200eda0a56f6fc4104db7950f8940cfea69c90",
+    "currentFileSha256": "ed4e36d9ef3f93731c38ecd34d661e9049a9d54d666b432c5670ebe2f587517b",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "app/work/pawfriend/opengraph-image.jpg",
+    "backup": ".scratch/website-review/distill/origin-backups/app-work-pawfriend-opengraph-image.jpg",
+    "promptPath": ".scratch/website-review/distill/origin-backups/app-work-pawfriend-opengraph-image.jpg.txt",
+    "origin": {
+      "source": "https://pawfriend-topaz.vercel.app/",
+      "captured_on": "2026-09-27",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "browser": "153.0.8010.12",
+      "evidence": "Observed live self-initiated concept with sample pet profiles. No real shelter availability, adoption outcome, historical testing or original image rights established.",
+      "source_capture_sha256": "3f6da0f53c72a40a21f8314b17b17373ef2a98d61b186ea658e4a724b149bf3e",
+      "state": "Initial live concept hero",
+      "width": 1440,
+      "height": 900,
+      "preparation": "Full browser viewport screenshot encoded as JPEG quality 88 for the Next.js static social image.",
+      "original_imagery": "The original project repository documents generated hero and resident portraits. Pet profiles are local sample content, not verified shelter animals.",
+      "source_repository": "https://github.com/alansahlan65/pawfriend"
+    },
+    "prompt": "Source origin. {\"source\":\"https://pawfriend-topaz.vercel.app/\",\"captured_on\":\"2026-09-27\",\"viewport\":{\"width\":1440,\"height\":900},\"browser\":\"153.0.8010.12\",\"evidence\":\"Observed live self-initiated concept with sample pet profiles. No real shelter availability, adoption outcome, historical testing or original image rights established.\",\"source_capture_sha256\":\"3f6da0f53c72a40a21f8314b17b17373ef2a98d61b186ea658e4a724b149bf3e\",\"state\":\"Initial live concept hero\",\"width\":1440,\"height\":900,\"preparation\":\"Full browser viewport screenshot encoded as JPEG quality 88 for the Next.js static social image.\",\"original_imagery\":\"The original project repository documents generated hero and resident portraits. Pet profiles are local sample content, not verified shelter animals.\",\"source_repository\":\"https://github.com/alansahlan65/pawfriend\"}",
+    "originalFileSha256": "74c00f6b06c0ff54b783032de069531123112bdbf2713589d903e0bfe3e6df57",
+    "decodedPixelsSha256": "a0fdf70fe7e804043d629ee3eaf2b6afb29fb4315154b0a2171596443d9ad1b4",
+    "currentFileSha256": "e0e8467344dc411aa22292b4b8d12916c04718e02312777a90a65c73d2b07b10",
+    "pixelsUnchanged": true
+  },
+  {
+    "path": "app/work/paylecta/opengraph-image.jpg",
+    "backup": ".scratch/website-review/distill/origin-backups/app-work-paylecta-opengraph-image.jpg",
+    "promptPath": ".scratch/website-review/distill/origin-backups/app-work-paylecta-opengraph-image.jpg.txt",
+    "origin": {
+      "source": "https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view",
+      "source_sha256": "6697c699c5287241786a21b60cdd119f609c12b6dfbff9a0d13dd447bdbff92c",
+      "pdf_page": 1,
+      "project_date": "June 2025",
+      "verified_on": "2026-09-27",
+      "width": 1402,
+      "height": 1081,
+      "preparation": "Full original PDF cover, encoded as JPEG quality 90 for the Next.js file-based social preview. No crop or synthetic edits.",
+      "evidence": "Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes."
+    },
+    "prompt": "Source origin. {\"source\":\"https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view\",\"source_sha256\":\"6697c699c5287241786a21b60cdd119f609c12b6dfbff9a0d13dd447bdbff92c\",\"pdf_page\":1,\"project_date\":\"June 2025\",\"verified_on\":\"2026-09-27\",\"width\":1402,\"height\":1081,\"preparation\":\"Full original PDF cover, encoded as JPEG quality 90 for the Next.js file-based social preview. No crop or synthetic edits.\",\"evidence\":\"Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes.\"}",
+    "originalFileSha256": "e264d5ebb0d3b4e0d90dc0c47b682a410f49c58397a22a08dff794d7c3cd4bea",
+    "decodedPixelsSha256": "9f95080a3264fcadd282e7197f9ca400930c8483e8d467b8d7905796528d90f5",
+    "currentFileSha256": "808665621d7ed96c6c6aa9b7fcc18e9ba081ee497d2324fa668ddba70ef6a304",
+    "pixelsUnchanged": true
+  }
+]

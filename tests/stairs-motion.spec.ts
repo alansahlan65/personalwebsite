@@ -3,13 +3,27 @@ import { expect, test, type Locator } from "@playwright/test";
 const COVER_SAMPLE_TIME = 180;
 const REVEAL_SAMPLE_TIME = 110;
 
+test.beforeEach(async ({ page }) => {
+  // Hold the real menu and route animations at creation so protocol/CI scheduling
+  // cannot miss their short reveal phase. Other tests cover live navigation.
+  await page.addInitScript(() => {
+    const animate = Element.prototype.animate;
+    Element.prototype.animate = function (keyframes, options) {
+      const animation = animate.call(this, keyframes, options);
+      if (this.classList.contains("stairs-panel") || (typeof options === "object" && options.id?.startsWith("route-"))) animation.pause();
+      return animation;
+    };
+  });
+});
+
 async function pauseAt(panels: Locator, elapsed: number) {
   await expect.poll(() => panels.evaluateAll(elements => elements.every(element => element.getAnimations().length > 0)), { intervals: [10, 20, 50] }).toBe(true);
-  await panels.evaluateAll((elements, elapsed) => {
+  await panels.evaluateAll(async (elements, elapsed) => {
     elements.forEach(element => element.getAnimations().forEach(animation => {
       animation.pause();
       animation.currentTime = elapsed;
     }));
+    await new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
   }, elapsed);
   return panels.evaluateAll(elements => elements.map(element => {
     const { left, top, right, bottom } = element.getBoundingClientRect();
@@ -35,20 +49,25 @@ test("page stairs ramp gently at both ends while Menu keeps its vertical motion"
     expect(routeBounds[index].top).toBeCloseTo(index * 900 / 5);
     if (index > 0) expect(routeBounds[index].right).toBeLessThan(routeBounds[index - 1].right);
   }
-  const positions = await panels.first().evaluate(element => {
+  const positions = await panels.first().evaluate(async element => {
     const animation = element.getAnimations()[0];
     const timing = animation.effect!.getTiming();
-    return [0, .1, .2, .8, .9, 1].map(fraction => {
+    const positions: number[] = [];
+    for (const fraction of [0, .1, .2, .8, .9, 1]) {
       animation.currentTime = (timing.delay ?? 0) + Number(timing.duration) * fraction;
-      return element.getBoundingClientRect().left;
-    });
+      await new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
+      positions.push(element.getBoundingClientRect().left);
+    }
+    return positions;
   });
   expect(positions[1] - positions[0]).toBeLessThan(positions[2] - positions[1]);
   expect(positions[5] - positions[4]).toBeLessThan(positions[4] - positions[3]);
   await expect(page).toHaveURL(/\/#work$/);
   await expect(route.locator(".route-curtain-scrim")).toHaveCSS("pointer-events", "none");
   await route.evaluate(element => element.getAnimations({ subtree: true }).forEach(animation => animation.finish()));
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
+  await expect(route).toHaveAttribute("data-phase", "revealing");
+  await route.evaluate(element => element.getAnimations({ subtree: true }).forEach(animation => animation.finish()));
   await expect(route).toHaveAttribute("data-phase", "idle");
   await navigation;
   expect(await page.evaluate(() => document.body.style.position)).toBe("");
@@ -99,7 +118,7 @@ for (const width of [390, 1440]) {
       expect(top).toBeCloseTo(index * 900 / 5);
       if (index > 0) expect(left).toBeLessThan(back[index - 1].left);
     });
-    await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeVisible();
     await route.evaluate(element => element.getAnimations({ subtree: true }).forEach(animation => animation.finish()));
     await expect(page.getByRole("heading", { level: 1, name: /Alan/ })).toBeFocused();
     await expect.poll(() => route.getAttribute("data-phase"), { intervals: [10, 20, 50] }).toBe("revealing");

@@ -1,30 +1,41 @@
 # Alan Sahlan portfolio
 
-Next.js, React, and TypeScript implementation of the approved portfolio specification.
+A responsive portfolio for Alan Sahlan, a Product Designer in Indonesia and UI/UX Designer at CADIT. The site includes Home, About, Contact, and case studies for Aurelia, Paylecta, PawFriend, and Munchpal.
 
-## Local development
+Reviewed against the working tree on 19 October 2026.
 
-Install dependencies with `npm ci`, then run `npm run dev`. Open http://127.0.0.1:3000.
+## Run locally
+
+Use Node.js 20.9 or newer and npm. Install the locked dependencies with `npm ci`, then run `npm run dev`. The preview is at http://127.0.0.1:3000.
+
+```sh
+npm ci
+npm run dev
+```
+
+For a production preview, run `npm run build` followed by `npm start`. Exact dependency versions and commands live in [package.json](package.json) and [package-lock.json](package-lock.json).
 
 ## Checks
 
-- `npm run typecheck`
-- `npm run lint`
-- `npm run build`
-- `npx playwright install chromium` once, then `npm test`
+```sh
+npm run typecheck
+npm run lint
+npm test
+npm run build
+```
 
-Browser tests start the development server automatically when one is not already running. They exercise visible identity, section navigation, keyboard skip navigation, responsive overflow, media readiness, reduced motion, and enlarged text.
+Playwright uses Chromium and starts or reuses the local server on port 3000. Install its browser with `npx playwright install chromium` when needed. The [manual About browser configuration](playwright.about-engines.config.ts) also supports Firefox and WebKit. See [quality and release checks](docs/quality.md) for the latest measured results and coverage limits.
 
-## Current scope
+## Current implementation
 
-Ticket 01 provides the responsive homepage foundation. Ticket 02 adds the About route, email contact action, and confirmed professional links. Ticket 03 adds the full-to-compact header and Sliding Stairs Menu with keyboard, touch, and reduced-motion behavior. Ticket 04 adds the Aurelia gallery preview and case-study introduction, using a screenshot of the live self-initiated concept. Ticket 05 adds Motion spring feedback on current actions and the image-inverting cursor, with stable keyboard, touch, and preference fallbacks. See [the interaction inventory](docs/pointer-interactions.md). Ticket 06 connects Aurelia's preview and hero through a shared-image entry, while keeping native links and fallback navigation. See [project entry](docs/project-entry.md). Ticket 07 adds scroll-linked role tracks with licensed decorative landscape capsules and verifies the integrated navigation/project journey. See [role parallax](docs/role-parallax.md). Ticket 08 completes the Aurelia decision-led reading sequence with three authentic workflow panels, desktop scroll progress/skip, equivalent stacked media, and an observed live-flow recording. See [case media](docs/case-media.md). A current resume and factual About detail on product-problem approach and developer collaboration remain pending. Later tickets implement the other project routes and remaining interaction systems. See [content sources](docs/portfolio-content.md).
+Next.js App Router and React render static portfolio content; local client components provide Motion interactions. Plus Jakarta Sans is bundled as WOFF2. Light is the default, with a stored dark-theme preference. Native links, keyboard controls, reduced-motion behavior, and complete reading fallbacks support the enhanced interface.
 
-Halyard web-font delivery is still missing. The current neutral fallback is temporary; do not treat the font requirement as complete. The approved composition image also needs to be supplied for direct visual comparison. See [asset record](docs/assets.md).
+The case studies retain original design evidence and distinguish client work, self-initiated concepts, and later portfolio motion studies. Aurelia uses a browser composition; Paylecta and Munchpal use rendered video openers. Contact prepares an email draft to the verified address and offers copy recovery. The current PDF resume is available throughout the site.
 
-The development preview is marked noindex until release acceptance. The default framework not-found screen is temporary; ticket 12 provides the portfolio-specific recovery experience.
+A new [40-second MunchPal HyperFrames opener](public/demos/munchpal-opener/README.md) is available for browser review alongside the current website video.
 
-Requirements are in [the PRD](portfolio-prd-halyard.md), [the spec](.scratch/portfolio-halyard/spec.md), and [the implementation tickets](.scratch/portfolio-halyard/issues).
+## Documentation
 
-## UI polish
+Start at [the documentation index](docs/README.md). [PRODUCT.md](PRODUCT.md) owns product commitments, [DESIGN.md](DESIGN.md) owns the visual system, [CONTEXT.md](CONTEXT.md) defines domain terms, and [AGENTS.md](AGENTS.md) gives contributor instructions. The [PRD](portfolio-prd-halyard.md) retains the requirements entry point under its existing filename.
 
-The all-page better-ui pass adds shared vector icons, contextual menu state feedback, stable press visuals, consistent image outlines, and refined floating controls. See [the UI review and verification](docs/ui-polish.md).
+Choose a public origin and set `SITE_ORIGIN` for the production build before publishing. Preview metadata currently uses `noindex`; publication and external delivery remain separate from local validation.

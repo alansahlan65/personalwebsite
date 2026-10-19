@@ -1,0 +1,185 @@
+{
+  "hashes": [
+    "5d1f9b63780d5646472a6a26d39d27e4ad8279fcc5443c109ec012104d1437ad",
+    "15513a5e6fe35955c3168ab6631c5dc0d1b714c3a88ae2a474d575018dcaa2ef",
+    "b7500d0cfa4995fed4b201b2695ccd1cf659ad380155f3e5e22b906e054f77e9",
+    "15513a5e6fe35955c3168ab6631c5dc0d1b714c3a88ae2a474d575018dcaa2ef",
+    "b7500d0cfa4995fed4b201b2695ccd1cf659ad380155f3e5e22b906e054f77e9",
+    "40961d03d16ffb956d17b191e595f30d04b7ad32e7cc79e70b0d5b3dc235d6a8"
+  ],
+  "repeatMatches": false,
+  "diff": [
+    {
+      "before": {
+        "id": "mb2_blur",
+        "style": null,
+        "blur": "0 0"
+      },
+      "after": {
+        "id": "mb2_blur",
+        "style": null,
+        "blur": "0.70 7.00"
+      }
+    },
+    {
+      "before": {
+        "id": "mb3_blur",
+        "style": null,
+        "blur": "0 0"
+      },
+      "after": {
+        "id": "mb3_blur",
+        "style": null,
+        "blur": "0.00 0.00"
+      }
+    },
+    {
+      "before": {
+        "id": "mb4_blur",
+        "style": null,
+        "blur": "0 0"
+      },
+      "after": {
+        "id": "mb4_blur",
+        "style": null,
+        "blur": "7.00 0.56"
+      }
+    },
+    {
+      "before": {
+        "id": "ask",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "ask",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px);",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "dialog",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "dialog",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 0; visibility: hidden;",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "yes",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "yes",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px);",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "success",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "success",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 0; visibility: hidden;",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "accepted-card",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "accepted-card",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 0; visibility: hidden;",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "message-action",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "message-action",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px);",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "handoff",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "handoff",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 0; visibility: hidden;",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "chat-window",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "chat-window",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 0; visibility: hidden;",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "m1",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "m1",
+        "style": "translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 0; visibility: hidden;",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "c2",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "c2",
+        "style": "opacity: 0; visibility: hidden; filter: none; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);",
+        "blur": null
+      }
+    },
+    {
+      "before": {
+        "id": "c3",
+        "style": null,
+        "blur": null
+      },
+      "after": {
+        "id": "c3",
+        "style": "opacity: 0; visibility: hidden; filter: none;",
+        "blur": null
+      }
+    }
+  ],
+  "end": {
+    "time": 0.083,
+    "paused": false
+  }
+}

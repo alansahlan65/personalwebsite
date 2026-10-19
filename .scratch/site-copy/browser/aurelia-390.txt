@@ -1,0 +1,101 @@
+Back to selected work
+Aurelia
+
+A Bali stay finder built around the trip you want.
+
+Project
+Self-initiated hospitality concept
+My role
+Solo design direction and AI-assisted build
+Scope
+Browse, compare and request a stay
+
+I designed and built a stay finder that pairs trip preferences with location, then carries selected dates into a stay request.
+
+View the live Aurelia concept
+Skip to implementation notes 
+Inside the concept
+01
+Empty results
+02
+Stay details
+03
+Stay request
+Give empty results an exit
+
+Trip type and area narrow the stay list. When a combination has no matches, Show all ten stays resets both filters.
+
+Scroll sideways for detail.
+
+View source image
+Compare without starting over
+
+Stay details open beside the photographs, so closing the overlay returns visitors to the same list. Wi-Fi guidance asks guests to confirm speed and coverage before planning remote work.
+
+Scroll sideways for detail.
+
+View source image
+Keep dates editable
+
+Dates stay editable and the request summary stays visible through each step. Availability and final pricing require confirmation.
+
+View source image
+Build notes and recording
+Back to selected work
+
+--- Expanded detail ---
+
+Back to selected work
+Aurelia
+
+A Bali stay finder built around the trip you want.
+
+Project
+Self-initiated hospitality concept
+My role
+Solo design direction and AI-assisted build
+Scope
+Browse, compare and request a stay
+
+I designed and built a stay finder that pairs trip preferences with location, then carries selected dates into a stay request.
+
+View the live Aurelia concept
+Skip to implementation notes 
+Inside the concept
+01
+Empty results
+02
+Stay details
+03
+Stay request
+Give empty results an exit
+
+Trip type and area narrow the stay list. When a combination has no matches, Show all ten stays resets both filters.
+
+Scroll sideways for detail.
+
+View source image
+Open filters screenshot
+Compare without starting over
+
+Stay details open beside the photographs, so closing the overlay returns visitors to the same list. Wi-Fi guidance asks guests to confirm speed and coverage before planning remote work.
+
+Scroll sideways for detail.
+
+View source image
+Open details screenshot
+Keep dates editable
+
+Dates stay editable and the request summary stays visible through each step. Availability and final pricing require confirmation.
+
+View source image
+Open request screenshot
+Build notes and recording
+
+The concept uses sample stays and AI-generated imagery. The request form keeps entered dates when going back and has no connected submission service.
+
+Explore the Aurelia Figma designs
+
+The recording follows filters, Wi-Fi details and an editable stay request.
+
+Back to selected work

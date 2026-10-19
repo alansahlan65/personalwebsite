@@ -1,0 +1,47 @@
+{
+  ".about-page-intro p": {
+    "text": "I’m Alan, a UI/UX Designer at an IT consulting company, based in Indonesia.",
+    "characters": 75,
+    "fontSize": "48.96px",
+    "lineHeight": "61.2px",
+    "lineRatio": 1.25,
+    "boxWidth": 900,
+    "textWidth": 833.21875,
+    "lineRects": [
+      {
+        "width": 718.203125,
+        "height": 54,
+        "x": 72,
+        "y": 441.53125
+      },
+      {
+        "width": 833.21875,
+        "height": 54,
+        "x": 72,
+        "y": 502.71875
+      }
+    ]
+  },
+  ".preview-note": {
+    "text": "Development preview. Resume, typography, and remaining interactions are in progress.",
+    "characters": 84,
+    "fontSize": "12px",
+    "lineHeight": "18px",
+    "lineRatio": 1.5,
+    "boxWidth": 1296,
+    "textWidth": 465.359375,
+    "lineRects": [
+      {
+        "width": 465.359375,
+        "height": 14,
+        "x": 72,
+        "y": 1868.4375
+      }
+    ]
+  },
+  "rootStyle": {
+    "foreground": "rgb(32, 34, 31)",
+    "background": "rgba(0, 0, 0, 0)",
+    "footerBackground": "rgb(36, 91, 255)"
+  }
+}

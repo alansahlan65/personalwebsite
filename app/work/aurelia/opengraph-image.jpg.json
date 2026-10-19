@@ -4,5 +4,13 @@
   "date": "2026-09-28",
   "bytes": 124628,
   "sha256": "5f169ebbd21c881b5907de05e77474ccf68a29d1b24f8a0a93e7c7df01caaa56",
-  "limit": "The screenshot shows a concept interface; it does not establish live booking inventory or outcomes. Alan confirmed permission to display the underlying generated imagery."
+  "limit": "The screenshot shows a concept interface; it does not establish live booking inventory or outcomes. Alan confirmed permission to display the underlying generated imagery.",
+  "prompt": "Source origin. {\"source\":\"public/images/aurelia-interface.webp\",\"preparation\":\"1200 x 630 top-aligned crop of the inspected live Aurelia concept screenshot, rendered with .scratch/portfolio-halyard/generate-ticket-12-social.py\",\"date\":\"2026-09-28\",\"bytes\":124628,\"sha256\":\"5f169ebbd21c881b5907de05e77474ccf68a29d1b24f8a0a93e7c7df01caaa56\",\"limit\":\"The screenshot shows a concept interface; it does not establish live booking inventory or outcomes. Alan confirmed permission to display the underlying generated imagery.\"}",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "5f169ebbd21c881b5907de05e77474ccf68a29d1b24f8a0a93e7c7df01caaa56",
+    "current_file_sha256": "ed4e36d9ef3f93731c38ecd34d661e9049a9d54d666b432c5670ebe2f587517b",
+    "decoded_pixel_sha256": "365961de4cc39b5f17c1e0d5c6200eda0a56f6fc4104db7950f8940cfea69c90",
+    "pixels_unchanged": true
+  }
 }

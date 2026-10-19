@@ -1,0 +1,37 @@
+# Notes for the next case-study pass
+
+Start with one Munchpal design decision you remember and can support. Rough notes are enough. If another project has better records, use that project first.
+
+## The decision
+
+What task was the person trying to complete? What problem, observation, or client request led you to change the design?
+
+Write your notes here. 
+
+## The alternative
+
+What other approach did you consider? Why did you choose the final approach? Include any time, technical, or client constraint.
+
+Write your notes here.
+
+## The revision
+
+What did a participant or client say or do? What did you change after that feedback?
+
+If you do not have testing notes, say so. Describe the design rationale you can support.
+
+Write your notes here.
+
+## The evidence
+
+Name one original artifact that shows the decision or change, such as a Figma version, interview note, client revision, or before-and-after screen. Include its file or link and where to look.
+
+Write your notes here.
+
+## What remains unknown
+
+What was not measured? What would you test next?
+
+Write your notes here.
+
+These notes will support one specific decision story in the case study. Use recorded numbers and quotes only when the original records support them.

@@ -1,0 +1,43 @@
+{
+  "variant": "transition",
+  "standalone": false,
+  "viewport": {
+    "x": 72,
+    "y": 576.890625,
+    "width": 1296,
+    "height": 729
+  },
+  "shots": [
+    {
+      "label": "hero-to-gallery",
+      "sampledFrames": 534,
+      "lostFrames": 5,
+      "droppedPercent": 0.93,
+      "p95FrameMs": 16.8,
+      "renderer": {
+        "LayoutCount": 208,
+        "LayoutDuration": 0.0185,
+        "RecalcStyleCount": 538,
+        "RecalcStyleDuration": 0.145,
+        "ScriptDuration": 0.1635,
+        "TaskDuration": 0.8229
+      }
+    },
+    {
+      "label": "date-camera",
+      "sampledFrames": 239,
+      "lostFrames": 0,
+      "droppedPercent": 0,
+      "p95FrameMs": 16.7,
+      "renderer": {
+        "LayoutCount": 120,
+        "LayoutDuration": 0.0101,
+        "RecalcStyleCount": 243,
+        "RecalcStyleDuration": 0.0431,
+        "ScriptDuration": 0.0625,
+        "TaskDuration": 0.3252
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "image": "public/images/munchpal-cover.webp",
+    "original_pixels_unchanged": true
+  },
+  {
+    "image": "public/images/munchpal-flow.webp",
+    "original_pixels_unchanged": true
+  },
+  {
+    "image": "public/images/munchpal-home.webp",
+    "original_pixels_unchanged": true
+  },
+  {
+    "image": "public/images/munchpal-feedback.webp",
+    "original_pixels_unchanged": true
+  },
+  {
+    "image": "app/work/munchpal/opengraph-image.jpg",
+    "original_pixels_unchanged": true
+  }
+]

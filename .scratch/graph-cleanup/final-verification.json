@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-11",
+  "productionBuild": "passed",
+  "lint": "passed",
+  "typecheck": "passed",
+  "whitespaceCheck": "passed",
+  "browser": {
+    "engine": "Chromium",
+    "originalCases": 318,
+    "initialPassed": 296,
+    "initialFailed": 22,
+    "isolatedUnchangedRerunPassed": 20,
+    "correctedHistoricalExpectationsPassed": 2,
+    "newTourRegressionsPassed": 6,
+    "totalCasesVerified": 324,
+    "remainingFailures": 0
+  },
+  "visual": {
+    "routes": 7,
+    "pairs": 28,
+    "differentPixels": 0,
+    "geometryChanges": 0,
+    "brokenImages": 0,
+    "overflow": 0,
+    "pageErrors": 0
+  },
+  "preservedFiles": {
+    "hashed": 244,
+    "unchanged": 242,
+    "deliberatelyCorrectedCode": [
+      "public/demos/munchpal/index.html",
+      "public/demos/paylecta/index.html"
+    ],
+    "missing": 0
+  },
+  "cleanup": {
+    "obsoleteOutputFilesRemoved": 1129,
+    "unusedComponentFilesRemoved": 2,
+    "obsoleteOutputBytesRemoved": 285345238,
+    "temporaryVerificationImagesRemoved": true
+  },
+  "graph": {
+    "nodes": 5310,
+    "links": 8533,
+    "brokenEdges": 0,
+    "missingSourceFiles": 0,
+    "offline": "passed"
+  },
+  "offlineTours": "passed"
+}

@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("Aurelia opens a compact banner into a wide banner without delaying navigation", async ({ page }) => {
+test("Aurelia grows its cover without delaying navigation", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   const row = page.locator(".project-row").first();
@@ -11,7 +11,7 @@ test("Aurelia opens a compact banner into a wide banner without delaying navigat
   await expect(row.getByRole("link")).toHaveCount(1);
   await expect(row.getByRole("heading", { name: "Aurelia" })).toBeVisible();
   await expect(row.getByText("Hospitality")).toBeVisible();
-  await expect.poll(() => row.locator(".project-banner-compact").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
+  await expect.poll(() => row.locator(".project-cover").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
   const rowBefore = await row.evaluate((element) => { const rect = element.getBoundingClientRect(); return { y: rect.y + window.scrollY, height: rect.height }; });
   const categoryBefore = await category.boundingBox();
   const compactWidth = await preview.evaluate((element) => element.getBoundingClientRect().width);
@@ -24,8 +24,8 @@ test("Aurelia opens a compact banner into a wide banner without delaying navigat
   expect(Math.abs(rowAfter!.y - rowBefore!.y)).toBeLessThan(2);
   expect(rowAfter!.height - rowBefore!.height).toBeGreaterThan(150);
   expect(Math.abs(categoryAfter!.x - categoryBefore!.x)).toBeLessThan(2);
-  await expect(row.locator(".project-banner-expanded")).toHaveCSS("opacity", "1");
-  await expect(row.locator(".project-banner-compact")).toHaveCSS("opacity", "0");
+  await expect(row.locator(".project-preview img")).toHaveCount(1);
+  await expect(row.locator(".project-description")).toBeVisible();
 
   await page.mouse.move(0, 0);
   await expect.poll(async () => Math.abs((await preview.evaluate((element) => element.getBoundingClientRect().width)) - compactWidth)).toBeLessThan(2);
@@ -73,10 +73,10 @@ test("Aurelia preview retargets on pointer movement and keyboard focus takes pre
 test("direct Aurelia visit has verified concept details and a working live destination", async ({ page }) => {
   await page.goto("/work/aurelia");
   await expect(page.getByRole("heading", { level: 1, name: "Aurelia" })).toBeVisible();
-  await expect(page.getByText("Independent product design and frontend build.", { exact: true })).toBeVisible();
-  await expect(page.getByText("None.", { exact: true })).toBeVisible();
-  await expect(page.getByText(/not a confirmed booking/)).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Design decisions" })).toBeVisible();
+  await expect(page.getByText("Solo design direction and AI-assisted build", { exact: true })).toBeVisible();
+  await expect(page.getByText("Self-initiated hospitality concept", { exact: true })).toBeVisible();
+  await expect(page.getByText(/Availability and final pricing require confirmation/)).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Aurelia website flow" })).toBeVisible();
   await expect(page.locator(".case-hero img")).toHaveJSProperty("complete", true);
   await expect.poll(() => page.locator(".case-hero img").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
   await expect(page.getByRole("link", { name: /View the live Aurelia concept/ })).toHaveAttribute("href", "https://aurelia.alansahlanwork.workers.dev/");

@@ -1,0 +1,22 @@
+{
+  "source": "OpenAI built-in Image Gen",
+  "intent": "edit",
+  "createdDate": "2026-10-01",
+  "prompt": "Edit target: image 1, the already generated front-facing full-body Alan voxel character. Image 2 is ONLY the reference for a friendly wave gesture. Change only Alan's right arm, on the viewer's LEFT: raise that hand into a friendly open-palm wave beside his head, five clear blocky fingers, arm bent naturally at the elbow. Keep the face exactly the same gentle smile, head exactly the same frontal direction, same hair, face, shirt, all remaining body anatomy, same muted material colors, same gray linen pants, and same ivory Adidas Samba shoes. Absolutely preserve the character's head, torso, hips, legs and shoes positions, sizes, alignment and lighting from image 1. Keep the other arm relaxed at his side. Identical portrait canvas and subject registration to image 1 so these two images can be used as matching animation poses. Maintain actual transparent alpha background. No background, no text, no speech bubble, no watermarks, full body and all shoes visible. This is a matched pose asset, not a new redesign of Alan.",
+  "references": [
+    {
+      "role": "edit target",
+      "path": "public/images/alan-character-default.png"
+    },
+    {
+      "role": "wave gesture reference",
+      "path": "C:/Users/DESKTO~1/AppData/Local/Temp/codex-clipboard-5db87371-1243-46e4-8ea4-0aec86b0fa4a.png"
+    }
+  ],
+  "original": "C:/Users/DESKTOP-IOT0021/.codex/generated_images/01a0f526-4b45-7362-a5c0-a545d2a9003d/exec-bcc12e1f-dbcf-4f04-a9b8-13d74aa26920.png",
+  "width": 1122,
+  "height": 1402,
+  "hasAlpha": true,
+  "preparation": "Copied without raster edits; alpha preserved.",
+  "shipping": "public/images/alan-character-wave.png"
+}

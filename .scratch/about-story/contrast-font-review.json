@@ -1,0 +1,75 @@
+{
+  "state": {
+    "color": "rgb(32, 34, 31)",
+    "background": "rgb(246, 245, 241)",
+    "rect": {
+      "top": 446.21875,
+      "bottom": 490.21875
+    },
+    "atCenter": "<span data-magnet-part=\"true\">View selected work</span>"
+  },
+  "audit": {
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span data-magnet-part=\"true\">View selected work</span>",
+            "target": [
+              "a[href$=\"/#work\"] > span[data-magnet-part=\"true\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          }
+        ]
+      }
+    ]
+  },
+  "fonts": {
+    "fonts": [
+      {
+        "familyName": "Plus Jakarta Sans",
+        "postScriptName": "PlusJakartaSans",
+        "isCustomFont": true,
+        "glyphCount": 76
+      }
+    ]
+  },
+  "contrast": {
+    "ink": 14.69,
+    "muted": 5.62,
+    "cobalt": 4.79
+  }
+}

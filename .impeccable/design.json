@@ -1,60 +1,539 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-25T01:50:47.694Z",
+  "generatedAt": "2026-10-19T00:00:00.000Z",
   "title": "Design System: Alan Sahlan portfolio",
   "extensions": {
-    "typographyMeta": {
-      "title": {
-        "purpose": "Project list title.",
-        "displayName": "Project name"
-      },
-      "display": {
-        "purpose": "Configured stack only. Halyard is required but has no web delivery; the current preview renders a development fallback.",
-        "displayName": "Name"
-      },
-      "body": {
-        "purpose": "Inherited configured family. The fallback is not approved typography.",
-        "displayName": "Interface text"
-      },
-      "headline": {
-        "purpose": "Static three-line practice display.",
-        "displayName": "Practice lines"
-      },
-      "label": {
-        "purpose": "Small section headings.",
-        "displayName": "Section label"
-      }
-    },
     "colorMeta": {
-      "muted": {
-        "role": "neutral",
-        "displayName": "Muted text"
-      },
       "canvas": {
         "role": "neutral",
-        "displayName": "Warm off-white"
-      },
-      "divider": {
-        "role": "neutral",
-        "displayName": "Thin divider"
+        "displayName": "Warm off-white",
+        "tonalRamp": [
+          "oklch(0.1500 0.0054 95.10)",
+          "oklch(0.2643 0.0054 95.10)",
+          "oklch(0.3786 0.0054 95.10)",
+          "oklch(0.4929 0.0054 95.10)",
+          "oklch(0.6071 0.0054 95.10)",
+          "oklch(0.7214 0.0054 95.10)",
+          "oklch(0.8357 0.0054 95.10)",
+          "oklch(0.9500 0.0054 95.10)"
+        ],
+        "canonical": "#f6f5f1"
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Charcoal"
+        "displayName": "Charcoal",
+        "tonalRamp": [
+          "oklch(0.1500 0.0063 134.95)",
+          "oklch(0.2643 0.0063 134.95)",
+          "oklch(0.3786 0.0063 134.95)",
+          "oklch(0.4929 0.0063 134.95)",
+          "oklch(0.6071 0.0063 134.95)",
+          "oklch(0.7214 0.0063 134.95)",
+          "oklch(0.8357 0.0063 134.95)",
+          "oklch(0.9500 0.0063 134.95)"
+        ],
+        "canonical": "#20221f"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted text",
+        "tonalRamp": [
+          "oklch(0.1500 0.0062 106.63)",
+          "oklch(0.2643 0.0062 106.63)",
+          "oklch(0.3786 0.0062 106.63)",
+          "oklch(0.4929 0.0062 106.63)",
+          "oklch(0.6071 0.0062 106.63)",
+          "oklch(0.7214 0.0062 106.63)",
+          "oklch(0.8357 0.0062 106.63)",
+          "oklch(0.9500 0.0062 106.63)"
+        ],
+        "canonical": "#62625e"
       },
       "cobalt": {
         "role": "primary",
-        "displayName": "Cobalt"
+        "displayName": "Cobalt",
+        "tonalRamp": [
+          "oklch(0.1500 0.2491 264.64)",
+          "oklch(0.2643 0.2491 264.64)",
+          "oklch(0.3786 0.2491 264.64)",
+          "oklch(0.4929 0.2491 264.64)",
+          "oklch(0.6071 0.2491 264.64)",
+          "oklch(0.7214 0.2491 264.64)",
+          "oklch(0.8357 0.2491 264.64)",
+          "oklch(0.9500 0.2491 264.64)"
+        ],
+        "canonical": "#245bff"
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Thin divider",
+        "tonalRamp": [
+          "oklch(0.1500 0.0108 106.62)",
+          "oklch(0.2643 0.0108 106.62)",
+          "oklch(0.3786 0.0108 106.62)",
+          "oklch(0.4929 0.0108 106.62)",
+          "oklch(0.6071 0.0108 106.62)",
+          "oklch(0.7214 0.0108 106.62)",
+          "oklch(0.8357 0.0108 106.62)",
+          "oklch(0.9500 0.0108 106.62)"
+        ],
+        "canonical": "#ddddd5"
+      },
+      "field-surface": {
+        "role": "neutral",
+        "displayName": "White field",
+        "tonalRamp": [
+          "oklch(0.1500 0.0000 89.88)",
+          "oklch(0.2643 0.0000 89.88)",
+          "oklch(0.3786 0.0000 89.88)",
+          "oklch(0.4929 0.0000 89.88)",
+          "oklch(0.6071 0.0000 89.88)",
+          "oklch(0.7214 0.0000 89.88)",
+          "oklch(0.8357 0.0000 89.88)",
+          "oklch(0.9500 0.0000 89.88)"
+        ],
+        "canonical": "#fff"
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Validation error",
+        "tonalRamp": [
+          "oklch(0.1500 0.1629 32.19)",
+          "oklch(0.2643 0.1629 32.19)",
+          "oklch(0.3786 0.1629 32.19)",
+          "oklch(0.4929 0.1629 32.19)",
+          "oklch(0.6071 0.1629 32.19)",
+          "oklch(0.7214 0.1629 32.19)",
+          "oklch(0.8357 0.1629 32.19)",
+          "oklch(0.9500 0.1629 32.19)"
+        ],
+        "canonical": "#ad321d"
+      },
+      "cobalt-hover": {
+        "role": "primary",
+        "displayName": "Contact hover",
+        "tonalRamp": [
+          "oklch(0.1500 0.2275 264.32)",
+          "oklch(0.2643 0.2275 264.32)",
+          "oklch(0.3786 0.2275 264.32)",
+          "oklch(0.4929 0.2275 264.32)",
+          "oklch(0.6071 0.2275 264.32)",
+          "oklch(0.7214 0.2275 264.32)",
+          "oklch(0.8357 0.2275 264.32)",
+          "oklch(0.9500 0.2275 264.32)"
+        ],
+        "canonical": "#1749db"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Subdued neutral",
+        "canonical": "#f0efe9",
+        "tonalRamp": [
+          "oklch(0.1500 0.0080 98.88)",
+          "oklch(0.2643 0.0080 98.88)",
+          "oklch(0.3786 0.0080 98.88)",
+          "oklch(0.4929 0.0080 98.88)",
+          "oklch(0.6071 0.0080 98.88)",
+          "oklch(0.7214 0.0080 98.88)",
+          "oklch(0.8357 0.0080 98.88)",
+          "oklch(0.9500 0.0080 98.88)"
+        ]
+      },
+      "accent-solid": {
+        "role": "primary",
+        "displayName": "Solid cobalt action",
+        "canonical": "#245bff",
+        "tonalRamp": [
+          "oklch(0.1500 0.2491 264.64)",
+          "oklch(0.2643 0.2491 264.64)",
+          "oklch(0.3786 0.2491 264.64)",
+          "oklch(0.4929 0.2491 264.64)",
+          "oklch(0.6071 0.2491 264.64)",
+          "oklch(0.7214 0.2491 264.64)",
+          "oklch(0.8357 0.2491 264.64)",
+          "oklch(0.9500 0.2491 264.64)"
+        ]
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "White on cobalt",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(0.1500 0.0000 89.88)",
+          "oklch(0.2643 0.0000 89.88)",
+          "oklch(0.3786 0.0000 89.88)",
+          "oklch(0.4929 0.0000 89.88)",
+          "oklch(0.6071 0.0000 89.88)",
+          "oklch(0.7214 0.0000 89.88)",
+          "oklch(0.8357 0.0000 89.88)",
+          "oklch(0.9500 0.0000 89.88)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Raised neutral",
+        "canonical": "#fffefa",
+        "tonalRamp": [
+          "oklch(0.1500 0.0054 95.10)",
+          "oklch(0.2643 0.0054 95.10)",
+          "oklch(0.3786 0.0054 95.10)",
+          "oklch(0.4929 0.0054 95.10)",
+          "oklch(0.6071 0.0054 95.10)",
+          "oklch(0.7214 0.0054 95.10)",
+          "oklch(0.8357 0.0054 95.10)",
+          "oklch(0.9500 0.0054 95.10)"
+        ]
+      },
+      "surface-accent": {
+        "role": "primary",
+        "displayName": "Soft cobalt support",
+        "canonical": "color-mix(in srgb, var(--cobalt) 6%, var(--surface-raised) 94%)",
+        "tonalRamp": [
+          "oklch(0.1500 0.0083 271.33)",
+          "oklch(0.2643 0.0083 271.33)",
+          "oklch(0.3786 0.0083 271.33)",
+          "oklch(0.4929 0.0083 271.33)",
+          "oklch(0.6071 0.0083 271.33)",
+          "oklch(0.7214 0.0083 271.33)",
+          "oklch(0.8357 0.0083 271.33)",
+          "oklch(0.9500 0.0083 271.33)"
+        ]
+      },
+      "surface-accent-strong": {
+        "role": "primary",
+        "displayName": "Stronger cobalt support",
+        "canonical": "color-mix(in srgb, var(--cobalt) 14%, var(--surface-raised) 86%)",
+        "tonalRamp": [
+          "oklch(0.1500 0.0282 270.41)",
+          "oklch(0.2643 0.0282 270.41)",
+          "oklch(0.3786 0.0282 270.41)",
+          "oklch(0.4929 0.0282 270.41)",
+          "oklch(0.6071 0.0282 270.41)",
+          "oklch(0.7214 0.0282 270.41)",
+          "oklch(0.8357 0.0282 270.41)",
+          "oklch(0.9500 0.0282 270.41)"
+        ]
+      },
+      "canvas-dark": {
+        "role": "neutral",
+        "displayName": "Dark canvas",
+        "canonical": "#171917",
+        "tonalRamp": [
+          "oklch(0.1500 0.0049 145.40)",
+          "oklch(0.2643 0.0049 145.40)",
+          "oklch(0.3786 0.0049 145.40)",
+          "oklch(0.4929 0.0049 145.40)",
+          "oklch(0.6071 0.0049 145.40)",
+          "oklch(0.7214 0.0049 145.40)",
+          "oklch(0.8357 0.0049 145.40)",
+          "oklch(0.9500 0.0049 145.40)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Light ink",
+        "canonical": "#f6f5f1",
+        "tonalRamp": [
+          "oklch(0.1500 0.0054 95.10)",
+          "oklch(0.2643 0.0054 95.10)",
+          "oklch(0.3786 0.0054 95.10)",
+          "oklch(0.4929 0.0054 95.10)",
+          "oklch(0.6071 0.0054 95.10)",
+          "oklch(0.7214 0.0054 95.10)",
+          "oklch(0.8357 0.0054 95.10)",
+          "oklch(0.9500 0.0054 95.10)"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Dark theme muted text",
+        "canonical": "#b6b8b1",
+        "tonalRamp": [
+          "oklch(0.1500 0.0100 119.63)",
+          "oklch(0.2643 0.0100 119.63)",
+          "oklch(0.3786 0.0100 119.63)",
+          "oklch(0.4929 0.0100 119.63)",
+          "oklch(0.6071 0.0100 119.63)",
+          "oklch(0.7214 0.0100 119.63)",
+          "oklch(0.8357 0.0100 119.63)",
+          "oklch(0.9500 0.0100 119.63)"
+        ]
+      },
+      "divider-dark": {
+        "role": "neutral",
+        "displayName": "Dark divider",
+        "canonical": "#444840",
+        "tonalRamp": [
+          "oklch(0.1500 0.0142 128.87)",
+          "oklch(0.2643 0.0142 128.87)",
+          "oklch(0.3786 0.0142 128.87)",
+          "oklch(0.4929 0.0142 128.87)",
+          "oklch(0.6071 0.0142 128.87)",
+          "oklch(0.7214 0.0142 128.87)",
+          "oklch(0.8357 0.0142 128.87)",
+          "oklch(0.9500 0.0142 128.87)"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Dark subdued neutral",
+        "canonical": "#22251f",
+        "tonalRamp": [
+          "oklch(0.1500 0.0118 128.98)",
+          "oklch(0.2643 0.0118 128.98)",
+          "oklch(0.3786 0.0118 128.98)",
+          "oklch(0.4929 0.0118 128.98)",
+          "oklch(0.6071 0.0118 128.98)",
+          "oklch(0.7214 0.0118 128.98)",
+          "oklch(0.8357 0.0118 128.98)",
+          "oklch(0.9500 0.0118 128.98)"
+        ]
+      },
+      "field-surface-dark": {
+        "role": "neutral",
+        "displayName": "Dark field",
+        "canonical": "#22251f",
+        "tonalRamp": [
+          "oklch(0.1500 0.0118 128.98)",
+          "oklch(0.2643 0.0118 128.98)",
+          "oklch(0.3786 0.0118 128.98)",
+          "oklch(0.4929 0.0118 128.98)",
+          "oklch(0.6071 0.0118 128.98)",
+          "oklch(0.7214 0.0118 128.98)",
+          "oklch(0.8357 0.0118 128.98)",
+          "oklch(0.9500 0.0118 128.98)"
+        ]
+      },
+      "surface-raised-dark": {
+        "role": "neutral",
+        "displayName": "Dark raised neutral",
+        "canonical": "#252924",
+        "tonalRamp": [
+          "oklch(0.1500 0.0107 139.44)",
+          "oklch(0.2643 0.0107 139.44)",
+          "oklch(0.3786 0.0107 139.44)",
+          "oklch(0.4929 0.0107 139.44)",
+          "oklch(0.6071 0.0107 139.44)",
+          "oklch(0.7214 0.0107 139.44)",
+          "oklch(0.8357 0.0107 139.44)",
+          "oklch(0.9500 0.0107 139.44)"
+        ]
+      },
+      "error-dark": {
+        "role": "error",
+        "displayName": "Dark validation text",
+        "canonical": "#ffab98",
+        "tonalRamp": [
+          "oklch(0.1500 0.1033 33.32)",
+          "oklch(0.2643 0.1033 33.32)",
+          "oklch(0.3786 0.1033 33.32)",
+          "oklch(0.4929 0.1033 33.32)",
+          "oklch(0.6071 0.1033 33.32)",
+          "oklch(0.7214 0.1033 33.32)",
+          "oklch(0.8357 0.1033 33.32)",
+          "oklch(0.9500 0.1033 33.32)"
+        ]
+      },
+      "action-ink": {
+        "role": "primary",
+        "displayName": "Small action text, light",
+        "tonalRamp": [
+          "oklch(0.1500 0.2491 264.64)",
+          "oklch(0.2643 0.2491 264.64)",
+          "oklch(0.3786 0.2491 264.64)",
+          "oklch(0.4929 0.2491 264.64)",
+          "oklch(0.6071 0.2491 264.64)",
+          "oklch(0.7214 0.2491 264.64)",
+          "oklch(0.8357 0.2491 264.64)",
+          "oklch(0.9500 0.2491 264.64)"
+        ],
+        "canonical": "#245bff"
+      },
+      "action-ink-dark": {
+        "role": "neutral",
+        "displayName": "Small action text, dark",
+        "canonical": "#f6f5f1",
+        "tonalRamp": [
+          "oklch(0.1500 0.0054 95.10)",
+          "oklch(0.2643 0.0054 95.10)",
+          "oklch(0.3786 0.0054 95.10)",
+          "oklch(0.4929 0.0054 95.10)",
+          "oklch(0.6071 0.0054 95.10)",
+          "oklch(0.7214 0.0054 95.10)",
+          "oklch(0.8357 0.0054 95.10)",
+          "oklch(0.9500 0.0054 95.10)"
+        ]
       }
     },
-    "breakpoints": [
+    "typographyMeta": {
+      "display": {
+        "displayName": "Name",
+        "purpose": "Two-line Home name using the locally bundled Plus Jakarta Sans family."
+      },
+      "headline": {
+        "displayName": "Contact invitation",
+        "purpose": "The two-line shared contact-footer headline."
+      },
+      "title": {
+        "displayName": "Project name",
+        "purpose": "Selected-work row titles."
+      },
+      "body": {
+        "displayName": "Interface text",
+        "purpose": "Base interface text and inherited local font family."
+      },
+      "label": {
+        "displayName": "Section label",
+        "purpose": "Small section headings; selected work has its own local title declaration."
+      }
+    },
+    "shadows": [
       {
-        "value": "1000px",
-        "name": "intermediate-max"
+        "name": "control-light",
+        "value": "0 3px 6px rgb(32 34 31 / .035), 0 10px 20px -10px rgb(32 34 31 / .18)",
+        "purpose": "Shared painted controls in light mode; live CSS token --shadow-control."
       },
       {
-        "value": "650px",
-        "name": "narrow-max"
+        "name": "control-dark",
+        "value": "0 3px 6px rgb(0 0 0 / .12), 0 10px 20px -10px rgb(0 0 0 / .35)",
+        "purpose": "Dark override of --shadow-control."
+      },
+      {
+        "name": "card-light",
+        "value": "0 8px 16px rgb(32 34 31 / .035), 0 28px 54px -20px rgb(32 34 31 / .15)",
+        "purpose": "Interactive neutral cards and sketch previews in light mode; live CSS token --shadow-card."
+      },
+      {
+        "name": "card-dark",
+        "value": "0 8px 16px rgb(0 0 0 / .1), 0 28px 54px -20px rgb(0 0 0 / .4)",
+        "purpose": "Dark override of --shadow-card."
+      }
+    ],
+    "motion": [
+      {
+        "name": "project-entry-duration",
+        "value": "var(--project-entry-duration, 520ms)",
+        "purpose": "Shared gallery-to-case image morph."
+      },
+      {
+        "name": "project-entry-ease",
+        "value": "var(--project-entry-ease, cubic-bezier(.77, 0, .175, 1))",
+        "purpose": "Shared-image entry easing."
+      },
+      {
+        "name": "page-transition-ease",
+        "value": "var(--page-transition-ease, cubic-bezier(.65, 0, .35, 1))",
+        "purpose": "Existing ordinary route transition easing."
+      },
+      {
+        "name": "project-title-duration",
+        "value": "var(--project-title-duration, 220ms)",
+        "purpose": "Case-title settling."
+      },
+      {
+        "name": "project-title-ease",
+        "value": "var(--project-title-ease, cubic-bezier(.23, 1, .32, 1))",
+        "purpose": "Title, state feedback and Home reveal easing."
+      },
+      {
+        "name": "home-scroll-reveal",
+        "value": "opacity 500ms var(--project-title-ease), transform 500ms var(--project-title-ease)",
+        "purpose": "Once-only Home reveals rise by 24px. Keyboard, restored reading and preferences reveal content immediately."
+      },
+      {
+        "name": "magnetic-spring",
+        "value": "stiffness: 100; damping: 12; mass: .8; restDelta: .05; restSpeed: .5",
+        "purpose": "MAGNET_SPRING in app/lib/interaction-motion.ts, shared by stationary native targets with moving children."
+      },
+      {
+        "name": "magnetic-limits",
+        "value": "text: 5px; project: 6px; control: 8px",
+        "purpose": "Maximum displacement per axis in PointerEnhancements."
+      },
+      {
+        "name": "control-spring",
+        "value": "type: spring; stiffness: 320; damping: 30",
+        "purpose": "CONTROL_SPRING for painted native buttons and the About deck."
+      },
+      {
+        "name": "control-press",
+        "value": "scale(.97)",
+        "purpose": "Painted child only; reset or suppress on keyboard focus, disabled state, cancellation, preferences, blur and hidden document."
+      },
+      {
+        "name": "trivia-answer-slide",
+        "value": "250ms cubic-bezier(.77, 0, .175, 1)",
+        "purpose": "Vertical trivia answer faces and opacity in a content-sized grid; zero duration for keyboard/reduced motion/forced colors."
+      },
+      {
+        "name": "notebook-back-rotation",
+        "value": "3deg; -4deg",
+        "purpose": "Soft blue inactive layers behind the neutral front card; 1deg and -1.5deg below an 18rem text-relative container width. Stable preference modes hide back cards."
+      },
+      {
+        "name": "trivia-pickup",
+        "value": "scale(1.015)",
+        "purpose": "The whole active card lifts during free dragging on both axes, within viewport bounds, then returns with the shared spring. Keyboard and motion preferences stay stationary. Viewport changes cancel held input before or after drag start and reset the card immediately; oversized cards use native scrolling."
+      },
+      {
+        "name": "theme-thumb",
+        "value": "40px travel; 250ms var(--project-title-ease)",
+        "purpose": "36px circular cobalt thumb in an 88px by 48px native switch track."
+      },
+      {
+        "name": "footer-arrow-press",
+        "value": "scale(.97); press 120ms; release 160ms; reduced-motion opacity .85 over 80ms",
+        "purpose": "Existing local native footer-link feedback, distinct from ControlVisual."
+      },
+      {
+        "name": "trivia-answer-height",
+        "value": "220ms cubic-bezier(.77, 0, .175, 1)",
+        "purpose": "Only the active visible face determines height. A single active ResizeObserver reacts to content and font/viewport changes; keyboard and motion preferences settle immediately. Equal rounded heights are skipped."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "horizontal-media",
+        "value": "(min-width: 1000px) and (min-height: 750px)",
+        "purpose": "Also requires normal motion, no forced colors, observation and complete measured content fit."
+      },
+      {
+        "name": "hero-intermediate-max",
+        "value": "1000px"
+      },
+      {
+        "name": "contact-stack-max",
+        "value": "950px"
+      },
+      {
+        "name": "header-wrap-max",
+        "value": "900px"
+      },
+      {
+        "name": "about-pairs-stack-max",
+        "value": "760px"
+      },
+      {
+        "name": "gallery-stack-max",
+        "value": "700px"
+      },
+      {
+        "name": "narrow-max",
+        "value": "650px"
+      },
+      {
+        "name": "contact-fields-stack-max",
+        "value": "600px"
+      },
+      {
+        "name": "menu-label-reflow",
+        "value": "@container (max-width: 15rem)",
+        "purpose": "Places the index and arrow above a full-width label when enlarged text needs more room."
+      },
+      {
+        "name": "about-reading-reflow",
+        "value": "@container (max-width: 40rem)",
+        "purpose": "Stacks What I do/Experience, Learning/comparison and trivia when text-relative reading width is insufficient; restored section padding remains unchanged."
       }
     ]
   },
@@ -63,79 +542,154 @@
       "name": "Primary navigation",
       "kind": "nav",
       "refersTo": "primary-nav",
-      "description": "Shared navigation to homepage anchors and the About route, with unavailable Resume text.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"/#work\">Work</a><a href=\"/about\">About</a><a href=\"/#contact\">Contact</a><span aria-disabled=\"true\">Resume</span></nav>",
-      "css": ".ds-nav{font-family:var(--font-body);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(1.4rem,2.8vw,2.8rem);font-size:.9375rem;font-weight:500;color:var(--ink)}.ds-nav a,.ds-nav span{display:inline-flex;align-items:center;min-height:44px}.ds-nav a{color:inherit;text-decoration:none;text-decoration-thickness:1px;text-underline-offset:.3em}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:2px solid currentColor;outline-offset:6px}.ds-nav span{color:var(--muted);cursor:default}@media(max-width:650px){.ds-nav{justify-content:space-between;gap:.75rem;font-size:.875rem}}"
+      "description": "Native Home, About, Contact and verified local PDF resume links.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"/\" aria-current=\"page\">Home</a><a href=\"/about\">About</a><a href=\"/contact\">Contact</a><a href=\"/resume/alan-sahlan-resume.pdf\" download=\"Alan-Sahlan-Resume.pdf\" aria-label=\"Download resume, PDF\">Download resume <span class=\"ds-file-type\">PDF</span></a></nav>",
+      "css": ".ds-nav{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(.7rem,1.6vw,1.6rem);font-size:.9375rem;font-weight:500;color:var(--ink, #20221f)}.ds-nav a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding-inline:.25rem;color:inherit;text-decoration:none;transition:color 140ms ease}.ds-nav [aria-current=\"page\"]{color:var(--action-ink,#245bff);text-decoration:underline;text-decoration-color:var(--cobalt,#245bff)}.ds-nav a:focus-visible{outline:2px solid currentColor;outline-offset:6px;transition:none}.ds-file-type{margin-inline-start:.25rem;font-size:.6875rem;font-weight:400}@media(hover:hover) and (pointer:fine){.ds-nav a:hover{color:var(--action-ink,#245bff);text-decoration:underline;text-decoration-color:var(--cobalt,#245bff)}}@media(max-width:650px){.ds-nav{width:100%;justify-content:space-between;gap:.25rem;font-size:.875rem}}"
+    },
+    {
+      "name": "Compact Menu control",
+      "kind": "button",
+      "refersTo": "menu-control",
+      "description": "Theme-first control group on a reserved canvas strip; native targets stay stationary and child paint uses the 320/30 press spring.",
+      "html": "<div class=\"ds-menu-strip\"><div class=\"ds-menu-actions\"><button type=\"button\" class=\"ds-theme\" role=\"switch\" aria-label=\"Dark theme\" aria-checked=\"false\"><span class=\"ds-theme-track\"><span class=\"ds-theme-sun\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2 M12 20v2 M2 12h2 M20 12h2 M5 5l1.5 1.5 M17.5 17.5L19 19 M5 19l1.5-1.5 M17.5 6.5L19 5\"/></svg></span><span class=\"ds-theme-moon\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M20.5 14.5A9 9 0 0 1 9.5 3.5a9 9 0 1 0 11 11Z\"/></svg></span></span></button><button type=\"button\" class=\"ds-menu\"><span class=\"ds-menu-visual\">Menu <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 8h16 M4 16h16\"/></svg></span></button></div></div>",
+      "css": ".ds-menu-strip{display:flex;justify-content:flex-end;padding:0 var(--gutter,24px);height:calc(max(76px,4.75rem) + env(safe-area-inset-top));background:var(--canvas,#f6f5f1);border-bottom:1px solid var(--divider,#ddddd5)}.ds-menu{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);min-height:48px;padding:.55rem calc(.8rem - 2px) .55rem .8rem;border:0;border-radius:var(--radius-pill,999px);background:var(--surface-raised,#fffefa);color:var(--ink,#20221f);font-size:.9375rem;font-weight:500;cursor:pointer;box-shadow:var(--shadow-control,0 3px 6px rgb(32 34 31 / .035),0 10px 20px -10px rgb(32 34 31 / .18));transition:color 150ms ease,background-color 150ms ease}.ds-menu-visual{display:inline-flex;align-items:center;gap:.8rem}.ds-menu:active:not(:focus-visible):not(:disabled) .ds-menu-visual{transform:scale(.97)}.ds-menu:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px;}.ds-menu:focus-visible .ds-menu-visual,.ds-menu:disabled .ds-menu-visual{transform:none}@media(hover:hover) and (pointer:fine){.ds-menu:hover{background:var(--ink,#20221f);color:var(--canvas,#f6f5f1)}}@media(prefers-reduced-transparency:reduce),(prefers-contrast:more){.ds-menu{background:var(--canvas,#f6f5f1);box-shadow:none}}@media(prefers-reduced-motion:reduce),(forced-colors:active){.ds-menu-visual{transform:none!important}}@media(forced-colors:active){.ds-menu{background:ButtonFace;color:ButtonText;border:1px solid ButtonText;box-shadow:none}}.ds-menu-actions{display:flex;align-items:center;gap:.75rem;margin-top:calc(1rem + env(safe-area-inset-top));align-self:flex-start}.ds-theme{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);display:inline-flex;width:88px;min-height:48px;padding:0;border:0;border-radius:var(--radius-pill,999px);background:transparent;color:var(--ink,#20221f);cursor:pointer}.ds-theme-track{position:relative;display:block;width:88px;height:48px;border-radius:inherit;background:var(--surface-accent,color-mix(in srgb,var(--cobalt,#245bff) 6%,var(--surface-raised,#fffefa) 94%));box-shadow:var(--shadow-control,0 3px 6px rgb(32 34 31 / .035),0 10px 20px -10px rgb(32 34 31 / .18))}.ds-theme-track::before{content:\"\";position:absolute;top:6px;left:6px;width:36px;height:36px;border-radius:50%;background:var(--accent-solid,#245bff);transition:transform 250ms var(--project-title-ease,cubic-bezier(.23,1,.32,1))}.ds-theme[aria-checked=\"true\"] .ds-theme-track::before{transform:translateX(40px)}.ds-theme-sun,.ds-theme-moon{position:absolute;top:15px;color:var(--action-ink,#245bff)}.ds-theme-sun{left:15px}.ds-theme-moon{right:15px}.ds-theme[aria-checked=\"false\"] .ds-theme-sun,.ds-theme[aria-checked=\"true\"] .ds-theme-moon{color:var(--on-accent,#fff)}.ds-theme:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px;}.ds-theme:active:not(:focus-visible):not(:disabled) .ds-theme-track{transform:scale(.97)}.ds-theme:focus-visible .ds-theme-track,.ds-theme:disabled .ds-theme-track{transform:none}.ds-theme:focus-visible .ds-theme-track::before{transition:none}@media(hover:hover) and (pointer:fine){.ds-theme:hover .ds-theme-track{background:var(--surface,#f0efe9)}}@media(prefers-reduced-motion:reduce),(forced-colors:active){.ds-theme-track{transform:none!important}.ds-theme-track::before{transition:none}}@media(forced-colors:active){.ds-theme-track{border:1px solid ButtonText;box-shadow:none}.ds-theme-track::before{background:Highlight}.ds-theme[aria-checked=\"false\"] .ds-theme-sun,.ds-theme[aria-checked=\"true\"] .ds-theme-moon{color:HighlightText}.ds-theme:focus-visible{outline-color:Highlight}}.ds-theme[aria-checked=\"true\"] .ds-theme-track{background:var(--canvas,#171917)}"
     },
     {
       "name": "Location badge",
       "kind": "custom",
       "refersTo": "location-badge",
-      "description": "Static location indicator, not a button.",
+      "description": "The square ID badge is an informational Indonesia reference.",
       "html": "<p class=\"ds-location\"><span class=\"ds-id\" aria-hidden=\"true\">ID</span><span>Based in Indonesia</span></p>",
-      "css": ".ds-location{font-family:var(--font-body);display:flex;align-items:center;gap:.85rem;font-size:.9375rem;color:var(--ink)}.ds-id{display:grid;place-items:center;width:36px;height:36px;color:var(--canvas);background:var(--cobalt);font-size:.75rem;font-weight:500}@media(max-width:650px){.ds-location{flex-wrap:wrap;font-size:.875rem}}@media(forced-colors:active){.ds-id{border:1px solid currentColor}}"
+      "css": ".ds-location{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);display:flex;align-items:center;gap:.85rem;font-size:.9375rem;color:var(--ink, #20221f)}.ds-id{display:grid;place-items:center;flex:none;width:36px;height:36px;color:var(--on-accent, #fff);background:var(--accent-solid, #245bff);font-size:.75rem;font-weight:500}@media(max-width:650px){.ds-location{gap:.5rem;font-size:.875rem;line-height:1.5}.ds-location>span:last-child{min-width:0;overflow-wrap:anywhere}}@media(forced-colors:active){.ds-id{border:1px solid currentColor}}"
     },
     {
-      "name": "Project row",
-      "kind": "custom",
+      "name": "Selected-work row",
+      "kind": "card",
       "refersTo": "project-row",
-      "description": "Static project listing without preview or navigation states.",
-      "html": "<ol class=\"ds-list\"><li class=\"ds-row\"><span class=\"ds-number\" aria-hidden=\"true\">01</span><h3>Aurelia</h3><span class=\"ds-category\">Hospitality</span></li></ol>",
-      "css": ".ds-list{font-family:var(--font-body);list-style:none;margin:0;padding:0;border-top:1px solid var(--divider);color:var(--ink)}.ds-row{display:grid;grid-template-columns:3.5rem 1fr auto;gap:1rem;align-items:center;min-height:140px;border-bottom:1px solid var(--divider);padding-block:1.5rem}.ds-number{color:var(--muted);font-size:.875rem;font-variant-numeric:tabular-nums}.ds-row h3{margin:0;font-size:clamp(2.1rem,4.3vw,4.25rem);font-weight:400;letter-spacing:-.035em;line-height:1.1}.ds-category{font-size:.875rem;color:var(--muted)}@media(max-width:650px){.ds-row{grid-template-columns:1.6rem minmax(0,1fr);column-gap:.65rem;row-gap:.4rem;min-height:110px;padding-block:1.3rem}.ds-category{grid-column:2;font-size:.8125rem}.ds-row h3{font-size:clamp(1.5rem,8vw,3rem);overflow-wrap:anywhere}.ds-number{align-self:center;font-size:.75rem}}"
+      "description": "One existing 3:1 cover grows inside a native case link; its separate two-sentence story preserves project context. Application layout projection takes 280ms, with immediate keyboard/reduced-motion layout and no image swap or crossfade.",
+      "html": "<ol class=\"ds-project-list\"><li class=\"ds-project-row\"><a class=\"ds-project-link\" href=\"/work/aurelia\" aria-label=\"Aurelia, Hospitality case study\" aria-describedby=\"ds-project-description-aurelia\"><span class=\"ds-project-number\" aria-hidden=\"true\">01</span><span class=\"ds-project-copy\"><span class=\"ds-project-title\">Aurelia</span><span class=\"ds-project-category\">Hospitality</span></span><span class=\"ds-project-preview\" aria-hidden=\"true\"><span class=\"ds-project-preview-media\"><img src=\"/images/work/aurelia-expanded.webp\" alt=\"\" /></span></span><p class=\"ds-project-description\" id=\"ds-project-description-aurelia\">Finding a place to stay in Bali means weighing the location, price and details. I designed and built Aurelia to bring those choices into one place, from browsing stays to sending a request.</p><span class=\"ds-project-arrow\" aria-hidden=\"true\"><svg class=\"ds-project-arrow-icon\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" focusable=\"false\"><path d=\"M4 12h16 M14 6l6 6-6 6\"/></svg></span></a></li></ol>",
+      "css": ".ds-project-list{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);list-style:none;margin:0;padding:0;border-top:1px solid var(--divider,#ddddd5);color:var(--ink,#20221f)}.ds-project-row{border-bottom:1px solid var(--divider,#ddddd5)}.ds-project-link{display:grid;grid-template-columns:clamp(1.875rem,5vw,3.5rem) minmax(0,1fr) minmax(0,52%) 2.75rem;grid-template-areas:\"number copy preview arrow\";align-items:center;gap:.75rem clamp(.75rem,2.3vw,1.5rem);width:100%;min-width:0;padding-block:clamp(.75rem,2vw,1.5rem);color:inherit;text-decoration:none}.ds-project-link:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:-4px}.ds-project-number{grid-area:number;align-self:first baseline;color:var(--action-ink,#245bff);font-size:.875rem;font-weight:500;font-variant-numeric:tabular-nums}.ds-project-copy{grid-area:copy;align-self:first baseline;min-width:0;display:grid;gap:.25rem}.ds-project-title{font-size:clamp(1.65rem,4.2vw,2.75rem);font-weight:650;letter-spacing:-.03em;line-height:1.15;overflow-wrap:anywhere;text-wrap:balance;transition:color 160ms var(--project-title-ease,cubic-bezier(.23,1,.32,1))}.ds-project-category{font-size:1rem;line-height:1.5;color:var(--muted,#62625e)}.ds-project-preview{grid-area:preview;display:block;min-width:0;overflow:hidden;border-radius:var(--radius-control,16px)}.ds-project-preview-media{position:relative;display:block;width:100%;aspect-ratio:3/1;overflow:hidden;outline:1px solid oklch(0 0 0 / .1);outline-offset:-1px}.ds-project-preview img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center}.ds-project-description{display:none;grid-column:2/-1;max-width:65ch;margin:0;font-size:clamp(1rem,1.3vw,1.125rem);line-height:1.6;text-wrap:pretty;overflow-wrap:break-word}.ds-project-arrow{grid-area:arrow;align-self:center;display:grid;place-items:center;width:2.75rem;height:2.75rem;border:1px solid var(--cobalt,#245bff);border-radius:50%;color:var(--action-ink,#245bff);font-size:1.25rem;line-height:1;transition:color 160ms ease,background-color 160ms ease}.ds-project-arrow-icon{display:block;width:1em;height:1em}.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-link{grid-template-columns:clamp(1.875rem,5vw,3.5rem) minmax(0,1fr) 2.75rem;grid-template-areas:\"number copy arrow\" \". preview preview\"}.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-description{display:block}.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-number,.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-arrow{align-self:start}.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-number{padding-top:.25rem}.ds-project-list:focus-within .ds-project-title,.ds-project-list:focus-within .ds-project-arrow{transition:none}@media(min-width:701px) and (max-width:900px){.ds-project-link{padding-block:.5rem;row-gap:.375rem}.ds-project-copy{gap:.125rem}.ds-project-title{line-height:1.1}.ds-project-category{line-height:1.25}.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-link{padding-bottom:1rem}}@media(hover:hover) and (pointer:fine){.ds-project-link:hover .ds-project-title{color:var(--action-ink,#245bff)}.ds-project-link:hover .ds-project-arrow{color:var(--on-accent,#fff);background:var(--accent-solid,#245bff)}.ds-project-list:not(:focus-within) .ds-project-row:has(.ds-project-link:hover) .ds-project-link{grid-template-columns:clamp(1.875rem,5vw,3.5rem) minmax(0,1fr) 2.75rem;grid-template-areas:\"number copy arrow\" \". preview preview\"}.ds-project-list:not(:focus-within) .ds-project-row:has(.ds-project-link:hover) .ds-project-description{display:block}.ds-project-list:not(:focus-within) .ds-project-row:has(.ds-project-link:hover) .ds-project-number,.ds-project-list:not(:focus-within) .ds-project-row:has(.ds-project-link:hover) .ds-project-arrow{align-self:start}.ds-project-list:not(:focus-within) .ds-project-row:has(.ds-project-link:hover) .ds-project-number{padding-top:.25rem}}@media(max-width:700px),(hover:none){.ds-project-link,.ds-project-row:has(.ds-project-link:focus-visible) .ds-project-link{grid-template-columns:1.6rem minmax(0,1fr) 2.75rem;grid-template-areas:\"number copy arrow\" \". preview preview\";gap:.85rem .65rem;padding-block:1rem}.ds-project-preview{border-radius:var(--radius-control,16px)}.ds-project-number,.ds-project-arrow{align-self:start}.ds-project-number{padding-top:.25rem}.ds-project-category{font-size:.875rem}.ds-project-description{display:block}}@media(max-width:650px){.ds-project-title{font-size:clamp(1.5rem,6vw,2rem);letter-spacing:-.02em}}@media(prefers-reduced-motion:reduce){.ds-project-title,.ds-project-arrow{transition:none}}@media(forced-colors:active){.ds-project-preview-media{outline-color:CanvasText}}"
     },
     {
-      "name": "About statement",
+      "name": "Home role control",
+      "kind": "button",
+      "description": "The Product Designer default names CADIT; the role label cycles explanations in the application.",
+      "html": "<div class=\"ds-role\"><p class=\"ds-role-line\">I am a <button type=\"button\" class=\"ds-role-button\" aria-label=\"Product Designer. Show Design Engineer\">Product Designer</button></p><p class=\"ds-role-description\">UI/UX Designer at CADIT, building a component library and UI mockups.</p></div>",
+      "css": ".ds-role{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);color:var(--ink, #20221f)}.ds-role-line{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.35rem;row-gap:2.25rem;margin:0;font-size:clamp(1rem,1.8vw,1.4rem);line-height:1.4;letter-spacing:-.015em}.ds-role-button{display:inline-grid;align-items:center;min-height:44px;padding:.2em 0;border:0;border-radius:4px;background:transparent;color:var(--action-ink,#245bff);font:inherit;font-weight:500;text-align:left;cursor:pointer}.ds-role-button:active{opacity:.8}.ds-role-button:focus-visible{outline:2px solid var(--cobalt, #245bff);outline-offset:4px;}.ds-role-description{max-width:40ch;margin:1.5rem 0 0;color:var(--muted, #62625e);font-size:1rem;line-height:1.6}@media(max-width:650px){.ds-role-description{margin-top:.5rem}}@media(forced-colors:active){.ds-role-button{color:LinkText}.ds-role-button:focus-visible{outline-color:Highlight}}"
+    },
+    {
+      "name": "Contact invitation",
       "kind": "custom",
-      "refersTo": "about-copy",
-      "description": "Large statement with a decorative cobalt corner.",
-      "html": "<div class=\"ds-about\"><span class=\"ds-corner\" aria-hidden=\"true\"></span><p>UI/UX Designer at an IT consulting company. Bringing design and frontend craft closer together.</p><a href=\"/about\">More about me <span aria-hidden=\"true\">↗</span></a></div>",
-      "css": ".ds-about{font-family:var(--font-body);position:relative;max-width:780px;padding-top:2rem;color:var(--ink)}.ds-about p{margin:0;font-size:clamp(1.65rem,2.6vw,2.65rem);line-height:1.3;letter-spacing:-.025em}.ds-corner{position:absolute;left:0;top:0;width:16px;height:16px;border-top:4px solid var(--cobalt);border-left:4px solid var(--cobalt)}@media(forced-colors:active){.ds-corner{border-color:CanvasText}}"
+      "refersTo": "contact",
+      "description": "Canvas footer with cobalt heading and a filled cobalt white-arrow circle, linking to Contact.",
+      "html": "<section class=\"ds-contact\"><h2><a class=\"ds-contact-action\" href=\"/contact\"><span>Let's work<br>together.</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5 M8 5h11v11\"/></svg></span></a></h2><p>For Product Designer opportunities and collaboration.</p><a class=\"ds-contact-email\" href=\"mailto:alansahlanwork@gmail.com\">alansahlanwork@gmail.com</a></section>",
+      "css": ".ds-contact{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);background:var(--canvas,#f6f5f1);color:var(--ink,#20221f);border-top:1px solid var(--divider,#ddddd5);padding:5.5rem var(--gutter,24px) max(1.5rem,env(safe-area-inset-bottom))}.ds-contact h2{margin:0;color:var(--cobalt,#245bff);font-size:clamp(3.4rem,7.5vw,7.6rem);font-weight:400;letter-spacing:-.03em;line-height:1.02}.ds-contact-action{display:inline-flex;align-items:center;gap:clamp(1rem,4vw,4rem);max-width:100%;color:inherit;text-decoration:none}.ds-contact-arrow{display:grid;place-items:center;width:clamp(64px,9vw,128px);height:clamp(64px,9vw,128px);flex:none;border-radius:50%;background:var(--accent-solid,#245bff);color:var(--on-accent,#fff);box-shadow:var(--shadow-control,0 3px 6px rgb(32 34 31 / .035),0 10px 20px -10px rgb(32 34 31 / .18));font-size:.5em}.ds-contact-arrow svg{width:1em;height:1em;transition:transform 160ms var(--project-title-ease,cubic-bezier(.23,1,.32,1))}.ds-contact-action:active:not(:focus-visible) svg{transform:scale(.97);transition-duration:120ms}.ds-contact-action:focus-visible,.ds-contact-email:focus-visible{outline:2px solid currentColor;outline-offset:6px}.ds-contact-action:focus-visible svg{transform:none;opacity:1;transition:none}.ds-contact p{margin:1.75rem 0 0;font-size:.9375rem;line-height:1.65}.ds-contact-email{display:inline-flex;align-items:center;min-height:44px;max-width:100%;margin-top:.5rem;color:inherit;overflow-wrap:anywhere;line-height:1.65}@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.ds-contact-action:hover:not(:active):not(:focus-visible) svg{transform:translate(3px,-3px)}}@media(max-width:650px){.ds-contact{padding-block:3.5rem max(1.5rem,env(safe-area-inset-bottom))}.ds-contact h2{font-size:clamp(2rem,14vw,4rem);letter-spacing:-.02em;overflow-wrap:anywhere}.ds-contact-action{gap:.5rem}}@media(prefers-reduced-motion:reduce){.ds-contact-arrow svg{transform:none;transition:opacity 80ms var(--project-title-ease,cubic-bezier(.23,1,.32,1))}.ds-contact-action:active:not(:focus-visible) svg{transform:none;opacity:.85}}@media(forced-colors:active){.ds-contact-arrow{border:1px solid ButtonText;background:ButtonFace;color:ButtonText;box-shadow:none}}"
     },
     {
       "name": "Contact field",
+      "kind": "input",
+      "refersTo": "contact-field",
+      "description": "Visible native label, theme-aware field and shared 16px corners with cobalt focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email address <span aria-hidden=\"true\">*</span></label><input id=\"ds-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required /></div>",
+      "css": ".ds-field{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);display:grid;gap:.5rem;color:var(--ink, #20221f)}.ds-field label{font-size:.875rem;font-weight:500;line-height:1.5}.ds-field input{min-width:0;min-height:54px;padding:.875rem 1rem;border:1px solid var(--muted, #62625e);border-radius:var(--radius-control,16px);background:var(--field-surface,#fff);color:var(--ink, #20221f);font:inherit;font-size:1rem;line-height:1.5;transition:border-color 120ms ease}.ds-field input:focus-visible{outline:2px solid var(--cobalt, #245bff);outline-offset:4px;}.ds-field input[aria-invalid=\"true\"]{border-color:var(--error,#ad321d)}@media(hover:hover) and (pointer:fine){.ds-field input:hover{border-color:var(--ink, #20221f)}}@media(prefers-reduced-motion:reduce){.ds-field input{transition:none}}@media(forced-colors:active){.ds-field input:focus-visible{outline-color:Highlight}.ds-field input[aria-invalid=\"true\"]{border-style:dashed}}"
+    },
+    {
+      "name": "Open email draft",
+      "kind": "button",
+      "refersTo": "contact-submit",
+      "description": "Stationary native pill target with 54px cobalt child paint and white arrow. The application uses the shared press spring and magnetic control limit.",
+      "html": "<button type=\"submit\" class=\"ds-submit\"><span class=\"ds-submit-visual\"><span>Open email draft</span><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5 M8 5h11v11\"/></svg></span></button>",
+      "css": ".ds-submit{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);display:inline-flex;min-height:54px;padding:0;border:0;border-radius:var(--radius-pill,999px);background:transparent;color:var(--on-accent,#fff);font-size:1rem;font-weight:500;line-height:1.5;cursor:pointer}.ds-submit-visual{display:flex;align-items:center;justify-content:center;gap:2rem;min-height:54px;width:100%;padding:.875rem 1.5rem;border-radius:inherit;background:var(--accent-solid,#245bff);box-shadow:var(--shadow-control,0 3px 6px rgb(32 34 31 / .035),0 10px 20px -10px rgb(32 34 31 / .18));transition:background-color 160ms var(--project-title-ease,cubic-bezier(.23,1,.32,1))}.ds-submit svg{width:20px;height:20px;flex:none}.ds-submit:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px;}.ds-submit:active:not(:focus-visible):not(:disabled) .ds-submit-visual{transform:scale(.97)}.ds-submit:focus-visible .ds-submit-visual,.ds-submit:disabled .ds-submit-visual{transform:none}@media(hover:hover) and (pointer:fine){.ds-submit:hover .ds-submit-visual{background:var(--accent-hover,#1749db)}}@media(max-width:600px){.ds-submit{width:100%}.ds-submit-visual{justify-content:space-between}}@media(prefers-reduced-motion:reduce),(forced-colors:active){.ds-submit-visual{transform:none!important;transition:none}}@media(forced-colors:active){.ds-submit-visual{border:1px solid ButtonText;box-shadow:none}.ds-submit:focus-visible{outline-color:Highlight}}"
+    },
+    {
+      "name": "Copy recovery",
+      "kind": "button",
+      "refersTo": "copy-action",
+      "description": "Soft blue 48px native pills preserve pending disabled state and theme-aware manual-copy recovery.",
+      "html": "<div class=\"ds-copy\"><p>You can also copy the address and message into another app.</p><div class=\"ds-copy-actions\"><button type=\"button\"><span class=\"ds-copy-visual\">Copy email</span></button><button type=\"button\" disabled><span class=\"ds-copy-visual\">Copy message</span></button></div><div class=\"ds-copy-recovery\"><label for=\"ds-copy-text\">Email address to copy</label><textarea id=\"ds-copy-text\" readonly rows=\"2\">alansahlanwork@gmail.com</textarea></div></div>",
+      "css": ".ds-copy{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);color:var(--ink,#20221f)}.ds-copy p{margin:0;color:var(--muted,#62625e);font-size:.8125rem;line-height:1.6}.ds-copy-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}.ds-copy-actions button{border:1px solid transparent;border-radius:var(--radius-pill,999px);background:var(--surface-accent,color-mix(in srgb,var(--cobalt,#245bff) 6%,var(--surface-raised,#fffefa) 94%));color:var(--action-ink,#245bff);min-height:48px;padding:.65rem 1rem;font:inherit;font-size:.875rem;line-height:1.5;cursor:pointer}.ds-copy-visual{display:inline-flex}.ds-copy-actions button:disabled{color:var(--muted,#62625e);cursor:wait}.ds-copy-actions button:active:not(:focus-visible):not(:disabled) .ds-copy-visual{transform:scale(.97)}.ds-copy-actions button:focus-visible,.ds-copy-recovery textarea:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px;}.ds-copy-recovery{display:grid;gap:.5rem;margin-top:.5rem}.ds-copy-recovery label{font-size:.875rem;font-weight:500;line-height:1.5}.ds-copy-recovery textarea{min-height:88px;padding:.875rem 1rem;border:1px solid var(--muted,#62625e);border-radius:var(--radius-control,16px);background:var(--field-surface,#fff);color:var(--ink,#20221f);font:inherit;line-height:1.5;resize:vertical}@media(hover:hover) and (pointer:fine){.ds-copy-actions button:hover:enabled{border-color:var(--action-ink,#245bff)}}@media(prefers-reduced-motion:reduce),(forced-colors:active){.ds-copy-visual{transform:none!important}}@media(forced-colors:active){.ds-copy-actions button{border:1px solid ButtonText}.ds-copy-actions button:focus-visible,.ds-copy-recovery textarea:focus-visible{outline-color:Highlight}}"
+    },
+    {
+      "name": "Original screenshot inspection",
       "kind": "custom",
-      "refersTo": "contact",
-      "description": "Email action with unboxed arrow on cobalt; professional links follow it in the shared footer.",
-      "html": "<section class=\"ds-contact\"><div class=\"ds-width\"><h2><a class=\"ds-contact-action\" href=\"mailto:alansahlanwork@gmail.com\"><span>Let’s work<br>together.</span><span aria-hidden=\"true\">↗</span></a></h2><p>For Product Designer opportunities and collaboration.</p></div></section>",
-      "css": ".ds-contact{font-family:var(--font-body);background:var(--cobalt);color:var(--canvas);padding-block:5.5rem 1.5rem}.ds-width{width:min(100% - var(--gutter)*2,1440px);margin-inline:auto}.ds-contact h2{margin:0;font-size:clamp(3.4rem,7.5vw,7.6rem);font-weight:400;letter-spacing:-.04em;line-height:1.02}.ds-contact p{font-size:.9375rem;margin:1.75rem 0 0}@media(max-width:650px){.ds-contact{padding-block:3.5rem 1.5rem}.ds-contact h2{font-size:clamp(2rem,14vw,4rem);overflow-wrap:anywhere}}.ds-contact-action{display:inline-flex;align-items:baseline;gap:clamp(1rem,4vw,4rem);color:inherit;text-decoration:none;max-width:100%}.ds-contact-action>span:last-child{font-size:.7em;flex-shrink:0}.ds-contact-action:focus-visible{outline:2px solid currentColor;outline-offset:6px}@media(max-width:650px){.ds-contact-action{gap:.5rem}.ds-contact-action>span:first-child{min-width:0}}"
+      "description": "Concise reasoning beside an original crop, a focus-only section skip and one native source disclosure with its image link inside. Supporting build notes stay native; Paylecta detail retains its source-resolution limit.",
+      "html": "<section class=\"ds-case\"><a class=\"ds-case-skip\" href=\"#ds-build-notes\">Skip to implementation considerations</a><div class=\"ds-case-pin\"><nav aria-label=\"Inside the design views\"><a href=\"#ds-customers\" aria-current=\"location\"><span aria-hidden=\"true\">02</span> Customer records</a></nav><article class=\"ds-case-panel\"><div class=\"ds-case-copy\"><h3 id=\"ds-customers\" tabindex=\"-1\">Keep actions with the record</h3><p>A searchable table keeps status and actions together. The customer form opens over the list without losing context.</p></div><figure><div class=\"ds-case-detail\" tabindex=\"0\" role=\"group\" aria-label=\"Customer records screenshot detail\"><div class=\"ds-case-crop\"><img src=\"/images/paylecta-customers.webp\" alt=\"Original Paylecta customer search and customer table with named status and row actions\" width=\"1402\" height=\"1081\" /></div></div><p class=\"ds-case-pan-cue\">Scroll sideways for detail.</p><figcaption><details class=\"ds-case-source\"><summary>View source image</summary><img src=\"/images/paylecta-customers.webp\" alt=\"Paylecta customer summary, searchable customer table with status labels, and a customer form overlay in original device mockups\" width=\"1402\" height=\"1081\" /><p>Customer search, records and status detail. Original design, June 2025.</p><p>Source design mockups, June 2025. PDF page 6.</p><a href=\"/images/paylecta-customers.webp\" target=\"_blank\" rel=\"noreferrer\">Open customers screenshot <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5 M8 5h11v11\"/></svg></a></details></figcaption></figure></article></div><p class=\"ds-case-limit\">The client presentation documents the design. A live product, working prototype and measured business results are not available.</p><details class=\"ds-case-notes\"><summary id=\"ds-build-notes\">Design and build notes</summary><div><p>A build would need validated inputs, accurate invoice previews, draft recovery and clear failure feedback.</p></div></details></section>",
+      "css": ".ds-case{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);color:var(--ink, #20221f)}.ds-case-skip{position:fixed;top:calc(var(--compact-nav-height,4.75rem) + 1rem);left:var(--gutter,24px);z-index:35;padding:.75rem 1rem;background:var(--canvas,#f6f5f1);max-width:calc(100vw - 2 * var(--gutter,24px));color:inherit}.ds-case-skip:not(:focus){width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-case nav{margin-bottom:2rem}.ds-case nav a{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;max-width:100%;padding-block:.5rem;font-size:.875rem;line-height:1.5;color:inherit;text-decoration:none}.ds-case nav a[aria-current=\"location\"]{color:var(--action-ink,#245bff);text-decoration:underline}.ds-case nav a span{color:var(--muted,#62625e);font-variant-numeric:tabular-nums}.ds-case-panel{display:grid;gap:2rem}.ds-case h3{max-width:20ch;font-size:clamp(1.8rem,3vw,3rem);line-height:1.15;font-weight:500;letter-spacing:-.025em}.ds-case-copy p{max-width:52ch;margin-top:1.5rem;line-height:1.65}.ds-case figure{min-width:0;margin:0}.ds-case-detail{overflow-x:auto;overscroll-behavior-inline:contain;max-width:100%}.ds-case-crop{position:relative;width:100%;max-width:896px;aspect-ratio:448/180;overflow:hidden;outline:1px solid var(--divider,#ddddd5);outline-offset:-1px}.ds-case-crop img{position:absolute;width:312.9464285714%;height:600.5555555556%;max-width:none;left:-56.0267857143%;top:-201.6666666667%}.ds-case-pan-cue{display:none;font-size:.8125rem;line-height:1.6;color:var(--muted,#62625e);margin-top:.65rem}.ds-case figcaption{margin-top:.5rem;color:var(--muted,#62625e);font-size:.8125rem}.ds-case figcaption a{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;font-size:.875rem;color:inherit}.ds-case-source{margin:0}.ds-case-source summary{min-height:44px;width:fit-content;max-width:100%;padding-block:.65rem;cursor:pointer;font-size:.875rem;line-height:1.5;text-decoration:underline;text-underline-offset:.3em}.ds-case-source img{display:block;width:100%;height:auto;margin-top:.75rem;outline:1px solid oklch(0 0 0 / .1);outline-offset:-1px}.ds-case-source p{margin-top:.75rem;font-size:.8125rem;color:var(--muted,#62625e);line-height:1.6}.ds-case-limit{max-width:65ch;margin-top:3rem;line-height:1.65}.ds-case-notes{margin-block:1.5rem;border-block:1px solid var(--divider,#ddddd5)}.ds-case-notes>summary{padding:1rem .75rem;min-height:48px;border-radius:var(--radius-control,16px);cursor:pointer;font-weight:500;line-height:1.5}.ds-case-notes>div{padding-block:.5rem 1.5rem}.ds-case-notes p{max-width:65ch;line-height:1.65}.ds-case-detail:focus-visible,.ds-case-source summary:focus-visible,.ds-case-notes>summary:focus-visible,.ds-case a:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px}.ds-case nav a:hover,.ds-case-notes>summary:hover{text-decoration:underline}@media(max-width:650px){.ds-case-crop{min-width:896px}.ds-case-pan-cue{display:block}}@media(forced-colors:active){.ds-case-crop,.ds-case-source img{outline-color:CanvasText}.ds-case-skip{background:Canvas;color:CanvasText}.ds-case-notes{border-color:CanvasText}.ds-case-detail:focus-visible,.ds-case-source summary:focus-visible,.ds-case-notes>summary:focus-visible,.ds-case a:focus-visible{outline-color:Highlight}}.ds-case-notes[open]>summary{color:var(--action-ink,#245bff);background:var(--surface-accent,color-mix(in srgb,var(--cobalt,#245bff) 6%,var(--surface-raised,#fffefa) 94%))}"
+    },
+    {
+      "name": "Dark theme switch",
+      "kind": "button",
+      "refersTo": "theme-switch",
+      "description": "Native 88 by 48px Dark theme switch. The application places it immediately left of compact Menu and dialog Close with a .75rem gap, and owns checked state and optional persisted preference.",
+      "html": "<button type=\"button\" class=\"ds-theme\" role=\"switch\" aria-label=\"Dark theme\" aria-checked=\"false\"><span class=\"ds-theme-track\"><span class=\"ds-theme-sun\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2 M12 20v2 M2 12h2 M20 12h2 M5 5l1.5 1.5 M17.5 17.5L19 19 M5 19l1.5-1.5 M17.5 6.5L19 5\"/></svg></span><span class=\"ds-theme-moon\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M20.5 14.5A9 9 0 0 1 9.5 3.5a9 9 0 1 0 11 11Z\"/></svg></span></span></button>",
+      "css": ".ds-theme{font-family:var(--font-body, \"Plus Jakarta Sans\", \"Helvetica Neue\", Arial, sans-serif);display:inline-flex;width:88px;min-height:48px;padding:0;border:0;border-radius:var(--radius-pill,999px);background:transparent;color:var(--ink,#20221f);cursor:pointer}.ds-theme-track{position:relative;display:block;width:88px;height:48px;border-radius:inherit;background:var(--surface-accent,color-mix(in srgb,var(--cobalt,#245bff) 6%,var(--surface-raised,#fffefa) 94%));box-shadow:var(--shadow-control,0 3px 6px rgb(32 34 31 / .035),0 10px 20px -10px rgb(32 34 31 / .18))}.ds-theme-track::before{content:\"\";position:absolute;top:6px;left:6px;width:36px;height:36px;border-radius:50%;background:var(--accent-solid,#245bff);transition:transform 250ms var(--project-title-ease,cubic-bezier(.23,1,.32,1))}.ds-theme[aria-checked=\"true\"] .ds-theme-track::before{transform:translateX(40px)}.ds-theme-sun,.ds-theme-moon{position:absolute;top:15px;color:var(--action-ink,#245bff)}.ds-theme-sun{left:15px}.ds-theme-moon{right:15px}.ds-theme[aria-checked=\"false\"] .ds-theme-sun,.ds-theme[aria-checked=\"true\"] .ds-theme-moon{color:var(--on-accent,#fff)}.ds-theme:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px;}.ds-theme:active:not(:focus-visible):not(:disabled) .ds-theme-track{transform:scale(.97)}.ds-theme:focus-visible .ds-theme-track,.ds-theme:disabled .ds-theme-track{transform:none}.ds-theme:focus-visible .ds-theme-track::before{transition:none}@media(hover:hover) and (pointer:fine){.ds-theme:hover .ds-theme-track{background:var(--surface,#f0efe9)}}@media(prefers-reduced-motion:reduce),(forced-colors:active){.ds-theme-track{transform:none!important}.ds-theme-track::before{transition:none}}@media(forced-colors:active){.ds-theme-track{border:1px solid ButtonText;box-shadow:none}.ds-theme-track::before{background:Highlight}.ds-theme[aria-checked=\"false\"] .ds-theme-sun,.ds-theme[aria-checked=\"true\"] .ds-theme-moon{color:HighlightText}.ds-theme:focus-visible{outline-color:Highlight}}.ds-theme[aria-checked=\"true\"] .ds-theme-track{background:var(--canvas,#171917)}"
+    },
+    {
+      "name": "Little trivia card",
+      "kind": "card",
+      "refersTo": "notebook-card",
+      "description": "Whole-card free dragging paints beyond the deck with viewport bounds, 1.015 pickup and the shared spring return. Sideways swipes change questions; vertical releases return the same card. Native answer/next controls, cancellation, inert inactive cards and motion preferences remain usable. Three local discovery dots mark revealed stories. The 460px deck sizes from the active card and visible face; answer height adapts over 220ms. An 8px inset retains mobile drag clearance. Held input cancels on viewport changes, with an immediate return to the new layout. When the active card exceeds available viewport height, native scrolling takes priority while reveal/next remain usable. Size observers skip identical heights and update fit state only when it changes.",
+      "html": "<div class=\"ds-notebook\"><article class=\"ds-notebook-front\"><h3>Marvel or DC?</h3><div class=\"ds-notebook-answer\" id=\"ds-trivia-answer\"><p>Two universes. One impossible choice.</p><p hidden>Both. I love Marvel and DC.</p><p hidden>No sides taken.</p></div><button type=\"button\" class=\"ds-notebook-reveal\" aria-expanded=\"false\" aria-controls=\"ds-trivia-answer\"><span class=\"ds-notebook-button-visual\">Reveal answer</span></button></article><div class=\"ds-notebook-footer\"><div class=\"ds-notebook-progress\"><span>1 of 3</span><span class=\"ds-notebook-discoveries\" role=\"img\" aria-label=\"0 of 3 stories discovered\"><span></span><span></span><span></span></span></div><button type=\"button\" class=\"ds-notebook-next\"><span class=\"ds-notebook-button-visual\">Next question</span></button></div></div>",
+      "css": ".ds-notebook{position:relative;isolation:isolate;margin:1rem 8px 0;font-family:var(--font-body,\"Plus Jakarta Sans\",\"Helvetica Neue\",Arial,sans-serif);color:var(--ink,#20221f)}.ds-notebook::before,.ds-notebook::after{content:\"\";position:absolute;inset:0 0 3.5rem;border-radius:var(--radius-card,28px);transform-origin:50% 75%;z-index:-1}.ds-notebook::before{background:var(--surface-accent-strong,color-mix(in srgb,var(--cobalt,#245bff) 14%,var(--surface-raised,#fffefa) 86%));transform:translate(6px,-14px) rotate(-4deg);z-index:-2}.ds-notebook::after{background:var(--surface-accent,color-mix(in srgb,var(--cobalt,#245bff) 6%,var(--surface-raised,#fffefa) 94%));transform:translate(3px,-7px) rotate(3deg)}.ds-notebook-front{display:flex;flex-direction:column;gap:1rem;padding:clamp(1.25rem,3vw,1.75rem);border-radius:var(--radius-card,28px);background:var(--surface-raised,#fffefa);box-shadow:var(--shadow-card,0 8px 16px rgb(32 34 31 / .035),0 28px 54px -20px rgb(32 34 31 / .15));overflow-wrap:anywhere}.ds-notebook h3{max-width:26ch;margin:0;font-size:clamp(1.25rem,1.8vw,1.5rem);font-weight:500;line-height:1.4;letter-spacing:-.03em;text-wrap:balance}.ds-notebook-answer{display:grid;overflow:clip}.ds-notebook-answer p{grid-area:1/1;max-width:36ch;margin:0;color:var(--muted,#62625e);font-size:1rem;line-height:1.65}.ds-notebook-answer p[hidden]{display:none}.ds-notebook button{display:inline-flex;align-items:center;justify-content:flex-start;min-height:44px;padding:.5rem 0;border:0;background:none;color:var(--action-ink,#245bff);font:inherit;font-size:.9375rem;line-height:1.5;cursor:pointer}.ds-notebook-reveal{align-self:flex-start}.ds-notebook-button-visual{display:inline-flex;text-decoration:underline;text-underline-offset:.25em}.ds-notebook button:hover .ds-notebook-button-visual{text-decoration-thickness:2px}.ds-notebook button:focus-visible{outline:2px solid var(--cobalt,#245bff);outline-offset:4px}.ds-notebook button:active:not(:focus-visible):not(:disabled) .ds-notebook-button-visual{transform:scale(.97)}.ds-notebook button:focus-visible .ds-notebook-button-visual,.ds-notebook button:disabled .ds-notebook-button-visual{transform:none}.ds-notebook-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.25rem 1rem;margin-top:.75rem;padding-inline:8px}.ds-notebook-footer>span{color:var(--muted,#62625e);font-size:.75rem;line-height:1.5}.ds-notebook .ds-notebook-next{font-size:.8125rem}@media(prefers-reduced-motion:reduce),(forced-colors:active){.ds-notebook::before,.ds-notebook::after{display:none}.ds-notebook-button-visual{transform:none!important}}@media(forced-colors:active){.ds-notebook-front{border:1px solid CanvasText;background:Canvas;box-shadow:none}.ds-notebook button{color:LinkText}}\n.ds-notebook{overflow:visible;container-type:inline-size}.ds-notebook-discoveries{display:inline-flex;gap:.3rem}.ds-notebook-discoveries>span{width:15px;height:15px;border-radius:50%;background:var(--surface-accent-strong)}@container(max-width:18rem){.ds-notebook::after{transform:translate(3px,-7px) rotate(1deg)}.ds-notebook::before{transform:translate(6px,-14px) rotate(-1.5deg)}}\n.ds-notebook-progress{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;color:var(--muted);font-size:.75rem;line-height:1.5}\n.ds-notebook{width:100%;max-width:460px;margin:0;padding:1rem 8px 0}.ds-notebook-front{gap:.75rem}.ds-notebook-footer{padding-inline:0}.ds-notebook::before,.ds-notebook::after{inset:1rem 8px 3.5rem}"
+    },
+    {
+      "name": "Static / Motion button comparison",
+      "kind": "card",
+      "refersTo": "motion-demo-card",
+      "description": "The distilled About comparison has a heading, Static / Motion controls and a native save button. Save state persists across modes; .96 press feedback and the .3s save/check transition honor keyboard, reduced motion and forced colors. Accessible descriptions identify the local experiment. The 480px cap uses a compact row when space permits and a centered stacked action when narrow.",
+      "html": "<div class=\"ds-demo-experiment\" role=\"group\" aria-label=\"Button motion comparison\"><div class=\"ds-demo-experimentControls\"><h3>Feel the difference.</h3><div class=\"ds-demo-motionModes\" role=\"group\" aria-label=\"Button feedback\"><button type=\"button\" aria-pressed=\"false\">Static</button><button type=\"button\" aria-pressed=\"true\">Motion</button></div></div><button type=\"button\" class=\"ds-demo-saveButton\" aria-pressed=\"false\" aria-describedby=\"ds-demo-hint\"><span class=\"ds-demo-savePaint\"><span class=\"ds-demo-saveIcon\" aria-hidden=\"true\"><span><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M7 4h10v16l-5-3-5 3z\"/></svg></span></span><span>Save a favorite</span></span></button><span id=\"ds-demo-hint\" class=\"ds-demo-srOnly\">Button experiment. Changes stay on this page.</span></div>",
+      "css": ".ds-demo-experiment { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; width: calc(100% - 16px); max-inline-size: 480px; min-width: 0; justify-self: start; margin-inline: 8px; padding: clamp(1.25rem, 2vw, 1.75rem); border-radius: var(--radius-card); background: var(--surface-raised); box-shadow: var(--shadow-card); overflow-wrap: break-word; }\n.ds-demo-experimentControls { flex: 1 1 11rem; min-width: 0; }\n.ds-demo-experiment h3 { max-width: 26ch; font-size: clamp(1.25rem, 1.8vw, 1.5rem); font-weight: 500; line-height: 1.4; letter-spacing: -.03em; text-wrap: balance; }\n.ds-demo-motionModes { display: inline-flex; flex-wrap: wrap; max-inline-size: 100%; gap: .25rem; margin-block-start: 1rem; padding: .25rem; border-radius: var(--radius-pill); background: var(--surface); }\n.ds-demo-motionModes button { min-width: 72px; min-height: 44px; padding: .5rem 1rem; border: 0; border-radius: var(--radius-pill); background: transparent; color: var(--muted); font-size: .875rem; line-height: 1.5; cursor: pointer; }\n.ds-demo-motionModes button[aria-pressed=\"true\"] { background: var(--surface-accent); color: var(--action-ink); text-decoration: underline; text-underline-offset: .25em; }\n.ds-demo-saveButton { display: block; position: relative; flex: 0 1 9.75rem; max-inline-size: 100%; inline-size: min(9.75rem, 100%); min-block-size: 9.75rem; margin-inline: auto; padding: 0; border: 0; border-radius: var(--radius-pill); background: transparent; color: var(--on-accent); cursor: pointer; }\n.ds-demo-savePaint { width: 100%; min-block-size: inherit; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .75rem; padding: 1rem; border-radius: inherit; background: var(--accent-solid); box-shadow: var(--shadow-control); font-size: .875rem; font-weight: 500; line-height: 1.5; }\n.ds-demo-saveButton[data-saved] { color: var(--ink); }\n.ds-demo-saveButton[data-saved] .ds-demo-saveIcon { color: var(--action-ink); }\n.ds-demo-saveButton[data-saved] .ds-demo-savePaint { background: var(--surface-accent-strong); }\n.ds-demo-saveIcon { position: relative; width: 28px; height: 28px; }\n.ds-demo-saveIcon > span { position: absolute; inset: 0; display: grid; place-items: center; }\n.ds-demo-motionModes button:focus-visible, .ds-demo-saveButton:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 4px; }\n.ds-demo-srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }\n@media (hover: hover) and (pointer: fine) { .ds-demo-motionModes button:hover { color: var(--ink); } }\n@media (forced-colors: active) { .ds-demo-experiment { border: 1px solid CanvasText; box-shadow: none; } .ds-demo-motionModes button[aria-pressed=\"true\"] { outline: 1px solid Highlight; } .ds-demo-savePaint { background: ButtonFace; color: ButtonText; border: 1px solid ButtonText; box-shadow: none; } .ds-demo-saveButton[data-saved] .ds-demo-savePaint { background: Highlight; color: HighlightText; } }\n@media print { .ds-demo-experiment { display: none; } }\n\n.ds-demo-experiment{font-family:var(--font-body,\"Plus Jakarta Sans\",\"Helvetica Neue\",Arial,sans-serif);color:var(--ink)}.ds-demo-experiment h3{margin:0}"
     }
   ],
   "narrative": {
-    "overview": "The approved world uses Halyard Display Variable, warm off-white, charcoal, cobalt, generous gutters, thin dividers, and the original AS mark. Large names and role text carry the hierarchy. The real portrait supplies the photographic material.\n\nThis record extracts the current five-section homepage foundation from app/globals.css and app/page.tsx. It covers the ticket 01 homepage foundation and ticket 02 About/contact additions, not a complete release. Halyard delivery is missing and the current preview renders a neutral fallback. The approved composition image is unavailable, so this document does not establish an approved pixel match. PRODUCT.md records durable commitments; .impeccable/surfaces/app-page-tsx.md owns this homepage's composition, and docs/assets.md records asset provenance and missing inputs.",
+    "northStar": "Minimal editorial portfolio",
+    "overview": "The implemented portfolio uses Plus Jakarta Sans, warm off-white, charcoal, exact cobalt, generous gutters, thin dividers, and the original AS mark. Home uses Alan's voxel character; About retains the real portrait. Original interface screens provide case-study evidence. PRODUCT.md owns product commitments; DESIGN.md owns shared visual rules; docs/README.md maps current behavior and provenance. About presents capabilities, experience, the Static / Motion learning comparison, then compact trivia. Reading stays flat while interactive cards and painted controls use raised neutral and blue supporting layers.",
     "keyCharacteristics": [
-      "Warm off-white and charcoal with one cobalt accent.",
-      "Large, tightly spaced typography and generous section spacing.",
-      "Rectangular photography, thin dividers, and small cobalt corners.",
-      "Native links connect the homepage, About page, email action, and confirmed professional profiles."
+      "Warm off-white and charcoal with cobalt for identity and actions.",
+      "Large name typography, compact project titles, generous gutters and thin rules.",
+      "A voxel Home character, a real About portrait and original case-study screenshots.",
+      "Native links, visible focus and complete static fallbacks for enhanced interactions.",
+      "Neutral raised interactive cards and cobalt painted actions with soft blue supporting states."
     ],
     "rules": [
       {
         "name": "The Accent Rule",
-        "body": "Use cobalt for the established identity details and contact field; preserve the original AS mark's supplied blue shading.",
+        "body": "Keep cobalt unchanged in both themes for established identity details and filled actions. Use action-ink for small action text and icons; preserve the original AS mark's supplied blue shading.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cobalt Support Rule",
+        "body": "Keep the page canvas neutral. Use soft blue for supporting interactive layers and states; do not spread the prototype's pastel palette across reading sections.",
         "section": "colors"
       },
       {
         "name": "The Font Delivery Rule",
-        "body": "Preserve Halyard as the required family and recheck wrapping, spacing, and hierarchy when its authorized web delivery is available.",
+        "body": "Preserve the bundled Plus Jakarta Sans family and verify actual font loading and wrapping after typography changes.",
         "section": "typography"
       },
       {
-        "name": "The Flat Surface Rule",
-        "body": "Preserve the current flat treatment when extending this homepage.",
+        "name": "The Reading and Interaction Rule",
+        "body": "Keep reading sections and original case evidence flat and square. Apply shared depth to interactive cards and painted controls, including their supporting blue layers.",
         "section": "elevation"
       }
     ],
-    "northStar": "Minimal editorial portfolio",
     "dos": [
-      "Do preserve the exact Design • Engineer identity phrase.",
-      "Do retain the supplied AS mark and real portrait with their documented provenance.",
-      "Do keep visible keyboard focus and native anchor access.",
-      "Do recheck the design after Halyard is delivered."
+      "Do preserve Plus Jakarta Sans, the warm canvas, charcoal/cobalt identity and supplied AS mark.",
+      "Do use the voxel character on Home and retain the real portrait on About with their provenance.",
+      "Do keep visible keyboard focus, native links and complete static content when enhancements stop.",
+      "Do keep original case images and full-source access beside display crops.",
+      "Do keep Contact drafts editable and available after copy or email-app failure.",
+      "Do label every resume control Download resume with a PDF cue.",
+      "Do use the shared neutral, soft blue, radius and shadow tokens for interactive cards and painted controls.",
+      "Do keep the native target still while magnetic and press feedback move its child artwork."
     ],
     "donts": [
-      "Don't promote the current neutral fallback to approved typography.",
-      "Don't describe static project rows or the pending resume as completed interactions.",
-      "Don't claim a pixel match to the missing composition image or a complete release."
+      "Don't restore the removed Design • Engineer phrase or practice tracks as current requirements.",
+      "Don't turn component-local role colors, image backing or responsive exceptions into global tokens.",
+      "Don't spread lavender, mint or peach prototype colors across the portfolio or box ordinary reading sections into interactive cards.",
+      "Don't treat generated gallery artwork as original case-study evidence or enlarge low-resolution details as a claim of recovered information.",
+      "Don't invent project outcomes, Munchpal sponsors/partners or an academic origin.",
+      "Don't claim a pixel match to the missing composition image, physical-device coverage or a complete release from this documentation pass."
     ]
   }
 }

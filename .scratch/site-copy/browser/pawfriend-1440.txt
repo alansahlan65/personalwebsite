@@ -1,0 +1,94 @@
+Back to selected work
+PawFriend
+
+Compare pets, save a shortlist, and prepare for a first visit.
+
+Project
+Self-initiated adoption concept
+My role
+Solo design direction and ChatGPT-assisted build
+Scope
+Browsing, saved pets and visit preparation
+
+I designed sample pet profiles around personality and daily routines, with a shortlist to help visitors compare pets before a first visit.
+
+View the live PawFriend concept
+Skip to build notes 
+From browsing to a first visit
+01
+Pet profiles
+02
+Saved pets
+03
+First visit
+Browse beyond the portrait
+
+Profiles pair personality with age and breed. Five featured pets introduce the catalog, with a nine-profile grid for comparing more animals.
+
+View source image
+Make saving reversible
+
+Saved pets stay in the same browser after a reload. Each has a remove control, so visitors can revise their shortlist without creating an account.
+
+View source image
+Turn interest into preparation
+
+Meeting links lead to first-visit guidance. Visitors can compare the pet's needs with their household routines and prepare questions about care.
+
+View source image
+Build notes and recording
+Back to selected work
+
+--- Expanded detail ---
+
+Back to selected work
+PawFriend
+
+Compare pets, save a shortlist, and prepare for a first visit.
+
+Project
+Self-initiated adoption concept
+My role
+Solo design direction and ChatGPT-assisted build
+Scope
+Browsing, saved pets and visit preparation
+
+I designed sample pet profiles around personality and daily routines, with a shortlist to help visitors compare pets before a first visit.
+
+View the live PawFriend concept
+Skip to build notes 
+From browsing to a first visit
+01
+Pet profiles
+02
+Saved pets
+03
+First visit
+Browse beyond the portrait
+
+Profiles pair personality with age and breed. Five featured pets introduce the catalog, with a nine-profile grid for comparing more animals.
+
+View source image
+Open catalog screenshot
+Make saving reversible
+
+Saved pets stay in the same browser after a reload. Each has a remove control, so visitors can revise their shortlist without creating an account.
+
+View source image
+Open shortlist screenshot
+Turn interest into preparation
+
+Meeting links lead to first-visit guidance. Visitors can compare the pet's needs with their household routines and prepare questions about care.
+
+View source image
+Open prepare screenshot
+Build notes and recording
+
+The concept uses sample pets and AI-generated imagery. Favorites stay in the same browser through local storage.
+
+View PawFriend source code
+
+The recording follows browsing, saving Milo and Luna, editing the shortlist and preparing for a visit.
+
+Open the PawFriend live concept recording
+Back to selected work

@@ -1,0 +1,779 @@
+{
+  "round": "initial",
+  "captures": [
+    ".impeccable/review/adapt-polish/mobile.png",
+    ".impeccable/review/adapt-polish/contact-390.png",
+    ".impeccable/review/adapt-polish/contact-recovery-390.png",
+    ".impeccable/review/adapt-polish/aurelia-navigation-390.png",
+    ".impeccable/review/adapt-polish/aurelia-detail-1-390.png",
+    ".impeccable/review/adapt-polish/aurelia-detail-2-390.png",
+    ".impeccable/review/adapt-polish/aurelia-detail-3-390.png",
+    ".impeccable/review/adapt-polish/paylecta-navigation-390.png",
+    ".impeccable/review/adapt-polish/paylecta-detail-1-390.png",
+    ".impeccable/review/adapt-polish/paylecta-detail-2-390.png",
+    ".impeccable/review/adapt-polish/paylecta-detail-3-390.png",
+    ".impeccable/review/adapt-polish/paylecta-full-source-mobile.png",
+    ".impeccable/review/adapt-polish/pawfriend-navigation-390.png",
+    ".impeccable/review/adapt-polish/pawfriend-detail-1-390.png",
+    ".impeccable/review/adapt-polish/pawfriend-detail-2-390.png",
+    ".impeccable/review/adapt-polish/pawfriend-detail-3-390.png",
+    ".impeccable/review/adapt-polish/munchpal-navigation-390.png",
+    ".impeccable/review/adapt-polish/munchpal-detail-1-390.png",
+    ".impeccable/review/adapt-polish/munchpal-detail-2-390.png",
+    ".impeccable/review/adapt-polish/munchpal-detail-3-390.png",
+    ".impeccable/review/adapt-polish/menu-390.png",
+    ".impeccable/review/adapt-polish/menu-320-text-200.png",
+    ".impeccable/review/adapt-polish/home-320-text-200.png",
+    ".impeccable/review/adapt-polish/desktop.png",
+    ".impeccable/review/adapt-polish/contact-1440.png",
+    ".impeccable/review/adapt-polish/contact-recovery-1440.png",
+    ".impeccable/review/adapt-polish/aurelia-navigation-1440.png",
+    ".impeccable/review/adapt-polish/aurelia-detail-3-1440.png",
+    ".impeccable/review/adapt-polish/paylecta-navigation-1440.png",
+    ".impeccable/review/adapt-polish/paylecta-detail-3-1440.png",
+    ".impeccable/review/adapt-polish/pawfriend-navigation-1440.png",
+    ".impeccable/review/adapt-polish/pawfriend-detail-3-1440.png",
+    ".impeccable/review/adapt-polish/munchpal-navigation-1440.png",
+    ".impeccable/review/adapt-polish/munchpal-detail-3-1440.png",
+    ".impeccable/review/adapt-polish/menu-1440.png",
+    ".impeccable/review/adapt-polish/munchpal-forced-colors.png"
+  ],
+  "samples": [
+    {
+      "route": "/",
+      "width": 390,
+      "hero": 555.4375,
+      "workY": 683.4375,
+      "firstProjectY": 826.4375
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "hero": 752,
+      "workY": 856.78125,
+      "firstProjectY": 962.78125
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 320,
+      "height": 568,
+      "text": 100,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 320,
+      "height": 568,
+      "text": 200,
+      "documentWidth": 320,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 390,
+      "height": 844,
+      "text": 100,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 390,
+      "height": 844,
+      "text": 200,
+      "documentWidth": 390,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 768,
+      "height": 1024,
+      "text": 100,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 768,
+      "height": 1024,
+      "text": 200,
+      "documentWidth": 768,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 1000,
+      "height": 900,
+      "text": 100,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 1000,
+      "height": 900,
+      "text": 200,
+      "documentWidth": 1000,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 1440,
+      "height": 1000,
+      "text": 100,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "true"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 1440,
+      "height": 1000,
+      "text": 200,
+      "documentWidth": 1440,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/about",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/contact",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/aurelia",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/paylecta",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/pawfriend",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 844,
+      "height": 390,
+      "text": 100,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    },
+    {
+      "route": "/work/munchpal",
+      "width": 844,
+      "height": 390,
+      "text": 200,
+      "documentWidth": 844,
+      "font": "plusJakarta, \"plusJakarta Fallback\", \"Helvetica Neue\", Arial, sans-serif",
+      "horizontal": "false"
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

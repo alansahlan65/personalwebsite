@@ -1,0 +1,105 @@
+.artwork {
+  display: block;
+  position: relative;
+  isolation: isolate;
+}
+
+.body, .bezel, .viewport, .base { display: block; }
+.body { position: relative; }
+.viewport { overflow: hidden; background: #f8f8f8; }
+
+/* The SVG includes its own status bar and camera cutout. */
+.phone { padding: round(nearest, 4%, 4px) round(nearest, 5%, 4px) round(nearest, 10%, 4px); }
+.phone .body {
+  padding: round(nearest, 2.3%, 4px);
+  border-radius: 14% / 6.5%;
+  background: var(--device-finish, linear-gradient(110deg, #a4a9ae, #f3f4f5 4%, #8e9499 10%, #c7cbd0 92%, #f0f2f3 97%, #8a9095));
+  box-shadow: inset 0 0 0 1px #858b91, 4px 3px 0 #90969b, 12px 22px 28px -16px #57594f66;
+  transform: perspective(1200px) rotateY(var(--device-yaw, -8deg)) rotateZ(var(--device-lean, -4deg));
+}
+.phone .body::before, .phone .body::after {
+  content: "";
+  position: absolute;
+  inline-size: 1%;
+  border-radius: 2px;
+  background: #81878d;
+}
+.phone .body::before { inset-inline-start: -.6%; inset-block-start: 18%; block-size: 11%; }
+.phone .body::after { inset-inline-end: -.6%; inset-block-start: 23%; block-size: 9%; }
+.phone .bezel { padding: round(nearest, 1.5%, 4px); border-radius: 13% / 6%; background: #171b1d; }
+.phone .viewport { border-radius: 12% / 5.6%; }
+
+/* Desktop views show a natural device viewport, without stretching the UI. */
+.laptop { padding: round(nearest, 2.5%, 4px) round(nearest, 3%, 4px) round(nearest, 5%, 4px); }
+.laptop .body {
+  padding: round(nearest, .6%, 4px);
+  border-radius: 18px 18px 5px 5px;
+  background: linear-gradient(135deg, #d5d9dc, #a0a6ab 25%, #eef0f1 65%, #92999e);
+  box-shadow: 0 16px 30px -20px #66625799;
+}
+.laptop .bezel { padding: round(nearest, 2.5%, 4px) round(nearest, .8%, 4px) round(nearest, .8%, 4px); border-radius: 14px 14px 2px 2px; background: #202629; }
+.laptop .body::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 1.5%;
+  inset-inline-start: 49.7%;
+  inline-size: .6%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #101719;
+  box-shadow: inset 0 0 0 1px #39434b;
+}
+.laptop .viewport, .monitor .viewport { aspect-ratio: 16 / 10; border-radius: 3px; }
+.laptop .base {
+  position: relative;
+  block-size: clamp(7px, 1.3vw, 18px);
+  margin: -1px -3% 0;
+  border-radius: 1px 1px 50% 50% / 1px 1px 75% 75%;
+  background: linear-gradient(#e5e7e9, #b6bcc1 38%, #8e959a 75%, #adb3b7);
+  box-shadow: 0 16px 19px -11px #66625766;
+}
+.laptop .base::before {
+  content: "";
+  position: absolute;
+  inset: 0 42% auto;
+  block-size: 35%;
+  border-radius: 0 0 6px 6px;
+  background: #969ea4;
+  box-shadow: inset 0 -1px 1px #e5e8ea;
+}
+
+.monitor { padding: round(nearest, 2%, 4px) round(nearest, 1.5%, 4px) 0; }
+.monitor .body {
+  padding: round(nearest, 1.2%, 4px);
+  border-radius: 15px;
+  background: linear-gradient(125deg, #3e4749, #1e2528 30%, #515b5e 96%, #b0b6b8);
+  box-shadow: 0 13px 22px -16px #62675988;
+}
+.monitor .bezel { padding: round(nearest, .5%, 4px); border-radius: 8px; background: #101718; }
+.monitor .base { position: relative; block-size: clamp(3rem, 7vw, 6rem); }
+.monitor .base::before, .monitor .base::after { content: ""; position: absolute; }
+.monitor .base::before {
+  inset: 0 43% 9%;
+  clip-path: polygon(14% 0, 86% 0, 100% 100%, 0 100%);
+  background: linear-gradient(105deg, #b8bfc3, #e1e5e7 28%, #aeb6bb 85%, #8e979d);
+}
+.monitor .base::after {
+  inset: auto 31% 0;
+  block-size: 13%;
+  border-radius: 45% 45% 4px 4px / 35% 35% 4px 4px;
+  background: linear-gradient(#dde1e4, #aab2b8);
+  box-shadow: 0 10px 13px -5px #62675955;
+}
+
+@media (max-width: 48rem) {
+  .phone .body { transform: rotate(var(--device-lean, -4deg)); }
+  .laptop .body { border-radius: 10px 10px 3px 3px; }
+  .laptop .bezel { border-radius: 7px 7px 2px 2px; }
+  .monitor .body { border-radius: 9px; }
+  .monitor .bezel { border-radius: 5px; }
+}
+
+@media (forced-colors: active) {
+  .body, .base { background: Canvas; outline: 2px solid CanvasText; }
+  .bezel { background: CanvasText; }
+}

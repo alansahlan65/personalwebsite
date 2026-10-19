@@ -1,0 +1,56 @@
+@font-face{font-family:'Cormorant Garamond';src:url('assets/cormorant-garamond-400.woff2') format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:'Cormorant Garamond';src:url('assets/cormorant-garamond-500.woff2') format('woff2');font-weight:500;font-display:block}
+@font-face{font-family:'Cormorant Garamond';src:url('assets/cormorant-garamond-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:block}
+@font-face{font-family:Manrope;src:url('assets/manrope-400.woff2') format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Manrope;src:url('assets/manrope-500.woff2') format('woff2');font-weight:500;font-display:block}
+@font-face{font-family:Manrope;src:url('assets/manrope-600.woff2') format('woff2');font-weight:600;font-display:block}
+html,body{width:100%;height:100%;overflow:hidden;background:#142019;scroll-behavior:auto}
+#filters{position:fixed;inline-size:0;block-size:0;pointer-events:none}
+#stage{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%);overflow:hidden;background:#f1eee6}
+#world{position:absolute;inset:0;transform-origin:0 0;will-change:transform}
+#surround{position:absolute;inset:-600px;background:linear-gradient(130deg,#f1eee6,#e5ece5 70%,#d2dfd3)}
+#daylight{position:absolute;width:2200px;height:1700px;left:-450px;top:-400px;background:radial-gradient(ellipse,rgba(255,255,255,.88),transparent 65%);transform-origin:50% 50%}
+#website{position:absolute;inset:0;will-change:filter,transform}
+#website .hero{height:1080px;min-height:1080px}
+#website .hero__image{opacity:1;transform:none!important}
+#website .hero__image img{width:100%;height:100%;object-fit:cover;opacity:1}
+#website .site-header{position:absolute}
+#website .hero__threshold{display:none}
+#selected-photo{position:absolute;inset:-64px;opacity:0;overflow:hidden}
+#selected-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 48%}
+#photo-shade{position:absolute;inset:-400px;background:rgba(15,25,19,.5);opacity:0}
+#planner-plane{position:absolute;left:376px;top:184px;width:1120px;height:800px;transform-origin:0 0;perspective:1800px;opacity:0}
+#planner{position:absolute;inset:0}
+#planner .booking-drawer{width:1120px;height:800px;border:1px solid rgba(255,255,255,.9);border-radius:16px;animation:none;box-shadow:0 12px 28px rgba(9,18,14,.12),0 48px 120px rgba(9,18,14,.24);backdrop-filter:none;pointer-events:none}
+#planner *,#website *{animation:none!important;transition:none!important;backdrop-filter:none!important}
+#planner .booking-context{padding:32px 32px 24px;background:#fff}
+#planner .booking-context nav{margin-top:24px}
+#planner .booking-context li{min-height:56px}
+#planner .booking-context__summary{margin-top:auto}
+#planner .booking-context__note{font-size:14px}
+#planner .booking-workflow{position:relative;overflow:hidden;background:#fff}
+#planner .booking-form{height:800px;padding:24px 32px 16px}
+#planner .booking-step{padding-top:18px;position:absolute;top:146px;left:32px;right:32px;opacity:0;pointer-events:none}
+#planner .booking-step[hidden]{display:block}
+#planner .booking-step__intro h3{font-size:40px}
+#planner .booking-step__intro p{font-size:14px}
+#planner .booking-form__header h2{font-size:40px}
+#planner .booking-form input,#planner .booking-form select,#planner .booking-form textarea{font:400 16px Manrope,sans-serif}
+#planner .booking-actions{position:absolute;left:32px;right:32px;bottom:24px;margin:0;padding-top:16px;background:white;backdrop-filter:none}
+#planner .booking-success{position:absolute;inset:0;padding:32px;justify-content:center;opacity:0}
+#planner .booking-success h2{font-size:64px}
+#planner .booking-success__reference{margin-top:24px}
+#planner .booking-success__matches span{font-size:18px}
+#planner .booking-success__icon{margin-bottom:24px}
+#cursor{position:absolute;width:32px;height:36px;left:0;top:0;z-index:20;opacity:0;transform-origin:5px 5px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.28));pointer-events:none}
+#cursor svg{width:32px;height:36px;fill:#142019;stroke:white;stroke-width:1.8;stroke-linejoin:round}
+#cursor i{position:absolute;width:52px;height:52px;left:-22px;top:-22px;opacity:0;border:2px solid #29483a;border-radius:50%;background:rgba(111,141,114,.16)}
+#choices{position:absolute;z-index:15;min-width:260px;display:grid;gap:0;padding:8px;border:1px solid #849087;border-radius:12px;background:white;box-shadow:0 8px 32px rgba(20,32,25,.16);opacity:0;font:400 16px Manrope,sans-serif}
+#choices span{display:block;padding:12px 16px;border-radius:6px;color:#142019;white-space:nowrap}
+#choices span[data-selected]{color:white;background:#29483a}
+#claims{position:absolute;left:96px;top:40px;right:96px;pointer-events:none}
+#claims p{position:absolute;left:0;top:0;margin:0;font:400 88px/1.1 'Cormorant Garamond',serif;letter-spacing:-.03em;color:#fff;opacity:0;text-shadow:0 2px 16px rgba(9,18,14,.12)}
+#claim-stay{left:auto!important;right:0}
+#claim-review{left:auto!important;right:0}
+#ui{display:none;position:fixed;bottom:12px;left:50%;transform:translateX(-50%);align-items:center;gap:12px;padding:12px 16px;border-radius:12px;color:white;background:#142019;font:14px Manrope,sans-serif;z-index:200}
+#ui.on{display:flex}#ui button{padding:8px 12px;border:1px solid #aeb9b0;border-radius:8px;background:#29483a;color:white}#scrub{width:280px;accent-color:#6f8d72}#clock{min-width:7ch;font-variant-numeric:tabular-nums}

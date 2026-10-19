@@ -1,0 +1,17 @@
+{
+  "runs": [
+    {
+      "run_id": "full-corpus-2026-10-09",
+      "date": "2026-10-11T12:22:46.210177+00:00",
+      "files": 1246,
+      "input_tokens": null,
+      "output_tokens": null,
+      "token_usage_available": false,
+      "note": "Measured host-agent usage is unavailable; no semantic usage was added to measured totals."
+    }
+  ],
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "totals_include_only_measured_runs": true,
+  "unmeasured_runs": 1
+}

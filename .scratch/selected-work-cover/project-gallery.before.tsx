@@ -1,0 +1,115 @@
+"use client";
+
+import { ArrowIcon } from "./ui-icons";
+import Image from "next/image";
+import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
+import { ProjectImageTransition } from "./project-transition";
+import { useState, type MouseEvent, type PointerEvent } from "react";
+import { writeSessionValue } from "../lib/session-storage";
+
+const projects = [
+  { name: "Aurelia", category: "Hospitality", type: "Self-initiated concept", contribution: "Design and build", slug: "aurelia", href: "/work/aurelia" },
+  { name: "Paylecta", category: "Finance", type: "Client project", contribution: "UX and UI design", slug: "paylecta", href: "/work/paylecta" },
+  { name: "PawFriend", category: "Pet adoption", type: "Self-initiated concept", contribution: "Design direction and ChatGPT-assisted build", slug: "pawfriend", href: "/work/pawfriend" },
+  { name: "Munchpal", category: "Food sharing", type: "Client prototype", contribution: "Research, design and usability testing", slug: "munchpal", href: "/work/munchpal" },
+] as const;
+
+const layoutEase = [0.23, 1, 0.32, 1] as const;
+
+function layoutTransition(instant: boolean) {
+  return { layout: { duration: instant ? 0 : 0.28, ease: layoutEase } };
+}
+
+function ProjectBanner({ slug, expanded, instant }: { slug: string; expanded: boolean; instant: boolean }) {
+  const [expandedLoaded, setExpandedLoaded] = useState(false);
+  const revealExpanded = expanded && expandedLoaded;
+  const banner = <motion.span
+    className="project-preview"
+    layout
+    transition={layoutTransition(instant)}
+    aria-hidden="true"
+  >
+    <span className="project-preview-media">
+      <Image className="project-banner-compact" src={`/images/work/${slug}-compact.webp`} fill alt=""
+        sizes="(max-width: 700px) calc(100vw - 84px), (max-width: 1440px) 48vw, 670px"
+        style={{ opacity: revealExpanded ? 0 : 1 }} />
+      {(expanded || expandedLoaded) && <Image className="project-banner-expanded" src={`/images/work/${slug}-expanded.webp`} fill alt="" loading="eager"
+        sizes="(max-width: 700px) calc(100vw - 84px), (max-width: 1600px) 85vw, 1350px"
+        onLoad={() => setExpandedLoaded(true)} style={{ opacity: revealExpanded ? 1 : 0 }} />}
+    </span>
+  </motion.span>;
+
+  return <ProjectImageTransition slug={slug}>{banner}</ProjectImageTransition>;
+}
+
+function isPlainClick(event: MouseEvent<HTMLAnchorElement>) {
+  return event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+}
+
+export function ProjectGallery() {
+  const [hovered, setHovered] = useState<string | null>(null);
+  const [focused, setFocused] = useState<string | null>(null);
+  const [input, setInput] = useState<"pointer" | "keyboard">("pointer");
+  const reducedMotion = useReducedMotion() ?? false;
+  const active = focused ?? hovered;
+  const instant = reducedMotion || input === "keyboard";
+  const transition = layoutTransition(instant);
+
+  function onPreviewMove(event: PointerEvent<HTMLAnchorElement>, slug: string) {
+    if ((event.pointerType === "mouse" || event.pointerType === "pen") && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      if (input !== "pointer") setInput("pointer");
+      if (hovered !== slug) setHovered(slug);
+    }
+  }
+
+  function onProjectClick(event: MouseEvent<HTMLAnchorElement>, slug: string) {
+    if (!isPlainClick(event)) return;
+    writeSessionValue("selected-work-return", JSON.stringify({ slug, y: window.scrollY }));
+  }
+
+  return (
+    <>
+      <p className="work-preview-note">These banners are AI-generated illustrations. See original screens in each case study.</p>
+      <ol className="project-list" data-input={input} onPointerLeave={() => setHovered(null)}>
+        {projects.map((project, index) => (
+          <motion.li className="project-row" key={project.slug} data-project={project.slug} data-expanded={active === project.slug}
+            layout="position" transition={transition}>
+              <Link
+                className="project-link"
+                data-magnet="project"
+                href={project.href}
+                transitionTypes={["project-entry"]}
+                onNavigate={() => window.dispatchEvent(new Event("portfolio:project-entry"))}
+                aria-label={`${project.name}, ${project.category} case study`}
+                aria-describedby={`project-context-${project.slug}`}
+                onPointerMove={(event) => onPreviewMove(event, project.slug)}
+                onFocus={(event) => {
+                  if (event.currentTarget.matches(":focus-visible")) {
+                    setInput("keyboard");
+                    setFocused(project.slug);
+                  }
+                }}
+                onBlur={() => setFocused(null)}
+                onClick={(event) => onProjectClick(event, project.slug)}
+              >
+                <motion.span className="project-number" layout="position" aria-hidden="true" transition={transition}>0{index + 1}</motion.span>
+                <motion.span className="project-copy" layout="position" transition={transition}>
+                  <h3 data-magnet-part>{project.name}</h3>
+                  <span className="project-category">{project.category}</span>
+                  <span className="project-context" id={`project-context-${project.slug}`}>
+                    <span className="project-type">{project.type}</span>
+                    <span>{project.contribution}</span>
+                  </span>
+                </motion.span>
+                <ProjectBanner slug={project.slug} expanded={active === project.slug} instant={instant} />
+                <motion.span className="project-arrow" layout="position" aria-hidden="true" transition={transition}>
+                  <span data-magnet-part><ArrowIcon direction="right" /></span>
+                </motion.span>
+              </Link>
+          </motion.li>
+        ))}
+      </ol>
+    </>
+  );
+}

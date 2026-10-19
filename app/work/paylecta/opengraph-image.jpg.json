@@ -7,5 +7,13 @@
   "width": 1402,
   "height": 1081,
   "preparation": "Full original PDF cover, encoded as JPEG quality 90 for the Next.js file-based social preview. No crop or synthetic edits.",
-  "evidence": "Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes."
+  "evidence": "Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes.",
+  "prompt": "Source origin. {\"source\":\"https://drive.google.com/file/d/19UDppHbm1QU3C_0gCycbTltVKUSxPxmi/view\",\"source_sha256\":\"6697c699c5287241786a21b60cdd119f609c12b6dfbff9a0d13dd447bdbff92c\",\"pdf_page\":1,\"project_date\":\"June 2025\",\"verified_on\":\"2026-09-27\",\"width\":1402,\"height\":1081,\"preparation\":\"Full original PDF cover, encoded as JPEG quality 90 for the Next.js file-based social preview. No crop or synthetic edits.\",\"evidence\":\"Static source design mockups, not a recording of live software. Screen values are example content, not measured outcomes.\"}",
+  "origin_metadata": {
+    "recorded_on": "2026-10-03",
+    "original_file_sha256": "e264d5ebb0d3b4e0d90dc0c47b682a410f49c58397a22a08dff794d7c3cd4bea",
+    "current_file_sha256": "808665621d7ed96c6c6aa9b7fcc18e9ba081ee497d2324fa668ddba70ef6a304",
+    "decoded_pixel_sha256": "9f95080a3264fcadd282e7197f9ca400930c8483e8d467b8d7905796528d90f5",
+    "pixels_unchanged": true
+  }
 }

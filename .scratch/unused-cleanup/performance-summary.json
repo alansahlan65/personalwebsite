@@ -1,0 +1,56 @@
+{
+  "production": true,
+  "cpuSlowdown": 4,
+  "networkMbps": 10,
+  "networkLatencyMs": 40,
+  "samplesPerRoute": 2,
+  "routes": {
+    "/": {
+      "beforeLcpMedianMs": 578.0,
+      "afterLcpMedianMs": 702.0,
+      "maxCls": 0.015700025330571115,
+      "jsBytes": 235407
+    },
+    "/about": {
+      "beforeLcpMedianMs": 718.0,
+      "afterLcpMedianMs": 618.0,
+      "maxCls": 0,
+      "jsBytes": 232868
+    },
+    "/contact": {
+      "beforeLcpMedianMs": 574.0,
+      "afterLcpMedianMs": 512.0,
+      "maxCls": 0,
+      "jsBytes": 232868
+    },
+    "/work/aurelia": {
+      "beforeLcpMedianMs": 1706.0,
+      "afterLcpMedianMs": 1214.0,
+      "maxCls": 0.0018169384575213426,
+      "jsBytes": 235407
+    },
+    "/work/munchpal": {
+      "beforeLcpMedianMs": 836.0,
+      "afterLcpMedianMs": 732.0,
+      "maxCls": 0.0018169384575213426,
+      "jsBytes": 235407
+    },
+    "/work/pawfriend": {
+      "beforeLcpMedianMs": 520.0,
+      "afterLcpMedianMs": 578.0,
+      "maxCls": 0,
+      "jsBytes": 235729
+    },
+    "/work/paylecta": {
+      "beforeLcpMedianMs": 576.0,
+      "afterLcpMedianMs": 546.0,
+      "maxCls": 0.0034025341919457198,
+      "jsBytes": 235407
+    }
+  },
+  "visualComparisons": 28,
+  "changedPixels": 0,
+  "brokenImages": 0,
+  "pageErrors": 0,
+  "horizontalOverflow": 0
+}

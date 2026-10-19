@@ -1,0 +1,11 @@
+{
+  "nodes": 4807,
+  "links": 7617,
+  "duplicateIds": 0,
+  "brokenEdges": 0,
+  "missingSources": [],
+  "lostNonMarkdownNodes": 0,
+  "lostNonMarkdownEdges": 0,
+  "offlineLibrary": true,
+  "apiExtraction": false
+}

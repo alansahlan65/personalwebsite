@@ -19,7 +19,7 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-test("Work and About play a visible curtain even without browser view transitions", async ({ page }) => {
+test("Home and About play a visible curtain even without browser view transitions", async ({ page }) => {
   await page.addInitScript(() => {
     Object.defineProperty(document, "startViewTransition", { value: undefined, configurable: true });
   });
@@ -28,14 +28,59 @@ test("Work and About play a visible curtain even without browser view transition
   await page.getByRole("dialog", { name: "Navigation menu" }).getByRole("link", { name: "About", exact: true }).click();
   const curtain = page.locator(".route-curtain");
   await expect(curtain).toHaveAttribute("data-phase", /covering|covered|revealing/);
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect(curtain).toHaveAttribute("data-phase", "idle");
-  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Work", exact: true }).click();
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Home", exact: true }).click();
   await expect(curtain).toHaveAttribute("data-phase", /covering|covered|revealing/);
-  await expect(page).toHaveURL(/\/#work$/);
-  await expect(page.locator("#work")).toBeFocused();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Alan Sahlan." })).toBeFocused();
+  expect(await page.evaluate(() => window.scrollY)).toBe(0);
   await expect(curtain).toHaveAttribute("data-phase", "idle");
 });
+
+for (const from of ["/", "/contact"]) {
+  for (const viaMenu of [false, true]) {
+    test(`About uses ${from === "/contact" ? "backward" : "forward"} motion from ${from} through ${viaMenu ? "Menu" : "the header"}`, async ({ page }) => {
+      await page.goto(from);
+      await page.addStyleTag({ content: ":root { --route-curtain-duration: 2000ms; --route-curtain-exit-duration: 2000ms; }" });
+      if (viaMenu) {
+        await page.evaluate(() => window.scrollTo(0, 180));
+        await page.getByRole("button", { name: "Open menu" }).click();
+      }
+      const navigation = viaMenu ? page.getByRole("dialog", { name: "Navigation menu" }) : page.getByRole("navigation", { name: "Primary" });
+      await navigation.getByRole("link", { name: "About", exact: true }).click();
+      const curtain = page.locator(".route-curtain"), panels = curtain.locator(".route-curtain-panel");
+      const backward = from === "/contact";
+      await expect(curtain).toHaveAttribute("data-phase", "covering");
+      await expect(curtain).toHaveAttribute("data-direction", backward ? "back" : "forward");
+      const cover = await panels.evaluateAll(elements => elements.map(element => {
+        const animation = element.getAnimations()[0];
+        animation.pause();
+        const effect = animation.effect as KeyframeEffect;
+        return { startX: new DOMMatrix(String(effect.getKeyframes()[0].transform)).m41, delay: effect.getTiming().delay };
+      }));
+      expect(cover.every(panel => backward ? panel.startX > 0 : panel.startX < 0)).toBe(true);
+      expect(cover.map(panel => panel.delay)).toEqual(backward ? [120, 90, 60, 30, 0] : [0, 30, 60, 90, 120]);
+      await expect(page).toHaveURL(new RegExp(from === "/" ? "/$" : "/contact$"));
+      const finishPanels = () => panels.evaluateAll(elements => elements.forEach(element => element.getAnimations().forEach(animation => animation.finish())));
+      await finishPanels();
+      await expect(curtain).toHaveAttribute("data-phase", "revealing");
+      await expect(page).toHaveURL(/\/about$/);
+      await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
+      const reveal = await panels.evaluateAll(elements => elements.map(element => {
+        const animation = element.getAnimations()[0];
+        animation.pause();
+        const effect = animation.effect as KeyframeEffect;
+        return { end: effect.getKeyframes().at(-1)?.transform, delay: effect.getTiming().delay };
+      }));
+      expect(reveal.every(panel => panel.end === (backward ? "translateX(-100%)" : "translateX(100%)"))).toBe(true);
+      expect(reveal.map(panel => panel.delay)).toEqual(cover.map(panel => panel.delay));
+      await finishPanels();
+      await expect(curtain).toHaveAttribute("data-phase", "idle");
+      await expect(page.getByRole("dialog", { name: "Navigation menu" })).toHaveCount(0);
+    });
+  }
+}
 
 test("the page switches only after all cobalt panels finish covering", async ({ page }) => {
   await page.goto("/");
@@ -51,7 +96,7 @@ test("the page switches only after all cobalt panels finish covering", async ({ 
   await expect(page).toHaveURL(/\/$/);
   await panels.last().evaluate((element) => element.getAnimations().forEach((animation) => animation.finish()));
   await expect(page).toHaveURL(/\/about$/);
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect(panels.first()).toHaveCSS("background-color", "rgb(36, 91, 255)");
   await panels.evaluateAll((elements) => elements.forEach((element) => element.getAnimations().forEach((animation) => animation.finish())));
   await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
@@ -66,7 +111,7 @@ test("a rapid second click follows the latest destination", async ({ page }) => 
   await expect(page.getByRole("heading", { level: 1, name: /Alan/ })).toBeVisible();
 });
 
-test("five horizontal stairs sweep left to right and reverse when returning to Work", async ({ page }) => {
+test("five horizontal stairs sweep left to right and reverse when returning Home", async ({ page }) => {
   await page.goto("/");
   await page.addStyleTag({ content: ":root { --route-curtain-duration: 2000ms; --route-curtain-exit-duration: 2000ms; }" });
   const curtain = page.locator(".route-curtain");
@@ -91,13 +136,13 @@ test("five horizontal stairs sweep left to right and reverse when returning to W
   await finishPanels();
   await expect(curtain).toHaveAttribute("data-phase", "idle");
 
-  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Work", exact: true }).click();
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Home", exact: true }).click();
   await expect(curtain).toHaveAttribute("data-phase", "covering");
   await expect(curtain).toHaveAttribute("data-direction", "back");
   expect((await motion()).map(({ delay }) => delay)).toEqual([120, 90, 60, 30, 0]);
   await finishPanels();
   await expect(curtain).toHaveAttribute("data-phase", "revealing");
-  await expect(page.locator("#work")).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: "Alan Sahlan." })).toBeFocused();
   expect((await motion()).every(({ target }) => target === "translateX(-100%)")).toBe(true);
   expect((await motion()).map(({ delay }) => delay)).toEqual([120, 90, 60, 30, 0]);
   await finishPanels();
@@ -108,7 +153,7 @@ test("changing reduced motion during covering completes navigation and clears th
   await page.goto("/");
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "About", exact: true }).click();
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
 });
 
@@ -123,7 +168,7 @@ test("Back keeps the outgoing page until covered and rapid Forward restores the 
   await expect(curtain).toHaveAttribute("data-phase", "covering");
   await expect(curtain).toHaveAttribute("data-direction", "back");
   await panels.evaluateAll((elements) => elements.forEach((element) => element.getAnimations().forEach((animation) => animation.pause())));
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeVisible();
   await page.goForward();
   await panels.evaluateAll((elements) => elements.forEach((element) => element.getAnimations().forEach((animation) => animation.finish())));
   await expect(curtain).toHaveAttribute("data-phase", "revealing");
@@ -131,17 +176,17 @@ test("Back keeps the outgoing page until covered and rapid Forward restores the 
   await expect(page).toHaveURL(/\/about$/);
   await panels.evaluateAll((elements) => elements.forEach((element) => element.getAnimations().forEach((animation) => animation.finish())));
   await expect(curtain).toHaveAttribute("data-phase", "idle");
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeVisible();
 });
 
-test("history direction follows Back even when it returns from Work to About", async ({ page }) => {
+test("history direction follows Back even when it returns from Home to About", async ({ page }) => {
   await page.goto("/about");
   await page.locator(".site-header .brand").click();
   await expect(page.getByRole("heading", { level: 1, name: /Alan/ })).toBeFocused();
   const curtain = page.locator(".route-curtain");
   await expect(curtain).toHaveAttribute("data-phase", "idle");
   await page.goBack();
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect(curtain).toHaveAttribute("data-direction", "back");
   await expect(curtain).toHaveAttribute("data-phase", "idle");
   await page.goForward();
@@ -153,7 +198,7 @@ test("forced colors uses immediate native navigation", async ({ page }) => {
   await page.emulateMedia({ forcedColors: "active" });
   await page.goto("/");
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "About", exact: true }).click();
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect(page.locator(".route-curtain")).toBeHidden();
   expect(await page.evaluate(() => window.pageFadeSamples)).toEqual([]);
 });
@@ -161,7 +206,7 @@ test("forced colors uses immediate native navigation", async ({ page }) => {
 test("pages use the curtain through links, Back, and Forward with immediate destination focus", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "About", exact: true }).click();
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect.poll(() => page.evaluate(() => window.pageFadeSamples.some((sample) =>
     sample.names.some((name) => name.startsWith("route-curtain-reveal-")) && sample.focus === "H1"
   ))).toBe(true);
@@ -177,31 +222,37 @@ test("pages use the curtain through links, Back, and Forward with immediate dest
   await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
   const backCount = await page.evaluate(() => window.pageFadeSamples.length);
   await page.goForward();
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   await expect.poll(() => page.evaluate((count) => window.pageFadeSamples.slice(count).some((sample) =>
     sample.names.some((name) => name.startsWith("route-curtain-reveal-"))
   ), backCount)).toBe(true);
   await expect(page.locator(".route-curtain")).toHaveAttribute("data-direction", "forward");
 });
 
-test("same-page Contact navigation scrolls without replaying the curtain", async ({ page }) => {
+test("Contact uses the route curtain and repeat navigation stays on the form", async ({ page }) => {
   await page.goto("/about");
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Contact", exact: true }).click();
-  await expect(page).toHaveURL(/\/about#contact$/);
-  await expect(page.locator("#contact")).toBeInViewport();
+  await expect(page).toHaveURL(/\/contact$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Let’s work together." })).toBeFocused();
+  await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
+  expect(await page.evaluate(() => window.pageFadeSamples.flatMap((sample) => sample.names))).toContain("route-curtain-cover-0");
+  const count = await page.evaluate(() => window.pageFadeSamples.length);
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Contact", exact: true }).click();
+  await expect(page.getByRole("form", { name: "Prepare an email" })).toBeVisible();
+  expect(await page.evaluate((count) => window.pageFadeSamples.slice(count).flatMap((sample) => sample.names), count)).toEqual([]);
   await page.goBack();
   await expect(page).toHaveURL(/\/about$/);
-  expect(await page.evaluate(() => window.pageFadeSamples.flatMap((sample) => sample.names))).toEqual([]);
+  await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
   await page.locator(".site-header .brand").click();
   await expect(page.getByRole("heading", { level: 1, name: /Alan/ })).toBeFocused();
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "About", exact: true }).click();
-  await expect(page.getByRole("heading", { level: 1, name: /Product Designer/ })).toBeFocused();
+  await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
   expect(await page.evaluate(() => window.pageFadeSamples.flatMap((sample) => sample.names))).not.toContain("history-page-fade");
 });
 
 test("returning to selected work restores its position under the curtain", async ({ page }) => {
-  await page.goto("/about");
-  await page.getByRole("link", { name: "Read the Aurelia case study" }).click();
+  await page.goto("/#work");
+  await page.locator('.project-link[href="/work/aurelia"]').click();
   await expect(page.getByRole("heading", { level: 1, name: "Aurelia" })).toBeFocused();
   const count = await page.evaluate(() => window.pageFadeSamples.length);
   await page.getByRole("link", { name: /Back to selected work/ }).first().click();
@@ -232,4 +283,54 @@ test.describe("touch navigation", () => {
       sample.names.includes("route-curtain-reveal") && sample.durations.every((duration) => duration > 0 && duration <= 100)
     ), count)).toBe(true);
   });
+});
+
+for (const viaMenu of [false, true]) {
+  test(`keyboard route activation bypasses the curtain through ${viaMenu ? "Menu" : "the header"}`, async ({ page }) => {
+    await page.goto("/");
+    await page.addStyleTag({ content: ":root { --route-curtain-duration: 2000ms; --route-curtain-exit-duration: 2000ms; }" });
+    if (viaMenu) {
+      await page.evaluate(() => window.scrollTo(0, 180));
+      const trigger = page.getByRole("button", { name: "Open menu" });
+      await trigger.focus();
+      await page.keyboard.press("Enter");
+    }
+    const navigation = viaMenu ? page.getByRole("dialog", { name: "Navigation menu" }) : page.getByRole("navigation", { name: "Primary" });
+    await navigation.getByRole("link", { name: "About", exact: true }).focus();
+    await page.keyboard.press("Enter");
+    await expect(page).toHaveURL(/\/about$/);
+    await expect(page.getByRole("heading", { level: 1, name: /Hi, I.m Alan/ })).toBeFocused();
+    await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
+    await expect(page.locator(".route-curtain")).toBeHidden();
+    await expect(page.getByRole("dialog", { name: "Navigation menu" })).toHaveCount(0);
+    expect(await page.evaluate(() => window.pageFadeSamples)).toEqual([]);
+    expect(await page.locator("main").evaluate(element => element.hasAttribute("inert"))).toBe(false);
+  });
+}
+
+test("keyboard activation cancels an in-progress pointer curtain and follows its destination", async ({ page }) => {
+  await page.goto("/");
+  await page.addStyleTag({ content: ":root { --route-curtain-duration: 2000ms; --route-curtain-exit-duration: 2000ms; }" });
+  const navigation = page.getByRole("navigation", { name: "Primary" });
+  await navigation.getByRole("link", { name: "About", exact: true }).click();
+  await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "covering");
+  const count = await page.evaluate(() => window.pageFadeSamples.length);
+  await navigation.getByRole("link", { name: "Contact", exact: true }).focus();
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(/\/contact$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Let’s work together." })).toBeFocused();
+  await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
+  await expect(page.locator(".route-curtain")).toBeHidden();
+  expect(await page.evaluate(count => window.pageFadeSamples.slice(count), count)).toEqual([]);
+});
+
+test("keyboard return to selected work preserves section focus and scroll without a curtain", async ({ page }) => {
+  await page.goto("/work/paylecta");
+  await page.getByRole("link", { name: /Back to selected work/ }).first().focus();
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(/\/#work$/);
+  await expect(page.locator("#work")).toBeFocused();
+  await expect(page.getByRole("heading", { name: "Selected work" })).toBeInViewport();
+  await expect(page.locator(".route-curtain")).toHaveAttribute("data-phase", "idle");
+  expect(await page.evaluate(() => window.pageFadeSamples)).toEqual([]);
 });

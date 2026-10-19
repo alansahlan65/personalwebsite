@@ -2,6 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { readSessionValue, removeSessionValue } from "../lib/session-storage";
 
 export function RouteFocus() {
   const pathname = usePathname();
@@ -26,10 +27,12 @@ export function RouteFocus() {
     if (window.location.pathname !== pathname) return;
     const fromHistory = historyDestination.current === pathname;
     historyDestination.current = null;
-    if (pathname === "/" && sessionStorage.getItem("selected-work-return-pending") === "1") {
-      sessionStorage.removeItem("selected-work-return-pending");
-      const saved = sessionStorage.getItem("selected-work-return");
-      sessionStorage.removeItem("selected-work-return");
+    if (pathname === "/" && !window.location.hash && !fromHistory) window.scrollTo(0, 0);
+    const returnsToWork = !fromHistory && fromPath.startsWith("/work/") && window.location.hash === "#work";
+    if (pathname === "/" && (returnsToWork || readSessionValue("selected-work-return-pending") === "1")) {
+      removeSessionValue("selected-work-return-pending");
+      const saved = readSessionValue("selected-work-return");
+      removeSessionValue("selected-work-return");
       let y: number | null = null;
       if (saved) {
         try {

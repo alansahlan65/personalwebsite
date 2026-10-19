@@ -1,0 +1,34 @@
+[
+  {
+    "image": "munchpal-availability-before.png",
+    "original_pixels_unchanged": true,
+    "dimensions": [
+      388,
+      834
+    ]
+  },
+  {
+    "image": "munchpal-availability-after.png",
+    "original_pixels_unchanged": true,
+    "dimensions": [
+      388,
+      834
+    ]
+  },
+  {
+    "image": "munchpal-message-before.png",
+    "original_pixels_unchanged": true,
+    "dimensions": [
+      388,
+      834
+    ]
+  },
+  {
+    "image": "munchpal-message-after.png",
+    "original_pixels_unchanged": true,
+    "dimensions": [
+      388,
+      834
+    ]
+  }
+]

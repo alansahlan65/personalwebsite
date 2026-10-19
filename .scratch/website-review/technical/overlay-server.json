@@ -1,0 +1,6 @@
+{
+  "id": 20004,
+  "name": "impeccable",
+  "stopMethod": "Stop-Process -Id 20004",
+  "reason": "Temporary detector overlay server started by Assessment B"
+}

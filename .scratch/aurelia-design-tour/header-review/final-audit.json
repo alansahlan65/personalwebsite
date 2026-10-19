@@ -1,0 +1,53 @@
+{
+  "offline": true,
+  "embeddedWidth": 960,
+  "states": [
+    {
+      "time": 8.18,
+      "identical": true
+    },
+    {
+      "time": 9.8,
+      "identical": true
+    },
+    {
+      "time": 19.5,
+      "identical": true
+    },
+    {
+      "time": 23,
+      "identical": true
+    },
+    {
+      "time": 29.7,
+      "identical": false
+    }
+  ],
+  "seamIdentical": true,
+  "seamStart": "7e4f07220f0b3526a02eec0b73f3f6e58c1b842695255d1e50124e0c05ac6446",
+  "seamEnd": "7e4f07220f0b3526a02eec0b73f3f6e58c1b842695255d1e50124e0c05ac6446",
+  "playback": [
+    {
+      "label": "signature",
+      "time": 16.717,
+      "sampledFrames": 529,
+      "medianFrameMs": 16.699999999999818,
+      "p95FrameMs": 33.399999999999636
+    },
+    {
+      "label": "revision",
+      "time": 31.062,
+      "sampledFrames": 257,
+      "medianFrameMs": 16.69999999999891,
+      "p95FrameMs": 33.399999999999636
+    },
+    {
+      "label": "loop",
+      "time": 1.526,
+      "sampledFrames": 173,
+      "medianFrameMs": 16.700000000000728,
+      "p95FrameMs": 16.799999999999272
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "Path": "debug.log",
+    "Files": 1,
+    "Bytes": 1274,
+    "Reason": "Stale Chromium diagnostic output"
+  },
+  {
+    "Path": "public\\images\\work\\aurelia-compact.webp",
+    "Files": 1,
+    "Bytes": 236862,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\aurelia-compact.webp.json",
+    "Files": 1,
+    "Bytes": 1536,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\paylecta-compact.webp",
+    "Files": 1,
+    "Bytes": 155744,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\paylecta-compact.webp.json",
+    "Files": 1,
+    "Bytes": 1592,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\pawfriend-compact.webp",
+    "Files": 1,
+    "Bytes": 135050,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\pawfriend-compact.webp.json",
+    "Files": 1,
+    "Bytes": 1696,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\munchpal-compact.webp",
+    "Files": 1,
+    "Bytes": 294678,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": "public\\images\\work\\munchpal-compact.webp.json",
+    "Files": 1,
+    "Bytes": 1562,
+    "Reason": "Retired gallery banner or sidecar; original metadata preserved in manifest"
+  },
+  {
+    "Path": ".scratch\\runtime\\paylecta-commit-check",
+    "Files": 512,
+    "Bytes": 127290432.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\munchpal-commit-check",
+    "Files": 546,
+    "Bytes": 101299279.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\munchpal-focused-results",
+    "Files": 5,
+    "Bytes": 11277195.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\munchpal-initial-green-results",
+    "Files": 3,
+    "Bytes": 322600.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\munchpal-red-results",
+    "Files": 5,
+    "Bytes": 1740064.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-corrections-results",
+    "Files": 3,
+    "Bytes": 923466.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-direct-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-final-focused-results",
+    "Files": 3,
+    "Bytes": 1039899.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-fixture-final-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-fixture-results",
+    "Files": 7,
+    "Bytes": 19391433.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-focused-results",
+    "Files": 5,
+    "Bytes": 1904344.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-full-final-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-full-results",
+    "Files": 5,
+    "Bytes": 6196589.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-gallery-red-results",
+    "Files": 3,
+    "Bytes": 2074547.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-gallery-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-overflow-results",
+    "Files": 3,
+    "Bytes": 916954.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-red-results",
+    "Files": 3,
+    "Bytes": 97191.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-route-results",
+    "Files": 3,
+    "Bytes": 3783490.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-staged-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\pawfriend-wrap-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\paylecta-final-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\paylecta-full-results",
+    "Files": 5,
+    "Bytes": 6257356.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\paylecta-role-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  },
+  {
+    "Path": ".scratch\\runtime\\paylecta-snapshot-results",
+    "Files": 1,
+    "Bytes": 45.0,
+    "Reason": "Obsolete isolated validation checkout or generated test output"
+  }
+]

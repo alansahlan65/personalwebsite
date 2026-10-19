@@ -1,22 +1,140 @@
 "use client";
 
 import { useEffect } from "react";
+import { scroll } from "motion";
 
 const easing = "cubic-bezier(.16, 1, .3, 1)";
-const entrances = [
-  { selector: ".work .section-intro", kind: "soft" },
-  { selector: ".project-row", kind: "soft" },
-  { selector: ".about-copy p", kind: "copy" },
-  { selector: ".about-details section", kind: "soft" },
-  { selector: ".case-decision", kind: "soft" },
-  { selector: ".case-reading h2", kind: "copy" },
-  { selector: ".contact-note", kind: "copy" },
-] as const;
+
+const homeReveals = [
+  ".work .section-intro",
+  ".project-link",
+  ".about > .section-label",
+  ".about-copy",
+  ".contact h2",
+  ".contact-email",
+  ".professional-links",
+  ".footer-bottom",
+  ".icon-credit",
+].join(", ");
+
+function setupHomeReveals(root: HTMLElement) {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const forcedColors = window.matchMedia("(forced-colors: active)");
+  if (reduce.matches || forcedColors.matches) return;
+
+  const elements = Array.from(root.querySelectorAll<HTMLElement>(homeReveals));
+  const previousDelays = elements.map((element) => element.style.transitionDelay);
+  const ready = new Set<HTMLElement>();
+  let keyboard = false;
+  let frame = 0;
+
+  function reveal(element: HTMLElement, instant = false, delay = 0) {
+    observer.unobserve(element);
+    ready.delete(element);
+    element.style.transitionDelay = `${delay}ms`;
+    element.dataset.scrollReveal = instant ? "instant" : "revealed";
+  }
+
+  function revealReady() {
+    if (document.hidden) return;
+    // Read the group before changing any styles; reveals cannot force each
+    // following element to recalculate layout during the same scroll event.
+    const visible = [...ready].filter(element => {
+      const bounds = element.getBoundingClientRect();
+      return bounds.bottom > 0 && bounds.top < window.innerHeight;
+    });
+    let order = 0;
+    for (const element of visible) {
+      reveal(element, keyboard, Math.min(order++ * 60, 180));
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      const element = entry.target as HTMLElement;
+      if (entry.isIntersecting) ready.add(element);
+      else ready.delete(element);
+    }
+    revealReady();
+  }, { threshold: 0 });
+
+  const hashTarget = window.location.hash ? document.getElementById(window.location.hash.slice(1)) : null;
+  for (const element of elements) {
+    const bounds = element.getBoundingClientRect();
+    // Initially visible content, restored positions, and direct section links
+    // are readable immediately; only later content needs an entrance.
+    if (bounds.top < window.innerHeight || hashTarget?.contains(element) || element.contains(document.activeElement)) {
+      reveal(element, true);
+    } else {
+      element.dataset.scrollReveal = "pending";
+      observer.observe(element);
+    }
+  }
+
+  const onScroll = () => {
+    if (!frame && ready.size) frame = requestAnimationFrame(() => { frame = 0; revealReady(); });
+  };
+  const onKeyboard = () => { keyboard = true; };
+  const onPointer = () => { keyboard = false; };
+  const onFocus = (event: FocusEvent) => {
+    if (!(event.target instanceof Element)) return;
+    const target = event.target;
+    // Pointer focus must not move a link between pointerdown and pointerup.
+    if (!keyboard && !target.matches(":focus-visible, section, footer")) return;
+    for (const element of elements) {
+      if (element.contains(target) || target.contains(element)) reveal(element, true);
+    }
+  };
+  const onPreferenceChange = () => {
+    if (reduce.matches || forcedColors.matches) {
+      for (const element of elements) reveal(element, true);
+    }
+  };
+  const onVisibilityChange = () => {
+    if (document.hidden) {
+      for (const element of elements) {
+        if (element.dataset.scrollReveal === "revealed") reveal(element, true);
+      }
+    } else revealReady();
+  };
+
+  const stopScroll = scroll(onScroll);
+  window.addEventListener("wheel", onPointer, { passive: true });
+  window.addEventListener("touchstart", onPointer, { passive: true });
+  document.addEventListener("pointerdown", onPointer, { passive: true });
+  document.addEventListener("keydown", onKeyboard);
+  root.addEventListener("focusin", onFocus);
+  reduce.addEventListener("change", onPreferenceChange);
+  forcedColors.addEventListener("change", onPreferenceChange);
+  document.addEventListener("visibilitychange", onVisibilityChange);
+  return () => {
+    observer.disconnect();
+    cancelAnimationFrame(frame);
+    stopScroll();
+    window.removeEventListener("wheel", onPointer);
+    window.removeEventListener("touchstart", onPointer);
+    document.removeEventListener("pointerdown", onPointer);
+    document.removeEventListener("keydown", onKeyboard);
+    root.removeEventListener("focusin", onFocus);
+    reduce.removeEventListener("change", onPreferenceChange);
+    forcedColors.removeEventListener("change", onPreferenceChange);
+    document.removeEventListener("visibilitychange", onVisibilityChange);
+    elements.forEach((element, index) => {
+      delete element.dataset.scrollReveal;
+      element.style.transitionDelay = previousDelays[index];
+    });
+  };
+}
 
 export function PageMotion({ name }: { name: string }) {
   useEffect(() => {
     const root = document.querySelector<HTMLElement>(`[data-page-transition="${name}"]`);
-    if (!root || !("IntersectionObserver" in window) || !Element.prototype.animate) return;
+    if (!root || typeof IntersectionObserver !== "function") return;
+    if (name === "home-page") return setupHomeReveals(root);
+    if (!Element.prototype.animate) return;
+
+    const elements = root.querySelectorAll<HTMLElement>(".about-details");
+    if (!elements.length) return;
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
     const forcedColors = window.matchMedia("(forced-colors: active)");
@@ -29,12 +147,9 @@ export function PageMotion({ name }: { name: string }) {
         observer.unobserve(element);
         if (reduce.matches || forcedColors.matches || document.hidden || element.contains(document.activeElement)) continue;
 
-        const kind = element.dataset.pageMotion;
         const animation = element.animate(
-          kind === "soft"
-            ? [{ opacity: 0.68 }, { opacity: 1 }]
-            : [{ opacity: 0.68, transform: "translate3d(0, 14px, 0)" }, { opacity: 1, transform: "none" }],
-          { id: `page-motion-${kind}`, duration: kind === "soft" ? 320 : 420, easing },
+          [{ opacity: 0.68 }, { opacity: 1 }],
+          { id: "page-motion-soft", duration: 320, easing },
         );
         active.add(animation);
         animation.addEventListener("finish", () => active.delete(animation), { once: true });
@@ -42,13 +157,10 @@ export function PageMotion({ name }: { name: string }) {
       }
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
 
-    for (const entrance of entrances) {
-      for (const element of root.querySelectorAll<HTMLElement>(entrance.selector)) {
-        const bounds = element.getBoundingClientRect();
-        if (restoredPosition && bounds.top < window.innerHeight && bounds.bottom > 0) continue;
-        element.dataset.pageMotion = entrance.kind;
-        observer.observe(element);
-      }
+    for (const element of elements) {
+      const bounds = element.getBoundingClientRect();
+      if (restoredPosition && bounds.top < window.innerHeight && bounds.bottom > 0) continue;
+      observer.observe(element);
     }
 
     const stop = () => {

@@ -1,0 +1,356 @@
+{
+  "sections": [
+    {
+      "id": "top",
+      "className": "hero",
+      "heading": "Come for Bali.\nStay for the house.",
+      "height": 1080,
+      "buttons": [
+        {
+          "text": "Plan my stay",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "className": "journey",
+      "heading": "Three ways into Bali.",
+      "height": 3942,
+      "buttons": [
+        {
+          "text": "OPEN COAST",
+          "label": null
+        },
+        {
+          "text": "DEEP SHADE",
+          "label": null
+        },
+        {
+          "text": "RAIN AT HOME",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "stays",
+      "className": "stays section-pad",
+      "heading": "Somewhere you’ll want to stay.",
+      "height": 1574.125,
+      "buttons": [
+        {
+          "text": "All stays",
+          "label": null
+        },
+        {
+          "text": "Rest and stay in",
+          "label": null
+        },
+        {
+          "text": "Explore from here",
+          "label": null
+        },
+        {
+          "text": "Work and stay longer",
+          "label": null
+        },
+        {
+          "text": "",
+          "label": "Previous stay"
+        },
+        {
+          "text": "Rest and stay in",
+          "label": "View stay: Awan Cliff House"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Explore from here",
+          "label": "View stay: Sora Surf Villa"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Rest and stay in",
+          "label": "View stay: Tirta Forest Villa"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Rest and stay in",
+          "label": "View stay: Tegal Quiet Retreat"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Explore from here",
+          "label": "View stay: Ombak House"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Work and stay longer",
+          "label": "View stay: Sela Residence"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Explore from here",
+          "label": "View stay: Petitenget Penthouse"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Rest and stay in",
+          "label": "View stay: Nila Beach Residence"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Rest and stay in",
+          "label": "View stay: Dua Garden Villa"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "Rest and stay in",
+          "label": "View stay: Lembah House"
+        },
+        {
+          "text": "View stay",
+          "label": null
+        },
+        {
+          "text": "",
+          "label": "Next stay"
+        }
+      ]
+    },
+    {
+      "id": "ways-to-stay",
+      "className": "stay-modes section-pad",
+      "heading": "How will you spend your days?",
+      "height": 1246.125,
+      "buttons": [
+        {
+          "text": "01\nRest and stay in",
+          "label": null
+        },
+        {
+          "text": "02\nExplore from here",
+          "label": null
+        },
+        {
+          "text": "03\nWork and stay longer",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "featured",
+      "className": "featured section-pad",
+      "heading": "Awan Cliff House, from four angles.",
+      "height": 1348.046875,
+      "buttons": [
+        {
+          "text": "Exterior",
+          "label": null
+        },
+        {
+          "text": "Materials",
+          "label": null
+        },
+        {
+          "text": "Interior",
+          "label": null
+        },
+        {
+          "text": "Setting",
+          "label": null
+        },
+        {
+          "text": "Check Awan Cliff House",
+          "label": null
+        },
+        {
+          "text": "",
+          "label": null
+        },
+        {
+          "text": "",
+          "label": null
+        },
+        {
+          "text": "",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "areas",
+      "className": "areas section-pad",
+      "heading": "One island. A world of difference.",
+      "height": 1331.125,
+      "buttons": [
+        {
+          "text": "01\nUluwatu",
+          "label": null
+        },
+        {
+          "text": "02\nUbud",
+          "label": null
+        },
+        {
+          "text": "03\nPererenan + Canggu",
+          "label": null
+        },
+        {
+          "text": "04\nSeminyak",
+          "label": null
+        },
+        {
+          "text": "05\nSanur",
+          "label": null
+        },
+        {
+          "text": "06\nNusa Dua",
+          "label": null
+        },
+        {
+          "text": "07\nSidemen",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "standard",
+      "className": "standard section-pad",
+      "heading": "A good stay goes beyond the view.",
+      "height": 1830,
+      "buttons": [
+        {
+          "text": "",
+          "label": "Expand or collapse photograph"
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "className": "faq section-pad",
+      "heading": "Before you make plans.",
+      "height": 662,
+      "buttons": []
+    },
+    {
+      "id": "",
+      "className": "final-cta section-pad",
+      "heading": "Tell us what a good day in Bali looks like.",
+      "height": 1172,
+      "buttons": [
+        {
+          "text": "Plan your stay",
+          "label": null
+        },
+        {
+          "text": "Ask Aurelia",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "",
+      "className": "footer",
+      "height": 591.578125,
+      "buttons": [
+        {
+          "text": "EN",
+          "label": "English, current language"
+        },
+        {
+          "text": "ID",
+          "label": "Switch to Bahasa Indonesia"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/images/bali/hero-main.webp",
+    "/images/bali/journey-coast.webp",
+    "/images/bali/journey-shade.webp",
+    "/images/bali/journey-rain.webp",
+    "/images/bali/awan-cliff-house-1.webp",
+    "/images/bali/sora-surf-villa-1.webp",
+    "/images/bali/tirta-forest-villa-1.webp",
+    "/images/bali/tegal-quiet-retreat-1.webp",
+    "/images/bali/ombak-pererenan-1.webp",
+    "/images/bali/sela-long-stay-1.webp",
+    "/images/bali/petitenget-penthouse-1.webp",
+    "/images/bali/nila-sanur-residence-1.webp",
+    "/images/bali/dua-garden-villa-1.webp",
+    "/images/bali/lembah-sidemen-1.webp",
+    "/images/bali/mode-stay-in.webp",
+    "/images/bali/featured-exterior-main.webp",
+    "/images/bali/featured-exterior-detail.webp",
+    "/images/bali/featured-materials-main.webp",
+    "/images/bali/featured-materials-detail.webp",
+    "/images/bali/featured-interior-main.webp",
+    "/images/bali/featured-interior-detail.webp",
+    "/images/bali/featured-setting-main.webp",
+    "/images/bali/featured-setting-detail.webp",
+    "/images/bali/area-uluwatu.webp",
+    "/images/bali/standard-check.webp",
+    "/images/bali/final-evening.webp",
+    "/images/bali/area-ubud.webp"
+  ],
+  "carousel": {
+    "transforms": [
+      {
+        "className": "stays__track",
+        "transform": "translate3d(-409.38px, 0px, 0px)"
+      },
+      {
+        "className": "stays__slide",
+        "transform": "translate3d(0px, 0px, 0px)"
+      },
+      {
+        "className": "stays__slide",
+        "transform": "translate3d(0px, 0px, 0px)"
+      },
+      {
+        "className": "stays__slide",
+        "transform": "translate3d(0px, 0px, 0px)"
+      }
+    ],
+    "selected": [
+      "false",
+      "true",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ]
+  },
+  "errors": []
+}

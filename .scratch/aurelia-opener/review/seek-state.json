@@ -1,0 +1,132 @@
+{
+  "stateA": [
+    {
+      "class": "",
+      "id": "world",
+      "transform": "matrix(1.37, 0, 0, 1.37, -420, -56)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "planner",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "booking-step",
+      "id": "",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "booking-step",
+      "id": "",
+      "transform": "matrix(1, 0, 0, 1, 24, 0)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "booking-step",
+      "id": "",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-dates",
+      "transform": "matrix(1, 0, 0, 1, 0, -24)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-stay",
+      "transform": "matrix(1, 0, 0, 1, 0, 24)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-edit",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-review",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "0",
+      "filter": "none"
+    }
+  ],
+  "stateB": [
+    {
+      "class": "",
+      "id": "world",
+      "transform": "matrix(1.37, 0, 0, 1.37, -420, -56)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "planner",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "booking-step",
+      "id": "",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "booking-step",
+      "id": "",
+      "transform": "matrix(1, 0, 0, 1, 24, 0)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "booking-step",
+      "id": "",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-dates",
+      "transform": "matrix(1, 0, 0, 1, 0, -24)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-stay",
+      "transform": "matrix(1, 0, 0, 1, 0, 24)",
+      "opacity": "0",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-edit",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "filter": "none"
+    },
+    {
+      "class": "",
+      "id": "claim-review",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "0",
+      "filter": "none"
+    }
+  ]
+}

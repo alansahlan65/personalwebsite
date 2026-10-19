@@ -1,0 +1,28 @@
+{
+  "variant": "type-fix",
+  "standalone": false,
+  "viewport": {
+    "x": 72,
+    "y": 576.890625,
+    "width": 1296,
+    "height": 729
+  },
+  "shots": [
+    {
+      "label": "closing-and-loop",
+      "sampledFrames": 416,
+      "lostFrames": 3,
+      "droppedPercent": 0.72,
+      "p95FrameMs": 16.8,
+      "renderer": {
+        "LayoutCount": 55,
+        "LayoutDuration": 0.0049,
+        "RecalcStyleCount": 416,
+        "RecalcStyleDuration": 0.0929,
+        "ScriptDuration": 0.1042,
+        "TaskDuration": 0.5238
+      }
+    }
+  ],
+  "errors": []
+}

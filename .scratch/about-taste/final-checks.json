@@ -1,0 +1,50 @@
+{
+  "desktop": {
+    "title": "About Alan Sahlan | Product Designer",
+    "headerHeight": 80,
+    "emDashes": 0,
+    "ids": [
+      "main",
+      "about-story-title",
+      "current-work-title",
+      "approach-title",
+      "contact",
+      "contact-title"
+    ],
+    "nav": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "Download resume PDF",
+        "href": "/resume/alan-sahlan-resume.pdf"
+      }
+    ],
+    "overflow": false,
+    "accent": "#245bff"
+  },
+  "themes": [
+    {
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "colorScheme": "dark",
+      "violations": []
+    }
+  ],
+  "preservation": {
+    "removedAboutAnchors": [],
+    "addedAboutAnchors": [],
+    "footerUnchanged": true
+  }
+}

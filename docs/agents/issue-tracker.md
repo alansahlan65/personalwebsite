@@ -1,42 +1,23 @@
-# Issue tracker: Local Markdown
+# Issue tracker: local Markdown
 
-Issues and specs live as Markdown files under `.scratch/`.
+Reviewed 19 October 2026. Active issues/specifications live under `.scratch/`. Read [triage roles](triage-labels.md) before assigning status.
 
 ## File conventions
 
-- One directory per feature: `.scratch/<feature-slug>/`.
-- Specification: `.scratch/<feature-slug>/spec.md`.
-- One file per implementation ticket:
-  `.scratch/<feature-slug>/issues/<NN>-<slug>.md`.
-- Number tickets from `01`.
-- Record triage state in a `Status:` line near the top.
-  Use the vocabulary in `triage-labels.md`.
-- Append comments and conversation history under `## Comments`.
+- Feature directory: `.scratch/<feature-slug>/`.
+- Specification: `spec.md` inside that directory.
+- Tickets: `issues/<NN>-<slug>.md`, numbered from `01`.
+- Put the triage role in a `Status:` line near the top.
+- Record completion separately as `Resolution:`; append discussion under `## Comments`.
 
-## Publishing and fetching
+When a skill says to publish to the issue tracker, create the local file. When fetching a ticket, resolve its number inside the relevant feature directory. This convention does not authorize external messaging or issue publication.
 
-When a skill says to publish to the issue tracker, create the
-appropriate Markdown file using these conventions.
+Completed/superseded tickets may be consolidated during an authorized documentation cleanup. First move current requirements, unresolved work, and unique evidence into the owning document from [the index](../README.md). Preserve raw source/provenance records. Avoid leaving old open checkboxes that contradict the implementation.
 
-When a skill says to fetch a ticket, read the referenced file.
-Resolve ticket numbers within the relevant feature directory.
+## Wayfinding
 
-## Wayfinding operations
+For `/wayfinder`, use `.scratch/<effort>/map.md` with Notes, Decisions-so-far, and Fog sections. Child tickets live in `issues/NN-<slug>.md` and state their question and `Type:` (`research`, `prototype`, `grilling`, or `task`).
 
-For `/wayfinder`, use `.scratch/<effort>/map.md` for the map,
-with Notes, Decisions-so-far, and Fog sections.
-
-- Store child tickets in `issues/NN-<slug>.md`.
-- Put the question in the ticket body.
-- Record ticket type in `Type:` using `research`, `prototype`,
-  `grilling`, or `task`.
-- Open, unclaimed tickets use `Status: open`.
-- Claim a ticket by saving `Status: claimed` before starting work.
-- Record dependencies as `Blocked by: NN, NN`.
-- A ticket is unblocked when every listed dependency is resolved.
-- Select the lowest-numbered open, unblocked, unclaimed ticket.
-- Resolve a ticket by appending an `## Answer` section and setting
-  `Status: resolved`.
-- Append a summary and ticket link to the map's Decisions-so-far.
+Wayfinding uses a separate lifecycle: `Status: open`, `claimed` before work, and `resolved` with an appended `## Answer`. Record dependencies as `Blocked by: NN, NN`. Select the lowest-numbered open/unclaimed ticket whose dependencies are all resolved. Append the answer summary and ticket link to the map.
 
 Wayfinding lifecycle statuses are separate from triage roles.

@@ -1,0 +1,321 @@
+*** Begin Patch
+*** Update File: D:\Project\Personal Web\app\about\about.module.css
+@@
+-.page { position: relative; z-index: 1; container-type: inline-size; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(4rem, 7vw, 7rem); }
++.page { position: relative; z-index: 1; container-type: inline-size; padding-block: round(nearest, clamp(2rem, 5vw, 4.5rem), 8px) round(nearest, clamp(4rem, 7vw, 7rem), 8px); }
+@@
+-.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: clamp(2rem, 7vw, 7rem); padding-block-end: clamp(3rem, 6vw, 6rem); }
++.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block-end: round(nearest, clamp(3rem, 6vw, 6rem), 8px); }
+@@
+-.story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 7vw, 7rem); padding-block: clamp(2.5rem, 5vw, 4.5rem); border-block: 1px solid var(--divider); }
++.story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block: round(nearest, clamp(2.5rem, 5vw, 4.5rem), 8px); border-block: 1px solid var(--divider); }
+@@
+-.personal { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: clamp(2rem, 7vw, 7rem); padding-block-start: clamp(2.5rem, 5vw, 4.5rem); border-block-start: 1px solid var(--divider); }
++.personal { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block-start: round(nearest, clamp(2.5rem, 5vw, 4.5rem), 8px); border-block-start: 1px solid var(--divider); }
+@@
+-.learning { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 7vw, 7rem); padding-block: clamp(2.5rem, 5vw, 4.5rem); }
++.learning { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: round(nearest, clamp(2rem, 7vw, 7rem), 8px); padding-block: round(nearest, clamp(2.5rem, 5vw, 4.5rem), 8px); }
+*** Update File: D:\Project\Personal Web\app\components\about-notebook.module.css
+@@
+-.note { position: relative; display: flex; flex-direction: column; gap: .75rem; padding: clamp(1.25rem, 3vw, 1.75rem); border: 0; border-radius: var(--radius-card); background: var(--surface-raised); box-shadow: var(--shadow-card); min-width: 0; overflow-wrap: anywhere; transform-origin: 50% 75%; touch-action: pan-y pinch-zoom; }
++.note { position: relative; display: flex; flex-direction: column; gap: .75rem; padding: round(nearest, clamp(1.25rem, 3vw, 1.75rem), 4px); border: 0; border-radius: var(--radius-card); background: var(--surface-raised); box-shadow: var(--shadow-card); min-width: 0; overflow-wrap: anywhere; transform-origin: 50% 75%; touch-action: pan-y pinch-zoom; }
+@@
+-.questionIcon { display: block; flex: none; margin-block-start: .15rem; color: var(--action-ink); }
++.questionIcon { display: block; flex: none; margin-block-start: 4px; color: var(--action-ink); }
+@@
+-.discoveries { display: inline-flex; gap: .3rem; }
++.discoveries { display: inline-flex; gap: 4px; }
+*** Update File: D:\Project\Personal Web\app\components\about-play.module.css
+@@
+-.helloButton { display: inline-flex; align-items: center; gap: .5rem; flex: none; min-height: 48px; padding: .65rem 1rem; border: 1px solid transparent; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); font-size: .875rem; line-height: 1.5; cursor: pointer; }
++.helloButton { display: inline-flex; align-items: center; gap: .5rem; flex: none; min-height: 48px; padding: 12px 1rem; border: 1px solid transparent; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); font-size: .875rem; line-height: 1.5; cursor: pointer; }
+@@
+-.experiment { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; width: calc(100% - 16px); max-inline-size: 480px; min-width: 0; justify-self: start; margin-inline: 8px; padding: clamp(1.25rem, 2vw, 1.75rem); border-radius: var(--radius-card); background: var(--surface-raised); box-shadow: var(--shadow-card); overflow-wrap: break-word; }
++.experiment { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; width: calc(100% - 16px); max-inline-size: 480px; min-width: 0; justify-self: start; margin-inline: 8px; padding: round(nearest, clamp(1.25rem, 2vw, 1.75rem), 4px); border-radius: var(--radius-card); background: var(--surface-raised); box-shadow: var(--shadow-card); overflow-wrap: break-word; }
+*** Update File: D:\Project\Personal Web\app\components\hero-role-play.module.css
+@@
+-  column-gap: 0.35rem;
++  column-gap: 4px;
+@@
+-  padding: 0.2em 0;
++  padding: 4px 0;
+*** Update File: D:\Project\Personal Web\app\contact\contact.module.css
+@@
+-  gap: clamp(3rem, 7vw, 7rem);
++  gap: round(nearest, clamp(3rem, 7vw, 7rem), 8px);
+@@
+-  padding-block: clamp(3rem, 6vw, 6rem) clamp(4rem, 8vw, 8rem);
++  padding-block: round(nearest, clamp(3rem, 6vw, 6rem), 8px) round(nearest, clamp(4rem, 8vw, 8rem), 8px);
+@@
+-  padding: .875rem 1rem;
++  padding: 16px 1rem;
+@@
+-.submitVisual { gap: 2rem; width: 100%; min-height: 54px; padding: .875rem 1.5rem; background: var(--accent-solid); box-shadow: var(--shadow-control); transition: background-color 160ms var(--project-title-ease); }
++.submitVisual { gap: 2rem; width: 100%; min-height: 54px; padding: 16px 1.5rem; background: var(--accent-solid); box-shadow: var(--shadow-control); transition: background-color 160ms var(--project-title-ease); }
+@@
+-.copyActions button { border: 1px solid transparent; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); min-height: 48px; padding: .65rem 1rem; font: inherit; font-size: .875rem; line-height: 1.5; cursor: pointer; }
++.copyActions button { border: 1px solid transparent; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); min-height: 48px; padding: 12px 1rem; font: inherit; font-size: .875rem; line-height: 1.5; cursor: pointer; }
+*** Update File: D:\Project\Personal Web\app\globals.css
+@@
+-  --gutter: clamp(24px, 5vw, 80px);
++  --gutter: round(nearest, clamp(24px, 5vw, 80px), 8px);
+@@
+-.skip-link { position: fixed; z-index: 10; top: 1rem; left: 1rem; padding: .85rem 1.2rem; background: var(--ink); color: var(--canvas); transform: translateY(-200%); }
++.skip-link { position: fixed; z-index: 10; top: 1rem; left: 1rem; padding: 12px 20px; background: var(--ink); color: var(--canvas); transform: translateY(-200%); }
+@@
+-.site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1.5rem; padding-block: 1.65rem; }
++.site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 1.5rem; padding-block: 28px; }
+@@
+-.brand { display: inline-flex; align-items: center; gap: .55rem; flex: 1 1 10rem; min-width: 0; max-width: 100%; font-size: 1rem; font-weight: 500; text-decoration: none; min-height: 44px; }
++.brand { display: inline-flex; align-items: center; gap: 8px; flex: 1 1 10rem; min-width: 0; max-width: 100%; font-size: 1rem; font-weight: 500; text-decoration: none; min-height: 44px; }
+@@
+-.primary-nav { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(.7rem, 1.6vw, 1.6rem); font-size: .9375rem; font-weight: 500; }
++.primary-nav { display: flex; flex-wrap: wrap; align-items: center; gap: round(nearest, clamp(12px, 1.6vw, 24px), 4px); font-size: .9375rem; font-weight: 500; }
+@@
+-.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); column-gap: clamp(2rem, 6vw, 6rem); align-items: center; min-height: 690px; padding-block: 4.5rem 5rem; }
++.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); column-gap: round(nearest, clamp(2rem, 6vw, 6rem), 8px); align-items: center; min-height: 690px; padding-block: 4.5rem 5rem; }
+@@
+-.hero-copy { align-self: start; padding-top: clamp(1rem, 2vw, 2rem); }
++.hero-copy { align-self: start; padding-top: round(nearest, clamp(1rem, 2vw, 2rem), 4px); }
+@@
+-.location { display: flex; align-items: center; gap: .85rem; font-size: .9375rem; }
++.location { display: flex; align-items: center; gap: 12px; font-size: .9375rem; }
+@@
+-.section-intro { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .6rem 2rem; margin-bottom: 2rem; }
++.section-intro { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 2rem; margin-bottom: 2rem; }
+@@
+-.about { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; padding-block: clamp(4.5rem, 7vw, 7rem) clamp(5rem, 8vw, 8rem); }
++.about { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; padding-block: round(nearest, clamp(4.5rem, 7vw, 7rem), 8px) round(nearest, clamp(5rem, 8vw, 8rem), 8px); }
+@@
+-  .section-intro { margin-bottom: 1.4rem; }
++  .section-intro { margin-bottom: 24px; }
+@@
+-  .about { grid-template-columns: 1fr; gap: 1.7rem; padding-block: 3rem 4.5rem; }
++  .about { grid-template-columns: 1fr; gap: 28px; padding-block: 3rem 4.5rem; }
+@@
+-  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 1.4rem; margin-top: 3rem; }
++  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 24px; margin-top: 3rem; }
+@@
+-.contact-action { display: inline-flex; align-items: center; gap: clamp(1rem, 4vw, 4rem); text-decoration: none; max-width: 100%; }
++.contact-action { display: inline-flex; align-items: center; gap: round(nearest, clamp(1rem, 4vw, 4rem), 4px); text-decoration: none; max-width: 100%; }
+@@
+-.about-page { --about-body-size: clamp(1rem, 1.3vw, 1.125rem); padding-block: clamp(3rem, 6vw, 6rem) clamp(4.5rem, 8vw, 8rem); }
++.about-page { --about-body-size: clamp(1rem, 1.3vw, 1.125rem); padding-block: round(nearest, clamp(3rem, 6vw, 6rem), 8px) round(nearest, clamp(4.5rem, 8vw, 8rem), 8px); }
+@@
+-.about-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(3rem, 8vw, 8rem); padding-block-start: clamp(3rem, 5vw, 5rem); }
++.about-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: round(nearest, clamp(3rem, 8vw, 8rem), 8px); padding-block-start: round(nearest, clamp(3rem, 5vw, 5rem), 8px); }
+@@
+-.resume-format { margin-inline-start: .25rem; padding: .2rem .45rem; border: 1px solid var(--divider); color: var(--muted); font-size: .75rem; font-weight: 400; line-height: 1.5; text-decoration: none; }
++.resume-format { margin-inline-start: .25rem; padding: 4px 8px; border: 1px solid var(--divider); color: var(--muted); font-size: .75rem; font-weight: 400; line-height: 1.5; text-decoration: none; }
+@@
+-  display: inline-flex; align-items: center; justify-content: center; gap: .8rem;
++  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+@@
+-  padding: .55rem calc(.8rem - 2px) .55rem .8rem; font: 500 .9375rem var(--font-body); cursor: pointer;
++  padding: 8px calc(12px - 4px) 8px 12px; font: 500 .9375rem var(--font-body); cursor: pointer;
+@@
+-.menu-control-visual { display: inline-flex; align-items: center; justify-content: center; gap: .8rem; }
++.menu-control-visual { display: inline-flex; align-items: center; justify-content: center; gap: 12px; }
+@@
+-.stairs-content { --menu-inset: max(var(--gutter), calc((100% - 1440px) / 2)); position: relative; z-index: 1; display: flex; flex-direction: column; min-height: 100%; padding-block: 1.7rem 2rem; }
++.stairs-content { --menu-inset: max(var(--gutter), calc((100% - 1440px) / 2)); position: relative; z-index: 1; display: flex; flex-direction: column; min-height: 100%; padding-block: 28px 2rem; }
+@@
+-.stairs-nav { display: grid; container-type: inline-size; margin-top: clamp(3rem, 7vh, 6rem); border-top: 1px solid var(--divider); }
++.stairs-nav { display: grid; container-type: inline-size; margin-top: round(nearest, clamp(3rem, 7vh, 6rem), 8px); border-top: 1px solid var(--divider); }
+@@
+-  --menu-row-gap: clamp(.5rem, 2vw, 2rem);
++  --menu-row-gap: round(nearest, clamp(.5rem, 2vw, 2rem), 4px);
+@@
+-.stairs-profiles { display: flex; flex-wrap: wrap; gap: .7rem 2rem; margin-top: auto; padding-top: 2.5rem; padding-inline: var(--menu-inset); font-size: .9375rem; }
++.stairs-profiles { display: flex; flex-wrap: wrap; gap: 12px 2rem; margin-top: auto; padding-top: 2.5rem; padding-inline: var(--menu-inset); font-size: .9375rem; }
+@@
+-.stairs-profiles a { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; }
++.stairs-profiles a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; }
+@@
+-.stairs-marquee-item { display: inline-flex; align-items: center; gap: 1.2rem; padding-right: 2.5rem; }
++.stairs-marquee-item { display: inline-flex; align-items: center; gap: 20px; padding-right: 2.5rem; }
+@@
+-  .stairs-profiles { gap: .2rem 1.3rem; padding-top: 1.5rem; }
++  .stairs-profiles { gap: 4px 20px; padding-top: 1.5rem; }
+@@
+-  align-items: center; gap: .75rem clamp(.75rem, 2.3vw, 1.5rem);
++  align-items: center; gap: .75rem round(nearest, clamp(.75rem, 2.3vw, 1.5rem), 4px);
+@@
+-  width: 100%; min-width: 0; padding-block: clamp(.75rem, 2vw, 1.5rem); text-decoration: none;
++  width: 100%; min-width: 0; padding-block: round(nearest, clamp(.75rem, 2vw, 1.5rem), 4px); text-decoration: none;
+@@
+-  .work .section-intro { margin-bottom: .125rem; }
++  .work .section-intro { margin-bottom: 4px; }
+@@
+-  .project-link { padding-block: .5rem; row-gap: .375rem; }
++  .project-link { padding-block: .5rem; row-gap: 8px; }
+@@
+-  .project-copy { gap: .125rem; }
++  .project-copy { gap: 4px; }
+@@
+-.case-study { padding-top: clamp(3rem, 6vw, 6rem); }
++.case-study { padding-top: round(nearest, clamp(3rem, 6vw, 6rem), 8px); }
+@@
+-.case-topline a, .case-return { display: inline-flex; align-items: center; gap: .65rem; min-height: 48px; padding: .65rem 1rem; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); text-decoration: none; }
++.case-topline a, .case-return { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding: 12px 1rem; border-radius: var(--radius-pill); background: var(--surface-accent); color: var(--action-ink); text-decoration: none; }
+@@
+-.case-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: end; gap: 2rem 5rem; margin-top: clamp(3rem, 8vw, 8rem); }
++.case-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: end; gap: 2rem 5rem; margin-top: round(nearest, clamp(3rem, 8vw, 8rem), 8px); }
+@@
+-.case-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem 2rem; margin: clamp(3rem, 6vw, 6rem) 0 1.5rem; padding-block: 1.5rem; border-block: 1px solid var(--divider); }
++.case-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem 2rem; margin: round(nearest, clamp(3rem, 6vw, 6rem), 8px) 0 1.5rem; padding-block: 1.5rem; border-block: 1px solid var(--divider); }
+@@
+-.case-hero { margin-inline: 0; margin-block: clamp(3rem, 6vw, 6rem); }
++.case-hero { margin-inline: 0; margin-block: round(nearest, clamp(3rem, 6vw, 6rem), 8px); }
+@@
+-    gap: .85rem .65rem; padding-block: 1rem;
++    gap: 12px 12px; padding-block: 1rem;
+@@
+-.case-media-heading > p { margin-block-start: .65rem; font-size: .875rem; color: var(--muted); line-height: 1.6; }
++.case-media-heading > p { margin-block-start: 12px; font-size: .875rem; color: var(--muted); line-height: 1.6; }
+@@
+-.case-media-track { display: grid; gap: clamp(3.5rem, 6vw, 5rem); }
++.case-media-track { display: grid; gap: round(nearest, clamp(3.5rem, 6vw, 5rem), 8px); }
+@@
+-.case-media-source summary { min-height: 44px; width: fit-content; max-width: 100%; padding-block: .65rem; cursor: pointer; font-size: .875rem; line-height: 1.5; text-decoration: underline; text-underline-offset: .3em; }
++.case-media-source summary { min-height: 44px; width: fit-content; max-width: 100%; padding-block: 12px; cursor: pointer; font-size: .875rem; line-height: 1.5; text-decoration: underline; text-underline-offset: .3em; }
+@@
+-.case-media-pan-cue { display: none; font-size: .8125rem; line-height: 1.6; color: var(--muted); margin-block-start: .65rem; }
++.case-media-pan-cue { display: none; font-size: .8125rem; line-height: 1.6; color: var(--muted); margin-block-start: 12px; }
+@@
+-.case-reading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 2rem 4rem; padding-block: clamp(4rem, 7vw, 7rem); }
++.case-reading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 2rem 4rem; padding-block: round(nearest, clamp(4rem, 7vw, 7rem), 8px); }
+@@
+-.case-support { padding-block: clamp(3rem, 5vw, 5rem); }
++.case-support { padding-block: round(nearest, clamp(3rem, 5vw, 5rem), 8px); }
+@@
+-.not-found { min-height: min(70svh, 700px); padding-block: clamp(5rem, 12vw, 10rem); }
++.not-found { min-height: min(70svh, 700px); padding-block: round(nearest, clamp(5rem, 12vw, 10rem), 8px); }
+@@
+-.not-found-link { display: inline-flex; align-items: center; gap: .7rem; min-height: 44px; margin-top: 2rem; font-weight: 600; }
++.not-found-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; margin-top: 2rem; font-weight: 600; }
+@@
+-.stairs-link { padding-block: .65rem; line-height: 1.12; }
++.stairs-link { padding-block: 12px; line-height: 1.12; }
+*** Update File: D:\Project\Personal Web\app\work\munchpal\munchpal.module.css
+@@
+-  padding-block-start: clamp(2.5rem, 4vw, 4rem);
++  padding-block-start: round(nearest, clamp(2.5rem, 4vw, 4rem), 8px);
+@@
+-  padding-block: clamp(4rem, 7vw, 7rem);
++  padding-block: round(nearest, clamp(4rem, 7vw, 7rem), 8px);
+@@
+-  margin-block-end: clamp(2.5rem, 4vw, 4rem);
++  margin-block-end: round(nearest, clamp(2.5rem, 4vw, 4rem), 8px);
+@@
+-.flowSection { padding-block: 0 clamp(2rem, 4vw, 4rem); }
++.flowSection { padding-block: 0 round(nearest, clamp(2rem, 4vw, 4rem), 8px); }
+@@
+-.flowArtwork { padding: clamp(1rem, 3vw, 3rem); background: var(--surface); }
++.flowArtwork { padding: round(nearest, clamp(1rem, 3vw, 3rem), 4px); background: var(--surface); }
+@@
+-.residentComposition { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) minmax(0, .9fr); align-items: start; gap: clamp(2rem, 5vw, 5rem); max-inline-size: 68rem; margin-inline: auto; }
++.residentComposition { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) minmax(0, .9fr); align-items: start; gap: round(nearest, clamp(2rem, 5vw, 5rem), 8px); max-inline-size: 68rem; margin-inline: auto; }
+@@
+-.residentComposition > :nth-child(2) { padding: clamp(1rem, 2vw, 2rem); background: color-mix(in srgb, #91ac68 15%, var(--canvas)); }
++.residentComposition > :nth-child(2) { padding: round(nearest, clamp(1rem, 2vw, 2rem), 4px); background: color-mix(in srgb, #91ac68 15%, var(--canvas)); }
+@@
+-.statusStory { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 3rem clamp(2rem, 6vw, 6rem); align-items: center; }
++.statusStory { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 3rem round(nearest, clamp(2rem, 6vw, 6rem), 8px); align-items: center; }
+@@
+-.statusComposition { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 3rem); padding: clamp(1rem, 2vw, 2rem); background: color-mix(in srgb, #91ac68 8%, var(--canvas)); }
++.statusComposition { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: round(nearest, clamp(1.5rem, 3vw, 3rem), 4px); padding: round(nearest, clamp(1rem, 2vw, 2rem), 4px); background: color-mix(in srgb, #91ac68 8%, var(--canvas)); }
+@@
+-  gap: 2.5rem clamp(2rem, 5vw, 5rem);
++  gap: 2.5rem round(nearest, clamp(2rem, 5vw, 5rem), 8px);
+@@
+-  gap: 2.5rem clamp(2rem, 5vw, 5rem);
++  gap: 2.5rem round(nearest, clamp(2rem, 5vw, 5rem), 8px);
+@@
+-  margin-block-start: clamp(4rem, 8vw, 8rem);
++  margin-block-start: round(nearest, clamp(4rem, 8vw, 8rem), 8px);
+@@
+-  gap: clamp(1.5rem, 3vw, 3rem);
++  gap: round(nearest, clamp(1.5rem, 3vw, 3rem), 4px);
+@@
+-  padding: clamp(1rem, 3vw, 3rem);
++  padding: round(nearest, clamp(1rem, 3vw, 3rem), 4px);
+@@
+-.states { padding-block: clamp(3rem, 6vw, 6rem) clamp(5rem, 8vw, 8rem); scroll-margin-block-start: 6rem; }
++.states { padding-block: round(nearest, clamp(3rem, 6vw, 6rem), 8px) round(nearest, clamp(5rem, 8vw, 8rem), 8px); scroll-margin-block-start: 6rem; }
+@@
+-    --gutter: clamp(24px, 5vw, 80px);
++    --gutter: round(nearest, clamp(24px, 5vw, 80px), 8px);
+*** Update File: D:\Project\Personal Web\app\work\project-detail.module.css
+@@
+-.case { overflow-wrap: anywhere; padding-block-start: clamp(2rem, 3vw, 3rem); }
++.case { overflow-wrap: anywhere; padding-block-start: round(nearest, clamp(2rem, 3vw, 3rem), 8px); }
+@@
+-.case .intro { margin-block-start: clamp(2rem, 3vw, 3rem); gap: 1.5rem 4rem; align-items: center; }
++.case .intro { margin-block-start: round(nearest, clamp(2rem, 3vw, 3rem), 8px); gap: 1.5rem 4rem; align-items: center; }
+@@
+-.case .hero { margin-block: clamp(2rem, 3vw, 3rem) 1.5rem; }
++.case .hero { margin-block: round(nearest, clamp(2rem, 3vw, 3rem), 8px) 1.5rem; }
+@@
+-.section { padding-block: clamp(4rem, 7vw, 7rem); scroll-margin-block-start: 6rem; }
++.section { padding-block: round(nearest, clamp(4rem, 7vw, 7rem), 8px); scroll-margin-block-start: 6rem; }
+@@
+-.heading { max-inline-size: 48rem; margin-block-end: clamp(2.5rem, 4vw, 4rem); }
++.heading { max-inline-size: 48rem; margin-block-end: round(nearest, clamp(2.5rem, 4vw, 4rem), 8px); }
+@@
+-.overviewComposition { display: grid; grid-template-columns: minmax(0, 3.3fr) minmax(0, .85fr); align-items: start; gap: clamp(1.5rem, 4vw, 4rem); padding: clamp(1.5rem, 4vw, 4rem); background: color-mix(in srgb, #ffa13b 9%, var(--canvas)); }
++.overviewComposition { display: grid; grid-template-columns: minmax(0, 3.3fr) minmax(0, .85fr); align-items: start; gap: round(nearest, clamp(1.5rem, 4vw, 4rem), 4px); padding: round(nearest, clamp(1.5rem, 4vw, 4rem), 4px); background: color-mix(in srgb, #ffa13b 9%, var(--canvas)); }
+@@
+-.customerStory { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); align-items: start; gap: 3rem clamp(2rem, 6vw, 6rem); }
++.customerStory { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); align-items: start; gap: 3rem round(nearest, clamp(2rem, 6vw, 6rem), 8px); }
+@@
+-.customerForm .screenArtwork { padding: clamp(1rem, 2vw, 2rem); border-radius: var(--case-panel-radius); background: color-mix(in srgb, #ffa13b 15%, var(--canvas)); }
++.customerForm .screenArtwork { padding: round(nearest, clamp(1rem, 2vw, 2rem), 4px); border-radius: var(--case-panel-radius); background: color-mix(in srgb, #ffa13b 15%, var(--canvas)); }
+@@
+-.invoiceComposition { display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(0, .8fr); gap: clamp(3rem, 7vw, 7rem); align-items: start; padding: clamp(2rem, 5vw, 5rem); background: color-mix(in srgb, #ffa13b 13%, var(--canvas)); }
++.invoiceComposition { display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(0, .8fr); gap: round(nearest, clamp(3rem, 7vw, 7rem), 8px); align-items: start; padding: round(nearest, clamp(2rem, 5vw, 5rem), 8px); background: color-mix(in srgb, #ffa13b 13%, var(--canvas)); }
+@@
+-.payoutStory { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: 3rem clamp(2rem, 8vw, 8rem); }
++.payoutStory { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: 3rem round(nearest, clamp(2rem, 8vw, 8rem), 8px); }
+@@
+-.payoutArtwork { display: grid; place-items: center; padding: clamp(1.5rem, 4vw, 4rem); background: color-mix(in srgb, #ffa13b 6%, var(--canvas)); }
++.payoutArtwork { display: grid; place-items: center; padding: round(nearest, clamp(1.5rem, 4vw, 4rem), 4px); background: color-mix(in srgb, #ffa13b 6%, var(--canvas)); }
+@@
+-.systemStory { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: start; gap: 3rem clamp(3rem, 8vw, 8rem); }
++.systemStory { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: start; gap: 3rem round(nearest, clamp(3rem, 8vw, 8rem), 8px); }
+@@
+-.closing { padding-block: clamp(4rem, 7vw, 7rem); border-block-start: 1px solid var(--divider); }
++.closing { padding-block: round(nearest, clamp(4rem, 7vw, 7rem), 8px); border-block-start: 1px solid var(--divider); }
+*** Update File: D:\Project\Personal Web\app\work\project-devices.module.css
+@@
+-.phone { padding: 4% 5% 10%; }
++.phone { padding: round(nearest, 4%, 4px) round(nearest, 5%, 4px) round(nearest, 10%, 4px); }
+@@
+-  padding: 2.3%;
++  padding: round(nearest, 2.3%, 4px);
+@@
+-.phone .bezel { padding: 1.5%; border-radius: 13% / 6%; background: #171b1d; }
++.phone .bezel { padding: round(nearest, 1.5%, 4px); border-radius: 13% / 6%; background: #171b1d; }
+@@
+-.laptop { padding: 2.5% 3% 5%; }
++.laptop { padding: round(nearest, 2.5%, 4px) round(nearest, 3%, 4px) round(nearest, 5%, 4px); }
+@@
+-  padding: .6%;
++  padding: round(nearest, .6%, 4px);
+@@
+-.laptop .bezel { padding: 2.5% .8% .8%; border-radius: 14px 14px 2px 2px; background: #202629; }
++.laptop .bezel { padding: round(nearest, 2.5%, 4px) round(nearest, .8%, 4px) round(nearest, .8%, 4px); border-radius: 14px 14px 2px 2px; background: #202629; }
+@@
+-.monitor { padding: 2% 1.5% 0; }
++.monitor { padding: round(nearest, 2%, 4px) round(nearest, 1.5%, 4px) 0; }
+@@
+-  padding: 1.2%;
++  padding: round(nearest, 1.2%, 4px);
+@@
+-.monitor .bezel { padding: .5%; border-radius: 8px; background: #101718; }
++.monitor .bezel { padding: round(nearest, .5%, 4px); border-radius: 8px; background: #101718; }
+*** Update File: D:\Project\Personal Web\app\work\project-opener.module.css
+@@
+-.opener { margin-block: clamp(2.5rem, 5vw, 5rem); }
++.opener { margin-block: round(nearest, clamp(2.5rem, 5vw, 5rem), 8px); }
+*** End Patch

@@ -1,0 +1,111 @@
+Back to selected work
+Paylecta
+
+Desktop and mobile finance dashboards for merchants.
+
+Explore the Paylecta designs
+
+A tour of the financial overview, invoice tools and payout records.
+
+Play
+Replay
+
+Portfolio motion study
+
+Project
+Client design project, June 2025
+My role
+Sole UI/UX designer
+Scope
+Responsive dashboards and visual system
+One place to see the business
+
+I put total balance and period summaries first, with gross and net revenue together for comparison. The desktop grid lets merchants scan several summaries at once; mobile follows the same order in one column.
+
+Desktop dashboard
+Mobile dashboard
+Keep actions with the record
+
+Search, filters and primary actions stay at the top of each screen. Customer rows keep their status and actions together, and the add-customer form opens over the list.
+
+Customer records
+Add a customer in context
+See the invoice while making it
+
+I placed the invoice preview beside the fields so merchants could check the amount and document while editing.
+
+Invoice editor and preview
+Invoice reminders on mobile
+Mobile payouts
+Make the payment state visible
+
+Each payout has a written status: Success, Processing or Cancelled. Mobile cards keep the amount, status and next action together.
+
+A shared visual language
+
+I used Plus Jakarta Sans, orange accents and shared buttons, inputs and cards across the dashboards. Payment states keep consistent colors and labels on desktop and mobile.
+
+Paylecta visual system
+The design delivered
+
+Desktop and mobile designs for monitoring finances, managing customers, creating invoices and reviewing payouts, supported by a shared visual system.
+
+Read the original Paylecta case study PDF
+Back to selected work
+
+--- Expanded detail ---
+
+Back to selected work
+Paylecta
+
+Desktop and mobile finance dashboards for merchants.
+
+Explore the Paylecta designs
+
+A tour of the financial overview, invoice tools and payout records.
+
+Play
+Replay
+
+Portfolio motion study
+
+Project
+Client design project, June 2025
+My role
+Sole UI/UX designer
+Scope
+Responsive dashboards and visual system
+One place to see the business
+
+I put total balance and period summaries first, with gross and net revenue together for comparison. The desktop grid lets merchants scan several summaries at once; mobile follows the same order in one column.
+
+Desktop dashboard
+Mobile dashboard
+Keep actions with the record
+
+Search, filters and primary actions stay at the top of each screen. Customer rows keep their status and actions together, and the add-customer form opens over the list.
+
+Customer records
+Add a customer in context
+See the invoice while making it
+
+I placed the invoice preview beside the fields so merchants could check the amount and document while editing.
+
+Invoice editor and preview
+Invoice reminders on mobile
+Mobile payouts
+Make the payment state visible
+
+Each payout has a written status: Success, Processing or Cancelled. Mobile cards keep the amount, status and next action together.
+
+A shared visual language
+
+I used Plus Jakarta Sans, orange accents and shared buttons, inputs and cards across the dashboards. Payment states keep consistent colors and labels on desktop and mobile.
+
+Paylecta visual system
+The design delivered
+
+Desktop and mobile designs for monitoring finances, managing customers, creating invoices and reviewing payouts, supported by a shared visual system.
+
+Read the original Paylecta case study PDF
+Back to selected work

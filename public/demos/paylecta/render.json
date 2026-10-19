@@ -1,0 +1,14 @@
+{
+  "durationSeconds": 26,
+  "frameRate": 60,
+  "frames": 1560,
+  "width": 1920,
+  "height": 1080,
+  "codec": "H.264",
+  "pixelFormat": "yuv420p",
+  "audio": "silent",
+  "sizeBytes": 8151610,
+  "posterTimeSeconds": 2.3,
+  "render": "Each frame sought at i / 60, two animation frames settled, PNG losslessly piped to FFmpeg.",
+  "errors": []
+}

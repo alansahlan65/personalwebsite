@@ -1,0 +1,322 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 151,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/about",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 159,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/contact",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 63,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 181,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 260,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 184,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 320,
+    "status": 200,
+    "defaultWords": 318,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/copy-review-missing",
+    "width": 320,
+    "status": 404,
+    "defaultWords": 13,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 151,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 159,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/contact",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 63,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 181,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 260,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 184,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 390,
+    "status": 200,
+    "defaultWords": 318,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/copy-review-missing",
+    "width": 390,
+    "status": 404,
+    "defaultWords": 13,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 77,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 159,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/contact",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 63,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 173,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 260,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 176,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 768,
+    "status": 200,
+    "defaultWords": 318,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/copy-review-missing",
+    "width": 768,
+    "status": 404,
+    "defaultWords": 13,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 77,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/about",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 159,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/contact",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 63,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/aurelia",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 173,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/paylecta",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 260,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/pawfriend",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 176,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/work/munchpal",
+    "width": 1440,
+    "status": 200,
+    "defaultWords": 318,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "route": "/copy-review-missing",
+    "width": 1440,
+    "status": 404,
+    "defaultWords": 13,
+    "overflow": 0,
+    "unresolved": [],
+    "violations": [],
+    "errors": []
+  }
+]
